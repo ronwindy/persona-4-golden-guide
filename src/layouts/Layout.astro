@@ -10,7 +10,7 @@ const { title = 'P4G Guide - Reach Out To The Truth' } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -46,22 +46,31 @@ const { title = 'P4G Guide - Reach Out To The Truth' } = Astro.props;
       </div>
     </div>
 
-    <!-- Caution Tape Divider -->
-    <div class="divider bg-stripes"></div>
 
-    <!-- Hero Section -->
-    <header class="hero bg-halftone p4g-shadow">
+
+    <!-- Simplified Header -->
+    <header class="header bg-halftone p4g-shadow">
       <div class="bg-scanlines"></div>
-      <div class="hero-content">
-        <div class="hero-badge cutout-header font-pop">
-          <h2>100% COMPLETION</h2>
+      <div class="header-container">
+        <a href="/" class="header-logo-link">
+          <img src="/Persona_4_Golden_logo.webp" alt="Persona 4 Golden Logo" class="header-logo" />
+        </a>
+        <div class="header-text">
+          <h1 class="font-pop header-title">
+            <span class="anim-pop stagger-1">Persona</span> 
+            <span class="anim-pop stagger-2">4</span> 
+            <span class="anim-pop stagger-3">Golden</span> 
+            <span class="anim-pop stagger-4">Walkthrough</span>
+          </h1>
+          <p class="font-read header-subtitle anim-slide-in">
+            The 100% True Golden Walkthrough
+          </p>
         </div>
-        <h1 class="font-pop hero-title">REACH OUT TO THE TRUTH</h1>
-        <p class="font-read hero-subtitle p4g-shadow-sm">
-          The Definitive Day-by-Day Walkthrough
-        </p>
       </div>
     </header>
+
+    <!-- Caution Tape Divider -->
+    <div class="divider bg-stripes"></div>
 
     <!-- Main Layout -->
     <main class="main-layout">
@@ -365,71 +374,158 @@ nav {
   transform-origin: left;
 }
 
-/* Hero Section */
-header.hero {
+/* Simplified Header Styles */
+.header {
   position: relative;
   width: 100%;
-  height: 40vh;
-  min-height: 300px;
-  background-color: rgba(252, 227, 0, 0.9) !important; /* Semi-transparent Yellow */
-  backdrop-filter: blur(8px);
+  background-color: var(--primary) !important;
   border-bottom: 8px solid var(--secondary);
+  padding: 1rem 0;
+  overflow: hidden;
+  display: block;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.bg-halftone {
-  background-image: radial-gradient(
-    var(--secondary) 1px,
-    transparent 1px
-  );
-  background-size: 12px 12px;
-}
-
-.hero-content {
+  gap: 2.5rem;
   position: relative;
   z-index: 20;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.hero-badge {
-  background-color: var(--secondary);
-  color: var(--bg-white);
-  padding: 0.5rem 2rem;
-  margin-bottom: 1rem;
-  transform: rotate(-3deg);
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
+.header-logo-link {
+  display: block;
+  flex: 0 0 auto;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  line-height: 0;
 }
 
-.hero-title {
-  font-size: 4rem;
-  color: var(--primary);
+.header-logo-link:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.header-logo {
+  display: block;
+  height: 70px !important;
+  width: auto !important;
+  max-width: 300px;
+  filter: drop-shadow(4px 4px 0px var(--secondary));
+  object-fit: contain;
+}
+
+.header-title {
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 3.5rem; /* New Amsterdam is quite condensed, so using a larger size */
+  font-weight: 400;
+  color: #fff; 
   line-height: 1;
-  text-shadow:
-    4px 4px 0 var(--secondary),
-    8px 8px 0 var(--accent-orange);
+  text-transform: uppercase;
+  font-style: italic;
+  /* Multi-directional shadow to simulate a thick "Border" like the logo */
+  text-shadow: 
+    -2px -2px 0 var(--secondary),  
+     2px -2px 0 var(--secondary),
+    -2px  2px 0 var(--secondary),
+     2px  2px 0 var(--secondary),
+     6px  6px 0 var(--secondary), /* Main heavy drop shadow */
+     8px  8px 0 var(--accent-orange); /* Outer accent shadow */
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 6rem;
+/* Continuous Jitter Animation */
+.header-title:hover span {
+  animation: jitter 0.2s infinite;
+  color: #fff; 
+  text-shadow: 
+    -4px -4px 0 #ff0000, /* Glitch red behind */
+     4px  4px 0 #00ffff, /* Glitch cyan behind */
+    -2px -2px 0 var(--secondary),  
+     2px -2px 0 var(--secondary),
+    -2px  2px 0 var(--secondary),
+     2px  2px 0 var(--secondary),
+     6px  6px 0 var(--secondary); /* Keep the black border during jitter */
+}
+
+.header-subtitle {
+  background: var(--secondary);
+  color: var(--primary);
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  width: fit-content;
+  transform: rotate(-0.5deg);
+  box-shadow: 3px 3px 0 var(--accent-orange);
+  transition: all 0.3s;
+}
+
+.header-text:hover .header-subtitle {
+  transform: rotate(1deg) scale(1.05);
+  background: var(--accent-orange);
+  color: var(--secondary);
+}
+
+/* Animations */
+@keyframes popIn {
+  0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+  70% { transform: scale(1.2) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-50px) rotate(-5deg); opacity: 0; }
+  100% { transform: translateX(0) rotate(-0.5deg); opacity: 1; }
+}
+
+@keyframes jitter {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px); }
+  100% { transform: translate(1px, 1px); }
+}
+
+.anim-pop {
+  display: inline-block;
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.anim-slide-in {
+  animation: slideIn 0.6s ease-out 0.6s both;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  
+  .header-logo {
+    height: 50px !important;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
   }
 }
 
-.hero-subtitle {
-  background: var(--bg-white);
-  border: 4px solid var(--secondary);
-  padding: 0.25rem 1rem;
-  margin-top: 1.5rem;
-  font-weight: bold;
-  transform: rotate(1deg);
-}
 
 /* Divider */
 .divider {
