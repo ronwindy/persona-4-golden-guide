@@ -1,0 +1,1303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P4G Guide - Reach Out To The Truth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #fce300; /* Midnight Channel Yellow */
+        --secondary: #1a1a1a; /* Inaba Black */
+        --bg-white: #fafafa; /* Static White */
+        --accent-orange: #ff6b00; /* Junes Orange */
+        --accent-blue: #0c1431; /* Velvet Blue */
+      }
+
+      /* Base Resets & Typography */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--bg-white);
+        color: var(--secondary);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      ::selection {
+        background: var(--primary);
+        color: var(--secondary);
+      }
+
+      .font-pop {
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+        letter-spacing: 0.05em;
+      }
+
+      .font-read {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* Motifs & Textures */
+      .bg-halftone {
+        background-color: var(--primary);
+        background-image: radial-gradient(
+          var(--secondary) 1px,
+          transparent 1px
+        );
+        background-size: 12px 12px;
+      }
+
+      .bg-scanlines {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0) 50%,
+          rgba(0, 0, 0, 0.05) 50%,
+          rgba(0, 0, 0, 0.05)
+        );
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 10;
+        opacity: 0.7;
+      }
+
+      .bg-stripes {
+        background: repeating-linear-gradient(
+          -45deg,
+          var(--primary),
+          var(--primary) 10px,
+          var(--secondary) 10px,
+          var(--secondary) 20px
+        );
+      }
+
+      /* Layout Utilities */
+      .container {
+        max-w-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-2 {
+        gap: 0.5rem;
+      }
+      .gap-4 {
+        gap: 1rem;
+      }
+
+      /* Component Styles */
+      .p4g-shadow {
+        box-shadow: 8px 8px 0px var(--secondary);
+      }
+
+      .p4g-shadow-sm {
+        box-shadow: 4px 4px 0px var(--secondary);
+      }
+
+      .cutout-box {
+        clip-path: polygon(0 0, 100% 2%, 98% 100%, 2% 98%);
+      }
+
+      .cutout-header {
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0 90%);
+      }
+
+      .hover-invert {
+        transition: all 0s;
+        cursor: pointer;
+      }
+
+      .hover-invert:hover {
+        background-color: var(--secondary) !important;
+        color: var(--primary) !important;
+        transform: rotate(-2deg);
+      }
+
+      /* Navigation */
+      nav {
+        background-color: var(--secondary);
+        color: var(--bg-white);
+        border-bottom: 8px solid var(--primary);
+        padding: 1rem 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 40;
+      }
+
+      .nav-logo span {
+        color: var(--primary);
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+        text-shadow: 2px 2px 0 var(--accent-orange);
+      }
+
+      .nav-links {
+        display: none;
+        gap: 1.5rem;
+        font-size: 1.25rem;
+      }
+
+      @media (min-width: 768px) {
+        .nav-links {
+          display: flex;
+        }
+      }
+
+      .nav-links a {
+        color: var(--bg-white);
+        text-decoration: none;
+        transition: transform 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+        transform: translateY(-4px);
+      }
+
+      .search-btn {
+        background-color: var(--primary);
+        color: var(--secondary);
+        border: 2px solid var(--primary);
+        padding: 0.25rem 1rem;
+        font-size: 1.125rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+
+      /* Sticky Tracker */
+      .tracker {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 50;
+        display: flex;
+        align-items: flex-start;
+        filter: drop-shadow(4px 4px 0px var(--secondary));
+      }
+
+      .tracker-date {
+        background: var(--secondary);
+        border: 4px solid var(--secondary);
+        color: var(--bg-white);
+        width: 4rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-2deg);
+      }
+
+      .tracker-date .day {
+        color: var(--primary);
+        font-size: 0.875rem;
+      }
+      .tracker-date .date {
+        font-size: 1.875rem;
+        line-height: 1;
+      }
+
+      .tracker-weather {
+        background: var(--bg-white);
+        border: 4px solid var(--secondary);
+        border-left: none;
+        height: 5rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-2deg);
+        transform-origin: left;
+      }
+
+      /* Hero Section */
+      header.hero {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        min-height: 300px;
+        border-bottom: 8px solid var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 20;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-badge {
+        background-color: var(--secondary);
+        color: var(--bg-white);
+        padding: 0.5rem 2rem;
+        margin-bottom: 1rem;
+        transform: rotate(-3deg);
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+      }
+
+      .hero-title {
+        font-size: 4rem;
+        color: var(--primary);
+        line-height: 1;
+        text-shadow:
+          4px 4px 0 var(--secondary),
+          8px 8px 0 var(--accent-orange);
+      }
+
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 6rem;
+        }
+      }
+
+      .hero-subtitle {
+        background: var(--bg-white);
+        border: 4px solid var(--secondary);
+        padding: 0.25rem 1rem;
+        margin-top: 1.5rem;
+        font-weight: bold;
+        transform: rotate(1deg);
+      }
+
+      /* Divider */
+      .divider {
+        height: 1rem;
+        width: 100%;
+        border-bottom: 4px solid var(--secondary);
+      }
+
+      /* Main Content Layout */
+      .main-layout {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      @media (min-width: 1024px) {
+        .main-layout {
+          grid-template-columns: 300px 2fr 1fr;
+        }
+      }
+
+      /* Left Sidebar ToC */
+      .left-sidebar {
+        background: var(--bg-white);
+        border: 4px solid var(--secondary);
+        padding: 1.5rem;
+        align-self: start;
+        position: sticky;
+        top: 2rem;
+        max-height: calc(100vh - 4rem);
+        overflow-y: auto;
+      }
+
+      /* Custom Scrollbar for ToC */
+      .left-sidebar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .left-sidebar::-webkit-scrollbar-track {
+        background: var(--bg-white);
+        border-left: 2px solid var(--secondary);
+      }
+      .left-sidebar::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border: 2px solid var(--secondary);
+      }
+
+      .toc-list {
+        list-style: none;
+        padding: 0;
+      }
+      .toc-list > li {
+        margin-bottom: 1rem;
+      }
+
+      .toc-parent {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid var(--secondary);
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
+        transition:
+          color 0.2s,
+          transform 0.2s;
+      }
+      .toc-parent:hover {
+        color: var(--accent-orange);
+        transform: translateX(4px);
+      }
+      .toc-parent .font-pop {
+        font-size: 1.25rem;
+      }
+
+      .toc-icon {
+        font-size: 0.8rem;
+        transition: transform 0.3s;
+      }
+      .toc-icon.open {
+        transform: rotate(180deg);
+        color: var(--accent-orange);
+      }
+
+      .toc-child-list {
+        list-style: none;
+        padding-left: 0.75rem;
+        display: none;
+        border-left: 2px dashed var(--secondary);
+        margin-left: 0.5rem;
+      }
+      .toc-child-list.active {
+        display: block;
+      }
+
+      .toc-child-list li {
+        margin-bottom: 0.25rem;
+      }
+      .toc-child-list li a {
+        color: var(--secondary);
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 600;
+        display: block;
+        padding: 0.25rem 0.5rem;
+        transition: all 0.2s;
+      }
+      .toc-child-list li a:hover {
+        color: var(--primary);
+        background: var(--secondary);
+        padding-left: 1rem;
+      }
+
+      .show-more-btn a {
+        color: var(--accent-orange) !important;
+        font-style: italic;
+      }
+
+      /* Walkthrough Entries */
+      .month-header {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 4px solid var(--secondary);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .month-header h2 {
+        font-size: 3rem;
+        color: var(--secondary);
+        text-shadow: 2px 2px 0 var(--primary);
+        line-height: 0.9;
+      }
+
+      .month-header span {
+        color: var(--accent-orange);
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .daily-entry {
+        background: white;
+        border: 4px solid var(--secondary);
+        padding: 2rem 1.5rem;
+        position: relative;
+        margin-bottom: 3rem;
+      }
+
+      .entry-date-badge {
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        background: var(--accent-blue);
+        border: 4px solid var(--secondary);
+        color: var(--bg-white);
+        padding: 0.25rem 1rem;
+        font-size: 1.25rem;
+        transform: rotate(-3deg);
+        box-shadow: 4px 4px 0 var(--primary);
+      }
+
+      .entry-content {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+      }
+
+      .entry-content ul {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+        font-weight: 600;
+      }
+
+      .callout-blue {
+        margin-top: 2rem;
+        background: var(--accent-blue);
+        border: 4px solid var(--secondary);
+        color: var(--bg-white);
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .callout-blue h4 {
+        color: var(--primary);
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+      }
+      .callout-blue p {
+        font-size: 0.875rem;
+      }
+
+      .callout-orange {
+        background: var(--accent-orange);
+        border: 4px solid var(--secondary);
+        padding: 1.25rem;
+        margin: 1.5rem 0;
+        transform: rotate(1deg);
+        color: var(--bg-white);
+      }
+
+      .callout-orange h3 {
+        color: var(--secondary);
+        font-size: 1.5rem;
+      }
+      .callout-orange .answer-box {
+        background: var(--bg-white);
+        border: 2px solid var(--secondary);
+        color: var(--secondary);
+        padding: 0.5rem;
+        display: inline-block;
+        margin: 0.5rem 0;
+        font-size: 1.25rem;
+      }
+
+      /* Sidebar Widgets */
+      .widget {
+        border: 4px solid var(--secondary);
+        padding: 1.25rem;
+        margin-bottom: 2rem;
+      }
+
+      .widget-yellow {
+        background: var(--primary);
+      }
+      .widget-black {
+        background: var(--secondary);
+        color: var(--bg-white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .widget-title {
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+        border-bottom: 4px solid currentColor;
+        padding-bottom: 0.5rem;
+      }
+
+      .jump-btn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        background: var(--bg-white);
+        border: 2px solid var(--secondary);
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      .jump-btn.active {
+        background: var(--secondary);
+        color: var(--primary);
+      }
+
+      .widget-black .corner-stripes {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sticky Calendar Tracker -->
+    <div class="tracker">
+      <div class="tracker-date">
+        <span class="font-pop day">MON</span>
+        <span class="font-pop date">4/11</span>
+      </div>
+      <div class="tracker-weather p4g-shadow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#0C1431"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+          <path d="M16 14v6" />
+          <path d="M8 14v6" />
+          <path d="M12 16v6" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Caution Tape Divider -->
+    <div class="divider bg-stripes"></div>
+
+    <!-- Hero Section -->
+    <header class="hero bg-halftone p4g-shadow">
+      <div class="bg-scanlines"></div>
+      <div class="hero-content">
+        <div class="hero-badge cutout-header font-pop">
+          <h2>100% COMPLETION</h2>
+        </div>
+        <h1 class="font-pop hero-title">REACH OUT TO THE TRUTH</h1>
+        <p class="font-read hero-subtitle p4g-shadow-sm">
+          The Definitive Day-by-Day Walkthrough
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="main-layout">
+      <!-- Left Sidebar: Table of Contents -->
+      <aside class="left-sidebar p4g-shadow">
+        <h3
+          class="widget-title font-pop"
+          style="color: var(--secondary); font-size: 1.5rem"
+        >
+          CONTENTS
+        </h3>
+        <ul class="toc-list font-read">
+          <!-- 1. 100% Guide -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">100% Guide</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="100-guide#guide-checklist">Guide Checklist</a></li>
+              <li>
+                <a href="100-guide#update-current-schedule"
+                  >Update/Current Schedule</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- 2. Introduction -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Introduction</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li>
+                <a href="introduction#version-history">Version History</a>
+              </li>
+              <li><a href="introduction#copyright">Copyright</a></li>
+              <li>
+                <a href="introduction#frequently-asked-questions"
+                  >Frequently Asked Questions</a
+                >
+              </li>
+              <li>
+                <a href="introduction#about-this-guide">About This Guide</a>
+              </li>
+              <li>
+                <a href="introduction#contact-information"
+                  >Contact Information</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- 3. About Persona 4 Golden -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">About Persona 4 Golden</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li>
+                <a href="about-persona-4-golden#what-is-persona"
+                  >What Is Persona?</a
+                >
+              </li>
+              <li>
+                <a href="about-persona-4-golden#persona-3-vs-persona-4"
+                  >Persona 3 vs. Persona 4</a
+                >
+              </li>
+              <li>
+                <a href="about-persona-4-golden#persona-4-vs-persona-4-golden"
+                  >Persona 4 vs. Persona 4 Golden</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- 4. Gameplay Mechanics -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Gameplay Mechanics</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="gameplay-mechanics#controls">Controls</a></li>
+              <li>
+                <a href="gameplay-mechanics#field-mechanics">Field Mechanics</a>
+              </li>
+              <li>
+                <a href="gameplay-mechanics#calendar-system">Calendar System</a>
+              </li>
+              <li><a href="gameplay-mechanics#social-link">Social Link</a></li>
+              <li>
+                <a href="gameplay-mechanics#status-parameters"
+                  >Status Parameters</a
+                >
+              </li>
+              <li><a href="gameplay-mechanics#velvet-room">Velvet Room</a></li>
+              <li>
+                <a href="gameplay-mechanics#battle-mechanics"
+                  >Battle Mechanics</a
+                >
+              </li>
+              <li>
+                <a href="gameplay-mechanics#shuffle-time">Shuffle TIme</a>
+              </li>
+              <li>
+                <a href="gameplay-mechanics#status-ailments">Status Ailments</a>
+              </li>
+              <li>
+                <a href="gameplay-mechanics#new-game-plus">New Game Plus</a>
+              </li>
+              <li><a href="gameplay-mechanics#tv-channels">TV Channels</a></li>
+            </ul>
+          </li>
+
+          <!-- 5. Walkthrough -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Walkthrough</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li>
+                <a href="walkthrough#walkthrough-objectives"
+                  >Walkthrough Objectives</a
+                >
+              </li>
+              <li><a href="walkthrough#walkthrough-faq">Walkthrough FAQ</a></li>
+              <li><a href="walkthrough#important-notes">Important Notes</a></li>
+              <li>
+                <a href="walkthrough#current-problems">Current Problems</a>
+              </li>
+              <li><a href="walkthrough#april">April</a></li>
+              <li><a href="walkthrough#may">May</a></li>
+              <li><a href="walkthrough#june">June</a></li>
+              <li><a href="walkthrough#july">July</a></li>
+              <li><a href="walkthrough#august">August</a></li>
+              <li><a href="walkthrough#september">September</a></li>
+              <li><a href="walkthrough#october">October</a></li>
+              <li><a href="walkthrough#november">November</a></li>
+              <li><a href="walkthrough#december">December</a></li>
+              <li><a href="walkthrough#january">January</a></li>
+              <li><a href="walkthrough#february">February</a></li>
+              <li><a href="walkthrough#march">March</a></li>
+              <li>
+                <a href="walkthrough#new-game-plus-walkthrough"
+                  >New Game Plus Walkthrough</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- 6. Dungeons -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Dungeons</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li>
+                <a href="dungeons#twisted-shopping-district"
+                  >Twisted Shopping District</a
+                >
+              </li>
+              <li><a href="dungeons#yukikos-castle">Yukiko's Castle</a></li>
+              <li><a href="dungeons#steamy-bathhouse">Steamy Bathhouse</a></li>
+              <li>
+                <a href="dungeons#marukyu-striptease">Marukyu Striptease</a>
+              </li>
+              <li><a href="dungeons#void-quest">Void Quest</a></li>
+              <li>
+                <a href="dungeons#secret-laboratory">Secret Laboratory</a>
+              </li>
+              <li><a href="dungeons#heaven">Heaven</a></li>
+              <li><a href="dungeons#magatsu-inaba">Magatsu Inaba</a></li>
+              <li><a href="dungeons#hollow-forest">Hollow Forest</a></li>
+              <li><a href="dungeons#yomotsu-hirasaka">Yomotsu Hirasaka</a></li>
+              <li><a href="dungeons#extra-bosses">Extra Bosses</a></li>
+            </ul>
+          </li>
+
+          <!-- 7. Persona Compendium -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Persona Compendium</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="persona-compendium#formula">Formula</a></li>
+              <li>
+                <a href="persona-compendium#fusion-forecast">Fusion Forecast</a>
+              </li>
+              <li><a href="persona-compendium#fool">Fool</a></li>
+              <li><a href="persona-compendium#magician">Magician</a></li>
+              <li><a href="persona-compendium#priestess">Priestess</a></li>
+              <li><a href="persona-compendium#empress">Empress</a></li>
+              <li><a href="persona-compendium#emperor">Emperor</a></li>
+              <li><a href="persona-compendium#hierophant">Hierophant</a></li>
+              <li><a href="persona-compendium#lovers">Lovers</a></li>
+              <li><a href="persona-compendium#chariot">Chariot</a></li>
+              <li><a href="persona-compendium#justice">Justice</a></li>
+              <li><a href="persona-compendium#hermit">Hermit</a></li>
+              <li><a href="persona-compendium#fortune">Fortune</a></li>
+              <li><a href="persona-compendium#strength">Strength</a></li>
+              <li><a href="persona-compendium#hanged-man">Hanged Man</a></li>
+              <li><a href="persona-compendium#death">Death</a></li>
+              <li><a href="persona-compendium#temperance">Temperance</a></li>
+              <li><a href="persona-compendium#devil">Devil</a></li>
+              <li><a href="persona-compendium#tower">Tower</a></li>
+              <li><a href="persona-compendium#star">Star</a></li>
+              <li class="show-more-btn">
+                <a
+                  href="javascript:void(0)"
+                  onclick="toggleShowMore('show1', this)"
+                  ><i>show more...</i></a
+                >
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#moon">Moon</a>
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#sun">Sun</a>
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#judgement">Judgement</a>
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#jester">Jester</a>
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#aeon">Aeon</a>
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#world">World</a>
+              </li>
+              <li class="show1" style="display: none">
+                <a href="persona-compendium#special-fusions">Special Fusions</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 8. Social Links -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Social Links</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li>
+                <a href="social-links#investigation-team-fool"
+                  >Investigation Team/Fool</a
+                >
+              </li>
+              <li>
+                <a href="social-links#yosuke-hanamura-magician"
+                  >Yosuke Hanamura/Magician</a
+                >
+              </li>
+              <li>
+                <a href="social-links#yukiko-amagi-priestess"
+                  >Yukiko Amagi/Priestess</a
+                >
+              </li>
+              <li>
+                <a href="social-links#margaret-empress">Margaret/Empress</a>
+              </li>
+              <li>
+                <a href="social-links#kanji-tatsumi-emperor"
+                  >Kanji Tatsumi/Emperor</a
+                >
+              </li>
+              <li>
+                <a href="social-links#ryotaro-dojima-hierophant"
+                  >Ryotaro Dojima/Hierophant</a
+                >
+              </li>
+              <li>
+                <a href="social-links#rise-kujikawa-lovers"
+                  >Rise Kujikawa/Lovers</a
+                >
+              </li>
+              <li>
+                <a href="social-links#chie-satonaka-chariot"
+                  >Chie Satonaka/Chariot</a
+                >
+              </li>
+              <li>
+                <a href="social-links#nanako-dojima-justice"
+                  >Nanako Dojima/Justice</a
+                >
+              </li>
+              <li><a href="social-links#fox-hermit">Fox/Hermit</a></li>
+              <li>
+                <a href="social-links#naoto-shirogane-fortune"
+                  >Naoto Shirogane/Fortune</a
+                >
+              </li>
+              <li>
+                <a href="social-links#fellow-athletes-strength"
+                  >Fellow Athletes/Strength</a
+                >
+              </li>
+              <li>
+                <a href="social-links#sakis-brother-hanged-man"
+                  >Saki's Brother/Hanged Man</a
+                >
+              </li>
+              <li><a href="social-links#old-lady-death">Old Lady/Death</a></li>
+              <li>
+                <a href="social-links#young-mother-temperance"
+                  >Young Mother/Temperance</a
+                >
+              </li>
+              <li><a href="social-links#nurse-devil">Nurse/Devil</a></li>
+              <li>
+                <a href="social-links#tutored-student-tower"
+                  >Tutored Student/Tower</a
+                >
+              </li>
+              <li><a href="social-links#teddie-star">Teddie/Star</a></li>
+              <li>
+                <a href="social-links#ai-ebihara-moon">Ai Ebihara/Moon</a>
+              </li>
+              <li>
+                <a href="social-links#yumi-ozawa-and-ayane-matsunaga-sun"
+                  >Yumi Ozawa and Ayane Matsunaga/Sun</a
+                >
+              </li>
+              <li class="show-more-btn">
+                <a
+                  href="javascript:void(0)"
+                  onclick="toggleShowMore('show2', this)"
+                  ><i>show more...</i></a
+                >
+              </li>
+              <li class="show2" style="display: none">
+                <a href="social-links#seekers-of-truth-judgement"
+                  >Seekers of Truth/Judgement</a
+                >
+              </li>
+              <li class="show2" style="display: none">
+                <a href="social-links#tohru-adachi-jester"
+                  >Tohru Adachi/Jester</a
+                >
+              </li>
+              <li class="show2" style="display: none">
+                <a href="social-links#marie-aeon">Marie/Aeon</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 9. Activities -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Activities</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="activities#quests">Quests</a></li>
+              <li><a href="activities#bug-catching">Bug Catching</a></li>
+              <li><a href="activities#fishing">Fishing</a></li>
+              <li><a href="activities#gardening">Gardening</a></li>
+              <li><a href="activities#cooking">Cooking</a></li>
+              <li><a href="activities#books">Books</a></li>
+              <li>
+                <a href="activities#beach-hot-springs">Beach/Hot Springs</a>
+              </li>
+              <li><a href="activities#costume-shop">Costume Shop</a></li>
+              <li><a href="activities#tv-shopping">TV Shopping</a></li>
+              <li><a href="activities#daidara-list">Daidara List</a></li>
+              <li><a href="activities#shiroku-store">Shiroku Store</a></li>
+              <li><a href="activities#shiroku-pub">Shiroku Pub</a></li>
+              <li><a href="activities#part-time-jobs">Part Time Jobs</a></li>
+              <li>
+                <a href="activities#artisan-apprentice">Artisan Apprentice</a>
+              </li>
+              <li><a href="activities#lady-in-white">Lady in White</a></li>
+              <li>
+                <a href="activities#okina-movie-theater">Okina Movie Theater</a>
+              </li>
+              <li><a href="activities#chagall-cafe">Chagall Cafe</a></li>
+              <li><a href="activities#crane-machine">Crane Machine</a></li>
+              <li><a href="activities#refrigerator">Refrigerator</a></li>
+              <li><a href="activities#models">Models</a></li>
+              <li class="show-more-btn">
+                <a
+                  href="javascript:void(0)"
+                  onclick="toggleShowMore('show3', this)"
+                  ><i>show more...</i></a
+                >
+              </li>
+              <li class="show3" style="display: none">
+                <a href="activities#miracle-quiz">Miracle Quiz</a>
+              </li>
+              <li class="show3" style="display: none">
+                <a href="activities#trophies">Trophies</a>
+              </li>
+              <li class="show3" style="display: none">
+                <a href="activities#other-activities">Other Activities</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 10. Skill List -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Skill List</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="skill-list#all-skills">All Skills</a></li>
+              <li><a href="skill-list#skill-cards">Skill Cards</a></li>
+              <li><a href="skill-list#party-members">Party Members</a></li>
+            </ul>
+          </li>
+
+          <!-- 11. Item List -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Item List</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="item-list#weapons">Weapons</a></li>
+              <li><a href="item-list#armor">Armor</a></li>
+              <li><a href="item-list#accessories">Accessories</a></li>
+              <li><a href="item-list#costume-list">Costume List</a></li>
+              <li>
+                <a href="item-list#consumable-quest-items"
+                  >Consumable/Quest Items</a
+                >
+              </li>
+              <li><a href="item-list#materials">Materials</a></li>
+              <li><a href="item-list#book-list">Book List</a></li>
+              <li><a href="item-list#fish-list">Fish List</a></li>
+              <li><a href="item-list#gardening-items">Gardening Items</a></li>
+              <li><a href="item-list#bug-list">Bug List</a></li>
+              <li><a href="item-list#gem-list">Gem List</a></li>
+              <li><a href="item-list#key-items">Key Items</a></li>
+            </ul>
+          </li>
+
+          <!-- 12. Tips And Tricks -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Tips And Tricks</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li>
+                <a href="tips-and-tricks#golden-shadow-grinding"
+                  >Golden Shadow Grinding</a
+                >
+              </li>
+              <li><a href="tips-and-tricks#best-personas">Best Personas</a></li>
+              <li>
+                <a href="tips-and-tricks#hardcore-risette-fan"
+                  >Hardcore Risette Fan</a
+                >
+              </li>
+              <li>
+                <a href="tips-and-tricks#victory-cry-cheat"
+                  >Victory Cry Cheat</a
+                >
+              </li>
+              <li><a href="tips-and-tricks#resources">Resources</a></li>
+            </ul>
+          </li>
+
+          <!-- 13. Conclusion -->
+          <li>
+            <div class="toc-parent">
+              <span class="font-pop">Conclusion</span
+              ><span class="toc-icon">▼</span>
+            </div>
+            <ul class="toc-child-list">
+              <li><a href="conclusion#special-thanks">Special Thanks</a></li>
+              <li><a href="conclusion#final-remarks">Final Remarks</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Left Column: Walkthrough Content -->
+      <div class="content-column">
+        <section>
+          <div class="month-header font-pop">
+            <h2>APRIL</h2>
+            <span>THE BEGINNING</span>
+          </div>
+
+          <!-- Daily Entry: 4/11 -->
+          <article class="daily-entry cutout-box p4g-shadow">
+            <div class="entry-date-badge font-pop">4/11 (MONDAY)</div>
+
+            <div class="entry-content font-read">
+              <p>
+                Welcome to Inaba. Today is mostly composed of cutscenes and
+                introductions. Sit back and enjoy the ride.
+              </p>
+              <ul>
+                <li>Arrive at Yasoinaba Station.</li>
+                <li>Meet Dojima and Nanako.</li>
+                <li>
+                  Stop by the Moelle gas station. (This interaction is very
+                  important for the true ending!).
+                </li>
+                <li>Have dinner at the Dojima Residence.</li>
+              </ul>
+            </div>
+
+            <!-- Velvet Blue Callout -->
+            <div class="callout-blue p4g-shadow-sm">
+              <div class="icon" style="color: var(--primary); padding-top: 4px">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-pop">NIGHTTIME EVENT</h4>
+                <p class="font-read">
+                  When watching TV in your room, you will experience the
+                  Midnight Channel for the first time. There are no crucial
+                  dialogue choices here, but it triggers the start of the main
+                  plot.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <!-- Daily Entry: 4/12 -->
+          <article class="daily-entry cutout-box p4g-shadow">
+            <div class="entry-date-badge font-pop">4/12 (TUESDAY)</div>
+
+            <div class="entry-content font-read">
+              <p>
+                Your first day at Yasogami High School. You'll meet Yosuke
+                Hanamura and Chie Satonaka. Pay attention during class.
+              </p>
+
+              <!-- Junes Orange Callout Box -->
+              <div class="callout-orange p4g-shadow-sm">
+                <div
+                  class="flex items-center gap-2"
+                  style="margin-bottom: 0.5rem"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--secondary)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
+                    />
+                    <path d="M12 9v4" />
+                    <path d="M12 17h.01" />
+                  </svg>
+                  <h3 class="font-pop">POP QUIZ!</h3>
+                </div>
+                <p
+                  class="font-read"
+                  style="font-weight: bold; margin-bottom: 0.5rem"
+                >
+                  Teacher: "What is the year before 1 AD called?"
+                </p>
+                <div class="answer-box font-pop">ANSWER: 1 BC</div>
+                <p
+                  class="font-read"
+                  style="
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    margin-top: 0.5rem;
+                  "
+                >
+                  + Knowledge Up
+                </p>
+              </div>
+
+              <p>
+                After school, follow the story beats into town. You will unlock
+                the town map. Head back to the Dojima residence when finished.
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-- Right Column: Sidebar -->
+      <aside class="sidebar">
+        <!-- Quick Jump Box -->
+        <div class="widget widget-yellow p4g-shadow">
+          <h3 class="widget-title font-pop" style="color: var(--secondary)">
+            QUICK JUMP
+          </h3>
+          <nav class="font-pop">
+            <a href="#" class="jump-btn active p4g-shadow-sm hover-invert"
+              >APRIL WALKTHROUGH</a
+            >
+            <a href="#" class="jump-btn p4g-shadow-sm hover-invert"
+              >MAY WALKTHROUGH</a
+            >
+            <a href="#" class="jump-btn p4g-shadow-sm hover-invert"
+              >JUNE WALKTHROUGH</a
+            >
+            <a href="#" class="jump-btn p4g-shadow-sm hover-invert"
+              >JULY WALKTHROUGH</a
+            >
+            <a href="#" class="jump-btn p4g-shadow-sm hover-invert"
+              >AUGUST WALKTHROUGH</a
+            >
+          </nav>
+        </div>
+
+        <!-- Current Objective Teaser -->
+        <div class="widget widget-black p4g-shadow">
+          <div class="corner-stripes bg-stripes"></div>
+          <div style="position: relative; z-index: 10">
+            <h3
+              class="font-pop"
+              style="
+                color: var(--primary);
+                font-size: 1.5rem;
+                margin-bottom: 0.75rem;
+              "
+            >
+              CURRENT OBJECTIVE
+            </h3>
+            <p
+              class="font-read"
+              style="font-size: 0.875rem; margin-bottom: 1rem"
+            >
+              Progress through the opening prologue. Save your game at the
+              calendar in your room.
+            </p>
+            <button
+              class="font-pop p4g-shadow-sm hover-invert"
+              style="
+                width: 100%;
+                background: var(--accent-orange);
+                color: var(--secondary);
+                border: 2px solid var(--secondary);
+                padding: 0.5rem;
+                font-size: 1.25rem;
+                cursor: pointer;
+              "
+            >
+              VIEW FULL DETAILS
+            </button>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script>
+      // ToC Accordion Logic
+      document.querySelectorAll(".toc-parent").forEach((parent) => {
+        parent.addEventListener("click", () => {
+          const childList = parent.nextElementSibling;
+          const icon = parent.querySelector(".toc-icon");
+          if (childList) {
+            childList.classList.toggle("active");
+            icon.classList.toggle("open");
+          }
+        });
+      });
+
+      // Show More Logic for specific ToC categories
+      function toggleShowMore(className, btn) {
+        document
+          .querySelectorAll("." + className)
+          .forEach((el) => (el.style.display = "list-item"));
+        btn.parentElement.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
