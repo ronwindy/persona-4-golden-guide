@@ -1,0 +1,238 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SidebarToC from '../components/SidebarToC.astro';
+
+const copyrightText = "This guide was made and updated by the user Hurricanehaon on GameFAQs as of September 1st, 2024. This guide was made with influence from content by the following individuals on GameFAQs in no particular order: Zoelius, KADFC, RagingTasmanian, Engine-Face, GSSAGE7, wilfreda, yangxu, Friedelinde, returnal, Uruhara, LiquefyDCZ, and Boomerang78. All other content, formatting, and testing of information found in this guide belong to Hurricanehaon. This guide is only allowed to be used or displayed on www.gamefaqs.com. This guide may be used for private use and for public walkthroughs. Replication of this guide, in part or in full, without proper credit given is forbidden. For all express purposes, this guide and all content inside are owned by Hurricanehaon, unless otherwise noted and credited.";
+---
+
+<Layout title="Copyright | Persona 4 Golden Guide">
+  <SidebarToC />
+  
+  <div class="copyright-container">
+    <header class="copyright-header anim-pop">
+      <h1 class="font-pop">LEGAL <span class="highlight">NOTICE</span></h1>
+      <div class="stamp font-pop">CONFIDENTIAL</div>
+    </header>
+
+    <div class="divider bg-stripes"></div>
+
+    <main class="content-box p4g-shadow anim-slide-in">
+      <h2 class="font-pop">COPYRIGHT INFORMATION</h2>
+      <div class="text-content font-read">
+        <p>
+          This guide was made and updated by the user <span class="text-highlight">Hurricanehaon</span> on 
+          <span class="text-highlight secondary">GameFAQs</span> as of <span class="text-highlight">September 1st, 2024</span>. 
+          This guide was made with influence from content by the following individuals on GameFAQs in no particular order: 
+          <span class="contributor">Zoelius</span>, <span class="contributor">KADFC</span>, 
+          <span class="contributor">RagingTasmanian</span>, <span class="contributor">Engine-Face</span>, 
+          <span class="contributor">GSSAGE7</span>, <span class="contributor">wilfreda</span>, 
+          <span class="contributor">yangxu</span>, <span class="contributor">Friedelinde</span>, 
+          <span class="contributor">returnal</span>, <span class="contributor">Uruhara</span>, 
+          <span class="contributor">LiquefyDCZ</span>, and <span class="contributor">Boomerang78</span>.
+        </p>
+        <p>
+          All other content, formatting, and testing of information found in this guide belong to 
+          <span class="text-highlight">Hurricanehaon</span>. This guide is <span class="text-highlight alert">only allowed</span> 
+          to be used or displayed on <span class="text-highlight secondary">www.gamefaqs.com</span>. 
+          This guide may be used for private use and for public walkthroughs. 
+          Replication of this guide, in part or in full, without <span class="text-highlight alert">proper credit</span> 
+          given is <span class="text-highlight alert">forbidden</span>. For all express purposes, this guide and 
+          all content inside are owned by <span class="text-highlight">Hurricanehaon</span>, unless otherwise noted and credited.
+        </p>
+      </div>
+
+      <div class="attribution-grid">
+        <div class="attr-tag font-pop">AUTHOR: Hurricanehaon</div>
+        <div class="attr-tag font-pop">PLATFORM: GameFAQs</div>
+        <div class="attr-tag font-pop">DATE: 2024-09-01</div>
+      </div>
+
+      <div class="warning-tape bg-stripes">
+        <span class="font-pop">DO NOT REDISTRIBUTE WITHOUT PERMISSION</span>
+      </div>
+    </main>
+
+    <div class="decoration-container">
+      <div class="p4-glasses-icon"></div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .copyright-container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Adjust main layout grid to accommodate sidebar on this page */
+  :global(.main-layout) {
+    display: grid !important;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.main-layout) {
+      grid-template-columns: 360px 1fr !important;
+    }
+  }
+
+  .copyright-header {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--primary);
+    border: 6px solid var(--secondary);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    overflow: hidden;
+  }
+
+  .copyright-header h1 {
+    font-size: clamp(2rem, 10vw, 5rem);
+    color: var(--secondary);
+    margin: 0;
+    line-height: 0.9;
+    transform: rotate(-2deg);
+  }
+
+  .copyright-header h1 .highlight {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0 0.5rem;
+    display: inline-block;
+    transform: rotate(4deg);
+  }
+
+  .stamp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 4px double var(--accent-orange);
+    color: var(--accent-orange);
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    transform: rotate(15deg);
+    opacity: 0.8;
+  }
+
+  .content-box {
+    background: var(--bg-white);
+    border: 6px solid var(--secondary);
+    padding: 3rem 2.5rem;
+    margin-top: 3rem;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+  }
+
+  .content-box h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--accent-orange);
+    display: inline-block;
+  }
+
+  .text-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--secondary);
+    font-weight: 600;
+  }
+
+  .text-content p {
+    margin-bottom: 2.5rem;
+  }
+
+  .text-highlight {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0 0.4rem;
+    font-weight: 800;
+    display: inline-block;
+    transform: rotate(-1deg);
+    box-shadow: 3px 3px 0 var(--secondary);
+  }
+
+  .text-highlight.secondary {
+    background: var(--accent-blue);
+    color: var(--primary);
+    transform: rotate(1deg);
+  }
+
+  .text-highlight.alert {
+    background: var(--accent-orange);
+    color: white;
+    transform: rotate(-2deg);
+    box-shadow: 4px 4px 0 var(--secondary);
+  }
+
+  .contributor {
+    color: var(--accent-orange);
+    font-weight: 800;
+    text-decoration: underline wavy var(--secondary) 2px;
+    text-underline-offset: 4px;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+
+  .contributor:hover {
+    transform: scale(1.1) rotate(2deg);
+    color: var(--secondary);
+    background: var(--primary);
+  }
+
+  .attribution-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .attr-tag {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    transform: skewX(-10deg);
+  }
+
+  .warning-tape {
+    margin-top: 4rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 3px solid var(--secondary);
+    transform: rotate(-1deg);
+  }
+
+  .warning-tape span {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.2rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+    display: inline-block;
+  }
+
+  .decoration-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .p4-glasses-icon {
+    width: 100px;
+    height: 40px;
+    background: var(--secondary);
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40"><path d="M10,10 L40,10 L45,15 L55,15 L60,10 L90,10 L95,15 L95,30 L90,35 L60,35 L55,30 L45,30 L40,35 L10,35 L5,30 L5,15 Z M15,15 L35,15 L35,30 L15,30 Z M65,15 L85,15 L85,30 L65,30 Z" /></svg>');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  @media (max-width: 640px) {
+    .content-box {
+      padding: 1.5rem;
+    }
+  }
+</style>
