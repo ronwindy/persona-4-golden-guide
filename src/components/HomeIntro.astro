@@ -337,16 +337,40 @@ import SidebarToC from "./SidebarToC.astro";
       font-size: 3rem;
     }
     .content-column {
-      padding: 0 1rem;
+      padding: 0 0.5rem; /* Even tighter padding */
     }
     .home-hero {
-      padding: 4rem 1.5rem;
+      padding: 4rem 1rem;
     }
     .format-changes {
-      padding: 2.5rem 1.5rem;
+      padding: 2.5rem 1rem;
     }
     .section-title {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+    }
+    .intro-text {
+      font-size: 1.15rem;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .guide-title {
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 0 var(--primary), 4px 4px 0 var(--accent-orange);
+    }
+    .guide-badge {
+      font-size: 1.2rem;
+      top: 1rem;
+      left: 1rem;
+    }
+    .version {
+      font-size: 1.8rem;
+    }
+    .author-tag {
+        font-size: 1.2rem;
+    }
+    .warning-box h2 {
+        font-size: 2rem;
     }
   }
 </style>

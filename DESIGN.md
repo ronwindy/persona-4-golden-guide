@@ -39,3 +39,12 @@ Avoid standard rounded corners (`border-radius`). Instead, use CSS `clip-path` t
 * **Main Content Column:** Keep the actual guide text contained in a clean, white-ish column with dark text. The crazy P4G styling should frame the content, not obscure it.
 * **Callout Boxes:** For things like "Exam Answers" or "Boss Weaknesses", use the Junes Orange or Midnight Channel Yellow background with the thick black border to draw the eye immediately.
 * **Date & Weather Trackers:** P4G is heavily calendar-based. Design a persistent, sticky widget in the corner or top bar that mimics the game's in-game calendar (showing the current Date, Day of the Week, and Weather icon) as the user scrolls through a specific day's guide.
+
+## 6. Mobile-First Responsiveness
+The "Neo-Brutalist" P4G aesthetic must remain functional and readable on all screens. To prevent future layout breakages, follow these rules:
+
+* **Fluid Containers:** NEVER use fixed pixel widths (e.g., `width: 360px`) for major layout components without a matching mobile-first override. Use `width: 100%` as the default and apply desktop constraints within `(min-width: 1024px)` media queries.
+* **Tiered Typography:** Headlines must scale down aggressively for mobile. Use `clamp()` for fluid scaling or tiered media queries (at `768px`, `480px`, and `380px`) to ensure massive "pop" fonts fit within narrow viewports.
+* **Sticky Element Docking:** On mobile, persistent widgets (trackers, menus) must be moved to non-obscuring positions (e.g., `position: absolute` or docked to the header) to avoid overlapping content.
+* **Balanced Shadows:** Reduce `box-shadow` offsets on mobile (e.g., from `8px` to `4px`) to prevent UI elements from feeling overly cramped or causing horizontal scrollbars.
+* **Touch-Safe Hitboxes:** Ensure all interactive elements (ToC links, buttons) have a minimum tap target size of `44px` while maintaining their sharp geometric styling.
