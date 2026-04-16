@@ -50,6 +50,11 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
 
     <!-- Simplified Header -->
     <header class="header bg-halftone p4g-shadow">
+      <div class="header-decorations">
+        <span class="shape-1"></span>
+        <span class="shape-2"></span>
+        <span class="shape-3"></span>
+      </div>
       <div class="header-banner-img"></div>
       <div class="bg-scanlines"></div>
       <div class="header-container">
@@ -224,6 +229,13 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
       var(--secondary) 10px,
       var(--secondary) 20px
     );
+    background-size: 28px 28px;
+    animation: scrollStripes 1s linear infinite;
+  }
+
+  @keyframes scrollStripes {
+    from { background-position: 0 0; }
+    to { background-position: 28px 0; }
   }
 
   /* Layout Utilities */
@@ -391,12 +403,86 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
     position: absolute;
     inset: 0;
     background-image: url("/p4g-header-banner.jpg");
-    background-size: 50% auto;
+    background-size: cover; /* Use cover for better mobile fill */
     background-repeat: no-repeat;
-    background-position: right top;
-    opacity: 0.7;
+    background-position: center bottom; /* Anchor to bottom for better character visibility */
+    opacity: 0.6; /* Slightly lower on mobile for better text contrast */
     pointer-events: none;
-    z-index: 5; /* Above halftone, below scanlines and content */
+    z-index: 5; 
+  }
+
+  /* Desktop overrides for banner */
+  @media (min-width: 769px) {
+    .header-banner-img {
+      background-size: 50% auto;
+      background-position: right top;
+      opacity: 0.7;
+    }
+  }
+
+  /* Floating Pop-Art Decorations */
+  .header-decorations {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .header-decorations span {
+    position: absolute;
+    opacity: 0.2;
+    background: var(--accent-orange);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  }
+
+  .shape-1 {
+    width: 200px;
+    height: 40px;
+    top: 20%;
+    left: 10%;
+    animation: float 10s ease-in-out infinite;
+  }
+
+  .shape-2 {
+    width: 150px;
+    height: 30px;
+    bottom: 30%;
+    right: 30%;
+    background: var(--accent-blue) !important;
+    animation: float 15s ease-in-out infinite reverse;
+  }
+
+  .shape-3 {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 40%;
+    opacity: 0.1 !important;
+    animation: float 12s ease-in-out infinite 2s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(20px, -20px) rotate(2deg); }
+  }
+
+  .bg-halftone {
+    background-color: var(--primary);
+    background-image: radial-gradient(var(--secondary) 1px, transparent 1px);
+    background-size: 12px 12px;
+    animation: halftonePulse 8s ease-in-out infinite;
+  }
+
+  @keyframes halftonePulse {
+    0%, 100% { background-size: 12px 12px; }
+    50% { background-size: 13px 13px; }
+  }
+
+  @keyframes manga-jitter { /* Redundant but keeping for logic safety check */
+    0% { transform: translate(0, 0) skewX(-5deg); }
+    50% { transform: translate(-10px, 2px) skewX(-5deg); }
+    100% { transform: translate(10px, -2px) skewX(-5deg); }
   }
 
   .header-container {
@@ -423,33 +509,33 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
 
   .header-logo {
     display: block;
-    height: 70px !important;
+    height: 110px !important; /* Increased for better presence */
     width: auto !important;
-    max-width: 300px;
-    filter: drop-shadow(4px 4px 0px var(--secondary));
+    max-width: 400px;
+    filter: drop-shadow(6px 6px 0px var(--secondary)); /* Thicker shadow for larger logo */
     object-fit: contain;
   }
 
   .header-title {
     font-family: "New Amsterdam", sans-serif;
-    font-size: 3.5rem; /* New Amsterdam is quite condensed, so using a larger size */
+    font-size: 3.5rem;
     font-weight: 400;
     color: #fff;
-    line-height: 1;
+    line-height: 1.1; /* Improved line-height to prevent overlap */
     text-transform: uppercase;
     font-style: italic;
-    /* Multi-directional shadow to simulate a thick "Border" like the logo */
     text-shadow:
       -2px -2px 0 var(--secondary),
       2px -2px 0 var(--secondary),
       -2px 2px 0 var(--secondary),
       2px 2px 0 var(--secondary),
       6px 6px 0 var(--secondary),
-      /* Main heavy drop shadow */ 8px 8px 0 var(--accent-orange); /* Outer accent shadow */
+      8px 8px 0 var(--accent-orange);
     margin: 0;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
+    justify-content: flex-start; /* Default for desktop */
   }
 
   /* Continuous Jitter Animation */
@@ -559,16 +645,28 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
     .header-container {
       flex-direction: column;
       text-align: center;
-      gap: 0.75rem;
-      padding: 1rem;
+      gap: 1.25rem; /* Larger gap to prevent overlaps */
+      padding: 1.5rem 1rem;
     }
 
     .header-logo {
-      height: 50px !important;
+      height: 75px !important; /* Increased for mobile visibility */
+      margin: 0 auto;
     }
 
     .header-title {
-      font-size: 1.5rem;
+      font-size: 1.8rem; /* Scaled down for mobile */
+      justify-content: center; /* Center text on mobile */
+      gap: 0.25rem;
+    }
+
+    .header-subtitle {
+      font-size: 0.85rem;
+      padding: 0.2rem 0.5rem;
+    }
+
+    .shape-1, .shape-2, .shape-3 {
+        display: none; /* Hide floating shapes on phone to reduce clutter */
     }
   }
 
