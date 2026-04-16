@@ -1,0 +1,353 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SidebarToC from '../components/SidebarToC.astro';
+
+const contactEmail = "Hurricanehaon@gmail.com";
+const twitterLink = "https://twitter.com/hurricanehaon";
+const blogLink = "https://hurricanehaon.wordpress.com";
+---
+
+<Layout title="Contact Information | Persona 4 Golden Guide">
+  <SidebarToC />
+  
+  <div class="contact-container">
+    <header class="contact-header anim-pop">
+      <h1 class="font-pop">CONTACT <span class="highlight">INFO</span></h1>
+      <div class="subtitle font-pop">GET IN TOUCH WITH THE TEAM</div>
+    </header>
+
+    <div class="divider bg-stripes"></div>
+
+    <main class="content-box p4g-shadow anim-slide-in">
+      <h2 class="font-pop">QUESTIONS OR CONCERNS?</h2>
+      
+      <div class="text-content font-read">
+        <p>
+          If you have any questions or concerns about this guide, there are several ways you can reach out. 
+          I'm always looking to improve the guide and help fellow players achieve their 
+          <span class="text-highlight">True Golden</span> experience!
+        </p>
+
+        <div class="contact-methods">
+          <!-- GameFAQs -->
+          <div class="method-card p4g-shadow">
+            <div class="method-icon bg-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="method-info">
+              <h3 class="font-pop">GAMEFAQS</h3>
+              <p>Send me a private message on <span class="text-highlight">GameFAQs</span>. It's the best place for guide-specific feedback.</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="method-card p4g-shadow">
+            <div class="method-icon bg-accent-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="method-info">
+              <h3 class="font-pop">EMAIL</h3>
+              <a href={`mailto:${contactEmail}`} class="contact-link font-pop">{contactEmail}</a>
+            </div>
+          </div>
+
+          <!-- Twitter -->
+          <div class="method-card p4g-shadow">
+            <div class="method-icon bg-accent-orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="method-info">
+              <h3 class="font-pop">TWITTER</h3>
+              <a href={twitterLink} target="_blank" rel="noopener noreferrer" class="contact-link font-pop">@hurricanehaon</a>
+            </div>
+          </div>
+
+          <!-- WordPress -->
+          <div class="method-card p4g-shadow">
+            <div class="method-icon bg-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="2" y1="12" x2="22" y2="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="method-info">
+              <h3 class="font-pop">BLOG & LINKS</h3>
+              <a href={blogLink} target="_blank" rel="noopener noreferrer" class="contact-link font-pop">hurricanehaon.wordpress.com</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="closing">
+          Reach out anytime! I'm happy to chat about Personas, Social Links, or just the weather in Inaba.
+        </p>
+      </div>
+
+      <div class="status-footer bg-stripes">
+        <span class="font-pop">SIGNAL STATUS: CLEAR & STABLE</span>
+      </div>
+    </main>
+
+    <div class="decoration-container">
+      <div class="tv-static-effect"></div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .contact-container {
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Adjust main layout grid to accommodate sidebar on this page */
+  :global(.main-layout) {
+    display: grid !important;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.main-layout) {
+      grid-template-columns: 360px 1fr !important;
+    }
+  }
+
+  .contact-header {
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    background: var(--primary);
+    border: 6px solid var(--secondary);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    overflow: hidden;
+  }
+
+  .contact-header h1 {
+    font-size: clamp(2.5rem, 10vw, 6rem);
+    color: var(--secondary);
+    margin: 0;
+    line-height: 0.85;
+    transform: rotate(-1.5deg);
+  }
+
+  .contact-header h1 .highlight {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0 0.8rem;
+    display: inline-block;
+    transform: rotate(3deg);
+    box-shadow: 5px 5px 0 var(--accent-orange);
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: 0.2rem 1rem;
+  }
+
+  .content-box {
+    background: var(--bg-white);
+    border: 6px solid var(--secondary);
+    padding: 3.5rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+  }
+
+  .content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--primary),
+      var(--primary) 20px,
+      var(--secondary) 20px,
+      var(--secondary) 40px
+    );
+  }
+
+  .content-box h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .content-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 110%;
+    height: 15px;
+    background: var(--primary);
+    z-index: -1;
+    transform: rotate(-1deg);
+  }
+
+  .text-content {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: var(--secondary);
+    font-weight: 500;
+  }
+
+  .contact-methods {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .contact-methods {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .method-card {
+    background: var(--bg-white);
+    border: 4px solid var(--secondary);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .method-card:hover {
+    transform: scale(1.03) rotate(1deg);
+    background: var(--primary);
+  }
+
+  .method-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border: 3px solid var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+  }
+
+  .method-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .method-icon.bg-primary { background: var(--primary); }
+  .method-icon.bg-accent-blue { background: var(--accent-blue); color: white; }
+  .method-icon.bg-accent-orange { background: var(--accent-orange); color: white; }
+  .method-icon.bg-secondary { background: var(--secondary); color: var(--primary); }
+
+  .method-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .method-info p {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .contact-link {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
+    margin-top: 0.5rem;
+    word-break: break-all;
+  }
+
+  .contact-link:hover {
+    border-color: var(--accent-orange);
+    color: var(--accent-orange);
+  }
+
+  .text-highlight {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0 0.5rem;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: 3px 3px 0 var(--secondary);
+  }
+
+  .closing {
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    color: var(--secondary);
+    margin-top: 4rem !important;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .status-footer {
+    margin-top: 3rem;
+    padding: 0.75rem;
+    text-align: right;
+    border: 4px solid var(--secondary);
+  }
+
+  .status-footer span {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.3rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  .decoration-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tv-static-effect {
+    width: 200px;
+    height: 6px;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 10px,
+      var(--secondary) 10px,
+      var(--secondary) 20px
+    );
+    opacity: 0.3;
+  }
+
+  @media (max-width: 640px) {
+    .content-box {
+      padding: 2rem 1.5rem;
+    }
+    .contact-header {
+      padding: 1.5rem;
+    }
+  }
+</style>
