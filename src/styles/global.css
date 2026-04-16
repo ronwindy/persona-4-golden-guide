@@ -56,7 +56,7 @@ body.menu-open {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/background.jpeg");
+  background-image: url("/persona-4-golden-guide/background.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
