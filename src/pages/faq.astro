@@ -1,0 +1,359 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SidebarToC from '../components/SidebarToC.astro';
+
+const faqs = [
+  {
+    id: "purpose",
+    q: "What is the purpose of this guide?",
+    answers: [
+      "This guide was made with the intent to compile as much info on <span class=\"text-highlight\">Persona 4 Golden</span> into one source.",
+      "The two main features of this guide are a <span class=\"text-highlight secondary\">day-by-day walkthrough</span>, and sections detailing different aspects of the game such as a bestiary, info on Social Links, and a fusion guide.",
+      "While this guide is still a work in progress, the walkthrough and the most important sections of info have been completed, and should be able to answer <span class=\"text-highlight tertiary\">99% of any questions</span> you may have about Persona 4 Golden."
+    ]
+  },
+  {
+    id: "coverage",
+    q: "What does the walkthrough cover?",
+    answers: [
+      "The main goal of the walkthrough is to experience as much content of Persona 4 Golden as possible. There are a few aspects of this game that are only accessible in <span class=\"text-highlight tertiary\">New Game Plus</span>, so the walkthrough uses two playthroughs to experience everything possible.",
+      "The things that are locked until New Game Plus is a new Persona Fusion and the <span class=\"text-highlight secondary\">Secret Boss</span>. There are also some Social Links that have two routes (and one that technically has four routes), which requires a second playthrough to experience.",
+      "If these aren't that important to you, and you would prefer to only have <span class=\"text-highlight\">one playthrough</span>, you can use the guide less as a day-by-day walkthrough and more as a passing guide and alter things however you need to obtain your desired experience."
+    ]
+  },
+  {
+    id: "original-p4",
+    q: "Can I use this guide with the original Persona 4?",
+    answers: [
+      "Maybe? This guide was made specifically for Persona 4 Golden, but many of the mechanics of this game are also present in the original.",
+      "Most stuff in the walkthrough should translate to the original, however be aware that there are a lot of events, mechanics, and items that are <span class=\"text-highlight\">exclusive to Golden</span>.",
+      "As far as the other sections of the guide, only some info is relevant to Persona 4 as a lot of things have been <span class=\"text-highlight secondary\">changed for Golden</span>."
+    ]
+  },
+  {
+    id: "accuracy",
+    q: "How accurate is this guide?",
+    answers: [
+      "The walkthrough was created using a <span class=\"text-highlight tertiary\">test playthrough</span> to ensure accuracy. However, there are some RNG elements in this game that can cause minor deviations to the walkthrough.",
+      "Because of this, I <span class=\"text-highlight secondary\">HIGHLY recommend to save often</span> and in different save slots. Expect to make mistakes, and to have to reload at some point.",
+      "Even with my extensive knowledge of this game, I had to reload multiple times during my test playthrough. For the other sections of this guide, most of the info has been checked but not all of it. There may be some small details that aren't 100% accurate, but there should be no serious errors anywhere."
+    ]
+  },
+  {
+    id: "spoilers",
+    q: "Does this guide contain spoilers?",
+    answers: [
+      "This guide contains gameplay and minor story spoilers. The second half of this guide also has the <span class=\"text-highlight tertiary\">identity of the main villain</span> revealed.",
+      "While you won't see this in the walkthrough until their identity is revealed, you may accidently uncover their identity if you explore the info for the last few dungeons before you actually get there.",
+      "So as a precaution, <span class=\"text-highlight secondary\">don't look at the info for the last three dungeons</span> of the game. You have been warned."
+    ]
+  },
+  {
+    id: "behind",
+    q: "I've fallen behind on the walkthrough. How can I catch up?",
+    answers: [
+      "If possible, reload an earlier save to fix the mistake. If you don't have the save you need, then you can continue on with the guide and move things around as needed to catch up.",
+      "Prioritize <span class=\"text-highlight\">Social Links</span> and <span class=\"text-highlight tertiary\">Status Parameters</span> whenever possible. There is some leeway on the guide, however falling behind may result in missing a smaller objective in the guide such as reading all books."
+    ]
+  },
+  {
+    id: "contact",
+    q: "I have a question or have spotted an error or typo. How can I contact you?",
+    answers: [
+      "Either send me a message on <span class=\"text-highlight secondary\">GameFAQs</span> or an email at <span class=\"text-highlight\">Hurricanehaon@gmail.com</span>.",
+      "I try to answer all questions to the best of my ability."
+    ]
+  },
+  {
+    id: "support",
+    q: "How can I support you?",
+    answers: [
+      "I am pretty surprised that I have received this question. Please go support the other GameFAQs users that this guide was based off of.",
+      "They are listed under the <span class=\"text-highlight\">Copyright and Special Thanks</span> sections and are the reason this guide exists.",
+      "If you still want to support me for some reason, you can follow me on both Twitter and YouTube."
+    ]
+  }
+];
+---
+
+<Layout title="FAQ | Persona 4 Golden Guide">
+  <SidebarToC />
+  
+  <div class="faq-container">
+    <header class="faq-header anim-pop">
+      <div class="header-content">
+        <h1 class="font-pop">GUIDE <span class="highlight">F.A.Q.</span></h1>
+        <p class="intro-text font-read">
+          Common questions about the 100% True Golden Walkthrough. 
+          For gameplay-specific questions, check the 
+          <a href="walkthrough#walkthrough-faq" class="inline-link">Walkthrough FAQ</a>.
+        </p>
+      </div>
+      <div class="header-decoration bg-stripes"></div>
+    </header>
+
+    <div class="faq-list">
+      {faqs.map((faq, index) => (
+        <article class={`faq-item anim-slide-in stagger-${(index % 4) + 1} p4g-shadow`}>
+          <div class="faq-q-row">
+            <div class="indicator q font-pop">Q</div>
+            <h2 class="font-pop">{faq.q}</h2>
+          </div>
+          <div class="faq-a-row">
+            <div class="indicator a font-pop">A</div>
+            <div class="a-content font-read">
+              {faq.answers.map(text => (
+                <p set:html={text}></p>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <footer class="faq-footer anim-pop">
+      <div class="footer-card p4g-shadow">
+        <h3 class="font-pop">STILL HAVE QUESTIONS?</h3>
+        <p class="font-read">Feel free to message me on GameFAQs or email me at <span class="highlight-alt">Hurricanehaon@gmail.com</span></p>
+      </div>
+    </footer>
+  </div>
+</Layout>
+
+<style>
+  .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
+  /* Adjust main layout grid to accommodate sidebar */
+  :global(.main-layout) {
+    display: grid !important;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.main-layout) {
+      grid-template-columns: 360px 1fr !important;
+    }
+  }
+
+  .faq-header {
+    background: var(--primary);
+    border: 6px solid var(--secondary);
+    padding: 3rem 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+    box-shadow: 12px 12px 0 var(--secondary);
+    overflow: hidden;
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .faq-header h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: var(--secondary);
+    margin: 0;
+    line-height: 0.9;
+    transform: rotate(-1.5deg);
+  }
+
+  .faq-header h1 .highlight {
+    color: var(--bg-white);
+    background: var(--secondary);
+    padding: 0 0.75rem;
+    display: inline-block;
+    transform: rotate(3deg);
+    box-shadow: 4px 4px 0 var(--accent-orange);
+  }
+
+  .intro-text {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    max-width: 700px;
+    color: var(--secondary);
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+    border-left: 6px solid var(--secondary);
+  }
+
+  .inline-link {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
+  }
+
+  .inline-link:hover {
+    color: var(--accent-orange);
+  }
+
+  .header-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    opacity: 0.1;
+    transform: skewX(-20deg) translateX(50px);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .faq-item {
+    background: var(--bg-white);
+    border: 4px solid var(--secondary);
+    padding: 2.5rem;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 14px 14px 0 var(--secondary);
+  }
+
+  .faq-q-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .faq-a-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding-top: 2rem;
+    border-top: 4px solid var(--primary);
+  }
+
+  .indicator {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    flex-shrink: 0;
+    border: 3px solid var(--secondary);
+    position: relative;
+    z-index: 2;
+  }
+
+  .indicator.q {
+    background: var(--secondary);
+    color: var(--primary);
+    transform: rotate(-5deg);
+    box-shadow: 4px 4px 0 var(--accent-orange);
+  }
+
+  .indicator.a {
+    background: var(--primary);
+    color: var(--secondary);
+    transform: rotate(5deg);
+    box-shadow: 4px 4px 0 var(--secondary);
+  }
+
+  .faq-q-row h2 {
+    font-size: 1.75rem;
+    color: var(--secondary);
+    margin: 0;
+    line-height: 1.2;
+    padding-top: 4px;
+  }
+
+  .a-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .a-content p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  /* Text Highlighting - Pure Clean Rectangles */
+  :global(.text-highlight) {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.1em 0.4em;
+    font-weight: 800;
+    display: inline;
+    border-radius: 2px;
+  }
+
+  :global(.text-highlight.secondary) {
+    background: var(--accent-orange);
+    color: white;
+  }
+
+  :global(.text-highlight.tertiary) {
+    background: var(--accent-blue);
+    color: white;
+  }
+
+  .faq-footer {
+    margin-top: 5rem;
+  }
+
+  .footer-card {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 3rem;
+    text-align: center;
+    border: 6px solid var(--primary);
+    clip-path: polygon(0 10%, 100% 0, 98% 90%, 2% 100%);
+  }
+
+  .footer-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-card p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .highlight-alt {
+    color: var(--accent-orange);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+  }
+
+  /* Animations Stagger */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+
+  @media (max-width: 640px) {
+    .faq-item { padding: 1.5rem; }
+    .faq-q-row, .faq-a-row { gap: 1rem; }
+    .indicator {
+      min-width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+    }
+    .faq-q-row h2 { font-size: 1.4rem; }
+    .a-content p { font-size: 1.1rem; }
+    .footer-card h3 { font-size: 1.75rem; }
+    .footer-card p { font-size: 1.1rem; }
+  }
+</style>
