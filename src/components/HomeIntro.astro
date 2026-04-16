@@ -1,6 +1,6 @@
 ---
 // src/components/HomeIntro.astro
-import SidebarToC from './SidebarToC.astro';
+import SidebarToC from "./SidebarToC.astro";
 ---
 
 <SidebarToC />
@@ -8,7 +8,7 @@ import SidebarToC from './SidebarToC.astro';
 <div class="content-column home-page-content">
   <div class="home-hero p4g-shadow anim-pop">
     <div class="guide-badge font-pop">100% Guide</div>
-    
+
     <div class="hero-main-content">
       <h1 class="guide-title font-pop">
         <span class="anim-pop stagger-1">Persona 4</span>
@@ -17,18 +17,20 @@ import SidebarToC from './SidebarToC.astro';
         <br />
         <span class="anim-pop stagger-3">100% Guide</span>
       </h1>
-      
+
       <div class="guide-metadata font-pop">
         <p class="version anim-pop stagger-4">Version 1.00</p>
         <div class="author-tag anim-pop stagger-5 p4g-shadow-sm">
-           <span class="label">Created by</span>
-           <span class="author">Hurricanehaon</span>
+          <span class="label">Created by</span>
+          <span class="author">Hurricanehaon</span>
         </div>
       </div>
 
       <div class="warning-box cutout-box p4g-shadow-sm anim-slide-up">
         <h2 class="font-pop">Warning!!!</h2>
-        <p class="font-read">This guide will include gameplay and minor story spoilers.</p>
+        <p class="font-read">
+          This guide will include gameplay and minor story spoilers.
+        </p>
       </div>
     </div>
   </div>
@@ -36,21 +38,32 @@ import SidebarToC from './SidebarToC.astro';
   <section class="format-changes cutout-box p4g-shadow anim-slide-up">
     <div class="section-accent bg-stripes"></div>
     <h2 class="font-pop section-title">Guide Format Changes</h2>
-    
+
     <div class="change-entry font-read">
       <p class="intro-text">
-        Version 0.76 features a significant change to the format of this guide. This is due primarily to space limitations within GameFAQ's Editor. Although the format has changed, the content within this guide is still largely the same. Some portions of this guide have been edited for ease of usability/understanding. If any major changes are made, they will be listed here.
+        Version 0.76 features a significant change to the format of this guide.
+        This is due primarily to space limitations within GameFAQ's Editor.
+        Although the format has changed, the content within this guide is still
+        largely the same. Some portions of this guide have been edited for ease
+        of usability/understanding. If any major changes are made, they will be
+        listed here.
       </p>
-      
+
       <div class="version-log">
         <div class="log-item">
           <h3 class="font-pop">Version 0.76</h3>
-          <p>Major overhaul of guide format, Boss List removed and boss info has moved to Dungeons</p>
+          <p>
+            Major overhaul of guide format, Boss List removed and boss info has
+            moved to Dungeons
+          </p>
         </div>
-        
+
         <div class="log-item">
           <h3 class="font-pop">Version 1.00</h3>
-          <p>Walkthrough has been retested, some parts of the walkthrough have been added or rewritten for clarity</p>
+          <p>
+            Walkthrough has been retested, some parts of the walkthrough have
+            been added or rewritten for clarity
+          </p>
         </div>
       </div>
     </div>
@@ -96,8 +109,8 @@ import SidebarToC from './SidebarToC.astro';
     inset: 0;
     background-image: url("/p4g-hero-bg.webp");
     background-size: cover;
-    background-position: center 20%;
-    opacity: 0.2; /* Adjusted for "dim" but recognizable visibility */
+    background-position: center 76%;
+    opacity: 0.6; /* Adjusted for "dim" but recognizable visibility */
     z-index: 1;
     filter: contrast(1.1) saturate(1.2);
   }
@@ -107,7 +120,10 @@ import SidebarToC from './SidebarToC.astro';
     content: "";
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(var(--secondary) 1.5px, transparent 1.5px);
+    background-image: radial-gradient(
+      var(--secondary) 1.5px,
+      transparent 1.5px
+    );
     background-size: 24px 24px;
     z-index: 2;
     pointer-events: none;
@@ -136,18 +152,28 @@ import SidebarToC from './SidebarToC.astro';
     font-size: 5.5rem;
     line-height: 0.85;
     color: var(--secondary);
-    text-shadow: 
+    text-shadow:
       4px 4px 0 var(--primary),
       8px 8px 0 var(--accent-orange);
     margin-bottom: 2.5rem;
   }
 
   /* Animations are defined globally in Layout.astro, but we use them here */
-  .stagger-1 { animation-delay: 0.2s; }
-  .stagger-2 { animation-delay: 0.3s; }
-  .stagger-3 { animation-delay: 0.4s; }
-  .stagger-4 { animation-delay: 0.6s; }
-  .stagger-5 { animation-delay: 0.8s; }
+  .stagger-1 {
+    animation-delay: 0.2s;
+  }
+  .stagger-2 {
+    animation-delay: 0.3s;
+  }
+  .stagger-3 {
+    animation-delay: 0.4s;
+  }
+  .stagger-4 {
+    animation-delay: 0.6s;
+  }
+  .stagger-5 {
+    animation-delay: 0.8s;
+  }
 
   .guide-metadata {
     display: flex;
@@ -199,8 +225,15 @@ import SidebarToC from './SidebarToC.astro';
   }
 
   @keyframes warningPulse {
-    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
-    50% { transform: scale(1.05) rotate(1deg); opacity: 0.9; }
+    0%,
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05) rotate(1deg);
+      opacity: 0.9;
+    }
   }
 
   .warning-box p {
@@ -210,7 +243,7 @@ import SidebarToC from './SidebarToC.astro';
 
   /* Format Changes Section */
   .format-changes {
-    background: rgba(200, 204, 255, 0.92); 
+    background: rgba(200, 204, 255, 0.92);
     border: 6px solid var(--secondary);
     padding: 4rem 3rem;
     position: relative;
@@ -275,8 +308,14 @@ import SidebarToC from './SidebarToC.astro';
 
   /* Entrance Animations */
   @keyframes slideUp {
-    from { transform: translateY(60px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .anim-slide-up {
@@ -288,14 +327,26 @@ import SidebarToC from './SidebarToC.astro';
   }
 
   @media (max-width: 1200px) {
-    .guide-title { font-size: 4rem; }
+    .guide-title {
+      font-size: 4rem;
+    }
   }
 
   @media (max-width: 768px) {
-    .guide-title { font-size: 3rem; }
-    .content-column { padding: 0 1rem; }
-    .home-hero { padding: 4rem 1.5rem; }
-    .format-changes { padding: 2.5rem 1.5rem; }
-    .section-title { font-size: 2.5rem; }
+    .guide-title {
+      font-size: 3rem;
+    }
+    .content-column {
+      padding: 0 1rem;
+    }
+    .home-hero {
+      padding: 4rem 1.5rem;
+    }
+    .format-changes {
+      padding: 2.5rem 1.5rem;
+    }
+    .section-title {
+      font-size: 2.5rem;
+    }
   }
 </style>
