@@ -11,6 +11,10 @@
   <div class="header-banner-img"></div>
   <div class="bg-scanlines"></div>
   <div class="header-container">
+    <button id="mobile-menu-toggle" class="mobile-menu-btn font-pop" aria-label="Toggle Menu">
+      <span class="btn-text">MENU</span>
+      <div class="btn-bg"></div>
+    </button>
     <a href="/" class="header-logo-link">
       <img
         src="/Persona_4_Golden_logo.webp"
@@ -33,6 +37,59 @@
 </header>
 
 <style>
+  /* Mobile Menu Button Styling */
+  .mobile-menu-btn {
+    display: none;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.25rem;
+    z-index: 100;
+  }
+
+  .mobile-menu-btn .btn-text {
+    position: relative;
+    z-index: 2;
+    color: var(--secondary);
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    font-style: italic;
+  }
+
+  .mobile-menu-btn .btn-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--primary);
+    border: 3px solid var(--secondary);
+    box-shadow: 4px 4px 0 var(--secondary);
+    transform: skewX(-12deg);
+    z-index: 1;
+    transition: all 0.2s;
+  }
+
+  .mobile-menu-btn:hover .btn-bg {
+    background: var(--accent-orange);
+    transform: skewX(-12deg) scale(1.05);
+    box-shadow: 6px 6px 0 var(--secondary);
+  }
+
+  .mobile-menu-btn:active .btn-bg {
+    transform: skewX(-12deg) scale(0.95);
+    box-shadow: 2px 2px 0 var(--secondary);
+  }
+
+  @media (max-width: 1023px) {
+    .mobile-menu-btn {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      margin: 0;
+    }
+  }
+
   /* Simplified Header Styles */
   .header {
     position: relative;

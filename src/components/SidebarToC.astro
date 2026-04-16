@@ -2,9 +2,10 @@
 // SidebarToC.astro
 ---
 
-<aside class="left-sidebar p4g-shadow anim-slide-right">
+<aside id="sidebar-toc" class="left-sidebar p4g-shadow anim-slide-right">
   <div class="sidebar-header">
     <h3 class="widget-title font-pop">CONTENTS</h3>
+    <button id="sidebar-close" class="sidebar-close-btn font-pop" aria-label="Close Menu">&times;</button>
   </div>
   
   <ul class="toc-list font-read">
@@ -331,11 +332,63 @@
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
     width: 100%; /* Default to full width for mobile */
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: transform 0.4s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.3s;
     margin-bottom: 2rem;
+    z-index: 1000;
+  }
+
+  @media (max-width: 1023px) {
+    .left-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      max-height: 100vh;
+      width: 320px;
+      max-width: 85vw;
+      margin: 0;
+      transform: translateX(-110%);
+      opacity: 0;
+      box-shadow: 10px 0 0 rgba(26, 26, 26, 0.5);
+      border-top: none;
+      border-bottom: none;
+      border-radius: 0;
+    }
+
+    .left-sidebar.mobile-active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .sidebar-close-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      right: 0;
+      top: 0;
+      transform: none;
+      background: var(--primary);
+      border: 3px solid var(--secondary);
+      color: var(--secondary);
+      font-size: 1.5rem;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 3px 3px 0 var(--secondary);
+    }
+    
+    .sidebar-close-btn:hover {
+      background: var(--accent-orange);
+      transform: rotate(90deg);
+    }
   }
 
   @media (min-width: 1024px) {
+    .sidebar-close-btn {
+      display: none;
+    }
     .left-sidebar {
       width: 360px; /* Bigger sidebar for desktop */
       margin-bottom: 0;
@@ -350,6 +403,9 @@
     border-bottom: 6px solid var(--primary);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   /* Animated scrolling accent stripes */
