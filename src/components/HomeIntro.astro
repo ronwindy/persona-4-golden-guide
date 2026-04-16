@@ -12,15 +12,12 @@ import SidebarToC from "./SidebarToC.astro";
     <div class="hero-main-content">
       <h1 class="guide-title font-pop">
         <span class="anim-pop stagger-1">Persona 4</span>
-        <br />
         <span class="anim-pop stagger-2">Golden</span>
-        <br />
-        <span class="anim-pop stagger-3">100% Guide</span>
       </h1>
 
       <div class="guide-metadata font-pop">
-        <p class="version anim-pop stagger-4">Version 1.00</p>
-        <div class="author-tag anim-pop stagger-5 p4g-shadow-sm">
+        <p class="version anim-pop stagger-3">Version 1.00</p>
+        <div class="author-tag anim-pop stagger-4 p4g-shadow-sm">
           <span class="label">Created by</span>
           <span class="author">Hurricanehaon</span>
         </div>
@@ -88,18 +85,23 @@ import SidebarToC from "./SidebarToC.astro";
     padding-bottom: 5rem;
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
   }
 
   /* Hero Section */
   .home-hero {
     background: var(--bg-white);
     border: 6px solid var(--secondary);
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     position: relative;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(4px);
     overflow: hidden;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Dim Artwork Background */
@@ -110,12 +112,12 @@ import SidebarToC from "./SidebarToC.astro";
     background-image: url("/p4g-hero-bg.webp");
     background-size: cover;
     background-position: center 76%;
-    opacity: 0.6; /* Adjusted for "dim" but recognizable visibility */
+    opacity: 0.6;
     z-index: 1;
     filter: contrast(1.1) saturate(1.2);
   }
 
-  /* Dot pattern overlay to stay on top of the image */
+  /* Dot pattern overlay */
   .home-hero::after {
     content: "";
     position: absolute;
@@ -133,47 +135,46 @@ import SidebarToC from "./SidebarToC.astro";
   .hero-main-content {
     position: relative;
     z-index: 10;
+    width: 100%;
   }
 
   .guide-badge {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: 2rem;
+    left: 2rem;
     background: var(--secondary);
     color: var(--primary);
     padding: 0.6rem 1.25rem;
     font-size: 1.5rem;
     transform: rotate(-3deg);
     box-shadow: 6px 6px 0 var(--accent-orange);
-    z-index: 20; /* Keep above everything */
+    z-index: 20;
+    white-space: nowrap;
   }
 
   .guide-title {
-    font-size: 5.5rem;
-    line-height: 0.85;
+    font-size: clamp(3rem, 12vw, 5.5rem);
+    line-height: 0.9;
     color: var(--secondary);
     text-shadow:
       4px 4px 0 var(--primary),
       8px 8px 0 var(--accent-orange);
     margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
   }
 
-  /* Animations are defined globally in Layout.astro, but we use them here */
-  .stagger-1 {
-    animation-delay: 0.2s;
+  .guide-title span {
+    display: block;
+    width: fit-content;
   }
-  .stagger-2 {
-    animation-delay: 0.3s;
-  }
-  .stagger-3 {
-    animation-delay: 0.4s;
-  }
-  .stagger-4 {
-    animation-delay: 0.6s;
-  }
-  .stagger-5 {
-    animation-delay: 0.8s;
-  }
+
+  .stagger-1 { animation-delay: 0.2s; }
+  .stagger-2 { animation-delay: 0.3s; }
+  .stagger-3 { animation-delay: 0.5s; }
+  .stagger-4 { animation-delay: 0.7s; }
 
   .guide-metadata {
     display: flex;
@@ -184,14 +185,14 @@ import SidebarToC from "./SidebarToC.astro";
   }
 
   .version {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
     color: var(--accent-orange);
     text-shadow: 3px 3px 0 var(--secondary);
     transform: rotate(1deg);
   }
 
   .author-tag {
-    font-size: 1.75rem;
+    font-size: clamp(1.1rem, 4vw, 1.75rem);
     background: var(--secondary);
     color: var(--bg-white);
     padding: 0.5rem 2rem;
@@ -218,26 +219,19 @@ import SidebarToC from "./SidebarToC.astro";
 
   .warning-box h2 {
     color: var(--primary);
-    font-size: 3rem;
+    font-size: clamp(1.75rem, 8vw, 3rem);
     margin-bottom: 0.75rem;
     letter-spacing: 0.2em;
     animation: warningPulse 1.5s infinite ease-in-out;
   }
 
   @keyframes warningPulse {
-    0%,
-    100% {
-      transform: scale(1) rotate(0deg);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.05) rotate(1deg);
-      opacity: 0.9;
-    }
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    50% { transform: scale(1.05) rotate(1deg); opacity: 0.9; }
   }
 
   .warning-box p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3.5vw, 1.25rem);
     font-weight: 600;
   }
 
@@ -262,7 +256,7 @@ import SidebarToC from "./SidebarToC.astro";
   }
 
   .section-title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
     color: var(--secondary);
     border-bottom: 8px solid var(--secondary);
     margin-bottom: 2.5rem;
@@ -271,7 +265,7 @@ import SidebarToC from "./SidebarToC.astro";
   }
 
   .intro-text {
-    font-size: 1.35rem;
+    font-size: clamp(1.1rem, 3.5vw, 1.35rem);
     line-height: 1.7;
     margin-bottom: 4rem;
     font-weight: 500;
@@ -294,28 +288,22 @@ import SidebarToC from "./SidebarToC.astro";
   }
 
   .log-item h3 {
-    font-size: 2.25rem;
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
     color: var(--accent-orange);
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 0 var(--secondary);
   }
 
   .log-item p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3.5vw, 1.25rem);
     font-weight: 700;
     color: var(--secondary);
   }
 
   /* Entrance Animations */
   @keyframes slideUp {
-    from {
-      transform: translateY(60px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    from { transform: translateY(60px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   }
 
   .anim-slide-up {
@@ -326,51 +314,44 @@ import SidebarToC from "./SidebarToC.astro";
     animation-delay: 1s;
   }
 
-  @media (max-width: 1200px) {
-    .guide-title {
-      font-size: 4rem;
+  @media (max-width: 1024px) {
+    .content-column {
+      gap: 2rem;
     }
   }
 
   @media (max-width: 768px) {
-    .guide-title {
-      font-size: 3rem;
-    }
-    .content-column {
-      padding: 0 0.5rem; /* Even tighter padding */
-    }
     .home-hero {
-      padding: 4rem 1rem;
+      padding: 5rem 1rem 3rem;
+      min-height: auto;
+    }
+    .guide-badge {
+      top: 1rem;
+      left: 1rem;
+      font-size: 1.2rem;
+      box-shadow: 4px 4px 0 var(--accent-orange);
+    }
+    .guide-title {
+        margin-top: 1.5rem;
     }
     .format-changes {
-      padding: 2.5rem 1rem;
+      padding: 3rem 1.5rem;
     }
-    .section-title {
-      font-size: 2.2rem;
-    }
-    .intro-text {
-      font-size: 1.15rem;
+    .warning-box {
+      padding: 1.5rem;
     }
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     .guide-title {
-      font-size: 2.2rem;
-      text-shadow: 2px 2px 0 var(--primary), 4px 4px 0 var(--accent-orange);
-    }
-    .guide-badge {
-      font-size: 1.2rem;
-      top: 1rem;
-      left: 1rem;
-    }
-    .version {
-      font-size: 1.8rem;
+        text-shadow: 2px 2px 0 var(--primary), 4px 4px 0 var(--accent-orange);
     }
     .author-tag {
-        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        transform: none; /* Straighten for more space on tiny screens */
     }
-    .warning-box h2 {
-        font-size: 2rem;
+    .log-item {
+        padding-left: 1rem;
     }
   }
 </style>
