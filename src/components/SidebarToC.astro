@@ -1,0 +1,567 @@
+---
+// SidebarToC.astro
+---
+
+<aside class="left-sidebar p4g-shadow anim-slide-right">
+  <div class="sidebar-header">
+    <h3 class="widget-title font-pop">CONTENTS</h3>
+  </div>
+  
+  <ul class="toc-list font-read">
+    <!-- 1. 100% Guide -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">100% Guide</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="100-guide#guide-checklist">Guide Checklist</a></li>
+        <li><a href="100-guide#update-current-schedule">Update/Current Schedule</a></li>
+      </ul>
+    </li>
+
+    <!-- 2. Introduction -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Introduction</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="introduction#version-history">Version History</a></li>
+        <li><a href="introduction#copyright">Copyright</a></li>
+        <li><a href="introduction#frequently-asked-questions">Frequently Asked Questions</a></li>
+        <li><a href="introduction#about-this-guide">About This Guide</a></li>
+        <li><a href="introduction#contact-information">Contact Information</a></li>
+      </ul>
+    </li>
+
+    <!-- 3. About Persona 4 Golden -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">About Persona 4 Golden</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="about-persona-4-golden#what-is-persona">What Is Persona?</a></li>
+        <li><a href="about-persona-4-golden#persona-3-vs-persona-4">Persona 3 vs. Persona 4</a></li>
+        <li><a href="about-persona-4-golden#persona-4-vs-persona-4-golden">Persona 4 vs. Persona 4 Golden</a></li>
+      </ul>
+    </li>
+
+    <!-- 4. Gameplay Mechanics -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Gameplay Mechanics</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="gameplay-mechanics#controls">Controls</a></li>
+        <li><a href="gameplay-mechanics#field-mechanics">Field Mechanics</a></li>
+        <li><a href="gameplay-mechanics#calendar-system">Calendar System</a></li>
+        <li><a href="gameplay-mechanics#social-link">Social Link</a></li>
+        <li><a href="gameplay-mechanics#status-parameters">Status Parameters</a></li>
+        <li><a href="gameplay-mechanics#velvet-room">Velvet Room</a></li>
+        <li><a href="gameplay-mechanics#battle-mechanics">Battle Mechanics</a></li>
+        <li><a href="gameplay-mechanics#shuffle-time">Shuffle TIme</a></li>
+        <li><a href="gameplay-mechanics#status-ailments">Status Ailments</a></li>
+        <li><a href="gameplay-mechanics#new-game-plus">New Game Plus</a></li>
+        <li><a href="gameplay-mechanics#tv-channels">TV Channels</a></li>
+      </ul>
+    </li>
+
+    <!-- 5. Walkthrough -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Walkthrough</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="walkthrough#walkthrough-objectives">Walkthrough Objectives</a></li>
+        <li><a href="walkthrough#walkthrough-faq">Walkthrough FAQ</a></li>
+        <li><a href="walkthrough#important-notes">Important Notes</a></li>
+        <li><a href="walkthrough#current-problems">Current Problems</a></li>
+        <li><a href="walkthrough#april">April</a></li>
+        <li><a href="walkthrough#may">May</a></li>
+        <li><a href="walkthrough#june">June</a></li>
+        <li><a href="walkthrough#july">July</a></li>
+        <li><a href="walkthrough#august">August</a></li>
+        <li><a href="walkthrough#september">September</a></li>
+        <li><a href="walkthrough#october">October</a></li>
+        <li><a href="walkthrough#november">November</a></li>
+        <li><a href="walkthrough#december">December</a></li>
+        <li><a href="walkthrough#january">January</a></li>
+        <li><a href="walkthrough#february">February</a></li>
+        <li><a href="walkthrough#march">March</a></li>
+        <li><a href="walkthrough#new-game-plus-walkthrough">New Game Plus Walkthrough</a></li>
+      </ul>
+    </li>
+
+    <!-- 6. Dungeons -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Dungeons</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="dungeons#twisted-shopping-district">Twisted Shopping District</a></li>
+        <li><a href="dungeons#yukikos-castle">Yukiko's Castle</a></li>
+        <li><a href="dungeons#steamy-bathhouse">Steamy Bathhouse</a></li>
+        <li><a href="dungeons#marukyu-striptease">Marukyu Striptease</a></li>
+        <li><a href="dungeons#void-quest">Void Quest</a></li>
+        <li><a href="dungeons#secret-laboratory">Secret Laboratory</a></li>
+        <li><a href="dungeons#heaven">Heaven</a></li>
+        <li><a href="dungeons#magatsu-inaba">Magatsu Inaba</a></li>
+        <li><a href="dungeons#hollow-forest">Hollow Forest</a></li>
+        <li><a href="dungeons#yomotsu-hirasaka">Yomotsu Hirasaka</a></li>
+        <li><a href="dungeons#extra-bosses">Extra Bosses</a></li>
+      </ul>
+    </li>
+
+    <!-- 7. Persona Compendium -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Persona Compendium</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="persona-compendium#formula">Formula</a></li>
+        <li><a href="persona-compendium#fusion-forecast">Fusion Forecast</a></li>
+        <li><a href="persona-compendium#fool">Fool</a></li>
+        <li><a href="persona-compendium#magician">Magician</a></li>
+        <li><a href="persona-compendium#priestess">Priestess</a></li>
+        <li><a href="persona-compendium#empress">Empress</a></li>
+        <li><a href="persona-compendium#emperor">Emperor</a></li>
+        <li><a href="persona-compendium#hierophant">Hierophant</a></li>
+        <li><a href="persona-compendium#lovers">Lovers</a></li>
+        <li><a href="persona-compendium#chariot">Chariot</a></li>
+        <li><a href="persona-compendium#justice">Justice</a></li>
+        <li><a href="persona-compendium#hermit">Hermit</a></li>
+        <li><a href="persona-compendium#fortune">Fortune</a></li>
+        <li><a href="persona-compendium#strength">Strength</a></li>
+        <li><a href="persona-compendium#hanged-man">Hanged Man</a></li>
+        <li><a href="persona-compendium#death">Death</a></li>
+        <li><a href="persona-compendium#temperance">Temperance</a></li>
+        <li><a href="persona-compendium#devil">Devil</a></li>
+        <li><a href="persona-compendium#tower">Tower</a></li>
+        <li><a href="persona-compendium#star">Star</a></li>
+        <li class="show-more-btn">
+          <a href="javascript:void(0)" onclick="toggleShowMore('show1', this)"><i>show more...</i></a>
+        </li>
+        <li class="show1" style="display: none"><a href="persona-compendium#moon">Moon</a></li>
+        <li class="show1" style="display: none"><a href="persona-compendium#sun">Sun</a></li>
+        <li class="show1" style="display: none"><a href="persona-compendium#judgement">Judgement</a></li>
+        <li class="show1" style="display: none"><a href="persona-compendium#jester">Jester</a></li>
+        <li class="show1" style="display: none"><a href="persona-compendium#aeon">Aeon</a></li>
+        <li class="show1" style="display: none"><a href="persona-compendium#world">World</a></li>
+        <li class="show1" style="display: none"><a href="persona-compendium#special-fusions">Special Fusions</a></li>
+      </ul>
+    </li>
+
+    <!-- 8. Social Links -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Social Links</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="social-links#investigation-team-fool">Investigation Team/Fool</a></li>
+        <li><a href="social-links#yosuke-hanamura-magician">Yosuke Hanamura/Magician</a></li>
+        <li><a href="social-links#yukiko-amagi-priestess">Yukiko Amagi/Priestess</a></li>
+        <li><a href="social-links#margaret-empress">Margaret/Empress</a></li>
+        <li><a href="social-links#kanji-tatsumi-emperor">Kanji Tatsumi/Emperor</a></li>
+        <li><a href="social-links#ryotaro-dojima-hierophant">Ryotaro Dojima/Hierophant</a></li>
+        <li><a href="social-links#rise-kujikawa-lovers">Rise Kujikawa/Lovers</a></li>
+        <li><a href="social-links#chie-satonaka-chariot">Chie Satonaka/Chariot</a></li>
+        <li><a href="social-links#nanako-dojima-justice">Nanako Dojima/Justice</a></li>
+        <li><a href="social-links#fox-hermit">Fox/Hermit</a></li>
+        <li><a href="social-links#naoto-shirogane-fortune">Naoto Shirogane/Fortune</a></li>
+        <li><a href="social-links#fellow-athletes-strength">Fellow Athletes/Strength</a></li>
+        <li><a href="social-links#sakis-brother-hanged-man">Saki's Brother/Hanged Man</a></li>
+        <li><a href="social-links#old-lady-death">Old Lady/Death</a></li>
+        <li><a href="social-links#young-mother-temperance">Young Mother/Temperance</a></li>
+        <li><a href="social-links#nurse-devil">Nurse/Devil</a></li>
+        <li><a href="social-links#tutored-student-tower">Tutored Student/Tower</a></li>
+        <li><a href="social-links#teddie-star">Teddie/Star</a></li>
+        <li><a href="social-links#ai-ebihara-moon">Ai Ebihara/Moon</a></li>
+        <li><a href="social-links#yumi-ozawa-and-ayane-matsunaga-sun">Yumi Ozawa and Ayane Matsunaga/Sun</a></li>
+        <li class="show-more-btn">
+          <a href="javascript:void(0)" onclick="toggleShowMore('show2', this)"><i>show more...</i></a>
+        </li>
+        <li class="show2" style="display: none"><a href="social-links#seekers-of-truth-judgement">Seekers of Truth/Judgement</a></li>
+        <li class="show2" style="display: none"><a href="social-links#tohru-adachi-jester">Tohru Adachi/Jester</a></li>
+        <li class="show2" style="display: none"><a href="social-links#marie-aeon">Marie/Aeon</a></li>
+      </ul>
+    </li>
+
+    <!-- 9. Activities -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Activities</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="activities#quests">Quests</a></li>
+        <li><a href="activities#bug-catching">Bug Catching</a></li>
+        <li><a href="activities#fishing">Fishing</a></li>
+        <li><a href="activities#gardening">Gardening</a></li>
+        <li><a href="activities#cooking">Cooking</a></li>
+        <li><a href="activities#books">Books</a></li>
+        <li><a href="activities#beach-hot-springs">Beach/Hot Springs</a></li>
+        <li><a href="activities#costume-shop">Costume Shop</a></li>
+        <li><a href="activities#tv-shopping">TV Shopping</a></li>
+        <li><a href="activities#daidara-list">Daidara List</a></li>
+        <li><a href="activities#shiroku-store">Shiroku Store</a></li>
+        <li><a href="activities#shiroku-pub">Shiroku Pub</a></li>
+        <li><a href="activities#part-time-jobs">Part Time Jobs</a></li>
+        <li><a href="activities#artisan-apprentice">Artisan Apprentice</a></li>
+        <li><a href="activities#lady-in-white">Lady in White</a></li>
+        <li><a href="activities#okina-movie-theater">Okina Movie Theater</a></li>
+        <li><a href="activities#chagall-cafe">Chagall Cafe</a></li>
+        <li><a href="activities#crane-machine">Crane Machine</a></li>
+        <li><a href="activities#refrigerator">Refrigerator</a></li>
+        <li><a href="activities#models">Models</a></li>
+        <li class="show-more-btn">
+          <a href="javascript:void(0)" onclick="toggleShowMore('show3', this)"><i>show more...</i></a>
+        </li>
+        <li class="show3" style="display: none"><a href="activities#miracle-quiz">Miracle Quiz</a></li>
+        <li class="show3" style="display: none"><a href="activities#trophies">Trophies</a></li>
+        <li class="show3" style="display: none"><a href="activities#other-activities">Other Activities</a></li>
+      </ul>
+    </li>
+
+    <!-- 10. Skill List -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Skill List</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="skill-list#all-skills">All Skills</a></li>
+        <li><a href="skill-list#skill-cards">Skill Cards</a></li>
+        <li><a href="skill-list#party-members">Party Members</a></li>
+      </ul>
+    </li>
+
+    <!-- 11. Item List -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Item List</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="item-list#weapons">Weapons</a></li>
+        <li><a href="item-list#armor">Armor</a></li>
+        <li><a href="item-list#accessories">Accessories</a></li>
+        <li><a href="item-list#costume-list">Costume List</a></li>
+        <li><a href="item-list#consumable-quest-items">Consumable/Quest Items</a></li>
+        <li><a href="item-list#materials">Materials</a></li>
+        <li><a href="item-list#book-list">Book List</a></li>
+        <li><a href="item-list#fish-list">Fish List</a></li>
+        <li><a href="item-list#gardening-items">Gardening Items</a></li>
+        <li><a href="item-list#bug-list">Bug List</a></li>
+        <li><a href="item-list#gem-list">Gem List</a></li>
+        <li><a href="item-list#key-items">Key Items</a></li>
+      </ul>
+    </li>
+
+    <!-- 12. Tips And Tricks -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Tips And Tricks</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="tips-and-tricks#golden-shadow-grinding">Golden Shadow Grinding</a></li>
+        <li><a href="tips-and-tricks#best-personas">Best Personas</a></li>
+        <li><a href="tips-and-tricks#hardcore-risette-fan">Hardcore Risette Fan</a></li>
+        <li><a href="tips-and-tricks#victory-cry-cheat">Victory Cry Cheat</a></li>
+        <li><a href="tips-and-tricks#resources">Resources</a></li>
+      </ul>
+    </li>
+
+    <!-- 13. Conclusion -->
+    <li class="toc-item">
+      <div class="toc-parent">
+        <span class="font-pop">Conclusion</span>
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <ul class="toc-child-list">
+        <li><a href="conclusion#special-thanks">Special Thanks</a></li>
+        <li><a href="conclusion#final-remarks">Final Remarks</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+
+<style>
+  .left-sidebar {
+    background: rgba(250, 250, 250, 0.95);
+    backdrop-filter: blur(8px);
+    border: 6px solid var(--secondary);
+    padding: 0; /* Remove padding to handle header background */
+    align-self: start;
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    width: 360px; /* Bigger sidebar */
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .sidebar-header {
+    background: #2a2a2a; /* Dark charcoal instead of black */
+    background-image: radial-gradient(rgba(0,0,0,0.3) 1px, transparent 1px);
+    background-size: 8px 8px; /* Halftone texture */
+    padding: 1rem 1.25rem;
+    border-bottom: 6px solid var(--primary);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Animated scrolling accent stripes */
+  .sidebar-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(252, 227, 0, 0.05) 10px,
+      rgba(252, 227, 0, 0.05) 20px
+    );
+    background-size: 28px 28px;
+    animation: scrollHeaderLoop 15s linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes scrollHeaderLoop {
+    from { background-position: 0 0; }
+    to { background-position: 28px 0; }
+  }
+
+  .widget-title {
+    font-size: 1.5rem !important; /* Scaled down from 2rem */
+    color: var(--primary); /* Yellow on Black for better contrast */
+    margin: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 1rem 1.25rem 1.5rem 1.25rem;
+  }
+
+  .toc-item {
+    margin-bottom: 0.75rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInSidebar 0.4s ease-out forwards;
+  }
+
+  @keyframes slideInSidebar {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Staggered animation for items */
+  .toc-item:nth-child(1) { animation-delay: 0.1s; }
+  .toc-item:nth-child(2) { animation-delay: 0.15s; }
+  .toc-item:nth-child(3) { animation-delay: 0.2s; }
+  .toc-item:nth-child(4) { animation-delay: 0.25s; }
+  .toc-item:nth-child(5) { animation-delay: 0.3s; }
+  .toc-item:nth-child(6) { animation-delay: 0.35s; }
+  .toc-item:nth-child(7) { animation-delay: 0.4s; }
+  .toc-item:nth-child(8) { animation-delay: 0.45s; }
+  .toc-item:nth-child(9) { animation-delay: 0.5s; }
+  .toc-item:nth-child(10) { animation-delay: 0.55s; }
+  .toc-item:nth-child(11) { animation-delay: 0.6s; }
+  .toc-item:nth-child(12) { animation-delay: 0.65s; }
+  .toc-item:nth-child(13) { animation-delay: 0.7s; }
+
+  .toc-parent {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--secondary);
+    padding: 0.6rem 0.75rem;
+    margin: 0 -0.75rem; /* Allow background to bleed slightly */
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  /* Slide-in background highlight */
+  .toc-parent::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent-orange);
+    transform: translateX(-101%) skewX(-10deg);
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1); /* Smoother, longer transition */
+    z-index: -1;
+  }
+
+  /* Animated stripes for the hover background */
+  .toc-parent::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 5px,
+      rgba(0,0,0,0.1) 5px,
+      rgba(0,0,0,0.1) 10px
+    );
+    background-size: 14px 14px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+  }
+
+  .toc-parent:hover {
+    color: white !important;
+    transform: translateX(4px);
+  }
+
+  .toc-parent:hover::before {
+    transform: translateX(-5%) skewX(-10deg);
+    animation: jitter 0.6s infinite ease-in-out; /* Much deeper, slower 'breathing' jitter */
+  }
+  
+  .toc-parent:hover::after {
+    opacity: 1;
+    animation: scrollHeaderLoop 3s linear infinite; /* Seamless loop */
+  }
+
+  .toc-parent .font-pop {
+    font-size: 1.1rem; /* Scaled down from 1.5rem */
+    line-height: 1.2;
+    color: var(--secondary);
+  }
+
+  .toc-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .toc-icon.open {
+    transform: rotate(180deg);
+    color: var(--accent-orange);
+  }
+
+  .toc-child-list {
+    list-style: none;
+    padding-left: 1.5rem;
+    display: none;
+    border-left: 4px solid var(--secondary);
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    background: rgba(252, 227, 0, 0.05); /* Subtle yellow tint */
+  }
+
+  .toc-child-list.active {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .toc-child-list li {
+    margin-bottom: 0.25rem;
+  }
+
+  .toc-child-list li a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.95rem; /* Scaled down from 1.1rem */
+    font-weight: 600;
+    display: block;
+    padding: 0.35rem 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .toc-child-list li a:hover {
+    color: var(--primary);
+    background: var(--secondary);
+    transform: translateX(4px);
+  }
+
+  .show-more-btn a {
+    color: var(--accent-orange) !important;
+    font-style: italic;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+  }
+
+  /* Jitter animation on hover */
+  .toc-parent:hover .font-pop {
+    animation: jitter 0.8s infinite ease-in-out; /* Slowed down for a prestige feel */
+  }
+
+  @keyframes jitter {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(-1px, -1px); }
+    100% { transform: translate(1px, 1px); }
+  }
+
+  /* Custom Scrollbar */
+  .left-sidebar::-webkit-scrollbar {
+    width: 12px;
+  }
+  .left-sidebar::-webkit-scrollbar-track {
+    background: var(--bg-white);
+    border-left: 4px solid var(--secondary);
+  }
+  .left-sidebar::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border: 4px solid var(--secondary);
+    box-shadow: inset 2px 2px 0 rgba(255,255,255,0.5);
+  }
+</style>
