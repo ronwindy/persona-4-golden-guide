@@ -84,9 +84,37 @@
     .mobile-menu-btn {
       display: block;
       position: absolute;
-      top: 1rem;
-      left: 1rem;
+      top: 1.25rem; /* Corner placement for portrait */
+      left: 1.25rem;
+      transform: none;
       margin: 0;
+      z-index: 110;
+    }
+  }
+
+  /* Specific fix for Mobile Landscape / Medium Widths */
+  @media (min-width: 769px) and (max-width: 1023px) {
+    .mobile-menu-btn {
+      top: 50%; /* Vertically center in landscape row */
+      transform: translateY(-50%);
+    }
+    
+    .header-container {
+      padding-left: 11rem !important; /* Push logo out of the menu button's way */
+      gap: 1.5rem;
+      justify-content: flex-start;
+    }
+    
+    .header-logo {
+      height: 90px !important; /* Slightly smaller for better fit in short landscape heights */
+    }
+
+    .header-title {
+      font-size: 2.2rem;
+    }
+    
+    .header-title span:nth-child(2) {
+      font-size: 2.8rem;
     }
   }
 
@@ -123,11 +151,25 @@
     z-index: 5; 
   }
 
-  @media (min-width: 769px) {
+  /* Specific fix for Mobile Landscape / Medium Widths (Phone landscape/Tablets) */
+  @media (min-width: 769px) and (max-width: 1023px) {
+    .header-banner-img {
+      background-size: cover;
+      background-position: center right;
+      opacity: 0.7;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 60%);
+      mask-image: linear-gradient(to right, transparent, black 60%);
+    }
+  }
+
+  /* Restore the user's carefully positioned Desktop BG */
+  @media (min-width: 1024px) {
     .header-banner-img {
       background-size: 50% auto;
       background-position: right top;
       opacity: 0.7;
+      mask-image: none;
+      -webkit-mask-image: none;
     }
   }
 
@@ -206,6 +248,7 @@
     max-width: 400px;
     filter: drop-shadow(6px 6px 0px var(--secondary));
     object-fit: contain;
+    flex-shrink: 0; /* Prevent the logo from squishing in landscape */
   }
 
   .header-title {
