@@ -290,8 +290,10 @@ const comparisons = [
 
   .comparison-table {
     width: 100%;
+    min-width: 800px; /* Increased to accommodate longer headers/labels */
     border-collapse: separate;
     border-spacing: 0 10px;
+    table-layout: fixed; 
   }
 
   .comparison-table th {
@@ -302,11 +304,12 @@ const comparisons = [
     font-family: 'Staatliches', sans-serif;
     font-size: 1.4rem;
     letter-spacing: 0.1em;
+    white-space: nowrap; /* Prevent game title wrapping */
   }
 
-  .feature-col { background: #333 !important; width: 20%; }
-  .p3-header { background: #004a87 !important; color: white !important; }
-  .p4-header { background: var(--primary) !important; color: #1a1a1a !important; }
+  .feature-col { background: #333 !important; width: 30%; }
+  .p3-header { background: #004a87 !important; color: white !important; width: 35%; }
+  .p4-header { background: var(--primary) !important; color: #1a1a1a !important; width: 35%; }
 
   .comparison-table td {
     padding: 1.25rem 1rem;
@@ -364,5 +367,9 @@ const comparisons = [
     .vs-text { font-size: 2rem; }
     .art-label { font-size: 1.2rem; }
     .comparison-table { font-size: 0.9rem; }
+    .comparison-table th { 
+      font-size: 1.1rem; 
+      padding: 0.75rem 0.5rem;
+    }
   }
 </style>
