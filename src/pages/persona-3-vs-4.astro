@@ -1,0 +1,312 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SidebarToC from '../components/SidebarToC.astro';
+
+const p3Art = "/persona-4-golden-guide/p3-key-art.png";
+const p4Art = "/persona-4-golden-guide/p4-key-art-1.png";
+
+const comparisons = [
+  { feature: "Time Cycles", p3: "Phases of the Moon", p4: "Weather Systems" },
+  { feature: "Party Social Links", p3: "Limited / Restricted", p4: "Grants Special Combat Abilities" },
+  { feature: "Dating Mechanics", p3: "Jealousy Timer / Broken links", p4: "No Timer on Dating" },
+  { feature: "Gifts for Girls", p3: "Mandatory for progress", p4: "No Gift Items required" },
+  { feature: "Dungeon Exploration", p3: "Evening Only", p4: "After School Hours" },
+  { feature: "Status Parameters", p3: "3 Parameters (Knowledge/Courage/Charm)", p4: "5 Parameters" },
+  { feature: "Quest System", p3: "Velvet Room Requests", p4: "Town NPC Requests" },
+  { feature: "Dungeon Layout", p3: "One Giant Tower (Tartarus)", p4: "Multiple Thematic Dungeons" },
+  { feature: "Fatigue System", p3: "Active (Characters get Tired)", p4: "Thankfully Removed" },
+  { feature: "Restoration", p3: "Clock in Entrance (Costly)", p4: "Pay Fox at Entrance to restore SP" },
+  { feature: "Dungeon Navigation", p3: "Access Points", p4: "Walk back / Goho-M Entry" },
+  { feature: "Rare Chests", p3: "Standard Opening", p4: "Chest Keys Required" },
+  { feature: "Battle Control", p3: "Tactics-Only (AI Controlled)", p4: "Direct Commands (Thankfully)" },
+  { feature: "Persona Evolutions", p3: "Scripted Story Events", p4: "Social Link Completion" },
+  { feature: "Knockdown Status", p3: "Downed unit loses turn", p4: "No lost turn from knockdown" },
+  { feature: "Guard Command", p3: "Replaced by 'Wait'", p4: "Dedicated Guard (Essential)" },
+  { feature: "Physical Attributes", p3: "Slash / Strike / Pierce", p4: "One Physical Element" },
+  { feature: "Analysis", p3: "Full Scan (Wait 1 turn)", p4: "Trial & Error Process" },
+  { feature: "Shuffle Time", p3: "Multiple items/bonuses", p4: "Persona-focused Acquisition" },
+  { feature: "One More System", p3: "Requirement per-attack", p4: "Need only one downed target" },
+  { feature: "Arcana Chance", p3: "N/A", p4: "Shuffle Time Mechanic" },
+  { feature: "The Reaper", p3: "Time-limit based spawn", p4: "NG+ only / Specific conditions" },
+];
+---
+
+<Layout title="Persona 3 vs. Persona 4 | Comparison Guide">
+  <SidebarToC />
+  
+  <div class="comparison-container">
+    <header class="versus-header anim-pop">
+      <div class="art-standoff">
+        <div class="art-box p3-side">
+          <img src={p3Art} alt="Persona 3" class="vs-img" />
+          <div class="art-label p3-bg">PERSONA 3</div>
+        </div>
+        
+        <div class="vs-slash">
+          <span class="vs-text">VS</span>
+        </div>
+        
+        <div class="art-box p4-side">
+          <img src={p4Art} alt="Persona 4 Golden" class="vs-img" />
+          <div class="art-label p4-bg">PERSONA 4</div>
+        </div>
+      </div>
+      
+      <div class="header-tagline font-pop">BROADCAST ANALYSIS: GAMEPLAY EVOLUTION</div>
+    </header>
+
+    <main class="content-box p4g-shadow">
+      <div class="broadcast-alert font-pop">
+        <span class="blink">●</span> LIVE DATA COMPARISON
+      </div>
+
+      <div class="table-wrapper">
+        <table class="comparison-table font-read">
+          <thead>
+            <tr>
+              <th class="feature-col">FEATURE</th>
+              <th class="p3-header">PERSONA 3</th>
+              <th class="p4-header">PERSONA 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            {comparisons.map((row) => (
+              <tr>
+                <td class="feature-cell"><span class="feature-label">{row.feature}</span></td>
+                <td class="p3-cell">{row.p3}</td>
+                <td class="p4-cell">{row.p4}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="status-footer bg-stripes">
+        <span class="font-pop">SIGNAL LOCKED: TRUTH REACHED</span>
+      </div>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .comparison-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 5rem;
+  }
+
+  /* Header Standoff */
+  .versus-header {
+    width: 100%;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .art-standoff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    border: 8px solid var(--secondary);
+    box-shadow: 15px 15px 0 var(--secondary);
+    background: #111;
+  }
+
+  .art-box {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: flex 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+
+  .art-box:hover {
+    flex: 1.2;
+  }
+
+  .vs-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.25) contrast(1.1);
+    transition: filter 0.3s;
+  }
+
+  .art-box:hover .vs-img {
+    filter: grayscale(0) contrast(1.2);
+  }
+
+  .art-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    z-index: 5;
+  }
+
+  .p3-bg { background: rgba(0, 114, 206, 0.9); color: white; transform: skewX(-5deg); }
+  .p4-bg { background: rgba(252, 227, 0, 0.9); color: #1a1a1a; transform: skewX(5deg); }
+
+  .vs-slash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    width: 150px;
+    height: 150px;
+    background: var(--secondary);
+    border: 6px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+  .vs-text {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 4rem;
+    color: var(--primary);
+    transform: rotate(15deg);
+  }
+
+  .header-tagline {
+    text-align: center;
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: -4px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border: 4px solid var(--primary);
+  }
+
+  /* Content Box */
+  .content-box {
+    background-color: #1a1a1a;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 6px solid var(--secondary);
+    padding: 3rem;
+    position: relative;
+    color: white;
+  }
+
+  .broadcast-alert {
+    background: var(--accent-orange);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    transform: skewX(-10deg);
+  }
+
+  .blink {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  /* Comparison Table */
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 2rem 0;
+  }
+
+  .comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+
+  .comparison-table th {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+  }
+
+  .feature-col { background: #333 !important; width: 20%; }
+  .p3-header { background: #004a87 !important; color: white !important; }
+  .p4-header { background: var(--primary) !important; color: #1a1a1a !important; }
+
+  .comparison-table td {
+    padding: 1.25rem 1rem;
+    background: #2a2a2a;
+    transition: transform 0.2s;
+    font-weight: 600;
+  }
+
+  .comparison-table tr:hover td {
+    background: #333;
+    transform: scale(1.01);
+  }
+
+  .feature-cell {
+    border-left: 6px solid var(--accent-orange);
+    background: #222 !important;
+  }
+
+  .feature-label {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--accent-orange);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  .p3-cell { border-left: 2px solid #0072ce; color: #add8ff; }
+  .p4-cell { border-left: 2px solid var(--primary); color: var(--primary); }
+
+  /* Footer Decoration */
+  .status-footer {
+    margin-top: 3rem;
+    padding: 0.75rem;
+    text-align: right;
+    border: 4px solid var(--secondary);
+    background: #111;
+  }
+
+  .status-footer span {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.3rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  @media (max-width: 1024px) {
+    .art-standoff { height: 350px; }
+  }
+
+  @media (max-width: 768px) {
+    .content-box { padding: 1.5rem; }
+    .art-standoff { height: 250px; }
+    .vs-slash { width: 80px; height: 80px; }
+    .vs-text { font-size: 2rem; }
+    .art-label { font-size: 1.2rem; }
+    .comparison-table { font-size: 0.9rem; }
+  }
+</style>
