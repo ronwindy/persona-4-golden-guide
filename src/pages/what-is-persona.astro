@@ -10,8 +10,10 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
   
   <div class="persona-container">
     <header class="persona-header anim-pop">
-      <h1 class="font-pop">WHAT IS <span class="highlight">PERSONA?</span></h1>
-      <div class="subtitle font-pop">A JOURNEY BEYOND THE MASK</div>
+      <div class="header-inner">
+        <h1 class="font-pop">WHAT IS <span class="highlight">PERSONA?</span></h1>
+        <div class="subtitle font-pop">A JOURNEY BEYOND THE MASK</div>
+      </div>
     </header>
 
     <div class="divider bg-stripes"></div>
@@ -94,10 +96,11 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
 
 <style>
   .persona-container {
-    max-width: 850px;
+    max-width: 1100px;
     margin: 0 auto;
     width: 100%;
     position: relative;
+    padding: 0; /* Removing container padding for full-width header */
   }
 
   :global(.main-layout) {
@@ -112,21 +115,31 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
   }
 
   .persona-header {
+    width: 100%;
     margin-bottom: 2rem;
-    padding: 2.5rem;
+    padding: 3.5rem 2.5rem;
     background: var(--primary);
     border: 6px solid var(--secondary);
     position: relative;
     box-shadow: 10px 10px 0 var(--secondary);
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-inner {
+    transform: rotate(-2deg);
   }
 
   .persona-header h1 {
     font-size: clamp(2.5rem, 8vw, 5.5rem);
     color: var(--secondary);
     margin: 0;
-    line-height: 0.85;
-    transform: rotate(-1.5deg);
+    line-height: 0.9;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translateZ(0); /* Force GPU rendering for cleaner rotation */
   }
 
   .persona-header h1 .highlight {
@@ -134,8 +147,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
     color: var(--primary);
     padding: 0 0.8rem;
     display: inline-block;
-    transform: rotate(3deg);
+    transform: rotate(-2.5deg);
     box-shadow: 5px 5px 0 var(--accent-orange);
+    margin-top: 0.5rem;
   }
 
   .subtitle {
@@ -351,20 +365,79 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
   }
 
   @media (max-width: 640px) {
-    .content-box {
-      padding: 2rem 1.5rem;
+    .persona-container {
+      padding: 0;
     }
+
+    .content-box {
+      width: calc(100% - 1.5rem);
+      margin-left: 0.5rem;
+      padding: 2rem 1rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+      margin-top: 1.5rem;
+    }
+    
+    .persona-header {
+      width: 100%;
+      padding: 2rem 1.25rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+      margin-bottom: 1rem;
+      border-left: none;
+      border-right: none;
+    }
+
+    .header-inner {
+      transform: none;
+    }
+    
+    .persona-header h1 {
+      font-size: 2.8rem;
+      line-height: 1.1;
+      text-align: center;
+    }
+    
+    .persona-header h1 .highlight {
+      transform: rotate(-2.5deg);
+      padding: 0.2rem 0.6rem;
+      display: inline-block;
+      width: auto;
+      text-align: center;
+      margin: 0.5rem 0 0 0;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      text-align: center;
+      margin-top: 1.5rem;
+      background: rgba(0,0,0,0.05);
+    }
+
     .era-grid {
       grid-template-columns: 1fr;
+      gap: 1rem;
     }
+    
     .intro-section {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 1.5rem;
     }
+    
     .hero-image-container {
-      max-width: 300px;
+      max-width: 100%;
       margin: 0 auto;
       transform: none;
+    }
+
+    .text-content {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .text-highlight {
+      padding: 0 0.2rem;
+      box-shadow: 2px 2px 0 var(--secondary);
     }
   }
 </style>
