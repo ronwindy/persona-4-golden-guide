@@ -152,7 +152,7 @@ const comparisons = [
     height: auto !important;
     max-height: none !important;
     display: block;
-    object-fit: cover;
+    object-fit: contain; /* Ensure full image visibility */
     filter: grayscale(0.2) contrast(1.1);
     transition: filter 0.3s, transform 0.3s;
   }
@@ -354,12 +354,12 @@ const comparisons = [
   }
 
   @media (max-width: 1024px) {
-    .art-standoff { height: 350px; }
+    /* Height logic removed to maintain aspect ratio */
   }
 
   @media (max-width: 768px) {
     .content-box { padding: 1.5rem; }
-    .art-standoff { height: 250px; }
+    .art-box { max-width: 320px; } /* More compact images on mobile */
     .vs-slash { width: 80px; height: 80px; }
     .vs-text { font-size: 2rem; }
     .art-label { font-size: 1.2rem; }
