@@ -1,0 +1,370 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SidebarToC from '../components/SidebarToC.astro';
+
+const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
+---
+
+<Layout title="What is Persona? | Persona 4 Golden Guide">
+  <SidebarToC />
+  
+  <div class="persona-container">
+    <header class="persona-header anim-pop">
+      <h1 class="font-pop">WHAT IS <span class="highlight">PERSONA?</span></h1>
+      <div class="subtitle font-pop">A JOURNEY BEYOND THE MASK</div>
+    </header>
+
+    <div class="divider bg-stripes"></div>
+
+    <main class="content-box p4g-shadow anim-slide-in">
+
+
+      <h2 class="font-pop">THE LEGACY OF THE MASK</h2>
+      
+      <div class="intro-section">
+        <div class="text-content font-read">
+          <p>
+            The <span class="text-highlight">Persona</span> series is a renowned JRPG franchise developed by <span class="text-highlight">Atlus</span>. Originally a spinoff of the legendary <span class="text-highlight secondary">Megami Tensei</span> series, it has since grown to become one of the most iconic names in the genre, even surpassing the popularity of its parent franchise.
+          </p>
+
+          <p>
+            The series is widely recognized for its unique blend of <span class="text-highlight">urban fantasy</span>, psychological depth, and social simulation. It is typically categorized into two distinct eras:
+          </p>
+        </div>
+        
+        <div class="hero-image-container anim-pop">
+           <img src={heroImagePath} alt="Persona 4 Golden Key Art" class="hero-image p4g-shadow" />
+        </div>
+      </div>
+
+      <div class="text-content font-read">
+        <div class="era-grid">
+          <div class="era-card old-school">
+            <h3 class="font-pop">OLD SCHOOL</h3>
+            <ul>
+              <li>Revelations: Persona</li>
+              <li>Persona 2: Innocent Sin</li>
+              <li>Persona 2: Eternal Punishment</li>
+            </ul>
+          </div>
+          <div class="era-card new-school">
+            <h3 class="font-pop">NEW SCHOOL</h3>
+            <ul>
+              <li>Persona 3 (and FES/Portable/Reload)</li>
+              <li>Persona 4 (and Golden)</li>
+              <li>Persona 5 (and Royal)</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          Beyond the mainline titles, the series has expanded into a massive multimedia project, including manga, anime series, stage plays, and various spinoff games like the <span class="text-highlight">Persona Q</span> dungeon crawlers, the <span class="text-highlight">Persona Arena</span> fighting games, and the <span class="text-highlight">Persona Dancing</span> titles.
+        </p>
+
+        <p>
+          Of all these titles, <span class="text-highlight secondary">Persona 4</span> arguably remains the most beloved for its character-driven story and small-town charm. Since its release in 2008, it has become a cultural phenomenon. 
+        </p>
+
+        <div class="callout-box bg-yellow p4g-shadow">
+          <h3 class="font-pop">WHY PLAY PERSONA 4?</h3>
+          <p>
+            It’s a masterfully crafted mix of <span class="text-highlight alert">dungeon crawling</span> and <span class="text-highlight alert">life simulation</span>. No explanation can truly do it justice—it’s an experience you have to feel for yourself. If you’re new to the series, Persona 4 (along with Persona 3 and 5) is the perfect place to start.
+          </p>
+        </div>
+
+        <p>
+          <span class="text-highlight">Persona 4 Golden</span> is the ultimate version of this masterpiece. Released for the PS Vita in 2012, it contains roughly <span class="text-highlight">50% more content</span> than the original PS2 game, including new characters, events, and a refined battle system. 
+        </p>
+
+        <p>
+          With a <span class="text-highlight secondary">93 on Metacritic</span> and millions of copies sold worldwide across PS4, PC, Xbox, and Switch, Golden isn't just a remaster—it's the definitive way to experience one of the greatest JRPGs ever made.
+        </p>
+      </div>
+
+      <div class="status-footer bg-stripes">
+        <span class="font-pop">SYSTEM READY: REACH OUT TO THE TRUTH</span>
+      </div>
+    </main>
+
+    <div class="bottom-decoration">
+      <div class="tv-static-effect"></div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .persona-container {
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+
+  :global(.main-layout) {
+    display: grid !important;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.main-layout) {
+      grid-template-columns: 360px 1fr !important;
+    }
+  }
+
+  .persona-header {
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    background: var(--primary);
+    border: 6px solid var(--secondary);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    overflow: hidden;
+  }
+
+  .persona-header h1 {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    color: var(--secondary);
+    margin: 0;
+    line-height: 0.85;
+    transform: rotate(-1.5deg);
+  }
+
+  .persona-header h1 .highlight {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0 0.8rem;
+    display: inline-block;
+    transform: rotate(3deg);
+    box-shadow: 5px 5px 0 var(--accent-orange);
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: 0.2rem 1rem;
+  }
+
+  .content-box {
+    background-color: #ededed;
+    background-image: 
+      radial-gradient(rgba(0,0,0,0.05) 2px, transparent 2px),
+      linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7));
+    background-size: 24px 24px, 100% 100%;
+    border: 6px solid var(--secondary);
+    padding: 3.5rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    backdrop-filter: blur(12px);
+    box-shadow: 12px 12px 0 var(--secondary);
+  }
+
+  .intro-section {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image-container {
+    position: relative;
+    transform: rotate(2deg);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .hero-image-container:hover {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border: 4px solid var(--secondary);
+    display: block;
+  }
+
+
+
+  .content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--primary),
+      var(--primary) 20px,
+      var(--secondary) 20px,
+      var(--secondary) 40px
+    );
+  }
+
+  .content-box h2 {
+    font-size: 2.2rem;
+    color: var(--secondary);
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .text-content {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: var(--secondary);
+    font-weight: 500;
+  }
+
+  .text-content p {
+    margin-bottom: 2rem;
+  }
+
+  .text-highlight {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0 0.5rem;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: 3px 3px 0 var(--secondary);
+    margin: 0 0.2rem;
+  }
+
+  .text-highlight.secondary {
+    background: var(--accent-blue);
+    color: var(--primary);
+    transform: rotate(1deg);
+  }
+
+  .text-highlight.alert {
+    background: var(--accent-orange);
+    color: white;
+    transform: rotate(-1.5deg);
+  }
+
+  .era-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .era-card {
+    padding: 1.5rem;
+    border: 4px solid var(--secondary);
+    position: relative;
+  }
+
+  .era-card.old-school {
+    background: var(--secondary);
+    color: var(--primary);
+    transform: rotate(-1deg);
+  }
+
+  .era-card.new-school {
+    background: var(--primary);
+    color: var(--secondary);
+    transform: rotate(1deg);
+    box-shadow: 8px 8px 0 var(--secondary);
+  }
+
+  .era-card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+
+  .era-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .era-card li {
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+
+  .callout-box {
+    margin: 3rem 0;
+    padding: 2rem;
+    border: 5px solid var(--secondary);
+    transform: skewX(-2deg);
+  }
+
+  .callout-box h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: var(--secondary);
+    text-align: center;
+    background: var(--secondary);
+    color: var(--primary);
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bg-yellow {
+    background: var(--primary);
+  }
+
+  .status-footer {
+    margin-top: 3rem;
+    padding: 0.75rem;
+    text-align: right;
+    border: 4px solid var(--secondary);
+  }
+
+  .status-footer span {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.3rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  .bottom-decoration {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tv-static-effect {
+    width: 200px;
+    height: 6px;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 10px,
+      var(--secondary) 10px,
+      var(--secondary) 20px
+    );
+    opacity: 0.3;
+  }
+
+  @media (max-width: 640px) {
+    .content-box {
+      padding: 2rem 1.5rem;
+    }
+    .era-grid {
+      grid-template-columns: 1fr;
+    }
+    .intro-section {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .hero-image-container {
+      max-width: 300px;
+      margin: 0 auto;
+      transform: none;
+    }
+  }
+</style>
