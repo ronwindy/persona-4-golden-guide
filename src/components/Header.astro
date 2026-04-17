@@ -2,11 +2,13 @@
 // src/components/Header.astro
 ---
 
-<header class="header bg-halftone p4g-shadow">
+<header class="header bg-p4g-flow p4g-shadow">
   <div class="header-decorations">
     <span class="shape-1"></span>
     <span class="shape-2"></span>
     <span class="shape-3"></span>
+    <span class="shape-4"></span>
+    <span class="shape-5"></span>
   </div>
   <div class="header-banner-img"></div>
   <div class="bg-scanlines"></div>
@@ -129,14 +131,14 @@
     display: block;
   }
 
-  /* Animated halftone for header only */
-  .header.bg-halftone {
-    animation: halftonePulse 8s ease-in-out infinite;
+  /* High-energy geometric animation */
+  .header.bg-p4g-flow {
+    animation: headerPump 2s ease-in-out infinite alternate;
   }
 
-  @keyframes halftonePulse {
-    0%, 100% { background-size: 12px 12px; }
-    50% { background-size: 13px 13px; }
+  @keyframes headerPump {
+    0% { filter: contrast(1) brightness(1); }
+    100% { filter: contrast(1.1) brightness(1.05); }
   }
 
   .header-banner-img {
@@ -189,34 +191,59 @@
   }
 
   .shape-1 {
-    width: 200px;
-    height: 40px;
-    top: 20%;
-    left: 10%;
-    animation: float 10s ease-in-out infinite;
+    width: 250px;
+    height: 60px;
+    top: 15%;
+    left: 5%;
+    background: var(--secondary) !important;
+    animation: float 8s ease-in-out infinite;
   }
 
   .shape-2 {
-    width: 150px;
-    height: 30px;
-    bottom: 30%;
-    right: 30%;
+    width: 200px;
+    height: 40px;
+    bottom: 25%;
+    right: 20%;
     background: var(--accent-blue) !important;
-    animation: float 15s ease-in-out infinite reverse;
+    animation: float 12s ease-in-out infinite reverse;
   }
 
   .shape-3 {
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 40%;
+    width: 120px;
+    height: 120px;
+    top: 40%;
+    left: 35%;
+    background: var(--accent-orange) !important;
+    opacity: 0.15 !important;
+    animation: float 15s ease-in-out infinite 1s;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%) !important; /* Diamond */
+  }
+
+  .shape-4 {
+    width: 300px;
+    height: 20px;
+    top: 60%;
+    right: 10%;
+    background: var(--primary) !important;
+    border: 2px solid var(--secondary);
+    opacity: 0.2;
+    animation: float 10s ease-in-out infinite 0.5s reverse;
+  }
+
+  .shape-5 {
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    left: 25%;
+    background: #fff !important;
     opacity: 0.1 !important;
-    animation: float 12s ease-in-out infinite 2s;
+    animation: float 14s ease-in-out infinite 2s;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important; /* Hexagon */
   }
 
   @keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    50% { transform: translate(20px, -20px) rotate(2deg); }
+    0%, 100% { transform: translate(0, 0) rotate(-2deg); }
+    50% { transform: translate(30px, -30px) rotate(3deg); }
   }
 
   .header-container {
@@ -368,7 +395,7 @@
       margin-top: 0.5rem;
     }
 
-    .shape-1, .shape-2, .shape-3 {
+    .shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
         display: none;
     }
   }
