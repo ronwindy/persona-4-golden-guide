@@ -1,0 +1,91 @@
+---
+// src/components/HeaderDecorations.astro
+---
+
+<div class="header-decorations">
+  <span class="shape-1"></span>
+  <span class="shape-2"></span>
+  <span class="shape-3"></span>
+  <span class="shape-4"></span>
+  <span class="shape-5"></span>
+</div>
+
+<style>
+  .header-decorations {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .header-decorations {
+      display: none;
+    }
+  }
+
+  .header-decorations span {
+    position: absolute;
+    opacity: 0.2;
+    background: var(--accent-orange);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    will-change: transform;
+  }
+
+  .header-decorations .shape-1 {
+    width: 250px;
+    height: 60px;
+    top: 15%;
+    left: 5%;
+    background: var(--secondary);
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .header-decorations .shape-2 {
+    width: 200px;
+    height: 40px;
+    bottom: 25%;
+    right: 20%;
+    background: var(--accent-blue);
+    animation: float 12s ease-in-out infinite reverse;
+  }
+
+  .header-decorations .shape-3 {
+    width: 120px;
+    height: 120px;
+    top: 40%;
+    left: 35%;
+    background: var(--accent-orange);
+    opacity: 0.15;
+    animation: float 15s ease-in-out infinite 1s;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .header-decorations .shape-4 {
+    width: 300px;
+    height: 20px;
+    top: 60%;
+    right: 10%;
+    background: var(--primary);
+    border: 2px solid var(--secondary);
+    opacity: 0.2;
+    animation: float 10s ease-in-out infinite 0.5s reverse;
+  }
+
+  .header-decorations .shape-5 {
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    left: 25%;
+    background: #fff;
+    opacity: 0.1;
+    animation: float 14s ease-in-out infinite 2s;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(-2deg); }
+    50% { transform: translate(30px, -30px) rotate(3deg); }
+  }
+</style>

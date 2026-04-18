@@ -1,22 +1,15 @@
 ---
 // src/components/Header.astro
+import HeaderDecorations from './HeaderDecorations.astro';
+import MobileMenuButton from './MobileMenuButton.astro';
 ---
 
 <header class="header bg-p4g-flow">
-  <div class="header-decorations">
-    <span class="shape-1"></span>
-    <span class="shape-2"></span>
-    <span class="shape-3"></span>
-    <span class="shape-4"></span>
-    <span class="shape-5"></span>
-  </div>
+  <HeaderDecorations />
   <div class="header-banner-img"></div>
   <div class="bg-scanlines"></div>
   <div class="header-container">
-    <button id="mobile-menu-toggle" class="mobile-menu-btn font-pop" aria-label="Toggle Menu">
-      <span class="btn-text">MENU</span>
-      <div class="btn-bg"></div>
-    </button>
+    <MobileMenuButton />
     <a href="/persona-4-golden-guide/" class="header-logo-link">
       <img
         src="/persona-4-golden-guide/Persona_4_Golden_logo.webp"
@@ -39,76 +32,16 @@
 </header>
 
 <style>
-  /* Mobile Menu Button Styling */
-  .mobile-menu-btn {
-    display: none;
-    position: relative;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem 1.25rem;
-    z-index: 100;
-  }
-
-  .mobile-menu-btn .btn-text {
-    position: relative;
-    z-index: 2;
-    color: var(--secondary);
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    font-style: italic;
-  }
-
-  .mobile-menu-btn .btn-bg {
-    position: absolute;
-    inset: 0;
-    background: var(--primary);
-    border: 3px solid var(--secondary);
-    box-shadow: 4px 4px 0 var(--secondary);
-    transform: skewX(-12deg);
-    z-index: 1;
-    transition: all 0.2s;
-  }
-
-  .mobile-menu-btn:hover .btn-bg {
-    background: var(--accent-orange);
-    transform: skewX(-12deg) scale(1.05);
-    box-shadow: 6px 6px 0 var(--secondary);
-  }
-
-  .mobile-menu-btn:active .btn-bg {
-    transform: skewX(-12deg) scale(0.95);
-    box-shadow: 2px 2px 0 var(--secondary);
-  }
-
-  @media (max-width: 1023px) {
-    .mobile-menu-btn {
-      display: block;
-      position: absolute;
-      top: 1.25rem; /* Corner placement for portrait */
-      left: 1.25rem;
-      transform: none;
-      margin: 0;
-      z-index: 110;
-    }
-  }
-
   /* Specific fix for Mobile Landscape / Medium Widths */
   @media (min-width: 769px) and (max-width: 1023px) {
-    .mobile-menu-btn {
-      top: 50%; /* Vertically center in landscape row */
-      transform: translateY(-50%);
-    }
-    
     .header-container {
-      padding-left: 11rem !important; /* Push logo out of the menu button's way */
+      padding-left: 11rem; /* Push logo out of the menu button's way */
       gap: 1.5rem;
       justify-content: flex-start;
     }
     
     .header-logo {
-      height: 90px !important; /* Slightly smaller for better fit in short landscape heights */
+      height: 90px; /* Slightly smaller for better fit in short landscape heights */
     }
 
     .header-title {
@@ -124,12 +57,12 @@
   .header {
     position: relative;
     width: 100%;
-    background-color: var(--primary) !important;
+    background-color: var(--primary);
     border-bottom: 8px solid var(--secondary);
     padding: 1.5rem 0;
     overflow: hidden;
     display: block;
-    box-shadow: none !important; /* Remove shadow on mobile to prevent overflow */
+    box-shadow: none; /* Remove shadow on mobile to prevent overflow */
   }
 
   /* High-energy geometric animation */
@@ -168,7 +101,7 @@
   /* Restore the user's carefully positioned Desktop BG */
   @media (min-width: 1024px) {
     .header {
-      box-shadow: 8px 8px 0 var(--secondary) !important;
+      box-shadow: 8px 8px 0 var(--secondary);
     }
     .header-banner-img {
       background-size: 50% auto;
@@ -177,77 +110,6 @@
       mask-image: none;
       -webkit-mask-image: none;
     }
-  }
-
-  .header-decorations {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
-    overflow: hidden;
-  }
-
-  .header-decorations span {
-    position: absolute;
-    opacity: 0.2;
-    background: var(--accent-orange);
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-  }
-
-  .shape-1 {
-    width: 250px;
-    height: 60px;
-    top: 15%;
-    left: 5%;
-    background: var(--secondary) !important;
-    animation: float 8s ease-in-out infinite;
-  }
-
-  .shape-2 {
-    width: 200px;
-    height: 40px;
-    bottom: 25%;
-    right: 20%;
-    background: var(--accent-blue) !important;
-    animation: float 12s ease-in-out infinite reverse;
-  }
-
-  .shape-3 {
-    width: 120px;
-    height: 120px;
-    top: 40%;
-    left: 35%;
-    background: var(--accent-orange) !important;
-    opacity: 0.15 !important;
-    animation: float 15s ease-in-out infinite 1s;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%) !important; /* Diamond */
-  }
-
-  .shape-4 {
-    width: 300px;
-    height: 20px;
-    top: 60%;
-    right: 10%;
-    background: var(--primary) !important;
-    border: 2px solid var(--secondary);
-    opacity: 0.2;
-    animation: float 10s ease-in-out infinite 0.5s reverse;
-  }
-
-  .shape-5 {
-    width: 80px;
-    height: 80px;
-    bottom: 15%;
-    left: 25%;
-    background: #fff !important;
-    opacity: 0.1 !important;
-    animation: float 14s ease-in-out infinite 2s;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important; /* Hexagon */
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(-2deg); }
-    50% { transform: translate(30px, -30px) rotate(3deg); }
   }
 
   .header-container {
@@ -274,8 +136,8 @@
 
   .header-logo {
     display: block;
-    height: 110px !important;
-    width: auto !important;
+    height: 110px;
+    width: auto;
     max-width: 400px;
     filter: drop-shadow(6px 6px 0px var(--secondary));
     object-fit: contain;
@@ -304,6 +166,7 @@
     color: #fff;
     transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 4px 4px 0 var(--accent-orange);
+    will-change: transform;
   }
 
   .header-title span:nth-child(odd) {
@@ -325,7 +188,7 @@
   }
 
   .header-title:hover span {
-    transform: rotate(0deg) scale(1.1) !important;
+    transform: rotate(0deg) scale(1.1);
     background: var(--accent-orange);
     color: var(--secondary);
     box-shadow: 10px 10px 0 var(--secondary);
@@ -398,10 +261,6 @@
       padding: 0.2rem 0.5rem;
       margin-top: 0.5rem;
     }
-
-    .shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
-        display: none;
-    }
   }
 
   @media (max-width: 380px) {
@@ -412,7 +271,7 @@
         font-size: 1.8rem;
     }
     .header-logo {
-        height: 60px !important;
+        height: 60px;
     }
   }
 </style>
