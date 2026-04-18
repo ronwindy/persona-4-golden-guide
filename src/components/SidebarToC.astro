@@ -1,5 +1,226 @@
 ---
 // SidebarToC.astro
+
+const tocItems = [
+  {
+    title: "100% Guide",
+    links: [
+      { title: "Guide Checklist", url: "/persona-4-golden-guide/100-guide/guide-checklist" },
+      { title: "Update/Current Schedule", url: "/persona-4-golden-guide/100-guide/update-schedule" }
+    ]
+  },
+  {
+    title: "Introduction",
+    links: [
+      { title: "Version History", url: "/persona-4-golden-guide/introduction/version-history" },
+      { title: "Copyright", url: "/persona-4-golden-guide/introduction/copyright" },
+      { title: "Frequently Asked Questions", url: "/persona-4-golden-guide/introduction/faq" },
+      { title: "About This Guide", url: "/persona-4-golden-guide/introduction/about-this-guide" },
+      { title: "Contact Information", url: "/persona-4-golden-guide/introduction/contact-information" }
+    ]
+  },
+  {
+    title: "About Persona 4 Golden",
+    links: [
+      { title: "What Is Persona?", url: "/persona-4-golden-guide/about-p4g/what-is-persona" },
+      { title: "Persona 3 vs. Persona 4", url: "/persona-4-golden-guide/about-p4g/persona-3-vs-4" },
+      { title: "Persona 4 vs. Persona 4 Golden", url: "/persona-4-golden-guide/about-p4g/p4-vs-p4g" }
+    ]
+  },
+  {
+    title: "Gameplay Mechanics",
+    links: [
+      { title: "Controls", url: "/persona-4-golden-guide/gameplay-mechanics/controls" },
+      { title: "Field Mechanics", url: "/persona-4-golden-guide/gameplay-mechanics/field-mechanics" },
+      { title: "Calendar System", url: "/persona-4-golden-guide/gameplay-mechanics#calendar-system" },
+      { title: "Social Link", url: "/persona-4-golden-guide/gameplay-mechanics#social-link" },
+      { title: "Status Parameters", url: "/persona-4-golden-guide/gameplay-mechanics#status-parameters" },
+      { title: "Velvet Room", url: "/persona-4-golden-guide/gameplay-mechanics#velvet-room" },
+      { title: "Battle Mechanics", url: "/persona-4-golden-guide/gameplay-mechanics#battle-mechanics" },
+      { title: "Shuffle Time", url: "/persona-4-golden-guide/gameplay-mechanics#shuffle-time" },
+      { title: "Status Ailments", url: "/persona-4-golden-guide/gameplay-mechanics#status-ailments" },
+      { title: "New Game Plus", url: "/persona-4-golden-guide/gameplay-mechanics#new-game-plus" },
+      { title: "TV Channels", url: "/persona-4-golden-guide/gameplay-mechanics#tv-channels" }
+    ]
+  },
+  {
+    title: "Walkthrough",
+    links: [
+      { title: "Walkthrough Objectives", url: "/persona-4-golden-guide/walkthrough#walkthrough-objectives" },
+      { title: "Walkthrough FAQ", url: "/persona-4-golden-guide/walkthrough#walkthrough-faq" },
+      { title: "Important Notes", url: "/persona-4-golden-guide/walkthrough#important-notes" },
+      { title: "Current Problems", url: "/persona-4-golden-guide/walkthrough#current-problems" },
+      { title: "April", url: "/persona-4-golden-guide/walkthrough#april" },
+      { title: "May", url: "/persona-4-golden-guide/walkthrough#may" },
+      { title: "June", url: "/persona-4-golden-guide/walkthrough#june" },
+      { title: "July", url: "/persona-4-golden-guide/walkthrough#july" },
+      { title: "August", url: "/persona-4-golden-guide/walkthrough#august" },
+      { title: "September", url: "/persona-4-golden-guide/walkthrough#september" },
+      { title: "October", url: "/persona-4-golden-guide/walkthrough#october" },
+      { title: "November", url: "/persona-4-golden-guide/walkthrough#november" },
+      { title: "December", url: "/persona-4-golden-guide/walkthrough#december" },
+      { title: "January", url: "/persona-4-golden-guide/walkthrough#january" },
+      { title: "February", url: "/persona-4-golden-guide/walkthrough#february" },
+      { title: "March", url: "/persona-4-golden-guide/walkthrough#march" },
+      { title: "New Game Plus Walkthrough", url: "/persona-4-golden-guide/walkthrough#new-game-plus-walkthrough" }
+    ]
+  },
+  {
+    title: "Dungeons",
+    links: [
+      { title: "Twisted Shopping District", url: "/persona-4-golden-guide/dungeons#twisted-shopping-district" },
+      { title: "Yukiko's Castle", url: "/persona-4-golden-guide/dungeons#yukikos-castle" },
+      { title: "Steamy Bathhouse", url: "/persona-4-golden-guide/dungeons#steamy-bathhouse" },
+      { title: "Marukyu Striptease", url: "/persona-4-golden-guide/dungeons#marukyu-striptease" },
+      { title: "Void Quest", url: "/persona-4-golden-guide/dungeons#void-quest" },
+      { title: "Secret Laboratory", url: "/persona-4-golden-guide/dungeons#secret-laboratory" },
+      { title: "Heaven", url: "/persona-4-golden-guide/dungeons#heaven" },
+      { title: "Magatsu Inaba", url: "/persona-4-golden-guide/dungeons#magatsu-inaba" },
+      { title: "Hollow Forest", url: "/persona-4-golden-guide/dungeons#hollow-forest" },
+      { title: "Yomotsu Hirasaka", url: "/persona-4-golden-guide/dungeons#yomotsu-hirasaka" },
+      { title: "Extra Bosses", url: "/persona-4-golden-guide/dungeons#extra-bosses" }
+    ]
+  },
+  {
+    title: "Persona Compendium",
+    showMoreClass: "show1",
+    links: [
+      { title: "Formula", url: "/persona-4-golden-guide/persona-compendium#formula" },
+      { title: "Fusion Forecast", url: "/persona-4-golden-guide/persona-compendium#fusion-forecast" },
+      { title: "Fool", url: "/persona-4-golden-guide/persona-compendium#fool" },
+      { title: "Magician", url: "/persona-4-golden-guide/persona-compendium#magician" },
+      { title: "Priestess", url: "/persona-4-golden-guide/persona-compendium#priestess" },
+      { title: "Empress", url: "/persona-4-golden-guide/persona-compendium#empress" },
+      { title: "Emperor", url: "/persona-4-golden-guide/persona-compendium#emperor" },
+      { title: "Hierophant", url: "/persona-4-golden-guide/persona-compendium#hierophant" },
+      { title: "Lovers", url: "/persona-4-golden-guide/persona-compendium#lovers" },
+      { title: "Chariot", url: "/persona-4-golden-guide/persona-compendium#chariot" },
+      { title: "Justice", url: "/persona-4-golden-guide/persona-compendium#justice" },
+      { title: "Hermit", url: "/persona-4-golden-guide/persona-compendium#hermit" },
+      { title: "Fortune", url: "/persona-4-golden-guide/persona-compendium#fortune" },
+      { title: "Strength", url: "/persona-4-golden-guide/persona-compendium#strength" },
+      { title: "Hanged Man", url: "/persona-4-golden-guide/persona-compendium#hanged-man" },
+      { title: "Death", url: "/persona-4-golden-guide/persona-compendium#death" },
+      { title: "Temperance", url: "/persona-4-golden-guide/persona-compendium#temperance" },
+      { title: "Devil", url: "/persona-4-golden-guide/persona-compendium#devil" },
+      { title: "Tower", url: "/persona-4-golden-guide/persona-compendium#tower" },
+      { title: "Star", url: "/persona-4-golden-guide/persona-compendium#star" }
+    ],
+    hiddenLinks: [
+      { title: "Moon", url: "/persona-4-golden-guide/persona-compendium#moon" },
+      { title: "Sun", url: "/persona-4-golden-guide/persona-compendium#sun" },
+      { title: "Judgement", url: "/persona-4-golden-guide/persona-compendium#judgement" },
+      { title: "Jester", url: "/persona-4-golden-guide/persona-compendium#jester" },
+      { title: "Aeon", url: "/persona-4-golden-guide/persona-compendium#aeon" },
+      { title: "World", url: "/persona-4-golden-guide/persona-compendium#world" },
+      { title: "Special Fusions", url: "/persona-4-golden-guide/persona-compendium#special-fusions" }
+    ]
+  },
+  {
+    title: "Social Links",
+    showMoreClass: "show2",
+    links: [
+      { title: "Investigation Team/Fool", url: "/persona-4-golden-guide/social-links#investigation-team-fool" },
+      { title: "Yosuke Hanamura/Magician", url: "/persona-4-golden-guide/social-links#yosuke-hanamura-magician" },
+      { title: "Yukiko Amagi/Priestess", url: "/persona-4-golden-guide/social-links#yukiko-amagi-priestess" },
+      { title: "Margaret/Empress", url: "/persona-4-golden-guide/social-links#margaret-empress" },
+      { title: "Kanji Tatsumi/Emperor", url: "/persona-4-golden-guide/social-links#kanji-tatsumi-emperor" },
+      { title: "Ryotaro Dojima/Hierophant", url: "/persona-4-golden-guide/social-links#ryotaro-dojima-hierophant" },
+      { title: "Rise Kujikawa/Lovers", url: "/persona-4-golden-guide/social-links#rise-kujikawa-lovers" },
+      { title: "Chie Satonaka/Chariot", url: "/persona-4-golden-guide/social-links#chie-satonaka-chariot" },
+      { title: "Nanako Dojima/Justice", url: "/persona-4-golden-guide/social-links#nanako-dojima-justice" },
+      { title: "Fox/Hermit", url: "/persona-4-golden-guide/social-links#fox-hermit" },
+      { title: "Naoto Shirogane/Fortune", url: "/persona-4-golden-guide/social-links#naoto-shirogane-fortune" },
+      { title: "Fellow Athletes/Strength", url: "/persona-4-golden-guide/social-links#fellow-athletes-strength" },
+      { title: "Saki's Brother/Hanged Man", url: "/persona-4-golden-guide/social-links#sakis-brother-hanged-man" },
+      { title: "Old Lady/Death", url: "/persona-4-golden-guide/social-links#old-lady-death" },
+      { title: "Young Mother/Temperance", url: "/persona-4-golden-guide/social-links#young-mother-temperance" },
+      { title: "Nurse/Devil", url: "/persona-4-golden-guide/social-links#nurse-devil" },
+      { title: "Tutored Student/Tower", url: "/persona-4-golden-guide/social-links#tutored-student-tower" },
+      { title: "Teddie/Star", url: "/persona-4-golden-guide/social-links#teddie-star" },
+      { title: "Ai Ebihara/Moon", url: "/persona-4-golden-guide/social-links#ai-ebihara-moon" },
+      { title: "Yumi Ozawa and Ayane Matsunaga/Sun", url: "/persona-4-golden-guide/social-links#yumi-ozawa-and-ayane-matsunaga-sun" }
+    ],
+    hiddenLinks: [
+      { title: "Seekers of Truth/Judgement", url: "/persona-4-golden-guide/social-links#seekers-of-truth-judgement" },
+      { title: "Tohru Adachi/Jester", url: "/persona-4-golden-guide/social-links#tohru-adachi-jester" },
+      { title: "Marie/Aeon", url: "/persona-4-golden-guide/social-links#marie-aeon" }
+    ]
+  },
+  {
+    title: "Activities",
+    showMoreClass: "show3",
+    links: [
+      { title: "Quests", url: "/persona-4-golden-guide/activities#quests" },
+      { title: "Bug Catching", url: "/persona-4-golden-guide/activities#bug-catching" },
+      { title: "Fishing", url: "/persona-4-golden-guide/activities#fishing" },
+      { title: "Gardening", url: "/persona-4-golden-guide/activities#gardening" },
+      { title: "Cooking", url: "/persona-4-golden-guide/activities#cooking" },
+      { title: "Books", url: "/persona-4-golden-guide/activities#books" },
+      { title: "Beach/Hot Springs", url: "/persona-4-golden-guide/activities#beach-hot-springs" },
+      { title: "Costume Shop", url: "/persona-4-golden-guide/activities#costume-shop" },
+      { title: "TV Shopping", url: "/persona-4-golden-guide/activities#tv-shopping" },
+      { title: "Daidara List", url: "/persona-4-golden-guide/activities#daidara-list" },
+      { title: "Shiroku Store", url: "/persona-4-golden-guide/activities#shiroku-store" },
+      { title: "Shiroku Pub", url: "/persona-4-golden-guide/activities#shiroku-pub" },
+      { title: "Part Time Jobs", url: "/persona-4-golden-guide/activities#part-time-jobs" },
+      { title: "Artisan Apprentice", url: "/persona-4-golden-guide/activities#artisan-apprentice" },
+      { title: "Lady in White", url: "/persona-4-golden-guide/activities#lady-in-white" },
+      { title: "Okina Movie Theater", url: "/persona-4-golden-guide/activities#okina-movie-theater" },
+      { title: "Chagall Cafe", url: "/persona-4-golden-guide/activities#chagall-cafe" },
+      { title: "Crane Machine", url: "/persona-4-golden-guide/activities#crane-machine" },
+      { title: "Refrigerator", url: "/persona-4-golden-guide/activities#refrigerator" },
+      { title: "Models", url: "/persona-4-golden-guide/activities#models" }
+    ],
+    hiddenLinks: [
+      { title: "Miracle Quiz", url: "/persona-4-golden-guide/activities#miracle-quiz" },
+      { title: "Trophies", url: "/persona-4-golden-guide/activities#trophies" },
+      { title: "Other Activities", url: "/persona-4-golden-guide/activities#other-activities" }
+    ]
+  },
+  {
+    title: "Skill List",
+    links: [
+      { title: "All Skills", url: "/persona-4-golden-guide/skill-list#all-skills" },
+      { title: "Skill Cards", url: "/persona-4-golden-guide/skill-list#skill-cards" },
+      { title: "Party Members", url: "/persona-4-golden-guide/skill-list#party-members" }
+    ]
+  },
+  {
+    title: "Item List",
+    links: [
+      { title: "Weapons", url: "/persona-4-golden-guide/item-list#weapons" },
+      { title: "Armor", url: "/persona-4-golden-guide/item-list#armor" },
+      { title: "Accessories", url: "/persona-4-golden-guide/item-list#accessories" },
+      { title: "Costume List", url: "/persona-4-golden-guide/item-list#costume-list" },
+      { title: "Consumable/Quest Items", url: "/persona-4-golden-guide/item-list#consumable-quest-items" },
+      { title: "Materials", url: "/persona-4-golden-guide/item-list#materials" },
+      { title: "Book List", url: "/persona-4-golden-guide/item-list#book-list" },
+      { title: "Fish List", url: "/persona-4-golden-guide/item-list#fish-list" },
+      { title: "Gardening Items", url: "/persona-4-golden-guide/item-list#gardening-items" },
+      { title: "Bug List", url: "/persona-4-golden-guide/item-list#bug-list" },
+      { title: "Gem List", url: "/persona-4-golden-guide/item-list#gem-list" },
+      { title: "Key Items", url: "/persona-4-golden-guide/item-list#key-items" }
+    ]
+  },
+  {
+    title: "Tips And Tricks",
+    links: [
+      { title: "Golden Shadow Grinding", url: "/persona-4-golden-guide/tips-and-tricks#golden-shadow-grinding" },
+      { title: "Best Personas", url: "/persona-4-golden-guide/tips-and-tricks#best-personas" },
+      { title: "Hardcore Risette Fan", url: "/persona-4-golden-guide/tips-and-tricks#hardcore-risette-fan" },
+      { title: "Victory Cry Cheat", url: "/persona-4-golden-guide/tips-and-tricks#victory-cry-cheat" },
+      { title: "Resources", url: "/persona-4-golden-guide/tips-and-tricks#resources" }
+    ]
+  },
+  {
+    title: "Conclusion",
+    links: [
+      { title: "Special Thanks", url: "/persona-4-golden-guide/conclusion#special-thanks" },
+      { title: "Final Remarks", url: "/persona-4-golden-guide/conclusion#final-remarks" }
+    ]
+  }
+];
 ---
 
 <!-- Mobile Sidebar Overlay -->
@@ -12,314 +233,36 @@
   </div>
   
   <ul class="toc-list font-read">
-    <!-- 1. 100% Guide -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">100% Guide</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="/persona-4-golden-guide/100-guide/guide-checklist">Guide Checklist</a></li>
-        <li><a href="/persona-4-golden-guide/100-guide/update-schedule">Update/Current Schedule</a></li>
-      </ul>
-    </li>
-
-    <!-- 2. Introduction -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Introduction</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="/persona-4-golden-guide/introduction/version-history">Version History</a></li>
-        <li><a href="/persona-4-golden-guide/introduction/copyright">Copyright</a></li>
-        <li><a href="/persona-4-golden-guide/introduction/faq">Frequently Asked Questions</a></li>
-        <li><a href="/persona-4-golden-guide/introduction/about-this-guide">About This Guide</a></li>
-        <li><a href="/persona-4-golden-guide/introduction/contact-information">Contact Information</a></li>
-      </ul>
-    </li>
-
-    <!-- 3. About Persona 4 Golden -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">About Persona 4 Golden</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="/persona-4-golden-guide/about-p4g/what-is-persona">What Is Persona?</a></li>
-        <li><a href="/persona-4-golden-guide/about-p4g/persona-3-vs-4">Persona 3 vs. Persona 4</a></li>
-        <li><a href="/persona-4-golden-guide/about-p4g/p4-vs-p4g">Persona 4 vs. Persona 4 Golden</a></li>
-      </ul>
-    </li>
-
-    <!-- 4. Gameplay Mechanics -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Gameplay Mechanics</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="/persona-4-golden-guide/gameplay-mechanics/controls">Controls</a></li>
-        <li><a href="/persona-4-golden-guide/gameplay-mechanics/field-mechanics">Field Mechanics</a></li>
-        <li><a href="gameplay-mechanics#calendar-system">Calendar System</a></li>
-        <li><a href="gameplay-mechanics#social-link">Social Link</a></li>
-        <li><a href="gameplay-mechanics#status-parameters">Status Parameters</a></li>
-        <li><a href="gameplay-mechanics#velvet-room">Velvet Room</a></li>
-        <li><a href="gameplay-mechanics#battle-mechanics">Battle Mechanics</a></li>
-        <li><a href="gameplay-mechanics#shuffle-time">Shuffle TIme</a></li>
-        <li><a href="gameplay-mechanics#status-ailments">Status Ailments</a></li>
-        <li><a href="gameplay-mechanics#new-game-plus">New Game Plus</a></li>
-        <li><a href="gameplay-mechanics#tv-channels">TV Channels</a></li>
-      </ul>
-    </li>
-
-    <!-- 5. Walkthrough -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Walkthrough</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="walkthrough#walkthrough-objectives">Walkthrough Objectives</a></li>
-        <li><a href="walkthrough#walkthrough-faq">Walkthrough FAQ</a></li>
-        <li><a href="walkthrough#important-notes">Important Notes</a></li>
-        <li><a href="walkthrough#current-problems">Current Problems</a></li>
-        <li><a href="walkthrough#april">April</a></li>
-        <li><a href="walkthrough#may">May</a></li>
-        <li><a href="walkthrough#june">June</a></li>
-        <li><a href="walkthrough#july">July</a></li>
-        <li><a href="walkthrough#august">August</a></li>
-        <li><a href="walkthrough#september">September</a></li>
-        <li><a href="walkthrough#october">October</a></li>
-        <li><a href="walkthrough#november">November</a></li>
-        <li><a href="walkthrough#december">December</a></li>
-        <li><a href="walkthrough#january">January</a></li>
-        <li><a href="walkthrough#february">February</a></li>
-        <li><a href="walkthrough#march">March</a></li>
-        <li><a href="walkthrough#new-game-plus-walkthrough">New Game Plus Walkthrough</a></li>
-      </ul>
-    </li>
-
-    <!-- 6. Dungeons -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Dungeons</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="dungeons#twisted-shopping-district">Twisted Shopping District</a></li>
-        <li><a href="dungeons#yukikos-castle">Yukiko's Castle</a></li>
-        <li><a href="dungeons#steamy-bathhouse">Steamy Bathhouse</a></li>
-        <li><a href="dungeons#marukyu-striptease">Marukyu Striptease</a></li>
-        <li><a href="dungeons#void-quest">Void Quest</a></li>
-        <li><a href="dungeons#secret-laboratory">Secret Laboratory</a></li>
-        <li><a href="dungeons#heaven">Heaven</a></li>
-        <li><a href="dungeons#magatsu-inaba">Magatsu Inaba</a></li>
-        <li><a href="dungeons#hollow-forest">Hollow Forest</a></li>
-        <li><a href="dungeons#yomotsu-hirasaka">Yomotsu Hirasaka</a></li>
-        <li><a href="dungeons#extra-bosses">Extra Bosses</a></li>
-      </ul>
-    </li>
-
-    <!-- 7. Persona Compendium -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Persona Compendium</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="persona-compendium#formula">Formula</a></li>
-        <li><a href="persona-compendium#fusion-forecast">Fusion Forecast</a></li>
-        <li><a href="persona-compendium#fool">Fool</a></li>
-        <li><a href="persona-compendium#magician">Magician</a></li>
-        <li><a href="persona-compendium#priestess">Priestess</a></li>
-        <li><a href="persona-compendium#empress">Empress</a></li>
-        <li><a href="persona-compendium#emperor">Emperor</a></li>
-        <li><a href="persona-compendium#hierophant">Hierophant</a></li>
-        <li><a href="persona-compendium#lovers">Lovers</a></li>
-        <li><a href="persona-compendium#chariot">Chariot</a></li>
-        <li><a href="persona-compendium#justice">Justice</a></li>
-        <li><a href="persona-compendium#hermit">Hermit</a></li>
-        <li><a href="persona-compendium#fortune">Fortune</a></li>
-        <li><a href="persona-compendium#strength">Strength</a></li>
-        <li><a href="persona-compendium#hanged-man">Hanged Man</a></li>
-        <li><a href="persona-compendium#death">Death</a></li>
-        <li><a href="persona-compendium#temperance">Temperance</a></li>
-        <li><a href="persona-compendium#devil">Devil</a></li>
-        <li><a href="persona-compendium#tower">Tower</a></li>
-        <li><a href="persona-compendium#star">Star</a></li>
-        <li class="show-more-btn">
-          <a href="javascript:void(0)" onclick="toggleShowMore('show1', this)"><i>show more...</i></a>
-        </li>
-        <li class="show1" style="display: none"><a href="persona-compendium#moon">Moon</a></li>
-        <li class="show1" style="display: none"><a href="persona-compendium#sun">Sun</a></li>
-        <li class="show1" style="display: none"><a href="persona-compendium#judgement">Judgement</a></li>
-        <li class="show1" style="display: none"><a href="persona-compendium#jester">Jester</a></li>
-        <li class="show1" style="display: none"><a href="persona-compendium#aeon">Aeon</a></li>
-        <li class="show1" style="display: none"><a href="persona-compendium#world">World</a></li>
-        <li class="show1" style="display: none"><a href="persona-compendium#special-fusions">Special Fusions</a></li>
-      </ul>
-    </li>
-
-    <!-- 8. Social Links -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Social Links</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="social-links#investigation-team-fool">Investigation Team/Fool</a></li>
-        <li><a href="social-links#yosuke-hanamura-magician">Yosuke Hanamura/Magician</a></li>
-        <li><a href="social-links#yukiko-amagi-priestess">Yukiko Amagi/Priestess</a></li>
-        <li><a href="social-links#margaret-empress">Margaret/Empress</a></li>
-        <li><a href="social-links#kanji-tatsumi-emperor">Kanji Tatsumi/Emperor</a></li>
-        <li><a href="social-links#ryotaro-dojima-hierophant">Ryotaro Dojima/Hierophant</a></li>
-        <li><a href="social-links#rise-kujikawa-lovers">Rise Kujikawa/Lovers</a></li>
-        <li><a href="social-links#chie-satonaka-chariot">Chie Satonaka/Chariot</a></li>
-        <li><a href="social-links#nanako-dojima-justice">Nanako Dojima/Justice</a></li>
-        <li><a href="social-links#fox-hermit">Fox/Hermit</a></li>
-        <li><a href="social-links#naoto-shirogane-fortune">Naoto Shirogane/Fortune</a></li>
-        <li><a href="social-links#fellow-athletes-strength">Fellow Athletes/Strength</a></li>
-        <li><a href="social-links#sakis-brother-hanged-man">Saki's Brother/Hanged Man</a></li>
-        <li><a href="social-links#old-lady-death">Old Lady/Death</a></li>
-        <li><a href="social-links#young-mother-temperance">Young Mother/Temperance</a></li>
-        <li><a href="social-links#nurse-devil">Nurse/Devil</a></li>
-        <li><a href="social-links#tutored-student-tower">Tutored Student/Tower</a></li>
-        <li><a href="social-links#teddie-star">Teddie/Star</a></li>
-        <li><a href="social-links#ai-ebihara-moon">Ai Ebihara/Moon</a></li>
-        <li><a href="social-links#yumi-ozawa-and-ayane-matsunaga-sun">Yumi Ozawa and Ayane Matsunaga/Sun</a></li>
-        <li class="show-more-btn">
-          <a href="javascript:void(0)" onclick="toggleShowMore('show2', this)"><i>show more...</i></a>
-        </li>
-        <li class="show2" style="display: none"><a href="social-links#seekers-of-truth-judgement">Seekers of Truth/Judgement</a></li>
-        <li class="show2" style="display: none"><a href="social-links#tohru-adachi-jester">Tohru Adachi/Jester</a></li>
-        <li class="show2" style="display: none"><a href="social-links#marie-aeon">Marie/Aeon</a></li>
-      </ul>
-    </li>
-
-    <!-- 9. Activities -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Activities</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="activities#quests">Quests</a></li>
-        <li><a href="activities#bug-catching">Bug Catching</a></li>
-        <li><a href="activities#fishing">Fishing</a></li>
-        <li><a href="activities#gardening">Gardening</a></li>
-        <li><a href="activities#cooking">Cooking</a></li>
-        <li><a href="activities#books">Books</a></li>
-        <li><a href="activities#beach-hot-springs">Beach/Hot Springs</a></li>
-        <li><a href="activities#costume-shop">Costume Shop</a></li>
-        <li><a href="activities#tv-shopping">TV Shopping</a></li>
-        <li><a href="activities#daidara-list">Daidara List</a></li>
-        <li><a href="activities#shiroku-store">Shiroku Store</a></li>
-        <li><a href="activities#shiroku-pub">Shiroku Pub</a></li>
-        <li><a href="activities#part-time-jobs">Part Time Jobs</a></li>
-        <li><a href="activities#artisan-apprentice">Artisan Apprentice</a></li>
-        <li><a href="activities#lady-in-white">Lady in White</a></li>
-        <li><a href="activities#okina-movie-theater">Okina Movie Theater</a></li>
-        <li><a href="activities#chagall-cafe">Chagall Cafe</a></li>
-        <li><a href="activities#crane-machine">Crane Machine</a></li>
-        <li><a href="activities#refrigerator">Refrigerator</a></li>
-        <li><a href="activities#models">Models</a></li>
-        <li class="show-more-btn">
-          <a href="javascript:void(0)" onclick="toggleShowMore('show3', this)"><i>show more...</i></a>
-        </li>
-        <li class="show3" style="display: none"><a href="activities#miracle-quiz">Miracle Quiz</a></li>
-        <li class="show3" style="display: none"><a href="activities#trophies">Trophies</a></li>
-        <li class="show3" style="display: none"><a href="activities#other-activities">Other Activities</a></li>
-      </ul>
-    </li>
-
-    <!-- 10. Skill List -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Skill List</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="skill-list#all-skills">All Skills</a></li>
-        <li><a href="skill-list#skill-cards">Skill Cards</a></li>
-        <li><a href="skill-list#party-members">Party Members</a></li>
-      </ul>
-    </li>
-
-    <!-- 11. Item List -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Item List</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="item-list#weapons">Weapons</a></li>
-        <li><a href="item-list#armor">Armor</a></li>
-        <li><a href="item-list#accessories">Accessories</a></li>
-        <li><a href="item-list#costume-list">Costume List</a></li>
-        <li><a href="item-list#consumable-quest-items">Consumable/Quest Items</a></li>
-        <li><a href="item-list#materials">Materials</a></li>
-        <li><a href="item-list#book-list">Book List</a></li>
-        <li><a href="item-list#fish-list">Fish List</a></li>
-        <li><a href="item-list#gardening-items">Gardening Items</a></li>
-        <li><a href="item-list#bug-list">Bug List</a></li>
-        <li><a href="item-list#gem-list">Gem List</a></li>
-        <li><a href="item-list#key-items">Key Items</a></li>
-      </ul>
-    </li>
-
-    <!-- 12. Tips And Tricks -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Tips And Tricks</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="tips-and-tricks#golden-shadow-grinding">Golden Shadow Grinding</a></li>
-        <li><a href="tips-and-tricks#best-personas">Best Personas</a></li>
-        <li><a href="tips-and-tricks#hardcore-risette-fan">Hardcore Risette Fan</a></li>
-        <li><a href="tips-and-tricks#victory-cry-cheat">Victory Cry Cheat</a></li>
-        <li><a href="tips-and-tricks#resources">Resources</a></li>
-      </ul>
-    </li>
-
-    <!-- 13. Conclusion -->
-    <li class="toc-item">
-      <div class="toc-parent">
-        <span class="font-pop">Conclusion</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <ul class="toc-child-list">
-        <li><a href="conclusion#special-thanks">Special Thanks</a></li>
-        <li><a href="conclusion#final-remarks">Final Remarks</a></li>
-      </ul>
-    </li>
+    {tocItems.map((category) => (
+      <li class="toc-item">
+        <div class="toc-parent">
+          <span class="font-pop">{category.title}</span>
+          <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <ul class="toc-child-list">
+          {category.links.map((link) => (
+            <li><a href={link.url}>{link.title}</a></li>
+          ))}
+          
+          {category.hiddenLinks && category.hiddenLinks.length > 0 && (
+            <>
+              <li class="show-more-btn">
+                <a href="#" class="show-more-link" data-target={category.showMoreClass}>
+                  <i>show more...</i>
+                </a>
+              </li>
+              {category.hiddenLinks.map((link) => (
+                <li class={`hidden-toc-item ${category.showMoreClass}`} style="display: none">
+                  <a href={link.url}>{link.title}</a>
+                </li>
+              ))}
+            </>
+          )}
+        </ul>
+      </li>
+    ))}
   </ul>
 </aside>
 
@@ -673,6 +616,9 @@
   // Close menu when a link is clicked
   document.querySelectorAll("#sidebar-toc a").forEach((link) => {
     link.addEventListener("click", () => {
+      // Don't close for 'show more' links
+      if (link.classList.contains("show-more-link")) return;
+      
       if (sidebar && sidebar.classList.contains("mobile-active")) {
         toggleMobileMenu();
       }
@@ -692,13 +638,16 @@
   });
 
   // Show More Logic for specific ToC categories
-  function toggleShowMore(className, btn) {
-    document
-      .querySelectorAll("." + className)
-      .forEach((el) => (el.style.display = "list-item"));
-    btn.parentElement.style.display = "none";
-  }
-
-  // Make toggleShowMore available globally for inline onclick
-  window.toggleShowMore = toggleShowMore;
+  document.querySelectorAll(".show-more-link").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetClass = btn.getAttribute("data-target");
+      if (targetClass) {
+        document.querySelectorAll("." + targetClass).forEach((el) => {
+          el.style.display = "list-item";
+        });
+        btn.parentElement.style.display = "none";
+      }
+    });
+  });
 </script>
