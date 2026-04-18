@@ -30,7 +30,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
       <section class="fragment-card saving-fragment anim-slide-right">
         <div class="fragment-header font-pop">
           <div class="title-group">
-            <span class="fragment-num">01</span> SAVING YOUR PROGRESS
+            <span class="fragment-num">01</span> 
+            <svg class="header-icon spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+            SAVING YOUR PROGRESS
           </div>
         </div>
         <div class="fragment-body font-read">
@@ -51,7 +53,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
       <section class="fragment-card weather-fragment anim-jitter anim-slide-left">
         <div class="fragment-header font-pop">
           <div class="title-group">
-            <span class="fragment-num">02</span> WEATHER FORECAST
+            <span class="fragment-num">02</span> 
+            <svg class="header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            WEATHER FORECAST
           </div>
         </div>
         <div class="fragment-body font-read">
@@ -72,7 +76,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
       <section class="fragment-card travel-fragment anim-slide-right">
         <div class="fragment-header font-pop">
           <div class="title-group">
-            <span class="fragment-num">03</span> FAST TRAVEL
+            <span class="fragment-num">03</span> 
+            <svg class="header-icon bounce" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+            FAST TRAVEL
           </div>
         </div>
         <div class="fragment-body font-read">
@@ -91,7 +97,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
       <section class="fragment-card night-fragment anim-jitter anim-slide-left">
         <div class="fragment-header font-pop">
           <div class="title-group">
-            <span class="fragment-num">04</span> NIGHT LIFE
+            <span class="fragment-num">04</span> 
+            <svg class="header-icon hover-swing" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            NIGHT LIFE
           </div>
         </div>
         <div class="fragment-body font-read">
@@ -111,7 +119,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
       <section class="fragment-card bonding-fragment anim-slide-up full-width">
         <div class="fragment-header font-pop">
           <div class="title-group">
-            <span class="fragment-num">NEW</span> BONDING ALBUM
+            <span class="fragment-num">NEW</span> 
+            <svg class="header-icon pulse" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            BONDING ALBUM
           </div>
           <span class="feature-badge font-pop">MODERN EXCLUSIVE</span>
         </div>
@@ -349,7 +359,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
   /* Unique Card Themes */
   .saving-fragment { 
     transform: rotate(0.5deg);
-    background: linear-gradient(to bottom right, #ffffff, #f0f7ff);
+    background: 
+      repeating-radial-gradient(circle at 100% 100%, transparent 0, transparent 20px, rgba(0, 153, 255, 0.03) 20px, rgba(0, 153, 255, 0.03) 40px),
+      linear-gradient(to bottom right, #ffffff, #f0f7ff);
   }
   .saving-fragment::after {
     content: '';
@@ -365,7 +377,9 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
 
   .weather-fragment { 
     transform: rotate(-1deg);
-    background: linear-gradient(135deg, #fff 0%, #fff9e6 100%);
+    background: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(252, 227, 0, 0.05) 10px, rgba(252, 227, 0, 0.05) 20px),
+      linear-gradient(135deg, #ffffff 0%, #fff9e6 100%);
   }
   .weather-fragment::before {
     content: '';
@@ -381,12 +395,22 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
 
   .travel-fragment { 
     transform: rotate(-0.5deg);
-    background: #fafafa;
+    background: 
+      linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px),
+      #fafafa;
+    background-size: 20px 20px;
   }
 
   .night-fragment { 
     transform: rotate(1.5deg);
-    background: linear-gradient(135deg, #0c1431 0%, #1a1a1a 100%);
+    background: 
+      radial-gradient(1px 1px at 20% 30%, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 40% 70%, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 80% 10%, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 60% 40%, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 90% 90%, #ffffff, rgba(0,0,0,0)),
+      linear-gradient(135deg, #0c1431 0%, #1a1a1a 100%);
     color: white;
     border-color: var(--primary);
   }
@@ -405,17 +429,42 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
   .night-fragment::after {
     content: '';
     position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 0 var(--primary);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+    animation: moonFloat 4s ease-in-out infinite alternate;
+  }
+  .night-fragment::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 80% 20%, rgba(252, 227, 0, 0.05) 0%, transparent 40%);
+    background: 
+      radial-gradient(circle at 85% 20%, rgba(252, 227, 0, 0.1) 0%, transparent 40%),
+      radial-gradient(1px 1px at 15% 55%, rgba(255,255,255,0.9), transparent),
+      radial-gradient(1.5px 1.5px at 65% 85%, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 45% 15%, rgba(255,255,255,1), transparent);
+    background-size: 100% 100%;
     pointer-events: none;
+    z-index: 0;
+    animation: starTwinklePan 6s ease-in-out infinite alternate;
   }
 
   .bonding-fragment.full-width {
     grid-column: 1 / -1;
-    background: #fffdf8;
+    background: 
+      radial-gradient(circle at 10% 20%, rgba(255, 105, 180, 0.05) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(255, 105, 180, 0.05) 0%, transparent 20%),
+      #fffdf8;
     border-width: 6px;
     transform: rotate(-0.2deg);
   }
@@ -615,5 +664,30 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     .feature-badge {
       align-self: flex-start;
     }
+  }
+
+  /* Icons and Animations */
+  .header-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .spin:hover { animation: iconSpin 2s linear infinite; }
+  .bounce:hover { animation: iconBounce 1s ease-in-out infinite; }
+  .hover-swing:hover { animation: iconSwing 1s ease-in-out infinite; }
+  .pulse:hover { animation: iconPulse 1s ease-in-out infinite; }
+
+  @keyframes iconSpin { 100% { transform: rotate(360deg); } }
+  @keyframes iconBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+  @keyframes iconSwing { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(10deg); } 75% { transform: rotate(-10deg); } }
+  @keyframes iconPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+
+  @keyframes moonFloat {
+    0% { transform: translate(0, 0) rotate(0deg); box-shadow: -10px 10px 0 0 var(--primary); }
+    100% { transform: translate(-2px, -4px) rotate(-4deg); box-shadow: -11px 12px 0 1px rgba(252, 227, 0, 0.9); }
+  }
+  @keyframes starTwinklePan {
+    0% { opacity: 0.4; }
+    100% { opacity: 1; }
   }
 </style>
