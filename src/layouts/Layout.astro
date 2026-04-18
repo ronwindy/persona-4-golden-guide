@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro';
+import "../styles/global.css";
+import Header from "../components/Header.astro";
 
 const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
 ---
@@ -10,7 +10,11 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/persona-4-golden-guide/fav_icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/persona-4-golden-guide/fav_icon.png"
+    />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,73 +29,15 @@ const { title = "P4G Guide - Reach Out To The Truth" } = Astro.props;
       <div class="crt-overlay"></div>
     </div>
 
-    <!-- Sticky Calendar Tracker removed for now -->
-
-
     <!-- Extracted Header Component -->
     <Header />
 
     <!-- Caution Tape Divider -->
     <div class="divider bg-stripes"></div>
 
-    <!-- Mobile Sidebar Overlay -->
-    <div id="sidebar-overlay" class="sidebar-overlay"></div>
-
     <!-- Main Layout -->
     <main class="main-layout">
       <slot />
     </main>
-
-    <script is:inline>
-      // Mobile Menu Toggle Logic
-      const menuBtn = document.getElementById("mobile-menu-toggle");
-      const sidebar = document.getElementById("sidebar-toc");
-      const closeBtn = document.getElementById("sidebar-close");
-      const overlay = document.getElementById("sidebar-overlay");
-
-      function toggleMobileMenu() {
-        if (sidebar) {
-          sidebar.classList.toggle("mobile-active");
-          overlay.classList.toggle("active");
-          document.body.classList.toggle("menu-open");
-        }
-      }
-
-      if (menuBtn) menuBtn.addEventListener("click", toggleMobileMenu);
-      if (closeBtn) closeBtn.addEventListener("click", toggleMobileMenu);
-      if (overlay) overlay.addEventListener("click", toggleMobileMenu);
-
-      // Close menu when a link is clicked
-      document.querySelectorAll("#sidebar-toc a").forEach((link) => {
-        link.addEventListener("click", () => {
-          if (sidebar && sidebar.classList.contains("mobile-active")) {
-            toggleMobileMenu();
-          }
-        });
-      });
-
-      // ToC Accordion Logic
-      document.querySelectorAll(".toc-parent").forEach((parent) => {
-        parent.addEventListener("click", () => {
-          const childList = parent.nextElementSibling;
-          const icon = parent.querySelector(".toc-icon");
-          if (childList) {
-            childList.classList.toggle("active");
-            icon.classList.toggle("open");
-          }
-        });
-      });
-
-      // Show More Logic for specific ToC categories
-      function toggleShowMore(className, btn) {
-        document
-          .querySelectorAll("." + className)
-          .forEach((el) => (el.style.display = "list-item"));
-        btn.parentElement.style.display = "none";
-      }
-
-      // Make toggleShowMore available globally for inline onclick
-      window.toggleShowMore = toggleShowMore;
-    </script>
   </body>
 </html>
