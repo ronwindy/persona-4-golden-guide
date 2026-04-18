@@ -1,25 +1,59 @@
-Persona 3 vs. Persona 4
-This section describes all of the differences between Persona 3 and Persona 4 in depth. The differences noted are only from a gameplay perspective.
+Persona 4 vs. Persona 4 Golden
+This section describes all of the differences between Persona 4 and Persona 4 Golden. This includes most story differences, although they will only be minor spoilers.
 
-Weather replaces phases of the moon
-Social Links with Party Members grants special abilities
-No timer on dating
-No gift items for girls
-Dungeons take place after school instead of evening
-5 Status Parameters instead of 3
-Quests from NPC's instead of Velvet Room
-Multiple dungeons instead of one big dungeon
-No more fatigue system (Thankfully)
-Must pay at entrance to restore HP and SP
-No access points, have to walk back, use an item, or use save point on last floor of dungeon
-Rare chests need a key
-Direct Commands are now under tactics (Thankfully)
-Persona evolutions are from Social Links instead of story
-Down status does not cause player/enemy to lose turn
-Skills that have multiple targets only need to knock one player/enemy down to obtain One More
-Guard replaces Wait (Thankfully)
-Only one physical attribute
-Analyze is now trial and error process
-Can only obtain Personas from Shuffle Time
-Arcana Chance in Shuffle Time
-Reaper is not on a time limit, New Game Plus only
+New animated scenes
+New songs
+Updated graphics
+2 new difficulties
+Can now fast forward cutscenes
+Can now view cutscene logs
+5 new events
+Festival dates now include Party Members
+2 new endings
+Save points between long stretches of cutscenes
+New character
+2 new Social Links
+2 new areas to explore
+2 more months of gameplay
+Can now catch bugs
+Can now garden and harvest plants
+Fishing mechanic remade
+Books remade
+Can obtain models
+Can now explore at night
+Shiroku Pub at night; can now obtain gems
+Lady in White shows up at night for trading gems
+Hermit Social Link Rank 10 remade
+Most Social Link Rank 9 and 10 voiced
+19 new Quests
+NPC's with Quests are now marked
+School questions remade
+Thunderstorm weather added
+Can obtain scooters
+Can visit hot springs to learn new skills or relearn old skills
+Can obtain costumes
+Can visit the movies
+Party member Social Link abilities changed order
+Party member Social Link now earn new skills on even number ranks
+Party members can use scooters in battle
+Rise has new Social Link abilities: stronger AOA, buffs, cure debuffs, heal, shield fatal damage.
+Party members have 3rd Persona evolution
+Party member have combination moves used after AOA
+New dungeon
+No save point at end of dungeons
+All enemies stats remade
+Bosses have weaknesses
+Buff/debuff extension
+Revised shuffle time
+No Mr. Pringle Trick
+New shadow models
+Golden Shadows remade
+Reaper shows up on first playthrough, no longer New Game Plus only
+EXP Weapons now in Shiroku Pub
+New Personas
+Search option for fusing
+Can choose skills to carry over while fusing
+Skill cards are brand new
+More New Game Plus advantages
+Online Functionality: Rescue Request and Vox Populi
+Trophies

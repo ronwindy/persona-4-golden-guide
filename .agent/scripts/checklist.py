@@ -160,6 +160,14 @@ def print_summary(results: List[dict]):
         return True
 
 def main():
+    # Force UTF-8 encoding for Windows terminal
+    if sys.stdout.encoding.lower() != 'utf-8':
+        try:
+            sys.stdout.reconfigure(encoding='utf-8')
+        except AttributeError:
+            # Fallback for older python versions if needed
+            pass
+
     parser = argparse.ArgumentParser(
         description="Run Antigravity Kit validation checklist",
         formatter_class=argparse.RawDescriptionHelpFormatter,
