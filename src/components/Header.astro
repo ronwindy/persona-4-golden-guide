@@ -2,7 +2,7 @@
 // src/components/Header.astro
 ---
 
-<header class="header bg-p4g-flow p4g-shadow">
+<header class="header bg-p4g-flow">
   <div class="header-decorations">
     <span class="shape-1"></span>
     <span class="shape-2"></span>
@@ -129,6 +129,7 @@
     padding: 1.5rem 0;
     overflow: hidden;
     display: block;
+    box-shadow: none !important; /* Remove shadow on mobile to prevent overflow */
   }
 
   /* High-energy geometric animation */
@@ -166,6 +167,9 @@
 
   /* Restore the user's carefully positioned Desktop BG */
   @media (min-width: 1024px) {
+    .header {
+      box-shadow: 8px 8px 0 var(--secondary) !important;
+    }
     .header-banner-img {
       background-size: 50% auto;
       background-position: right top;

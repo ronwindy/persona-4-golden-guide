@@ -1,0 +1,501 @@
+---
+// src/pages/gameplay-mechanics/controls.astro
+import Layout from "../../layouts/Layout.astro";
+import SidebarToC from "../../components/SidebarToC.astro";
+import XboxButton from "../../components/XboxButton.astro";
+
+const heroImagePath = "/persona-4-golden-guide/p4g-key-art-2.webp";
+---
+
+<Layout title="Game Controls | Persona 4 Golden Guide">
+  <SidebarToC />
+
+  <div class="persona-container">
+    <header
+      class="persona-header anim-pop"
+      style={`background-image: url(${heroImagePath});`}
+    >
+      <div class="header-overlay"></div>
+      <div class="header-inner">
+        <h1 class="font-pop">GAME <span class="highlight">CONTROLS</span></h1>
+        <div class="subtitle font-pop">XBOX CONTROLLER MAPPING</div>
+      </div>
+    </header>
+
+    <div class="divider bg-stripes page-divider"></div>
+
+    <main class="content-box p4g-shadow anim-slide-in">
+      <section class="intro-section">
+        <div class="text-content font-read">
+          <p>
+            While originally released for the PS Vita, <span
+              class="text-highlight">Persona 4 Golden</span
+            >'s modern releases on Xbox, PC, and PlayStation allow for various
+            controller setups.
+          </p>
+          <p>
+            Below are the optimized mappings for an <span
+              class="text-highlight secondary">Xbox Controller</span
+            >. If you are playing on PC via Steam or Game Pass, these will be
+            your default prompts.
+          </p>
+        </div>
+      </section>
+
+      <div class="control-grid">
+        <!-- Menu Controls -->
+        <section class="control-section">
+          <h2 class="font-pop">
+            <span class="section-tag">01</span> MENU CONTROLS
+          </h2>
+          <div class="control-table p4g-shadow">
+            <div class="control-row">
+              <div class="btn-col">
+                <XboxButton name="ls" />
+                <span class="separator">/</span>
+                <XboxButton name="dpad" />
+              </div>
+              <div class="action-col">Move Selection</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="a" /></div>
+              <div class="action-col">Select / Confirm</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="b" /></div>
+              <div class="action-col">Back / Cancel</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="x" /></div>
+              <div class="action-col">Skill Order</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="y" /></div>
+              <div class="action-col">Exit Main Menu</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col">
+                <XboxButton name="lb" />
+                <span class="separator">/</span>
+                <XboxButton name="rb" />
+              </div>
+              <div class="action-col">Move Page (Left/Right)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Field Controls -->
+        <section class="control-section">
+          <h2 class="font-pop">
+            <span class="section-tag">02</span> FIELD CONTROLS
+          </h2>
+          <div class="control-table p4g-shadow">
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="ls" /></div>
+              <div class="action-col">Move Protagonist</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col">
+                <XboxButton name="rs" />
+                <span class="separator">/</span>
+                <XboxButton name="lb" />
+                <span class="separator">/</span>
+                <XboxButton name="rb" />
+              </div>
+              <div class="action-col">Move Camera</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="a" /></div>
+              <div class="action-col">Confirm / Search / Swing Sword</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="b" /></div>
+              <div class="action-col">Back / Center Camera</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="x" /></div>
+              <div class="action-col">Fast Travel (Inside Dungeons)</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="y" /></div>
+              <div class="action-col">Open Main Menu</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="menu" /></div>
+              <div class="action-col">Check Map / Fast Forward Dialogue</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="view" /></div>
+              <div class="action-col">Log / Vox Populi / Rescue Request</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Battle Controls -->
+        <section class="control-section full-width">
+          <h2 class="font-pop">
+            <span class="section-tag">03</span> BATTLE CONTROLS
+          </h2>
+          <div class="control-table p4g-shadow">
+            <div class="control-row">
+              <div class="btn-col">
+                <XboxButton name="ls" />
+                <span class="separator">/</span>
+                <XboxButton name="dpad" />
+              </div>
+              <div class="action-col">Navigate Battle Menu</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="a" /></div>
+              <div class="action-col">Confirm Action</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="b" /></div>
+              <div class="action-col">Cancel / Reset Selection</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="x" /></div>
+              <div class="action-col">Persona Menu</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="y" /></div>
+              <div class="action-col">Toggle "Rush" (Auto-Battle)</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="lb" /></div>
+              <div class="action-col">Analyze Enemy</div>
+            </div>
+            <div class="control-row">
+              <div class="btn-col"><XboxButton name="rb" /></div>
+              <div class="action-col">Check Turn Order</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="callout-box bg-yellow p4g-shadow">
+        <h3 class="font-pop">PRO TIP: FAST TRAVEL</h3>
+        <p class="font-read">
+          Don't forget that you can use <span class="text-highlight secondary"
+            ><XboxButton name="a" /> Button</span
+          > to quickly jump between areas in town or floors in a dungeon once you've
+          unlocked the shortcut menu!
+        </p>
+      </div>
+
+      <div class="status-footer bg-stripes">
+        <span class="font-pop">CONTROLLER STATUS: CONNECTED</span>
+      </div>
+    </main>
+
+    <div class="bottom-decoration">
+      <div class="tv-static-effect"></div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .persona-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+
+  :global(.main-layout) {
+    display: grid !important;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.main-layout) {
+      grid-template-columns: 360px 1fr !important;
+      max-width: 1600px !important;
+    }
+  }
+
+  .persona-header {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 6rem 2.5rem;
+    background-size: cover;
+    background-position: center 20%;
+    border: 6px solid var(--secondary);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .header-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 241, 0, 0.4),
+      rgba(252, 227, 0, 0.8)
+    );
+    z-index: 1;
+  }
+
+  .header-inner {
+    transform: rotate(-1.5deg);
+    position: relative;
+    z-index: 2;
+  }
+
+  .persona-header h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: var(--secondary);
+    margin: 0;
+    line-height: 0.9;
+    text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .persona-header h1 .highlight {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0 0.8rem;
+    display: inline-block;
+    transform: rotate(-2deg);
+    box-shadow: 5px 5px 0 var(--accent-orange);
+    margin-top: 0.5rem;
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border: 2px solid var(--secondary);
+  }
+
+  .content-box {
+    background-color: #ededed;
+    background-image:
+      radial-gradient(rgba(0, 0, 0, 0.05) 2px, transparent 2px),
+      linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-size:
+      24px 24px,
+      100% 100%;
+    border: 6px solid var(--secondary);
+    padding: 3.5rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    box-shadow: 12px 12px 0 var(--secondary);
+  }
+
+  .intro-section {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .text-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--secondary);
+  }
+
+  .text-highlight {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.2rem;
+    font-weight: 800;
+    box-shadow: 3px 3px 0 var(--secondary);
+    display: inline-block;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+
+  .text-highlight.secondary {
+    background: var(--accent-blue);
+    color: #fff;
+    box-shadow: 3px 3px 0 var(--accent-orange);
+  }
+
+  .control-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .control-section.full-width {
+    grid-column: 1 / -1;
+  }
+
+  .control-section h2 {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-tag {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.2rem 0.6rem;
+    font-size: 1rem;
+    transform: skewX(-10deg);
+  }
+
+  .control-table {
+    background: white;
+    border: 4px solid var(--secondary);
+    overflow: hidden;
+  }
+
+  .control-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    border-bottom: 2px solid #eee;
+    transition: background 0.2s;
+  }
+
+  .control-row:last-child {
+    border-bottom: none;
+  }
+
+  .control-row:hover {
+    background: rgba(252, 227, 0, 0.1);
+  }
+
+  .btn-col {
+    padding: 1.25rem 1rem;
+    background: #f8f8f8;
+    border-right: 2px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .action-col {
+    padding: 1rem 1.75rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+  }
+
+  .separator {
+    color: #ccc;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .callout-box {
+    margin-top: 4rem;
+    background: var(--primary);
+    border: 5px solid var(--secondary);
+    padding: 2rem;
+    transform: rotate(-0.5deg);
+  }
+
+  .callout-box h3 {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    margin: -2rem -2rem 1.5rem -2rem;
+    text-align: center;
+  }
+
+  .status-footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    text-align: right;
+    border: 4px solid var(--secondary);
+  }
+
+  .status-footer span {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.3rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  @media (max-width: 1024px) {
+    .control-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .intro-section {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-image-container {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .persona-container {
+      margin-top: 0.5rem;
+    }
+
+    .content-box {
+      width: 94%;
+      margin: 1.5rem auto 3rem auto;
+      padding: 2.5rem 1.25rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+      transform: translateX(-3px) !important;
+    }
+
+    .control-row {
+      grid-template-columns: 140px 1fr;
+    }
+
+    .control-table {
+      box-shadow: none !important; /* Remove internal shadows on mobile to save space */
+    }
+
+    .btn-col {
+      padding: 0.75rem 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .action-col {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+    }
+
+    .persona-header h1 {
+      font-size: 2.2rem;
+    }
+
+    .persona-header {
+      width: 94%;
+      margin: 1rem auto 1.5rem auto;
+      padding: 3.5rem 1.5rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+      transform: translateX(-3px) !important;
+      border-bottom: 6px solid var(--secondary);
+    }
+
+    .page-divider {
+      margin: 2rem auto;
+      width: 94%;
+      transform: translateX(-3px);
+      box-shadow: none;
+      position: relative;
+      z-index: 5;
+    }
+    
+    .header-inner {
+      transform: none !important;
+    }
+  }
+</style>

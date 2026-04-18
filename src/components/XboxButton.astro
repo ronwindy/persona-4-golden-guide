@@ -1,0 +1,222 @@
+---
+// src/components/XboxButton.astro
+interface Props {
+  name:
+    | "a"
+    | "b"
+    | "x"
+    | "y"
+    | "lb"
+    | "rb"
+    | "lt"
+    | "rt"
+    | "menu"
+    | "view"
+    | "dpad"
+    | "ls"
+    | "rs";
+  size?: string;
+}
+
+const { name, size = "1.5rem" } = Astro.props;
+
+const colors = {
+  a: "#107C10", // Green
+  b: "#E81123", // Red
+  x: "#0078D7", // Blue
+  y: "#D8C300", // Yellow (darker yellow for visibility)
+  gray: "#404040",
+  dark: "#1A1A1A",
+};
+
+const buttonName = name.toUpperCase();
+---
+
+<span class="xbox-btn-container" style={`--size: ${size}`}>
+  {
+    name === "a" && (
+      <span class="btn-circle" style={`background-color: ${colors.a}`}>
+        A
+      </span>
+    )
+  }
+  {
+    name === "b" && (
+      <span class="btn-circle" style={`background-color: ${colors.b}`}>
+        B
+      </span>
+    )
+  }
+  {
+    name === "x" && (
+      <span class="btn-circle" style={`background-color: ${colors.x}`}>
+        X
+      </span>
+    )
+  }
+  {
+    name === "y" && (
+      <span class="btn-circle" style={`background-color: ${colors.y}`}>
+        Y
+      </span>
+    )
+  }
+  {
+    (name === "lb" || name === "rb") && (
+      <span class="btn-rect">{buttonName}</span>
+    )
+  }
+  {
+    (name === "lt" || name === "rt") && (
+      <span class="btn-rect trigger">{buttonName}</span>
+    )
+  }
+  {
+    name === "menu" && (
+      <span class="btn-icon circle">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+        >
+          <line x1="4" y1="8" x2="20" y2="8" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="16" x2="20" y2="16" />
+        </svg>
+      </span>
+    )
+  }
+  {
+    name === "view" && (
+      <span class="btn-icon circle">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <rect x="3" y="6" width="12" height="12" rx="1" />
+          <rect
+            x="9"
+            y="8"
+            width="12"
+            height="12"
+            rx="1"
+            fill="var(--secondary)"
+          />
+        </svg>
+      </span>
+    )
+  }
+  {
+    name === "ls" && (
+      <span class="btn-icon circle stick">
+        <span class="stick-inner">LS</span>
+      </span>
+    )
+  }
+  {
+    name === "rs" && (
+      <span class="btn-icon circle stick">
+        <span class="stick-inner">RS</span>
+      </span>
+    )
+  }
+  {
+    name === "dpad" && (
+      <span class="btn-icon dpad">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2 4h-4l2-4zm0 20l-2-4h4l-2 4zm10-10l-4 2v-4l4 2zm-20 0l4-2v4l-4-2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+        </svg>
+      </span>
+    )
+  }
+</span>
+
+<style>
+  .xbox-btn-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: var(--size);
+    height: var(--size);
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0 0.15em;
+  }
+
+  .btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.75em;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-rect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.8em;
+    height: 1.1em;
+    padding: 0.5rem 1rem;
+    background: #404040;
+    color: #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.65em;
+    border: 1.5px solid #666;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+  }
+
+  .btn-rect.trigger {
+    height: 1.25em;
+    border-radius: 4px 4px 8px 8px;
+  }
+
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #333;
+  }
+
+  .btn-icon.circle {
+    background: #e0e0e0;
+    border-radius: 50%;
+    border: 1.5px solid #333;
+    padding: 15%;
+  }
+
+  .btn-icon.stick {
+    background: #2a2a2a;
+    color: #999;
+    border: 2px solid #555;
+    padding: 0;
+  }
+
+  .stick-inner {
+    font-size: 0.5em;
+  }
+
+  .btn-icon.dpad {
+    color: #333;
+    padding: 5%;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+</style>
