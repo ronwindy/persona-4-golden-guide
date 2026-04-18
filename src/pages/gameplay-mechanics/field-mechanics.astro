@@ -1,0 +1,557 @@
+---
+// src/pages/gameplay-mechanics/field-mechanics.astro
+import Layout from "../../layouts/Layout.astro";
+import SidebarToC from "../../components/SidebarToC.astro";
+import XboxButton from "../../components/XboxButton.astro";
+
+const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
+---
+
+<Layout title="Field Mechanics | Persona 4 Golden Guide">
+  <SidebarToC />
+
+  <div class="persona-container">
+    <header class="field-header anim-pop">
+      <div class="header-bg" style={`background-image: url(${heroImagePath});`}></div>
+      <div class="header-overlay"></div>
+      <div class="tv-scanlines"></div>
+      <div class="fog-drift"></div>
+      
+      <div class="header-content">
+        <h1 class="font-pop">FIELD <span class="skew-highlight">MECHANICS</span></h1>
+        <div class="breadcrumb font-pop">SYSTEMS // EXPLORATION // NAVIGATION</div>
+      </div>
+    </header>
+
+    <div class="divider bg-stripes"></div>
+
+    <main class="fragment-layout">
+      <!-- Section: Saving -->
+      <section class="fragment-card saving-fragment anim-slide-right">
+        <div class="fragment-header font-pop">
+          <div class="title-group">
+            <span class="fragment-num">01</span> SAVING YOUR PROGRESS
+          </div>
+        </div>
+        <div class="fragment-body font-read">
+          <p>
+            You can save at <span class="text-glow-blue">blue butterflies</span> found in key locations: 
+            your classroom, the shopping district, the TV World entrance, and the living room calendar.
+          </p>
+          <div class="save-slots-info p4g-shadow">
+            <span class="font-pop">16 SLOTS AVAILABLE</span>
+          </div>
+          <p class="ng-plus-note">
+            After beating the game, save your <span class="highlight-yellow">Clear Data</span> to activate <span class="text-highlight">New Game Plus</span>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Weather -->
+      <section class="fragment-card weather-fragment anim-jitter anim-slide-left">
+        <div class="fragment-header font-pop">
+          <div class="title-group">
+            <span class="fragment-num">02</span> WEATHER FORECAST
+          </div>
+        </div>
+        <div class="fragment-body font-read">
+          <p>
+            Check the weather for the next 7 days at any <span class="text-highlight">TV</span> or by talking to the 
+            <span class="text-highlight secondary">Meteorologist</span> on the school roof.
+          </p>
+          <div class="weather-alert font-pop">
+            CRITICAL FOR TIME MANAGEMENT
+          </div>
+          <p>
+            Weather affects dungeon conditions and Social Link availability. Always plan ahead!
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Fast Travel -->
+      <section class="fragment-card travel-fragment anim-slide-right">
+        <div class="fragment-header font-pop">
+          <div class="title-group">
+            <span class="fragment-num">03</span> FAST TRAVEL
+          </div>
+        </div>
+        <div class="fragment-body font-read">
+          <div class="btn-prompt-row">
+            <XboxButton name="x" />
+            <span class="font-pop">INSTANT NAVIGATION</span>
+          </div>
+          <p>
+            Pressing <span class="btn-inline"><XboxButton name="x" /></span> allows you to quickly jump 
+            between points in an area or exit to the map instantly.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Night Life -->
+      <section class="fragment-card night-fragment anim-jitter anim-slide-left">
+        <div class="fragment-header font-pop">
+          <div class="title-group">
+            <span class="fragment-num">04</span> NIGHT LIFE
+          </div>
+        </div>
+        <div class="fragment-body font-read">
+          <p>
+            To go out at night, you must obtain a <span class="highlight-yellow">part-time job</span> that operates during evening hours, 
+            then speak with <span class="text-highlight">Dojima</span>.
+          </p>
+          <ul class="night-activities">
+            <li>Night-only Social Links</li>
+            <li>Status Parameters grinding</li>
+            <li>Extra dialogue for bonus points</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section: Bonding Album -->
+      <section class="fragment-card bonding-fragment anim-slide-up full-width">
+        <div class="fragment-header font-pop">
+          <div class="title-group">
+            <span class="fragment-num">NEW</span> BONDING ALBUM
+          </div>
+          <span class="feature-badge font-pop">MODERN EXCLUSIVE</span>
+        </div>
+        <div class="fragment-body font-read">
+          <p>
+            Access the <span class="highlight-yellow">Bonding Album</span> via the Sofa in your room after maxing a Social Link. 
+            This feature allows you to replay events with exact seasonal variations.
+          </p>
+          <div class="album-details bg-yellow p4g-shadow">
+            <p><strong>Note:</strong> No music notes will appear, but all dialogue options are unlocked, 
+            even those requiring Status Parameters.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="status-ticker bg-stripes">
+      <div class="ticker-content font-pop">
+        SYSTEM STABLE // WEATHER: CLOUDY // SOCIAL LINK: READY // SYSTEM STABLE // WEATHER: CLOUDY // SOCIAL LINK: READY
+      </div>
+    </div>
+  </div>
+</Layout>
+
+
+<style>
+  .persona-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Header Overhaul */
+  .field-header {
+    min-height: 350px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border: 6px solid var(--secondary);
+    box-shadow: 10px 10px 0 var(--secondary);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .header-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 80%;
+    z-index: 1;
+    filter: contrast(1.1) brightness(0.9);
+  }
+
+  .header-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 241, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 2;
+  }
+
+
+  .tv-scanlines {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.1) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0.4;
+  }
+
+  .fog-drift {
+    position: absolute;
+    inset: 0;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    opacity: 0.2;
+    z-index: 4;
+    animation: fogMovement 60s linear infinite;
+  }
+
+  @keyframes fogMovement {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 500px; }
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 10;
+    transform: rotate(-1.5deg);
+    width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    color: var(--secondary);
+    line-height: 0.9;
+    margin: 0;
+    text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .skew-highlight {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0 1rem;
+    display: inline-block;
+    transform: skew(-8deg) rotate(2deg);
+    box-shadow: 6px 6px 0 var(--accent-orange);
+    margin-top: 0.5rem;
+  }
+
+  .breadcrumb {
+    margin-top: 1.5rem;
+    background: var(--secondary);
+    color: white;
+    padding: 0.4rem 1.5rem;
+    display: inline-block;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  /* Fragment Layout */
+  .fragment-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 4rem;
+    margin: 2rem 1rem 4rem 1rem;
+    position: relative;
+  }
+
+  .fragment-card {
+    background: white;
+    border: 4px solid var(--secondary);
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 12px 12px 0 var(--secondary);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+  }
+
+  .fragment-card:hover {
+    transform: translate(-4px, -4px) scale(1.01);
+    box-shadow: 16px 16px 0 var(--accent-orange);
+  }
+
+  .fragment-header {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Added to push badge to right */
+    gap: 1rem;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .fragment-header .title-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .fragment-num {
+    background: var(--secondary);
+    color: var(--primary);
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transform: rotate(-5deg);
+    box-shadow: 3px 3px 0 var(--accent-orange);
+  }
+
+  .fragment-body {
+    line-height: 1.7;
+    color: #333;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Unique Card Themes */
+  .saving-fragment { 
+    transform: rotate(0.5deg);
+    background: linear-gradient(to bottom right, #ffffff, #f0f7ff);
+  }
+  .saving-fragment::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300d2ff" opacity="0.1"%3E%3Cpath d="M12 2l2.4 4.8 5.3.8-3.9 3.8.9 5.3-4.7-2.5-4.7 2.5.9-5.3-3.9-3.8 5.3-.8z"/%3E%3C/svg%3E');
+    opacity: 0.2;
+    transform: rotate(20deg);
+  }
+
+  .weather-fragment { 
+    transform: rotate(-1deg);
+    background: linear-gradient(135deg, #fff 0%, #fff9e6 100%);
+  }
+  .weather-fragment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+    background-size: 15px 15px;
+    opacity: 0.05;
+  }
+
+  .travel-fragment { 
+    transform: rotate(-0.5deg);
+    background: #fafafa;
+  }
+
+  .night-fragment { 
+    transform: rotate(1.5deg);
+    background: linear-gradient(135deg, #0c1431 0%, #1a1a1a 100%);
+    color: white;
+    border-color: var(--primary);
+  }
+  .night-fragment .fragment-header {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+  }
+  .night-fragment .fragment-body {
+    color: #eee;
+  }
+  .night-fragment .fragment-num {
+    background: var(--primary);
+    color: var(--secondary);
+    box-shadow: 3px 3px 0 white;
+  }
+  .night-fragment::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 80% 20%, rgba(252, 227, 0, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+  }
+
+  .bonding-fragment.full-width {
+    grid-column: 1 / -1;
+    background: #fffdf8;
+    border-width: 6px;
+    transform: rotate(-0.2deg);
+  }
+
+  /* Save Slots UI Fix */
+  .save-slots-info {
+    display: inline-block;
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0;
+    border: 2px solid var(--primary);
+    transform: skewX(-10deg);
+    font-weight: 800;
+  }
+
+  /* Highlight Styles */
+  .text-glow-blue {
+    color: #0099ff;
+    font-weight: 800;
+    text-shadow: 0 0 8px rgba(0, 153, 255, 0.3);
+  }
+
+  .highlight-yellow {
+    background: var(--primary);
+    padding: 0.1rem 0.4rem;
+    font-weight: 700;
+    color: var(--secondary);
+    box-shadow: 2px 2px 0 var(--secondary);
+  }
+
+  .weather-alert {
+    background: var(--accent-orange);
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    box-shadow: 4px 4px 0 var(--secondary);
+  }
+
+  .btn-prompt-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    background: #ededed;
+    padding: 0.75rem 1.25rem;
+    border-left: 6px solid var(--secondary);
+  }
+
+  .night-activities {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .night-activities li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .night-activities li::before {
+    content: '>>';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  .feature-badge {
+    background: var(--accent-blue);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.75rem;
+    box-shadow: 3px 3px 0 var(--primary);
+    border: 1px solid var(--secondary);
+    white-space: nowrap;
+    z-index: 5;
+  }
+
+  .album-details {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: var(--primary);
+    border: 3px solid var(--secondary);
+    color: var(--secondary);
+  }
+
+  /* Status Ticker */
+  .status-ticker {
+    margin: 2rem 1rem 4rem 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    border: 4px solid var(--secondary);
+    background: var(--secondary);
+    box-shadow: 8px 8px 0 var(--primary);
+  }
+
+  .ticker-content {
+    color: var(--primary);
+    white-space: nowrap;
+    display: inline-block;
+    animation: tickerLoop 40s linear infinite;
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+  }
+
+  @keyframes tickerLoop {
+    0% { transform: translateX(50%); }
+    100% { transform: translateX(-150%); }
+  }
+
+  /* Responsive Fixes */
+  @media (max-width: 1024px) {
+    .fragment-layout {
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .fragment-layout {
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+    }
+    
+    .fragment-card {
+      transform: none !important;
+      margin-bottom: 2rem;
+      box-shadow: 8px 8px 0 var(--secondary);
+      padding: 1.5rem; /* Reduced padding */
+    }
+
+    .field-header {
+      min-height: 220px; /* Even smaller */
+      margin: 0.5rem;
+      padding: 2.5rem 1rem;
+    }
+
+    .header-content h1 {
+      font-size: 1.8rem !important; /* Forces smaller size */
+    }
+
+    .skew-highlight {
+      padding: 0 0.5rem;
+      font-size: 1.6rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.7rem;
+      padding: 0.2rem 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header-content h1 {
+      font-size: 1.6rem !important;
+    }
+    .fragment-header {
+      font-size: 1.1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .feature-badge {
+      align-self: flex-start;
+    }
+  }
+</style>
+
+</style>
