@@ -1,11 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SidebarToC from '../../components/SidebarToC.astro';
+import GuideLayout from "../../layouts/GuideLayout.astro";
 ---
 
-<Layout title="Update & Schedule | Persona 4 Golden Guide">
-  <SidebarToC />
-  
+<GuideLayout title="Update & Schedule | Persona 4 Golden Guide">
   <div class="schedule-container">
     <header class="schedule-header anim-pop">
       <div class="header-accent bg-stripes"></div>
@@ -14,25 +11,26 @@ import SidebarToC from '../../components/SidebarToC.astro';
 
     <section class="message-card p4g-shadow anim-slide-in">
       <div class="card-halftone bg-p4g-flow"></div>
-      
+
       <div class="message-content font-read">
         <p class="intro-text">
-          Thank you everyone for your support for this guide! 
-          I am currently working on this guide on and off until it eventually is completed.
+          Thank you everyone for your support for this guide! I am currently
+          working on this guide on and off until it eventually is completed.
         </p>
-        
+
         <div class="contact-callout cutout-box p4g-shadow-sm">
           <h2 class="font-pop">Found a Bug?</h2>
           <p>
-            If you spot any formatting errors or typos, or if you have any questions 
-            about this guide feel free to send me a message on GameFAQs or an email at:
+            If you spot any formatting errors or typos, or if you have any
+            questions about this guide feel free to send me a message on
+            GameFAQs or an email at:
           </p>
-          <a href="mailto:Hurricanehaon@gmail.com" class="email-link font-pop">Hurricanehaon@gmail.com</a>
+          <a href="mailto:Hurricanehaon@gmail.com" class="email-link font-pop"
+            >Hurricanehaon@gmail.com</a
+          >
         </div>
 
-        <p class="outro-text">
-          Thank you very much for all your support!
-        </p>
+        <p class="outro-text">Thank you very much for all your support!</p>
       </div>
 
       <div class="card-decoration"></div>
@@ -44,25 +42,13 @@ import SidebarToC from '../../components/SidebarToC.astro';
       <div class="noise-box p4g-shadow-sm"></div>
     </div>
   </div>
-</Layout>
+</GuideLayout>
 
 <style>
   .schedule-container {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
-  }
-
-  /* Adjust main layout grid to accommodate sidebar */
-  :global(.main-layout) {
-    display: grid !important;
-    gap: 2.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-    }
   }
 
   .schedule-header {
@@ -74,27 +60,39 @@ import SidebarToC from '../../components/SidebarToC.astro';
     margin-bottom: 3rem;
     overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-  }
 
-  .header-accent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-  }
+    @media (max-width: 768px) {
+      padding: 1.5rem 1rem;
+      border-width: 4px;
+      margin-bottom: 2rem;
+      clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+    }
 
-  .schedule-header h1 {
-    font-size: clamp(2rem, 8vw, 4rem);
-    text-align: center;
-    margin: 0;
-    text-shadow: 4px 4px 0 var(--accent-orange);
-  }
+    .header-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+    }
 
-  .highlight {
-    color: var(--secondary);
-    background: var(--primary);
-    padding: 0 0.5rem;
+    h1 {
+      font-size: clamp(2rem, 8vw, 4rem);
+      text-align: center;
+      margin: 0;
+      text-shadow: 4px 4px 0 var(--accent-orange);
+
+      @media (max-width: 768px) {
+        font-size: 2.25rem;
+        text-shadow: 3px 3px 0 var(--accent-orange);
+      }
+
+      .highlight {
+        color: var(--secondary);
+        background: var(--primary);
+        padding: 0 0.5rem;
+      }
+    }
   }
 
   .message-card {
@@ -104,146 +102,134 @@ import SidebarToC from '../../components/SidebarToC.astro';
     position: relative;
     overflow: hidden;
     min-height: 400px;
-  }
 
-  @media (max-width: 768px) {
-    .schedule-header {
-      padding: 1.5rem 1rem;
-      border-width: 4px;
-      margin-bottom: 2rem;
-      clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
-    }
-
-    .schedule-header h1 {
-      font-size: 2.25rem;
-      text-shadow: 3px 3px 0 var(--accent-orange);
-    }
-
-    .message-card {
+    @media (max-width: 768px) {
       padding: 2rem 1.25rem;
       border-width: 4px;
       min-height: auto;
     }
 
-    .intro-text {
-      font-size: 1.1rem;
-      padding-left: 1rem;
-      border-left-width: 6px;
-      margin-bottom: 2rem;
+    .card-halftone {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      opacity: 0.1;
+      z-index: 1;
+      pointer-events: none;
     }
 
-    .contact-callout {
-      padding: 1.5rem 1.25rem;
-      margin: 2rem 0;
-      border-width: 3px;
+    .message-content {
+      position: relative;
+      z-index: 2;
+
+      .intro-text {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 3rem;
+        border-left: 8px solid var(--primary);
+        padding-left: 1.5rem;
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+          padding-left: 1rem;
+          border-left-width: 6px;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .contact-callout {
+        background: var(--accent-blue);
+        color: white;
+        padding: 2.5rem 2rem;
+        margin: 2.5rem 0;
+        transform: rotate(1deg);
+        border: 4px solid var(--secondary);
+
+        @media (max-width: 768px) {
+          padding: 1.5rem 1.25rem;
+          margin: 2rem 0;
+          border-width: 3px;
+        }
+
+        h2 {
+          color: var(--primary);
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          letter-spacing: 0.1em;
+
+          @media (max-width: 768px) {
+            font-size: 1.75rem;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        p {
+          font-size: 1.125rem;
+          margin-bottom: 1.5rem;
+          font-weight: 600;
+
+          @media (max-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+
+        .email-link {
+          display: inline-block;
+          background: var(--primary);
+          color: var(--secondary);
+          padding: 0.8rem 1.5rem;
+          font-size: 1.5rem;
+          text-decoration: none;
+          transition: all 0.2s;
+          border: 3px solid var(--secondary);
+          box-shadow: 6px 6px 0 var(--secondary);
+
+          @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
+            box-shadow: 4px 4px 0 var(--secondary);
+            word-break: break-all;
+          }
+
+          &:hover {
+            background: var(--accent-orange);
+            color: white;
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0 var(--secondary);
+          }
+        }
+      }
+
+      .outro-text {
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--accent-orange);
+        text-align: right;
+        margin-top: 3rem;
+        font-style: italic;
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+          margin-top: 2rem;
+        }
+      }
     }
 
-    .contact-callout h2 {
-      font-size: 1.75rem;
-      letter-spacing: 0.05em;
+    .card-decoration {
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      transform: rotate(45deg);
+      border: 4px solid var(--secondary);
     }
-
-    .contact-callout p {
-      font-size: 1rem;
-    }
-
-    .email-link {
-      font-size: 1rem;
-      padding: 0.6rem 1rem;
-      box-shadow: 4px 4px 0 var(--secondary);
-      word-break: break-all;
-    }
-
-    .outro-text {
-      font-size: 1.1rem;
-      margin-top: 2rem;
-    }
-
-    .tv-noise-decoration {
-      margin-top: 2rem;
-    }
-
-    .noise-box {
-      width: 45px;
-      height: 30px;
-    }
-  }
-
-  .card-halftone {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    opacity: 0.1;
-    z-index: 1;
-    pointer-events: none;
-  }
-
-  .message-content {
-    position: relative;
-    z-index: 2;
-  }
-
-  .intro-text {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    font-weight: 700;
-    color: var(--secondary);
-    margin-bottom: 3rem;
-    border-left: 8px solid var(--primary);
-    padding-left: 1.5rem;
-  }
-
-  .contact-callout {
-    background: var(--accent-blue);
-    color: white;
-    padding: 2.5rem 2rem;
-    margin: 2.5rem 0;
-    transform: rotate(1deg);
-    border: 4px solid var(--secondary);
-  }
-
-  .contact-callout h2 {
-    color: var(--primary);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
-  }
-
-  .contact-callout p {
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-  }
-
-  .email-link {
-    display: inline-block;
-    background: var(--primary);
-    color: var(--secondary);
-    padding: 0.8rem 1.5rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: all 0.2s;
-    border: 3px solid var(--secondary);
-    box-shadow: 6px 6px 0 var(--secondary);
-  }
-
-  .email-link:hover {
-    background: var(--accent-orange);
-    color: white;
-    transform: translate(-4px, -4px);
-    box-shadow: 10px 10px 0 var(--secondary);
-  }
-
-  .outro-text {
-    font-size: 1.25rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--accent-orange);
-    text-align: right;
-    margin-top: 3rem;
-    font-style: italic;
   }
 
   .tv-noise-decoration {
@@ -251,34 +237,38 @@ import SidebarToC from '../../components/SidebarToC.astro';
     gap: 1rem;
     margin-top: 3rem;
     justify-content: center;
-  }
 
-  .noise-box {
-    width: 60px;
-    height: 40px;
-    background: var(--secondary);
-    background-image: repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 2px
-    );
-    border: 3px solid var(--primary);
-    transform: rotate(var(--rot, 0deg));
-  }
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+    }
 
-  .noise-box:nth-child(2) { --rot: -5deg; background-color: var(--accent-orange); }
-  .noise-box:nth-child(3) { --rot: 3deg; background-color: var(--accent-blue); }
+    .noise-box {
+      width: 60px;
+      height: 40px;
+      background: var(--secondary);
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      border: 3px solid var(--primary);
+      transform: rotate(var(--rot, 0deg));
 
-  .card-decoration {
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    width: 50px;
-    height: 50px;
-    background: var(--primary);
-    transform: rotate(45deg);
-    border: 4px solid var(--secondary);
+      @media (max-width: 768px) {
+        width: 45px;
+        height: 30px;
+      }
+
+      &:nth-child(2) {
+        --rot: -5deg;
+        background-color: var(--accent-orange);
+      }
+      &:nth-child(3) {
+        --rot: 3deg;
+        background-color: var(--accent-blue);
+      }
+    }
   }
 </style>

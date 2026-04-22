@@ -34,7 +34,10 @@ const milestones = [
 
     <div class="milestone-list">
       {milestones.map((item, index) => (
-        <div class={`milestone-card p4g-shadow anim-slide-in stagger-${(index % 4) + 1} ${item.status}`}>
+        <div 
+          class={`milestone-card p4g-shadow anim-slide-in ${item.status}`}
+          style={`--index: ${index % 4}`}
+        >
           <div class="version-tag font-pop">{item.version}</div>
           <div class="milestone-content">
             <h3 class="font-pop">{item.title}</h3>
@@ -63,165 +66,160 @@ const milestones = [
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
-  }
-  /* Redundant layout overrides removed as they are now handled by GuideLayout */
 
-  .checklist-header {
-    margin-bottom: 2rem;
-    padding: 2.5rem 2rem;
-    background: var(--primary);
-    border: 6px solid var(--secondary);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 10px 10px 0 var(--secondary);
-  }
+    .checklist-header {
+      margin-bottom: 2rem;
+      padding: 2.5rem 2rem;
+      background: var(--primary);
+      border: 6px solid var(--secondary);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 10px 10px 0 var(--secondary);
 
-  .checklist-header h1 {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
-    color: var(--secondary);
-    margin: 0;
-    line-height: 1;
-    transform: rotate(-1deg);
-  }
+      h1 {
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        color: var(--secondary);
+        margin: 0;
+        line-height: 1;
+        transform: rotate(-1deg);
 
-  .checklist-header h1 .highlight {
-    color: var(--bg-white);
-    background: var(--secondary);
-    padding: 0 0.5rem;
-    display: inline-block;
-    transform: rotate(2deg);
-    box-shadow: 4px 4px 0 var(--accent-orange);
-  }
+        .highlight {
+          color: var(--bg-white);
+          background: var(--secondary);
+          padding: 0 0.5rem;
+          display: inline-block;
+          transform: rotate(2deg);
+          box-shadow: 4px 4px 0 var(--accent-orange);
+        }
+      }
 
-  .description {
-    margin-top: 2rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    max-width: 600px;
-    background: rgba(26, 26, 26, 0.05);
-    padding: 1rem;
-    border-left: 6px solid var(--secondary);
-  }
+      .description {
+        margin-top: 2rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        max-width: 600px;
+        background: color-mix(in srgb, var(--secondary), transparent 95%);
+        padding: 1rem;
+        border-left: 6px solid var(--secondary);
 
-  .badge {
-    background: var(--accent-orange);
-    color: white;
-    padding: 0.1rem 0.5rem;
-    font-family: var(--font-pop);
-    font-weight: bold;
-    border: 2px solid var(--secondary);
-  }
+        .badge {
+          background: var(--accent-orange);
+          color: white;
+          padding: 0.1rem 0.5rem;
+          font-family: var(--font-pop);
+          font-weight: bold;
+          border: 2px solid var(--secondary);
 
-  .badge.secondary {
-    background: var(--accent-blue);
-  }
+          &.secondary {
+            background: var(--accent-blue);
+          }
+        }
+      }
+    }
 
-  .milestone-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-
-  @media (min-width: 640px) {
     .milestone-list {
-      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+
+      @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .milestone-card {
+      background: var(--bg-white);
+      border: 4px solid var(--secondary);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(4px);
+
+      /* Fix animation delay to wait for header + stagger */
+      animation-delay: calc(0.6s + (var(--index) * 0.1s)) !important;
+
+      &:hover {
+        transform: translate(-6px, -6px) scale(1.02);
+        background-color: var(--primary);
+        box-shadow: 12px 12px 0 var(--secondary);
+        z-index: 10;
+      }
+
+      &.completed {
+        background: linear-gradient(135deg, var(--primary) 0%, #fff176 100%);
+        
+        h3 {
+          text-decoration: line-through;
+          opacity: 0.6;
+        }
+
+        .status-badge.completed {
+          background: var(--secondary);
+          color: var(--primary);
+        }
+      }
+
+      .version-tag {
+        position: absolute;
+        top: -15px;
+        right: 12px;
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0.2rem 0.8rem;
+        font-size: 1.25rem;
+        border: 3px solid var(--primary);
+        transform: rotate(3deg);
+        z-index: 5;
+      }
+
+      .milestone-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: var(--secondary);
+        line-height: 1.2;
+      }
+
+      .status-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 800;
+        padding: 0.3rem 0.8rem;
+        border: 2px solid var(--secondary);
+        letter-spacing: 0.1em;
+        transform: skewX(-10deg);
+
+        &.pending {
+          background: var(--bg-white);
+          color: var(--secondary);
+        }
+      }
+
+      .card-decoration {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, transparent 50%, var(--secondary) 50%);
+      }
+    }
+
+    .checklist-footer {
+      margin-top: 5rem;
+      text-align: center;
+      padding: 2.5rem;
+      background: var(--secondary);
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+      clip-path: polygon(2% 0, 100% 5%, 98% 100%, 0 95%);
+      font-size: 1.25rem;
+      letter-spacing: 0.1em;
     }
   }
-
-  .milestone-card {
-    background: var(--bg-white);
-    border: 4px solid var(--secondary);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(4px);
-  }
-
-  .milestone-card:hover {
-    transform: translate(-6px, -6px) scale(1.02);
-    background-color: var(--primary);
-    box-shadow: 12px 12px 0 var(--secondary);
-  }
-
-  .milestone-card.completed {
-    border-color: var(--secondary);
-    background: linear-gradient(135deg, var(--primary) 0%, #fff176 100%);
-  }
-
-  .milestone-card.completed h3 {
-    text-decoration: line-through;
-    opacity: 0.8;
-  }
-
-  .version-tag {
-    position: absolute;
-    top: -15px;
-    right: 12px;
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0.2rem 0.8rem;
-    font-size: 1.25rem;
-    border: 3px solid var(--primary);
-    transform: rotate(3deg);
-    z-index: 5;
-  }
-
-  .milestone-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--secondary);
-    line-height: 1.2;
-  }
-
-  .status-badge {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 800;
-    padding: 0.3rem 0.8rem;
-    border: 2px solid var(--secondary);
-    letter-spacing: 0.1em;
-    transform: skewX(-10deg);
-  }
-
-  .status-badge.completed {
-    background: var(--secondary);
-    color: var(--primary);
-  }
-
-  .status-badge.pending {
-    background: var(--bg-white);
-    color: var(--secondary);
-  }
-
-  .card-decoration {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 24px;
-    height: 24px;
-    background: linear-gradient(135deg, transparent 50%, var(--secondary) 50%);
-  }
-
-  .checklist-footer {
-    margin-top: 5rem;
-    text-align: center;
-    padding: 2.5rem;
-    background: var(--secondary);
-    color: var(--primary);
-    font-weight: 800;
-    text-transform: uppercase;
-    clip-path: polygon(2% 0, 100% 5%, 98% 100%, 0 95%);
-    font-size: 1.25rem;
-    letter-spacing: 0.1em;
-  }
-
-  /* Specific Animations */
-  .stagger-1 { animation-delay: 0.1s; }
-  .stagger-2 { animation-delay: 0.2s; }
-  .stagger-3 { animation-delay: 0.3s; }
-  .stagger-4 { animation-delay: 0.4s; }
 </style>
+

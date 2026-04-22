@@ -1,39 +1,112 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SidebarToC from '../../components/SidebarToC.astro';
+import GuideLayout from "../../layouts/GuideLayout.astro";
 
 const p3Art = "/persona-4-golden-guide/p3-key-art.png";
 const p4Art = "/persona-4-golden-guide/p4-key-art-1.png";
 
 const comparisons = [
   { feature: "Time Cycles", p3: "Phases of the Moon", p4: "Weather Systems" },
-  { feature: "Party Social Links", p3: "Limited / Restricted", p4: "Grants Special Combat Abilities" },
-  { feature: "Dating Mechanics", p3: "Jealousy Timer / Broken links", p4: "No Timer on Dating" },
-  { feature: "Gifts for Girls", p3: "Mandatory for progress", p4: "No Gift Items required" },
-  { feature: "Dungeon Exploration", p3: "Evening Only", p4: "After School Hours" },
-  { feature: "Status Parameters", p3: "3 Parameters (Knowledge/Courage/Charm)", p4: "5 Parameters" },
-  { feature: "Quest System", p3: "Velvet Room Requests", p4: "Town NPC Requests" },
-  { feature: "Dungeon Layout", p3: "One Giant Tower (Tartarus)", p4: "Multiple Thematic Dungeons" },
-  { feature: "Fatigue System", p3: "Active (Characters get Tired)", p4: "Thankfully Removed" },
-  { feature: "Restoration", p3: "Clock in Entrance (Costly)", p4: "Pay Fox at Entrance to restore SP" },
-  { feature: "Dungeon Navigation", p3: "Access Points", p4: "Walk back / Goho-M Entry" },
+  {
+    feature: "Party Social Links",
+    p3: "Limited / Restricted",
+    p4: "Grants Special Combat Abilities",
+  },
+  {
+    feature: "Dating Mechanics",
+    p3: "Jealousy Timer / Broken links",
+    p4: "No Timer on Dating",
+  },
+  {
+    feature: "Gifts for Girls",
+    p3: "Mandatory for progress",
+    p4: "No Gift Items required",
+  },
+  {
+    feature: "Dungeon Exploration",
+    p3: "Evening Only",
+    p4: "After School Hours",
+  },
+  {
+    feature: "Status Parameters",
+    p3: "3 Parameters (Knowledge/Courage/Charm)",
+    p4: "5 Parameters",
+  },
+  {
+    feature: "Quest System",
+    p3: "Velvet Room Requests",
+    p4: "Town NPC Requests",
+  },
+  {
+    feature: "Dungeon Layout",
+    p3: "One Giant Tower (Tartarus)",
+    p4: "Multiple Thematic Dungeons",
+  },
+  {
+    feature: "Fatigue System",
+    p3: "Active (Characters get Tired)",
+    p4: "Thankfully Removed",
+  },
+  {
+    feature: "Restoration",
+    p3: "Clock in Entrance (Costly)",
+    p4: "Pay Fox at Entrance to restore SP",
+  },
+  {
+    feature: "Dungeon Navigation",
+    p3: "Access Points",
+    p4: "Walk back / Goho-M Entry",
+  },
   { feature: "Rare Chests", p3: "Standard Opening", p4: "Chest Keys Required" },
-  { feature: "Battle Control", p3: "Tactics-Only (AI Controlled)", p4: "Direct Commands (Thankfully)" },
-  { feature: "Persona Evolutions", p3: "Scripted Story Events", p4: "Social Link Completion" },
-  { feature: "Knockdown Status", p3: "Downed unit loses turn", p4: "No lost turn from knockdown" },
-  { feature: "Guard Command", p3: "Replaced by 'Wait'", p4: "Dedicated Guard (Essential)" },
-  { feature: "Physical Attributes", p3: "Slash / Strike / Pierce", p4: "One Physical Element" },
-  { feature: "Analysis", p3: "Full Scan (Wait 1 turn)", p4: "Trial & Error Process" },
-  { feature: "Shuffle Time", p3: "Multiple items/bonuses", p4: "Persona-focused Acquisition" },
-  { feature: "One More System", p3: "Requirement per-attack", p4: "Need only one downed target" },
+  {
+    feature: "Battle Control",
+    p3: "Tactics-Only (AI Controlled)",
+    p4: "Direct Commands (Thankfully)",
+  },
+  {
+    feature: "Persona Evolutions",
+    p3: "Scripted Story Events",
+    p4: "Social Link Completion",
+  },
+  {
+    feature: "Knockdown Status",
+    p3: "Downed unit loses turn",
+    p4: "No lost turn from knockdown",
+  },
+  {
+    feature: "Guard Command",
+    p3: "Replaced by 'Wait'",
+    p4: "Dedicated Guard (Essential)",
+  },
+  {
+    feature: "Physical Attributes",
+    p3: "Slash / Strike / Pierce",
+    p4: "One Physical Element",
+  },
+  {
+    feature: "Analysis",
+    p3: "Full Scan (Wait 1 turn)",
+    p4: "Trial & Error Process",
+  },
+  {
+    feature: "Shuffle Time",
+    p3: "Multiple items/bonuses",
+    p4: "Persona-focused Acquisition",
+  },
+  {
+    feature: "One More System",
+    p3: "Requirement per-attack",
+    p4: "Need only one downed target",
+  },
   { feature: "Arcana Chance", p3: "N/A", p4: "Shuffle Time Mechanic" },
-  { feature: "The Reaper", p3: "Time-limit based spawn", p4: "NG+ only / Specific conditions" },
+  {
+    feature: "The Reaper",
+    p3: "Time-limit based spawn",
+    p4: "NG+ only / Specific conditions",
+  },
 ];
 ---
 
-<Layout title="Persona 3 vs. Persona 4 | Comparison Guide">
-  <SidebarToC />
-  
+<GuideLayout title="Persona 3 vs. Persona 4 | Comparison Guide">
   <div class="comparison-container">
     <header class="versus-header anim-pop">
       <div class="art-standoff">
@@ -41,18 +114,20 @@ const comparisons = [
           <img src={p3Art} alt="Persona 3" class="vs-img" />
           <div class="art-label p3-bg">PERSONA 3</div>
         </div>
-        
+
         <div class="vs-slash">
           <span class="vs-text">VS</span>
         </div>
-        
+
         <div class="art-box p4-side">
           <img src={p4Art} alt="Persona 4 Golden" class="vs-img" />
           <div class="art-label p4-bg">PERSONA 4</div>
         </div>
       </div>
-      
-      <div class="header-tagline font-pop">BROADCAST ANALYSIS: GAMEPLAY EVOLUTION</div>
+
+      <div class="header-tagline font-pop">
+        BROADCAST ANALYSIS: GAMEPLAY EVOLUTION
+      </div>
     </header>
 
     <main class="content-box p4g-shadow">
@@ -70,13 +145,17 @@ const comparisons = [
             </tr>
           </thead>
           <tbody>
-            {comparisons.map((row) => (
-              <tr>
-                <td class="feature-cell"><span class="feature-label">{row.feature}</span></td>
-                <td class="p3-cell">{row.p3}</td>
-                <td class="p4-cell">{row.p4}</td>
-              </tr>
-            ))}
+            {
+              comparisons.map((row) => (
+                <tr>
+                  <td class="feature-cell">
+                    <span class="feature-label">{row.feature}</span>
+                  </td>
+                  <td class="p3-cell">{row.p3}</td>
+                  <td class="p4-cell">{row.p4}</td>
+                </tr>
+              ))
+            }
           </tbody>
         </table>
       </div>
@@ -86,7 +165,7 @@ const comparisons = [
       </div>
     </main>
   </div>
-</Layout>
+</GuideLayout>
 
 <style>
   .comparison-container {
@@ -99,150 +178,138 @@ const comparisons = [
     box-sizing: border-box;
   }
 
-  :global(.main-layout) {
-    display: grid !important;
-    gap: 2.5rem;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    max-width: 100vw;
-  }
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-      max-width: 1600px !important;
-      overflow-x: visible;
-    }
-  }
 
   /* Header Standoff */
   .versus-header {
     width: 100%;
     margin-bottom: 3rem;
-  }
 
-  .art-standoff {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-
-  @media (min-width: 769px) {
     .art-standoff {
-      flex-direction: row;
-      justify-content: center;
-      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+
+      @media (min-width: 769px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+      }
     }
-  }
 
-  .art-box {
-    width: 100%;
-    max-width: 450px;
-    border: 6px solid var(--secondary);
-    box-shadow: 8px 8px 0 var(--secondary);
-    background: #111;
-    display: block;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
+    .art-box {
+      width: 100%;
+      max-width: 450px;
+      border: 6px solid var(--secondary);
+      box-shadow: 8px 8px 0 var(--secondary);
+      background: #111;
+      overflow: hidden;
+      box-sizing: border-box;
 
-  .vs-img {
-    width: 100%;
-    height: auto !important;
-    max-height: none !important;
-    display: block;
-    object-fit: contain; /* Ensure full image visibility */
-    filter: grayscale(0.2) contrast(1.1);
-    transition: filter 0.3s, transform 0.3s;
-  }
+      @media (max-width: 768px) {
+        max-width: 320px;
+      }
 
-  .art-box:hover .vs-img {
-    filter: grayscale(0) contrast(1.2);
-    transform: scale(1.05);
-  }
+      .vs-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        filter: grayscale(0.2) contrast(1.1);
+        transition: filter 0.3s, transform 0.3s;
+      }
 
-  .art-label {
-    width: 100%;
-    padding: 1rem;
-    font-family: 'Staatliches', sans-serif;
-    font-size: 2.2rem;
-    text-align: center;
-    line-height: 1;
-    border-top: 6px solid var(--secondary);
-    display: block;
-    box-sizing: border-box;
-  }
+      &:hover .vs-img {
+        filter: grayscale(0) contrast(1.2);
+        transform: scale(1.05);
+      }
 
-  .p3-bg { background: #004a87; color: white; }
-  .p4-bg { background: var(--primary); color: #1a1a1a; }
+      .art-label {
+        width: 100%;
+        padding: 1rem;
+        font-family: "Staatliches", sans-serif;
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 1;
+        border-top: 6px solid var(--secondary);
+        display: block;
+        box-sizing: border-box;
 
+        &.p3-bg {
+          background: #004a87;
+          color: white;
+        }
 
-  .vs-slash {
-    width: 80px;
-    height: 80px;
-    background: var(--secondary);
-    border: 4px solid var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    box-shadow: 6px 6px 0 rgba(0,0,0,0.8);
-    transform: rotate(-5deg);
-    margin: 0.5rem 0;
-  }
+        &.p4-bg {
+          background: var(--primary);
+          color: #1a1a1a;
+        }
 
-  @media (min-width: 769px) {
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
     .vs-slash {
-      width: 100px;
-      height: 100px;
-      transform: rotate(-10deg);
-      margin: 0 1rem;
+      width: 80px;
+      height: 80px;
+      background: var(--secondary);
+      border: 4px solid var(--primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
+      transform: rotate(-5deg);
+      margin: 0.5rem 0;
+
+      @media (min-width: 769px) {
+        width: 100px;
+        height: 100px;
+        transform: rotate(-10deg);
+        margin: 0 1rem;
+      }
+
+      .vs-text {
+        font-family: "Staatliches", sans-serif;
+        font-size: 2rem;
+        color: var(--primary);
+        transform: rotate(5deg);
+
+        @media (min-width: 769px) {
+          font-size: 3rem;
+          transform: rotate(10deg);
+        }
+      }
     }
-  }
 
-  .vs-text {
-    font-family: 'Staatliches', sans-serif;
-    font-size: 2.5rem;
-    color: var(--primary);
-    transform: rotate(5deg);
-  }
-
-  @media (min-width: 769px) {
-    .vs-text {
-      font-size: 3rem;
-      transform: rotate(10deg);
-    }
-  }
-
-  .header-tagline {
-    text-align: center;
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0.5rem 2rem;
-    font-size: 1.5rem;
-    font-style: italic;
-    margin: 2rem auto 0 auto;
-    display: block;
-    width: fit-content;
-    max-width: 100%;
-    position: relative;
-    border: 4px solid var(--primary);
-  }
-
-  @media (max-width: 768px) {
     .header-tagline {
-      font-size: 1.1rem;
-      padding: 0.5rem 1rem;
+      text-align: center;
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0.5rem 2rem;
+      font-size: 1.5rem;
+      font-style: italic;
+      margin: 2rem auto 0;
+      width: fit-content;
+      max-width: 100%;
+      position: relative;
+      border: 4px solid var(--primary);
+
+      @media (max-width: 768px) {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+      }
     }
   }
 
   /* Content Box */
   .content-box {
     background-color: #1a1a1a;
-    background-image: 
-      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 20px 20px;
     border: 6px solid var(--secondary);
     padding: 3rem;
@@ -250,94 +317,119 @@ const comparisons = [
     color: white;
     box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
     overflow: hidden;
-  }
 
-  @media (max-width: 768px) {
-    .content-box {
-      padding: 1.5rem 1rem;
+    @media (max-width: 768px) {
+      padding: 1.5rem;
+    }
+
+    .broadcast-alert {
+      background: var(--accent-orange);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      display: inline-block;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      transform: skewX(-10deg);
+      box-sizing: border-box;
+
+      .blink {
+        animation: blink 1s infinite;
+      }
     }
   }
 
-  .broadcast-alert {
-    background: var(--accent-orange);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    transform: skewX(-10deg);
-    box-sizing: border-box;
-  }
-
-  .blink {
-    animation: blink 1s infinite;
-  }
-
   @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+      opacity: 0;
+    }
   }
 
   /* Comparison Table */
   .table-wrapper {
     width: 100%;
-    max-width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: 2rem 0;
+
+    .comparison-table {
+      width: 100%;
+      min-width: 800px;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+      table-layout: fixed;
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
+
+      th {
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 1rem;
+        text-align: left;
+        font-family: "Staatliches", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+          padding: 0.75rem 0.5rem;
+        }
+
+        &.feature-col {
+          background: #333 !important;
+          width: 30%;
+        }
+        &.p3-header {
+          background: #004a87 !important;
+          color: white !important;
+          width: 35%;
+        }
+        &.p4-header {
+          background: var(--primary) !important;
+          color: #1a1a1a !important;
+          width: 35%;
+        }
+      }
+
+      td {
+        padding: 1.25rem 1rem;
+        background: #2a2a2a;
+        transition: background 0.2s, filter 0.2s;
+        font-weight: 600;
+
+        &.feature-cell {
+          border-left: 6px solid var(--accent-orange);
+          background: #222 !important;
+
+          .feature-label {
+            text-transform: uppercase;
+            font-weight: 900;
+            color: var(--accent-orange);
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        &.p3-cell {
+          border-left: 2px solid #0072ce;
+          color: #add8ff;
+        }
+
+        &.p4-cell {
+          border-left: 2px solid var(--primary);
+          color: var(--primary);
+        }
+      }
+
+      tr:hover td {
+        background: #333;
+        filter: brightness(1.2);
+      }
+    }
   }
-
-  .comparison-table {
-    width: 100%;
-    min-width: 800px; /* Increased to accommodate longer headers/labels */
-    border-collapse: separate;
-    border-spacing: 0 10px;
-    table-layout: fixed; 
-  }
-
-  .comparison-table th {
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 1rem;
-    text-align: left;
-    font-family: 'Staatliches', sans-serif;
-    font-size: 1.4rem;
-    letter-spacing: 0.1em;
-    white-space: nowrap; /* Prevent game title wrapping */
-  }
-
-  .feature-col { background: #333 !important; width: 30%; }
-  .p3-header { background: #004a87 !important; color: white !important; width: 35%; }
-  .p4-header { background: var(--primary) !important; color: #1a1a1a !important; width: 35%; }
-
-  .comparison-table td {
-    padding: 1.25rem 1rem;
-    background: #2a2a2a;
-    transition: background 0.2s, filter 0.2s;
-    font-weight: 600;
-  }
-
-  .comparison-table tr:hover td {
-    background: #333;
-    filter: brightness(1.2);
-  }
-
-  .feature-cell {
-    border-left: 6px solid var(--accent-orange);
-    background: #222 !important;
-  }
-
-  .feature-label {
-    text-transform: uppercase;
-    font-weight: 900;
-    color: var(--accent-orange);
-    font-size: 0.9rem;
-    letter-spacing: 0.05em;
-  }
-
-  .p3-cell { border-left: 2px solid #0072ce; color: #add8ff; }
-  .p4-cell { border-left: 2px solid var(--primary); color: var(--primary); }
 
   /* Footer Decoration */
   .status-footer {
@@ -346,30 +438,14 @@ const comparisons = [
     text-align: right;
     border: 4px solid var(--secondary);
     background: #111;
-  }
 
-  .status-footer span {
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0.3rem 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 900;
-  }
-
-  @media (max-width: 1024px) {
-    /* Height logic removed to maintain aspect ratio */
-  }
-
-  @media (max-width: 768px) {
-    .content-box { padding: 1.5rem; }
-    .art-box { max-width: 320px; } /* More compact images on mobile */
-    .vs-slash { width: 80px; height: 80px; }
-    .vs-text { font-size: 2rem; }
-    .art-label { font-size: 1.2rem; }
-    .comparison-table { font-size: 0.9rem; }
-    .comparison-table th { 
-      font-size: 1.1rem; 
-      padding: 0.75rem 0.5rem;
+    span {
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0.3rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 900;
     }
   }
+
 </style>

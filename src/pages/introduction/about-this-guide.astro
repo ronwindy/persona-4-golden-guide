@@ -1,85 +1,74 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SidebarToC from '../../components/SidebarToC.astro';
+import GuideLayout from "../../layouts/GuideLayout.astro";
 
 const contactEmail = "Hurricanehaon@gmail.com";
 ---
 
-<Layout title="About This Guide | Persona 4 Golden Guide">
-  <SidebarToC />
-  
-  <div class="about-container">
-    <header class="about-header anim-pop">
-      <h1 class="font-pop">ABOUT <span class="highlight">GUIDE</span></h1>
-      <div class="subtitle font-pop">THE INVESTIGATION BEGINS</div>
-    </header>
+<GuideLayout title="About This Guide | Persona 4 Golden Guide">
+  <header class="about-header anim-pop">
+    <h1 class="font-pop">ABOUT THIS <span class="highlight">GUIDE</span></h1>
+    <div class="subtitle font-pop">THE INVESTIGATION BEGINS</div>
+  </header>
 
-    <div class="divider bg-stripes"></div>
+  <div class="divider bg-stripes"></div>
 
-    <main class="content-box p4g-shadow anim-slide-in">
-      <h2 class="font-pop">WELCOME TO THE TEAM!</h2>
-      
-      <div class="text-content font-read">
-        <p>
-          Thank you very much for reading this guide! I got the inspiration to make this guide because I wanted there to be a 
-          <span class="text-highlight">single place</span> where all the information for 
-          <span class="text-highlight secondary">Persona 4 Golden</span> could be found.
-        </p>
+  <main class="content-box p4g-shadow anim-slide-in">
+    <h2 class="font-pop">WELCOME TO THE TEAM!</h2>
 
-        <p>
-          As such, there is a lot of information that was found by other <span class="text-highlight">GameFAQs users</span>, 
-          who are found in the <a href="/persona-4-golden-guide/copyright" class="inline-link">Copyright and Special Thanks</a> section. 
-          Without their information and findings, this guide would not exist, so 
-          <span class="text-highlight alert">go support them</span> any way you can.
-        </p>
+    <div class="text-content font-read">
+      <p>
+        Thank you very much for reading this guide! I got the inspiration to
+        make this guide because I wanted there to be a
+        <span class="text-highlight">single place</span> where all the information
+        for
+        <span class="text-highlight secondary">Persona 4 Golden</span> could be found.
+      </p>
 
-        <p>
-          This guide will <span class="text-highlight">only</span> be covering information for Persona 4 Golden. 
-          While differences between Persona 3, Persona 4, and Persona 4 Golden are explored in depth in the 
-          <a href="/persona-4-golden-guide/about-persona-4-golden" class="inline-link">About Persona 4 Golden</a> section, they will not be talked about much in the rest of the guide.
-        </p>
+      <p>
+        As such, there is a lot of information that was found by other <span
+          class="text-highlight">GameFAQs users</span
+        >, who are found in the <a
+          href="/persona-4-golden-guide/copyright"
+          class="inline-link">Copyright and Special Thanks</a
+        > section. Without their information and findings, this guide would not exist,
+        so
+        <span class="text-highlight alert">go support them</span> any way you can.
+      </p>
 
-        <p>
-          If you have any questions or concerns about this guide or anything in Persona 4 Golden, feel free to message me on 
-          <span class="text-highlight">GameFAQs</span>, or email me at 
-          <a href={`mailto:${contactEmail}`} class="email-badge font-pop">{contactEmail}</a>.
-        </p>
+      <p>
+        This guide will <span class="text-highlight">only</span> be covering information
+        for Persona 4 Golden. While differences between Persona 3, Persona 4, and
+        Persona 4 Golden are explored in depth in the
+        <a
+          href="/persona-4-golden-guide/about-persona-4-golden"
+          class="inline-link">About Persona 4 Golden</a
+        > section, they will not be talked about much in the rest of the guide.
+      </p>
 
-        <p class="closing">
-          I hope you enjoy this guide and Persona 4 Golden!
-        </p>
-      </div>
+      <p>
+        If you have any questions or concerns about this guide or anything in
+        Persona 4 Golden, feel free to message me on
+        <span class="text-highlight">GameFAQs</span>, or email me at
+        <a href={`mailto:${contactEmail}`} class="email-badge font-pop"
+          >{contactEmail}</a
+        >.
+      </p>
 
-      <div class="status-footer bg-stripes">
-        <span class="font-pop">SYSTEM STATUS: OPTIMIZED FOR TRUE ENDING</span>
-      </div>
-    </main>
+      <p class="closing">I hope you enjoy this guide and Persona 4 Golden!</p>
+    </div>
 
     <div class="decoration-container">
       <div class="tv-static-effect"></div>
     </div>
-  </div>
-</Layout>
+
+    <div class="status-footer bg-stripes">
+      <span class="font-pop">SYSTEM STATUS: OPTIMIZED FOR TRUE ENDING</span>
+    </div>
+  </main>
+</GuideLayout>
 
 <style>
-  .about-container {
-    max-width: 850px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  /* Adjust main layout grid to accommodate sidebar on this page */
-  :global(.main-layout) {
-    display: grid !important;
-    gap: 2.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-    }
-  }
-
+  /* --- Header Section (Midnight Channel Aesthetic) --- */
   .about-header {
     margin-bottom: 2rem;
     padding: 2.5rem;
@@ -88,94 +77,107 @@ const contactEmail = "Hurricanehaon@gmail.com";
     position: relative;
     box-shadow: 10px 10px 0 var(--secondary);
     overflow: hidden;
+
+    @media (max-width: 640px) {
+      padding: 1.5rem;
+    }
+
+    & h1 {
+      font-size: clamp(2.5rem, 10vw, 6rem);
+      color: var(--secondary);
+      margin: 0;
+      line-height: 0.85;
+      transform: rotate(-1.5deg);
+
+      /* Highlighted block within the title */
+      & .highlight {
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0 0.8rem;
+        display: inline-block;
+        transform: rotate(3deg);
+        box-shadow: 5px 5px 0 var(--accent-orange);
+      }
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: var(--secondary);
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      padding: 0.2rem 1rem;
+    }
   }
 
-  .about-header h1 {
-    font-size: clamp(2.5rem, 10vw, 6rem);
-    color: var(--secondary);
-    margin: 0;
-    line-height: 0.85;
-    transform: rotate(-1.5deg);
-  }
-
-  .about-header h1 .highlight {
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0 0.8rem;
-    display: inline-block;
-    transform: rotate(3deg);
-    box-shadow: 5px 5px 0 var(--accent-orange);
-  }
-
-  .subtitle {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: var(--secondary);
-    font-weight: 900;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    background: rgba(0,0,0,0.1);
-    display: inline-block;
-    padding: 0.2rem 1rem;
-  }
-
+  /* --- Main Content Box (Semi-transparent Glassmorphism) --- */
   .content-box {
-    background: var(--bg-white);
+    background: rgba(255, 255, 255, 0.98);
     border: 6px solid var(--secondary);
     padding: 3.5rem 3rem;
     margin-top: 3rem;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(12px);
+
+    /* Striped decorative top border */
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 12px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--primary),
+        var(--primary) 20px,
+        var(--secondary) 20px,
+        var(--secondary) 40px
+      );
+    }
+
+    & h2 {
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 2.5rem;
+      position: relative;
+      display: inline-block;
+
+      /* Underline box behind the heading */
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 110%;
+        height: 15px;
+        background: var(--primary);
+        z-index: -1;
+        transform: rotate(-1deg);
+      }
+    }
+
+    @media (max-width: 640px) {
+      padding: 2rem 1.5rem;
+    }
   }
 
-  .content-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 12px;
-    background: repeating-linear-gradient(
-      90deg,
-      var(--primary),
-      var(--primary) 20px,
-      var(--secondary) 20px,
-      var(--secondary) 40px
-    );
-  }
-
-  .content-box h2 {
-    font-size: 2.5rem;
-    color: var(--secondary);
-    margin-bottom: 2.5rem;
-    position: relative;
-    display: inline-block;
-  }
-
-  .content-box h2::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 110%;
-    height: 15px;
-    background: var(--primary);
-    z-index: -1;
-    transform: rotate(-1deg);
-  }
-
+  /* --- Typography & Text Components --- */
   .text-content {
     font-size: 1.25rem;
     line-height: 1.9;
     color: var(--secondary);
     font-weight: 500;
+
+    & p {
+      margin-bottom: 2.5rem;
+    }
   }
 
-  .text-content p {
-    margin-bottom: 2.5rem;
-  }
-
+  /* Highlight markers for key terms */
   .text-highlight {
     background: var(--primary);
     color: var(--secondary);
@@ -184,32 +186,33 @@ const contactEmail = "Hurricanehaon@gmail.com";
     display: inline-block;
     box-shadow: 3px 3px 0 var(--secondary);
     margin: 0 0.2rem;
+
+    &.secondary {
+      background: var(--accent-blue);
+      color: var(--primary);
+      transform: rotate(1deg);
+    }
+
+    &.alert {
+      background: var(--accent-orange);
+      color: white;
+      transform: rotate(-1.5deg);
+    }
   }
 
-  .text-highlight.secondary {
-    background: var(--accent-blue);
-    color: var(--primary);
-    transform: rotate(1deg);
-  }
-
-  .text-highlight.alert {
-    background: var(--accent-orange);
-    color: white;
-    transform: rotate(-1.5deg);
-  }
-
+  /* Links and contact badges */
   .inline-link {
     color: var(--secondary);
     font-weight: 800;
     text-decoration: none;
     border-bottom: 4px solid var(--accent-orange);
     transition: all 0.2s;
-  }
 
-  .inline-link:hover {
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0 0.4rem;
+    &:hover {
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0 0.4rem;
+    }
   }
 
   .email-badge {
@@ -222,16 +225,17 @@ const contactEmail = "Hurricanehaon@gmail.com";
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     font-size: 1rem;
     box-shadow: 4px 4px 0 var(--accent-blue);
+
+    &:hover {
+      transform: scale(1.1) rotate(-2deg);
+      box-shadow: 8px 8px 0 var(--accent-orange);
+    }
   }
 
-  .email-badge:hover {
-    transform: scale(1.1) rotate(-2deg);
-    box-shadow: 8px 8px 0 var(--accent-orange);
-  }
-
+  /* Aesthetic closing signature */
   .closing {
     font-size: 1.8rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 900;
     color: var(--secondary);
     margin-top: 4rem !important;
@@ -239,19 +243,20 @@ const contactEmail = "Hurricanehaon@gmail.com";
     font-style: italic;
   }
 
+  /* --- Footer & Decorative Accents --- */
   .status-footer {
     margin-top: 3rem;
     padding: 0.75rem;
     text-align: right;
     border: 4px solid var(--secondary);
-  }
 
-  .status-footer span {
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0.3rem 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 900;
+    & span {
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0.3rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 900;
+    }
   }
 
   .decoration-container {
@@ -271,14 +276,5 @@ const contactEmail = "Hurricanehaon@gmail.com";
       var(--secondary) 20px
     );
     opacity: 0.3;
-  }
-
-  @media (max-width: 640px) {
-    .content-box {
-      padding: 2rem 1.5rem;
-    }
-    .about-header {
-      padding: 1.5rem;
-    }
   }
 </style>
