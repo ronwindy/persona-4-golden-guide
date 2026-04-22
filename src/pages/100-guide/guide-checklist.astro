@@ -1,6 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SidebarToC from '../../components/SidebarToC.astro';
+import GuideLayout from '../../layouts/GuideLayout.astro';
 
 const milestones = [
   { version: '0.50', title: 'Walkthrough', status: 'completed' },
@@ -21,9 +20,7 @@ const milestones = [
 ];
 ---
 
-<Layout title="Guide Checklist | Persona 4 Golden Guide">
-  <SidebarToC />
-  
+<GuideLayout title="Guide Checklist | Persona 4 Golden Guide">
   <div class="checklist-container">
     <header class="checklist-header anim-pop">
       <h1 class="font-pop">GUIDE <span class="highlight">CHECKLIST</span></h1>
@@ -58,27 +55,16 @@ const milestones = [
       <p>This section will be removed once version 2.00 is reached.</p>
     </footer>
   </div>
-</Layout>
+</GuideLayout>
+
 
 <style>
   .checklist-container {
     max-width: 900px;
     margin: 0 auto;
     width: 100%;
-    /* No grid-column: 1 / -1; here because we want it to fit in the second column of main-layout if SidebarToC is present */
   }
-
-  /* Adjust main layout grid to accommodate sidebar on this page */
-  :global(.main-layout) {
-    display: grid !important;
-    gap: 2.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-    }
-  }
+  /* Redundant layout overrides removed as they are now handled by GuideLayout */
 
   .checklist-header {
     margin-bottom: 2rem;

@@ -1,13 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SidebarToC from '../../components/SidebarToC.astro';
+import GuideLayout from '../../layouts/GuideLayout.astro';
 
 const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
 ---
 
-<Layout title="What is Persona? | Persona 4 Golden Guide">
-  <SidebarToC />
-  
+<GuideLayout title="What is Persona? | Persona 4 Golden Guide">
   <div class="persona-container">
     <header class="persona-header anim-pop">
       <div class="header-inner">
@@ -92,7 +89,7 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
       <div class="tv-static-effect"></div>
     </div>
   </div>
-</Layout>
+</GuideLayout>
 
 <style>
   .persona-container {
@@ -101,18 +98,6 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art.png";
     width: 100%;
     position: relative;
     padding: 0; /* Removing container padding for full-width header */
-  }
-
-  :global(.main-layout) {
-    display: grid !important;
-    gap: 2.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-      max-width: 1600px !important;
-    }
   }
 
   .persona-header {

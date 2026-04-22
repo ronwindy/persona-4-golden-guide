@@ -1,6 +1,5 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import SidebarToC from "../../components/SidebarToC.astro";
+import GuideLayout from "../../layouts/GuideLayout.astro";
 
 const heroBg = "/persona-4-golden-guide/p4g-key-art-1.png";
 
@@ -138,10 +137,7 @@ const categories = [
 ];
 ---
 
-<Layout title="Persona 4 vs. Golden | Comparison Guide">
-  <SidebarToC />
-
-  <div class="vs-page-wrapper">
+<GuideLayout title="Persona 4 vs. Golden | Comparison Guide">
     <!-- Hero Header -->
     <header
       class="hero-broadcast p4g-shadow"
@@ -208,39 +204,9 @@ const categories = [
         </div>
       </footer>
     </main>
-  </div>
-</Layout>
+</GuideLayout>
 
 <style>
-  .vs-page-wrapper {
-    width: 100%;
-    position: relative;
-    padding-bottom: 5rem;
-  }
-
-  /* Robust reset to prevent overflow */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-  /* Override Layout.astro's 3-column grid to give content more room */
-  :global(.main-layout) {
-    display: grid !important;
-    max-width: 100vw;
-    overflow-x: hidden;
-    gap: 1.5rem !important;
-    width: 100%;
-  }
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-      max-width: 1600px !important;
-      gap: 2.5rem !important;
-      padding: 3rem 2rem !important;
-    }
-  }
-
   /* Hero Section */
   .hero-broadcast {
     position: relative;
