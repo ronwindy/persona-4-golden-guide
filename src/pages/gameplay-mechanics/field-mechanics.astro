@@ -1,185 +1,148 @@
 ---
 // src/pages/gameplay-mechanics/field-mechanics.astro
-import Layout from "../../layouts/Layout.astro";
-import SidebarToC from "../../components/SidebarToC.astro";
+import GuideLayout from "../../layouts/GuideLayout.astro";
 import XboxButton from "../../components/XboxButton.astro";
 
 const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
 ---
 
-<Layout title="Field Mechanics | Persona 4 Golden Guide">
-  <SidebarToC />
+<GuideLayout title="Field Mechanics | Persona 4 Golden Guide">
+  <header class="field-header anim-pop">
+    <div class="header-bg" style={`background-image: url(${heroImagePath});`}></div>
+    <div class="header-overlay"></div>
+    <div class="tv-scanlines"></div>
+    <div class="fog-drift"></div>
+    
+    <div class="header-content">
+      <h1 class="font-pop">FIELD <span class="skew-highlight">MECHANICS</span></h1>
+      <div class="breadcrumb font-pop">SYSTEMS // EXPLORATION // NAVIGATION</div>
+    </div>
+  </header>
 
-  <div class="persona-container">
-    <header class="field-header anim-pop">
-      <div class="header-bg" style={`background-image: url(${heroImagePath});`}></div>
-      <div class="header-overlay"></div>
-      <div class="tv-scanlines"></div>
-      <div class="fog-drift"></div>
-      
-      <div class="header-content">
-        <h1 class="font-pop">FIELD <span class="skew-highlight">MECHANICS</span></h1>
-        <div class="breadcrumb font-pop">SYSTEMS // EXPLORATION // NAVIGATION</div>
+  <div class="divider bg-stripes"></div>
+
+  <main class="fragment-layout">
+    <!-- Section: Saving -->
+    <section class="fragment-card saving-fragment anim-slide-right stagger-1">
+      <div class="fragment-header font-pop">
+        <div class="title-group">
+          <span class="fragment-num">01</span> 
+          <svg class="header-icon spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+          SAVING YOUR PROGRESS
+        </div>
       </div>
-    </header>
-
-    <div class="divider bg-stripes"></div>
-
-    <main class="fragment-layout">
-      <!-- Section: Saving -->
-      <section class="fragment-card saving-fragment anim-slide-right">
-        <div class="fragment-header font-pop">
-          <div class="title-group">
-            <span class="fragment-num">01</span> 
-            <svg class="header-icon spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
-            SAVING YOUR PROGRESS
-          </div>
+      <div class="fragment-body font-read">
+        <p>
+          You can save at <span class="text-glow-blue">blue butterflies</span> found in key locations: 
+          your classroom, the shopping district, the TV World entrance, and the living room calendar.
+        </p>
+        <div class="save-slots-info p4g-shadow">
+          <span class="font-pop">16 SLOTS AVAILABLE</span>
         </div>
-        <div class="fragment-body font-read">
-          <p>
-            You can save at <span class="text-glow-blue">blue butterflies</span> found in key locations: 
-            your classroom, the shopping district, the TV World entrance, and the living room calendar.
-          </p>
-          <div class="save-slots-info p4g-shadow">
-            <span class="font-pop">16 SLOTS AVAILABLE</span>
-          </div>
-          <p class="ng-plus-note">
-            After beating the game, save your <span class="highlight-yellow">Clear Data</span> to activate <span class="text-highlight">New Game Plus</span>.
-          </p>
-        </div>
-      </section>
-
-      <!-- Section: Weather -->
-      <section class="fragment-card weather-fragment anim-jitter anim-slide-left">
-        <div class="fragment-header font-pop">
-          <div class="title-group">
-            <span class="fragment-num">02</span> 
-            <svg class="header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-            WEATHER FORECAST
-          </div>
-        </div>
-        <div class="fragment-body font-read">
-          <p>
-            Check the weather for the next 7 days at any <span class="text-highlight">TV</span> or by talking to the 
-            <span class="text-highlight secondary">Meteorologist</span> on the school roof.
-          </p>
-          <div class="weather-alert font-pop">
-            CRITICAL FOR TIME MANAGEMENT
-          </div>
-          <p>
-            Weather affects dungeon conditions and Social Link availability. Always plan ahead!
-          </p>
-        </div>
-      </section>
-
-      <!-- Section: Fast Travel -->
-      <section class="fragment-card travel-fragment anim-slide-right">
-        <div class="fragment-header font-pop">
-          <div class="title-group">
-            <span class="fragment-num">03</span> 
-            <svg class="header-icon bounce" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
-            FAST TRAVEL
-          </div>
-        </div>
-        <div class="fragment-body font-read">
-          <div class="btn-prompt-row">
-            <XboxButton name="x" />
-            <span class="font-pop">INSTANT NAVIGATION</span>
-          </div>
-          <p>
-            Pressing <span class="btn-inline"><XboxButton name="x" /></span> allows you to quickly jump 
-            between points in an area or exit to the map instantly.
-          </p>
-        </div>
-      </section>
-
-      <!-- Section: Night Life -->
-      <section class="fragment-card night-fragment anim-jitter anim-slide-left">
-        <div class="fragment-header font-pop">
-          <div class="title-group">
-            <span class="fragment-num">04</span> 
-            <svg class="header-icon hover-swing" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-            NIGHT LIFE
-          </div>
-        </div>
-        <div class="fragment-body font-read">
-          <p>
-            To go out at night, you must obtain a <span class="highlight-yellow">part-time job</span> that operates during evening hours, 
-            then speak with <span class="text-highlight">Dojima</span>.
-          </p>
-          <ul class="night-activities">
-            <li>Night-only Social Links</li>
-            <li>Status Parameters grinding</li>
-            <li>Extra dialogue for bonus points</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Section: Bonding Album -->
-      <section class="fragment-card bonding-fragment anim-slide-up full-width">
-        <div class="fragment-header font-pop">
-          <div class="title-group">
-            <span class="fragment-num">NEW</span> 
-            <svg class="header-icon pulse" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-            BONDING ALBUM
-          </div>
-          <span class="feature-badge font-pop">MODERN EXCLUSIVE</span>
-        </div>
-        <div class="fragment-body font-read">
-          <p>
-            Access the <span class="highlight-yellow">Bonding Album</span> via the Sofa in your room after maxing a Social Link. 
-            This feature allows you to replay events with exact seasonal variations.
-          </p>
-          <div class="album-details bg-yellow p4g-shadow">
-            <p><strong>Note:</strong> No music notes will appear, but all dialogue options are unlocked, 
-            even those requiring Status Parameters.</p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <div class="status-ticker bg-stripes">
-      <div class="ticker-content font-pop">
-        SYSTEM STABLE // WEATHER: CLOUDY // SOCIAL LINK: READY // SYSTEM STABLE // WEATHER: CLOUDY // SOCIAL LINK: READY
+        <p class="ng-plus-note">
+          After beating the game, save your <span class="highlight-yellow">Clear Data</span> to activate <span class="text-highlight">New Game Plus</span>.
+        </p>
       </div>
+    </section>
+
+    <!-- Section: Weather -->
+    <section class="fragment-card weather-fragment anim-jitter anim-slide-left stagger-2">
+      <div class="fragment-header font-pop">
+        <div class="title-group">
+          <span class="fragment-num">02</span> 
+          <svg class="header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          WEATHER FORECAST
+        </div>
+      </div>
+      <div class="fragment-body font-read">
+        <p>
+          Check the weather for the next 7 days at any <span class="text-highlight">TV</span> or by talking to the 
+          <span class="text-highlight secondary">Meteorologist</span> on the school roof.
+        </p>
+        <div class="weather-alert font-pop">
+          CRITICAL FOR TIME MANAGEMENT
+        </div>
+        <p>
+          Weather affects dungeon conditions and Social Link availability. Always plan ahead!
+        </p>
+      </div>
+    </section>
+
+    <!-- Section: Fast Travel -->
+    <section class="fragment-card travel-fragment anim-slide-right stagger-3">
+      <div class="fragment-header font-pop">
+        <div class="title-group">
+          <span class="fragment-num">03</span> 
+          <svg class="header-icon bounce" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+          FAST TRAVEL
+        </div>
+      </div>
+      <div class="fragment-body font-read">
+        <div class="btn-prompt-row">
+          <XboxButton name="x" />
+          <span class="font-pop">INSTANT NAVIGATION</span>
+        </div>
+        <p>
+          Pressing <span class="btn-inline"><XboxButton name="x" /></span> allows you to quickly jump 
+          between points in an area or exit to the map instantly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section: Night Life -->
+    <section class="fragment-card night-fragment anim-jitter anim-slide-left stagger-4">
+      <div class="fragment-header font-pop">
+        <div class="title-group">
+          <span class="fragment-num">04</span> 
+          <svg class="header-icon hover-swing" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          NIGHT LIFE
+        </div>
+      </div>
+      <div class="fragment-body font-read">
+        <p>
+          To go out at night, you must obtain a <span class="highlight-yellow">part-time job</span> that operates during evening hours, 
+          then speak with <span class="text-highlight">Dojima</span>.
+        </p>
+        <ul class="night-activities">
+          <li>Night-only Social Links</li>
+          <li>Status Parameters grinding</li>
+          <li>Extra dialogue for bonus points</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section: Bonding Album -->
+    <section class="fragment-card bonding-fragment anim-slide-up full-width stagger-5">
+      <div class="fragment-header font-pop">
+        <div class="title-group">
+          <span class="fragment-num">NEW</span> 
+          <svg class="header-icon pulse" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          BONDING ALBUM
+        </div>
+        <span class="feature-badge font-pop">MODERN EXCLUSIVE</span>
+      </div>
+      <div class="fragment-body font-read">
+        <p>
+          Access the <span class="highlight-yellow">Bonding Album</span> via the Sofa in your room after maxing a Social Link. 
+          This feature allows you to replay events with exact seasonal variations.
+        </p>
+        <div class="album-details bg-yellow p4g-shadow">
+          <p><strong>Note:</strong> No music notes will appear, but all dialogue options are unlocked, 
+          even those requiring Status Parameters.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="status-ticker bg-stripes">
+    <div class="ticker-content font-pop">
+      SYSTEM STABLE // WEATHER: CLOUDY // SOCIAL LINK: READY // SYSTEM STABLE // WEATHER: CLOUDY // SOCIAL LINK: READY
     </div>
   </div>
-</Layout>
-
+</GuideLayout>
 
 <style>
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-  :global(html), :global(body) {
-    overflow-x: hidden !important;
-    position: relative;
-  }
-
-  /* Mobile Nuclear Overflow Fix - moved to bottom of file */
-
-  @media (min-width: 1024px) {
-    :global(.main-layout) {
-      grid-template-columns: 360px 1fr !important;
-      max-width: 1600px !important;
-      gap: 3rem !important;
-    }
-    .persona-container {
-      max-width: 1400px;
-      overflow: visible;
-    }
-  }
-
-  .persona-container {
-    max-width: 1250px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    padding: 0;
-  }
-
   .divider {
     height: 20px;
     margin: 4rem 0;
@@ -188,9 +151,7 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     border-bottom: 4px solid var(--secondary);
   }
 
-
-
-  /* Header Overhaul */
+  /* Header Section */
   .field-header {
     min-height: 200px;
     height: auto;
@@ -203,50 +164,84 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     justify-content: center;
     text-align: center;
     padding: 2.5rem 1rem;
-    position: relative;
-  }
 
-  .header-bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center bottom;
-    z-index: 1;
-    filter: contrast(1.1) brightness(0.9);
-  }
+    .header-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center bottom;
+      z-index: 1;
+      filter: contrast(1.1) brightness(0.9);
+    }
 
-  .header-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 241, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
-    z-index: 2;
-  }
+    .header-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 241, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+      z-index: 2;
+    }
 
+    .tv-scanlines {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.1) 50%
+      );
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 3;
+      opacity: 0.4;
+    }
 
-  .tv-scanlines {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      rgba(18, 16, 16, 0) 50%,
-      rgba(0, 0, 0, 0.1) 50%
-    );
-    background-size: 100% 4px;
-    pointer-events: none;
-    z-index: 3;
-    opacity: 0.4;
-  }
+    .fog-drift {
+      position: absolute;
+      inset: 0;
+      background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      opacity: 0.2;
+      z-index: 4;
+      animation: fogMovement 60s linear infinite;
+    }
 
-  .fog-drift {
-    position: absolute;
-    inset: 0;
-    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-    opacity: 0.2;
-    z-index: 4;
-    animation: fogMovement 60s linear infinite;
+    .header-content {
+      position: relative;
+      z-index: 10;
+      transform: rotate(-1.5deg);
+      width: 100%;
+
+      h1 {
+        font-size: clamp(1.4rem, 6vw, 5rem);
+        color: var(--secondary);
+        line-height: 1;
+        margin: 0;
+        text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.9);
+
+        .skew-highlight {
+          background: var(--secondary);
+          color: var(--primary);
+          padding: 0 0.75rem;
+          display: inline-block;
+          transform: skew(-8deg) rotate(2deg);
+          box-shadow: 4px 4px 0 var(--accent-orange);
+          margin-top: 0.25rem;
+        }
+      }
+
+      .breadcrumb {
+        margin-top: 1rem;
+        background: var(--secondary);
+        color: white;
+        padding: 0.2rem 1rem;
+        display: inline-block;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
+    }
   }
 
   @keyframes fogMovement {
@@ -254,46 +249,10 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     to { background-position: 1000px 500px; }
   }
 
-  .header-content {
-    position: relative;
-    z-index: 10;
-    transform: rotate(-1.5deg);
-    width: 100%;
-  }
-
-  .header-content h1 {
-    font-size: clamp(1.4rem, 6vw, 5rem);
-    color: var(--secondary);
-    line-height: 1;
-    margin: 0;
-    text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.9);
-  }
-
-  .skew-highlight {
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 0 0.75rem;
-    display: inline-block;
-    transform: skew(-8deg) rotate(2deg);
-    box-shadow: 4px 4px 0 var(--accent-orange);
-    margin-top: 0.25rem;
-  }
-
-  .breadcrumb {
-    margin-top: 1rem;
-    background: var(--secondary);
-    color: white;
-    padding: 0.2rem 1rem;
-    display: inline-block;
-    letter-spacing: 0.1rem;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-  }
-
   /* Fragment Layout */
   .fragment-layout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2.5rem 3rem;
     position: relative;
     width: 100%;
@@ -308,168 +267,199 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     box-shadow: 12px 12px 0 var(--secondary);
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;
+
+    &:hover {
+      transform: translate(-4px, -4px) scale(1.01);
+      box-shadow: 16px 16px 0 var(--accent-orange);
+    }
+
+    .fragment-header {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 0.5rem;
+      position: relative;
+      z-index: 2;
+
+      .title-group {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .fragment-num {
+          background: var(--secondary);
+          color: var(--primary);
+          width: 40px;
+          min-width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          transform: rotate(-5deg);
+          box-shadow: 3px 3px 0 var(--accent-orange);
+        }
+      }
+
+      .feature-badge {
+        background: var(--accent-blue);
+        color: white;
+        padding: 0.2rem 0.8rem;
+        font-size: 0.75rem;
+        box-shadow: 3px 3px 0 var(--primary);
+        border: 1px solid var(--secondary);
+        white-space: nowrap;
+        z-index: 5;
+      }
+    }
+
+    .fragment-body {
+      line-height: 1.7;
+      color: #333;
+      position: relative;
+      z-index: 2;
+
+      p {
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    /* Unique Card Themes */
+    &.saving-fragment { 
+      --card-rotate: 0.5deg;
+      transform: rotate(var(--card-rotate));
+      background: 
+        repeating-radial-gradient(circle at 100% 100%, transparent 0, transparent 20px, rgba(0, 153, 255, 0.03) 20px, rgba(0, 153, 255, 0.03) 40px),
+        linear-gradient(to bottom right, #ffffff, #f0f7ff);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 100px;
+        height: 100px;
+        background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300d2ff" opacity="0.1"%3E%3Cpath d="M12 2l2.4 4.8 5.3.8-3.9 3.8.9 5.3-4.7-2.5-4.7 2.5.9-5.3-3.9-3.8 5.3-.8z"/%3E%3C/svg%3E');
+        opacity: 0.2;
+        transform: rotate(20deg);
+      }
+    }
+
+    &.weather-fragment { 
+      --card-rotate: -1deg;
+      transform: rotate(var(--card-rotate));
+      background: 
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(252, 227, 0, 0.05) 10px, rgba(252, 227, 0, 0.05) 20px),
+        linear-gradient(135deg, #ffffff 0%, #fff9e6 100%);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+        background-size: 15px 15px;
+        opacity: 0.05;
+      }
+    }
+
+    &.travel-fragment { 
+      --card-rotate: -0.5deg;
+      transform: rotate(var(--card-rotate));
+      background: 
+        linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px),
+        #fafafa;
+      background-size: 20px 20px;
+    }
+
+    &.night-fragment { 
+      --card-rotate: 1.5deg;
+      transform: rotate(var(--card-rotate));
+      background: 
+        radial-gradient(1px 1px at 20% 30%, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 40% 70%, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 80% 10%, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 60% 40%, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90% 90%, #ffffff, rgba(0,0,0,0)),
+        linear-gradient(135deg, #0c1431 0%, #1a1a1a 100%);
+      color: white;
+      border-color: var(--primary);
+
+      .fragment-header {
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+
+        .fragment-num {
+          background: var(--primary);
+          color: var(--secondary);
+          box-shadow: 3px 3px 0 white;
+        }
+      }
+
+      .fragment-body {
+        color: #eee;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-radius: 50%;
+        box-shadow: -10px 10px 0 0 var(--primary);
+        opacity: 0.8;
+        pointer-events: none;
+        z-index: 1;
+        animation: moonFloat 4s ease-in-out infinite alternate;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+          radial-gradient(circle at 85% 20%, rgba(252, 227, 0, 0.1) 0%, transparent 40%),
+          radial-gradient(1px 1px at 15% 55%, rgba(255,255,255,0.9), transparent),
+          radial-gradient(1.5px 1.5px at 65% 85%, rgba(255,255,255,0.8), transparent),
+          radial-gradient(1px 1px at 45% 15%, rgba(255,255,255,1), transparent);
+        background-size: 100% 100%;
+        pointer-events: none;
+        z-index: 0;
+        animation: starTwinklePan 6s ease-in-out infinite alternate;
+      }
+    }
+
+    &.bonding-fragment.full-width {
+      --card-rotate: -0.2deg;
+      grid-column: 1 / -1;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(255, 105, 180, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 105, 180, 0.05) 0%, transparent 20%),
+        #fffdf8;
+      border-width: 6px;
+      transform: rotate(var(--card-rotate));
+    }
   }
 
-  .fragment-card:hover {
-    transform: translate(-4px, -4px) scale(1.01);
-    box-shadow: 16px 16px 0 var(--accent-orange);
-  }
-
-  .fragment-header {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-    color: var(--secondary);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    border-bottom: 3px solid var(--primary);
-    padding-bottom: 0.5rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  .fragment-header .title-group {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .fragment-num {
-    background: var(--secondary);
-    color: var(--primary);
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    transform: rotate(-5deg);
-    box-shadow: 3px 3px 0 var(--accent-orange);
-  }
-
-  .fragment-body {
-    line-height: 1.7;
-    color: #333;
-    position: relative;
-    z-index: 2;
-  }
-
-  /* Unique Card Themes */
-  .saving-fragment { 
-    transform: rotate(0.5deg);
-    background: 
-      repeating-radial-gradient(circle at 100% 100%, transparent 0, transparent 20px, rgba(0, 153, 255, 0.03) 20px, rgba(0, 153, 255, 0.03) 40px),
-      linear-gradient(to bottom right, #ffffff, #f0f7ff);
-  }
-  .saving-fragment::after {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 100px;
-    height: 100px;
-    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300d2ff" opacity="0.1"%3E%3Cpath d="M12 2l2.4 4.8 5.3.8-3.9 3.8.9 5.3-4.7-2.5-4.7 2.5.9-5.3-3.9-3.8 5.3-.8z"/%3E%3C/svg%3E');
-    opacity: 0.2;
-    transform: rotate(20deg);
-  }
-
-  .weather-fragment { 
-    transform: rotate(-1deg);
-    background: 
-      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(252, 227, 0, 0.05) 10px, rgba(252, 227, 0, 0.05) 20px),
-      linear-gradient(135deg, #ffffff 0%, #fff9e6 100%);
-  }
-  .weather-fragment::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
-    background-size: 15px 15px;
-    opacity: 0.05;
-  }
-
-  .travel-fragment { 
-    transform: rotate(-0.5deg);
-    background: 
-      linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px),
-      #fafafa;
-    background-size: 20px 20px;
-  }
-
-  .night-fragment { 
-    transform: rotate(1.5deg);
-    background: 
-      radial-gradient(1px 1px at 20% 30%, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 40% 70%, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(2px 2px at 80% 10%, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 60% 40%, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(2px 2px at 90% 90%, #ffffff, rgba(0,0,0,0)),
-      linear-gradient(135deg, #0c1431 0%, #1a1a1a 100%);
-    color: white;
-    border-color: var(--primary);
-  }
-  .night-fragment .fragment-header {
-    color: var(--primary);
-    border-bottom-color: var(--primary);
-  }
-  .night-fragment .fragment-body {
-    color: #eee;
-  }
-  .night-fragment .fragment-num {
-    background: var(--primary);
-    color: var(--secondary);
-    box-shadow: 3px 3px 0 white;
-  }
-  .night-fragment::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 0 var(--primary);
-    opacity: 0.8;
-    pointer-events: none;
-    z-index: 1;
-    animation: moonFloat 4s ease-in-out infinite alternate;
-  }
-  .night-fragment::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-      radial-gradient(circle at 85% 20%, rgba(252, 227, 0, 0.1) 0%, transparent 40%),
-      radial-gradient(1px 1px at 15% 55%, rgba(255,255,255,0.9), transparent),
-      radial-gradient(1.5px 1.5px at 65% 85%, rgba(255,255,255,0.8), transparent),
-      radial-gradient(1px 1px at 45% 15%, rgba(255,255,255,1), transparent);
-    background-size: 100% 100%;
-    pointer-events: none;
-    z-index: 0;
-    animation: starTwinklePan 6s ease-in-out infinite alternate;
-  }
-
-  .bonding-fragment.full-width {
-    grid-column: 1 / -1;
-    background: 
-      radial-gradient(circle at 10% 20%, rgba(255, 105, 180, 0.05) 0%, transparent 20%),
-      radial-gradient(circle at 90% 80%, rgba(255, 105, 180, 0.05) 0%, transparent 20%),
-      #fffdf8;
-    border-width: 6px;
-    transform: rotate(-0.2deg);
-  }
-
-  /* Save Slots UI Fix */
+  /* Utility Styles */
   .save-slots-info {
     display: inline-block;
     background: var(--secondary);
@@ -481,7 +471,6 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     font-weight: 800;
   }
 
-  /* Highlight Styles */
   .text-glow-blue {
     color: #0099ff;
     font-weight: 800;
@@ -521,31 +510,20 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     list-style: none;
     padding: 0;
     margin-top: 1rem;
-  }
 
-  .night-activities li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-  }
+    li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
 
-  .night-activities li::before {
-    content: '>>';
-    position: absolute;
-    left: 0;
-    color: var(--primary);
-  }
-
-  .feature-badge {
-    background: var(--accent-blue);
-    color: white;
-    padding: 0.2rem 0.8rem;
-    font-size: 0.75rem;
-    box-shadow: 3px 3px 0 var(--primary);
-    border: 1px solid var(--secondary);
-    white-space: nowrap;
-    z-index: 5;
+      &::before {
+        content: '>>';
+        position: absolute;
+        left: 0;
+        color: var(--primary);
+      }
+    }
   }
 
   .album-details {
@@ -558,22 +536,22 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
 
   /* Status Ticker */
   .status-ticker {
-    margin: 2rem 1rem 4rem 1rem;
+    margin: 2rem 0 4rem 0;
     padding: 1rem;
     overflow: hidden;
     border: 4px solid var(--secondary);
     background: var(--secondary);
     box-shadow: 8px 8px 0 var(--primary);
-  }
 
-  .ticker-content {
-    color: var(--primary);
-    white-space: nowrap;
-    display: inline-block;
-    animation: tickerLoop 40s linear infinite;
-    font-size: 1.1rem;
-    font-weight: 900;
-    letter-spacing: 0.2rem;
+    .ticker-content {
+      color: var(--primary);
+      white-space: nowrap;
+      display: inline-block;
+      animation: tickerLoop 40s linear infinite;
+      font-size: 1.1rem;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+    }
   }
 
   @keyframes tickerLoop {
@@ -581,101 +559,43 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
     100% { transform: translateX(-150%); }
   }
 
-  /* Responsive Fixes */
-  @media (max-width: 1024px) {
-    .fragment-layout {
-      gap: 2rem;
-    }
-  }
-
-  @media (max-width: 850px) {
-    .persona-container {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-    .field-header {
-      min-height: 130px;
-      width: 100%;
-      margin: 0;
-      border-left: none;
-      border-right: none;
-      padding: 1.5rem 1rem;
-      box-shadow: none;
-    }
-
-    .header-content h1 {
-      font-size: 1.4rem !important;
-    }
-
-    .skew-highlight {
-      padding: 0 0.4rem;
-      font-size: 1.2rem;
-    }
-
-    .breadcrumb {
-      display: none;
-    }
-
-    .divider {
-      margin: 2.5rem 0;
-      height: 12px;
-    }
-
-    .fragment-layout {
-      grid-template-columns: 1fr;
-      margin: 2rem 0;
-      gap: 1.25rem;
-      padding: 0 1rem;
-      width: 100%;
-    }
-    
-    .fragment-card {
-      transform: none !important;
-      margin: 0 auto 1.5rem auto;
-      box-shadow: 4px 4px 0 var(--secondary);
-      padding: 1.25rem;
-      width: 100%;
-    }
-
-    .status-ticker {
-      width: 100%;
-      margin: 1.5rem 0 0 0;
-      padding: 1rem;
-      border-left: none;
-      border-right: none;
-      box-shadow: none;
-      overflow: hidden;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .header-content h1 {
-      font-size: 1.25rem !important;
-    }
-    .fragment-header {
-      font-size: 1rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-    .feature-badge {
-      align-self: flex-start;
-    }
-  }
-
   /* Icons and Animations */
   .header-icon {
     display: inline-block;
     vertical-align: middle;
+    
+    &.spin:hover { animation: iconSpin 2s linear infinite; }
+    &.bounce:hover { animation: iconBounce 1s ease-in-out infinite; }
+    &.hover-swing:hover { animation: iconSwing 1s ease-in-out infinite; }
+    &.pulse:hover { animation: iconPulse 1s ease-in-out infinite; }
   }
-  
-  .spin:hover { animation: iconSpin 2s linear infinite; }
-  .bounce:hover { animation: iconBounce 1s ease-in-out infinite; }
-  .hover-swing:hover { animation: iconSwing 1s ease-in-out infinite; }
-  .pulse:hover { animation: iconPulse 1s ease-in-out infinite; }
+
+  /* Entrance Animations */
+  .anim-slide-right { animation: slideRight 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+  .anim-slide-left { animation: slideLeft 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+  .anim-slide-up { animation: slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-60px) rotate(-5deg); }
+    to { opacity: 1; transform: translateX(0) rotate(var(--card-rotate, 0.5deg)); }
+  }
+
+  @keyframes slideLeft {
+    from { opacity: 0; transform: translateX(60px) rotate(5deg); }
+    to { opacity: 1; transform: translateX(0) rotate(var(--card-rotate, -1deg)); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(60px); }
+    to { opacity: 1; transform: translateY(0) rotate(var(--card-rotate, -0.2deg)); }
+  }
 
   @keyframes iconSpin { 100% { transform: rotate(360deg); } }
   @keyframes iconBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
@@ -689,5 +609,62 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-3.webp";
   @keyframes starTwinklePan {
     0% { opacity: 0.4; }
     100% { opacity: 1; }
+  }
+
+  /* Responsive Fixes */
+  @media (max-width: 850px) {
+    .field-header {
+      min-height: 130px;
+      padding: 1.5rem 1rem;
+      box-shadow: 4px 4px 0 var(--secondary);
+
+      .header-content h1 {
+        font-size: 1.4rem !important;
+      }
+
+      .skew-highlight {
+        padding: 0 0.4rem;
+        font-size: 1.2rem;
+      }
+
+      .breadcrumb {
+        display: none;
+      }
+    }
+
+    .divider {
+      margin: 2.5rem 0;
+      height: 12px;
+    }
+
+    .fragment-layout {
+      grid-template-columns: 1fr;
+      margin: 2rem 0;
+      gap: 1.25rem;
+    }
+    
+    .fragment-card {
+      transform: none !important;
+      box-shadow: 6px 6px 0 var(--secondary);
+      padding: 1.5rem;
+    }
+
+    .status-ticker {
+      margin: 1.5rem 0 2rem 0;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header-content h1 {
+      font-size: 1.25rem !important;
+    }
+
+    .fragment-header {
+      font-size: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
   }
 </style>
