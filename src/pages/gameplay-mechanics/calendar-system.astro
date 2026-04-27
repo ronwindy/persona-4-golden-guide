@@ -1,0 +1,369 @@
+---
+// src/pages/gameplay-mechanics/calendar-system.astro
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const heroImagePath = "/persona-4-golden-guide/p4-key-art-3.png";
+---
+
+<GuideLayout title="Calendar System | Persona 4 Golden Guide">
+  <header
+    class="persona-header anim-pop"
+    style={`background-image: url(${heroImagePath});`}
+  >
+    <div class="header-overlay"></div>
+    <div class="header-inner">
+      <h1 class="font-pop">CALENDAR <span class="highlight">SYSTEM</span></h1>
+      <div class="subtitle font-pop">TIME MANAGEMENT</div>
+    </div>
+  </header>
+
+  <div class="divider bg-stripes page-divider"></div>
+
+  <main class="content-box p4g-shadow anim-slide-in">
+    <section class="intro-section">
+      <div class="text-content font-read">
+        <p>
+          <span class="text-highlight">Persona 4 Golden</span> uses a calendar system for both story and gameplay elements. The game takes place over roughly a year, so your time is limited and must be managed wisely.
+        </p>
+      </div>
+    </section>
+
+    <!-- The Flow of Time section -->
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">01</span> THE FLOW OF TIME
+      </h2>
+      <p class="font-read">
+        Each day in Inaba is broken down into specific phases. You cannot act during every phase, as many are automatically skipped due to school or story events.
+      </p>
+
+      <div class="timeline-container p4g-shadow">
+        <div class="timeline-phase inactive">
+          <div class="phase-name font-pop">EARLY MORNING</div>
+        </div>
+        <div class="timeline-arrow"></div>
+        <div class="timeline-phase inactive">
+          <div class="phase-name font-pop">MORNING</div>
+        </div>
+        <div class="timeline-arrow"></div>
+        <div class="timeline-phase inactive">
+          <div class="phase-name font-pop">LUNCHTIME</div>
+        </div>
+        <div class="timeline-arrow"></div>
+        <div class="timeline-phase inactive">
+          <div class="phase-name font-pop">AFTERNOON</div>
+        </div>
+        <div class="timeline-arrow"></div>
+        <div class="timeline-phase actionable">
+          <div class="phase-name font-pop">AFTER SCHOOL / DAYTIME</div>
+          <div class="phase-status">ACTIONABLE</div>
+        </div>
+        <div class="timeline-arrow"></div>
+        <div class="timeline-phase actionable">
+          <div class="phase-name font-pop">EVENING</div>
+          <div class="phase-status">ACTIONABLE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">02</span> PASSING TIME
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          During the <span class="text-highlight secondary">Actionable</span> phases (After School/Daytime and Evening), you may choose what activity you would like to do. However, be aware of what causes time to advance.
+        </p>
+        <ul class="mechanic-list">
+          <li>Generally speaking, if an activity leads into a cutscene, it will <strong>pass time</strong>.</li>
+          <li>The exception to this rule is accepting a quest for the <strong>Hermit Social Link</strong>, which does not pass time.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">03</span> RESTRICTIONS & CONDITIONS
+      </h2>
+      <div class="text-content font-read">
+        <ul class="mechanic-list">
+          <li><strong>Story events</strong> are always locked to specific dates on the calendar.</li>
+          <li>Some activities are only available during <strong>specific weather</strong> conditions (e.g., raining) or during a <strong>certain day of the week</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bottom-decoration">
+      <div class="tv-static-effect"></div>
+    </div>
+  </main>
+</GuideLayout>
+
+<style>
+  .persona-header {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 6rem 2.5rem;
+    background-size: cover;
+    background-position: center 20%;
+    border: 6px solid var(--secondary);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    .header-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 241, 0, 0.4),
+        rgba(252, 227, 0, 0.8)
+      );
+      z-index: 1;
+    }
+
+    .header-inner {
+      transform: rotate(-1.5deg);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      color: var(--secondary);
+      margin: 0;
+      line-height: 0.9;
+      text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+
+      .highlight {
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0 0.8rem;
+        display: inline-block;
+        transform: rotate(-2deg);
+        box-shadow: 5px 5px 0 var(--accent-orange);
+        margin-top: 0.5rem;
+      }
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: var(--secondary);
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      background: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border: 2px solid var(--secondary);
+    }
+  }
+
+  .content-box {
+    background-color: #ededed;
+    background-image:
+      radial-gradient(rgba(0, 0, 0, 0.05) 2px, transparent 2px),
+      linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-size:
+      24px 24px,
+      100% 100%;
+    border: 6px solid var(--secondary);
+    padding: 3.5rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    box-shadow: 12px 12px 0 var(--secondary);
+
+    .intro-section {
+      margin-bottom: 3rem;
+
+      .text-content {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: var(--secondary);
+      }
+    }
+  }
+
+  .text-highlight {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.2rem;
+    font-weight: 800;
+    box-shadow: 3px 3px 0 var(--secondary);
+    display: inline-block;
+    line-height: 1.2;
+    vertical-align: middle;
+
+    &.secondary {
+      background: var(--accent-blue);
+      color: #fff;
+      box-shadow: 3px 3px 0 var(--accent-orange);
+    }
+  }
+
+  .mechanic-section {
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .section-tag {
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0.2rem 0.6rem;
+        font-size: 1rem;
+        transform: skewX(-10deg);
+      }
+    }
+    
+    .text-content {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+    }
+  }
+  
+  .mechanic-list {
+      list-style-type: square;
+      padding-left: 2rem;
+      margin-top: 1rem;
+      
+      li {
+          margin-bottom: 0.8rem;
+      }
+  }
+
+  /* Timeline Styles */
+  .timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: white;
+    border: 4px solid var(--secondary);
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .timeline-phase {
+    flex: 1 1 auto;
+    min-width: 120px;
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid var(--secondary);
+    position: relative;
+    background: #f8f8f8;
+    
+    &.inactive {
+      opacity: 0.7;
+      border-style: dashed;
+    }
+
+    &.actionable {
+      background: var(--primary);
+      box-shadow: 4px 4px 0 var(--secondary);
+      transform: translateY(-2px);
+      border-style: solid;
+      transition: transform 0.2s, box-shadow 0.2s;
+      
+      &:hover {
+          transform: translateY(-4px) scale(1.02);
+          box-shadow: 6px 6px 0 var(--accent-orange);
+      }
+      
+      .phase-name {
+          color: var(--secondary);
+      }
+    }
+    
+    .phase-name {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: #555;
+    }
+    
+    .phase-status {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 900;
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0.2rem;
+        display: inline-block;
+        letter-spacing: 1px;
+    }
+  }
+
+  .timeline-arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid var(--secondary);
+    border-right: 4px solid var(--secondary);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  .bottom-decoration {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+
+    .tv-static-effect {
+      width: 200px;
+      height: 6px;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        var(--secondary) 10px,
+        var(--secondary) 20px
+      );
+      opacity: 0.3;
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .timeline-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .timeline-arrow {
+        transform: rotate(135deg); /* Point down */
+        margin: 0.5rem auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .persona-header {
+      padding: 3.5rem 1.5rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .header-inner {
+        transform: none;
+      }
+    }
+
+    .content-box {
+      padding: 2.5rem 1.25rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+      margin-top: 1.5rem;
+    }
+  }
+</style>
