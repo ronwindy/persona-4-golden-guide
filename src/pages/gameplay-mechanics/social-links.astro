@@ -113,11 +113,18 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-1.jpg"; // Note: File
         </div>
       </div>
     </section>
-
-    <div class="bottom-decoration">
-      <div class="tv-static-effect"></div>
-    </div>
   </main>
+  <div class="social-links-footer anim-pop">
+    <div class="footer-inner bg-halftone">
+      <div class="tarot-card">
+        <div class="tarot-star">✦</div>
+      </div>
+      <div class="footer-text">
+        <h3 class="font-pop">"I AM THOU... THOU ART I..."</h3>
+        <p class="font-read">Thou hast established a new bond...</p>
+      </div>
+    </div>
+  </div>
 </GuideLayout>
 
 <style>
@@ -273,23 +280,74 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-1.jpg"; // Note: File
     }
   }
 
-  .bottom-decoration {
+  .social-links-footer {
+    width: 100%;
     margin-top: 4rem;
-    display: flex;
-    justify-content: center;
+    border: 6px solid var(--secondary);
+    position: relative;
+    background: var(--primary);
+    overflow: hidden;
+    box-shadow: 6px 6px 0 var(--secondary);
+  }
 
-    .tv-static-effect {
-      width: 200px;
-      height: 6px;
-      background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 10px,
-        var(--secondary) 10px,
-        var(--secondary) 20px
-      );
-      opacity: 0.3;
-    }
+  .footer-inner {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tarot-card {
+    width: 30px;
+    height: 45px;
+    border: 3px solid var(--secondary);
+    background: #fff;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(10deg);
+    box-shadow: 3px 3px 0 var(--accent-orange);
+    animation: jitter 3s infinite;
+    flex-shrink: 0;
+  }
+
+  .tarot-star {
+    font-size: 1.2rem;
+    color: var(--secondary);
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links-footer h3 {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 0.25rem;
+    letter-spacing: 1px;
+    background: #fff;
+    padding: 0.1rem 0.5rem;
+    border: 2px solid var(--secondary);
+    transform: rotate(-1deg);
+    box-shadow: 2px 2px 0 var(--secondary);
+    display: inline-block;
+  }
+
+  .social-links-footer p {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-top: 0;
+    background: var(--primary);
+    padding: 0 0.5rem;
+    display: inline-block;
   }
 
   .points-grid {
@@ -391,6 +449,22 @@ const heroImagePath = "/persona-4-golden-guide/p4g-key-art-1.jpg"; // Note: File
       padding: 2.5rem 1.25rem;
       box-shadow: 6px 6px 0 var(--secondary);
       margin-top: 1.5rem;
+    }
+
+    .social-links-footer {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+      margin-bottom: -2.5rem;
+    }
+
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .footer-text {
+      align-items: center;
     }
   }
 </style>
