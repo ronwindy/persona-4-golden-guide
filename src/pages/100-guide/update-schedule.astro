@@ -3,55 +3,48 @@ import GuideLayout from "../../layouts/GuideLayout.astro";
 ---
 
 <GuideLayout title="Update & Schedule | Persona 4 Golden Guide">
-  <div class="schedule-container">
-    <header class="schedule-header anim-pop">
-      <div class="header-accent bg-stripes"></div>
-      <h1 class="font-pop">UPDATE & <span class="highlight">SCHEDULE</span></h1>
-    </header>
+  <header class="schedule-header anim-pop">
+    <div class="header-accent bg-stripes"></div>
+    <h1 class="font-pop">UPDATE & <span class="highlight">SCHEDULE</span></h1>
+  </header>
 
-    <section class="message-card p4g-shadow anim-slide-in">
-      <div class="card-halftone bg-p4g-flow"></div>
+  <section class="message-card p4g-shadow anim-slide-in">
+    <div class="card-halftone bg-p4g-flow"></div>
 
-      <div class="message-content font-read">
-        <p class="intro-text">
-          Thank you everyone for your support for this guide! I am currently
-          working on this guide on and off until it eventually is completed.
+    <div class="message-content font-read">
+      <p class="intro-text">
+        Thank you everyone for your support for this guide! I am currently
+        working on this guide on and off until it eventually is completed.
+      </p>
+
+      <div class="contact-callout cutout-box p4g-shadow-sm">
+        <h2 class="font-pop">Found a Bug?</h2>
+        <p>
+          If you spot any formatting errors or typos, or if you have any
+          questions about this guide feel free to send me a message on GameFAQs
+          or an email at:
         </p>
-
-        <div class="contact-callout cutout-box p4g-shadow-sm">
-          <h2 class="font-pop">Found a Bug?</h2>
-          <p>
-            If you spot any formatting errors or typos, or if you have any
-            questions about this guide feel free to send me a message on
-            GameFAQs or an email at:
-          </p>
-          <a href="mailto:Hurricanehaon@gmail.com" class="email-link font-pop"
-            >Hurricanehaon@gmail.com</a
-          >
-        </div>
-
-        <p class="outro-text">Thank you very much for all your support!</p>
+        <a href="mailto:Hurricanehaon@gmail.com" class="email-link font-pop"
+          >Hurricanehaon@gmail.com</a
+        >
       </div>
 
-      <div class="card-decoration"></div>
-    </section>
-
-    <div class="tv-noise-decoration anim-pop stagger-2">
-      <div class="noise-box p4g-shadow-sm"></div>
-      <div class="noise-box p4g-shadow-sm"></div>
-      <div class="noise-box p4g-shadow-sm"></div>
+      <p class="outro-text">Thank you very much for all your support!</p>
     </div>
+
+    <div class="card-decoration"></div>
+  </section>
+
+  <div class="tv-noise-decoration anim-pop stagger-2">
+    <div class="noise-box p4g-shadow-sm"></div>
+    <div class="noise-box p4g-shadow-sm"></div>
+    <div class="noise-box p4g-shadow-sm"></div>
   </div>
 </GuideLayout>
 
 <style>
-  .schedule-container {
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   .schedule-header {
+    width: 100%;
     background: var(--secondary);
     color: var(--primary);
     padding: 2rem;
