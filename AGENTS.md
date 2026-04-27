@@ -10,17 +10,20 @@ This file provides persistent guidance for AI coding agents to ensure reliable o
 
 ## 2. Simplicity First (Maintainability)
 
-- **Use existing patterns:** DO NOT introduce new big changes that breaks the current patterns without prior agreement.
-- **Codebase Consistency:** Adhere to current project's patterns.
+- **Match Existing Patterns:** Adhere to the current project's architecture and styling. DO NOT introduce new big changes that break the current patterns without prior agreement.
 - **Simple > Complex:** Prefer simple, readable code over clever, opaque optimizations.
+- **Zero-Dependency Bias:** Prefer native JavaScript/Web APIs over installing new dependencies. Always ask before running `npm install`.
 
 ## 3. Surgical Changes (Precision)
 
 - **Minimize diffs:** Apply changes _only_ to the necessary files. Avoid refactoring unrelated code during a feature update.
 - **Modular changes:** Prefer creating new, small files over making existing files longer than 300 lines.
 - **No unnecessary boilerplate:** Only generate code that is essential to the immediate goal.
+- **Pre-flight Checks:** Always run `npm run build` to verify your changes haven't broken the build before declaring the task complete.
 
 ## 4. Answers Format
 
-- **Final Output:** Summarize what was created/modified in a concise list.
+- **No filler:** Omit conversational filler (e.g., "Sure, I can help with that!"). Get straight to the point.
 - **Thought Process:** Explain the reasoning behind the changes. Mention the decisions made and trade-offs considered.
+- **Final Output:** Summarize what was created/modified in a concise list.
+
