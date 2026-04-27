@@ -1,0 +1,396 @@
+---
+// src/pages/gameplay-mechanics/social-links.astro
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const heroImagePath = "/persona-4-golden-guide/p4g-key-art-1.jpg"; // Note: File in public/ is a .png, not .jpg
+---
+
+<GuideLayout title="Social Links | Persona 4 Golden Guide">
+  <header
+    class="persona-header anim-pop"
+    style={`background-image: url(${heroImagePath});`}
+  >
+    <div class="header-overlay"></div>
+    <div class="header-inner">
+      <h1 class="font-pop">SOCIAL <span class="highlight">LINKS</span></h1>
+      <div class="subtitle font-pop">BONDS OF FRIENDSHIP</div>
+    </div>
+  </header>
+
+  <div class="divider bg-stripes page-divider"></div>
+
+  <main class="content-box p4g-shadow anim-slide-in">
+    <section class="intro-section">
+      <div class="text-content font-read">
+        <p>
+          <span class="text-highlight">Social Links</span> are a key mechanic of the
+          modern Persona series and are closely connected to the calendar system.
+          Social Links are the bonds you create with your friends over the course
+          of the year.
+        </p>
+        <p>
+          They have 10 ranks each, and generally speaking, you spend time with
+          the Social Link to rank up. There are 23 Social Links in Persona 4
+          Golden. 3 of them rank up with the story, and 2 of them rank up by
+          completing Quests. The rest of them rank up with a point system.
+        </p>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">01</span> EARNING POINTS
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          You earn one to three points depending on the action you take, and to
+          rank up, you need to earn a certain amount of points. You earn points
+          for the following:
+        </p>
+        <div class="points-grid">
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-1">
+            <span class="card-icon font-pop">TIME</span>
+            <span class="card-text font-read"
+              >Spending time with Social Link</span
+            >
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-2">
+            <span class="card-icon font-pop">CHAT</span>
+            <span class="card-text font-read">Choosing responses they like</span
+            >
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-3">
+            <span class="card-icon font-pop">STORY</span>
+            <span class="card-text font-read">Certain story event choices</span>
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-4">
+            <span class="card-icon font-pop">TEST</span>
+            <span class="card-text font-read"
+              >Answering a question for them</span
+            >
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-1">
+            <span class="card-icon font-pop">FOOD</span>
+            <span class="card-text font-read">Eating lunch with them</span>
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-2">
+            <span class="card-icon font-pop">NIGHT</span>
+            <span class="card-text font-read">Hanging out at night</span>
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-3">
+            <span class="card-icon font-pop">LUCK</span>
+            <span class="card-text font-read">Using a fortune at shrine</span>
+          </div>
+          <div class="point-card p4g-shadow-sm hover-invert anim-pop stagger-4">
+            <span class="card-icon font-pop">ZZZ</span>
+            <span class="card-text font-read">Sleeping in futon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">02</span> MATCHING ARCANA BONUS
+      </h2>
+      <div class="bonus-card p4g-shadow bg-p4g-flow cutout-box anim-slide-in">
+        <div class="bonus-content">
+          <div class="bonus-icon font-pop">!</div>
+          <div class="bonus-text font-read">
+            <p>
+              If you have a Persona in your deck with the same <strong
+                >Arcana</strong
+              > the Social Link is, you will earn <span class="highlight-text"
+                >extra points</span
+              >. It is highly suggested to take advantage of this to rank up as
+              fast as possible.
+            </p>
+            <p class="small-text">
+              It is possible to max out all Social Links in one run, but it can
+              be quite challenging.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-decoration">
+      <div class="tv-static-effect"></div>
+    </div>
+  </main>
+</GuideLayout>
+
+<style>
+  .persona-header {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 6rem 2.5rem;
+    background-size: cover;
+    background-position: center 20%;
+    border: 6px solid var(--secondary);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    .header-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 241, 0, 0.4),
+        rgba(252, 227, 0, 0.8)
+      );
+      z-index: 1;
+    }
+
+    .header-inner {
+      transform: rotate(-1.5deg);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      color: var(--secondary);
+      margin: 0;
+      line-height: 0.9;
+      text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+
+      .highlight {
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0 0.8rem;
+        display: inline-block;
+        transform: rotate(-2deg);
+        box-shadow: 5px 5px 0 var(--accent-orange);
+        margin-top: 0.5rem;
+      }
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: var(--secondary);
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      background: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border: 2px solid var(--secondary);
+    }
+  }
+
+  .content-box {
+    background-color: #ededed;
+    background-image:
+      radial-gradient(rgba(0, 0, 0, 0.05) 2px, transparent 2px),
+      linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-size:
+      24px 24px,
+      100% 100%;
+    border: 6px solid var(--secondary);
+    padding: 3.5rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    box-shadow: 12px 12px 0 var(--secondary);
+
+    .intro-section {
+      margin-bottom: 3rem;
+
+      .text-content {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: var(--secondary);
+
+        p {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .text-highlight {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.2rem;
+    font-weight: 800;
+    box-shadow: 3px 3px 0 var(--secondary);
+    display: inline-block;
+    line-height: 1.2;
+    vertical-align: middle;
+
+    &.secondary {
+      background: var(--accent-blue);
+      color: #fff;
+      box-shadow: 3px 3px 0 var(--accent-orange);
+    }
+  }
+
+  .mechanic-section {
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .section-tag {
+        background: var(--secondary);
+        color: var(--primary);
+        padding: 0.2rem 0.6rem;
+        font-size: 1rem;
+        transform: skewX(-10deg);
+      }
+    }
+
+    .text-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #333;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .mechanic-list {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .bottom-decoration {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+
+    .tv-static-effect {
+      width: 200px;
+      height: 6px;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        var(--secondary) 10px,
+        var(--secondary) 20px
+      );
+      opacity: 0.3;
+    }
+  }
+
+  .points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .point-card {
+    background: #fff;
+    border: 3px solid var(--secondary);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-icon {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transform: rotate(-5deg);
+    box-shadow: 2px 2px 0 var(--secondary);
+    min-width: 60px;
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .bonus-card {
+    margin-top: 1.5rem;
+    border: 5px solid var(--secondary);
+    position: relative;
+  }
+
+  .bonus-content {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 10px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border: 2px dashed var(--secondary);
+  }
+
+  .bonus-icon {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--accent-orange);
+    text-shadow: 3px 3px 0 var(--secondary);
+    animation: jitter 2s infinite;
+  }
+
+  .bonus-text {
+    p {
+      margin-bottom: 0.5rem;
+      color: var(--secondary);
+    }
+
+    .highlight-text {
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0 0.3rem;
+      font-weight: 800;
+    }
+
+    .small-text {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      font-style: italic;
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 640px) {
+    .persona-header {
+      padding: 3.5rem 1.5rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .header-inner {
+        transform: none;
+      }
+    }
+
+    .content-box {
+      padding: 2.5rem 1.25rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+      margin-top: 1.5rem;
+    }
+  }
+</style>
