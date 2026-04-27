@@ -1,22 +1,26 @@
 ---
-import GuideLayout from '../../layouts/GuideLayout.astro';
+import GuideLayout from "../../layouts/GuideLayout.astro";
 
 const milestones = [
-  { version: '0.50', title: 'Walkthrough', status: 'completed' },
-  { version: '0.55', title: 'Dungeons', status: 'pending' },
-  { version: '0.60', title: 'Boss List', status: 'pending' },
-  { version: '0.65', title: 'Persona Compendium', status: 'pending' },
-  { version: '0.70', title: 'Social Links', status: 'pending' },
-  { version: '0.75', title: 'Activities', status: 'pending' },
-  { version: '0.80', title: 'Skill List', status: 'pending' },
-  { version: '0.85', title: 'Item List', status: 'pending' },
-  { version: '0.90', title: 'Tips and Tricks', status: 'pending' },
-  { version: '0.95', title: 'Conclusion', status: 'pending' },
-  { version: '1.00', title: 'Check/Edit the Guide', status: 'pending' },
-  { version: '1.25', title: 'Playthrough New Game Plus', status: 'pending' },
-  { version: '1.50', title: 'Replay and test Walkthrough', status: 'pending' },
-  { version: '1.75', title: 'Test info in Guide', status: 'pending' },
-  { version: '2.00', title: 'Check, Edit, Reread, and finalize Guide', status: 'pending' },
+  { version: "0.50", title: "Walkthrough", status: "completed" },
+  { version: "0.55", title: "Dungeons", status: "pending" },
+  { version: "0.60", title: "Boss List", status: "pending" },
+  { version: "0.65", title: "Persona Compendium", status: "pending" },
+  { version: "0.70", title: "Social Links", status: "pending" },
+  { version: "0.75", title: "Activities", status: "pending" },
+  { version: "0.80", title: "Skill List", status: "pending" },
+  { version: "0.85", title: "Item List", status: "pending" },
+  { version: "0.90", title: "Tips and Tricks", status: "pending" },
+  { version: "0.95", title: "Conclusion", status: "pending" },
+  { version: "1.00", title: "Check/Edit the Guide", status: "pending" },
+  { version: "1.25", title: "Playthrough New Game Plus", status: "pending" },
+  { version: "1.50", title: "Replay and test Walkthrough", status: "pending" },
+  { version: "1.75", title: "Test info in Guide", status: "pending" },
+  {
+    version: "2.00",
+    title: "Check, Edit, Reread, and finalize Guide",
+    status: "pending",
+  },
 ];
 ---
 
@@ -25,33 +29,37 @@ const milestones = [
     <header class="checklist-header anim-pop">
       <h1 class="font-pop">GUIDE <span class="highlight">CHECKLIST</span></h1>
       <p class="description font-read">
-        This section tracks the progress of the 100% True Golden Walkthrough. 
-        The guide was posted on version <span class="badge">0.50</span> and will be completely finalized on version <span class="badge secondary">2.00</span>.
+        This section tracks the progress of the 100% True Golden Walkthrough.
+        The guide was posted on version <span class="badge">0.50</span> and will be
+        completely finalized on version <span class="badge secondary">2.00</span
+        >.
       </p>
     </header>
 
     <div class="divider bg-stripes"></div>
 
     <div class="milestone-list">
-      {milestones.map((item, index) => (
-        <div 
-          class={`milestone-card p4g-shadow anim-slide-in ${item.status}`}
-          style={`--index: ${index % 4}`}
-        >
-          <div class="version-tag font-pop">{item.version}</div>
-          <div class="milestone-content">
-            <h3 class="font-pop">{item.title}</h3>
-            <div class="status-indicator">
-              {item.status === 'completed' ? (
-                <span class="status-badge completed">COMPLETED</span>
-              ) : (
-                <span class="status-badge pending">IN PROGRESS</span>
-              )}
+      {
+        milestones.map((item, index) => (
+          <div
+            class={`milestone-card p4g-shadow anim-slide-in ${item.status}`}
+            style={`--index: ${index % 4}`}
+          >
+            <div class="version-tag font-pop">{item.version}</div>
+            <div class="milestone-content">
+              <h3 class="font-pop">{item.title}</h3>
+              <div class="status-indicator">
+                {item.status === "completed" ? (
+                  <span class="status-badge completed">COMPLETED</span>
+                ) : (
+                  <span class="status-badge pending">IN PROGRESS</span>
+                )}
+              </div>
             </div>
+            <div class="card-decoration" />
           </div>
-          <div class="card-decoration"></div>
-        </div>
-      ))}
+        ))
+      }
     </div>
 
     <footer class="checklist-footer font-read">
@@ -60,23 +68,57 @@ const milestones = [
   </div>
 </GuideLayout>
 
-
 <style>
   .checklist-container {
-    max-width: 900px;
     margin: 0 auto;
     width: 100%;
 
     .checklist-header {
+      width: 100%;
       margin-bottom: 2rem;
-      padding: 2.5rem 2rem;
-      background: var(--primary);
+      padding: 3rem 2rem;
+      background:
+        linear-gradient(
+          rgba(255, 221, 0, 0.2) 0%,
+          rgba(255, 221, 0, 0.95) 100%
+        ),
+        url("/p4-key-art-4.png");
+      background-size: cover;
+      background-position: center 20%;
+      background-attachment: scroll;
       border: 6px solid var(--secondary);
       position: relative;
       overflow: hidden;
       box-shadow: 10px 10px 0 var(--secondary);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 14px 14px 0 var(--secondary);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.03) 0px,
+          rgba(0, 0, 0, 0.03) 1px,
+          transparent 1px,
+          transparent 2px
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
 
       h1 {
+        position: relative;
+        z-index: 2;
+        text-align: center;
         font-size: clamp(2.5rem, 8vw, 4.5rem);
         color: var(--secondary);
         margin: 0;
@@ -94,21 +136,31 @@ const milestones = [
       }
 
       .description {
-        margin-top: 2rem;
-        font-size: 1.125rem;
-        font-weight: 600;
-        max-width: 600px;
-        background: color-mix(in srgb, var(--secondary), transparent 95%);
-        padding: 1rem;
-        border-left: 6px solid var(--secondary);
+        position: relative;
+        z-index: 2;
+        margin-top: 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem;
+        border-left: 8px solid var(--secondary);
+        border-right: 2px solid rgba(255, 255, 255, 0.3);
+        border-top: 2px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+        color: var(--secondary);
+        line-height: 1.6;
 
         .badge {
           background: var(--accent-orange);
           color: white;
-          padding: 0.1rem 0.5rem;
+          padding: 0.2rem 0.6rem;
           font-family: var(--font-pop);
-          font-weight: bold;
+          font-weight: 900;
           border: 2px solid var(--secondary);
+          display: inline-block;
+          transform: skewX(-5deg);
 
           &.secondary {
             background: var(--accent-blue);
@@ -151,7 +203,7 @@ const milestones = [
 
       &.completed {
         background: linear-gradient(135deg, var(--primary) 0%, #fff176 100%);
-        
+
         h3 {
           text-decoration: line-through;
           opacity: 0.6;
@@ -204,7 +256,11 @@ const milestones = [
         right: 0;
         width: 24px;
         height: 24px;
-        background: linear-gradient(135deg, transparent 50%, var(--secondary) 50%);
+        background: linear-gradient(
+          135deg,
+          transparent 50%,
+          var(--secondary) 50%
+        );
       }
     }
 
@@ -222,4 +278,3 @@ const milestones = [
     }
   }
 </style>
-
