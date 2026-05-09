@@ -198,18 +198,23 @@ const history = [
 
 <style>
   .history-header {
+    display: flex;
     background: var(--secondary);
-    border: 6px solid var(--primary);
-    padding: 3rem 2rem;
+    border: none;
+    border-top: 6px solid var(--primary);
+    border-bottom: 6px solid var(--primary);
+    padding: 4rem 2rem;
     position: relative;
-    margin-bottom: 4rem;
-    box-shadow: 12px 12px 0 var(--secondary);
+    margin: -1rem -1rem 5rem -1rem;
+    width: calc(100% + 2rem);
     overflow: hidden;
   }
 
   .header-content {
     position: relative;
     z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .history-header h1 {
@@ -249,16 +254,17 @@ const history = [
 
   .timeline {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 4rem;
     border-left: 8px solid var(--secondary);
-    margin-left: 1rem;
+    margin: 0 auto;
+    max-width: 700px;
   }
 
   .timeline::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -12px;
+    left: -16px;
     width: 16px;
     height: 16px;
     background: var(--accent-orange);
@@ -273,7 +279,7 @@ const history = [
 
   .version-badge {
     position: absolute;
-    left: -58px;
+    left: -35px;
     top: 0;
     background: var(--primary);
     border: 3px solid var(--secondary);
@@ -377,17 +383,25 @@ const history = [
     animation-delay: 0.5s;
   }
 
-  @media (max-width: 640px) {
-    .timeline {
-      margin-left: 0.5rem;
-      padding-left: 1.5rem;
+  @media (max-width: 768px) {
+    .history-header {
+      padding: 3rem 1.5rem;
+      margin-bottom: 3rem;
     }
+
+    .timeline {
+      margin: 0 0.5rem 0 2.5rem;
+      padding-left: 1.5rem;
+      max-width: none;
+    }
+
     .version-badge {
-      left: -48px;
+      left: -35px;
       min-width: 50px;
     }
-    .history-header {
-      padding: 2rem 1rem;
+
+    .history-header h1 {
+      font-size: 2.5rem;
     }
   }
 </style>
