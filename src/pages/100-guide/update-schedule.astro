@@ -4,18 +4,22 @@ import GuideLayout from "../../layouts/GuideLayout.astro";
 
 <GuideLayout title="Update & Schedule | Persona 4 Golden Guide">
   <header class="schedule-header anim-pop">
-    <div class="header-accent bg-stripes"></div>
-    <h1 class="font-pop">UPDATE & <span class="highlight">SCHEDULE</span></h1>
+    <h1 class="font-pop title-stack">
+      <span class="word part-update">UPDATE</span>
+      <span class="symbol">&</span>
+      <span class="word part-schedule">SCHEDULE</span>
+    </h1>
+    <p class="description font-read">
+      Thank you everyone for your support for this guide! I am currently
+      working on this guide on and off until it eventually is completed.
+    </p>
   </header>
 
   <section class="message-card p4g-shadow anim-slide-in">
     <div class="card-halftone bg-p4g-flow"></div>
 
     <div class="message-content font-read">
-      <p class="intro-text">
-        Thank you everyone for your support for this guide! I am currently
-        working on this guide on and off until it eventually is completed.
-      </p>
+
 
       <div class="contact-callout cutout-box p4g-shadow-sm">
         <h2 class="font-pop">Found a Bug?</h2>
@@ -45,46 +49,112 @@ import GuideLayout from "../../layouts/GuideLayout.astro";
 <style>
   .schedule-header {
     width: 100%;
-    background: var(--secondary);
-    color: var(--primary);
-    padding: 2rem;
-    position: relative;
-    border: 6px solid var(--primary);
     margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background:
+      linear-gradient(rgba(255, 221, 0, 0.2) 0%, rgba(255, 221, 0, 0.95) 100%),
+      url("/p4-key-art-2.png");
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: scroll;
+    border: 6px solid var(--secondary);
+    position: relative;
     overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    box-shadow: 10px 10px 0 var(--secondary);
+    transition: transform 0.3s ease;
 
-    @media (max-width: 768px) {
-      padding: 1.5rem 1rem;
-      border-width: 4px;
-      margin-bottom: 2rem;
-      clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+    &:hover {
+      transform: translate(-4px, -4px);
+      box-shadow: 14px 14px 0 var(--secondary);
     }
 
-    .header-accent {
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 10px;
+      right: 0;
+      bottom: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      pointer-events: none;
+      z-index: 1;
     }
 
-    h1 {
-      font-size: clamp(2rem, 8vw, 4rem);
-      text-align: center;
-      margin: 0;
-      text-shadow: 4px 4px 0 var(--accent-orange);
+    .title-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      z-index: 2;
 
-      @media (max-width: 768px) {
-        font-size: 2.25rem;
-        text-shadow: 3px 3px 0 var(--accent-orange);
+      @media (min-width: 640px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
       }
 
-      .highlight {
+      .word {
+        padding: 0.5rem 1.5rem;
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        line-height: 1;
+        box-shadow: 8px 8px 0 var(--secondary);
+        transition: all 0.2s;
+        display: inline-block;
+
+        &:hover {
+          transform: scale(1.05) rotate(0deg) !important;
+          box-shadow: 12px 12px 0 var(--secondary);
+        }
+      }
+
+      .part-update {
+        background: var(--bg-white);
         color: var(--secondary);
-        background: var(--primary);
-        padding: 0 0.5rem;
+        transform: rotate(-3deg);
+        border: 4px solid var(--secondary);
       }
+
+      .part-schedule {
+        background: var(--secondary);
+        color: var(--primary);
+        transform: rotate(2deg);
+        border: 4px solid var(--primary);
+        box-shadow: 8px 8px 0 var(--accent-orange);
+      }
+
+      .symbol {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+        color: var(--accent-orange);
+        text-shadow: 3px 3px 0 var(--secondary);
+        transform: rotate(10deg);
+        font-weight: 900;
+        display: inline-block;
+      }
+    }
+
+    .description {
+      position: relative;
+      z-index: 2;
+      margin-top: 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+      border-left: 8px solid var(--secondary);
+      border-right: 2px solid rgba(255, 255, 255, 0.3);
+      border-top: 2px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+      color: var(--secondary);
+      line-height: 1.6;
     }
   }
 
@@ -94,7 +164,7 @@ import GuideLayout from "../../layouts/GuideLayout.astro";
     padding: 3rem 2rem;
     position: relative;
     overflow: hidden;
-    min-height: 400px;
+    min-height: 200px;
 
     @media (max-width: 768px) {
       padding: 2rem 1.25rem;
@@ -117,22 +187,7 @@ import GuideLayout from "../../layouts/GuideLayout.astro";
       position: relative;
       z-index: 2;
 
-      .intro-text {
-        font-size: 1.5rem;
-        line-height: 1.4;
-        font-weight: 700;
-        color: var(--secondary);
-        margin-bottom: 3rem;
-        border-left: 8px solid var(--primary);
-        padding-left: 1.5rem;
 
-        @media (max-width: 768px) {
-          font-size: 1.1rem;
-          padding-left: 1rem;
-          border-left-width: 6px;
-          margin-bottom: 2rem;
-        }
-      }
 
       .contact-callout {
         background: var(--accent-blue);
