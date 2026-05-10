@@ -1,0 +1,363 @@
+---
+// src/pages/gameplay-mechanics/velvet-room.astro
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const heroImagePath = "/persona-4-golden-guide/velvet-room.png";
+---
+
+<GuideLayout title="Velvet Room | Persona 4 Golden Guide">
+  <header
+    class="persona-header anim-pop"
+    style={`background-image: url(${heroImagePath});`}
+  >
+    <div class="header-overlay"></div>
+    <div class="header-inner">
+      <h1 class="font-pop">VELVET <span class="highlight">ROOM</span></h1>
+      <div class="subtitle font-pop">A PLACE BETWEEN DREAM AND REALITY</div>
+    </div>
+  </header>
+
+  <div class="divider bg-stripes-velvet page-divider"></div>
+
+  <main class="content-box p4g-shadow-velvet anim-slide-in">
+    <section class="intro-section">
+      <div class="text-content font-read">
+        <p>
+          The <span class="text-highlight velvet">Velvet Room</span> is what connects daily life and dungeon life together. This section gives a brief introduction to its services, while the Persona Compendium section of the guide goes into more depth. The Velvet Room offers the following resources to use during the game.
+        </p>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">01</span> FUSING
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          Personas can be fused together in order to create more powerful Personas for battles. Higher ranks in Social Links results in extra experience given to Personas you fuse of the matching arcana. You cannot fuse Personas at higher levels than you, in order to balance the game.
+        </p>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">02</span> FUSION FORECAST
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          By fusing on specific days, bonuses will be granted to certain Personas. The Fusion Forecast shows on what days bonuses can be obtained.
+        </p>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">03</span> PERSONA COMPENDIUM
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          By registering Personas, you can recall them at any time for a price. You must re-register as the Persona levels up and gains more skills to keep what it has learned, but doing so increases the price.
+        </p>
+      </div>
+    </section>
+
+    <section class="mechanic-section">
+      <h2 class="font-pop">
+        <span class="section-tag">04</span> SKILL CARDS
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          Skill Cards can be given to any Persona you own to learn that Skill. You can register Skill Cards to buy as many copies as you want, but you lose the card you register.
+        </p>
+      </div>
+    </section>
+
+    <section class="mechanic-section rescue-request">
+      <h2 class="font-pop">
+        <span class="section-tag">05</span> RESCUE REQUEST
+      </h2>
+      <div class="text-content font-read">
+        <p>
+          Rescue Request is an online function you can use during dungeons to ask for help, and also give out help to others. Here you can change the messages you send out to others.
+        </p>
+        <div class="rescue-terminal p4g-shadow-velvet">
+          <div class="terminal-header font-pop">VOICE FROM THE HEARTS</div>
+          <div class="terminal-body">
+            <span class="pulse-dot"></span> CONNECTED TO NETWORK...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-decoration">
+      <div class="velvet-glow"></div>
+      <div class="velvet-particles">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </main>
+</GuideLayout>
+
+<style>
+  :root {
+    --velvet-accent: #5e4ec2;
+    --velvet-dark: #2a225a;
+    --velvet-light: #7a6be6;
+  }
+
+  .persona-header {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 6rem 2.5rem;
+    background-size: cover;
+    background-position: center;
+    border: 6px solid var(--velvet);
+    position: relative;
+    box-shadow: 10px 10px 0 var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    .header-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(65, 54, 145, 0.4),
+        rgba(12, 20, 49, 0.8)
+      );
+      z-index: 1;
+    }
+
+    .header-inner {
+      transform: rotate(-1deg);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      color: #fff;
+      margin: 0;
+      line-height: 0.9;
+      text-shadow: 4px 4px 0 var(--secondary);
+
+      .highlight {
+        background: #fff;
+        color: var(--velvet);
+        padding: 0 0.8rem;
+        display: inline-block;
+        transform: rotate(-2deg);
+        box-shadow: 5px 5px 0 var(--velvet-accent);
+        margin-top: 0.5rem;
+      }
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      background: var(--velvet);
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border: 2px solid #fff;
+      box-shadow: 4px 4px 0 var(--secondary);
+    }
+  }
+
+  .bg-stripes-velvet {
+    background: repeating-linear-gradient(-45deg,
+        var(--velvet),
+        var(--velvet) 10px,
+        var(--accent-blue) 10px,
+        var(--accent-blue) 20px);
+    background-size: 28px 28px;
+    height: 1rem;
+    width: 100%;
+    border-bottom: 4px solid var(--secondary);
+  }
+
+  .content-box {
+    background-color: #f0f0ff;
+    background-image:
+      radial-gradient(var(--velvet) 1.5px, transparent 1.5px),
+      linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
+    background-size:
+      32px 32px,
+      100% 100%;
+    border: 6px solid var(--velvet);
+    padding: 3.5rem 3rem;
+    margin-top: 3rem;
+    position: relative;
+    box-shadow: 12px 12px 0 var(--secondary);
+
+    .intro-section {
+      margin-bottom: 3rem;
+
+      .text-content {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: var(--secondary);
+      }
+    }
+  }
+
+  .p4g-shadow-velvet {
+    box-shadow: 10px 10px 0 var(--velvet-dark);
+  }
+
+  .text-highlight.velvet {
+    background: var(--velvet);
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 3px 3px 0 var(--accent-blue);
+  }
+
+  .mechanic-section {
+    margin-bottom: 4rem;
+    border-left: 4px solid var(--velvet);
+    padding-left: 1.5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -4px;
+      top: 0;
+      height: 40px;
+      width: 4px;
+      background: var(--velvet-light);
+      box-shadow: 0 0 10px var(--velvet-light);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--velvet);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .section-tag {
+        background: var(--velvet);
+        color: #fff;
+        padding: 0.2rem 0.6rem;
+        font-size: 1rem;
+        transform: skewX(-10deg);
+      }
+    }
+    
+    .text-content {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--secondary);
+    }
+  }
+
+  /* Rescue Request Styling */
+  .rescue-terminal {
+    margin-top: 1.5rem;
+    background: var(--accent-blue);
+    border: 3px solid var(--velvet-accent);
+    overflow: hidden;
+    max-width: 400px;
+
+    .terminal-header {
+      background: var(--velvet-accent);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .terminal-body {
+      padding: 1rem;
+      color: var(--velvet-light);
+      font-family: monospace;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #00ff00;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  .bottom-decoration {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .velvet-glow {
+      width: 250px;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--velvet), transparent);
+      box-shadow: 0 0 15px var(--velvet);
+      opacity: 0.6;
+    }
+
+    .velvet-particles {
+      display: flex;
+      gap: 1.5rem;
+
+      span {
+        width: 6px;
+        height: 6px;
+        background: var(--velvet);
+        transform: rotate(45deg);
+        opacity: 0.3;
+        animation: floatParticle 3s infinite alternate;
+
+        &:nth-child(2) { animation-delay: 0.5s; }
+        &:nth-child(3) { animation-delay: 1s; }
+        &:nth-child(4) { animation-delay: 1.5s; }
+        &:nth-child(5) { animation-delay: 2s; }
+      }
+    }
+  }
+
+  @keyframes floatParticle {
+    from { transform: translateY(0) rotate(45deg); opacity: 0.2; }
+    to { transform: translateY(-10px) rotate(45deg); opacity: 0.5; }
+  }
+
+  @media (max-width: 640px) {
+    .persona-header {
+      padding: 3.5rem 1.5rem;
+      box-shadow: 6px 6px 0 var(--secondary);
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .header-inner {
+        transform: none;
+      }
+    }
+
+    .content-box {
+      padding: 2.5rem 1.25rem;
+      box-shadow: 6px 6px 0 var(--velvet-dark);
+      margin-top: 1.5rem;
+    }
+  }
+</style>
