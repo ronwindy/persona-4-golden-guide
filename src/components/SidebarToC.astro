@@ -873,48 +873,17 @@ const tocItems = [
     z-index: 1;
   }
 
-  /* Slide-in background highlight */
-  .toc-parent::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--accent-orange);
-    transform: translateX(-110%) skewX(-10deg);
-    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1); /* Smoother, longer transition */
-    z-index: -1;
-  }
 
-  /* Animated stripes for the hover background */
-  .toc-parent::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 5px,
-      rgba(0, 0, 0, 0.1) 5px,
-      rgba(0, 0, 0, 0.1) 10px
-    );
-    background-size: 14px 14px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.3s;
-  }
 
   @media (min-width: 1024px) {
     .toc-parent:hover {
-      color: white !important;
+      background: var(--primary);
+      color: var(--secondary) !important;
       transform: translateX(4px);
     }
 
-    .toc-parent:hover::before {
-      transform: translateX(-3%) skewX(-40deg) scaleX(1.06);
-    }
-
-    .toc-parent:hover::after {
-      opacity: 1;
-      animation: scrollHeaderLoop 3s linear infinite;
+    .toc-parent:hover .toc-icon {
+      transform: rotate(var(--icon-rot, 0deg));
     }
   }
 
@@ -936,6 +905,7 @@ const tocItems = [
   }
 
   .toc-icon.open {
+    --icon-rot: 180deg;
     transform: rotate(180deg);
     color: var(--accent-orange);
   }
@@ -976,16 +946,20 @@ const tocItems = [
     font-size: 0.95rem; /* Scaled down from 1.1rem */
     font-weight: 600;
     display: block;
-    padding: 0.35rem 0.75rem;
+    padding: 0.35rem 0.75rem 0.35rem 1.25rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    transition: all 0.2s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    overflow: hidden;
+    z-index: 1;
   }
+
+
 
   @media (min-width: 1024px) {
     .toc-child-list li a:hover {
-      color: var(--primary);
       background: var(--secondary);
+      color: var(--primary);
       transform: translateX(4px);
     }
   }
@@ -999,6 +973,14 @@ const tocItems = [
     font-style: italic;
     font-weight: 800 !important;
     text-transform: uppercase;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+
+  .show-more-btn a:hover {
+    color: var(--primary) !important;
+    transform: scale(1.1) rotate(-2deg);
+    text-shadow: 2px 2px 0 var(--secondary);
   }
 
   /* Custom Scrollbar */
