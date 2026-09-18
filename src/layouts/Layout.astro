@@ -30,7 +30,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body style={`--bg-image: url('${baseUrl}/background.jpeg');`}>
     <slot />
   </body>
 </html>
