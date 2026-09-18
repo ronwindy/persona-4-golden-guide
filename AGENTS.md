@@ -1,29 +1,43 @@
-# Agent Behavioral Contract
+# Agent Instructions
 
-This file provides persistent guidance for AI coding agents to ensure reliable output.
+## Version Control
 
-## 1. Think Before Coding (Context-Aware)
+- **Git Operations:** Never execute mutating git actions (`git commit`, `git push`, `git checkout -b`, `git reset`, `git rebase`) without explicit approval. Read-only commands (`git status`, `git diff`, `git log`, `git branch`) are allowed without approval.
 
-- **Do not assume:** Read `DESIGN.md`, `README.md`, `package.json`, and existing code before proposing changes.
-- **Surface Trade-offs:** If a task has multiple solutions, list the pros/cons (e.g., performance vs. readability, maintainability, etc.) before implementing.
-- **Ask when unclear:** If a requirement is ambiguous, ask for clarification instead of guessing user intent.
+## Testing & Verification
 
-## 2. Simplicity First (Maintainability)
+- **Browser Testing:** Do not use browser testing or browser automation tools unless explicitly prompted by the user. Let the user do all verification themselves.
 
-- **Match Existing Patterns:** Adhere to the current project's architecture and styling. DO NOT introduce new big changes that break the current patterns without prior agreement.
-- **Simple > Complex:** Prefer simple, readable code over clever, opaque optimizations.
-- **Zero-Dependency Bias:** Prefer native JavaScript/Web APIs over installing new dependencies. Always ask before running `npm install`.
+## Script Execution & Safety
 
-## 3. Surgical Changes (Precision)
+- **Routine Commands (Exempt from detailed breakdown):**
+  Standard package management, build, lint, and run commands (e.g., `npm install`, `npm run dev`, `npm run build`, `pnpm`, `yarn`, `npx eslint`) require NO detailed explanation. You may execute these directly.
 
-- **Minimize diffs:** Apply changes _only_ to the necessary files. Avoid refactoring unrelated code during a feature update.
-- **Modular changes:** Prefer creating new, small files over making existing files longer than 300 lines.
-- **No unnecessary boilerplate:** Only generate code that is essential to the immediate goal.
-- **Pre-flight Checks:** Always run `npm run build` to verify your changes haven't broken the build before declaring the task complete.
+- **Complex Scripts & Multi-step Commands (Mandatory Explanation):**
+  For any custom shell scripts (`.sh`, `.ps1`), multi-command chains (using `&&`, `|`, `;`, `>`, `>>`), regex manipulation, migration scripts, or destructive file operations (`rm`, `sed`, `find -delete`), you MUST output an explanation block before calling the tool:
+  - **Purpose:** What the script does and why it is chosen over standard tooling.
+  - **Impact:** Specific files, directories, or system states modified/created.
+  - **Safety:** Why the operation is safe, idempotent, and non-destructive to unrelated files.
 
-## 4. Answers Format
+## File Modifications & Cleanliness
 
-- **No filler:** Omit conversational filler (e.g., "Sure, I can help with that!"). Get straight to the point.
-- **Thought Process:** Explain the reasoning behind the changes. Mention the decisions made and trade-offs considered.
-- **Final Output:** Summarize what was created/modified in a concise list.
+- **Scope Minimization:** Only modify code strictly relevant to the task. Do not reformat unrelated code, alter existing styling conventions, or remove legacy comments unless explicitly requested.
+- **Read Before Write:** Always inspect existing files before proposing destructive or full-file replacements.
 
+## Error Handling & Debugging
+
+- **Retry Limit:** If a shell command or script fails twice consecutively with the same root error, halt execution immediately. Explain the failure mechanism, and propose an alternative plan or ask for clarification.
+- **No Blind Suppression:** Do not suppress errors (e.g., adding `// @ts-ignore`, `--force`, or empty `catch` blocks) without explicit user permission.
+
+## Security & Secrets
+
+- **Secret Handling:** Never output the contents of `.env*` or credential files in conversational output or commit messages. Never hardcode credentials into scripts or source files.
+
+## Communication & Planning Protocol
+
+- **Analyze First:** Formulate a structured step-by-step plan before writing code or running scripts.
+- **Clarification Triggers:** Stop and ask clarifying questions instead of making assumptions if:
+  - Multiple viable architectural patterns exist for the task.
+  - Key dependencies, file paths, or target behaviors are ambiguous.
+  - Proposed changes introduce breaking API/schema modifications.
+- **Direct Execution:** Proceed directly if the user's intent is deterministic and the scope is self-contained.
