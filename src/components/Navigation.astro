@@ -99,13 +99,11 @@ const isItemActive = (href?: string) => {
 <aside id="global-sidebar" class="global-sidebar" aria-label="Main Navigation">
   <div class="sidebar-header">
     <a href={`${baseUrl}/`} class="sidebar-brand">
-      <div class="brand-tv-icon">
-        <div class="antenna-left"></div>
-        <div class="antenna-right"></div>
-        <div class="tv-screen">
-          <span class="screen-text">P4G</span>
-        </div>
-      </div>
+      <img
+        src={`${baseUrl}/Persona_4_Golden_logo.webp`}
+        alt="Persona 4 Golden"
+        class="brand-logo"
+      />
       <div class="brand-titles">
         <span class="brand-title">PERSONA 4 GOLDEN</span>
         <span class="brand-subtitle">COMPANION GUIDE</span>
@@ -253,49 +251,13 @@ const isItemActive = (href?: string) => {
     gap: 0.85rem;
   }
 
-  /* Retro TV Icon Motif */
-  .brand-tv-icon {
-    position: relative;
-    width: 36px;
-    height: 30px;
+  /* Brand Logo */
+  .brand-logo {
+    width: 70px;
+    height: auto;
+    max-height: 70px;
+    object-fit: contain;
     flex-shrink: 0;
-  }
-
-  .antenna-left,
-  .antenna-right {
-    position: absolute;
-    top: -5px;
-    width: 8px;
-    height: 2px;
-    background-color: var(--p4g-dark);
-  }
-
-  .antenna-left {
-    left: 8px;
-    transform: rotate(-35deg);
-  }
-
-  .antenna-right {
-    right: 8px;
-    transform: rotate(35deg);
-  }
-
-  .tv-screen {
-    position: absolute;
-    inset: 0;
-    background-color: var(--p4g-dark);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--p4g-yellow);
-  }
-
-  .screen-text {
-    font-family: var(--font-display);
-    font-size: 0.75rem;
-    color: var(--p4g-yellow);
-    letter-spacing: 0.05em;
   }
 
   .brand-titles {
