@@ -113,7 +113,7 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     border: 1px solid var(--p4g-border);
     border-radius: 8px;
     padding: 1.25rem 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    box-shadow: var(--shadow-local-nav);
   }
 
   .sticky-toc-wrapper::-webkit-scrollbar {
@@ -222,6 +222,7 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     border: 1px solid var(--p4g-border);
     border-radius: 6px;
     overflow: hidden;
+    box-shadow: var(--shadow-mobile-nav);
   }
 
   .mobile-toc-summary {

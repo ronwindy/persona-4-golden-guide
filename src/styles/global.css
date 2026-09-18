@@ -38,6 +38,12 @@
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
+
+  /* Aesthetic Shadows (Multi-layered Depth System) */
+  --shadow-main-content: 0 12px 36px -6px rgba(32, 32, 32, 0.09), 0 4px 12px -2px rgba(32, 32, 32, 0.04);
+  --shadow-local-nav: 0 8px 24px -4px rgba(32, 32, 32, 0.08), 0 2px 8px -1px rgba(32, 32, 32, 0.04);
+  --shadow-sidebar: 4px 0 24px -4px rgba(32, 32, 32, 0.08), 1px 0 6px -1px rgba(32, 32, 32, 0.04);
+  --shadow-mobile-nav: 0 4px 16px -2px rgba(32, 32, 32, 0.06);
 }
 
 /* Base Reset */

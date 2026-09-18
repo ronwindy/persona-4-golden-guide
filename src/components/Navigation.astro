@@ -52,7 +52,10 @@ const isItemActive = (href?: string) => {
   if (!href) return false;
   const cleanCurrent = currentPath.replace(/\/$/, "");
   const cleanHref = href.replace(/\/$/, "");
-  return cleanCurrent === cleanHref || (cleanHref === baseUrl && (cleanCurrent === "" || cleanCurrent === baseUrl));
+  return (
+    cleanCurrent === cleanHref ||
+    (cleanHref === baseUrl && (cleanCurrent === "" || cleanCurrent === baseUrl))
+  );
 };
 ---
 
@@ -65,7 +68,17 @@ const isItemActive = (href?: string) => {
     aria-expanded="false"
     aria-controls="global-sidebar"
   >
-    <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg
+      class="icon-menu"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <line x1="3" y1="12" x2="21" y2="12"></line>
       <line x1="3" y1="6" x2="21" y2="6"></line>
       <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -101,42 +114,48 @@ const isItemActive = (href?: string) => {
   </div>
 
   <nav class="sidebar-nav">
-    {navSections.map((section) => (
-      <div class="nav-group">
-        <h2 class="nav-group-title">{section.title}</h2>
-        <ul class="nav-list">
-          {section.items.map((item) => {
-            const active = isItemActive(item.href);
-            return (
-              <li class="nav-item">
-                {item.isAvailable ? (
-                  <a
-                    href={item.href}
-                    class:list={["nav-link", { active }]}
-                    aria-current={active ? "page" : undefined}
-                  >
-                    <span class="active-indicator" aria-hidden="true">▌</span>
-                    <span class="link-label">{item.title}</span>
-                  </a>
-                ) : (
-                  <span class="nav-link disabled" title="Coming soon">
-                    <span class="inactive-bullet" aria-hidden="true">·</span>
-                    <span class="link-label">{item.title}</span>
-                    <span class="upcoming-badge">SOON</span>
-                  </span>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    ))}
+    {
+      navSections.map((section) => (
+        <div class="nav-group">
+          <h2 class="nav-group-title">{section.title}</h2>
+          <ul class="nav-list">
+            {section.items.map((item) => {
+              const active = isItemActive(item.href);
+              return (
+                <li class="nav-item">
+                  {item.isAvailable ? (
+                    <a
+                      href={item.href}
+                      class:list={["nav-link", { active }]}
+                      aria-current={active ? "page" : undefined}
+                    >
+                      <span class="active-indicator" aria-hidden="true">
+                        ▌
+                      </span>
+                      <span class="link-label">{item.title}</span>
+                    </a>
+                  ) : (
+                    <span class="nav-link disabled" title="Coming soon">
+                      <span class="inactive-bullet" aria-hidden="true">
+                        ·
+                      </span>
+                      <span class="link-label">{item.title}</span>
+                      <span class="upcoming-badge">SOON</span>
+                    </span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))
+    }
   </nav>
 
   <div class="sidebar-footer">
     <div class="footer-card">
       <span class="status-dot"></span>
-      <span class="footer-note">P4G System v2.0</span>
+      <span class="footer-note">Progress: 0/??</span>
     </div>
   </div>
 </aside>
@@ -153,6 +172,7 @@ const isItemActive = (href?: string) => {
     padding: 0.75rem 1rem;
     align-items: center;
     justify-content: space-between;
+    box-shadow: var(--shadow-mobile-nav);
   }
 
   .menu-toggle-btn {
@@ -217,6 +237,8 @@ const isItemActive = (href?: string) => {
     top: 0;
     height: 100vh;
     overflow-y: auto;
+    z-index: 30;
+    box-shadow: var(--shadow-sidebar);
   }
 
   /* Sidebar Header */
@@ -239,7 +261,8 @@ const isItemActive = (href?: string) => {
     flex-shrink: 0;
   }
 
-  .antenna-left, .antenna-right {
+  .antenna-left,
+  .antenna-right {
     position: absolute;
     top: -5px;
     width: 8px;
@@ -347,7 +370,9 @@ const isItemActive = (href?: string) => {
     font-weight: 500;
     color: var(--p4g-dark);
     border-radius: 4px;
-    transition: background-color var(--transition-fast), color var(--transition-fast);
+    transition:
+      background-color var(--transition-fast),
+      color var(--transition-fast);
   }
 
   .nav-link:hover:not(.disabled) {
