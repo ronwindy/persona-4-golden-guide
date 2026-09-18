@@ -1,0 +1,494 @@
+---
+// src/components/Navigation.astro
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = Astro.url.pathname } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+interface NavItem {
+  title: string;
+  href?: string;
+  isAvailable?: boolean;
+}
+
+interface NavSection {
+  title: string;
+  items: NavItem[];
+}
+
+const navSections: NavSection[] = [
+  {
+    title: "GUIDE",
+    items: [
+      { title: "Introduction", href: `${baseUrl}/`, isAvailable: true },
+      { title: "Walkthrough", isAvailable: false },
+      { title: "Calendar", isAvailable: false },
+      { title: "Social Links", isAvailable: false },
+      { title: "Endings", isAvailable: false },
+    ],
+  },
+  {
+    title: "DATABASE",
+    items: [
+      { title: "Personas", isAvailable: false },
+      { title: "Skills", isAvailable: false },
+      { title: "Items", isAvailable: false },
+      { title: "Quests", isAvailable: false },
+    ],
+  },
+  {
+    title: "EXTRAS",
+    items: [
+      { title: "Achievements", isAvailable: false },
+      { title: "Missables", isAvailable: false },
+    ],
+  },
+];
+
+// Helper to determine if a link is active
+const isItemActive = (href?: string) => {
+  if (!href) return false;
+  const cleanCurrent = currentPath.replace(/\/$/, "");
+  const cleanHref = href.replace(/\/$/, "");
+  return cleanCurrent === cleanHref || (cleanHref === baseUrl && (cleanCurrent === "" || cleanCurrent === baseUrl));
+};
+---
+
+<!-- Mobile Header Bar -->
+<div class="mobile-header">
+  <button
+    id="nav-toggle-btn"
+    class="menu-toggle-btn"
+    aria-label="Open Navigation Menu"
+    aria-expanded="false"
+    aria-controls="global-sidebar"
+  >
+    <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+    <span>Menu</span>
+  </button>
+
+  <a href={`${baseUrl}/`} class="mobile-brand">
+    <span class="brand-badge">P4G</span>
+    <span class="brand-text">Golden Guide</span>
+  </a>
+</div>
+
+<!-- Backdrop Overlay for Mobile -->
+<div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+<!-- Global Navigation Sidebar -->
+<aside id="global-sidebar" class="global-sidebar" aria-label="Main Navigation">
+  <div class="sidebar-header">
+    <a href={`${baseUrl}/`} class="sidebar-brand">
+      <div class="brand-tv-icon">
+        <div class="antenna-left"></div>
+        <div class="antenna-right"></div>
+        <div class="tv-screen">
+          <span class="screen-text">P4G</span>
+        </div>
+      </div>
+      <div class="brand-titles">
+        <span class="brand-title">PERSONA 4 GOLDEN</span>
+        <span class="brand-subtitle">COMPANION GUIDE</span>
+      </div>
+    </a>
+  </div>
+
+  <nav class="sidebar-nav">
+    {navSections.map((section) => (
+      <div class="nav-group">
+        <h2 class="nav-group-title">{section.title}</h2>
+        <ul class="nav-list">
+          {section.items.map((item) => {
+            const active = isItemActive(item.href);
+            return (
+              <li class="nav-item">
+                {item.isAvailable ? (
+                  <a
+                    href={item.href}
+                    class:list={["nav-link", { active }]}
+                    aria-current={active ? "page" : undefined}
+                  >
+                    <span class="active-indicator" aria-hidden="true">▌</span>
+                    <span class="link-label">{item.title}</span>
+                  </a>
+                ) : (
+                  <span class="nav-link disabled" title="Coming soon">
+                    <span class="inactive-bullet" aria-hidden="true">·</span>
+                    <span class="link-label">{item.title}</span>
+                    <span class="upcoming-badge">SOON</span>
+                  </span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="footer-card">
+      <span class="status-dot"></span>
+      <span class="footer-note">P4G System v2.0</span>
+    </div>
+  </div>
+</aside>
+
+<style>
+  /* Mobile Header Topbar (< 1024px) */
+  .mobile-header {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background-color: var(--p4g-surface);
+    border-bottom: 1px solid var(--p4g-border);
+    padding: 0.75rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--p4g-dark);
+    background-color: var(--p4g-bg);
+    border: 1px solid var(--p4g-border);
+    border-radius: 4px;
+    transition: background-color var(--transition-fast);
+  }
+
+  .menu-toggle-btn:hover {
+    background-color: var(--p4g-yellow);
+  }
+
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+  }
+
+  .mobile-brand .brand-badge {
+    background-color: var(--p4g-yellow);
+    color: var(--p4g-dark);
+    font-size: 0.75rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-weight: 800;
+  }
+
+  .mobile-brand .brand-text {
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+  }
+
+  /* Backdrop */
+  .nav-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(32, 32, 32, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 45;
+  }
+
+  /* Global Sidebar (Desktop) */
+  .global-sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    background-color: var(--p4g-surface);
+    border-right: 1px solid var(--p4g-border);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  /* Sidebar Header */
+  .sidebar-header {
+    padding: 1.5rem 1.25rem 1.25rem;
+    border-bottom: 1px solid var(--p4g-border-subtle);
+  }
+
+  .sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  /* Retro TV Icon Motif */
+  .brand-tv-icon {
+    position: relative;
+    width: 36px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .antenna-left, .antenna-right {
+    position: absolute;
+    top: -5px;
+    width: 8px;
+    height: 2px;
+    background-color: var(--p4g-dark);
+  }
+
+  .antenna-left {
+    left: 8px;
+    transform: rotate(-35deg);
+  }
+
+  .antenna-right {
+    right: 8px;
+    transform: rotate(35deg);
+  }
+
+  .tv-screen {
+    position: absolute;
+    inset: 0;
+    background-color: var(--p4g-dark);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--p4g-yellow);
+  }
+
+  .screen-text {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    color: var(--p4g-yellow);
+    letter-spacing: 0.05em;
+  }
+
+  .brand-titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: var(--p4g-dark);
+    line-height: 1.2;
+  }
+
+  .brand-subtitle {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--p4g-gray);
+    letter-spacing: 0.08em;
+  }
+
+  /* Navigation Groups */
+  .sidebar-nav {
+    padding: 1.25rem 0.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-group-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--p4g-gray);
+    margin: 0 0 0.5rem 0.65rem;
+    padding: 0;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .nav-group-title::before {
+    display: none; /* override global h2 marker */
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.65rem;
+    font-size: 0.885rem;
+    font-weight: 500;
+    color: var(--p4g-dark);
+    border-radius: 4px;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+  }
+
+  .nav-link:hover:not(.disabled) {
+    background-color: var(--p4g-bg);
+  }
+
+  /* Active Navigation State (DESIGN.md Section 5) */
+  .nav-link.active {
+    font-weight: 700;
+    background-color: var(--p4g-yellow-light);
+    color: var(--p4g-dark);
+  }
+
+  .active-indicator {
+    color: var(--p4g-yellow);
+    font-size: 1rem;
+    line-height: 1;
+    display: none;
+  }
+
+  .nav-link.active .active-indicator {
+    display: inline-block;
+  }
+
+  .nav-link:not(.active) .active-indicator {
+    display: none;
+  }
+
+  /* Inactive / Upcoming Item */
+  .nav-link.disabled {
+    color: var(--p4g-gray);
+    cursor: default;
+    opacity: 0.75;
+  }
+
+  .inactive-bullet {
+    font-size: 1rem;
+    color: var(--p4g-border);
+    margin-right: 0.1rem;
+  }
+
+  .link-label {
+    flex: 1;
+  }
+
+  .upcoming-badge {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: var(--p4g-gray);
+    background-color: var(--p4g-bg);
+    border: 1px solid var(--p4g-border);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+
+  /* Sidebar Footer */
+  .sidebar-footer {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--p4g-border-subtle);
+  }
+
+  .footer-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--p4g-gray);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #27ae60;
+    border-radius: 50%;
+  }
+
+  /* Responsive Rules (< 1024px) */
+  @media (max-width: 1023px) {
+    .mobile-header {
+      display: flex;
+    }
+
+    .global-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      transform: translateX(-100%);
+      transition: transform var(--transition-normal);
+      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .global-sidebar.open {
+      transform: translateX(0);
+    }
+
+    .nav-backdrop.open {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  // Mobile drawer interaction script
+  function setupNavDrawer() {
+    const toggleBtn = document.getElementById("nav-toggle-btn");
+    const sidebar = document.getElementById("global-sidebar");
+    const backdrop = document.getElementById("nav-backdrop");
+
+    if (!toggleBtn || !sidebar || !backdrop) return;
+
+    function openNav() {
+      sidebar.classList.add("open");
+      backdrop.classList.add("open");
+      toggleBtn.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeNav() {
+      sidebar.classList.remove("open");
+      backdrop.classList.remove("open");
+      toggleBtn.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      const isOpen = sidebar.classList.contains("open");
+      if (isOpen) closeNav();
+      else openNav();
+    });
+
+    backdrop.addEventListener("click", closeNav);
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && sidebar.classList.contains("open")) {
+        closeNav();
+      }
+    });
+  }
+
+  setupNavDrawer();
+  document.addEventListener("astro:page-load", setupNavDrawer);
+</script>

@@ -1,10 +1,161 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import HomeIntro from '../components/HomeIntro.astro';
+// src/pages/index.astro
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const headings = [
+  { depth: 2, slug: "overview", text: "Overview" },
+  { depth: 2, slug: "how-to-use", text: "How to Use This Guide" },
+  { depth: 3, slug: "calendar-pacing", text: "Calendar & Daily Pacing" },
+  { depth: 3, slug: "social-links-overview", text: "Social Links & True Ending" },
+  { depth: 3, slug: "missables-caution", text: "Missables & Key Decisions" },
+  { depth: 2, slug: "layout-review", text: "Layout & Design System Review" },
+  { depth: 2, slug: "next-steps", text: "Next Steps" },
+];
 ---
 
-<Layout>
-  <HomeIntro />
-</Layout>
+<GuideLayout
+  title="Introduction — Persona 4 Golden Companion Guide"
+  description="Welcome to the Persona 4 Golden Companion Guide. A modern, lightweight resource for your journey in Inaba."
+  headings={headings}
+>
+  <article class="guide-article">
+    <!-- Page Header (DESIGN.md Section 6) -->
+    <header class="article-header">
+      <div class="kicker">
+        <span class="kicker-tag">COMPANION GUIDE</span>
+        <span class="kicker-divider">/</span>
+        <span class="kicker-category">GETTING STARTED</span>
+      </div>
+      <h1 class="page-title">Introduction to Persona 4 Golden</h1>
+      <p class="lead-text">
+        Welcome to your companion guide for <em>Persona 4 Golden</em>. This site is crafted to provide clear, scan-friendly, and comprehensive guidance through the rural town of Inaba, the Midnight Channel murders, and your high school life.
+      </p>
+    </header>
 
+    <!-- Overview Section -->
+    <section class="guide-section">
+      <h2 id="overview">Overview</h2>
+      <p>
+        Persona 4 Golden seamlessly blends a turn-based dungeon crawler RPG with a Japanese high school life simulation. As the protagonist newly transferred to the quiet town of Inaba, you find yourself thrown into the center of a bizarre serial murder mystery tied to the urban legend of the <strong>Midnight Channel</strong>.
+      </p>
+      <p>
+        Every day in Inaba advances a calendar. How you choose to spend your mornings, after-school hours, and evenings directly influences your Persona abilities, party bonds, social parameters, and whether you uncover the ultimate truth behind the fog.
+      </p>
+    </section>
 
+    <!-- How to Use This Guide -->
+    <section class="guide-section">
+      <h2 id="how-to-use">How to Use This Guide</h2>
+      <p>
+        This companion is built specifically to be open beside you while playing. Rather than forcing you to sift through monolithic walls of text, information is broken down into modular, time-stamped, and task-focused sections.
+      </p>
+
+      <h3 id="calendar-pacing">Calendar & Daily Pacing</h3>
+      <p>
+        Days are divided into strict time slots: <strong>Morning / Class</strong>, <strong>After School / Daytime</strong>, and <strong>Evening</strong>. Our walkthrough schedules will clearly indicate:
+      </p>
+      <ul>
+        <li><strong>Classroom questions & pop quizzes</strong>: Exact answers to boost your Knowledge parameter or impress teachers.</li>
+        <li><strong>Recommended daily actions</strong>: Who to hang out with, which part-time jobs to work, or which books to read.</li>
+        <li><strong>Weather forecasts</strong>: Rainy days offer exclusive beef bowl challenges, special fishing conditions, and dungeon opportunities.</li>
+      </ul>
+
+      <h3 id="social-links-overview">Social Links & True Ending</h3>
+      <p>
+        Forging bonds with the residents of Inaba (known as Social Links) grants EXP bonuses during Persona fusion and unlocks powerful combat abilities for your teammates. Certain Social Links—notably the <strong>Aeon</strong> arcana (Marie) and the <strong>Jester/Hunger</strong> arcana (Adachi)—are strictly required to access the Golden epilogue and bonus dungeon.
+      </p>
+
+      <h3 id="missables-caution">Missables & Key Decisions</h3>
+      <p>
+        Persona 4 Golden has several irreversible branching decision points, particularly during the critical month of <strong>December</strong>. One incorrect dialogue option can instantly cut the game short with a bad ending. This guide flags these sensitive events in advance with spoiler-free alerts.
+      </p>
+    </section>
+
+    <!-- Layout Review Section -->
+    <section class="guide-section">
+      <h2 id="layout-review">Layout & Design System Review</h2>
+      <p>
+        This page represents the newly established design system from <code>DESIGN.md</code>:
+      </p>
+      <ul>
+        <li><strong>3-Column Desktop Grid</strong>: The site uses a fixed-width Global Navigation on the left (<code>~260px</code>), a comfortable reading container in the center (<code>~760px</code>), and a sticky "On this page" Local Navigation on the right (<code>~220px</code>).</li>
+        <li><strong>P4G Color Palette</strong>: Restrained golden yellow (<code>#F2C94C</code>) accents, dark charcoal text (<code>#202020</code>), off-white background (<code>#F7F5EF</code>), and crisp surface cards (<code>#FFFFFF</code>).</li>
+        <li><strong>Scrollspy Local Navigation</strong>: Notice how the right rail dynamically tracks your scroll progress and highlights the current section.</li>
+        <li><strong>Responsive Collapsing</strong>: On mobile viewports, the left sidebar transforms into a slide-over drawer accessible via the topbar menu, while the local navigation turns into a collapsible inline accordion above the content.</li>
+      </ul>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="guide-section">
+      <h2 id="next-steps">Next Steps</h2>
+      <p>
+        Please review the layout, typography, proportions, and color contrast on your display. Once you confirm the layout is ready, we will proceed to implement the dedicated guide chapters (Walkthrough, Calendar, Social Links, and Databases).
+      </p>
+    </section>
+  </article>
+</GuideLayout>
+
+<style>
+  .guide-article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .article-header {
+    border-bottom: 2px solid var(--p4g-border-subtle);
+    padding-bottom: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--p4g-gray);
+    margin-bottom: 0.5rem;
+  }
+
+  .kicker-tag {
+    background-color: var(--p4g-yellow);
+    color: var(--p4g-dark);
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    font-weight: 800;
+  }
+
+  .kicker-divider {
+    color: var(--p4g-border);
+  }
+
+  .page-title {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: var(--p4g-dark);
+  }
+
+  .lead-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #444444;
+  }
+
+  .guide-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 1.75rem;
+    }
+
+    .lead-text {
+      font-size: 1rem;
+    }
+  }
+</style>

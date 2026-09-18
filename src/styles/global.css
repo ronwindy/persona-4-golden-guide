@@ -1,360 +1,170 @@
+/* ==========================================================================
+   Persona 4 Golden Guide — Core Design Tokens & Global Styles
+   Strictly following DESIGN.md
+   ========================================================================== */
+
 :root {
-  --primary: #fce300;
-  /* Midnight Channel Yellow */
-  --secondary: #1a1a1a;
-  /* Inaba Black */
-  --bg-white: #fafafa;
-  /* Static White */
-  --accent-orange: #ff6b00;
-  /* Junes Orange */
-  --accent-blue: #0c1431;
-  /* Velvet Blue */
-  --velvet: #413691;
-  /* Velvet Room Indigo */
-  --slide-rotate: -0.5deg;
+  /* Color Palette (DESIGN.md Section 2) */
+  --p4g-yellow: #F2C94C;
+  --p4g-yellow-hover: #e5bd3b;
+  --p4g-yellow-light: #fef8e7;
+  --p4g-dark: #202020;
+  --p4g-bg: #F7F5EF;
+  --p4g-surface: #FFFFFF;
+  --p4g-gray: #777777;
+  --p4g-border: #D8D5CC;
+  --p4g-border-subtle: #E8E5DC;
+  --p4g-accent-tape: #F2C94C;
+
+  /* Typography (DESIGN.md Section 3) */
+  --font-body: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Staatliches", "Impact", cursive, sans-serif;
+
+  /* Layout Proportions (DESIGN.md Section 4) */
+  --sidebar-width: 260px;
+  --local-nav-width: 220px;
+  --content-max-width: 780px;
+  --container-max-width: 1360px;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
 }
 
-/* Base Resets & Typography */
-* {
+/* Base Reset */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  background-color: var(--secondary);
-  /* Base "Midnight Channel" black */
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--p4g-bg);
+  color: var(--p4g-dark);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: transparent;
-  /* Allow background layer to show through */
-  color: var(--secondary);
-  line-height: 1.6;
-  overflow-x: hidden;
+  font-family: var(--font-body);
+  background-color: var(--p4g-bg);
+  color: var(--p4g-dark);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-body.menu-open {
-  overflow: hidden;
-}
-
-.midnight-bg {
+/* Subtle background texture for slight retro atmosphere without reading interference */
+body::before {
+  content: "";
   position: fixed;
   inset: 0;
-  z-index: -10;
-  background-color: transparent;
-}
-
-.midnight-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("/persona-4-golden-guide/background.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  opacity: 0.3;
-}
-
-.crt-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%,
-      rgba(0, 0, 0, 0.05) 50%);
-  background-size: 100% 4px;
+  background-image: radial-gradient(#202020 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  opacity: 0.035;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
 }
 
-/* Subtle Digital Grain */
-.midnight-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.03;
-  pointer-events: none;
-}
-
+/* Text Selection */
 ::selection {
-  background: var(--primary);
-  color: var(--secondary);
+  background-color: var(--p4g-yellow);
+  color: var(--p4g-dark);
 }
 
-.font-pop {
-  font-family: "Staatliches", cursive;
-  text-transform: uppercase;
-  font-style: italic;
-  letter-spacing: 0.08em;
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
-.font-read {
-  font-family: "Outfit", sans-serif;
+/* Typography Hierarchy (DESIGN.md Section 3) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--p4g-dark);
+  line-height: 1.25;
+  font-weight: 700;
 }
 
-/* Motifs & Textures */
-.bg-p4g-flow {
-  background-color: var(--primary);
-  background-image:
-    linear-gradient(45deg, rgba(26, 26, 26, 0.05) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(26, 26, 26, 0.05) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(26, 26, 26, 0.05) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(26, 26, 26, 0.05) 75%);
-  background-size: 32px 32px;
-  background-position: 0 0, 0 16px, 16px -16px, -16px 0px;
-  animation: p4gFlow 10s linear infinite;
+h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
 }
 
-@keyframes p4gFlow {
-  from {
-    background-position: 0 0, 0 16px, 16px -16px, -16px 0px;
-  }
-
-  to {
-    background-position: 64px 64px, 64px 80px, 80px 48px, 48px 64px;
-  }
-}
-
-.bg-halftone {
-  background-color: var(--primary);
-  background-image: radial-gradient(var(--secondary) 1px, transparent 1px);
-  background-size: 12px 12px;
-}
-
-.bg-scanlines {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0) 50%,
-      rgba(0, 0, 0, 0.05) 50%,
-      rgba(0, 0, 0, 0.05));
-  background-size: 100% 4px;
-  pointer-events: none;
-  z-index: 10;
-  opacity: 0.7;
-}
-
-.bg-stripes {
-  background: repeating-linear-gradient(-45deg,
-      var(--primary),
-      var(--primary) 10px,
-      var(--secondary) 10px,
-      var(--secondary) 20px);
-  background-size: 28px 28px;
-  animation: scrollStripes 1s linear infinite;
-}
-
-@keyframes scrollStripes {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 28px 0;
-  }
-}
-
-/* Layout Utilities */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.flex {
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--p4g-border-subtle);
   display: flex;
-}
-
-.items-center {
   align-items: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.gap-2 {
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-/* Component Styles */
-.p4g-shadow {
-  box-shadow: 8px 8px 0px var(--secondary);
-}
-
-.p4g-shadow-sm {
-  box-shadow: 4px 4px 0px var(--secondary);
-}
-
-@media (max-width: 768px) {
-  .p4g-shadow {
-    box-shadow: 4px 4px 0px var(--secondary);
-  }
-
-  .p4g-shadow-sm {
-    box-shadow: 2px 2px 0px var(--secondary);
-  }
-
-  :root {
-    --slide-rotate: 0deg;
-  }
-}
-
-.cutout-box {
-  clip-path: polygon(0 0, 100% 2%, 98% 100%, 2% 98%);
-}
-
-.cutout-header {
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 90%);
-}
-
-.hover-invert {
-  transition: all 0s;
-  cursor: pointer;
-}
-
-.hover-invert:hover {
-  background-color: var(--secondary) !important;
-  color: var(--primary) !important;
-  transform: rotate(-2deg);
-}
-
-
-/* Common Animations */
-@keyframes popIn {
-  0% {
-    transform: scale(0) rotate(-10deg);
-    opacity: 0;
-  }
-
-  70% {
-    transform: scale(1.2) rotate(5deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-50px) rotate(-5deg);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0) rotate(var(--slide-rotate, -0.5deg));
-    opacity: 1;
-  }
-}
-
-@keyframes jitter {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  20% {
-    transform: translate(-2px, 1px);
-  }
-
-  40% {
-    transform: translate(2px, -1px);
-  }
-
-  60% {
-    transform: translate(-1px, 2px);
-  }
-
-  80% {
-    transform: translate(1px, -2px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes flicker {
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    opacity: 1;
-  }
-
-  20%,
-  22%,
-  24%,
-  55% {
-    opacity: 0.8;
-  }
-}
-
-.anim-pop {
+h2::before {
+  content: "";
   display: inline-block;
-  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  width: 4px;
+  height: 1.1em;
+  background-color: var(--p4g-yellow);
+  border-radius: 2px;
 }
 
-.anim-slide-in {
-  animation: slideIn 0.6s ease-out 0.6s both;
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
-.anim-jitter:hover {
-  animation: jitter 0.2s infinite;
+h4 {
+  font-size: 1.05rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.stagger-1 {
-  animation-delay: 0.1s;
+p {
+  margin-bottom: 1rem;
 }
 
-.stagger-2 {
-  animation-delay: 0.2s;
+p:last-child {
+  margin-bottom: 0;
 }
 
-.stagger-3 {
-  animation-delay: 0.3s;
+ul, ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
 }
 
-.stagger-4 {
-  animation-delay: 0.4s;
+li {
+  margin-bottom: 0.35rem;
 }
 
-/* Divider */
-.divider {
-  height: 1rem;
-  width: 100%;
-  border-bottom: 4px solid var(--secondary);
+/* Focus States for Accessibility (DESIGN.md Section 14) */
+:focus-visible {
+  outline: 2px solid var(--p4g-yellow);
+  outline-offset: 2px;
 }
 
-/* Main Content Layout */
-.main-layout {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
-  /* Reduced padding for mobile */
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  /* Reduced gap for mobile */
-}
-
-@media (min-width: 1024px) {
-  .main-layout {
-    grid-template-columns: 360px 2fr 1fr;
-    padding: 3rem 1.25rem;
-    gap: 2.5rem;
-  }
+/* Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
 }

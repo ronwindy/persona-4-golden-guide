@@ -1,0 +1,316 @@
+---
+// src/components/LocalNav.astro
+export interface TocHeading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings?: TocHeading[];
+}
+
+const { headings = [] } = Astro.props;
+const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{filteredHeadings.length > 0 && (
+  <>
+    <!-- Inline Accordion TOC for Tablets and Mobile (< 1280px) -->
+    <div class="mobile-toc-container">
+      <details class="mobile-toc-details">
+        <summary class="mobile-toc-summary">
+          <span class="summary-left">
+            <svg class="icon-toc" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span>On this page</span>
+          </span>
+          <span class="summary-chevron" aria-hidden="true">▾</span>
+        </summary>
+        <nav class="mobile-toc-nav" aria-label="On this page (mobile)">
+          <ul class="mobile-toc-list">
+            {filteredHeadings.map((heading) => (
+              <li class:list={["mobile-toc-item", `depth-${heading.depth}`]}>
+                <a href={`#${heading.slug}`} class="mobile-toc-link">
+                  {heading.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+    </div>
+
+    <!-- Desktop Sticky Local Navigation (>= 1280px) -->
+    <aside class="desktop-toc-rail" aria-label="Table of Contents">
+      <div class="sticky-toc-wrapper">
+        <nav class="local-nav" aria-label="On this page">
+          <div class="toc-header">
+            <span class="toc-label">ON THIS PAGE</span>
+          </div>
+
+          <ul class="toc-list" id="desktop-toc-list">
+            {filteredHeadings.map((heading) => (
+              <li class:list={["toc-item", `depth-${heading.depth}`]}>
+                <a
+                  href={`#${heading.slug}`}
+                  class="toc-link"
+                  data-slug={heading.slug}
+                >
+                  <span class="toc-link-text">{heading.text}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div class="toc-footer">
+            <a href="#top" class="back-to-top-link">
+              <span>Back to top ↑</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  </>
+)}
+
+<style>
+  /* =========================================
+     Desktop Sticky Rail (>= 1280px)
+     ========================================= */
+  .desktop-toc-rail {
+    display: none;
+    width: var(--local-nav-width);
+    flex-shrink: 0;
+  }
+
+  .sticky-toc-wrapper {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    padding-left: 0.5rem;
+  }
+
+  .local-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .toc-header {
+    padding-bottom: 0.25rem;
+  }
+
+  .toc-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--p4g-gray);
+    text-transform: uppercase;
+  }
+
+  /* Minimalist border track anchoring the list (DESIGN.md Section 5) */
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid var(--p4g-border-subtle);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .toc-item {
+    margin: 0;
+  }
+
+  .toc-item.depth-3 {
+    padding-left: 0.85rem;
+  }
+
+  .toc-link {
+    display: block;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--p4g-gray);
+    padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+    position: relative;
+    left: -2px; /* aligns active border with container track */
+    border-left: 2px solid transparent;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .toc-link:hover {
+    color: var(--p4g-dark);
+  }
+
+  /* Active scrollspy item */
+  .toc-link.active {
+    color: var(--p4g-dark);
+    font-weight: 700;
+    border-left-color: var(--p4g-yellow);
+  }
+
+  .toc-footer {
+    padding-top: 0.5rem;
+  }
+
+  .back-to-top-link {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--p4g-gray);
+    display: inline-block;
+    transition: color var(--transition-fast);
+  }
+
+  .back-to-top-link:hover {
+    color: var(--p4g-dark);
+  }
+
+  /* =========================================
+     Mobile / Tablet Collapsible Accordion (< 1280px)
+     ========================================= */
+  .mobile-toc-container {
+    display: block;
+    width: 100%;
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .mobile-toc-details {
+    background-color: var(--p4g-surface);
+    border: 1px solid var(--p4g-border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .mobile-toc-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--p4g-dark);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+
+  .mobile-toc-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .summary-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .summary-chevron {
+    font-size: 0.9rem;
+    color: var(--p4g-gray);
+    transition: transform var(--transition-fast);
+  }
+
+  .mobile-toc-details[open] .summary-chevron {
+    transform: rotate(180deg);
+  }
+
+  .mobile-toc-nav {
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid var(--p4g-border-subtle);
+  }
+
+  .mobile-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .mobile-toc-item.depth-3 {
+    padding-left: 1rem;
+  }
+
+  .mobile-toc-link {
+    font-size: 0.875rem;
+    color: var(--p4g-dark);
+    display: block;
+    padding: 0.2rem 0;
+  }
+
+  .mobile-toc-link:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* =========================================
+     Breakpoint Switching (DESIGN.md Section 10)
+     ========================================= */
+  @media (min-width: 1280px) {
+    .desktop-toc-rail {
+      display: block;
+    }
+
+    .mobile-toc-container {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // Scrollspy to highlight active TOC heading
+  function setupScrollspy() {
+    const links = document.querySelectorAll<HTMLAnchorElement>("#desktop-toc-list .toc-link");
+    if (!links.length) return;
+
+    const headingElements: HTMLElement[] = [];
+    links.forEach((link) => {
+      const slug = link.getAttribute("data-slug");
+      if (slug) {
+        const el = document.getElementById(slug);
+        if (el) headingElements.push(el);
+      }
+    });
+
+    if (!headingElements.length) return;
+
+    function onScroll() {
+      const scrollPos = window.scrollY + 120;
+      let currentActiveId = "";
+
+      for (let i = 0; i < headingElements.length; i++) {
+        const el = headingElements[i];
+        if (el.offsetTop <= scrollPos) {
+          currentActiveId = el.id;
+        } else {
+          break;
+        }
+      }
+
+      links.forEach((link) => {
+        if (link.getAttribute("data-slug") === currentActiveId) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  setupScrollspy();
+  document.addEventListener("astro:page-load", setupScrollspy);
+</script>
