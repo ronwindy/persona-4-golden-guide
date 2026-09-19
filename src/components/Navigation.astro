@@ -2,6 +2,7 @@
 // src/components/Navigation.astro
 import { Image } from "astro:assets";
 import p4gLogo from "../assets/Persona_4_Golden_logo.webp";
+import { Icon } from "astro-icon/components";
 
 interface Props {
   currentPath?: string;
@@ -71,21 +72,7 @@ const isItemActive = (href?: string) => {
     aria-expanded="false"
     aria-controls="global-sidebar"
   >
-    <svg
-      class="icon-menu"
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
+    <Icon name="lucide:menu" size={20} class="icon-menu" />
     <span>Menu</span>
   </button>
 
