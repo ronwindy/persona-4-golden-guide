@@ -15,114 +15,212 @@ interface NavItem {
   title: string;
   href?: string;
   isAvailable?: boolean;
+  icon?: string;
 }
 
 interface NavSection {
   title: string;
+  icon: string;
   items: NavItem[];
 }
 
 const navSections: NavSection[] = [
   {
     title: "Introduction",
+    icon: "lucide:compass",
     items: [
-      { title: "Frequently Asked Questions", isAvailable: false },
-      { title: "What Is Persona?", isAvailable: false },
-      { title: "Persona 3 vs. Persona 4", isAvailable: false },
-      { title: "Persona 4 vs. Persona 4 Golden", isAvailable: false },
+      {
+        title: "Introduction Overview",
+        href: `${baseUrl}/`,
+        isAvailable: true,
+        icon: "lucide:book-open",
+      },
+      {
+        title: "Frequently Asked Questions",
+        isAvailable: false,
+        icon: "lucide:help-circle",
+      },
+      {
+        title: "What Is Persona?",
+        isAvailable: false,
+        icon: "lucide:info",
+      },
+      {
+        title: "Persona 3 vs. Persona 4",
+        isAvailable: false,
+        icon: "lucide:scale",
+      },
+      {
+        title: "Persona 4 vs. Persona 4 Golden",
+        isAvailable: false,
+        icon: "lucide:trophy",
+      },
     ],
   },
   {
     title: "Gameplay Mechanics",
+    icon: "lucide:gamepad-2",
     items: [
-      { title: "Controls", isAvailable: false },
-      { title: "Field Mechanics", isAvailable: false },
-      { title: "Calendar System", isAvailable: false },
-      { title: "Social Link", isAvailable: false },
-      { title: "Status Parameters", isAvailable: false },
-      { title: "Velvet Room", isAvailable: false },
-      { title: "Battle Mechanics", isAvailable: false },
-      { title: "Shuffle TIme", isAvailable: false },
-      { title: "Status Ailments", isAvailable: false },
-      { title: "New Game Plus", isAvailable: false },
-      { title: "TV Channels", isAvailable: false },
+      { title: "Controls", isAvailable: false, icon: "lucide:gamepad" },
+      {
+        title: "Field Mechanics",
+        isAvailable: false,
+        icon: "lucide:footprints",
+      },
+      {
+        title: "Calendar System",
+        isAvailable: false,
+        icon: "lucide:calendar-clock",
+      },
+      {
+        title: "Social Link",
+        isAvailable: false,
+        icon: "lucide:heart-handshake",
+      },
+      {
+        title: "Status Parameters",
+        isAvailable: false,
+        icon: "lucide:activity",
+      },
+      { title: "Velvet Room", isAvailable: false, icon: "lucide:door-closed" },
+      { title: "Battle Mechanics", isAvailable: false, icon: "lucide:swords" },
+      { title: "Shuffle Time", isAvailable: false, icon: "lucide:layers-2" },
+      {
+        title: "Status Ailments",
+        isAvailable: false,
+        icon: "lucide:biohazard",
+      },
+      { title: "New Game Plus", isAvailable: false, icon: "lucide:refresh-cw" },
+      { title: "TV Channels", isAvailable: false, icon: "lucide:tv" },
     ],
   },
   {
     title: "Walkthrough",
+    icon: "lucide:map",
     items: [
-      { title: "Walkthrough Objectives", isAvailable: false },
-      { title: "Walkthrough FAQ", isAvailable: false },
-      { title: "Important Notes", isAvailable: false },
-      { title: "Current Problems", isAvailable: false },
-      { title: "April", isAvailable: false },
-      { title: "May", isAvailable: false },
-      { title: "June", isAvailable: false },
-      { title: "July", isAvailable: false },
-      { title: "August", isAvailable: false },
-      { title: "September", isAvailable: false },
-      { title: "October", isAvailable: false },
-      { title: "November", isAvailable: false },
-      { title: "December", isAvailable: false },
-      { title: "January", isAvailable: false },
-      { title: "February", isAvailable: false },
-      { title: "March", isAvailable: false },
-      { title: "New Game Plus Walkthrough", isAvailable: false },
+      {
+        title: "Walkthrough Objectives",
+        isAvailable: false,
+        icon: "lucide:target",
+      },
+      {
+        title: "Walkthrough FAQ",
+        isAvailable: false,
+        icon: "lucide:help-circle",
+      },
+      {
+        title: "Important Notes",
+        isAvailable: false,
+        icon: "lucide:alert-circle",
+      },
+      {
+        title: "Current Problems",
+        isAvailable: false,
+        icon: "lucide:file-question",
+      },
+      { title: "April", isAvailable: false, icon: "lucide:calendar" },
+      { title: "May", isAvailable: false, icon: "lucide:calendar" },
+      { title: "June", isAvailable: false, icon: "lucide:calendar" },
+      { title: "July", isAvailable: false, icon: "lucide:calendar" },
+      { title: "August", isAvailable: false, icon: "lucide:calendar" },
+      { title: "September", isAvailable: false, icon: "lucide:calendar" },
+      { title: "October", isAvailable: false, icon: "lucide:calendar" },
+      { title: "November", isAvailable: false, icon: "lucide:calendar" },
+      { title: "December", isAvailable: false, icon: "lucide:calendar" },
+      { title: "January", isAvailable: false, icon: "lucide:calendar" },
+      { title: "February", isAvailable: false, icon: "lucide:calendar" },
+      { title: "March", isAvailable: false, icon: "lucide:calendar" },
+      {
+        title: "New Game Plus Walkthrough",
+        isAvailable: false,
+        icon: "lucide:sparkles",
+      },
     ],
   },
   {
     title: "Dungeons",
+    icon: "lucide:tv",
     items: [
-      { title: "Twisted Shopping District", isAvailable: false },
-      { title: "Yukiko's Castle", isAvailable: false },
-      { title: "Steamy Bathhouse", isAvailable: false },
-      { title: "Marukyu Striptease", isAvailable: false },
-      { title: "Void Quest", isAvailable: false },
-      { title: "Secret Laboratory", isAvailable: false },
-      { title: "Heaven", isAvailable: false },
-      { title: "Magatsu Inaba", isAvailable: false },
-      { title: "Hollow Forest", isAvailable: false },
-      { title: "Yomotsu Hirasaka", isAvailable: false },
-      { title: "Extra Bosses", isAvailable: false },
+      {
+        title: "Twisted Shopping District",
+        isAvailable: false,
+        icon: "lucide:shopping-bag",
+      },
+      { title: "Yukiko's Castle", isAvailable: false, icon: "lucide:castle" },
+      { title: "Steamy Bathhouse", isAvailable: false, icon: "lucide:bath" },
+      {
+        title: "Marukyu Striptease",
+        isAvailable: false,
+        icon: "lucide:sparkles",
+      },
+      { title: "Void Quest", isAvailable: false, icon: "lucide:joystick" },
+      {
+        title: "Secret Laboratory",
+        isAvailable: false,
+        icon: "lucide:flask-conical",
+      },
+      { title: "Heaven", isAvailable: false, icon: "lucide:cloud-sun" },
+      { title: "Magatsu Inaba", isAvailable: false, icon: "lucide:eye" },
+      { title: "Hollow Forest", isAvailable: false, icon: "lucide:trees" },
+      { title: "Yomotsu Hirasaka", isAvailable: false, icon: "lucide:skull" },
+      { title: "Extra Bosses", isAvailable: false, icon: "lucide:flame" },
     ],
   },
   {
     title: "Persona Compendium",
-    items: [{ title: "Persona Compendium", isAvailable: false }],
+    icon: "lucide:book-marked",
+    items: [
+      {
+        title: "Persona Compendium",
+        isAvailable: false,
+        icon: "lucide:layers",
+      },
+    ],
   },
   {
     title: "Skill List",
+    icon: "lucide:zap",
     items: [
-      { title: "All Skills", isAvailable: false },
-      { title: "Skill Cards", isAvailable: false },
-      { title: "Party Members", isAvailable: false },
+      { title: "All Skills", isAvailable: false, icon: "lucide:sparkles" },
+      { title: "Skill Cards", isAvailable: false, icon: "lucide:credit-card" },
+      { title: "Party Members", isAvailable: false, icon: "lucide:users" },
     ],
   },
   {
     title: "Item List",
+    icon: "lucide:package",
     items: [
-      { title: "Weapons", isAvailable: false },
-      { title: "Armor", isAvailable: false },
-      { title: "Accessories", isAvailable: false },
-      { title: "Costume List", isAvailable: false },
-      { title: "Consumable/Quest Items", isAvailable: false },
-      { title: "Materials", isAvailable: false },
-      { title: "Book List", isAvailable: false },
-      { title: "Fish List", isAvailable: false },
-      { title: "Gardening Items", isAvailable: false },
-      { title: "Bug List", isAvailable: false },
-      { title: "Gem List", isAvailable: false },
-      { title: "Key Items", isAvailable: false },
+      { title: "Weapons", isAvailable: false, icon: "lucide:sword" },
+      { title: "Armor", isAvailable: false, icon: "lucide:shield" },
+      { title: "Accessories", isAvailable: false, icon: "lucide:gem" },
+      { title: "Costume List", isAvailable: false, icon: "lucide:shirt" },
+      {
+        title: "Consumable/Quest Items",
+        isAvailable: false,
+        icon: "lucide:pill",
+      },
+      { title: "Materials", isAvailable: false, icon: "lucide:hammer" },
+      { title: "Book List", isAvailable: false, icon: "lucide:book-open" },
+      { title: "Fish List", isAvailable: false, icon: "lucide:fish" },
+      { title: "Gardening Items", isAvailable: false, icon: "lucide:sprout" },
+      { title: "Bug List", isAvailable: false, icon: "lucide:bug" },
+      { title: "Gem List", isAvailable: false, icon: "lucide:gem" },
+      { title: "Key Items", isAvailable: false, icon: "lucide:key" },
     ],
   },
   {
     title: "Tips And Tricks",
+    icon: "lucide:lightbulb",
     items: [
-      { title: "Golden Shadow Grinding", isAvailable: false },
-      { title: "Best Personas", isAvailable: false },
-      { title: "Hardcore Risette Fan", isAvailable: false },
-      { title: "Victory Cry Cheat", isAvailable: false },
-      { title: "Resources", isAvailable: false },
+      {
+        title: "Golden Shadow Grinding",
+        isAvailable: false,
+        icon: "lucide:coins",
+      },
+      { title: "Best Personas", isAvailable: false, icon: "lucide:crown" },
+      { title: "Hardcore Risette Fan", isAvailable: false, icon: "lucide:mic" },
+      { title: "Victory Cry Cheat", isAvailable: false, icon: "lucide:wand-2" },
+      { title: "Resources", isAvailable: false, icon: "lucide:external-link" },
     ],
   },
 ];
@@ -197,42 +295,70 @@ const isItemActive = (href?: string) => {
             data-section-title={section.title}
           >
             <summary class="nav-group-header">
-              <span class="nav-group-title">{section.title}</span>
-              <Icon
-                name="lucide:chevron-down"
-                size={15}
-                class="nav-group-chevron"
-              />
+              <div class="nav-header-left">
+                <span class="group-icon-wrapper">
+                  <Icon name={section.icon} size={15} class="section-icon" />
+                </span>
+                <span class="nav-group-title">{section.title}</span>
+              </div>
+              <span class="chevron-pill">
+                <Icon
+                  name="lucide:chevron-down"
+                  size={14}
+                  class="nav-group-chevron"
+                />
+              </span>
             </summary>
-            <ul class="nav-list">
-              {section.items.map((item) => {
-                const active = isItemActive(item.href);
-                return (
-                  <li class="nav-item">
-                    {item.isAvailable ? (
-                      <a
-                        href={item.href}
-                        class:list={["nav-link", { active }]}
-                        aria-current={active ? "page" : undefined}
-                      >
-                        <span class="active-indicator" aria-hidden="true">
-                          ▌
+
+            <div class="nav-list-wrapper">
+              <ul class="nav-list">
+                {section.items.map((item) => {
+                  const active = isItemActive(item.href);
+                  const iconName = item.icon || "lucide:circle-dot";
+                  return (
+                    <li class="nav-item">
+                      {item.isAvailable ? (
+                        <a
+                          href={item.href}
+                          class:list={["nav-link", { active }]}
+                          aria-current={active ? "page" : undefined}
+                        >
+                          <span class="item-icon-box" aria-hidden="true">
+                            <Icon
+                              name={iconName}
+                              size={14}
+                              class="entry-icon"
+                            />
+                          </span>
+                          <span class="link-label">{item.title}</span>
+                          {active ? (
+                            <span class="active-badge" aria-hidden="true">
+                              <span class="active-pulse" />
+                              <span class="active-notch">►</span>
+                            </span>
+                          ) : null}
+                        </a>
+                      ) : (
+                        <span class="nav-link disabled" title="Coming soon">
+                          <span
+                            class="item-icon-box inactive-icon-box"
+                            aria-hidden="true"
+                          >
+                            <Icon
+                              name={iconName}
+                              size={14}
+                              class="entry-icon"
+                            />
+                          </span>
+                          <span class="link-label">{item.title}</span>
+                          <span class="upcoming-badge">SOON</span>
                         </span>
-                        <span class="link-label">{item.title}</span>
-                      </a>
-                    ) : (
-                      <span class="nav-link disabled" title="Coming soon">
-                        <span class="inactive-bullet" aria-hidden="true">
-                          ·
-                        </span>
-                        <span class="link-label">{item.title}</span>
-                        <span class="upcoming-badge">SOON</span>
-                      </span>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </details>
         );
       })
@@ -485,30 +611,51 @@ const isItemActive = (href?: string) => {
       drop-shadow(0 0 6px rgba(255, 230, 110, 0.3));
   }
 
-  /* Navigation Groups */
+  /* Navigation Groups (P4G TV Guide Aesthetic) */
   .sidebar-nav {
     position: relative;
     z-index: 1;
-    padding: 1.25rem 0.75rem;
+    padding: 1.15rem 0.65rem 1.75rem;
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.5rem;
   }
 
+  /* Nav Group (Accordion Section Container) */
   .nav-group {
     display: block;
+    background: rgba(22, 22, 28, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition:
+      border-color var(--transition-fast),
+      background-color var(--transition-fast),
+      box-shadow var(--transition-fast);
   }
 
+  .nav-group[open] {
+    background: rgba(24, 24, 30, 0.72);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-group.has-active {
+    border-color: rgba(242, 201, 78, 0.35);
+    background: rgba(30, 27, 20, 0.55);
+    box-shadow: inset 0 0 16px rgba(242, 201, 78, 0.04);
+  }
+
+  /* Group Header Summary */
   .nav-group-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.4rem 0.65rem;
+    padding: 0.52rem 0.65rem;
     cursor: pointer;
     user-select: none;
-    border-radius: 4px;
     list-style: none;
+    border-radius: 6px;
     transition:
       background-color var(--transition-fast),
       color var(--transition-fast);
@@ -528,56 +675,109 @@ const isItemActive = (href?: string) => {
 
   .nav-group-header:focus-visible {
     outline: 2px solid var(--p4g-yellow);
-    outline-offset: 2px;
+    outline-offset: 1px;
   }
 
-  .nav-group-title {
-    font-family: var(--font-display);
-    font-size: 0.825rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
+  .nav-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-width: 0;
+  }
+
+  /* Section Icon */
+  .group-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
     color: rgba(255, 255, 255, 0.5);
+    transition:
+      transform var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  .nav-group-header:hover .group-icon-wrapper {
+    color: var(--p4g-yellow);
+    transform: scale(1.1);
+  }
+
+  .nav-group.has-active .group-icon-wrapper {
+    color: var(--p4g-yellow);
+  }
+
+  /* Header Title */
+  .nav-group-title {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: #cfcfd6;
     margin: 0;
     padding: 0;
     border: none;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     transition: color var(--transition-fast);
   }
 
   .nav-group-header:hover .nav-group-title {
-    color: #f7f5ef;
+    color: #ffffff;
   }
 
   .nav-group.has-active > .nav-group-header .nav-group-title {
-    color: var(--p4g-yellow);
-    font-weight: 600;
+    color: #fff9e6;
+    text-shadow: 0 0 10px rgba(242, 201, 78, 0.3);
+  }
+
+  /* Chevron Pill Icon */
+  .chevron-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    transition:
+      background-color var(--transition-fast),
+      border-color var(--transition-fast);
   }
 
   .nav-group-chevron {
-    color: rgba(255, 255, 255, 0.35);
-    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.4);
     transform: rotate(-90deg);
     transition:
       transform var(--transition-fast),
       color var(--transition-fast);
   }
 
-  .nav-group[open] > .nav-group-header .nav-group-chevron {
+  .nav-group[open] .chevron-pill {
+    background: rgba(242, 201, 78, 0.12);
+    border-color: rgba(242, 201, 78, 0.3);
+  }
+
+  .nav-group[open] .nav-group-chevron {
     transform: rotate(0deg);
-    color: rgba(255, 255, 255, 0.65);
-  }
-
-  .nav-group.has-active > .nav-group-header .nav-group-chevron {
     color: var(--p4g-yellow);
   }
 
-  .nav-group-header:hover .nav-group-chevron {
-    color: var(--p4g-yellow);
+  /* Sub-Tree Vertical Track Guideline */
+  .nav-list-wrapper {
+    position: relative;
+    padding: 0.25rem 0.5rem 0.55rem 0.85rem;
+    margin: 0 0.35rem 0.35rem 0.65rem;
+    border-left: 2px dashed rgba(242, 201, 78, 0.18);
+    transition: border-color var(--transition-fast);
   }
 
-  .nav-group[open] .nav-list {
-    margin-top: 0.25rem;
-    margin-bottom: 0.75rem;
+  .nav-group[open]:hover .nav-list-wrapper {
+    border-left-color: rgba(242, 201, 78, 0.35);
   }
 
   .nav-list {
@@ -593,76 +793,143 @@ const isItemActive = (href?: string) => {
     margin: 0;
   }
 
+  /* Navigation Link / Item */
   .nav-link {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.885rem;
+    gap: 0.55rem;
+    padding: 0.42rem 0.55rem;
+    font-size: 0.7rem;
     font-weight: 500;
-    color: #d1d1d8;
-    border-radius: 6px;
+    font-family: var(--font-heading);
+    color: #b7b7c2;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
     transition:
       background-color var(--transition-fast),
       color var(--transition-fast),
-      transform var(--transition-fast);
+      transform var(--transition-fast),
+      box-shadow var(--transition-fast);
   }
 
-  .nav-link:hover:not(.disabled) {
-    background-color: rgba(255, 255, 255, 0.08);
+  /* Entry Icon Container */
+  .item-icon-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.45);
+    transition:
+      transform var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  /* Hover State for non-active available links */
+  .nav-link:hover:not(.disabled):not(.active) {
+    background: rgba(242, 201, 78, 0.12);
     color: #ffffff;
-    transform: translateX(3px);
+    transform: translateX(4px);
+    box-shadow: inset 3px 0 0 var(--p4g-yellow);
   }
 
-  /* Active Navigation State (DESIGN.md Section 5) */
-  .nav-link.active {
+  .nav-link:hover:not(.disabled):not(.active) .link-label {
+    color: #ffffff;
+  }
+
+  .nav-link:hover:not(.disabled):not(.active) .item-icon-box {
+    color: var(--p4g-yellow);
+    transform: scale(1.15);
+  }
+
+  /* Active Navigation State ("Tuned In" Golden Highlight) */
+  .nav-link.active,
+  .nav-link.active:hover {
     font-weight: 700;
-    background-color: var(--p4g-yellow);
+    background: linear-gradient(90deg, #f2c94c 0%, #f6d672 100%);
     color: #121214;
-    box-shadow: 0 2px 10px rgba(242, 201, 78, 0.28);
+    transform: translateX(4px);
+    border-left: 3px solid #141416;
+    box-shadow:
+      0 4px 16px rgba(242, 201, 78, 0.38),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
   }
 
-  .active-indicator {
+  .nav-link.active .item-icon-box,
+  .nav-link.active:hover .item-icon-box {
     color: #121214;
-    font-size: 0.85rem;
-    font-weight: 900;
+  }
+
+  .nav-link.active .link-label,
+  .nav-link.active:hover .link-label {
+    color: #121214;
+  }
+
+  /* Active Badge (Pulse Dot + P4G Notch) */
+  .active-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #121214;
+    flex-shrink: 0;
+  }
+
+  .active-pulse {
+    width: 5px;
+    height: 5px;
+    background-color: #121214;
+    border-radius: 50%;
+    animation: p4g-dot-pulse 1.4s ease-in-out infinite alternate;
+  }
+
+  .active-notch {
+    font-size: 0.7rem;
     line-height: 1;
-    display: none;
+    font-weight: 900;
   }
 
-  .nav-link.active .active-indicator {
-    display: inline-block;
+  @keyframes p4g-dot-pulse {
+    0% {
+      opacity: 0.4;
+      transform: scale(0.85);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.25);
+    }
   }
 
-  .nav-link:not(.active) .active-indicator {
-    display: none;
-  }
-
-  /* Inactive / Upcoming Item */
+  /* Inactive / Coming Soon Items */
   .nav-link.disabled {
     color: rgba(255, 255, 255, 0.35);
     cursor: default;
   }
 
-  .inactive-bullet {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.2);
-    margin-right: 0.1rem;
+  .inactive-icon-box {
+    opacity: 0.38;
   }
 
   .link-label {
     flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .upcoming-badge {
-    font-size: 0.6rem;
+    font-family: var(--font-display);
+    font-size: 0.58rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.55);
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 0.1rem 0.35rem;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px dashed rgba(255, 255, 255, 0.14);
+    padding: 0.1rem 0.32rem;
     border-radius: 3px;
     letter-spacing: 0.06em;
+    transform: skewX(-6deg);
+    flex-shrink: 0;
   }
 
   /* Sidebar Footer */
@@ -763,7 +1030,7 @@ const isItemActive = (href?: string) => {
   function setupCollapsibleNav() {
     const STORAGE_KEY = "p4g_nav_sections_state";
     const groups = document.querySelectorAll<HTMLDetailsElement>(
-      "#global-sidebar .nav-group"
+      "#global-sidebar .nav-group",
     );
     if (!groups.length) return;
 

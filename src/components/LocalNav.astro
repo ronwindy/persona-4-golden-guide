@@ -1,5 +1,7 @@
 ---
 // src/components/LocalNav.astro
+import { Icon } from "astro-icon/components";
+
 export interface TocHeading {
   depth: number;
   slug: string;
@@ -22,25 +24,8 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
         <details class="mobile-toc-details">
           <summary class="mobile-toc-summary">
             <span class="summary-left">
-              <svg
-                class="icon-toc"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="8" y1="6" x2="21" y2="6" />
-                <line x1="8" y1="12" x2="21" y2="12" />
-                <line x1="8" y1="18" x2="21" y2="18" />
-                <line x1="3" y1="6" x2="3.01" y2="6" />
-                <line x1="3" y1="12" x2="3.01" y2="12" />
-                <line x1="3" y1="18" x2="3.01" y2="18" />
-              </svg>
-              <span>On this page</span>
+              <Icon name="lucide:list" class="icon-toc" size={15} aria-hidden="true" />
+              <span class="summary-title">On this page</span>
             </span>
             <span class="summary-chevron" aria-hidden="true">
               ▾
@@ -51,7 +36,12 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
               {filteredHeadings.map((heading) => (
                 <li class:list={["mobile-toc-item", `depth-${heading.depth}`]}>
                   <a href={`#${heading.slug}`} class="mobile-toc-link">
-                    {heading.text}
+                    {heading.depth === 3 && (
+                      <span class="mobile-toc-dash" aria-hidden="true">
+                        –
+                      </span>
+                    )}
+                    <span>{heading.text}</span>
                   </a>
                 </li>
               ))}
@@ -65,7 +55,11 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
         <div class="sticky-toc-wrapper">
           <nav class="local-nav" aria-label="On this page">
             <div class="toc-header">
-              <span class="toc-label">ON THIS PAGE</span>
+              <div class="toc-header-content">
+                <Icon name="lucide:list" class="toc-header-icon" size={14} aria-hidden="true" />
+                <span class="toc-label">ON THIS PAGE</span>
+              </div>
+              <span class="toc-badge">{filteredHeadings.length}</span>
             </div>
 
             <ul class="toc-list" id="desktop-toc-list">
@@ -76,6 +70,11 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
                     class="toc-link"
                     data-slug={heading.slug}
                   >
+                    {heading.depth === 3 && (
+                      <span class="toc-bullet" aria-hidden="true">
+                        –
+                      </span>
+                    )}
                     <span class="toc-link-text">{heading.text}</span>
                   </a>
                 </li>
@@ -84,7 +83,13 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
             <div class="toc-footer">
               <a href="#top" class="back-to-top-link">
-                <span>Back to top ↑</span>
+                <span class="back-to-top-text">Back to top</span>
+                <Icon
+                  name="lucide:chevron-up"
+                  class="back-to-top-icon"
+                  size={13}
+                  aria-hidden="true"
+                />
               </a>
             </div>
           </nav>
@@ -112,7 +117,7 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     background-color: var(--p4g-surface);
     border: 1px solid var(--p4g-border);
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.25rem 1.15rem;
     box-shadow: var(--shadow-local-nav);
   }
 
@@ -125,34 +130,67 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     border-radius: 4px;
   }
 
+  .sticky-toc-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: var(--p4g-gray);
+  }
+
   .local-nav {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
+  /* Header with refined typography and topic count pill */
   .toc-header {
-    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.55rem;
     border-bottom: 1px solid var(--p4g-border-subtle);
   }
 
+  .toc-header-content {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .toc-header-icon {
+    color: var(--p4g-gray);
+    opacity: 0.8;
+    flex-shrink: 0;
+  }
+
   .toc-label {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     color: var(--p4g-gray);
     text-transform: uppercase;
   }
 
-  /* Minimalist border track anchoring the list (DESIGN.md Section 5) */
+  .toc-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--p4g-gray);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.08rem 0.45rem;
+    border-radius: 9999px;
+    line-height: 1.2;
+  }
+
+  /* Subtle vertical guide track */
   .toc-list {
     list-style: none;
-    padding: 0;
+    padding: 0.2rem 0;
     margin: 0;
     border-left: 2px solid var(--p4g-border-subtle);
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 2px;
   }
 
   .toc-item {
@@ -160,51 +198,102 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   }
 
   .toc-item.depth-3 {
-    padding-left: 0.85rem;
+    padding-left: 0.75rem;
   }
 
   .toc-link {
-    display: block;
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
     font-size: 0.8125rem;
-    line-height: 1.4;
+    line-height: 1.45;
     color: var(--p4g-gray);
-    padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.75rem;
     position: relative;
     left: -2px; /* aligns active border with container track */
     border-left: 2px solid transparent;
+    border-radius: 0 6px 6px 0;
     transition:
       color var(--transition-fast),
-      border-color var(--transition-fast);
+      background-color var(--transition-fast),
+      border-color var(--transition-fast),
+      transform var(--transition-fast);
     overflow-wrap: break-word;
     word-break: break-word;
+    text-decoration: none;
   }
 
-  .toc-link:hover {
+  .toc-bullet {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    transition: color var(--transition-fast);
+  }
+
+  /* Depth 3 subsection subtle font size reduction */
+  .toc-item.depth-3 .toc-link {
+    font-size: 0.775rem;
+    color: #888888;
+  }
+
+  .toc-link:hover:not(.active) {
+    color: var(--p4g-dark);
+    background-color: rgba(0, 0, 0, 0.025);
+    transform: translateX(2px);
+  }
+
+  .toc-link:hover:not(.active) .toc-bullet {
     color: var(--p4g-dark);
   }
 
-  /* Active scrollspy item */
+  /* Active scrollspy item: yellow accent bar and gentle amber tint capsule */
   .toc-link.active {
     color: var(--p4g-dark);
     font-weight: 700;
     border-left-color: var(--p4g-yellow);
+    background-color: rgba(242, 201, 78, 0.14);
   }
 
+  .toc-link.active .toc-bullet {
+    color: var(--p4g-yellow-hover);
+    font-weight: 700;
+  }
+
+  /* Refined Footer Action */
   .toc-footer {
-    padding-top: 0.5rem;
+    padding-top: 0.55rem;
+    margin-top: 0.2rem;
     border-top: 1px solid var(--p4g-border-subtle);
   }
 
   .back-to-top-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--p4g-gray);
-    display: inline-block;
-    transition: color var(--transition-fast);
+    text-decoration: none;
+    transition:
+      color var(--transition-fast),
+      transform var(--transition-fast);
+    padding: 0.15rem 0;
+  }
+
+  .back-to-top-icon {
+    transition:
+      transform var(--transition-fast),
+      color var(--transition-fast);
+    flex-shrink: 0;
   }
 
   .back-to-top-link:hover {
     color: var(--p4g-dark);
+  }
+
+  .back-to-top-link:hover .back-to-top-icon {
+    transform: translateY(-2px);
+    color: var(--p4g-yellow-hover);
   }
 
   /* =========================================
@@ -214,7 +303,7 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     display: block;
     width: 100%;
     order: -1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .mobile-toc-details {
@@ -229,13 +318,18 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 1rem;
-    font-size: 0.875rem;
+    padding: 0.65rem 0.95rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     color: var(--p4g-dark);
     cursor: pointer;
     list-style: none;
     user-select: none;
+    transition: background-color var(--transition-fast);
+  }
+
+  .mobile-toc-summary:hover {
+    background-color: rgba(0, 0, 0, 0.02);
   }
 
   .mobile-toc-summary::-webkit-details-marker {
@@ -248,8 +342,17 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     gap: 0.5rem;
   }
 
+  .icon-toc {
+    color: var(--p4g-gray);
+    opacity: 0.8;
+  }
+
+  .summary-title {
+    letter-spacing: 0.01em;
+  }
+
   .summary-chevron {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--p4g-gray);
     transition: transform var(--transition-fast);
   }
@@ -259,7 +362,7 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   }
 
   .mobile-toc-nav {
-    padding: 0.5rem 1rem 1rem;
+    padding: 0.5rem 0.95rem 0.85rem;
     border-top: 1px solid var(--p4g-border-subtle);
   }
 
@@ -269,23 +372,29 @@ const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.35rem;
   }
 
   .mobile-toc-item.depth-3 {
-    padding-left: 1rem;
+    padding-left: 0.85rem;
+  }
+
+  .mobile-toc-dash {
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 0.25rem;
   }
 
   .mobile-toc-link {
-    font-size: 0.875rem;
-    color: var(--p4g-dark);
-    display: block;
-    padding: 0.2rem 0;
+    font-size: 0.8125rem;
+    color: #555555;
+    display: flex;
+    align-items: baseline;
+    padding: 0.25rem 0;
+    transition: color var(--transition-fast);
   }
 
   .mobile-toc-link:hover {
-    color: #000;
-    text-decoration: underline;
+    color: var(--p4g-dark);
   }
 
   /* =========================================
