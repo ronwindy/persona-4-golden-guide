@@ -1,96 +1,1065 @@
 ---
 // src/pages/index.astro
 import GuideLayout from "../layouts/GuideLayout.astro";
+import { Icon } from "astro-icon/components";
 
 const headings = [
-  { depth: 2, slug: "overview", text: "Overview" },
-  { depth: 2, slug: "how-to-use", text: "How to Use This Guide" },
-  { depth: 3, slug: "calendar-pacing", text: "Calendar & Daily Pacing" },
-  { depth: 3, slug: "social-links-overview", text: "Social Links & True Ending" },
-  { depth: 3, slug: "missables-caution", text: "Missables & Key Decisions" },
-  { depth: 2, slug: "layout-review", text: "Layout & Design System Review" },
-  { depth: 2, slug: "next-steps", text: "Next Steps" },
+  { depth: 2, slug: "game-information", text: "Game Information" },
+  { depth: 3, slug: "sales", text: "Sales" },
+  { depth: 3, slug: "development", text: "Development" },
+  { depth: 3, slug: "release-dates", text: "Release Dates" },
+  { depth: 2, slug: "overview", text: "Overview & History" },
+  { depth: 2, slug: "additions", text: "Additions (Main Game)" },
+  { depth: 3, slug: "new-social-links", text: "Two New Social Links" },
+  { depth: 3, slug: "new-dungeon-endings", text: "New Dungeon & Bad Ending" },
+  { depth: 3, slug: "difficulty-levels", text: "New Difficulty Levels" },
+  { depth: 3, slug: "audio-visual", text: "Audio & Character Updates" },
+  { depth: 3, slug: "events-locations", text: "New Areas, Events & Cutscenes" },
+  {
+    depth: 3,
+    slug: "daily-life-activities",
+    text: "Daily Life & Minigame Additions",
+  },
+  {
+    depth: 3,
+    slug: "system-features",
+    text: "System, Online & Quality of Life",
+  },
+  { depth: 3, slug: "battle-tweaks", text: "Battle Flow & Balance Tweaks" },
+  {
+    depth: 3,
+    slug: "gameplay-changes",
+    text: "Miscellaneous Gameplay Changes",
+  },
+  { depth: 3, slug: "tv-listings", text: "TV Listings (Bonus Gallery)" },
+  { depth: 3, slug: "region-exclusive", text: "Region Exclusive Content" },
+  { depth: 2, slug: "steam-version", text: "Steam Version (Remaster)" },
+  {
+    depth: 3,
+    slug: "steam-difficulty",
+    text: "Difficulty Settings & Parameters",
+  },
+  {
+    depth: 3,
+    slug: "removed-content-logos",
+    text: "Removed Content & Logo Changes",
+  },
+  { depth: 2, slug: "2023-remasters", text: "2023 Remasters" },
 ];
 ---
 
 <GuideLayout
-  title="Introduction — Persona 4 Golden Companion Guide"
-  description="Welcome to the Persona 4 Golden Companion Guide. A modern, lightweight resource for your journey in Inaba."
+  title="Persona 4 Golden Guide — Complete Game Information & Guide Reference"
+  description="Comprehensive 1-to-1 reference guide for Persona 4 Golden based on the official game information: metadata, sales, release history, main game additions, Steam Remaster, and 2023 releases."
   headings={headings}
 >
   <article class="guide-article">
-    <!-- Page Header (DESIGN.md Section 6) -->
+    <!-- Page Header -->
     <header class="article-header">
       <div class="kicker">
-        <span class="kicker-tag">COMPANION GUIDE</span>
+        <span class="kicker-tag">INTRODUCTION</span>
         <span class="kicker-divider">/</span>
-        <span class="kicker-category">GETTING STARTED</span>
+        <span class="kicker-category">GAME INFORMATION</span>
       </div>
-      <h1 class="page-title">Introduction to Persona 4 Golden</h1>
+      <h1 class="page-title">Persona 4 Golden</h1>
+      <div class="subtitle-row">
+        <span class="jp-title">ペルソナ4 ザ・ゴールデン</span>
+        <span class="romaji-title">(Perusona 4 Za Gouruden)</span>
+      </div>
       <p class="lead-text">
-        Welcome to your companion guide for <em>Persona 4 Golden</em>. This site is crafted to provide clear, scan-friendly, and comprehensive guidance through the rural town of Inaba, the Midnight Channel murders, and your high school life.
+        The definitive edition of Atlus's acclaimed murder-mystery RPG, <em
+          >Persona 4 Golden</em
+        > expands the journey through Inaba with new characters, story events, and
+        modernized gameplay systems. This page provides a comprehensive reference
+        covering game metadata, release history, version differences, and mechanical
+        additions across platforms.
       </p>
     </header>
 
-    <!-- Overview Section -->
+    <!-- Section 1: Game Information -->
     <section class="guide-section">
-      <h2 id="overview">Overview</h2>
+      <h2 id="game-information">Game Information</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-card-header">
+            <Icon name="lucide:gamepad-2" class="card-icon" size={18} />
+            <span class="info-card-label">Developer</span>
+          </div>
+          <p class="info-card-value">Atlus</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <Icon name="lucide:globe" class="card-icon" size={18} />
+            <span class="info-card-label">Publishers</span>
+          </div>
+          <p class="info-card-value">Atlus / Sega</p>
+          <span class="info-card-sub"
+            >Atlus (JPN, NA) · NIS America (EU) · Ubisoft (AU) · Sony (KR, HK,
+            TW) · Sega (PC, NS, PS4, XB1, XBS)</span
+          >
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <Icon name="lucide:layers" class="card-icon" size={18} />
+            <span class="info-card-label">Genre</span>
+          </div>
+          <p class="info-card-value">RPG</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <Icon name="lucide:monitor" class="card-icon" size={18} />
+            <span class="info-card-label">Platforms</span>
+          </div>
+          <p class="info-card-value">PS Vita, PC, Consoles</p>
+          <span class="info-card-sub"
+            >PlayStation Vita · Microsoft Windows (Steam & Microsoft Store*) ·
+            PlayStation 4 · PlayStation 5* · Nintendo Switch · Xbox One* · Xbox
+            Series X/S*</span
+          >
+        </div>
+      </div>
+
+      <!-- Sales -->
+      <h3 id="sales">Sales</h3>
+      <div class="two-col-grid">
+        <div class="data-block">
+          <h4 class="data-block-title">
+            <Icon name="lucide:clock" size={16} />
+            First Week Sales (Japan)
+          </h4>
+          <ul class="data-list">
+            <li>
+              <strong>Japan (Golden):</strong>
+              <span>152,499</span>
+            </li>
+            <li>
+              <strong>Japan (The Best):</strong>
+              <span>3,057</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="data-block">
+          <h4 class="data-block-title">
+            <Icon name="lucide:award" size={16} />
+            Life to Date Sales
+          </h4>
+          <ul class="data-list">
+            <li>
+              <strong>Japan (Total):</strong>
+              <span>324,357 units (Golden: 304,661 · The Best: 19,696)</span>
+            </li>
+            <li>
+              <strong>Worldwide (Total):</strong>
+              <span>2.4 million (As of June 30, 2021)</span>
+            </li>
+            <li>
+              <strong>Worldwide (Steam):</strong>
+              <span>1,000,000</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Development -->
+      <h3 id="development">Development</h3>
+      <div class="data-block">
+        <ul class="data-list-grid">
+          <li>
+            <strong>Director(s):</strong>
+            <span>Katsura Hashino</span>
+          </li>
+          <li>
+            <strong>Writer(s):</strong>
+            <span>Yuichiro Tanaka, Akira Kawasaki, Katsura Hashino</span>
+          </li>
+          <li>
+            <strong>Artist(s):</strong>
+            <span>Shigenori Soejima, Susumu Nishizawa</span>
+          </li>
+          <li>
+            <strong>Programmer(s):</strong>
+            <span>Yujiro Kosaka</span>
+          </li>
+          <li>
+            <strong>Composer(s):</strong>
+            <span>Shoji Meguro</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Release Dates -->
+      <h3 id="release-dates">Release Dates</h3>
+      <div class="table-wrapper">
+        <table class="p4g-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 20%;">Region</th>
+              <th scope="col" style="width: 25%;">PlayStation Vita</th>
+              <th scope="col" style="width: 25%;">Steam</th>
+              <th scope="col" style="width: 30%;"
+                >Xbox One / Series X/S, PS4, Switch, Windows 10 Store</th
+              >
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Japan</strong></td>
+              <td
+                >June 14, 2012 <span class="table-note"
+                  >The Best: February 5, 2015</span
+                ></td
+              >
+              <td>June 14, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+            <tr>
+              <td><strong>North America</strong></td>
+              <td>November 20, 2012</td>
+              <td>June 13, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+            <tr>
+              <td><strong>Europe</strong></td>
+              <td
+                >February 22, 2013 <span class="table-note"
+                  >PlayStation Store: February 20, 2013</span
+                ></td
+              >
+              <td>June 14, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+            <tr>
+              <td><strong>Australia</strong></td>
+              <td>February 21, 2013</td>
+              <td>June 13, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+            <tr>
+              <td><strong>South Korea</strong></td>
+              <td>August 24, 2012</td>
+              <td>June 14, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+            <tr>
+              <td><strong>Hong Kong</strong></td>
+              <td>August 16, 2012</td>
+              <td>June 14, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+            <tr>
+              <td><strong>Taiwan</strong></td>
+              <td>August 16, 2012</td>
+              <td>June 14, 2020</td>
+              <td>January 19, 2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 2: Overview & History -->
+    <section class="guide-section">
+      <h2 id="overview">Overview & History</h2>
       <p>
-        Persona 4 Golden seamlessly blends a turn-based dungeon crawler RPG with a Japanese high school life simulation. As the protagonist newly transferred to the quiet town of Inaba, you find yourself thrown into the center of a bizarre serial murder mystery tied to the urban legend of the <strong>Midnight Channel</strong>.
+        Persona 4 Golden, abbreviated as <strong>P4G</strong>, and also titled <em
+          >Persona 4: The Golden</em
+        > in Japan, is an enhanced re-release of Persona 4, which launched for the
+        PlayStation Vita, it adds a variety of new content and convenience features
+        to update the original game, extending its replay value. Golden was adapted
+        into an anime, <em>Persona 4 The Golden Animation</em>.
       </p>
       <p>
-        Every day in Inaba advances a calendar. How you choose to spend your mornings, after-school hours, and evenings directly influences your Persona abilities, party bonds, social parameters, and whether you uncover the ultimate truth behind the fog.
+        On June 13, 2020, the game was released on Steam for Microsoft Windows
+        PCs under the name <strong>Persona 4 Golden Remastered Edition</strong>.
+        The Remaster has received several technical enhancements, which includes
+        performance, bug fixes, and immediate availability of difficulty
+        customization.
+      </p>
+      <p>
+        In June 2022, as part of the Persona 25th Anniversary, it was announced
+        that Persona 4 Golden Remastered Edition would also be coming to Xbox
+        One, Xbox Series X/S, PlayStation 4 and the Nintendo Switch.
+        Additionally, a Windows 10 Store version of the game was released for
+        Microsoft Windows PCs. These versions of the game launched worldwide on
+        January 19, 2023. The Xbox console and Windows 10 versions of the game
+        were playable on Microsoft's Xbox Game Pass service until their removal
+        in January 2024.
       </p>
     </section>
 
-    <!-- How to Use This Guide -->
+    <!-- Section 3: Additions (Main Game) -->
     <section class="guide-section">
-      <h2 id="how-to-use">How to Use This Guide</h2>
-      <p>
-        This companion is built specifically to be open beside you while playing. Rather than forcing you to sift through monolithic walls of text, information is broken down into modular, time-stamped, and task-focused sections.
+      <h2 id="additions">Additions</h2>
+      <p class="section-intro">
+        Golden introduces a wealth of new content, narrative expansions, system
+        overhauls, and convenience options to the main game:
       </p>
 
-      <h3 id="calendar-pacing">Calendar & Daily Pacing</h3>
+      <!-- Two new Social Links -->
+      <h3 id="new-social-links">Two New Social Links</h3>
       <p>
-        Days are divided into strict time slots: <strong>Morning / Class</strong>, <strong>After School / Daytime</strong>, and <strong>Evening</strong>. Our walkthrough schedules will clearly indicate:
+        They examine the themes of the game from new perspectives. Both Social
+        Links are capable of unlocking new story content:
       </p>
-      <ul>
-        <li><strong>Classroom questions & pop quizzes</strong>: Exact answers to boost your Knowledge parameter or impress teachers.</li>
-        <li><strong>Recommended daily actions</strong>: Who to hang out with, which part-time jobs to work, or which books to read.</li>
-        <li><strong>Weather forecasts</strong>: Rainy days offer exclusive beef bowl challenges, special fishing conditions, and dungeon opportunities.</li>
+      <div class="two-col-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:sparkles" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Marie (Aeon Arcana)</h4>
+            <p>
+              A Persona 4 Golden exclusive character, of the returning Aeon
+              Arcana from <em>Persona 3 FES</em>. An antisocial and mysterious
+              girl who lost her memories.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:users" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Tohru Adachi (Jester Arcana)</h4>
+            <p>
+              A character from the original Persona 4, of the new Jester Arcana.
+              Adachi's Social Link tackles his dissatisfaction with the country
+              life.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Dungeon & Bad Ending -->
+      <h3 id="new-dungeon-endings">New Dungeon & Bad Ending</h3>
+      <div class="data-block">
+        <h4 class="data-block-title">
+          <Icon name="lucide:map-pin" size={16} />
+          A New Dungeon: Hollow Forest
+        </h4>
+        <p>
+          If the protagonist maxes the Aeon Arcana Social Link before defeating
+          Ameno-sagiri, the Investigation Team will visit the new dungeon, the <strong
+            >Hollow Forest</strong
+          >, which must be cleared to unlock the new epilogue.
+        </p>
+      </div>
+
+      <div class="story-highlight-box">
+        <div class="highlight-title-row">
+          <Icon name="lucide:alert-triangle" class="tv-icon" size={20} />
+          <h4 class="highlight-title">
+            A New Bad Ending (The Accomplice Ending)
+          </h4>
+        </div>
+        <p>
+          If the protagonist discovers the true culprit near the end of the
+          game, but decides not to tell his friends about them, on <strong
+            >March 20, 2012</strong
+          >, he is given the option to meet them and destroy the evidence of
+          their crime, turning him into their accomplice. If he does so, the
+          mystery of Inaba's murders will never be solved and the protagonist
+          will leave Inaba with the true culprit getting away with everything
+          they had done.
+        </p>
+        <p>
+          They will threaten the protagonist to pick up the phone when they
+          call, and the credits then roll with <em>"Corridor"</em> playing in the
+          background. Afterwards, a special scene is shown where the protagonist witnesses
+          the killer walking near his train as he returns to his home city, and he
+          clutches his cellphone as the train disappears into a tunnel.
+        </p>
+        <p>
+          Choosing not to see the killer when prompted on March 20th will result
+          in them calling the protagonist to inform him they are moving overseas
+          and will not be available to be contacted ever again. If he is met on
+          March 20th but the player chooses vague dialogue, they will simply
+          leave. Refusing to burn the evidence will cause them to threaten you
+          before leaving. All three above scenarios will result in the normal
+          bad ending cutscene and credits roll.
+        </p>
+      </div>
+
+      <!-- New Difficulty Levels -->
+      <h3 id="difficulty-levels">New Difficulty Levels</h3>
+      <p>
+        New difficulty levels have been added, similarly to <em
+          >Persona 3 Portable</em
+        >. On New Game+, or from the start on the Remastered version, the
+        difficulty can be changed and even customized levels for individual game
+        elements in the configuration menu. The pre-set levels of difficulty
+        are:
+      </p>
+      <ul class="bullet-list">
+        <li><strong>Safety:</strong> Very Easy in NA Version</li>
+        <li>
+          <strong>Easy:</strong> Left untouched in NA Version, used to be called Beginner
+        </li>
+        <li><strong>Normal</strong></li>
+        <li>
+          <strong>Hard:</strong> Left untouched in NA Version, used to be called Expert
+        </li>
+        <li><strong>Risky:</strong> Very Hard in NA Version</li>
       </ul>
 
-      <h3 id="social-links-overview">Social Links & True Ending</h3>
-      <p>
-        Forging bonds with the residents of Inaba (known as Social Links) grants EXP bonuses during Persona fusion and unlocks powerful combat abilities for your teammates. Certain Social Links—notably the <strong>Aeon</strong> arcana (Marie) and the <strong>Jester/Hunger</strong> arcana (Adachi)—are strictly required to access the Golden epilogue and bonus dungeon.
-      </p>
+      <!-- Audio & Character Updates -->
+      <h3 id="audio-visual">Audio, Voice & Persona Additions</h3>
+      <div class="features-list-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:music" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>New Music Tracks & Voiced Lines</h4>
+            <p>
+              Several new music tracks composed by Shoji Meguro. Additional
+              voice-over dialogue recorded throughout the story and daily
+              events.
+            </p>
+          </div>
+        </div>
 
-      <h3 id="missables-caution">Missables & Key Decisions</h3>
-      <p>
-        Persona 4 Golden has several irreversible branching decision points, particularly during the critical month of <strong>December</strong>. One incorrect dialogue option can instantly cut the game short with a bad ending. This guide flags these sensitive events in advance with spoiler-free alerts.
-      </p>
-    </section>
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:volume-2" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>English Voice Actor Recasts</h4>
+            <p>
+              Chie and Teddie have new voice actors in the English version, now
+              being voiced by <strong>Erin Fitzgerald</strong> and <strong
+                >Sam Riegel</strong
+              >, their respective voice actors from <em
+                >Persona 4 The Animation</em
+              >, replacing Tracey Rooney and Dave Wittenberg from the original
+              game.
+            </p>
+          </div>
+        </div>
 
-    <!-- Layout Review Section -->
-    <section class="guide-section">
-      <h2 id="layout-review">Layout & Design System Review</h2>
-      <p>
-        This page represents the newly established design system from <code>DESIGN.md</code>:
-      </p>
-      <ul>
-        <li><strong>3-Column Desktop Grid</strong>: The site uses a fixed-width Global Navigation on the left (<code>~260px</code>), a comfortable reading container in the center (<code>~760px</code>), and a sticky "On this page" Local Navigation on the right (<code>~220px</code>).</li>
-        <li><strong>P4G Color Palette</strong>: Restrained golden yellow (<code>#F2C94C</code>) accents, dark charcoal text (<code>#202020</code>), off-white background (<code>#F7F5EF</code>), and crisp surface cards (<code>#FFFFFF</code>).</li>
-        <li><strong>Scrollspy Local Navigation</strong>: Notice how the right rail dynamically tracks your scroll progress and highlights the current section.</li>
-        <li><strong>Responsive Collapsing</strong>: On mobile viewports, the left sidebar transforms into a slide-over drawer accessible via the topbar menu, while the local navigation turns into a collapsible inline accordion above the content.</li>
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:sparkles" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>More Personas & Third-Tier Evolutions</h4>
+            <p>
+              More Personas, including new ultimate Personas for the
+              Investigation Team. Upon evolving these third-tier Personas, these
+              party members will be able to learn unique skills.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Areas, Events & Cutscenes -->
+      <h3 id="events-locations">New Areas, Events & Animated Cutscenes</h3>
+      <div class="data-block">
+        <h4 class="data-block-title">
+          <Icon name="lucide:map" size={16} />
+          New Areas to Visit
+        </h4>
+        <p>
+          New areas can be visited, such as <strong>Shichiri Beach</strong>. <strong
+            >Okina City</strong
+          >, which was only seen during certain Social Link scenes, can now be
+          accessible during the protagonist's Daily Life.
+        </p>
+      </div>
+
+      <div class="data-block">
+        <h4 class="data-block-title">
+          <Icon name="lucide:calendar" size={16} />
+          New Events & Story Additions
+        </h4>
+        <ul class="bullet-list">
+          <li>
+            The Investigation Team applies for scooter licenses and uses them to
+            visit Okina City and Shichiri Beach.
+          </li>
+          <li>
+            The protagonist may also spend New Year's and Valentine's Day with
+            one of his lovers.
+          </li>
+          <li>
+            Miscellaneous events include a fireworks festival, a Halloween event
+            & a concert held by the team themselves.
+          </li>
+          <li>
+            If the necessary criteria for at least the original good ending are
+            fulfilled, daily activities are expanded to <strong
+              >February 14, 2012</strong
+            >, giving more time for events and Social Links.
+          </li>
+          <li>
+            The protagonist spends additional time with Nanako and Dojima on New
+            Year. As they're only temporarily dispatched, the protagonist will
+            live with Teddie until they return.
+          </li>
+          <li>
+            The Investigation Team visits a ski resort after the end of their
+            exams.
+          </li>
+          <li>A brand-new epilogue has been added for the True Ending.</li>
+        </ul>
+      </div>
+
+      <!-- Daily Life & Minigame Additions -->
+      <h3 id="daily-life-activities">Daily Life, Vehicles & Minigames</h3>
+      <div class="features-list-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:moon" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Evening Exploration in Inaba</h4>
+            <p>
+              The protagonist can now explore Inaba in the evening when Dojima
+              is not home or as soon as he's been given direct permission from
+              him after applying for a part-time job. Places to visit are
+              limited, just like in <em>Persona 3</em>.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:bike" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Motorized Scooters</h4>
+            <p>
+              The protagonist and his friends now have motorized scooters to
+              explore various areas. The protagonist may spend time riding it,
+              which after several rides is the means to unlocking Shichiri Beach
+              and Okina City. Additionally, riding a scooter with a teammate
+              will teach them new skills or help them remember old skills.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:shirt" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Costumes at Croco Fur</h4>
+            <p>
+              Costumes are now available to buy at Croco Fur, in Okina City.
+              Costumes have their own slot for equipment, and affect the
+              Investigation Team's appearance, similarly to <em
+                >Persona 3 FES</em
+              > and <em>Persona 3 Portable</em>. Costumes do not affect the
+              party's stats.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:sprout" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>New Garden & Bug Catching</h4>
+            <p>
+              New Garden activities at the Dojima residence and Bug Catching
+              minigame at the shrine and trees.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- System, Online & Quality of Life -->
+      <h3 id="system-features">System Features & Quality of Life</h3>
+      <ul class="bullet-list">
+        <li><strong>Trophy System:</strong> A Trophy system has been added.</li>
+        <li>
+          <strong>Manual Skill Inheritance:</strong> The ability to choose which skills
+          can be inherited by the Persona the protagonist is fusing. (However, inheritance
+          restrictions still apply.)
+        </li>
+        <li>
+          <strong>Vox Populi (Voice of the People):</strong> Available while connected
+          online. Can be used to see what other players of Persona 4 Golden have chosen
+          to do during the current day in the game. The feature is also available
+          in the Velvet Room to see what Personas other players are currently fusing.
+        </li>
+        <li>
+          <strong>SOS Feature:</strong> Calls other online players for help in dungeons,
+          allows sending help to others, and is received as a gift of a minor amount
+          of health and spirit. The amount restored by the SOS is very little and
+          isn't restricted by the current health status of your party.
+        </li>
+        <li><strong>Scene Skipping:</strong> New scene skipping function.</li>
+        <li>
+          <strong>Requests & Fox Emas:</strong> The list of Requests and the Fox's
+          emas have been modified.
+        </li>
       </ul>
+
+      <!-- Battle Tweaks -->
+      <h3 id="battle-tweaks">Battle Flow & Balance Tweaks</h3>
+      <p>The flow of battle has been tweaked:</p>
+      <ul class="bullet-list">
+        <li>
+          Some shadows/enemies had their elemental attributes or area spawn
+          changed.
+        </li>
+        <li>
+          <strong>Shuffle Time has been revised:</strong> Replaced with a tactical
+          card-selection system with sweep bonuses.
+        </li>
+        <li>Characters have been rebalanced.</li>
+        <li>
+          The <strong>"Confuse"</strong> status has been renamed to <strong
+            >"Panic"</strong
+          > in the English version.
+        </li>
+        <li>
+          <strong>Rise Assistance:</strong> Rise can now assist the Investigation
+          Team in All-Out-Attacks.
+        </li>
+        <li>
+          <strong>Tag Team Attacks:</strong> Two members can team up to perform a
+          united attack.
+        </li>
+        <li>
+          <strong>Cavalry Attacks:</strong> Attacks from members of the Investigation
+          Team that are not currently in the active party. These usually follow up
+          a Weak/Critical attack that downs an additional enemy or two, allowing for
+          an All-Out Attack.
+        </li>
+        <li>
+          <strong>Reduced Spell Cost:</strong> Some spells have reduced usage cost
+          (Megidolaon now only costs 38 SP and Morning Star costs 55 SP).
+        </li>
+        <li>
+          <strong>Prolong Buffs/Debuffs:</strong> Spell buffs and debuffs can now
+          be used on the same character to prolong the effect.
+        </li>
+      </ul>
+
+      <!-- Miscellaneous Gameplay Changes -->
+      <h3 id="gameplay-changes">Miscellaneous Gameplay Changes</h3>
+      <ul class="bullet-list">
+        <li>
+          The <strong>Fishing minigame</strong> has been revamped with more bait,
+          replacing the original Bait item. Additionally, the activity was expanded
+          with the ability to fish at Shichiri Beach.
+        </li>
+        <li>
+          <strong>Tanaka's Amazing Commodities</strong>, aside from being
+          extended to air in January and February, is now available in any
+          remaining weeks that were otherwise skipped in the original Persona 4,
+          with the exception of November 27th until the end of the year.
+          Additionally, offers can be caught on Monday and Tuesday.
+        </li>
+        <li>
+          Enemies can also drop <strong>jewels</strong>, which can be exchanged
+          at the Shiroku Pub.
+        </li>
+        <li>
+          Rare enemies, such as the <strong>Treasure Hand</strong>, no longer
+          drop Chest Keys. Instead, they will drop <strong
+            >Magatsu Xandrite</strong
+          >, a jewel for trade.
+        </li>
+        <li>
+          Trading items at the <strong>Riverbed</strong> is no longer available. The
+          items that would be received through the Riverbed can still be obtained
+          via different means, including Shiroku Pub.
+        </li>
+        <li>
+          Numbers of certain materials sold required to unlock gear was changed.
+        </li>
+        <li>
+          The <strong>Rainy Brother 3</strong> is no longer in Golden, hence the material
+          <em>3rd Boy's Talc</em> and its respective weapon <em
+            >Downpour Sword</em
+          > can no longer be obtained.
+        </li>
+        <li>
+          Floors and chests in dungeons can now <strong
+            >reset by changing floors</strong
+          > instead of leaving the dungeon and TV world, or visiting another dungeon.
+        </li>
+      </ul>
+
+      <!-- TV Listings (Gallery Mode) -->
+      <h3 id="tv-listings">TV Listings (Gallery Mode)</h3>
+      <p>
+        A new gallery menu has been added: <strong>"TV Listings."</strong> It displays
+        bonus content unlocked through the main game at any time. Bonus content and
+        the game itself are presented as television shows. The various shows are:
+      </p>
+
+      <div class="table-wrapper">
+        <table class="p4g-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 30%;">Show / Program</th>
+              <th scope="col" style="width: 70%;">Content Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Song Battle 2012</strong></td>
+              <td>
+                Various clips from Persona Music Live 2008 in Akasaka Blitz and
+                Persona Music Live 2009 in Wei City Tokyo.<br />
+                <em>Persona Music Live 2008</em> in Akasaka Blitz includes "Pursuing
+                My True Self," "Mass Destruction" and "Reach Out To The Truth."<br
+                />
+                <em>Persona Music Live 2009</em> in Wei City Tokyo includes "P3 FES,"
+                "Deep Breath Deep Breath" and "Never More."
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Mr. Edogawa's TV Classroom</strong></td>
+              <td
+                >Lectures on the various themes of the game and their relation
+                to psychology.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Midnight Trivia Miracle Quiz</strong></td>
+              <td
+                >A quiz show with questions regarding minor aspects of Inaba and
+                the Shadow World. The character dialogue in this content is
+                fully voiced.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Daily Personamations!</strong></td>
+              <td
+                >A hub for rewatching the game's animated cutscenes. Scenes are
+                unlocked as they are encountered during play.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>P4 Golden</strong></td>
+              <td
+                >The main game, this program serves as a link to return to the
+                game.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Our Summer Vacation</strong></td>
+              <td
+                >Replays the events of the ending. This is unlocked after
+                clearing the Story.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Giants of P</strong></td>
+              <td
+                >A series that shows Persona 4 concept art with commentary on
+                each piece. Additional pieces of art are unlocked as the story
+                progresses.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>HEE! HEE! HOO! Music King</strong></td>
+              <td
+                >An in-game music player for listening to previously encountered
+                music. Additional tracks are unlocked through playing the game.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Persona Hits</strong></td>
+              <td
+                >This series shows various Japanese television commercials and
+                trailers for Persona on PSP, Persona 3 on PS2, Persona 3
+                Portable on PSP and Persona 4 on PS2.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>What is P4 Arena?</strong></td>
+              <td
+                >Plays the P1 Grand Prix introduction video from the Persona 4
+                Arena story mode.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>P4 the Animation!</strong></td>
+              <td
+                >A Japanese extended trailer for Persona 4 The Animation, this
+                content has the original Japanese audio and does not contain
+                subtitles.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>The Midnight Channel</strong></td>
+              <td
+                >A Minigame accessible only when the PlayStation Vita's clock is
+                at Midnight until 1:00 AM. It features Teddie covered by TV
+                static and can be manipulated with the device's touchscreen.
+                Teddie is fully voiced in this mode.</td
+              >
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Region Exclusive Content -->
+      <h3 id="region-exclusive">Region Exclusive Content</h3>
+      <p>
+        The Japanese and Korean versions of the game feature Marie's interviews
+        with the Japanese voice actors for the twelve main characters in <strong
+          >"Marie's Room."</strong
+        > This was cut in the English version.
+      </p>
     </section>
 
-    <!-- Next Steps Section -->
+    <!-- Section 4: Steam Version -->
     <section class="guide-section">
-      <h2 id="next-steps">Next Steps</h2>
+      <h2 id="steam-version">Steam Version</h2>
       <p>
-        Please review the layout, typography, proportions, and color contrast on your display. Once you confirm the layout is ready, we will proceed to implement the dedicated guide chapters (Walkthrough, Calendar, Social Links, and Databases).
+        The Steam version of Persona 4 Golden is a remaster of the original
+        game.
       </p>
+
+      <div class="features-list-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:wrench" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Bug Fixes</h4>
+            <p>
+              The glitch where the game may act up if the player restarts a
+              battle too many times was fixed in the Steam version, and the
+              player will have no problems restarting multiple times.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:monitor" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Graphics Options</h4>
+            <p>
+              The game will run at up to 4K resolution with 60FPS+ as opposed to
+              the Vita's 476p resolution and 30FPS target.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <Icon name="lucide:languages" size={20} />
+          </div>
+          <div class="feature-content">
+            <h4>Language Options</h4>
+            <p>
+              Additionally, like Persona 5 Royal, the Steam version includes
+              dual audio language and multiple text language. The Japanese
+              version also includes dual audio settings. The anime cutscenes now
+              also include subtitles like <em>Persona 4: Dancing All Night</em>.
+              Changing the language on the Steam version will default the
+              protagonist's name to "Yu Narukami," and the language changes need
+              to be reverted to use the original name.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Difficulty Settings -->
+      <h3 id="steam-difficulty">Difficulty Settings</h3>
+      <p>
+        In the Steam version, the difficulty setting can be customized at any
+        time, in contrast to the Vita version only allowing it to be done so on
+        New Game Plus. A preset difficulty setting can be chosen, or
+        individually alter the following parameters:
+      </p>
+
+      <div class="table-wrapper">
+        <table class="p4g-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 25%;">Parameter</th>
+              <th scope="col" style="width: 25%;">Values</th>
+              <th scope="col" style="width: 50%;">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Damage Taken</strong></td>
+              <td>Great, Normal, Small</td>
+              <td
+                >Damage dealt to a party member by any enemy. The lower the
+                value, the easier it is to survive.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Damage Given</strong></td>
+              <td>Great, Normal, Small</td>
+              <td
+                >Damage dealt by a party member to any enemy. The higher the
+                value, the faster foes are defeated.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>EXP Won</strong></td>
+              <td>More, Normal, Less</td>
+              <td
+                >Experience Points rewarded after each fight. The higher the
+                value, the faster levels are gained.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Money Won</strong></td>
+              <td>More, Normal, Less</td>
+              <td
+                >Yen rewarded after each fight. The higher the value, the easier
+                it is to get rich.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Retries in Dungeons</strong></td>
+              <td>Use, Don't Use</td>
+              <td
+                >Determines if the game allows a retry when the protagonist is
+                knocked out in a battle by spawning them at the entrance of the
+                dungeon floor the player lost the battle at (with all party
+                members' HP and SP set to the values they were at upon last
+                visit) or sends them directly back to the title screen.</td
+              >
+            </tr>
+            <tr>
+              <td><strong>Retries in Battles</strong></td>
+              <td>Use, Don't Use</td>
+              <td
+                >Determines if the game allows a retry when the protagonist is
+                knocked out in a battle by reviving and restoring all party
+                members to full HP and SP while continuing the battle, or retry
+                in the dungeon (if enabled) or directly back to the title
+                screen.</td
+              >
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Removed Content & Logo Changes -->
+      <h3 id="removed-content-logos">
+        Removed Content, Logo Changes, Patches & Steam Awards
+      </h3>
+
+      <div class="data-block">
+        <h4 class="data-block-title">
+          <Icon name="lucide:trash-2" size={16} />
+          Removed Content
+        </h4>
+        <p>
+          Some items in the game's gallery mode "TV Listings" have been removed
+          due to obsolescence:
+        </p>
+        <ul class="bullet-list">
+          <li>"Song Battle 2012"</li>
+          <li>"Persona Hits (Trailers for previous Persona games)"</li>
+          <li>"What is P4 Arena?"</li>
+          <li>"P4 the Animation!"</li>
+        </ul>
+      </div>
+
+      <div class="data-block">
+        <h4 class="data-block-title">
+          <Icon name="lucide:flag" size={16} />
+          Logo Changes
+        </h4>
+        <ul class="bullet-list">
+          <li>
+            In the credits the P4G logo is labeled <strong
+              >Persona 4 Golden Remastered Edition</strong
+            >.
+          </li>
+          <li>The original ATLUS logo is updated to the current ATLUS logo.</li>
+          <li>The CRIWARE logo is replaced by the P-Studio logo.</li>
+          <li>
+            The copyrights <em
+              >"©Index Corporation 1996, 2011 Produced by ATLUS"</em
+            > in the Japanese version and <em
+              >"©Index Corporation 1996, 2012 Produced by ATLUS"</em
+            > in the Western version are changed to <strong
+              >"©ATLUS. ©SEGA. All rights reserved."</strong
+            > This change emphasizes ATLUS' current parent company, SEGA.
+          </li>
+        </ul>
+      </div>
+
+      <div class="two-col-grid">
+        <div class="data-block">
+          <h4 class="data-block-title">
+            <Icon name="lucide:download" size={16} />
+            Patches
+          </h4>
+          <p>
+            In addition to the above changes, the Steam version of the game also
+            received post-launch support in the form of a dedicated bug fix
+            patch. For more information, see List of Patches and Updates.
+          </p>
+        </div>
+
+        <div class="data-block">
+          <h4 class="data-block-title">
+            <Icon name="lucide:award" size={16} />
+            Steam Awards
+          </h4>
+          <p>
+            In 2020, Persona 4 Golden Remastered Edition was one of the 5
+            nominees for the <strong>"Best Soundtrack"</strong> category of the Steam
+            Awards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: 2023 Remasters -->
+    <section class="guide-section">
+      <h2 id="2023-remasters">2023 Remasters</h2>
+      <p>
+        All of the changes from the Steam version are carried over into the 2023
+        remastered versions.
+      </p>
+
+      <ul class="bullet-list">
+        <li>
+          <strong>Expanded Localization:</strong> Unlike previous versions of the
+          game, the Xbox One, Xbox Series X/S, PlayStation 4, Nintendo Switch and
+          Windows Store Remasters are localized in French, Italian, German, Spanish
+          and Simplified Chinese. Just like the Steam version, the game features dual
+          audio.
+        </li>
+        <li>
+          <strong>Quick Save:</strong> Players are now able to perform a Quick Save
+          at any point in the game without having to manually use a save point; quick
+          saving exits the player to the main menu.
+        </li>
+        <li>
+          <strong>Album Feature:</strong> A new Album feature is selectable from the
+          protagonist's room, allowing the player to look at previous events with
+          any established Social Links in their playthrough. The Album can also be
+          used to replay a selected Rank event and alter the protagonist's responses
+          in order to see different outcomes.
+        </li>
+        <li>
+          <strong>Conversation Log:</strong> A conversation log showing previous dialogue
+          lines is added; it resets after every scene.
+        </li>
+        <li>
+          <strong>Successive Steam Updates:</strong> In addition, the original Steam
+          version of Persona 4 Golden would be updated in succession.
+        </li>
+      </ul>
     </section>
   </article>
 </GuideLayout>
@@ -99,9 +1068,10 @@ const headings = [
   .guide-article {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
+  /* Header Styles */
   .article-header {
     border-bottom: 2px solid var(--p4g-border-subtle);
     padding-bottom: 1.75rem;
@@ -132,30 +1102,422 @@ const headings = [
   }
 
   .page-title {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.15;
+    color: var(--p4g-dark);
+    font-family: var(--font-heading);
+  }
+
+  .subtitle-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
     margin-bottom: 1rem;
-    line-height: 1.2;
+  }
+
+  .jp-title {
+    font-size: 1.15rem;
+    font-weight: 700;
     color: var(--p4g-dark);
   }
 
+  .romaji-title {
+    font-size: 0.95rem;
+    color: var(--p4g-gray);
+    font-style: italic;
+  }
+
   .lead-text {
-    font-size: 1.125rem;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.65;
     color: #444444;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+    color: #444444;
+    margin-bottom: 0.5rem;
   }
 
   .guide-section {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Section Heading Styles */
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--p4g-border-subtle);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--p4g-dark);
+    font-family: var(--font-heading);
+  }
+
+  h2::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 1.15em;
+    background-color: var(--p4g-yellow);
+    border-radius: 2px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--p4g-dark);
+    font-family: var(--font-heading);
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--p4g-dark);
+    margin-bottom: 0.35rem;
+  }
+
+  /* Info Grid */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card {
+    background: #faf9f6;
+    border: 1px solid var(--p4g-border);
+    border-radius: 6px;
+    padding: 1rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    transition:
+      transform var(--transition-fast),
+      border-color var(--transition-fast),
+      box-shadow var(--transition-fast);
+  }
+
+  .info-card:hover {
+    border-color: var(--p4g-yellow);
+    box-shadow: 0 4px 12px rgba(32, 32, 32, 0.07);
+    transform: translateY(-2px);
+  }
+
+  .info-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--p4g-gray);
+  }
+
+  .card-icon {
+    color: var(--p4g-dark);
+  }
+
+  .info-card-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .info-card-value {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--p4g-dark);
+    margin: 0;
+  }
+
+  .info-card-sub {
+    font-size: 0.8rem;
+    color: var(--p4g-gray);
+    line-height: 1.4;
+  }
+
+  /* Two Column Grid */
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .data-block {
+    background: var(--p4g-surface);
+    border: 1px solid var(--p4g-border);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .data-block-title {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--p4g-dark);
+    border-bottom: 1px solid var(--p4g-border-subtle);
+    padding-bottom: 0.5rem;
+  }
+
+  .data-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .data-list li {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .data-list li strong {
+    color: var(--p4g-dark);
+    font-weight: 700;
+  }
+
+  .data-list li span {
+    color: #555555;
+  }
+
+  .data-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .data-list-grid li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.92rem;
+  }
+
+  .data-list-grid li strong {
+    color: var(--p4g-dark);
+    font-weight: 700;
+  }
+
+  .data-list-grid li span {
+    color: #555555;
+  }
+
+  /* Story Box */
+  .story-highlight-box {
+    background: linear-gradient(135deg, #262626 0%, #1a1a1a 100%);
+    color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1.5rem 1.75rem;
+    border-left: 5px solid var(--p4g-yellow);
+    margin: 0.75rem 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
+
+  .highlight-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tv-icon {
+    color: var(--p4g-yellow);
+  }
+
+  .highlight-title {
+    color: var(--p4g-yellow);
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: var(--font-heading);
+  }
+
+  .story-highlight-box p {
+    color: #e2e2e2;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .story-highlight-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Features List Grid */
+  .features-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 1rem;
+    background: #ffffff;
+    border: 1px solid var(--p4g-border);
+    border-radius: 6px;
+    padding: 1.25rem;
+    transition:
+      border-color var(--transition-fast),
+      box-shadow var(--transition-fast);
+  }
+
+  .feature-item:hover {
+    border-color: var(--p4g-yellow);
+    box-shadow: 0 4px 12px rgba(32, 32, 32, 0.06);
+  }
+
+  .feature-icon-wrapper {
+    background: var(--p4g-yellow-light);
+    color: var(--p4g-dark);
+    border: 1px solid #ebd9a2;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .feature-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    color: var(--p4g-dark);
+  }
+
+  .feature-content p {
+    font-size: 0.88rem;
+    color: #555555;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* Tables */
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 0.75rem 0 1.25rem;
+    border: 1px solid var(--p4g-border);
+    border-radius: 6px;
+    background: var(--p4g-surface);
+  }
+
+  .p4g-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    text-align: left;
+  }
+
+  .p4g-table th {
+    background-color: #f5f3ec;
+    color: var(--p4g-dark);
+    font-weight: 700;
+    padding: 0.85rem 1rem;
+    border-bottom: 2px solid var(--p4g-yellow);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .p4g-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--p4g-border-subtle);
+    color: #333333;
+    line-height: 1.5;
+  }
+
+  .p4g-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .p4g-table tr:hover td {
+    background-color: #faf8f2;
+  }
+
+  .table-note {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--p4g-gray);
+    margin-top: 0.2rem;
+  }
+
+  /* Bullet Lists */
+  .bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .bullet-list li {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #444444;
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  .bullet-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--p4g-yellow);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .bullet-list strong {
+    color: var(--p4g-dark);
+    font-weight: 700;
   }
 
   @media (max-width: 768px) {
     .page-title {
-      font-size: 1.75rem;
+      font-size: 1.85rem;
     }
 
     .lead-text {
       font-size: 1rem;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .features-list-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .two-col-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
