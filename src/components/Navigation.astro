@@ -79,12 +79,12 @@ const isItemActive = (href?: string) => {
   </div>
 
   <div class="mobile-header-center">
-    <a href={`${baseUrl}/`} class="mobile-brand-link" aria-label="Persona 4 Golden Guide Home">
-      <Image
-        src={p4gLogo}
-        alt="Persona 4 Golden"
-        class="mobile-brand-logo"
-      />
+    <a
+      href={`${baseUrl}/`}
+      class="mobile-brand-link"
+      aria-label="Persona 4 Golden Guide Home"
+    >
+      <Image src={p4gLogo} alt="Persona 4 Golden" class="mobile-brand-logo" />
     </a>
   </div>
 
@@ -100,11 +100,7 @@ const isItemActive = (href?: string) => {
 <aside id="global-sidebar" class="global-sidebar" aria-label="Main Navigation">
   <div class="sidebar-header">
     <a href={`${baseUrl}/`} class="sidebar-brand">
-      <Image
-        src={p4gLogo}
-        alt="Persona 4 Golden"
-        class="brand-logo"
-      />
+      <Image src={p4gLogo} alt="Persona 4 Golden" class="brand-logo" />
       <div class="brand-titles">
         <span class="brand-title">PERSONA 4 GOLDEN</span>
         <span class="brand-subtitle">COMPANION GUIDE</span>
@@ -467,19 +463,19 @@ const isItemActive = (href?: string) => {
 
     if (!toggleBtn || !sidebar || !backdrop) return;
 
-    function openNav() {
+    const openNav = () => {
       sidebar.classList.add("open");
       backdrop.classList.add("open");
       toggleBtn.setAttribute("aria-expanded", "true");
       document.body.style.overflow = "hidden";
-    }
+    };
 
-    function closeNav() {
+    const closeNav = () => {
       sidebar.classList.remove("open");
       backdrop.classList.remove("open");
       toggleBtn.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
-    }
+    };
 
     toggleBtn.addEventListener("click", () => {
       const isOpen = sidebar.classList.contains("open");
