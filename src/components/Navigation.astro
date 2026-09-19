@@ -186,40 +186,56 @@ const isItemActive = (href?: string) => {
 
   <nav class="sidebar-nav">
     {
-      navSections.map((section) => (
-        <div class="nav-group">
-          <h2 class="nav-group-title">{section.title}</h2>
-          <ul class="nav-list">
-            {section.items.map((item) => {
-              const active = isItemActive(item.href);
-              return (
-                <li class="nav-item">
-                  {item.isAvailable ? (
-                    <a
-                      href={item.href}
-                      class:list={["nav-link", { active }]}
-                      aria-current={active ? "page" : undefined}
-                    >
-                      <span class="active-indicator" aria-hidden="true">
-                        ▌
+      navSections.map((section, index) => {
+        const hasActive = section.items.some((item) => isItemActive(item.href));
+        const isOpenByDefault = hasActive || index === 0;
+
+        return (
+          <details
+            class:list={["nav-group", { "has-active": hasActive }]}
+            open={isOpenByDefault}
+            data-section-title={section.title}
+          >
+            <summary class="nav-group-header">
+              <span class="nav-group-title">{section.title}</span>
+              <Icon
+                name="lucide:chevron-down"
+                size={15}
+                class="nav-group-chevron"
+              />
+            </summary>
+            <ul class="nav-list">
+              {section.items.map((item) => {
+                const active = isItemActive(item.href);
+                return (
+                  <li class="nav-item">
+                    {item.isAvailable ? (
+                      <a
+                        href={item.href}
+                        class:list={["nav-link", { active }]}
+                        aria-current={active ? "page" : undefined}
+                      >
+                        <span class="active-indicator" aria-hidden="true">
+                          ▌
+                        </span>
+                        <span class="link-label">{item.title}</span>
+                      </a>
+                    ) : (
+                      <span class="nav-link disabled" title="Coming soon">
+                        <span class="inactive-bullet" aria-hidden="true">
+                          ·
+                        </span>
+                        <span class="link-label">{item.title}</span>
+                        <span class="upcoming-badge">SOON</span>
                       </span>
-                      <span class="link-label">{item.title}</span>
-                    </a>
-                  ) : (
-                    <span class="nav-link disabled" title="Coming soon">
-                      <span class="inactive-bullet" aria-hidden="true">
-                        ·
-                      </span>
-                      <span class="link-label">{item.title}</span>
-                      <span class="upcoming-badge">SOON</span>
-                    </span>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      ))
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+        );
+      })
     }
   </nav>
 
@@ -477,28 +493,91 @@ const isItemActive = (href?: string) => {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.35rem;
   }
 
   .nav-group {
+    display: block;
+  }
+
+  .nav-group-header {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.65rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    list-style: none;
+    transition:
+      background-color var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  .nav-group-header::-webkit-details-marker {
+    display: none;
+  }
+
+  .nav-group-header::marker {
+    display: none;
+  }
+
+  .nav-group-header:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+
+  .nav-group-header:focus-visible {
+    outline: 2px solid var(--p4g-yellow);
+    outline-offset: 2px;
   }
 
   .nav-group-title {
     font-family: var(--font-display);
     font-size: 0.825rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    color: rgba(255, 255, 255, 0.45);
-    margin: 0 0 0.5rem 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
     padding: 0;
     border: none;
     text-transform: uppercase;
+    transition: color var(--transition-fast);
   }
 
-  .nav-group-title::before {
-    display: none; /* override global h2 marker */
+  .nav-group-header:hover .nav-group-title {
+    color: #f7f5ef;
+  }
+
+  .nav-group.has-active > .nav-group-header .nav-group-title {
+    color: var(--p4g-yellow);
+    font-weight: 600;
+  }
+
+  .nav-group-chevron {
+    color: rgba(255, 255, 255, 0.35);
+    flex-shrink: 0;
+    transform: rotate(-90deg);
+    transition:
+      transform var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  .nav-group[open] > .nav-group-header .nav-group-chevron {
+    transform: rotate(0deg);
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .nav-group.has-active > .nav-group-header .nav-group-chevron {
+    color: var(--p4g-yellow);
+  }
+
+  .nav-group-header:hover .nav-group-chevron {
+    color: var(--p4g-yellow);
+  }
+
+  .nav-group[open] .nav-list {
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
   }
 
   .nav-list {
@@ -680,6 +759,55 @@ const isItemActive = (href?: string) => {
     });
   }
 
-  setupNavDrawer();
-  document.addEventListener("astro:page-load", setupNavDrawer);
+  // Collapsible nav entries with localStorage state persistence
+  function setupCollapsibleNav() {
+    const STORAGE_KEY = "p4g_nav_sections_state";
+    const groups = document.querySelectorAll<HTMLDetailsElement>(
+      "#global-sidebar .nav-group"
+    );
+    if (!groups.length) return;
+
+    // Restore saved state
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        const state: Record<string, boolean> = JSON.parse(stored);
+        groups.forEach((details) => {
+          const title = details.getAttribute("data-section-title");
+          const hasActive = details.classList.contains("has-active");
+          if (hasActive) {
+            details.open = true;
+          } else if (title && typeof state[title] === "boolean") {
+            details.open = state[title];
+          }
+        });
+      }
+    } catch {
+      // Ignore storage read errors
+    }
+
+    // Save state on toggle
+    groups.forEach((details) => {
+      details.addEventListener("toggle", () => {
+        try {
+          const state: Record<string, boolean> = {};
+          groups.forEach((g) => {
+            const title = g.getAttribute("data-section-title");
+            if (title) state[title] = g.open;
+          });
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        } catch {
+          // Ignore storage write errors
+        }
+      });
+    });
+  }
+
+  function initNav() {
+    setupNavDrawer();
+    setupCollapsibleNav();
+  }
+
+  initNav();
+  document.addEventListener("astro:page-load", initNav);
 </script>
