@@ -24,29 +24,105 @@ interface NavSection {
 
 const navSections: NavSection[] = [
   {
-    title: "GUIDE",
+    title: "Introduction",
     items: [
-      { title: "Introduction", href: `${baseUrl}/`, isAvailable: true },
-      { title: "Walkthrough", isAvailable: false },
-      { title: "Calendar", isAvailable: false },
-      { title: "Social Links", isAvailable: false },
-      { title: "Endings", isAvailable: false },
+      { title: "Frequently Asked Questions", isAvailable: false },
+      { title: "What Is Persona?", isAvailable: false },
+      { title: "Persona 3 vs. Persona 4", isAvailable: false },
+      { title: "Persona 4 vs. Persona 4 Golden", isAvailable: false },
     ],
   },
   {
-    title: "DATABASE",
+    title: "Gameplay Mechanics",
     items: [
-      { title: "Personas", isAvailable: false },
-      { title: "Skills", isAvailable: false },
-      { title: "Items", isAvailable: false },
-      { title: "Quests", isAvailable: false },
+      { title: "Controls", isAvailable: false },
+      { title: "Field Mechanics", isAvailable: false },
+      { title: "Calendar System", isAvailable: false },
+      { title: "Social Link", isAvailable: false },
+      { title: "Status Parameters", isAvailable: false },
+      { title: "Velvet Room", isAvailable: false },
+      { title: "Battle Mechanics", isAvailable: false },
+      { title: "Shuffle TIme", isAvailable: false },
+      { title: "Status Ailments", isAvailable: false },
+      { title: "New Game Plus", isAvailable: false },
+      { title: "TV Channels", isAvailable: false },
     ],
   },
   {
-    title: "EXTRAS",
+    title: "Walkthrough",
     items: [
-      { title: "Achievements", isAvailable: false },
-      { title: "Missables", isAvailable: false },
+      { title: "Walkthrough Objectives", isAvailable: false },
+      { title: "Walkthrough FAQ", isAvailable: false },
+      { title: "Important Notes", isAvailable: false },
+      { title: "Current Problems", isAvailable: false },
+      { title: "April", isAvailable: false },
+      { title: "May", isAvailable: false },
+      { title: "June", isAvailable: false },
+      { title: "July", isAvailable: false },
+      { title: "August", isAvailable: false },
+      { title: "September", isAvailable: false },
+      { title: "October", isAvailable: false },
+      { title: "November", isAvailable: false },
+      { title: "December", isAvailable: false },
+      { title: "January", isAvailable: false },
+      { title: "February", isAvailable: false },
+      { title: "March", isAvailable: false },
+      { title: "New Game Plus Walkthrough", isAvailable: false },
+    ],
+  },
+  {
+    title: "Dungeons",
+    items: [
+      { title: "Twisted Shopping District", isAvailable: false },
+      { title: "Yukiko's Castle", isAvailable: false },
+      { title: "Steamy Bathhouse", isAvailable: false },
+      { title: "Marukyu Striptease", isAvailable: false },
+      { title: "Void Quest", isAvailable: false },
+      { title: "Secret Laboratory", isAvailable: false },
+      { title: "Heaven", isAvailable: false },
+      { title: "Magatsu Inaba", isAvailable: false },
+      { title: "Hollow Forest", isAvailable: false },
+      { title: "Yomotsu Hirasaka", isAvailable: false },
+      { title: "Extra Bosses", isAvailable: false },
+    ],
+  },
+  {
+    title: "Persona Compendium",
+    items: [{ title: "Persona Compendium", isAvailable: false }],
+  },
+  {
+    title: "Skill List",
+    items: [
+      { title: "All Skills", isAvailable: false },
+      { title: "Skill Cards", isAvailable: false },
+      { title: "Party Members", isAvailable: false },
+    ],
+  },
+  {
+    title: "Item List",
+    items: [
+      { title: "Weapons", isAvailable: false },
+      { title: "Armor", isAvailable: false },
+      { title: "Accessories", isAvailable: false },
+      { title: "Costume List", isAvailable: false },
+      { title: "Consumable/Quest Items", isAvailable: false },
+      { title: "Materials", isAvailable: false },
+      { title: "Book List", isAvailable: false },
+      { title: "Fish List", isAvailable: false },
+      { title: "Gardening Items", isAvailable: false },
+      { title: "Bug List", isAvailable: false },
+      { title: "Gem List", isAvailable: false },
+      { title: "Key Items", isAvailable: false },
+    ],
+  },
+  {
+    title: "Tips And Tricks",
+    items: [
+      { title: "Golden Shadow Grinding", isAvailable: false },
+      { title: "Best Personas", isAvailable: false },
+      { title: "Hardcore Risette Fan", isAvailable: false },
+      { title: "Victory Cry Cheat", isAvailable: false },
+      { title: "Resources", isAvailable: false },
     ],
   },
 ];
@@ -262,7 +338,11 @@ const isItemActive = (href?: string) => {
     left: 0;
     right: 0;
     height: 240px;
-    background: radial-gradient(ellipse at 50% 0%, rgba(242, 201, 78, 0.08) 0%, transparent 70%);
+    background: radial-gradient(
+      ellipse at 50% 0%,
+      rgba(242, 201, 78, 0.08) 0%,
+      transparent 70%
+    );
     pointer-events: none;
     z-index: 0;
   }
@@ -291,17 +371,32 @@ const isItemActive = (href?: string) => {
     padding: 1.6rem 1rem 1.5rem;
     background-color: #17171c;
     background-image:
-      radial-gradient(ellipse 85% 70% at 50% 50%, rgba(255, 226, 98, 0.36) 0%, rgba(242, 201, 78, 0.2) 42%, rgba(224, 130, 9, 0.08) 68%, transparent 85%),
-      radial-gradient(circle, rgba(242, 201, 78, 0.14) 1.2px, transparent 1.2px),
+      radial-gradient(
+        ellipse 85% 70% at 50% 50%,
+        rgba(255, 226, 98, 0.36) 0%,
+        rgba(242, 201, 78, 0.2) 42%,
+        rgba(224, 130, 9, 0.08) 68%,
+        transparent 85%
+      ),
+      radial-gradient(
+        circle,
+        rgba(242, 201, 78, 0.14) 1.2px,
+        transparent 1.2px
+      ),
       linear-gradient(180deg, #2a2a34 0%, #17171c 100%);
-    background-size: auto, 12px 12px, auto;
-    background-position: center, 0 0, center;
+    background-size:
+      auto,
+      12px 12px,
+      auto;
+    background-position:
+      center,
+      0 0,
+      center;
     border-bottom: 2px solid var(--p4g-yellow);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.15),
       inset 0 -1px 0 rgba(0, 0, 0, 0.5),
       0 4px 16px rgba(0, 0, 0, 0.35);
-    overflow: hidden;
   }
 
   /* Retro CRT TV scanline texture & vignette (Pure CSS) */
@@ -317,7 +412,11 @@ const isItemActive = (href?: string) => {
         transparent 1px,
         transparent 3px
       ),
-      radial-gradient(ellipse at 50% 50%, transparent 65%, rgba(0, 0, 0, 0.35) 100%);
+      radial-gradient(
+        ellipse at 50% 50%,
+        transparent 65%,
+        rgba(0, 0, 0, 0.35) 100%
+      );
     pointer-events: none;
     opacity: 0.7;
     z-index: 1;
@@ -365,8 +464,7 @@ const isItemActive = (href?: string) => {
     max-width: 82%;
     object-fit: contain;
     flex-shrink: 0;
-    filter:
-      drop-shadow(0 4px 10px rgba(0, 0, 0, 0.7))
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.7))
       drop-shadow(0 0 20px rgba(242, 201, 78, 0.38))
       drop-shadow(0 0 6px rgba(255, 230, 110, 0.3));
   }
