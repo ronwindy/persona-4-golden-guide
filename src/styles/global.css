@@ -22,8 +22,8 @@
   --font-display: "Staatliches", "Impact", cursive, sans-serif;
 
   /* Layout Proportions (DESIGN.md Section 4) */
-  --sidebar-width: 260px;
-  --local-nav-width: 220px;
+  --sidebar-width: 280px;
+  --local-nav-width: 280px;
   --content-max-width: 780px;
   --container-max-width: 1360px;
 
@@ -66,10 +66,8 @@ body {
   background-image:
     linear-gradient(
       180deg,
-      rgba(20, 20, 20, 0.28) 0%,
-      rgba(32, 32, 32, 0.12) 45%,
-      rgba(247, 245, 239, 0.25) 70%,
-      rgba(247, 245, 239, 0.65) 100%
+      rgba(20, 20, 20, 0.7) 0%,
+      rgba(247, 245, 239, 0.5) 100%
     ),
     url('../assets/background.jpeg');
   background-attachment: fixed;
