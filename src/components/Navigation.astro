@@ -1,5 +1,8 @@
 ---
 // src/components/Navigation.astro
+import { Image } from "astro:assets";
+import p4gLogo from "../assets/Persona_4_Golden_logo.webp";
+
 interface Props {
   currentPath?: string;
 }
@@ -99,8 +102,8 @@ const isItemActive = (href?: string) => {
 <aside id="global-sidebar" class="global-sidebar" aria-label="Main Navigation">
   <div class="sidebar-header">
     <a href={`${baseUrl}/`} class="sidebar-brand">
-      <img
-        src={`${baseUrl}/Persona_4_Golden_logo.webp`}
+      <Image
+        src={p4gLogo}
         alt="Persona 4 Golden"
         class="brand-logo"
       />
