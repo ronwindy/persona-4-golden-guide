@@ -284,50 +284,66 @@ const isItemActive = (href?: string) => {
     background: var(--p4g-yellow);
   }
 
-  /* Sidebar Header (Pure CSS P4G Aesthetic) */
+  /* Sidebar Header (Pure CSS P4G Aesthetic - Midnight Pop Stage) */
   .sidebar-header {
     position: relative;
     z-index: 2;
-    padding: 1.5rem 1rem 1.4rem;
-    background:
-      radial-gradient(ellipse at 50% 50%, rgba(242, 201, 78, 0.18) 0%, rgba(242, 201, 78, 0.04) 55%, transparent 75%),
-      linear-gradient(180deg, #25252d 0%, #17171b 100%);
+    padding: 1.6rem 1rem 1.5rem;
+    background-color: #17171c;
+    background-image:
+      radial-gradient(ellipse 85% 70% at 50% 50%, rgba(255, 226, 98, 0.36) 0%, rgba(242, 201, 78, 0.2) 42%, rgba(224, 130, 9, 0.08) 68%, transparent 85%),
+      radial-gradient(circle, rgba(242, 201, 78, 0.14) 1.2px, transparent 1.2px),
+      linear-gradient(180deg, #2a2a34 0%, #17171c 100%);
+    background-size: auto, 12px 12px, auto;
+    background-position: center, 0 0, center;
     border-bottom: 2px solid var(--p4g-yellow);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.1),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.4),
-      0 4px 14px rgba(0, 0, 0, 0.25);
+      inset 0 1px 0 rgba(255, 255, 255, 0.15),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.5),
+      0 4px 16px rgba(0, 0, 0, 0.35);
     overflow: hidden;
   }
 
-  /* Retro CRT TV scanline texture (Pure CSS) */
+  /* Retro CRT TV scanline texture & vignette (Pure CSS) */
   .sidebar-header::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0px,
-      rgba(0, 0, 0, 0.2) 1px,
-      transparent 1px,
-      transparent 3px
-    );
+    background:
+      repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0px,
+        rgba(0, 0, 0, 0.2) 1px,
+        transparent 1px,
+        transparent 3px
+      ),
+      radial-gradient(ellipse at 50% 50%, transparent 65%, rgba(0, 0, 0, 0.35) 100%);
     pointer-events: none;
-    opacity: 0.65;
+    opacity: 0.7;
     z-index: 1;
   }
 
-  /* P4G signature slanted accent ribbon at bottom edge */
+  /* P4G signature tri-color slanted ribbon at bottom edge */
   .sidebar-header::after {
     content: "";
     position: absolute;
     bottom: -2px;
     right: 1.25rem;
-    width: 44px;
+    width: 58px;
     height: 4px;
-    background: var(--p4g-yellow);
+    background: linear-gradient(
+      90deg,
+      #e74c3c 0%,
+      #e74c3c 32%,
+      #ff8b26 32%,
+      #ff8b26 66%,
+      var(--p4g-yellow) 66%,
+      var(--p4g-yellow) 100%
+    );
     transform: skewX(-25deg);
-    box-shadow: 0 0 10px rgba(242, 201, 78, 0.6);
+    box-shadow:
+      0 0 10px rgba(242, 201, 78, 0.65),
+      0 0 5px rgba(231, 76, 60, 0.4);
     z-index: 3;
   }
 
@@ -350,8 +366,9 @@ const isItemActive = (href?: string) => {
     object-fit: contain;
     flex-shrink: 0;
     filter:
-      drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6))
-      drop-shadow(0 0 16px rgba(242, 201, 78, 0.28));
+      drop-shadow(0 4px 10px rgba(0, 0, 0, 0.7))
+      drop-shadow(0 0 20px rgba(242, 201, 78, 0.38))
+      drop-shadow(0 0 6px rgba(255, 230, 110, 0.3));
   }
 
   /* Navigation Groups */
