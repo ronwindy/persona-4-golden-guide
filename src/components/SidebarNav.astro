@@ -1,0 +1,48 @@
+---
+import { getToc } from '../lib/guideData';
+
+interface Props {
+  currentId?: string;
+  listId?: string;
+}
+
+const { currentId = '', listId = 'sidebar-list' } = Astro.props;
+const categories = getToc();
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<nav class="nav-list" id={listId} aria-label="Guide sections">
+  {categories.length === 0 && <p>No sections yet.</p>}
+  {categories.map((cat) => (
+    <details open={cat.entries.some((e) => e.id === currentId)} data-category-id={cat.category}>
+      <summary>{cat.category}</summary>
+      <ul>
+        {cat.entries.map((entry) => (
+          <li>
+            {entry.has_structured ? (
+              <a href={`${baseUrl}/guide/${entry.id}`} aria-current={entry.id === currentId ? 'page' : undefined}>
+                {entry.title}
+              </a>
+            ) : (
+              <span>{entry.title}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </details>
+  ))}
+</nav>
+
+<script>
+  // Remember which categories are open for this browser session.
+  document.querySelectorAll<HTMLDetailsElement>('.nav-list details[data-category-id]').forEach((details) => {
+    const key = `nav-cat-${details.dataset.categoryId}`;
+    try {
+      const stored = sessionStorage.getItem(key);
+      if (stored !== null && !details.querySelector('[aria-current="page"]')) details.open = stored === 'true';
+    } catch {}
+    details.addEventListener('toggle', () => {
+      try { sessionStorage.setItem(key, String(details.open)); } catch {}
+    });
+  });
+</script>

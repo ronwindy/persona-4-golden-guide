@@ -1,22 +1,22 @@
 {
-  "name": "retrograde-remnant",
+  "name": "persona-4-golden-guide",
   "type": "module",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "guide": "node scripts/guide.mjs"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.134",
-    "astro": "^6.1.6",
-    "astro-icon": "^1.2.0"
+    "@astrojs/check": "^0.9.4",
+    "astro": "^5.4.2",
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@types/node": "^26.6.4",
+    "ajv": "^8.20.0"
   }
 }

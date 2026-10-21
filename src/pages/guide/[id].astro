@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StepChecklist from '../../components/StepChecklist.astro';
+import project from '../../../project.config.json';
+import { getAllStructuredSections, buildPageToc, type Guide } from '../../lib/guideData';
+
+export async function getStaticPaths() {
+  return getAllStructuredSections().map((sec) => ({
+    params: { id: sec.id },
+    props: { section: sec.data },
+  }));
+}
+
+const { section } = Astro.props;
+const guide: Guide = section.guide || {};
+const navigation = guide.navigation || {};
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const guideHref = (id: string) => `${baseUrl}/guide/${id}`;
+const pageSections = buildPageToc(guide);
+const title = guide.title || 'Guide section';
+---
+
+<BaseLayout
+  title={`${title} - ${project.pageTitleSuffix}`}
+  description={`${project.pageDescriptionPrefix} - ${title}`}
+  currentId={guide.id || ''}
+  pageSections={pageSections}
+>
+  <article>
+    <p class="breadcrumb">
+      <a href={`${baseUrl}/`}>Contents</a>
+      {guide.category && <span> / {guide.category}</span>}
+    </p>
+    <h1>{title}</h1>
+
+    {(guide.steps?.length ?? 0) > 0 && (
+      <section id="steps">
+        <h2>Steps</h2>
+        <StepChecklist guideId={guide.id || ''} steps={guide.steps!} />
+      </section>
+    )}
+
+    <nav class="page-nav" aria-label="Previous and next">
+      {navigation.prev ? <a href={guideHref(navigation.prev.id)}>&larr; {navigation.prev.title || navigation.prev.id}</a> : <span></span>}
+      {navigation.next ? <a href={guideHref(navigation.next.id)}>{navigation.next.title || navigation.next.id} &rarr;</a> : <span></span>}
+    </nav>
+  </article>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+import type { PageTocItem } from '../lib/guideData';
+
+interface Props {
+  sections: PageTocItem[];
+}
+
+const { sections = [] } = Astro.props;
+---
+
+<nav aria-label="On this page">
+  <p class="page-toc-title">On this page</p>
+  <ul>
+    {sections.map((sec) => (
+      <li>
+        <a href={`#${sec.id}`}>{sec.label}{sec.count !== undefined ? ` (${sec.count})` : ''}</a>
+      </li>
+    ))}
+  </ul>
+</nav>

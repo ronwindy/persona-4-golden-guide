@@ -1,0 +1,144 @@
+---
+import '../styles/global.css';
+import project from '../../project.config.json';
+import SidebarNav from '../components/SidebarNav.astro';
+import PageToc from '../components/PageToc.astro';
+import type { PageTocItem } from '../lib/guideData';
+
+interface Props {
+  title?: string;
+  description?: string;
+  currentId?: string;
+  pageSections?: PageTocItem[];
+}
+
+const {
+  title = project.defaultTitle,
+  description = project.defaultDescription,
+  currentId = '',
+  pageSections = [],
+} = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <script is:inline>
+      // Apply the saved sidebar state before first paint (no flash).
+      (function () {
+        var state = 'open';
+        try { state = localStorage.getItem('sidebar-state') === 'collapsed' ? 'collapsed' : 'open'; } catch (e) {}
+        document.documentElement.setAttribute('data-sidebar', state);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Mobile: header with drawer button (below 1024px) -->
+    <header class="mobile-header">
+      <button type="button" id="open-mobile-drawer" aria-label="Open navigation" aria-controls="mobile-drawer-panel">Menu</button>
+      <a href={`${baseUrl}/`}>{project.game}</a>
+    </header>
+
+    <div id="mobile-drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+    <div id="mobile-drawer-panel" class="drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+      <div class="drawer-head">
+        <a href={`${baseUrl}/`}>{project.game}</a>
+        <button type="button" id="close-mobile-drawer" aria-label="Close navigation">Close</button>
+      </div>
+      {pageSections.length > 0 && (
+        <div class="drawer-tabs" role="tablist">
+          <button type="button" role="tab" id="tab-btn-chapters" aria-selected="true">All sections</button>
+          <button type="button" role="tab" id="tab-btn-sections" aria-selected="false">This page</button>
+        </div>
+      )}
+      <div id="tab-content-chapters" class="drawer-panel">
+        <SidebarNav currentId={currentId} listId="mobile-sidebar-list" />
+      </div>
+      {pageSections.length > 0 && (
+        <div id="tab-content-sections" class="drawer-panel" hidden>
+          <PageToc sections={pageSections} />
+        </div>
+      )}
+    </div>
+
+    <div class="shell">
+      <!-- Desktop: left sidebar -->
+      <aside id="desktop-sidebar" class="sidebar">
+        <a class="nav-site-title" href={`${baseUrl}/`}>{project.game}</a>
+        <SidebarNav currentId={currentId} />
+      </aside>
+      <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-controls="desktop-sidebar" aria-label="Hide or show sidebar">&#9776;</button>
+
+      <div class="content-col">
+        <main class="content">
+          <slot />
+        </main>
+        <!-- Desktop: right "on this page" column -->
+        {pageSections.length > 0 && (
+          <aside class="page-toc">
+            <PageToc sections={pageSections} />
+          </aside>
+        )}
+      </div>
+    </div>
+
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        var body = document.body;
+        var toggle = document.getElementById('sidebar-toggle');
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var next = root.getAttribute('data-sidebar') === 'collapsed' ? 'open' : 'collapsed';
+            root.setAttribute('data-sidebar', next);
+            try { localStorage.setItem('sidebar-state', next); } catch (e) {}
+          });
+        }
+
+        function setDrawer(open) {
+          if (open) body.setAttribute('data-drawer', 'open'); else body.removeAttribute('data-drawer');
+        }
+        var openBtn = document.getElementById('open-mobile-drawer');
+        var closeBtn = document.getElementById('close-mobile-drawer');
+        var backdrop = document.getElementById('mobile-drawer-backdrop');
+        if (openBtn) openBtn.addEventListener('click', function () { setDrawer(true); });
+        if (closeBtn) closeBtn.addEventListener('click', function () { setDrawer(false); });
+        if (backdrop) backdrop.addEventListener('click', function () { setDrawer(false); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setDrawer(false); });
+
+        var panel = document.getElementById('mobile-drawer-panel');
+        if (panel) {
+          // Tapping a jump link or a section link closes the drawer.
+          panel.addEventListener('click', function (e) {
+            var a = e.target.closest && e.target.closest('a');
+            if (a && a.closest('.drawer-panel')) setDrawer(false);
+          });
+        }
+
+        var tabs = [
+          ['tab-btn-chapters', 'tab-content-chapters'],
+          ['tab-btn-sections', 'tab-content-sections'],
+        ];
+        tabs.forEach(function (pair) {
+          var btn = document.getElementById(pair[0]);
+          if (!btn) return;
+          btn.addEventListener('click', function () {
+            tabs.forEach(function (p) {
+              var b = document.getElementById(p[0]);
+              var c = document.getElementById(p[1]);
+              var on = p[0] === pair[0];
+              if (b) b.setAttribute('aria-selected', String(on));
+              if (c) c.hidden = !on;
+            });
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

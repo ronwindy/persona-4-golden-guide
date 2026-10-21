@@ -1,10 +1,14 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-import icon from 'astro-icon';
+import { readFileSync } from 'node:fs';
+
+const project = JSON.parse(readFileSync(new URL('./project.config.json', import.meta.url), 'utf8'));
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ronwindy.github.io',
-  base: '/persona-4-golden-guide',
-  integrations: [icon()],
+  site: project.site,
+  base: project.base,
+  output: 'static',
+  build: {
+    format: 'file'
+  },
 });
