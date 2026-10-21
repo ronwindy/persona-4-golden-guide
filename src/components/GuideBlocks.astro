@@ -1,0 +1,80 @@
+---
+import { inline } from '../lib/text';
+import { Info, TriangleAlert, GitCompareArrows } from '@lucide/astro';
+import type { Block } from '../lib/guideData';
+
+interface Props {
+  blocks: Block[];
+}
+
+const { blocks = [] } = Astro.props;
+
+const calloutIcon = { note: Info, warning: TriangleAlert, discrepancy: GitCompareArrows } as const;
+const calloutLabel = { note: 'Note', warning: 'Warning', discrepancy: 'Source discrepancy' } as const;
+---
+
+{blocks.map((b) => {
+  switch (b.type) {
+    case 'p':
+      return <p set:html={inline(b.text)} />;
+    case 'list': {
+      const Tag = b.ordered ? 'ol' : 'ul';
+      return <Tag>{b.items.map((i) => <li set:html={inline(i)} />)}</Tag>;
+    }
+    case 'callout': {
+      const Icon = calloutIcon[b.kind];
+      return (
+        <aside class={`callout callout-${b.kind}`}>
+          <p class="callout-label"><Icon size={16} aria-hidden="true" /> {calloutLabel[b.kind]}</p>
+          <Astro.self blocks={b.blocks} />
+        </aside>
+      );
+    }
+    case 'table':
+      return (
+        <div class="table-wrap">
+          <table class="data-table">
+            {b.headers && <thead><tr>{b.headers.map((h) => <th scope="col" set:html={inline(h)} />)}</tr></thead>}
+            <tbody>
+              {b.rows.map((r) => (
+                <tr>{r.map((c, i) => (i === 0 && !b.headers ? <th scope="row" set:html={inline(c)} /> : <td set:html={inline(c)} />))}</tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    case 'info':
+      return (
+        <dl class="info-list">
+          {b.items.map((i) => (
+            <div class="info-row">
+              <dt set:html={inline(i.label)} />
+              <dd set:html={inline(i.value).replace(/\n/g, '<br>')} />
+            </div>
+          ))}
+        </dl>
+      );
+    case 'ranks':
+      return (
+        <div class="rank-list">
+          {b.ranks.map((r) => (
+            <details class="rank" open>
+              <summary>{r.title}</summary>
+              {r.scenes.map((s) => (
+                <div class="scene">
+                  {s.prompt && <p class="scene-prompt" set:html={inline(s.prompt)} />}
+                  {s.options.length > 0 && (
+                    <ul class="option-list">
+                      {s.options.map((o) => (
+                        <li><span class="option-label" set:html={inline(o.label)} /><span class="option-points" set:html={inline(o.text)} /></li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </details>
+          ))}
+        </div>
+      );
+  }
+})}

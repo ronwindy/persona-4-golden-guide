@@ -9,19 +9,19 @@ import { createHash } from "node:crypto";
 import { ROOT_DIR, loadQaStatus, recordQaResult, auditSection, computeProjectStatus,
   renderCompactSummary, writeStatusMarkdown, pyJson, loadCanonicalIndex } from "./status.mjs";
 import { loadMerges, navigationProblems } from "../.claude/skills/qa/scripts/merges.mjs";
+import { PROJECT } from "./project_config.mjs";
 import { getSectionPaths, getCanonicalManifest, sectionType, isWalkthroughType } from "./sections.mjs";
-import { boldFile, buildDictionary, compilePattern } from "./bold_terms.mjs";
-import { scaffoldGuide } from "../.claude/skills/guide-transformer/scripts/scaffold_structured_guide.mjs";
-import { lintGuide } from "../.claude/skills/guide-transformer/scripts/lint_guide.mjs";
-import { getValidator, validateFile, validateInstance, compileSchemaFile } from "../.claude/skills/guide-transformer/scripts/validate_guide.mjs";
-import { verifyGuide, formatMarkdownReport } from "../.claude/skills/qa/scripts/verify_guide.mjs";
+import { scaffoldGuide } from "./p4g/scaffold.mjs";
+import { verifyPage as verifyGuide } from "./p4g/qa.mjs";
+import { validateFile, validateInstance, compileSchemaFile } from "../.claude/skills/guide-transformer/scripts/validate_guide.mjs";
+import { formatMarkdownReport } from "../.claude/skills/qa/scripts/verify_guide.mjs";
 
 const rel = (p) => relative(ROOT_DIR, p);
 const short = (text, limit = 90) => {
   const s = String(text ?? "").split(/\s+/).filter(Boolean).join(" ");
   return s.length <= limit ? s : `${s.slice(0, limit - 3)}...`;
 };
-const schemaPath = join(ROOT_DIR, ".claude", "skills", "guide-transformer", "schemas", "structured-guide.schema.json");
+const schemaPath = join(ROOT_DIR, "scripts", "p4g", "schema.json");
 const verdictSchemaPath = join(ROOT_DIR, ".claude", "skills", "qa", "schemas", "qa-verdict.schema.json");
 const structuredSha = (path) => createHash("sha256").update(readFileSync(path)).digest("hex");
 
@@ -49,33 +49,21 @@ export function runScaffold(sec, force = false) {
     return true;
   }
   try {
-    const scaffolded = scaffoldGuide(canonicalPath);
+    const { source, sections_index: index } = JSON.parse(readFileSync(join(ROOT_DIR, "canonical-sources", PROJECT.canonicalIndexFile), "utf8"));
+    const at = index.findIndex((s) => s.id === sec.id);
+    const ref = (s) => (s ? { id: s.id, title: s.title } : undefined);
+    const navigation = {};
+    if (index[at - 1]) navigation.prev = ref(index[at - 1]);
+    if (index[at + 1]) navigation.next = ref(index[at + 1]);
+    const { game, author, version, url, source_file } = source;
+    const scaffolded = scaffoldGuide(canonicalPath, { source: { game, author, version, url, source_file }, navigation });
     mkdirSync(join(structuredPath, ".."), { recursive: true });
     writeFileSync(structuredPath, pyJson(scaffolded) + "\n", "utf8");
     console.log(`[PASS] Successfully scaffolded: ${rel(structuredPath)}`);
-    reportScaffoldWarnings(sec, scaffolded);
     return true;
   } catch (e) {
     console.log(`[FAIL] Scaffolding failed: ${e.message}`);
     return false;
-  }
-}
-
-/** Flags a scaffold that probably needs a hand-written patch (fragments, guessed step types). */
-function reportScaffoldWarnings(sec, scaffolded) {
-  const guide = scaffolded.guide ?? {};
-  const warns = lintGuide(guide).filter((f) => f.severity === "warn" && ["fragment", "mixed-list"].includes(f.check));
-  for (const f of warns) console.log(`  [WARN] ${f.check.padEnd(10)} ${f.location}: ${f.text}`);
-  const guessed = (guide.steps ?? [])
-    .filter((st) => st.type === "exploration" || (st.type === "battle" && !st.encounter && !st.boss))
-    .map((st) => String(st.id));
-  if (guessed.length) {
-    console.log("  [WARN] low-confidence step type (fallback 'exploration' or 'battle' with no encounter): " +
-      `step(s) ${guessed.join(", ")} - confirm the type against the source`);
-  }
-  if (warns.length) {
-    console.log(`  [WARN] ${sec.id}: scaffold has fragments; compare with the canonical text and fix via ` +
-      "`node scripts/guide.mjs patch` (arrays replace) before QA.");
   }
 }
 
@@ -91,7 +79,7 @@ export function runValidate(sec) {
     console.log(`[FAIL] Schema not found at ${schemaPath}`);
     return false;
   }
-  const errors = validateFile(structuredPath, getValidator());
+  const errors = validateFile(structuredPath, compileSchemaFile(schemaPath));
   if (!errors.length) {
     console.log(`[PASS] Schema validation passed: ${structuredPath.split(/[\\/]/).pop()}`);
     return true;
@@ -102,7 +90,7 @@ export function runValidate(sec) {
   return false;
 }
 
-/** Presentation lint of a structured guide. Warnings fail the run; `info` findings do not. */
+/** Lint: navigation ids must exist in the canonical index. Warnings fail the run. */
 export function runLint(sec) {
   const { structuredPath } = getSectionPaths(sec);
   if (!existsSync(structuredPath)) {
@@ -110,17 +98,15 @@ export function runLint(sec) {
     return true;
   }
   const guide = JSON.parse(readFileSync(structuredPath, "utf8")).guide ?? {};
-  const merges = loadMerges(ROOT_DIR);
-  const knownIds = new Set(loadCanonicalIndex(ROOT_DIR).sections.map((s) => s.id));
-  const navFindings = navigationProblems(guide.navigation, knownIds, merges)
-    .map((text) => ({ check: "navigation", severity: "warn", location: "navigation", text }));
-  const findings = [...lintGuide(guide), ...navFindings];
-  const warns = findings.filter((f) => f.severity === "warn");
-  console.log(`\n--- Lint: ${sec.id} --- ${warns.length} warning(s), ${findings.length - warns.length} info`);
-  for (const f of findings) {
-    const tag = f.severity === "warn" ? "WARN" : "INFO";
-    console.log(`  [${tag}] ${f.check.padEnd(14)} ${f.location}: ${f.text}`);
+  const known = new Set(loadCanonicalIndex(ROOT_DIR).sections.map((s) => s.id));
+  const warns = [];
+  for (const dir of ["prev", "next"]) {
+    const ref = guide.navigation?.[dir];
+    if (ref && !known.has(ref.id)) warns.push(`navigation.${dir}: unknown id '${ref.id}'`);
   }
+  console.log(`
+--- Lint: ${sec.id} --- ${warns.length} warning(s)`);
+  for (const w of warns) console.log(`  [WARN] ${w}`);
   return warns.length === 0;
 }
 
@@ -267,8 +253,8 @@ export function printSubagentPrompt(sec) {
   console.log(`Use the \`qa\` skill. Independently review section ${sec.id} (${sec.title}).
 
 Compare the canonical source with the structured guide and judge whether the presentation changed
-while the source meaning stayed intact (names, numbers, conditions, warnings, choices, bosses,
-items, save points, ordering). Do not edit any file except the verdict.
+while the source meaning stayed intact (names, numbers, conditions, warnings, choices, option points,
+items, ordering). Do not edit any file except the verdict.
 Not a finding: a section's heading location that is absent from \`route\` (side quests).${mergeNotes(sec)}
 
   canonical:  ${posix(canonicalPath)}
@@ -364,20 +350,8 @@ export function resolveBacklog() {
   return verified;
 }
 
-/** Bolds terms in the section's prose so QA always sees the final file (walkthroughs only). */
-function runBold(sec) {
-  const { structuredPath } = getSectionPaths(sec);
-  if (!existsSync(structuredPath) || !isWalkthroughType(sectionType(sec))) return;
-  const found = boldFile(structuredPath, compilePattern(buildDictionary()), true);
-  if (found.length) {
-    const unique = [...new Set(found)].sort();
-    console.log(`[bold] ${sec.id}: bolded ${unique.length} term(s): [${unique.map((t) => `'${t}'`).join(", ")}]`);
-  }
-}
-
-/** Single per-section gate: bold -> validate -> lint -> QA -> build -> status. */
+/** Single per-section gate: validate -> lint -> QA -> build -> status. */
 export function runCheck(sec, build = true) {
-  runBold(sec);
   let ok;
   if (!runValidate(sec)) {
     // QA would record a result against an invalid file, and the build is wasted.

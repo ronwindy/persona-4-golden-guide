@@ -23,9 +23,10 @@
 // The file is written only if the result passes schema validation (override with --force).
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { join } from "node:path";
 import { ROOT_DIR, pyJson } from "./status.mjs";
 import { resolveSection, getSectionPaths } from "./sections.mjs";
-import { getValidator, validateInstance } from "../.claude/skills/guide-transformer/scripts/validate_guide.mjs";
+import { compileSchemaFile, validateInstance } from "../.claude/skills/guide-transformer/scripts/validate_guide.mjs";
 
 const isDict = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 const isIdList = (v) => Array.isArray(v) && v.length > 0 && v.every((x) => isDict(x) && "id" in x);
@@ -168,7 +169,7 @@ export function runPatch({ section, patchArg, renames = [], dryRun = false, forc
     console.log(`[INFO] Renamed ${renamed} value(s) for ${mapping.size} name(s).`);
   }
 
-  const errors = validateInstance(merged, getValidator());
+  const errors = validateInstance(merged, compileSchemaFile(join(ROOT_DIR, "scripts", "p4g", "schema.json")));
   if (errors.length) {
     console.log(`[FAIL] Patched result has ${errors.length} schema error(s):`);
     for (const err of errors.slice(0, 15)) {

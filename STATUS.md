@@ -1,10 +1,10 @@
 # Persona 4 Golden Guide - Project Status
 
-> Last synced: `2026-10-21 21:25:48`
+> Last synced: `2026-10-21 21:59:38`
 
 ```text
-=== PROJECT STATUS (2026-10-21 21:25:48) ===
-Canonical 141/141 | Structured 0/141 | QA pass 0/141 (fail 0) | Web built 0/141
+=== PROJECT STATUS (2026-10-21 21:59:38) ===
+Canonical 141/141 | Structured 1/141 | QA pass 1/141 (fail 0) | Web built 1/141
 Next:
   1. Structure walkthrough-objectives (Walkthrough Objectives) - next chronological
 ```
@@ -87,7 +87,7 @@ Next:
 | `` | `persona-compendium-world` | World | Persona Compendium | NOT_STRUCTURED |
 | `` | `persona-compendium-special-fusions` | Special Fusions | Persona Compendium | NOT_STRUCTURED |
 | `` | `social-links-investigation-team-fool` | Investigation Team/Fool | Social Links | NOT_STRUCTURED |
-| `` | `social-links-yosuke-hanamura-magician` | Yosuke Hanamura/Magician | Social Links | NOT_STRUCTURED |
+| `` | `social-links-yosuke-hanamura-magician` | Yosuke Hanamura/Magician | Social Links | WEB_BUILT |
 | `` | `social-links-yukiko-amagi-priestess` | Yukiko Amagi/Priestess | Social Links | NOT_STRUCTURED |
 | `` | `social-links-margaret-empress` | Margaret/Empress | Social Links | NOT_STRUCTURED |
 | `` | `social-links-kanji-tatsumi-emperor` | Kanji Tatsumi/Emperor | Social Links | NOT_STRUCTURED |

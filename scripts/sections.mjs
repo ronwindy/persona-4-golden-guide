@@ -64,9 +64,9 @@ export function sectionType(sec) {
   return sec?.type ?? "walkthrough";
 }
 
-/** Walkthrough path (checklist steps, independent QA subagent, term bolding). */
+/** Calendar pages get an independent QA subagent pass (long prose, order carries meaning). */
 export function isWalkthroughType(type) {
-  return ["walkthrough", "walkthrough_intro", "sidequest"].includes(type);
+  return ["calendar"].includes(type);
 }
 
 /** Reference path: canonical text carried over verbatim, no LLM prose. */
