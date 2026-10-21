@@ -53,11 +53,21 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
+  background: var(--bg);
+}
+/* Site background: fixed image under a heavy dark overlay, with the yellow fog on top */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background:
     radial-gradient(ellipse 80% 50% at 15% -10%, rgba(255, 230, 0, 0.09), transparent 60%),
     radial-gradient(ellipse 70% 60% at 100% 100%, rgba(255, 230, 0, 0.05), transparent 65%),
+    linear-gradient(rgba(13, 13, 13, 0.88), rgba(13, 13, 13, 0.88)),
+    var(--bg-image) center / cover no-repeat,
     var(--bg);
-  background-attachment: fixed;
 }
 /* TV-static scanlines: static, very faint, never intercepts input */
 body::after {
@@ -199,15 +209,13 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 /* ---------- Navigation lists ---------- */
 .nav-site-title {
   display: block;
-  padding: 1.1rem 1rem;
-  font-family: var(--font-head);
-  font-size: 1.15rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--accent-ink);
-  background: var(--accent);
+  padding: 1rem;
+  border-bottom: 3px solid var(--accent);
+  background: var(--bg);
 }
-.nav-site-title:hover { color: var(--accent-ink); filter: brightness(1.08); }
+.nav-site-title:hover { filter: brightness(1.1); }
+.logo { display: block; width: 100%; max-width: 13rem; height: auto; margin: 0 auto; }
+.logo-sm { width: auto; max-width: none; height: 2.4rem; margin: 0; }
 .nav-list { padding: 0.5rem; }
 .nav-list details { margin-bottom: 0.25rem; }
 .nav-list summary {

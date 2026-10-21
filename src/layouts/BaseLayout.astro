@@ -24,12 +24,13 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" style={`--bg-image: url('${baseUrl}/background.jpg')`}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href={`${baseUrl}/favico.png`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -46,13 +47,13 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     <!-- Mobile: header with drawer button (below 1024px) -->
     <header class="mobile-header">
       <button type="button" id="open-mobile-drawer" aria-label="Open navigation" aria-controls="mobile-drawer-panel" class="icon-btn"><Menu size={18} aria-hidden="true" /> Menu</button>
-      <a href={`${baseUrl}/`}>{project.game}</a>
+      <a href={`${baseUrl}/`} aria-label={`${project.game} home`}><img class="logo logo-sm" src={`${baseUrl}/logo.png`} alt={project.game} /></a>
     </header>
 
     <div id="mobile-drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
     <div id="mobile-drawer-panel" class="drawer" role="dialog" aria-modal="true" aria-label="Navigation">
       <div class="drawer-head">
-        <a href={`${baseUrl}/`}>{project.game}</a>
+        <a href={`${baseUrl}/`} aria-label={`${project.game} home`}><img class="logo logo-sm" src={`${baseUrl}/logo.png`} alt={project.game} /></a>
         <button type="button" id="close-mobile-drawer" aria-label="Close navigation" class="icon-btn"><X size={18} aria-hidden="true" /></button>
       </div>
       {pageSections.length > 0 && (
@@ -74,7 +75,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     <div class="shell">
       <!-- Desktop: left sidebar -->
       <aside id="desktop-sidebar" class="sidebar">
-        <a class="nav-site-title" href={`${baseUrl}/`}>{project.game}</a>
+        <a class="nav-site-title" href={`${baseUrl}/`} aria-label={`${project.game} home`}><img class="logo" src={`${baseUrl}/logo.png`} alt={project.game} /></a>
         <SidebarNav currentId={currentId} />
       </aside>
       <button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-controls="desktop-sidebar" aria-label="Hide or show sidebar"><PanelLeft size={20} aria-hidden="true" /></button>
