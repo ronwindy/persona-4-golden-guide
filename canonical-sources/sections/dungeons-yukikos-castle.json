@@ -1,0 +1,1284 @@
+{
+  "id": "dungeons-yukikos-castle",
+  "title": "Yukiko's Castle",
+  "chapter": "Dungeons",
+  "chapter_id": "dungeons",
+  "anchor": "yukikos-castle",
+  "type": "dungeon",
+  "order": 40,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The first regular dungeon. This is the hardest to clear in one day. SP recovery items are hard to come by."
+    },
+    {
+      "type": "p",
+      "text": "Available: 4/17"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: 4/29"
+    },
+    {
+      "type": "p",
+      "text": "Floors: 8"
+    },
+    {
+      "type": "p",
+      "text": "Fixed Floors: 2, 5, 8"
+    },
+    {
+      "type": "p",
+      "text": "Boss Floors: 5, 8"
+    },
+    {
+      "type": "p",
+      "text": "Hidden Item: Suzaku Feather"
+    },
+    {
+      "type": "p",
+      "text": "Notes: N/A"
+    },
+    {
+      "type": "p",
+      "text": "Treasure Chests",
+      "md": "**Treasure Chests**"
+    },
+    {
+      "type": "p",
+      "text": "1-2F"
+    },
+    {
+      "type": "p",
+      "text": "Regular Chest"
+    },
+    {
+      "type": "p",
+      "text": "Peach Seed\nLife Stone\nSnuff Soul\nSoul Drop\nRevival Bead"
+    },
+    {
+      "type": "p",
+      "text": "3-7F"
+    },
+    {
+      "type": "p",
+      "text": "Regular Chest"
+    },
+    {
+      "type": "p",
+      "text": "Peach Seed\nLife Stone\nSoul Drop\nSnuff Soul\nRevival Bead\nHiranya\nAmrita Soda\nFirecrackers\nIce Cube\nBall Lightning\nPinwheel\nPurifying Water\nPurifying Salt\nPhysical Mirror\nMagic Mirror\nVanish Ball\nAssault Signal\nDiamond Shield\nSuper Sonic\nVanish Ball\nGoho-M\nSmart Bomb\nChest Key"
+    },
+    {
+      "type": "p",
+      "text": "Rare Chest"
+    },
+    {
+      "type": "p",
+      "text": "Bead\nChewing Soul\nSoul Food\nGentleman's Tux\nCombat Dress\nFire Vow\nFire Pin\nFire Suppressor\nIce Vow\nIce Pin\nIce Suppressor\nThunder Vow\nThunder Pin\nVolt Suppressor\nWind Vow\nWind Pin\nWind Suppressor\nPower Belt\nCrow Charm\nTalisman\nWing Strap\nRabbit Foot\nDisinfectant\nTranquil Buddha\nBravery Vessel\nDisguise Mask\nCool Beads\n3 Chest Keys"
+    },
+    {
+      "type": "p",
+      "text": "Fixed Chest"
+    },
+    {
+      "type": "p",
+      "text": "Kelvar Vest at 5F\n3 Chest Keys at 5F"
+    },
+    {
+      "type": "p",
+      "text": "Shuffle Time Personas",
+      "md": "**Shuffle Time Personas**"
+    },
+    {
+      "type": "p",
+      "text": "1-2F"
+    },
+    {
+      "type": "p",
+      "text": "Pixie\nSlime\nUkobach\nAngel\nApsaras\nSandman"
+    },
+    {
+      "type": "p",
+      "text": "3-7F"
+    },
+    {
+      "type": "p",
+      "text": "Pixie\nSlime\nUkobach\nAngel\nApsaras\nSandman\nNata Taishi\nForneus\nYomotsu-Shikome\nOmoikane\nOrobas\nValkyrie\nSenri\nGhoul\nLilim\nCu Sith"
+    },
+    {
+      "type": "p",
+      "text": "Enemies",
+      "md": "**Enemies**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          },
+          {
+            "text": "Arcana",
+            "md": "**Arcana**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "RD",
+            "md": "**RD**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Lying Hablerie"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "51"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1F"
+          }
+        ],
+        [
+          {
+            "text": "Calm Pesce"
+          },
+          {
+            "text": "Priestess"
+          },
+          {
+            "text": "6"
+          },
+          {
+            "text": "82"
+          },
+          {
+            "text": "23"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1F"
+          }
+        ],
+        [
+          {
+            "text": "Black Raven"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "7"
+          },
+          {
+            "text": "138"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "3-7F"
+          }
+        ],
+        [
+          {
+            "text": "Trance Twins"
+          },
+          {
+            "text": "Hierophant"
+          },
+          {
+            "text": "7"
+          },
+          {
+            "text": "222"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "3-6F"
+          }
+        ],
+        [
+          {
+            "text": "Magic Hand"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "130"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1-5F"
+          }
+        ],
+        [
+          {
+            "text": "Bronze Dice"
+          },
+          {
+            "text": "Fortune"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "180"
+          },
+          {
+            "text": "34"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "4-7F"
+          }
+        ],
+        [
+          {
+            "text": "Laughing Table"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "164"
+          },
+          {
+            "text": "154"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "4-7F"
+          }
+        ],
+        [
+          {
+            "text": "Positive King"
+          },
+          {
+            "text": "Emperor"
+          },
+          {
+            "text": "11"
+          },
+          {
+            "text": "350"
+          },
+          {
+            "text": "43"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Secret Bambino"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "62"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Burning Beetle"
+          },
+          {
+            "text": "Emperor"
+          },
+          {
+            "text": "13"
+          },
+          {
+            "text": "132"
+          },
+          {
+            "text": "51"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Phantom Mage"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "13"
+          },
+          {
+            "text": "124"
+          },
+          {
+            "text": "152"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Magical Magus"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "14"
+          },
+          {
+            "text": "280"
+          },
+          {
+            "text": "135"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Heat Balance"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "140"
+          },
+          {
+            "text": "136"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Avenger Knight"
+          },
+          {
+            "text": "Emperor"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "300"
+          },
+          {
+            "text": "87"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Happiness Hand"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "150"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Any"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Early Boss",
+      "md": "**Early Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Shadow Chie"
+          },
+          {
+            "text": "6"
+          },
+          {
+            "text": "1000"
+          },
+          {
+            "text": "500"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "2F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rakunda is your best friend against bosses. If she glares at Yosuke make sure he guards. Otherwise this fight isn't too tough."
+    },
+    {
+      "type": "p",
+      "text": "Mini Boss",
+      "md": "**Mini** **Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Avenger Knight"
+          },
+          {
+            "text": "11"
+          },
+          {
+            "text": "900"
+          },
+          {
+            "text": "87"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "5F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "This dude is strong. Protect MC at all costs and prepare to revive your party members if they get KO'd."
+    },
+    {
+      "type": "p",
+      "text": "Boss",
+      "md": "**Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Shadow Yukiko"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "2500"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "8F"
+          }
+        ],
+        [
+          {
+            "text": "Charming Prince"
+          },
+          {
+            "text": "14"
+          },
+          {
+            "text": "850"
+          },
+          {
+            "text": "450?"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "N/A"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Shadow Yukiko is similar to Shadow Chie. Focus on the Charming Prince when he appears. If Yosuke has Fear cure him ASAP. If she stares at the party make sure Chie guards."
+    },
+    {
+      "type": "p",
+      "text": "Side Boss",
+      "md": "**Side Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Contrarian King"
+          },
+          {
+            "text": "17"
+          },
+          {
+            "text": "1600"
+          },
+          {
+            "text": "500"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "8F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "I hate this guy. Ignore his Red Wall. Try to have a Persona that resists/blocks Physical. Part of this fight is dependent on how often he uses Rampage, because that skill will wipe your party if you are unlucky or if he spams it. Physical Mirrors are your friends."
+    }
+  ],
+  "text": "The first regular dungeon. This is the hardest to clear in one day. SP recovery items are hard to come by.\nAvailable: 4/17\nLast Day: 4/29\nFloors: 8\nFixed Floors: 2, 5, 8\nBoss Floors: 5, 8\nHidden Item: Suzaku Feather\nNotes: N/A\nTreasure Chests\n1-2F\nRegular Chest\nPeach Seed\nLife Stone\nSnuff Soul\nSoul Drop\nRevival Bead\n3-7F\nRegular Chest\nPeach Seed\nLife Stone\nSoul Drop\nSnuff Soul\nRevival Bead\nHiranya\nAmrita Soda\nFirecrackers\nIce Cube\nBall Lightning\nPinwheel\nPurifying Water\nPurifying Salt\nPhysical Mirror\nMagic Mirror\nVanish Ball\nAssault Signal\nDiamond Shield\nSuper Sonic\nVanish Ball\nGoho-M\nSmart Bomb\nChest Key\nRare Chest\nBead\nChewing Soul\nSoul Food\nGentleman's Tux\nCombat Dress\nFire Vow\nFire Pin\nFire Suppressor\nIce Vow\nIce Pin\nIce Suppressor\nThunder Vow\nThunder Pin\nVolt Suppressor\nWind Vow\nWind Pin\nWind Suppressor\nPower Belt\nCrow Charm\nTalisman\nWing Strap\nRabbit Foot\nDisinfectant\nTranquil Buddha\nBravery Vessel\nDisguise Mask\nCool Beads\n3 Chest Keys\nFixed Chest\nKelvar Vest at 5F\n3 Chest Keys at 5F\nShuffle Time Personas\n1-2F\nPixie\nSlime\nUkobach\nAngel\nApsaras\nSandman\n3-7F\nPixie\nSlime\nUkobach\nAngel\nApsaras\nSandman\nNata Taishi\nForneus\nYomotsu-Shikome\nOmoikane\nOrobas\nValkyrie\nSenri\nGhoul\nLilim\nCu Sith\nEnemies\nEnemy | Arcana | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | RD | Floor\nLying Hablerie | Magician | 5 | 73 | 51 |  | Str | Wk | Wk |  |  |  |  | 1F\nCalm Pesce | Priestess | 6 | 82 | 23 |  |  |  |  | Wk |  |  |  | 1F\nBlack Raven | Hermit | 7 | 138 | 25 |  | Str |  | Wk | Str |  |  |  | 3-7F\nTrance Twins | Hierophant | 7 | 222 | 22 |  | Wk |  | Str |  |  |  |  | 3-6F\nMagic Hand | Magician | 8 | 130 | 10 | Str |  | Wk |  | Str |  |  |  | 1-5F\nBronze Dice | Fortune | 10 | 180 | 34 | Str |  |  | Wk |  |  |  |  | 4-7F\nLaughing Table | Magician | 10 | 164 | 154 |  |  |  | Str | Wk | Str | Str |  | 4-7F\nPositive King | Emperor | 11 | 350 | 43 |  |  |  |  |  | Wk | Wk |  | 5-7F\nSecret Bambino | Empress | 10 | 80 | 62 |  | Wk | Wk | Wk | Wk |  |  |  | N/A\nBurning Beetle | Emperor | 13 | 132 | 51 | Str |  | Wk |  |  | Wk | Wk |  | 5-7F\nPhantom Mage | Hermit | 13 | 124 | 152 | Str |  |  | Wk |  | Wk | Str |  | 5-7F\nMagical Magus | Magician | 14 | 280 | 135 |  | Nul |  |  | Str | Wk |  |  | 5-7F\nHeat Balance | Justice | 15 | 140 | 136 |  | Nul | Nul |  |  | Str |  |  | 5-7F\nAvenger Knight | Emperor | 15 | 300 | 87 |  | Wk |  |  |  |  |  |  | 5-7F\nHappiness Hand | Magician | 10 | 150 | 100 |  | Str | Str | Str | Str | Str | Str |  | Any\nEarly Boss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nShadow Chie | 6 | 1000 | 500 | Str |  |  |  | Wk | Nul | Nul | 2F\nRakunda is your best friend against bosses. If she glares at Yosuke make sure he guards. Otherwise this fight isn't too tough.\nMini Boss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nAvenger Knight | 11 | 900 | 87 |  | Wk |  |  |  | Nul | Nul | 5F\nThis dude is strong. Protect MC at all costs and prepare to revive your party members if they get KO'd.\nBoss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nShadow Yukiko | 15 | 2500 | ? |  | Drn | Wk |  |  | Nul | Nul | 8F\nCharming Prince | 14 | 850 | 450? |  |  |  | Wk | Str | Nul | Nul | N/A\nShadow Yukiko is similar to Shadow Chie. Focus on the Charming Prince when he appears. If Yosuke has Fear cure him ASAP. If she stares at the party make sure Chie guards.\nSide Boss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nContrarian King | 17 | 1600 | 500 |  | Drn |  |  | Nul | Nul | Nul | 8F\nI hate this guy. Ignore his Red Wall. Try to have a Persona that resists/blocks Physical. Part of this fight is dependent on how often he uses Rampage, because that skill will wipe your party if you are unlucky or if he spams it. Physical Mirrors are your friends."
+}

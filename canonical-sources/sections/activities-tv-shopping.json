@@ -1,0 +1,717 @@
+{
+  "id": "activities-tv-shopping",
+  "title": "TV Shopping",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "tv-shopping",
+  "type": "article",
+  "order": 108,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Starting on May 29th, every Sunday you can check the TV in your room to watch the TV Shopping program. Every week there are two bundles of items, and you can order one of them. If you miss the program on Sunday, you are given until Wednesday to order. The package will arrive at home a few days later. In addition, you will be given Prize Stickers which can be mailed in for items, and is needed for Quest 10. For info on what these items do check the Item List section. Here is the list of every bundle available."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Item",
+            "md": "**Item**"
+          },
+          {
+            "text": "Price",
+            "md": "**Price**"
+          },
+          {
+            "text": "Day",
+            "md": "**Day**"
+          }
+        ],
+        [
+          {
+            "text": "Adios Shoe and 2 Slimming Food"
+          },
+          {
+            "text": "5,980 Yen"
+          },
+          {
+            "text": "May 29th"
+          }
+        ],
+        [
+          {
+            "text": "Medicial Set and 4 Medicine"
+          },
+          {
+            "text": "2,980 Yen"
+          },
+          {
+            "text": "May 29th"
+          }
+        ],
+        [
+          {
+            "text": "Jingi Fundoshi and 2 Slimming Food"
+          },
+          {
+            "text": "11,800 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Inaba Trout and Amber Seema"
+          },
+          {
+            "text": "2,980 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Fire Suppressor and 2 Herbal Pill"
+          },
+          {
+            "text": "4,980 Yen"
+          },
+          {
+            "text": "June 12th"
+          }
+        ],
+        [
+          {
+            "text": "Balm of Life and 4 Curse Paper"
+          },
+          {
+            "text": "2,980 Yen"
+          },
+          {
+            "text": "June 12th"
+          }
+        ],
+        [
+          {
+            "text": "Power Belt and 2 Herbal Pill"
+          },
+          {
+            "text": "4,980 Yen"
+          },
+          {
+            "text": "June 19th"
+          }
+        ],
+        [
+          {
+            "text": "Huge Fish and 4 Ice Cube"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "June 19th"
+          }
+        ],
+        [
+          {
+            "text": "Myth-like Sword and 2 Herbal Pill"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "June 26th"
+          }
+        ],
+        [
+          {
+            "text": "2 Purified Salt and 2 Segaki Rice"
+          },
+          {
+            "text": "3,980 Yen"
+          },
+          {
+            "text": "June 26th"
+          }
+        ],
+        [
+          {
+            "text": "Armada Bustier and 2 Giant Candy"
+          },
+          {
+            "text": "20,800 Yen"
+          },
+          {
+            "text": "July 3rd"
+          }
+        ],
+        [
+          {
+            "text": "30 Peach Seed and 10 Soul Drop"
+          },
+          {
+            "text": "2,980 Yen"
+          },
+          {
+            "text": "July 3rd"
+          }
+        ],
+        [
+          {
+            "text": "Blessed Hands and 2 Giant Candy"
+          },
+          {
+            "text": "39,800 Yen"
+          },
+          {
+            "text": "July 11th"
+          }
+        ],
+        [
+          {
+            "text": "Growth 2 and 2 Hell Magatama"
+          },
+          {
+            "text": "24,800 Yen"
+          },
+          {
+            "text": "July 11th"
+          }
+        ],
+        [
+          {
+            "text": "Purple Suit and 2 Giant Candy"
+          },
+          {
+            "text": "20,800 Yen"
+          },
+          {
+            "text": "July 17th"
+          }
+        ],
+        [
+          {
+            "text": "2 Diamond Shield and 6 Heavy Food"
+          },
+          {
+            "text": "8,800 Yen"
+          },
+          {
+            "text": "July 17th"
+          }
+        ],
+        [
+          {
+            "text": "Kitchen Knife and 2 Giant Candy"
+          },
+          {
+            "text": "11,600 Yen"
+          },
+          {
+            "text": "July 24th"
+          }
+        ],
+        [
+          {
+            "text": "24 Second Maid and Dr. Salt NEO"
+          },
+          {
+            "text": "7,800 Yen"
+          },
+          {
+            "text": "July 24th"
+          }
+        ],
+        [
+          {
+            "text": "Maneki Neko and 2 Giant Candy"
+          },
+          {
+            "text": "7,980 Yen"
+          },
+          {
+            "text": "July 31st"
+          }
+        ],
+        [
+          {
+            "text": "2 Smart Bomb and 2 Supersonic"
+          },
+          {
+            "text": "6,980 Yen"
+          },
+          {
+            "text": "July 31st"
+          }
+        ],
+        [
+          {
+            "text": "Paladin Armor and 2 Herbal Pill"
+          },
+          {
+            "text": "20,800 Yen"
+          },
+          {
+            "text": "August 7th"
+          }
+        ],
+        [
+          {
+            "text": "Kitchen Knife and Myth-like Sword"
+          },
+          {
+            "text": "12,800 Yen"
+          },
+          {
+            "text": "August 7th"
+          }
+        ],
+        [
+          {
+            "text": "Wood Bat and 2 Longevity Supplement"
+          },
+          {
+            "text": "14,000 Yen"
+          },
+          {
+            "text": "August 14th"
+          }
+        ],
+        [
+          {
+            "text": "6 Segaki Rice and 4 Purified Water"
+          },
+          {
+            "text": "8,800 Yen"
+          },
+          {
+            "text": "August 14th"
+          }
+        ],
+        [
+          {
+            "text": "2 Genji Beetle and 2 Longevity Supplement"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "August 22nd"
+          }
+        ],
+        [
+          {
+            "text": "12 Tiny Soul Tomato and 5 Hiranya Cabbage"
+          },
+          {
+            "text": "4,800 Yen"
+          },
+          {
+            "text": "August 22nd"
+          }
+        ],
+        [
+          {
+            "text": "Thief's Dagger and 2 Longevity Supplement"
+          },
+          {
+            "text": "20,800 Yen"
+          },
+          {
+            "text": "August 28th"
+          }
+        ],
+        [
+          {
+            "text": "2 Inferno Jade and 2 Thunder Jade"
+          },
+          {
+            "text": "12,800 Yen"
+          },
+          {
+            "text": "August 28th"
+          }
+        ],
+        [
+          {
+            "text": "Charm Drape and 2 Heavy Soup"
+          },
+          {
+            "text": "21,800 Yen"
+          },
+          {
+            "text": "September 4th"
+          }
+        ],
+        [
+          {
+            "text": "2 Chest Key and 5 TV-mercial Seal"
+          },
+          {
+            "text": "6,800 Yen"
+          },
+          {
+            "text": "September 4th"
+          }
+        ],
+        [
+          {
+            "text": "Wind Demon's Claw and 2 Heavy Soup"
+          },
+          {
+            "text": "27,800 Yen"
+          },
+          {
+            "text": "September 11th"
+          }
+        ],
+        [
+          {
+            "text": "4 Inaba Trout and Dry Ice"
+          },
+          {
+            "text": "6,980 Yen"
+          },
+          {
+            "text": "September 11th"
+          }
+        ],
+        [
+          {
+            "text": "Chain of Retaliation and 2 Heavy Soup"
+          },
+          {
+            "text": "21,800 Yen"
+          },
+          {
+            "text": "September 18th"
+          }
+        ],
+        [
+          {
+            "text": "Soma and 2 Purified Water"
+          },
+          {
+            "text": "14,800 Yen"
+          },
+          {
+            "text": "September 18th"
+          }
+        ],
+        [
+          {
+            "text": "Death Scudetto and 2 Wasabi Jelly"
+          },
+          {
+            "text": "28,800 Yen"
+          },
+          {
+            "text": "September 25th"
+          }
+        ],
+        [
+          {
+            "text": "8 Diet Food and 8 Odd Morsel"
+          },
+          {
+            "text": "5,980 Yen"
+          },
+          {
+            "text": "September 25th"
+          }
+        ],
+        [
+          {
+            "text": "Pink Battlesuit and 2 Wasabi Jelly"
+          },
+          {
+            "text": "29,800 Yen"
+          },
+          {
+            "text": "October 2nd"
+          }
+        ],
+        [
+          {
+            "text": "2 Red Goldfish and 10 Bread Crumbs"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "October 2nd"
+          }
+        ],
+        [
+          {
+            "text": "Nice Shoes and 2 Wasabi Jelly"
+          },
+          {
+            "text": "29,800 Yen"
+          },
+          {
+            "text": "October 9th"
+          }
+        ],
+        [
+          {
+            "text": "3 Huge Fish and 4 Dry Ice"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "October 9th"
+          }
+        ],
+        [
+          {
+            "text": "Red Battlesuit and 2 Diet Food"
+          },
+          {
+            "text": "28,800 Yen"
+          },
+          {
+            "text": "October 16th"
+          }
+        ],
+        [
+          {
+            "text": "3 Physical Mirror and 3 Magic Mirror"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "October 16th"
+          }
+        ],
+        [
+          {
+            "text": "Pure Assassin and 2 Diet Food"
+          },
+          {
+            "text": "29,800 Yen"
+          },
+          {
+            "text": "October 23rd"
+          }
+        ],
+        [
+          {
+            "text": "2 Chest Key and 5 TV-mercial Seal"
+          },
+          {
+            "text": "6,800 Yen"
+          },
+          {
+            "text": "October 23rd"
+          }
+        ],
+        [
+          {
+            "text": "Ryugu Stone and 2 Diet Food"
+          },
+          {
+            "text": "49,800 Yen"
+          },
+          {
+            "text": "November 1st"
+          }
+        ],
+        [
+          {
+            "text": "Bead Melon and Scapegoat Eggplant"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "November 1st"
+          }
+        ],
+        [
+          {
+            "text": "Eagle Eye and 2 Heavy Soup"
+          },
+          {
+            "text": "49,800 Yen"
+          },
+          {
+            "text": "November 6th"
+          }
+        ],
+        [
+          {
+            "text": "Meguro Tuna and 3 Hachiro Octopus"
+          },
+          {
+            "text": "12,800 Yen"
+          },
+          {
+            "text": "November 6th"
+          }
+        ],
+        [
+          {
+            "text": "Reisen Brace and 2 Diet Food"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "November 13th"
+          }
+        ],
+        [
+          {
+            "text": "Nice Shoes and Red Battlesuit"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "November 13th"
+          }
+        ],
+        [
+          {
+            "text": "Angel Skirt and 2 Diet Food"
+          },
+          {
+            "text": "59,800 Yen"
+          },
+          {
+            "text": "November 20th"
+          }
+        ],
+        [
+          {
+            "text": "Soma and 4 Amrita Soda"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "November 20th"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Matarukaja and 2 Wasabi Jelly"
+          },
+          {
+            "text": "49,800 Yen"
+          },
+          {
+            "text": "January 10th"
+          }
+        ],
+        [
+          {
+            "text": "3 Tetracorn and 3 Makaracorn"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "January 10th"
+          }
+        ],
+        [
+          {
+            "text": "Book of Void and 2 Giant Candy"
+          },
+          {
+            "text": "21,800 Yen"
+          },
+          {
+            "text": "January 15th"
+          }
+        ],
+        [
+          {
+            "text": "Bead Chain and 2 Cyclone Magatama"
+          },
+          {
+            "text": "12,800 Yen"
+          },
+          {
+            "text": "January 15th"
+          }
+        ],
+        [
+          {
+            "text": "4 Soul Food and 2 Diet Food"
+          },
+          {
+            "text": "24,800 Yen"
+          },
+          {
+            "text": "January 22nd"
+          }
+        ],
+        [
+          {
+            "text": "Ryugu Stone and 3 Amrita Soda"
+          },
+          {
+            "text": "21,800 Yen"
+          },
+          {
+            "text": "January 22nd"
+          }
+        ],
+        [
+          {
+            "text": "Wizard's Mark and 2 Longevity Pill"
+          },
+          {
+            "text": "69,800 Yen"
+          },
+          {
+            "text": "January 29th"
+          }
+        ],
+        [
+          {
+            "text": "Masuda Stone and Kaiou Stone"
+          },
+          {
+            "text": "39,800 Yen"
+          },
+          {
+            "text": "January 29th"
+          }
+        ],
+        [
+          {
+            "text": "Sonidori Wear 2 Diet Food"
+          },
+          {
+            "text": "79,800 Yen"
+          },
+          {
+            "text": "February 5th"
+          }
+        ],
+        [
+          {
+            "text": "5 Chest Key and 3 Homunculus"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "February 5th"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Starting on May 29th, every Sunday you can check the TV in your room to watch the TV Shopping program. Every week there are two bundles of items, and you can order one of them. If you miss the program on Sunday, you are given until Wednesday to order. The package will arrive at home a few days later. In addition, you will be given Prize Stickers which can be mailed in for items, and is needed for Quest 10. For info on what these items do check the Item List section. Here is the list of every bundle available.\nItem | Price | Day\nAdios Shoe and 2 Slimming Food | 5,980 Yen | May 29th\nMedicial Set and 4 Medicine | 2,980 Yen | May 29th\nJingi Fundoshi and 2 Slimming Food | 11,800 Yen | June 5th\nInaba Trout and Amber Seema | 2,980 Yen | June 5th\nFire Suppressor and 2 Herbal Pill | 4,980 Yen | June 12th\nBalm of Life and 4 Curse Paper | 2,980 Yen | June 12th\nPower Belt and 2 Herbal Pill | 4,980 Yen | June 19th\nHuge Fish and 4 Ice Cube | 9,800 Yen | June 19th\nMyth-like Sword and 2 Herbal Pill | 9,800 Yen | June 26th\n2 Purified Salt and 2 Segaki Rice | 3,980 Yen | June 26th\nArmada Bustier and 2 Giant Candy | 20,800 Yen | July 3rd\n30 Peach Seed and 10 Soul Drop | 2,980 Yen | July 3rd\nBlessed Hands and 2 Giant Candy | 39,800 Yen | July 11th\nGrowth 2 and 2 Hell Magatama | 24,800 Yen | July 11th\nPurple Suit and 2 Giant Candy | 20,800 Yen | July 17th\n2 Diamond Shield and 6 Heavy Food | 8,800 Yen | July 17th\nKitchen Knife and 2 Giant Candy | 11,600 Yen | July 24th\n24 Second Maid and Dr. Salt NEO | 7,800 Yen | July 24th\nManeki Neko and 2 Giant Candy | 7,980 Yen | July 31st\n2 Smart Bomb and 2 Supersonic | 6,980 Yen | July 31st\nPaladin Armor and 2 Herbal Pill | 20,800 Yen | August 7th\nKitchen Knife and Myth-like Sword | 12,800 Yen | August 7th\nWood Bat and 2 Longevity Supplement | 14,000 Yen | August 14th\n6 Segaki Rice and 4 Purified Water | 8,800 Yen | August 14th\n2 Genji Beetle and 2 Longevity Supplement | 9,800 Yen | August 22nd\n12 Tiny Soul Tomato and 5 Hiranya Cabbage | 4,800 Yen | August 22nd\nThief's Dagger and 2 Longevity Supplement | 20,800 Yen | August 28th\n2 Inferno Jade and 2 Thunder Jade | 12,800 Yen | August 28th\nCharm Drape and 2 Heavy Soup | 21,800 Yen | September 4th\n2 Chest Key and 5 TV-mercial Seal | 6,800 Yen | September 4th\nWind Demon's Claw and 2 Heavy Soup | 27,800 Yen | September 11th\n4 Inaba Trout and Dry Ice | 6,980 Yen | September 11th\nChain of Retaliation and 2 Heavy Soup | 21,800 Yen | September 18th\nSoma and 2 Purified Water | 14,800 Yen | September 18th\nDeath Scudetto and 2 Wasabi Jelly | 28,800 Yen | September 25th\n8 Diet Food and 8 Odd Morsel | 5,980 Yen | September 25th\nPink Battlesuit and 2 Wasabi Jelly | 29,800 Yen | October 2nd\n2 Red Goldfish and 10 Bread Crumbs | 9,800 Yen | October 2nd\nNice Shoes and 2 Wasabi Jelly | 29,800 Yen | October 9th\n3 Huge Fish and 4 Dry Ice | 19,800 Yen | October 9th\nRed Battlesuit and 2 Diet Food | 28,800 Yen | October 16th\n3 Physical Mirror and 3 Magic Mirror | 19,800 Yen | October 16th\nPure Assassin and 2 Diet Food | 29,800 Yen | October 23rd\n2 Chest Key and 5 TV-mercial Seal | 6,800 Yen | October 23rd\nRyugu Stone and 2 Diet Food | 49,800 Yen | November 1st\nBead Melon and Scapegoat Eggplant | 9,800 Yen | November 1st\nEagle Eye and 2 Heavy Soup | 49,800 Yen | November 6th\nMeguro Tuna and 3 Hachiro Octopus | 12,800 Yen | November 6th\nReisen Brace and 2 Diet Food | 19,800 Yen | November 13th\nNice Shoes and Red Battlesuit | 19,800 Yen | November 13th\nAngel Skirt and 2 Diet Food | 59,800 Yen | November 20th\nSoma and 4 Amrita Soda | 19,800 Yen | November 20th\nAuto-Matarukaja and 2 Wasabi Jelly | 49,800 Yen | January 10th\n3 Tetracorn and 3 Makaracorn | 9,800 Yen | January 10th\nBook of Void and 2 Giant Candy | 21,800 Yen | January 15th\nBead Chain and 2 Cyclone Magatama | 12,800 Yen | January 15th\n4 Soul Food and 2 Diet Food | 24,800 Yen | January 22nd\nRyugu Stone and 3 Amrita Soda | 21,800 Yen | January 22nd\nWizard's Mark and 2 Longevity Pill | 69,800 Yen | January 29th\nMasuda Stone and Kaiou Stone | 39,800 Yen | January 29th\nSonidori Wear 2 Diet Food | 79,800 Yen | February 5th\n5 Chest Key and 3 Homunculus | 19,800 Yen | February 5th"
+}

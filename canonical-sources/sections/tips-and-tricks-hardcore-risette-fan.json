@@ -1,0 +1,556 @@
+{
+  "id": "tips-and-tricks-hardcore-risette-fan",
+  "title": "Hardcore Risette Fan",
+  "chapter": "Tips And Tricks",
+  "chapter_id": "tips-and-tricks",
+  "anchor": "hardcore-risette-fan",
+  "type": "article",
+  "order": 140,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Hardcore Risette Fan is considered to be the hardest Trophy to obtain. In order to obtain this Trophy, you need to hear 250 of Rise's battle lines. This sounds extremely difficult, however it is manageable with some planning. There is a lot of conflicting info on how this Trophy works. Thankfully, a lot of research has been done by the community and we can reasonably estimate how the Trophy works. This section will both explain how the Trophy works, and help you obtain it."
+    },
+    {
+      "type": "p",
+      "text": "How it Works",
+      "md": "**How it Works**"
+    },
+    {
+      "type": "p",
+      "text": "The Hardcore Risette Fan Trophy is obtained after hearing 250 of Rise's battle lines. The lines that are counted are displayed in text during battle. Any line Rise says that doesn't have text is assumed to not count, which includes a bunch of lines from analyzing enemies. The total amount of lines possible is estimated to be around 450, making this Trophy more manageable that one would first assume. This Trophy only counts unique lines. Hearing the same line multiple times doesn't count. These lines do carry over to New Game Plus, and due to the way PlayStation Trophies work, they also carry over between different saves. The Trophy is instead tied to your PlayStation account, and won't transfer between accounts."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "NOTE!\nThe above only applies to PlayStation Trophies. I do not know how Xbox or Steam achievements are calculated.",
+            "md": "**NOTE!**\nThe above only applies to PlayStation Trophies. I do not know how Xbox or Steam achievements are calculated."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rise's Lines",
+      "md": "**Rise's Lines**"
+    },
+    {
+      "type": "p",
+      "text": "This is a general overview of how to get Rise's lines. This is not a detailed list of every line in the game. The numbers provided are estimates and are not completely accurate (ex. MC can't run away from battle). If you would like a more comprehensive list, there is an excellent checklist you can use located in the Resources Section below. Here is the general list of Rise's lines."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "12 Status Ailments x 7 Party Members (84 Total)",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "Down"
+                },
+                {
+                  "text": "Miss an attack"
+                },
+                {
+                  "text": "Dizzy"
+                },
+                {
+                  "text": "Still Dizzy"
+                },
+                {
+                  "text": "Enervation"
+                },
+                {
+                  "text": "Exhaustion"
+                },
+                {
+                  "text": "Fear"
+                },
+                {
+                  "text": "Run Away"
+                },
+                {
+                  "text": "Panic"
+                },
+                {
+                  "text": "Poison"
+                },
+                {
+                  "text": "Rage"
+                },
+                {
+                  "text": "Silence"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "3 Debuffs x 7 Party Members (21 Total)",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "Attack"
+                },
+                {
+                  "text": "Defense"
+                },
+                {
+                  "text": "Hit/Evasion"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "3 Low Health x 7 Party Members (21 Total)",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "Half Health"
+                },
+                {
+                  "text": "Still at Half Health"
+                },
+                {
+                  "text": "KO'd"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Dodge Attack x 7 Party Members (7 Total)"
+        },
+        {
+          "text": "6 Defeat Enemies x 7 Party Members (42 Total)",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "3 Defeat One Enemy"
+                },
+                {
+                  "text": "Defeat Two Enemies"
+                },
+                {
+                  "text": "Defeat Three Enemies"
+                },
+                {
+                  "text": "Defeat Four Enemies"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "9 Down Enemies x 7 Party Members (63 Total)",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "4 Down One Enemy"
+                },
+                {
+                  "text": "Down Two Enemies"
+                },
+                {
+                  "text": "Down Three Enemies"
+                },
+                {
+                  "text": "3 Hit Down Enemy with Weakness"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Critical Hit x 7 Party Members (7 Total)"
+        },
+        {
+          "text": "28 Rise Analysis",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 Weak Physical"
+                },
+                {
+                  "text": "2 Immune Physical"
+                },
+                {
+                  "text": "2 Weak Fire"
+                },
+                {
+                  "text": "2 Immune Fire"
+                },
+                {
+                  "text": "2 Weak Ice"
+                },
+                {
+                  "text": "2 Immune Ice"
+                },
+                {
+                  "text": "2 Weak Elec"
+                },
+                {
+                  "text": "2 Immune Elec"
+                },
+                {
+                  "text": "2 Weak Wind"
+                },
+                {
+                  "text": "2 Immune Wind"
+                },
+                {
+                  "text": "2 Weak Light"
+                },
+                {
+                  "text": "2 Immune Light"
+                },
+                {
+                  "text": "2 Weak Dark"
+                },
+                {
+                  "text": "2 Immune Dark"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "6 Enemy Level",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 Lower Level"
+                },
+                {
+                  "text": "2 Same Level"
+                },
+                {
+                  "text": "2 Higher Level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "28 Rise Reveals Affinity",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 Weak Physical"
+                },
+                {
+                  "text": "2 Immune Physical"
+                },
+                {
+                  "text": "2 Weak Fire"
+                },
+                {
+                  "text": "2 Immune Fire"
+                },
+                {
+                  "text": "2 Weak Ice"
+                },
+                {
+                  "text": "2 Immune Ice"
+                },
+                {
+                  "text": "2 Weak Elec"
+                },
+                {
+                  "text": "2 Immune Elec"
+                },
+                {
+                  "text": "2 Weak Wind"
+                },
+                {
+                  "text": "2 Immune Wind"
+                },
+                {
+                  "text": "2 Weak Light"
+                },
+                {
+                  "text": "2 Immune Light"
+                },
+                {
+                  "text": "2 Weak Dark"
+                },
+                {
+                  "text": "2 Immune Dark"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "30 Number of Enemies",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 One Enemy, Player Advantage"
+                },
+                {
+                  "text": "2 Two Enemies, Player Advantage"
+                },
+                {
+                  "text": "2 Three Enemies, Player Advantage"
+                },
+                {
+                  "text": "2 Four Enemies, Player Advantage"
+                },
+                {
+                  "text": "2 Five Enemies, Player Advantage"
+                },
+                {
+                  "text": "2 One Enemy, Enemy Advantage"
+                },
+                {
+                  "text": "2 Two Enemies, Enemy Advantage"
+                },
+                {
+                  "text": "2 Three Enemies, Enemy Advantage"
+                },
+                {
+                  "text": "2 Four Enemies, Enemy Advantage"
+                },
+                {
+                  "text": "2 Five Enemies, Enemy Advantage"
+                },
+                {
+                  "text": "2 One Enemy, No Advantage"
+                },
+                {
+                  "text": "2 Two Enemies, No Advantage"
+                },
+                {
+                  "text": "2 Three Enemies, No Advantage"
+                },
+                {
+                  "text": "2 Four Enemies, No Advantage"
+                },
+                {
+                  "text": "2 Five Enemies, No Advantage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "10 Enemies Left",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 One Enemy"
+                },
+                {
+                  "text": "2 Two Enemies"
+                },
+                {
+                  "text": "2 Three Enemies"
+                },
+                {
+                  "text": "2 Four Enemies"
+                },
+                {
+                  "text": "2 Five Enemies"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "10 Enemy Reinforcements",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 One Enemy"
+                },
+                {
+                  "text": "2 Two Enemies"
+                },
+                {
+                  "text": "2 Three Enemies"
+                },
+                {
+                  "text": "2 Four Enemies"
+                },
+                {
+                  "text": "2 Five Enemies"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "13 Enemy Other",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "One Enemy Ambush"
+                },
+                {
+                  "text": "Two Enemy Ambush"
+                },
+                {
+                  "text": "Three Enemy Ambush"
+                },
+                {
+                  "text": "Four Enemy Ambush"
+                },
+                {
+                  "text": "Five Enemy Ambush"
+                },
+                {
+                  "text": "2 Enemy Summoned"
+                },
+                {
+                  "text": "Another Enemy Summoned"
+                },
+                {
+                  "text": "Enemy Ran, One Left"
+                },
+                {
+                  "text": "Enemy Ran, Two Left"
+                },
+                {
+                  "text": "Enemy Ran, Three Left"
+                },
+                {
+                  "text": "Enemy Ran, Four Left"
+                },
+                {
+                  "text": "Golden Shadow Ran"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "36 Rise Boss",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "2 Marukyu Striptease"
+                },
+                {
+                  "text": "2 Void Quest"
+                },
+                {
+                  "text": "2 Secret Laboratory"
+                },
+                {
+                  "text": "9 Heaven"
+                },
+                {
+                  "text": "3 Magatsu Inaba"
+                },
+                {
+                  "text": "3 Hollow Forest Boss 1"
+                },
+                {
+                  "text": "6 Hollow Forest Boss 2"
+                },
+                {
+                  "text": "4 Yomotsu Hirasaka"
+                },
+                {
+                  "text": "5 Secret Boss"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "19 Other Lines",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "3 Win Battle"
+                },
+                {
+                  "text": "3 Rush Mode"
+                },
+                {
+                  "text": "4 All-Out Attack"
+                },
+                {
+                  "text": "Escape from Battle"
+                },
+                {
+                  "text": "Waiting to Escape"
+                },
+                {
+                  "text": "Select Escape Again"
+                },
+                {
+                  "text": "Successful Escape"
+                },
+                {
+                  "text": "Can't Escape"
+                },
+                {
+                  "text": "Encounter Golden Shadow"
+                },
+                {
+                  "text": "Encounter Reaper"
+                },
+                {
+                  "text": "Party Member gets up"
+                },
+                {
+                  "text": "Enemy gets up"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "text": "Hardcore Risette Fan is considered to be the hardest Trophy to obtain. In order to obtain this Trophy, you need to hear 250 of Rise's battle lines. This sounds extremely difficult, however it is manageable with some planning. There is a lot of conflicting info on how this Trophy works. Thankfully, a lot of research has been done by the community and we can reasonably estimate how the Trophy works. This section will both explain how the Trophy works, and help you obtain it.\nHow it Works\nThe Hardcore Risette Fan Trophy is obtained after hearing 250 of Rise's battle lines. The lines that are counted are displayed in text during battle. Any line Rise says that doesn't have text is assumed to not count, which includes a bunch of lines from analyzing enemies. The total amount of lines possible is estimated to be around 450, making this Trophy more manageable that one would first assume. This Trophy only counts unique lines. Hearing the same line multiple times doesn't count. These lines do carry over to New Game Plus, and due to the way PlayStation Trophies work, they also carry over between different saves. The Trophy is instead tied to your PlayStation account, and won't transfer between accounts.\nNOTE! / The above only applies to PlayStation Trophies. I do not know how Xbox or Steam achievements are calculated.\nRise's Lines\nThis is a general overview of how to get Rise's lines. This is not a detailed list of every line in the game. The numbers provided are estimates and are not completely accurate (ex. MC can't run away from battle). If you would like a more comprehensive list, there is an excellent checklist you can use located in the Resources Section below. Here is the general list of Rise's lines.\n12 Status Ailments x 7 Party Members (84 Total)\nDown\nMiss an attack\nDizzy\nStill Dizzy\nEnervation\nExhaustion\nFear\nRun Away\nPanic\nPoison\nRage\nSilence\n3 Debuffs x 7 Party Members (21 Total)\nAttack\nDefense\nHit/Evasion\n3 Low Health x 7 Party Members (21 Total)\nHalf Health\nStill at Half Health\nKO'd\nDodge Attack x 7 Party Members (7 Total)\n6 Defeat Enemies x 7 Party Members (42 Total)\n3 Defeat One Enemy\nDefeat Two Enemies\nDefeat Three Enemies\nDefeat Four Enemies\n9 Down Enemies x 7 Party Members (63 Total)\n4 Down One Enemy\nDown Two Enemies\nDown Three Enemies\n3 Hit Down Enemy with Weakness\nCritical Hit x 7 Party Members (7 Total)\n28 Rise Analysis\n2 Weak Physical\n2 Immune Physical\n2 Weak Fire\n2 Immune Fire\n2 Weak Ice\n2 Immune Ice\n2 Weak Elec\n2 Immune Elec\n2 Weak Wind\n2 Immune Wind\n2 Weak Light\n2 Immune Light\n2 Weak Dark\n2 Immune Dark\n6 Enemy Level\n2 Lower Level\n2 Same Level\n2 Higher Level\n28 Rise Reveals Affinity\n2 Weak Physical\n2 Immune Physical\n2 Weak Fire\n2 Immune Fire\n2 Weak Ice\n2 Immune Ice\n2 Weak Elec\n2 Immune Elec\n2 Weak Wind\n2 Immune Wind\n2 Weak Light\n2 Immune Light\n2 Weak Dark\n2 Immune Dark\n30 Number of Enemies\n2 One Enemy, Player Advantage\n2 Two Enemies, Player Advantage\n2 Three Enemies, Player Advantage\n2 Four Enemies, Player Advantage\n2 Five Enemies, Player Advantage\n2 One Enemy, Enemy Advantage\n2 Two Enemies, Enemy Advantage\n2 Three Enemies, Enemy Advantage\n2 Four Enemies, Enemy Advantage\n2 Five Enemies, Enemy Advantage\n2 One Enemy, No Advantage\n2 Two Enemies, No Advantage\n2 Three Enemies, No Advantage\n2 Four Enemies, No Advantage\n2 Five Enemies, No Advantage\n10 Enemies Left\n2 One Enemy\n2 Two Enemies\n2 Three Enemies\n2 Four Enemies\n2 Five Enemies\n10 Enemy Reinforcements\n2 One Enemy\n2 Two Enemies\n2 Three Enemies\n2 Four Enemies\n2 Five Enemies\n13 Enemy Other\nOne Enemy Ambush\nTwo Enemy Ambush\nThree Enemy Ambush\nFour Enemy Ambush\nFive Enemy Ambush\n2 Enemy Summoned\nAnother Enemy Summoned\nEnemy Ran, One Left\nEnemy Ran, Two Left\nEnemy Ran, Three Left\nEnemy Ran, Four Left\nGolden Shadow Ran\n36 Rise Boss\n2 Marukyu Striptease\n2 Void Quest\n2 Secret Laboratory\n9 Heaven\n3 Magatsu Inaba\n3 Hollow Forest Boss 1\n6 Hollow Forest Boss 2\n4 Yomotsu Hirasaka\n5 Secret Boss\n19 Other Lines\n3 Win Battle\n3 Rush Mode\n4 All-Out Attack\nEscape from Battle\nWaiting to Escape\nSelect Escape Again\nSuccessful Escape\nCan't Escape\nEncounter Golden Shadow\nEncounter Reaper\nParty Member gets up\nEnemy gets up"
+}

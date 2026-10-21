@@ -1,0 +1,170 @@
+{
+  "id": "persona-compendium-death",
+  "title": "Death",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "death",
+  "type": "arcana",
+  "order": 65,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Priestess\nFool x Emperor\nFool x Aeon\nMagician x Lovers\nPriestess x Hermit\nEmpress x Hierophant\nEmperor x Star\nHierophant x Lovers\nHeirophant x Hanged Man\nChariot x Hanged Man\nHermit x Tower\nFortune x Hanged Man\nHanged Man x Temperance\nHanged Man x Aeon\nDeath x Death\nTemperance x Jester"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Magician x Emperor\nEmpress x Justice\nEmperor x Devil\nHermit x Devil\nHermit x Star\nDeath x Death\nDevil x Moon\nDevil x Judgement\nTower x Sun\nStar x Moon\nStar x Jester\nMoon x Sun\nJudgement x Jester"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Ghoul"
+          },
+          {
+            "text": "9"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Mokoi"
+          },
+          {
+            "text": "14"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Matador"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Samael"
+          },
+          {
+            "text": "36"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Mot"
+          },
+          {
+            "text": "46"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "White Rider"
+          },
+          {
+            "text": "58"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Alice"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Mahakala"
+          },
+          {
+            "text": "78"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Priestess\nFool x Emperor\nFool x Aeon\nMagician x Lovers\nPriestess x Hermit\nEmpress x Hierophant\nEmperor x Star\nHierophant x Lovers\nHeirophant x Hanged Man\nChariot x Hanged Man\nHermit x Tower\nFortune x Hanged Man\nHanged Man x Temperance\nHanged Man x Aeon\nDeath x Death\nTemperance x Jester\nTriangle Spread\nMagician x Emperor\nEmpress x Justice\nEmperor x Devil\nHermit x Devil\nHermit x Star\nDeath x Death\nDevil x Moon\nDevil x Judgement\nTower x Sun\nStar x Moon\nStar x Jester\nMoon x Sun\nJudgement x Jester\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nGhoul | 9 |  | \nMokoi | 14 |  | \nMatador | 24 |  | \nSamael | 36 |  | \nMot | 46 |  | \nWhite Rider | 58 |  | \nAlice | 72 | X | \nMahakala | 78 | X | X"
+}

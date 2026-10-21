@@ -1,0 +1,1970 @@
+{
+  "id": "item-list-accessories",
+  "title": "Accessories",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "accessories",
+  "type": "catalog",
+  "order": 128,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Stat Accessories",
+      "md": "**Stat Accessories**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Headband"
+          },
+          {
+            "text": "+1 ST"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Lizard Charm"
+          },
+          {
+            "text": "+1 MA"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Amulet"
+          },
+          {
+            "text": "+1 EN"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Feather Strap"
+          },
+          {
+            "text": "+1 AG"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Lucky Coin"
+          },
+          {
+            "text": "+1 LU"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Feng Shui Brace"
+          },
+          {
+            "text": "+1 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Power Belt"
+          },
+          {
+            "text": "+2 ST"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Crow Charm"
+          },
+          {
+            "text": "+2 MA"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Talisman"
+          },
+          {
+            "text": "+2 EN"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Wing Strap"
+          },
+          {
+            "text": "+2 AG"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Rabbit Foot"
+          },
+          {
+            "text": "+2 LU"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Kimyaku Brace"
+          },
+          {
+            "text": "+2 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Power Tasuki"
+          },
+          {
+            "text": "+3 ST"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Bat Charm"
+          },
+          {
+            "text": "+3 MA"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Guard Amulet"
+          },
+          {
+            "text": "+3 EN"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Flight Strap"
+          },
+          {
+            "text": "+3 AG"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Silver Spoon"
+          },
+          {
+            "text": "+3 LU"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Ryumyaku Brace"
+          },
+          {
+            "text": "+3 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Spirit Hachimaki"
+          },
+          {
+            "text": "+4 ST"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Black Cat Charm"
+          },
+          {
+            "text": "+4 MA"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Iron Charm"
+          },
+          {
+            "text": "+4 EN"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Steed Strap"
+          },
+          {
+            "text": "+4 AG"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Maneki Neko"
+          },
+          {
+            "text": "+4 LU"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Reisen Brace"
+          },
+          {
+            "text": "+4 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Festival Drum"
+          },
+          {
+            "text": "+5 ST"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Witch Charm"
+          },
+          {
+            "text": "+5 MA"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Guard Rosary"
+          },
+          {
+            "text": "+5 EN"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Pegasus Strap"
+          },
+          {
+            "text": "+5 AG"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Wooden Ebisu"
+          },
+          {
+            "text": "+5 LU"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Ouryu Brace"
+          },
+          {
+            "text": "+5 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Power Muscle"
+          },
+          {
+            "text": "+10 ST"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Demon Charm"
+          },
+          {
+            "text": "+10 MA"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Defense Essence"
+          },
+          {
+            "text": "+10 EN"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Speed Star"
+          },
+          {
+            "text": "+10 AG"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Lucky Seven"
+          },
+          {
+            "text": "+10 LU"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "God's Love"
+          },
+          {
+            "text": "+10 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Vigor Fob"
+          },
+          {
+            "text": "+10% Max. HP"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Plum Potpourri"
+          },
+          {
+            "text": "+10% Max. SP"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Life Fob"
+          },
+          {
+            "text": "+20% Max. HP"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Soul Potpourri"
+          },
+          {
+            "text": "+20% Max. SP"
+          },
+          {
+            "text": "Daidara Metalworks"
+          }
+        ],
+        [
+          {
+            "text": "Amaterasu Fob"
+          },
+          {
+            "text": "+30% Max. HP"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Moon Potpourri"
+          },
+          {
+            "text": "+30 Max. SP"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Skill Accessories",
+      "md": "**Skill Accessories**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Revenge Ring"
+          },
+          {
+            "text": "Counter"
+          },
+          {
+            "text": "Daidara Metalworks, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Reprisal Chain"
+          },
+          {
+            "text": "Counterstrike"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Retribution Mask"
+          },
+          {
+            "text": "High Counter"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Sigma Drive"
+          },
+          {
+            "text": "Sharp Student"
+          },
+          {
+            "text": "Daidara Metalworks, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Divine Pillar"
+          },
+          {
+            "text": "Firm Stance"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Falcon Eye"
+          },
+          {
+            "text": "Dodge Physical"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Fire Suppressor"
+          },
+          {
+            "text": "Dodge Fire"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Ice Suppressor"
+          },
+          {
+            "text": "Dodge Ice"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Volt Suppressor"
+          },
+          {
+            "text": "Dodge Elec"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Wind Suppressor"
+          },
+          {
+            "text": "Dodge Wind"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Eagle Eye"
+          },
+          {
+            "text": "Evade Physical"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Eye of Flame"
+          },
+          {
+            "text": "Evade Fire"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Eye of Ice"
+          },
+          {
+            "text": "Evade Ice"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Eye of Thunder"
+          },
+          {
+            "text": "Evade Elec"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Eye of Wind"
+          },
+          {
+            "text": "Evade Wind"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Cat Whisker"
+          },
+          {
+            "text": "Angelic Grace"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Barbaric Bracers"
+          },
+          {
+            "text": "Ali Dance"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Bravery Vessel"
+          },
+          {
+            "text": "Resist Fear"
+          },
+          {
+            "text": "Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Tranquil Buddha"
+          },
+          {
+            "text": "Resist Panic"
+          },
+          {
+            "text": "Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Disintectant"
+          },
+          {
+            "text": "Resist Poison"
+          },
+          {
+            "text": "Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Cool Beads"
+          },
+          {
+            "text": "Resist Rage"
+          },
+          {
+            "text": "Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Disguise Mask"
+          },
+          {
+            "text": "Resist Mute"
+          },
+          {
+            "text": "Daidara Metalworks Rare Chest, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Kid's Hachimaki"
+          },
+          {
+            "text": "Resist Enervate"
+          },
+          {
+            "text": "Daidara Metalworks, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Healthy Recipe"
+          },
+          {
+            "text": "Resist Exhaust"
+          },
+          {
+            "text": "Daidara Metalworks, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Safety Belt"
+          },
+          {
+            "text": "Resist Dizzy"
+          },
+          {
+            "text": "Daidara Metalworks, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Bold Ball"
+          },
+          {
+            "text": "Null Fear"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Confusion Hat"
+          },
+          {
+            "text": "Null Panic"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Gas Mask"
+          },
+          {
+            "text": "Null Poison"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Frozen Rose"
+          },
+          {
+            "text": "Null Rage"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Mask of Truth"
+          },
+          {
+            "text": "Null Mute"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Pitch Pipes"
+          },
+          {
+            "text": "Null Enervate"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Healthy Homa"
+          },
+          {
+            "text": "Null Exhaust"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Alarm Clock"
+          },
+          {
+            "text": "Null Dizzy"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Book of the Void"
+          },
+          {
+            "text": "Unshaken Will"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Book of Ruin"
+          },
+          {
+            "text": "Fast Heal"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Book of Serenity"
+          },
+          {
+            "text": "Insta-Heal"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Omega Drive"
+          },
+          {
+            "text": "Apt Pupil"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Awareness Note"
+          },
+          {
+            "text": "Alertness"
+          },
+          {
+            "text": "Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Patient Collar"
+          },
+          {
+            "text": "Endure"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Rebirth Prophecy"
+          },
+          {
+            "text": "Enduring Soul"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Rudra Ring"
+          },
+          {
+            "text": "Arms Master"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Chakra Ring"
+          },
+          {
+            "text": "Spell Master"
+          },
+          {
+            "text": "Heaven 10F, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Blessed Hands"
+          },
+          {
+            "text": "Divine Grace"
+          },
+          {
+            "text": "Daidara Metalworks, Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Land Badge"
+          },
+          {
+            "text": "Regenerate 1"
+          },
+          {
+            "text": "Daidara Metalworks, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Earth Badge"
+          },
+          {
+            "text": "Regenerate 2"
+          },
+          {
+            "text": "Daidara Metalworks, Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Space Badge"
+          },
+          {
+            "text": "Regenerate 3"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Mage's Mark"
+          },
+          {
+            "text": "Invigorate 1"
+          },
+          {
+            "text": "Daidara Metalworks, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Sorcerer's Mark"
+          },
+          {
+            "text": "Invigorate 2"
+          },
+          {
+            "text": "Daidara Metalworks, Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Wizard's Mark"
+          },
+          {
+            "text": "Invigorate 3"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Elemental Accessories",
+      "md": "**Elemental Accessories**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Fire Vow"
+          },
+          {
+            "text": "Increased Fire damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Ice Vow"
+          },
+          {
+            "text": "Increased Ice damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Thunder Vow"
+          },
+          {
+            "text": "Increased Elec damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Wind Vow"
+          },
+          {
+            "text": "Increased Wind damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Flame Vow"
+          },
+          {
+            "text": "Increased Fire damage by 20%"
+          },
+          {
+            "text": "Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Snow Vow"
+          },
+          {
+            "text": "Increased Ice damage by 20%"
+          },
+          {
+            "text": "Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Spark Vow"
+          },
+          {
+            "text": "Increased Elec damaged by 20%"
+          },
+          {
+            "text": "Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Gust Vow"
+          },
+          {
+            "text": "Increased Wind damage by 20%"
+          },
+          {
+            "text": "Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Blaze Vow"
+          },
+          {
+            "text": "Increased Fire damage by 30%"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Blizzard Vow"
+          },
+          {
+            "text": "Increased Ice damage by 30%"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Volt Vow"
+          },
+          {
+            "text": "Increased Elec damage by 30%"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Storm Vow"
+          },
+          {
+            "text": "Increased Elec damage by 30%"
+          },
+          {
+            "text": "Void Quest Rare Chest, Secret Laboratory Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Inferno Vow"
+          },
+          {
+            "text": "Increased Fire damage by 40%"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Icicle Vow"
+          },
+          {
+            "text": "Increased Ice damage by 40%"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Lightning Vow"
+          },
+          {
+            "text": "Increased Elec damage by 40%"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Gale Vow"
+          },
+          {
+            "text": "Increased Wind damage by 40%"
+          },
+          {
+            "text": "Heaven Rare Chest, Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Kagutsuchi Vow"
+          },
+          {
+            "text": "Increased Fire damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Kuraokami Vow"
+          },
+          {
+            "text": "Increased Ice damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Takefutsu Vow"
+          },
+          {
+            "text": "Increased Elec damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Shinatobe Vow"
+          },
+          {
+            "text": "Increased Wind damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Fire Pin"
+          },
+          {
+            "text": "Reduced Fire damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Ice Pin"
+          },
+          {
+            "text": "Reduced Ice damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Thunder Pin"
+          },
+          {
+            "text": "Reduced Elec damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Wind Pin"
+          },
+          {
+            "text": "Reduced Wind damage by 10%"
+          },
+          {
+            "text": "Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Flame Pin"
+          },
+          {
+            "text": "Reduced Fire damage by 20%"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Snow Pin"
+          },
+          {
+            "text": "Reduced Ice damage by 20%"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Spark Pin"
+          },
+          {
+            "text": "Reduced Elec damage by 20%"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Gust Pin"
+          },
+          {
+            "text": "Reduced Wind damage by 20%"
+          },
+          {
+            "text": "Marukyu Striptease Rare Chest, Void Quest Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Blaze Pin"
+          },
+          {
+            "text": "Reduced Fire damage by 30%"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Blizzard Pin"
+          },
+          {
+            "text": "Reduced Ice damage by 30%"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Volt Pin"
+          },
+          {
+            "text": "Reduced Elec damage by 30%"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Storm Pin"
+          },
+          {
+            "text": "Reduced Wind damage by 30%"
+          },
+          {
+            "text": "Secret Laboratory Rare Chest, Heaven Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Inferno Pin"
+          },
+          {
+            "text": "Reduced Fire damage by 40%"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Icicle Pin"
+          },
+          {
+            "text": "Reduced Ice damage by 40%"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Lightning Pin"
+          },
+          {
+            "text": "Reduced Elec damage by 40%"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Gale Pin"
+          },
+          {
+            "text": "Reduced Wind damage by 40%"
+          },
+          {
+            "text": "Magatsu Inaba Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Kagutsuchi Pin"
+          },
+          {
+            "text": "Reduced Fire damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Kuraokami Pin"
+          },
+          {
+            "text": "Reduced Ice damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Takefutsu Pin"
+          },
+          {
+            "text": "Reduced Elec damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Shinatobe Pin"
+          },
+          {
+            "text": "Reduced Wind damage by 50%"
+          },
+          {
+            "text": "Yomotsu Hirasaka Rare Chest"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Recovery Accessories",
+      "md": "**Recovery Accessories**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Parting Stone"
+          },
+          {
+            "text": "Restores 8 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Pain Stone"
+          },
+          {
+            "text": "Restores 10 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Grief Stone"
+          },
+          {
+            "text": "Restores 12 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Sorrow Stone"
+          },
+          {
+            "text": "Restores 14 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Love Stone"
+          },
+          {
+            "text": "Restores 16 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Suffering Stone"
+          },
+          {
+            "text": "Restores 18 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Anger Stone"
+          },
+          {
+            "text": "Restores 20 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Loneliness Stone"
+          },
+          {
+            "text": "Restores 22 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Invitation Stone"
+          },
+          {
+            "text": "Restores 24 SP every turn"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Other Accessories",
+      "md": "**Other Accessories**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Worn By",
+            "md": "**Worn By**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Wristwatch"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Plain Ring"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Aluminum Badge"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Hair Band"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Silver Locket"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Bear Ears"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Spiral Earrings"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          }
+        ],
+        [
+          {
+            "text": "Portrait Medal"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "+5 ST"
+          },
+          {
+            "text": "Ace May exams"
+          }
+        ],
+        [
+          {
+            "text": "Paper Armband"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "+5 ST, MA, EN, AG, LU"
+          },
+          {
+            "text": "Ace July exams"
+          }
+        ],
+        [
+          {
+            "text": "Bead Ring"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Angelic Grace"
+          },
+          {
+            "text": "Ace October exams"
+          }
+        ],
+        [
+          {
+            "text": "Partial Award"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Endure"
+          },
+          {
+            "text": "Ace December exams"
+          }
+        ],
+        [
+          {
+            "text": "Reader King"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "+10 MA"
+          },
+          {
+            "text": "Read every book"
+          }
+        ],
+        [
+          {
+            "text": "Macho Medal"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Resist Physical"
+          },
+          {
+            "text": "Guys Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Fluffy Muffler"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Resist Ice"
+          },
+          {
+            "text": "Chie Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Leather Keychain"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Resist Fire"
+          },
+          {
+            "text": "Yukiko Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Silver Bangle"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "+50% Max. SP"
+          },
+          {
+            "text": "Rise Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Handmade Watch"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Ailment Boost"
+          },
+          {
+            "text": "Naoto Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Rugged Ring"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Divine Grace"
+          },
+          {
+            "text": "Ai Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Fancy Mini-Car"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Mudo Boost"
+          },
+          {
+            "text": "Yumi Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Hand-Knit Mitten"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Hama Boost"
+          },
+          {
+            "text": "Ayane Christmas event"
+          }
+        ],
+        [
+          {
+            "text": "Omnipotent Orb"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Null all damage except Almighty"
+          },
+          {
+            "text": "Reaper"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Stat Accessories\nAccessory | Effect | Location\nHeadband | +1 ST | Daidara Metalworks\nLizard Charm | +1 MA | Daidara Metalworks\nAmulet | +1 EN | Daidara Metalworks\nFeather Strap | +1 AG | Daidara Metalworks\nLucky Coin | +1 LU | Daidara Metalworks\nFeng Shui Brace | +1 ST, MA, EN, AG, LU | Daidara Metalworks\nPower Belt | +2 ST | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, TV Shopping\nCrow Charm | +2 MA | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nTalisman | +2 EN | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nWing Strap | +2 AG | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nRabbit Foot | +2 LU | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nKimyaku Brace | +2 ST, MA, EN, AG, LU | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nPower Tasuki | +3 ST | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nBat Charm | +3 MA | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nGuard Amulet | +3 EN | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nFlight Strap | +3 AG | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nSilver Spoon | +3 LU | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nRyumyaku Brace | +3 ST, MA, EN, AG, LU | Secret Laboratory Rare Chest, Heaven Rare Chest\nSpirit Hachimaki | +4 ST | Secret Laboratory Rare Chest, Heaven Rare Chest\nBlack Cat Charm | +4 MA | Secret Laboratory Rare Chest, Heaven Rare Chest\nIron Charm | +4 EN | Secret Laboratory Rare Chest, Heaven Rare Chest\nSteed Strap | +4 AG | Secret Laboratory Rare Chest, Heaven Rare Chest\nManeki Neko | +4 LU | Secret Laboratory Rare Chest, Heaven Rare Chest, TV Shopping\nReisen Brace | +4 ST, MA, EN, AG, LU | Magatsu Inaba Rare Chest, TV Shopping\nFestival Drum | +5 ST | Daidara Metalworks\nWitch Charm | +5 MA | Daidara Metalworks\nGuard Rosary | +5 EN | Daidara Metalworks\nPegasus Strap | +5 AG | Daidara Metalworks\nWooden Ebisu | +5 LU | Daidara Metalworks\nOuryu Brace | +5 ST, MA, EN, AG, LU | Daidara Metalworks\nPower Muscle | +10 ST | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nDemon Charm | +10 MA | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nDefense Essence | +10 EN | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nSpeed Star | +10 AG | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nLucky Seven | +10 LU | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nGod's Love | +10 ST, MA, EN, AG, LU | Yomotsu Hirasaka Rare Chest\nVigor Fob | +10% Max. HP | Daidara Metalworks\nPlum Potpourri | +10% Max. SP | Daidara Metalworks\nLife Fob | +20% Max. HP | Daidara Metalworks\nSoul Potpourri | +20% Max. SP | Daidara Metalworks\nAmaterasu Fob | +30% Max. HP | Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nMoon Potpourri | +30 Max. SP | Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nSkill Accessories\nAccessory | Effect | Location\nRevenge Ring | Counter | Daidara Metalworks, Void Quest Rare Chest\nReprisal Chain | Counterstrike | Secret Laboratory Rare Chest, Heaven Rare Chest, TV Shopping\nRetribution Mask | High Counter | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nSigma Drive | Sharp Student | Daidara Metalworks, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nDivine Pillar | Firm Stance | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nFalcon Eye | Dodge Physical | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nFire Suppressor | Dodge Fire | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest, TV Shopping\nIce Suppressor | Dodge Ice | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nVolt Suppressor | Dodge Elec | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nWind Suppressor | Dodge Wind | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nEagle Eye | Evade Physical | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nEye of Flame | Evade Fire | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nEye of Ice | Evade Ice | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nEye of Thunder | Evade Elec | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nEye of Wind | Evade Wind | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nCat Whisker | Angelic Grace | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nBarbaric Bracers | Ali Dance | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nBravery Vessel | Resist Fear | Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nTranquil Buddha | Resist Panic | Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nDisintectant | Resist Poison | Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nCool Beads | Resist Rage | Daidara Metalworks, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nDisguise Mask | Resist Mute | Daidara Metalworks Rare Chest, Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nKid's Hachimaki | Resist Enervate | Daidara Metalworks, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nHealthy Recipe | Resist Exhaust | Daidara Metalworks, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nSafety Belt | Resist Dizzy | Daidara Metalworks, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest\nBold Ball | Null Fear | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nConfusion Hat | Null Panic | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nGas Mask | Null Poison | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nFrozen Rose | Null Rage | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nMask of Truth | Null Mute | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nPitch Pipes | Null Enervate | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nHealthy Homa | Null Exhaust | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nAlarm Clock | Null Dizzy | Yomotsu Hirasaka Rare Chest\nBook of the Void | Unshaken Will | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nBook of Ruin | Fast Heal | Marukyu Striptease Rare Chest\nBook of Serenity | Insta-Heal | Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest\nOmega Drive | Apt Pupil | Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nAwareness Note | Alertness | Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nPatient Collar | Endure | Marukyu Striptease Rare Chest, Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest\nRebirth Prophecy | Enduring Soul | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nRudra Ring | Arms Master | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nChakra Ring | Spell Master | Heaven 10F, Yomotsu Hirasaka Rare Chest\nBlessed Hands | Divine Grace | Daidara Metalworks, Void Quest Rare Chest, Secret Laboratory Rare Chest, Heaven Rare Chest, Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nLand Badge | Regenerate 1 | Daidara Metalworks, Void Quest Rare Chest\nEarth Badge | Regenerate 2 | Daidara Metalworks, Secret Laboratory Rare Chest, Heaven Rare Chest\nSpace Badge | Regenerate 3 | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nMage's Mark | Invigorate 1 | Daidara Metalworks, Void Quest Rare Chest\nSorcerer's Mark | Invigorate 2 | Daidara Metalworks, Secret Laboratory Rare Chest, Heaven Rare Chest\nWizard's Mark | Invigorate 3 | Magatsu Inaba Rare Chest, Yomotsu Hirasaka Rare Chest\nElemental Accessories\nAccessory | Effect | Location\nFire Vow | Increased Fire damage by 10% | Yukiko's Castle Rare Chest\nIce Vow | Increased Ice damage by 10% | Yukiko's Castle Rare Chest\nThunder Vow | Increased Elec damage by 10% | Yukiko's Castle Rare Chest\nWind Vow | Increased Wind damage by 10% | Yukiko's Castle Rare Chest\nFlame Vow | Increased Fire damage by 20% | Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest\nSnow Vow | Increased Ice damage by 20% | Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest\nSpark Vow | Increased Elec damaged by 20% | Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest\nGust Vow | Increased Wind damage by 20% | Steamy Bathhouse Rare Chest, Marukyu Striptease Rare Chest\nBlaze Vow | Increased Fire damage by 30% | Void Quest Rare Chest, Secret Laboratory Rare Chest\nBlizzard Vow | Increased Ice damage by 30% | Void Quest Rare Chest, Secret Laboratory Rare Chest\nVolt Vow | Increased Elec damage by 30% | Void Quest Rare Chest, Secret Laboratory Rare Chest\nStorm Vow | Increased Elec damage by 30% | Void Quest Rare Chest, Secret Laboratory Rare Chest\nInferno Vow | Increased Fire damage by 40% | Heaven Rare Chest, Magatsu Inaba Rare Chest\nIcicle Vow | Increased Ice damage by 40% | Heaven Rare Chest, Magatsu Inaba Rare Chest\nLightning Vow | Increased Elec damage by 40% | Heaven Rare Chest, Magatsu Inaba Rare Chest\nGale Vow | Increased Wind damage by 40% | Heaven Rare Chest, Magatsu Inaba Rare Chest\nKagutsuchi Vow | Increased Fire damage by 50% | Yomotsu Hirasaka Rare Chest\nKuraokami Vow | Increased Ice damage by 50% | Yomotsu Hirasaka Rare Chest\nTakefutsu Vow | Increased Elec damage by 50% | Yomotsu Hirasaka Rare Chest\nShinatobe Vow | Increased Wind damage by 50% | Yomotsu Hirasaka Rare Chest\nFire Pin | Reduced Fire damage by 10% | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nIce Pin | Reduced Ice damage by 10% | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nThunder Pin | Reduced Elec damage by 10% | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nWind Pin | Reduced Wind damage by 10% | Yukiko's Castle Rare Chest, Steamy Bathhouse Rare Chest\nFlame Pin | Reduced Fire damage by 20% | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nSnow Pin | Reduced Ice damage by 20% | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nSpark Pin | Reduced Elec damage by 20% | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nGust Pin | Reduced Wind damage by 20% | Marukyu Striptease Rare Chest, Void Quest Rare Chest\nBlaze Pin | Reduced Fire damage by 30% | Secret Laboratory Rare Chest, Heaven Rare Chest\nBlizzard Pin | Reduced Ice damage by 30% | Secret Laboratory Rare Chest, Heaven Rare Chest\nVolt Pin | Reduced Elec damage by 30% | Secret Laboratory Rare Chest, Heaven Rare Chest\nStorm Pin | Reduced Wind damage by 30% | Secret Laboratory Rare Chest, Heaven Rare Chest\nInferno Pin | Reduced Fire damage by 40% | Magatsu Inaba Rare Chest\nIcicle Pin | Reduced Ice damage by 40% | Magatsu Inaba Rare Chest\nLightning Pin | Reduced Elec damage by 40% | Magatsu Inaba Rare Chest\nGale Pin | Reduced Wind damage by 40% | Magatsu Inaba Rare Chest\nKagutsuchi Pin | Reduced Fire damage by 50% | Yomotsu Hirasaka Rare Chest\nKuraokami Pin | Reduced Ice damage by 50% | Yomotsu Hirasaka Rare Chest\nTakefutsu Pin | Reduced Elec damage by 50% | Yomotsu Hirasaka Rare Chest\nShinatobe Pin | Reduced Wind damage by 50% | Yomotsu Hirasaka Rare Chest\nRecovery Accessories\nAccessory | Effect | Location\nParting Stone | Restores 8 SP every turn | Hollow Forest\nPain Stone | Restores 10 SP every turn | Hollow Forest\nGrief Stone | Restores 12 SP every turn | Hollow Forest\nSorrow Stone | Restores 14 SP every turn | Hollow Forest\nLove Stone | Restores 16 SP every turn | Hollow Forest\nSuffering Stone | Restores 18 SP every turn | Hollow Forest\nAnger Stone | Restores 20 SP every turn | Hollow Forest\nLoneliness Stone | Restores 22 SP every turn | Hollow Forest\nInvitation Stone | Restores 24 SP every turn | Hollow Forest\nOther Accessories\nAccessory | Worn By | Effect | Location\nWristwatch | MC | N/A | Default\nPlain Ring | Yosuke | N/A | Default\nAluminum Badge | Chie | N/A | Default\nHair Band | Yukiko | N/A | Default\nSilver Locket | Kanji | N/A | Default\nBear Ears | Teddie | N/A | Default\nSpiral Earrings | Naoto | N/A | Default\nPortrait Medal | MC | +5 ST | Ace May exams\nPaper Armband | MC | +5 ST, MA, EN, AG, LU | Ace July exams\nBead Ring | MC | Angelic Grace | Ace October exams\nPartial Award | MC | Endure | Ace December exams\nReader King | MC | +10 MA | Read every book\nMacho Medal | MC | Resist Physical | Guys Christmas event\nFluffy Muffler | MC | Resist Ice | Chie Christmas event\nLeather Keychain | MC | Resist Fire | Yukiko Christmas event\nSilver Bangle | MC | +50% Max. SP | Rise Christmas event\nHandmade Watch | MC | Ailment Boost | Naoto Christmas event\nRugged Ring | MC | Divine Grace | Ai Christmas event\nFancy Mini-Car | MC | Mudo Boost | Yumi Christmas event\nHand-Knit Mitten | MC | Hama Boost | Ayane Christmas event\nOmnipotent Orb | Everybody | Null all damage except Almighty | Reaper"
+}

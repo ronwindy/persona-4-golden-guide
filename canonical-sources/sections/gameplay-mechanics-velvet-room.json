@@ -1,0 +1,61 @@
+{
+  "id": "gameplay-mechanics-velvet-room",
+  "title": "Velvet Room",
+  "chapter": "Gameplay Mechanics",
+  "chapter_id": "gameplay-mechanics",
+  "anchor": "velvet-room",
+  "type": "article",
+  "order": 16,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Velvet Room is what connects daily life and dungeon life together. This section gives a brief introduction to its services, while the Persona Compendium section of the guide goes into more depth. The Velvet Room offers the following resources to use during the game."
+    },
+    {
+      "type": "p",
+      "text": "Fusing",
+      "md": "**Fusing**"
+    },
+    {
+      "type": "p",
+      "text": "Personas can be fused together in order to create more powerful Personas for battles. Higher ranks in Social Links results in extra experience given to Personas you fuse of the matching arcana. You cannot fuse Personas at higher levels than you, in order to balance the game."
+    },
+    {
+      "type": "p",
+      "text": "Fusion Forecast",
+      "md": "**Fusion Forecast**"
+    },
+    {
+      "type": "p",
+      "text": "By fusing on specific days, bonuses will be granted to certain Personas. The Fusion Forecast shows on what days bonuses can be obtained."
+    },
+    {
+      "type": "p",
+      "text": "Persona Compendium",
+      "md": "**Persona Compendium**"
+    },
+    {
+      "type": "p",
+      "text": "By registering Personas, you can recall them at any time for a price. You must re-register as the Persona levels up and gains more skills to keep what it has learned, but doing so increases the price."
+    },
+    {
+      "type": "p",
+      "text": "Skill Cards",
+      "md": "**Skill Cards**"
+    },
+    {
+      "type": "p",
+      "text": "Skill Cards can be given to any Persona you own to learn that Skill. You can register Skill Cards to buy as many copies as you want, but you lose the card you register."
+    },
+    {
+      "type": "p",
+      "text": "Rescue Request",
+      "md": "**Rescue Request**"
+    },
+    {
+      "type": "p",
+      "text": "Rescue Request is an online function you can use during dungeons to ask for help, and also give out help to others. Here you can change the messages you send out to others."
+    }
+  ],
+  "text": "The Velvet Room is what connects daily life and dungeon life together. This section gives a brief introduction to its services, while the Persona Compendium section of the guide goes into more depth. The Velvet Room offers the following resources to use during the game.\nFusing\nPersonas can be fused together in order to create more powerful Personas for battles. Higher ranks in Social Links results in extra experience given to Personas you fuse of the matching arcana. You cannot fuse Personas at higher levels than you, in order to balance the game.\nFusion Forecast\nBy fusing on specific days, bonuses will be granted to certain Personas. The Fusion Forecast shows on what days bonuses can be obtained.\nPersona Compendium\nBy registering Personas, you can recall them at any time for a price. You must re-register as the Persona levels up and gains more skills to keep what it has learned, but doing so increases the price.\nSkill Cards\nSkill Cards can be given to any Persona you own to learn that Skill. You can register Skill Cards to buy as many copies as you want, but you lose the card you register.\nRescue Request\nRescue Request is an online function you can use during dungeons to ask for help, and also give out help to others. Here you can change the messages you send out to others."
+}

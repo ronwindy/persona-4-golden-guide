@@ -1,0 +1,80 @@
+{
+  "id": "walkthrough-faq",
+  "title": "Walkthrough FAQ",
+  "chapter": "Walkthrough",
+  "chapter_id": "walkthrough",
+  "anchor": "walkthrough-faq",
+  "type": "article",
+  "order": 23,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "This section will address any and all questions that may arise while reading the walkthrough. This can either be read all at once before the walkthrough or referred to during the walkthrough by using the search codes. If you have a question that isn't in this FAQ, check the other FAQ at the top of this guide for help."
+    },
+    {
+      "type": "p",
+      "text": "WAQ1: Why do I need to save frequently?\nIn order to follow this walkthrough accurately, you may need to reload a save if you make a mistake, or don't get a stat increase you want. As such, you will want to manage your save files to save headaches. I recommend saving every 2 or 3 days, saving in a separate save slot every time. Trust me, despite my formidable knowledge on this game, I still make mistakes all the time, and managing saves really helps out from having to restart the game."
+    },
+    {
+      "type": "p",
+      "text": "WAQ2: What are Status Parameters?\nYou have 5 Status Parameters that increase for specific actions you take: Courage, Diligence, Knowledge, Expression, and Understanding. They each have 5 ranks, and are used in a variety of ways. In this walkthrough, we will try to max these out as fast as possible, as we need certain ranks to start Social Links and part-time jobs. A normal increase is worth 3 points, and greatly increases are worth 5 points."
+    },
+    {
+      "type": "p",
+      "text": "WAQ3: Why do I need specific Personas?\nIf you have a Persona in your deck that shares the same arcana as a Social Link, you will earn extra points toward that Social Link. This is a requirement to spend the least amount of time possible maxing out a Social Link. If you don't have a Persona with you, you will fall behind. Unless otherwise noted, this guide assumes you have a Persona for every rank except Rank 1 and Rank 10, as it isn't necessary to start a Social Link, or if you have enough points to max a Social Link."
+    },
+    {
+      "type": "p",
+      "text": "WAQ4: Why is the weather important?\nThe biggest thing the weather affects (besides the story) is Social Links. There are only 2 Social Links (besides those available at night) that you can hang out with while it's raining. Otherwise, certain enemies can only be found during rain, and certain events can only happen or can change effects depending on the weather."
+    },
+    {
+      "type": "p",
+      "text": "WAQ5: Why Soccer instead of Basketball?\nIn order to read all books in one playthrough, you have to hang out with the Strength Social Link on 3 separate Sundays to obtain 3 books. For the Basketball Club, you need to make sure to be below Rank 4 for the first book, and either below Rank 5 or above Rank 6 to get the second and third book. The Soccer Club has no restrictions on obtaining these books, which is why this walkthrough chooses the Soccer Club."
+    },
+    {
+      "type": "p",
+      "text": "WAQ6: How do Social Links work?\nSocial Links are explained in depth under Gameplay Mechanics, but I will summarize that section here. Social Links work on a point based system. Earning enough points will rank up the Social Link the next time you spend time with them. There are a total of 10 ranks per Social Link. In order to earn as many points as possible, there are 2 important strategies we use in this guide. First, we need a Persona of the same arcana as the Social Link we are hanging out with. This will give us bonus points every time we earn points. Second, while spending time with the Social Link, choosing certain responses will earn extra points. I will note these options in order as they appear. If you make a mistake you may need to reload, so don't forget to save!"
+    },
+    {
+      "type": "p",
+      "text": "WAQ7: How do you beat a dungeon in one day?\nThe hardest part of beating a dungeon in one day is conserving your SP. You will need to use as few magic skills as possible. The best way to do this and still gain experience is to defeat Golden Hands. They are difficult to beat but they drop a lot of Exp and Yen. In the first dungeon, the best way to beat them is by using items that deal damage, like Ball Lightnings or Smart Bombs. After the first dungeon, I recommend using Chie to increase your critical hit rate, and using Physical Skills to try and get an All-out Attack, because Almighty attribute does a ton of damage to them. If you can obtain a Persona with Almighty damage, that is also a good way to take them out. Try to open as many chests as possible to get HP and SP restoring items, and do your best to beat the dungeon in one day. It is possible on Very Hard mode, but Normal Mode is very manageable. For a more thorough explanation on how to do this visit the Tips and Tricks section."
+    },
+    {
+      "type": "p",
+      "text": "WAQ8: What is a flag?\nA flag is a game mechanic where you have to complete some sort of requirement to \"trigger\" the flag. By triggering the flag, you essentially unlock something later in the game, typically involving the character that had the flag. In this game, flags will either unlock Social Links or extra story content."
+    },
+    {
+      "type": "p",
+      "text": "WAQ9: What is the Victory Cry cheat?\nThe Victory Cry cheat and how to do it can be found in the Tips and Tricks section, but to sum it up briefly, on certain days its possible to fuse a Persona with the ability Victory Cry, which heals all HP and SP after a battle. Getting this skill early eliminates all the challenge of the game, so its considered a cheat in the community."
+    },
+    {
+      "type": "p",
+      "text": "WAQ10: Who is the Artisan Apprentice?\nThe Artisan Apprentice is needed to obtain the Cleaning Mop for a quest. Afterward, you can trade certain items for ones you can't normally obtain. You can find everything he trades for in the Artisan Apprentice section."
+    },
+    {
+      "type": "p",
+      "text": "WAQ11: Why does Jester not need a Persona after Rank 6?\nAfter Rank 6, the Jester Social Link will rank up automatically with the story. In order for this to happen, you must be Rank 6 by November 1st, otherwise it will be impossible for you to max the Social Link."
+    },
+    {
+      "type": "p",
+      "text": "WAQ12: How do date invites work?\nYou can go on a date for Summer Festival, Christmas Eve, New Year Day, the Ski Trip, and Valentine's Day. The Summer Festival has 6 options: each female classmate and just you, and the rest have 7 options: each female classmate and the guys. You will always get an invite from the guys for every date, and from Rise at the Summer Festival. In order to get any other invite, you must be in an intimate relationship with them. You can Save Abuse to view them all, but some events have certain items not available anywhere else, which is why we pick certain ones for the walkthrough."
+    },
+    {
+      "type": "p",
+      "text": "WAQ13: Why does it say Aeon will rank up?\nThis is a mandatory event you have to see before Aeon will go to Rank 6. So we are technically advancing the Social Link even though it won't rank up."
+    },
+    {
+      "type": "p",
+      "text": "WAQ14: Reversing and breaking Social Links?\nFemale classmate Social Links can Reverse or sometimes even Break if you aren't careful. A Reversed Social Link means you need to go cheer them up to advance the relationship while a Broken Social Link means you have to start over from Rank 1. Certain choices in the Moon and Fortune Social Link can Reverse the Social Link, as well as two girls running into each other, which usually happens on Sunday hangouts."
+    },
+    {
+      "type": "p",
+      "text": "WAQX1: What if I don't have enough room for Personas?\nYou may have to drop a Persona that you don't currently need for one you do need. If so, just drop the Persona that is cheapest to buy back. Be careful if you are dropping a Party Member, Hierophant, or Justice Persona, as you may need it in your deck for random extra points."
+    },
+    {
+      "type": "p",
+      "text": "WAQX2: Why don't I need a Death Persona?\nBecause the Death Social Link is only available on Sundays and Holidays, the Social Link will always rank up. So a matching Persona isn't needed if it's just gonna rank up anyways."
+    }
+  ],
+  "text": "This section will address any and all questions that may arise while reading the walkthrough. This can either be read all at once before the walkthrough or referred to during the walkthrough by using the search codes. If you have a question that isn't in this FAQ, check the other FAQ at the top of this guide for help.\nWAQ1: Why do I need to save frequently?\nIn order to follow this walkthrough accurately, you may need to reload a save if you make a mistake, or don't get a stat increase you want. As such, you will want to manage your save files to save headaches. I recommend saving every 2 or 3 days, saving in a separate save slot every time. Trust me, despite my formidable knowledge on this game, I still make mistakes all the time, and managing saves really helps out from having to restart the game.\nWAQ2: What are Status Parameters?\nYou have 5 Status Parameters that increase for specific actions you take: Courage, Diligence, Knowledge, Expression, and Understanding. They each have 5 ranks, and are used in a variety of ways. In this walkthrough, we will try to max these out as fast as possible, as we need certain ranks to start Social Links and part-time jobs. A normal increase is worth 3 points, and greatly increases are worth 5 points.\nWAQ3: Why do I need specific Personas?\nIf you have a Persona in your deck that shares the same arcana as a Social Link, you will earn extra points toward that Social Link. This is a requirement to spend the least amount of time possible maxing out a Social Link. If you don't have a Persona with you, you will fall behind. Unless otherwise noted, this guide assumes you have a Persona for every rank except Rank 1 and Rank 10, as it isn't necessary to start a Social Link, or if you have enough points to max a Social Link.\nWAQ4: Why is the weather important?\nThe biggest thing the weather affects (besides the story) is Social Links. There are only 2 Social Links (besides those available at night) that you can hang out with while it's raining. Otherwise, certain enemies can only be found during rain, and certain events can only happen or can change effects depending on the weather.\nWAQ5: Why Soccer instead of Basketball?\nIn order to read all books in one playthrough, you have to hang out with the Strength Social Link on 3 separate Sundays to obtain 3 books. For the Basketball Club, you need to make sure to be below Rank 4 for the first book, and either below Rank 5 or above Rank 6 to get the second and third book. The Soccer Club has no restrictions on obtaining these books, which is why this walkthrough chooses the Soccer Club.\nWAQ6: How do Social Links work?\nSocial Links are explained in depth under Gameplay Mechanics, but I will summarize that section here. Social Links work on a point based system. Earning enough points will rank up the Social Link the next time you spend time with them. There are a total of 10 ranks per Social Link. In order to earn as many points as possible, there are 2 important strategies we use in this guide. First, we need a Persona of the same arcana as the Social Link we are hanging out with. This will give us bonus points every time we earn points. Second, while spending time with the Social Link, choosing certain responses will earn extra points. I will note these options in order as they appear. If you make a mistake you may need to reload, so don't forget to save!\nWAQ7: How do you beat a dungeon in one day?\nThe hardest part of beating a dungeon in one day is conserving your SP. You will need to use as few magic skills as possible. The best way to do this and still gain experience is to defeat Golden Hands. They are difficult to beat but they drop a lot of Exp and Yen. In the first dungeon, the best way to beat them is by using items that deal damage, like Ball Lightnings or Smart Bombs. After the first dungeon, I recommend using Chie to increase your critical hit rate, and using Physical Skills to try and get an All-out Attack, because Almighty attribute does a ton of damage to them. If you can obtain a Persona with Almighty damage, that is also a good way to take them out. Try to open as many chests as possible to get HP and SP restoring items, and do your best to beat the dungeon in one day. It is possible on Very Hard mode, but Normal Mode is very manageable. For a more thorough explanation on how to do this visit the Tips and Tricks section.\nWAQ8: What is a flag?\nA flag is a game mechanic where you have to complete some sort of requirement to \"trigger\" the flag. By triggering the flag, you essentially unlock something later in the game, typically involving the character that had the flag. In this game, flags will either unlock Social Links or extra story content.\nWAQ9: What is the Victory Cry cheat?\nThe Victory Cry cheat and how to do it can be found in the Tips and Tricks section, but to sum it up briefly, on certain days its possible to fuse a Persona with the ability Victory Cry, which heals all HP and SP after a battle. Getting this skill early eliminates all the challenge of the game, so its considered a cheat in the community.\nWAQ10: Who is the Artisan Apprentice?\nThe Artisan Apprentice is needed to obtain the Cleaning Mop for a quest. Afterward, you can trade certain items for ones you can't normally obtain. You can find everything he trades for in the Artisan Apprentice section.\nWAQ11: Why does Jester not need a Persona after Rank 6?\nAfter Rank 6, the Jester Social Link will rank up automatically with the story. In order for this to happen, you must be Rank 6 by November 1st, otherwise it will be impossible for you to max the Social Link.\nWAQ12: How do date invites work?\nYou can go on a date for Summer Festival, Christmas Eve, New Year Day, the Ski Trip, and Valentine's Day. The Summer Festival has 6 options: each female classmate and just you, and the rest have 7 options: each female classmate and the guys. You will always get an invite from the guys for every date, and from Rise at the Summer Festival. In order to get any other invite, you must be in an intimate relationship with them. You can Save Abuse to view them all, but some events have certain items not available anywhere else, which is why we pick certain ones for the walkthrough.\nWAQ13: Why does it say Aeon will rank up?\nThis is a mandatory event you have to see before Aeon will go to Rank 6. So we are technically advancing the Social Link even though it won't rank up.\nWAQ14: Reversing and breaking Social Links?\nFemale classmate Social Links can Reverse or sometimes even Break if you aren't careful. A Reversed Social Link means you need to go cheer them up to advance the relationship while a Broken Social Link means you have to start over from Rank 1. Certain choices in the Moon and Fortune Social Link can Reverse the Social Link, as well as two girls running into each other, which usually happens on Sunday hangouts.\nWAQX1: What if I don't have enough room for Personas?\nYou may have to drop a Persona that you don't currently need for one you do need. If so, just drop the Persona that is cheapest to buy back. Be careful if you are dropping a Party Member, Hierophant, or Justice Persona, as you may need it in your deck for random extra points.\nWAQX2: Why don't I need a Death Persona?\nBecause the Death Social Link is only available on Sundays and Holidays, the Social Link will always rank up. So a matching Persona isn't needed if it's just gonna rank up anyways."
+}

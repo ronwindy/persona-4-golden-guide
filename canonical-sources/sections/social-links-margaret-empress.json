@@ -1,0 +1,197 @@
+{
+  "id": "social-links-margaret-empress",
+  "title": "Margaret/Empress",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "margaret-empress",
+  "type": "social-link",
+  "order": 80,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "p",
+      "text": "Every Day"
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: May 19th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 5th"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Enter the Velvet Room with Knowledge Rank Expert"
+    },
+    {
+      "type": "p",
+      "text": "Location: Velvet Room"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Isis"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Spiral Brooch"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Ranks up by Fusing Personas with certain Skills, so Social Link doesn't require a matching Persona."
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "NOTE: The fusions listed below assume you don't have the corresponding Skill Card. If you do have the Skill Card of the requested Skill, then you can just put that on the requested Persona. Also, after every rank up you need to exit and re-enter the Velvet Room."
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Enter the Velvet Room with Knowledge Rank Expert starting on May 19th"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Ippon-datara with Sukukaja"
+    },
+    {
+      "type": "p",
+      "text": "Sylph + Archangel OR Lilim OR Cu Sith"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Matador with Mahama"
+    },
+    {
+      "type": "p",
+      "text": "Anzu (Mahama Lv 19) + Berith (Keep Rampage)\nPrincipality (Mahama Lv 21) OR Power + Oberon +Saki Mitama\nPower + Andras + Omoikane"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Gdon with Rampage"
+    },
+    {
+      "type": "p",
+      "text": "Matador (Rampage Lv 27) + Ippon-datara (Rampage Lv 21)\nAres (Rampage Lv 28) + Shiisaa OR Leigon (Rampage Lv 23)"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Neko-shogun with Bufula"
+    },
+    {
+      "type": "p",
+      "text": "Part 1: King Frost + Hua Po\nPart 2: Ara Mitama + Kusi Mitama + Saki Mitama + Nigi Mitama"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Black Frost with Auto-Sukukaja"
+    },
+    {
+      "type": "p",
+      "text": "Part 1: Anzu (Auto-Sukukaja Lv 20) + Apsaras OR Sylph\nPart 2: Pyro Jack + Jack Frost + King Frost + Pixie + Ghoul"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Yatagarusu with Megido"
+    },
+    {
+      "type": "p",
+      "text": "Part 1: Taotie + Cu Sith\nPart 2: Ares + Black Frost"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Yatsufusa with Mediarama"
+    },
+    {
+      "type": "p",
+      "text": "Thoth (Mediarama Lv 47) + Orthrus + Makami + Narashimha + Mothman"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Ganesha with Tetrakarn"
+    },
+    {
+      "type": "p",
+      "text": "Decarabia + Cu Chulainn\nDecarabia + Mithra + Yatsufusa\nKaiwan + Neko Shogun + Fuu-ki"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Trumpeter with Mind Charge"
+    },
+    {
+      "type": "p",
+      "text": "Taotie (Mind Charge Lv 38) + Matador + White Rider + Daishojou + Pabilsag + Taowu"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    }
+  ],
+  "text": "Availability\nEvery Day\nInformation\nFirst Day: May 19th\nLast Day: February 5th\nActivation: Enter the Velvet Room with Knowledge Rank Expert\nLocation: Velvet Room\nUltimate Persona: Isis\nKey Item: Spiral Brooch\nNotes: Ranks up by Fusing Personas with certain Skills, so Social Link doesn't require a matching Persona.\nPoints Needed\nN/A\nRank Up Scenes\nNOTE: The fusions listed below assume you don't have the corresponding Skill Card. If you do have the Skill Card of the requested Skill, then you can just put that on the requested Persona. Also, after every rank up you need to exit and re-enter the Velvet Room.\n-Rank 1-\nEnter the Velvet Room with Knowledge Rank Expert starting on May 19th\n-Rank 2-\nIppon-datara with Sukukaja\nSylph + Archangel OR Lilim OR Cu Sith\n-Rank 3-\nMatador with Mahama\nAnzu (Mahama Lv 19) + Berith (Keep Rampage)\nPrincipality (Mahama Lv 21) OR Power + Oberon +Saki Mitama\nPower + Andras + Omoikane\n-Rank 4-\nGdon with Rampage\nMatador (Rampage Lv 27) + Ippon-datara (Rampage Lv 21)\nAres (Rampage Lv 28) + Shiisaa OR Leigon (Rampage Lv 23)\n-Rank 5-\nNeko-shogun with Bufula\nPart 1: King Frost + Hua Po\nPart 2: Ara Mitama + Kusi Mitama + Saki Mitama + Nigi Mitama\n-Rank 6-\nBlack Frost with Auto-Sukukaja\nPart 1: Anzu (Auto-Sukukaja Lv 20) + Apsaras OR Sylph\nPart 2: Pyro Jack + Jack Frost + King Frost + Pixie + Ghoul\n-Rank 7-\nYatagarusu with Megido\nPart 1: Taotie + Cu Sith\nPart 2: Ares + Black Frost\n-Rank 8-\nYatsufusa with Mediarama\nThoth (Mediarama Lv 47) + Orthrus + Makami + Narashimha + Mothman\n-Rank 9-\nGanesha with Tetrakarn\nDecarabia + Cu Chulainn\nDecarabia + Mithra + Yatsufusa\nKaiwan + Neko Shogun + Fuu-ki\n-Rank 10-\nTrumpeter with Mind Charge\nTaotie (Mind Charge Lv 38) + Matador + White Rider + Daishojou + Pabilsag + Taowu\nNight Time Dates\nN/A"
+}

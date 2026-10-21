@@ -1,0 +1,272 @@
+{
+  "id": "item-list-gem-list",
+  "title": "Gem List",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "gem-list",
+  "type": "catalog",
+  "order": 136,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Gem Items",
+      "md": "**Gem Items**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Gem",
+            "md": "**Gem**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Iolite"
+          },
+          {
+            "text": "Trance Twins, Magic Hand, Laughing Table, Secret Bambino, Burning Beetle, Bribed Fuzz, Pursuing Pesce"
+          }
+        ],
+        [
+          {
+            "text": "Blue Quartz"
+          },
+          {
+            "text": "Black Raven, Bronze Dice, Positive King, Phantom Mage, Monopolizing Cupid, Vicious Raven"
+          }
+        ],
+        [
+          {
+            "text": "Fluorite"
+          },
+          {
+            "text": "Avenger Knight, Selfish Basalt, Tranquil Idol, Egotistical King, Killer Twins, Crying Table, Grave Beetle, Rainy Sister 4, Cloudgirl Pot, Rainy Brother 4, Creation Relic, Death Seeker, Persistent Fuzz, Adamant Beetle"
+          }
+        ],
+        [
+          {
+            "text": "Smoky Quartz"
+          },
+          {
+            "text": "Magical Magus, Heat Balance, Autonomic Basalt, Nizam Beast, Dancing Hand, Phantom Master, Iron Dice, Wondrous Magus, Rainy Sister 4, Cloudgirl Pot, Rainy Brother 4, Miss Gene, Soul Dancer, Sonic Raven"
+          }
+        ],
+        [
+          {
+            "text": "Lepidolite"
+          },
+          {
+            "text": "Liberating Idol, Forgotten Hablerie, Large Basalt, Champion Knight, Mighty Cyclops, Rainy Sister 3, Rain Wheel, Rain Leg Musha, Corrupt Tower, Lustful Snake, Mad Cyclops"
+          }
+        ],
+        [
+          {
+            "text": "Lemon Quartz"
+          },
+          {
+            "text": "Idle Basalt, Venus Eagle, Enslaved Beast, Blooming Bambino, Rainy Sister 3, Rain Wheel, Rain Leg Musha, Blind Cupid, Amenti Raven, Whimsical Papillon"
+          }
+        ],
+        [
+          {
+            "text": "Olive Stone"
+          },
+          {
+            "text": "Sky Balance, Silver Dice, Killing Hand, Arcane Turret, Rainy Sister 3, Rain Wheel, Rain Leg Musha, Dependent Basalt, Justice Sword, Spurious Book, Anguish Basalt"
+          }
+        ],
+        [
+          {
+            "text": "Howlite"
+          },
+          {
+            "text": "Golden Beetle, Fate Seeker, Leading Idol, Monomaniac Fuzz, Beastly Gigas, Rainy Castle, Rainy Sister 2, Rainy Pot, Rain End Musha, Rainy Brother 2, Furious Gigas"
+          }
+        ],
+        [
+          {
+            "text": "Milky Quartz"
+          },
+          {
+            "text": "Almighty Hand, Avarice Bambino, Ardent Dancer, Steel Machine, Rainy Castle, Rainy Sister 2, Rainy Pot, Rain End Musha, Rainy Brother 2"
+          }
+        ],
+        [
+          {
+            "text": "Bloodstone"
+          },
+          {
+            "text": "Blue Sigil, Platinum Dice, Protective Lexy, Scarlet Turret, Rainy Castle, Rainy Sister 2, Rainy Pot, Rain End Musha, Rainy Brother 2, Red Sigil"
+          }
+        ],
+        [
+          {
+            "text": "Meteorite"
+          },
+          {
+            "text": "Mind Dice, Fail Gene, Truth Pesce, Immoral Snake, Hell Knight, Rainy Sister 1, Rainy Brother 1, Raindrop Musha, Killer Drive"
+          }
+        ],
+        [
+          {
+            "text": "Rose Quartz"
+          },
+          {
+            "text": "Chaos Fuzz, Dominating Machine, Raindrop Musha, Rainbow Twins"
+          }
+        ],
+        [
+          {
+            "text": "Buffalo Stone"
+          },
+          {
+            "text": "Order Giant, World Balance, Rainy Brother 1, Rainbow Twins, Prime Magus, Curse Dice"
+          }
+        ],
+        [
+          {
+            "text": "Sphalerite"
+          },
+          {
+            "text": "Reckless Okina, Chaos Cyclops"
+          }
+        ],
+        [
+          {
+            "text": "Aurora Quartz"
+          },
+          {
+            "text": "Devoted Cupid, Natural Dancer, Free Bambino"
+          }
+        ],
+        [
+          {
+            "text": "Sunstone"
+          },
+          {
+            "text": "Stasis Giant, Green Sigil, Minotaur IV, Hallowed Turret, Great King"
+          }
+        ],
+        [
+          {
+            "text": "Angelite"
+          },
+          {
+            "text": "Pistil Mother, Amorous Snake"
+          }
+        ],
+        [
+          {
+            "text": "Rainbow Quartz"
+          },
+          {
+            "text": "King Castle, Nemean Beast, Battle Wheel"
+          }
+        ],
+        [
+          {
+            "text": "Moonstone"
+          },
+          {
+            "text": "Yearning Pot, Silent Book"
+          }
+        ],
+        [
+          {
+            "text": "Magatsu Xandrite"
+          },
+          {
+            "text": "Happiness Hand, Wealth Hand, Treasure Hand, Supreme Hand, Opulent Hand, Luxury Hand, Glorious Hand"
+          }
+        ],
+        [
+          {
+            "text": "Kingyou Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Gyosen Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Yazu Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Masuda Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Taisui Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Mondo Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Takou Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Meguro Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Kaiou Stone"
+          },
+          {
+            "text": "Lady in White"
+          }
+        ],
+        [
+          {
+            "text": "Ryugu Stone"
+          },
+          {
+            "text": "Trade Bugs at Shiroku Pub"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Gem Items\nGem | Location\nIolite | Trance Twins, Magic Hand, Laughing Table, Secret Bambino, Burning Beetle, Bribed Fuzz, Pursuing Pesce\nBlue Quartz | Black Raven, Bronze Dice, Positive King, Phantom Mage, Monopolizing Cupid, Vicious Raven\nFluorite | Avenger Knight, Selfish Basalt, Tranquil Idol, Egotistical King, Killer Twins, Crying Table, Grave Beetle, Rainy Sister 4, Cloudgirl Pot, Rainy Brother 4, Creation Relic, Death Seeker, Persistent Fuzz, Adamant Beetle\nSmoky Quartz | Magical Magus, Heat Balance, Autonomic Basalt, Nizam Beast, Dancing Hand, Phantom Master, Iron Dice, Wondrous Magus, Rainy Sister 4, Cloudgirl Pot, Rainy Brother 4, Miss Gene, Soul Dancer, Sonic Raven\nLepidolite | Liberating Idol, Forgotten Hablerie, Large Basalt, Champion Knight, Mighty Cyclops, Rainy Sister 3, Rain Wheel, Rain Leg Musha, Corrupt Tower, Lustful Snake, Mad Cyclops\nLemon Quartz | Idle Basalt, Venus Eagle, Enslaved Beast, Blooming Bambino, Rainy Sister 3, Rain Wheel, Rain Leg Musha, Blind Cupid, Amenti Raven, Whimsical Papillon\nOlive Stone | Sky Balance, Silver Dice, Killing Hand, Arcane Turret, Rainy Sister 3, Rain Wheel, Rain Leg Musha, Dependent Basalt, Justice Sword, Spurious Book, Anguish Basalt\nHowlite | Golden Beetle, Fate Seeker, Leading Idol, Monomaniac Fuzz, Beastly Gigas, Rainy Castle, Rainy Sister 2, Rainy Pot, Rain End Musha, Rainy Brother 2, Furious Gigas\nMilky Quartz | Almighty Hand, Avarice Bambino, Ardent Dancer, Steel Machine, Rainy Castle, Rainy Sister 2, Rainy Pot, Rain End Musha, Rainy Brother 2\nBloodstone | Blue Sigil, Platinum Dice, Protective Lexy, Scarlet Turret, Rainy Castle, Rainy Sister 2, Rainy Pot, Rain End Musha, Rainy Brother 2, Red Sigil\nMeteorite | Mind Dice, Fail Gene, Truth Pesce, Immoral Snake, Hell Knight, Rainy Sister 1, Rainy Brother 1, Raindrop Musha, Killer Drive\nRose Quartz | Chaos Fuzz, Dominating Machine, Raindrop Musha, Rainbow Twins\nBuffalo Stone | Order Giant, World Balance, Rainy Brother 1, Rainbow Twins, Prime Magus, Curse Dice\nSphalerite | Reckless Okina, Chaos Cyclops\nAurora Quartz | Devoted Cupid, Natural Dancer, Free Bambino\nSunstone | Stasis Giant, Green Sigil, Minotaur IV, Hallowed Turret, Great King\nAngelite | Pistil Mother, Amorous Snake\nRainbow Quartz | King Castle, Nemean Beast, Battle Wheel\nMoonstone | Yearning Pot, Silent Book\nMagatsu Xandrite | Happiness Hand, Wealth Hand, Treasure Hand, Supreme Hand, Opulent Hand, Luxury Hand, Glorious Hand\nKingyou Stone | Lady in White\nGyosen Stone | Lady in White\nYazu Stone | Lady in White\nMasuda Stone | Lady in White\nTaisui Stone | Lady in White\nMondo Stone | Lady in White\nTakou Stone | Lady in White\nMeguro Stone | Lady in White\nKaiou Stone | Lady in White\nRyugu Stone | Trade Bugs at Shiroku Pub"
+}

@@ -1,0 +1,596 @@
+{
+  "id": "dungeons-extra-bosses",
+  "title": "Extra Bosses",
+  "chapter": "Dungeons",
+  "chapter_id": "dungeons",
+  "anchor": "extra-bosses",
+  "type": "dungeon",
+  "order": 49,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Reaper",
+      "md": "**The Reaper**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "The Reaper"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "5000"
+          },
+          {
+            "text": "12000"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "21st Chest"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The Reaper spawns after opening 20 chests, after which you will hear chains. He has a chance of being in one of the chests on your current floor. He will disappear after either opening a chest or moving to a new floor. He is very tough if underleveled, and a joke if overleveled. Defeating him has a chance of dropping the ultimate weapon for any character in your party. If everyone in your party has their ultimate weapon, then he will drop the ultimate armor. If everyone in your party has both their ultimate weapon and ultimate armor, then he will drop the Omnipotent Orb."
+    },
+    {
+      "type": "p",
+      "text": "Secret Boss",
+      "md": "**Secret Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Margaret"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "15000"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Heaven 10F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "In order to fight Margaret, the following conditions need to be met:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Must be on New Game Plus"
+        },
+        {
+          "text": "Maxed Empress Social Link on 12/24 or earlier"
+        },
+        {
+          "text": "Beaten all Side Bosses on 12/24 or earlier"
+        },
+        {
+          "text": "Must visit the Velvet Room on 3/20 after obtaining the Orb of Sight but before talking to Gas Station Attendant"
+        },
+        {
+          "text": "Must travel to Heaven 10F on 3/20"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Margaret has a pattern that she will not falter from. Here it is:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Skills",
+            "md": "**Skills**"
+          },
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          }
+        ],
+        [
+          {
+            "text": "15000-12001"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Physical Attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "12000-0 (Turn 1)"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Ragnarok and Prominence"
+          },
+          {
+            "text": "Siegfried"
+          }
+        ],
+        [
+          {
+            "text": "12000-0 (Turn 2)"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Niflheim and Cocytus Pain"
+          },
+          {
+            "text": "Loki"
+          }
+        ],
+        [
+          {
+            "text": "12000-0 (Turn 3)"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Thunder Reign and Jihad"
+          },
+          {
+            "text": "Oukuninushi"
+          }
+        ],
+        [
+          {
+            "text": "12000-0 (Turn 4)"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Panta Rhei and Divine Vacuum"
+          },
+          {
+            "text": "Cu Chulainn"
+          }
+        ],
+        [
+          {
+            "text": "12000-4501 (Turn 5)"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Mind Charge"
+          },
+          {
+            "text": "Oberon"
+          }
+        ],
+        [
+          {
+            "text": "12000-4501 (Turn 6)"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Megidolaon (Normal Damage)"
+          },
+          {
+            "text": "Ardha"
+          }
+        ],
+        [
+          {
+            "text": "7500-0 (First Time)"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Morning Star"
+          },
+          {
+            "text": "Helel"
+          }
+        ],
+        [
+          {
+            "text": "7500-0 (First Time)"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Diarahan"
+          },
+          {
+            "text": "Ardha"
+          }
+        ],
+        [
+          {
+            "text": "4500-0 (Turn 5)"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Power Charge"
+          },
+          {
+            "text": "Oberon"
+          }
+        ],
+        [
+          {
+            "text": "4500-0 (Turn 6)"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Hassou Tobi"
+          },
+          {
+            "text": "Yoshitsune"
+          }
+        ],
+        [
+          {
+            "text": "Every 50 Turns"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Megidolaon (9999 Damage)"
+          },
+          {
+            "text": "Oberon"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Margaret gets 2 turns a cycle, so after 25 cycles she will kill you. Having a Skill or accessory that lets you endure will let you drag the fight out until 50 cycles. Also, if you have the Omnipotent Orb equipped she will kill you instantly, so don't do that. After getting her to half health she will heal, so you need to deal as much damage as possible. She is the hardest boss in the game, but she isn't impossible to beat. Make sure you are well prepared and you can do it."
+    }
+  ],
+  "text": "The Reaper\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nThe Reaper | 85 | 5000 | 12000 |  |  |  |  |  | Nul | Nul | 21st Chest\nThe Reaper spawns after opening 20 chests, after which you will hear chains. He has a chance of being in one of the chests on your current floor. He will disappear after either opening a chest or moving to a new floor. He is very tough if underleveled, and a joke if overleveled. Defeating him has a chance of dropping the ultimate weapon for any character in your party. If everyone in your party has their ultimate weapon, then he will drop the ultimate armor. If everyone in your party has both their ultimate weapon and ultimate armor, then he will drop the Omnipotent Orb.\nSecret Boss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nMargaret | ? | 15000 | ? | ? | ? | ? | ? | ? | Nul | Nul | Heaven 10F\nIn order to fight Margaret, the following conditions need to be met:\nMust be on New Game Plus\nMaxed Empress Social Link on 12/24 or earlier\nBeaten all Side Bosses on 12/24 or earlier\nMust visit the Velvet Room on 3/20 after obtaining the Orb of Sight but before talking to Gas Station Attendant\nMust travel to Heaven 10F on 3/20\nMargaret has a pattern that she will not falter from. Here it is:\nHP | Phy | Fir | Ice | Elc | Wnd | Skills | Persona\n15000-12001 |  |  |  |  |  | Physical Attacks | N/A\n12000-0 (Turn 1) |  | Drn |  |  |  | Ragnarok and Prominence | Siegfried\n12000-0 (Turn 2) |  |  | Drn |  |  | Niflheim and Cocytus Pain | Loki\n12000-0 (Turn 3) |  |  |  | Drn |  | Thunder Reign and Jihad | Oukuninushi\n12000-0 (Turn 4) |  |  |  |  | Drn | Panta Rhei and Divine Vacuum | Cu Chulainn\n12000-4501 (Turn 5) | Nul | Nul | Nul | Nul | Nul | Mind Charge | Oberon\n12000-4501 (Turn 6) | Str | Str | Str | Str | Str | Megidolaon (Normal Damage) | Ardha\n7500-0 (First Time) |  |  |  | Drn |  | Morning Star | Helel\n7500-0 (First Time) |  |  |  | Drn |  | Diarahan | Ardha\n4500-0 (Turn 5) | Nul | Nul | Nul | Nul | Nul | Power Charge | Oberon\n4500-0 (Turn 6) | Drn |  |  |  |  | Hassou Tobi | Yoshitsune\nEvery 50 Turns |  |  |  |  |  | Megidolaon (9999 Damage) | Oberon\nMargaret gets 2 turns a cycle, so after 25 cycles she will kill you. Having a Skill or accessory that lets you endure will let you drag the fight out until 50 cycles. Also, if you have the Omnipotent Orb equipped she will kill you instantly, so don't do that. After getting her to half health she will heal, so you need to deal as much damage as possible. She is the hardest boss in the game, but she isn't impossible to beat. Make sure you are well prepared and you can do it."
+}

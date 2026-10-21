@@ -1,0 +1,277 @@
+{
+  "id": "activities-costume-shop",
+  "title": "Costume Shop",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "costume-shop",
+  "type": "article",
+  "order": 107,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Costume Shop is located at Okina City, which must be unlocked by riding the scooter a few times. Most costumes can be bought here, and new costumes appear on certain days. Some costumes come in a set for the entire party. Here are all the costumes you can buy, and all the relevant details for each."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Costume",
+            "md": "**Costume**"
+          },
+          {
+            "text": "Worn By",
+            "md": "**Worn By**"
+          },
+          {
+            "text": "Price",
+            "md": "**Price**"
+          },
+          {
+            "text": "Available",
+            "md": "**Available**"
+          }
+        ],
+        [
+          {
+            "text": "Agent Suit Set"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "19,400 Yen"
+          },
+          {
+            "text": "June 11th"
+          }
+        ],
+        [
+          {
+            "text": "Butler Suit Set"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "39,600 Yen"
+          },
+          {
+            "text": "July 11th"
+          }
+        ],
+        [
+          {
+            "text": "Festival Set"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "46,490 Yen"
+          },
+          {
+            "text": "August 22nd"
+          }
+        ],
+        [
+          {
+            "text": "Cheer Squad Set"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "59,800 Yen"
+          },
+          {
+            "text": "September 12th"
+          }
+        ],
+        [
+          {
+            "text": "Neo Featherman Suit Set"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "99,800 Yen"
+          },
+          {
+            "text": "October 12th"
+          }
+        ],
+        [
+          {
+            "text": "Maid Uniform Set"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "198,000 Yen"
+          },
+          {
+            "text": "January 10th"
+          }
+        ],
+        [
+          {
+            "text": "Cool Trunks"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "98,00 Yen"
+          },
+          {
+            "text": "June 19th"
+          }
+        ],
+        [
+          {
+            "text": "Cleaning Uniform"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "14,800 Yen"
+          },
+          {
+            "text": "June 19th, Accepted Janitor Job"
+          }
+        ],
+        [
+          {
+            "text": "Hardboiled Look"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "34,500 Yen"
+          },
+          {
+            "text": "Clear Heaven Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Summer Trunks"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "9,800 Yen"
+          },
+          {
+            "text": "June 19th"
+          }
+        ],
+        [
+          {
+            "text": "Striped Bikini"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "24,980 Yen"
+          },
+          {
+            "text": "June 19th"
+          }
+        ],
+        [
+          {
+            "text": "Tsukesage"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "19,800 Yen"
+          },
+          {
+            "text": "June 11th"
+          }
+        ],
+        [
+          {
+            "text": "Trim Bikini"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "24,980 Yen"
+          },
+          {
+            "text": "June 19th"
+          }
+        ],
+        [
+          {
+            "text": "Ceremonial Kimono"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "49,800 Yen"
+          },
+          {
+            "text": "January 19th"
+          }
+        ],
+        [
+          {
+            "text": "Dangerous Briefs"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "17,500 Yen"
+          },
+          {
+            "text": "August 24th"
+          }
+        ],
+        [
+          {
+            "text": "Detective Costume"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "69,800 Yen"
+          },
+          {
+            "text": "February 1st"
+          }
+        ],
+        [
+          {
+            "text": "Sailor Trunks"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "17,500 Yen"
+          },
+          {
+            "text": "August 24th"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "The Costume Shop is located at Okina City, which must be unlocked by riding the scooter a few times. Most costumes can be bought here, and new costumes appear on certain days. Some costumes come in a set for the entire party. Here are all the costumes you can buy, and all the relevant details for each.\nCostume | Worn By | Price | Available\nAgent Suit Set | Everybody | 19,400 Yen | June 11th\nButler Suit Set | Guys | 39,600 Yen | July 11th\nFestival Set | Everybody | 46,490 Yen | August 22nd\nCheer Squad Set | Everybody | 59,800 Yen | September 12th\nNeo Featherman Suit Set | Everybody | 99,800 Yen | October 12th\nMaid Uniform Set | Girls | 198,000 Yen | January 10th\nCool Trunks | MC | 98,00 Yen | June 19th\nCleaning Uniform | MC | 14,800 Yen | June 19th, Accepted Janitor Job\nHardboiled Look | MC | 34,500 Yen | Clear Heaven Dungeon\nSummer Trunks | Yosuke | 9,800 Yen | June 19th\nStriped Bikini | Chie | 24,980 Yen | June 19th\nTsukesage | Yukiko | 19,800 Yen | June 11th\nTrim Bikini | Yukiko | 24,980 Yen | June 19th\nCeremonial Kimono | Yukiko | 49,800 Yen | January 19th\nDangerous Briefs | Kanji | 17,500 Yen | August 24th\nDetective Costume | Naoto | 69,800 Yen | February 1st\nSailor Trunks | Teddie | 17,500 Yen | August 24th"
+}

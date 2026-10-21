@@ -1,0 +1,103 @@
+{
+  "id": "activities-lady-in-white",
+  "title": "Lady in White",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "lady-in-white",
+  "type": "article",
+  "order": 114,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Lady in White is located at the Shopping District Shrine at night starting June 5th. She will trade Gems in exchange for Fish. The Gems she trades can't be obtained anywhere else. She isn't available during rain. Note that Courage Rank Reliable is needed to enter the Shrine at night. Here is the list of everything she trades."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Gem",
+            "md": "**Gem**"
+          },
+          {
+            "text": "Fish Needed",
+            "md": "**Fish Needed**"
+          }
+        ],
+        [
+          {
+            "text": "Kingyou Stone"
+          },
+          {
+            "text": "Red Goldfish"
+          }
+        ],
+        [
+          {
+            "text": "Gyosen Stone"
+          },
+          {
+            "text": "Genji Ayu"
+          }
+        ],
+        [
+          {
+            "text": "Yazu Stone"
+          },
+          {
+            "text": "Amber Seema"
+          }
+        ],
+        [
+          {
+            "text": "Masuda Stone"
+          },
+          {
+            "text": "Inaba Trout"
+          }
+        ],
+        [
+          {
+            "text": "Taisui Stone"
+          },
+          {
+            "text": "Huge Fish"
+          }
+        ],
+        [
+          {
+            "text": "Mondo Stone"
+          },
+          {
+            "text": "Guardian"
+          }
+        ],
+        [
+          {
+            "text": "Takou Stone"
+          },
+          {
+            "text": "Hachiro Octopus"
+          }
+        ],
+        [
+          {
+            "text": "Meguro Stone"
+          },
+          {
+            "text": "Meguro Tuna"
+          }
+        ],
+        [
+          {
+            "text": "Kaiou Stone"
+          },
+          {
+            "text": "Sea Guardian"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "The Lady in White is located at the Shopping District Shrine at night starting June 5th. She will trade Gems in exchange for Fish. The Gems she trades can't be obtained anywhere else. She isn't available during rain. Note that Courage Rank Reliable is needed to enter the Shrine at night. Here is the list of everything she trades.\nGem | Fish Needed\nKingyou Stone | Red Goldfish\nGyosen Stone | Genji Ayu\nYazu Stone | Amber Seema\nMasuda Stone | Inaba Trout\nTaisui Stone | Huge Fish\nMondo Stone | Guardian\nTakou Stone | Hachiro Octopus\nMeguro Stone | Meguro Tuna\nKaiou Stone | Sea Guardian"
+}

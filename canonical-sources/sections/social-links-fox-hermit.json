@@ -1,0 +1,261 @@
+{
+  "id": "social-links-fox-hermit",
+  "title": "Fox/Hermit",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "fox-hermit",
+  "type": "social-link",
+  "order": 86,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "p",
+      "text": "Every Day"
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: May 5th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 5th (NOTE: I think? It's the last day you can spend time with anyone.)"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Automatic"
+    },
+    {
+      "type": "p",
+      "text": "Location: Shopping District Shrine"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Ongyo-ki"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Gratitude Ema"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Ranks up by completing certain Quests, so Social Link doesn't require a matching Persona. Can accept quests without spending time, but turning in quests and ranking up spends time."
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    },
+    {
+      "type": "p",
+      "text": "SP Recovery Rate",
+      "md": "**SP Recovery Rate**"
+    },
+    {
+      "type": "p",
+      "text": "Rank determines how much it costs to recover SP. The amount of yen listed is for every 1 SP to heal your current party to Max SP."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "60 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "55 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "50 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "45 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "40 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "35 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "30 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "25 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "20 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "15 Yen"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Automatically on May 5th"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Female Student on Classroom Building 1F (NOTE: Some quests require you to wait until the next day before you can continue with the quest.)\nTalk to Female Student on Classroom Building 2F\n\"I read it.\"\nTalk to Love Note Sender on Classroom Building 2F\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Slim Woman in Shopping District South\nTalk to Chie on Roof\nTalk to Slim Woman at Shopping District South\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Dog at Riverbank in Samegawa Flood Plain\nTalk to Missing Dog in Shopping District North\nTalk to it gently\nTalk to Missing Dog at Samegawa Flood Plain\nTalk to it gently\nBuy Steak Skewer at Souzai Daigaku\nTalk to Missing Dog at Samegawa Flood Plain\nTalk to it gently\nGive Steak Skewer\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Lonely Boy in Samegawa Flood Plain\nGive him a Sticker (Obtained by ordering something from the TV Shopping Program)\nTalk to Lonely Boy in Samegawa Flood Plain\nTalk to Nanako\nTalk to Lonely Boy at Samegawa Flood Plain\nTalk to Lonely Boy at Samegawa Flood Plain\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Haggard Man at Shopping District North\nMake a Model at Work Table (x3)\nTalk to Despondent Man at Shopping District North\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Female Student on Roof (Requires Understanding Rank Generous)\nTalk to Awkward Girl on Roof\nOption A, A (Requires Expression Rank Persuasive)\nTalk to Awkward Girl on Roof\nOption A (Requires Courage Rank Brave)\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Man at Samegawa Flood Plain\nTalk to Cat at Dojima Residence\nBring Man to Cat\nTalk to Ailurophobe at Samegawa Flood Plain\nGive Red Goldfish (Obtained by fishing or other various ways)\nTalk to Ailurophobe at Samegawa Flood Plain\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\nTalk to Woman at Samegawa Flood Plain\nCheck bushes next to stairs at Samegawa Riverbank\nReport back to Woman\nCheck bushes next to Shrine at Shopping District North\nReport back to Woman\nReport to Fox"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Accept the ema's Request\n(NOTE: The following can be done before accepting the request)\nTry to Fish at Shichiri Beach then Return to Inaba\nTalk to Old Man at Samegawa Riverbank\nAsk him about the Guardian\nShow him the Guardian (Obtained by using Inaba Jewel Beetle while fishing)\n(NOTE: The following can only be done after accepting the request)\nAsk Old Man about Sea Guardian\nShow him the Sea Guardian (Obtained by using Genji Beetle while fishing)\nReport to Fox\nSpend time with Fox (NOTE: Must talk to Fox twice after completing request to rank up)"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    }
+  ],
+  "text": "Availability\nEvery Day\nInformation\nFirst Day: May 5th\nLast Day: February 5th (NOTE: I think? It's the last day you can spend time with anyone.)\nActivation: Automatic\nLocation: Shopping District Shrine\nUltimate Persona: Ongyo-ki\nKey Item: Gratitude Ema\nNotes: Ranks up by completing certain Quests, so Social Link doesn't require a matching Persona. Can accept quests without spending time, but turning in quests and ranking up spends time.\nPoints Needed\nN/A\nSP Recovery Rate\nRank determines how much it costs to recover SP. The amount of yen listed is for every 1 SP to heal your current party to Max SP.\nRank 1 | 60 Yen\nRank 2 | 55 Yen\nRank 3 | 50 Yen\nRank 4 | 45 Yen\nRank 5 | 40 Yen\nRank 6 | 35 Yen\nRank 7 | 30 Yen\nRank 8 | 25 Yen\nRank 9 | 20 Yen\nRank 10 | 15 Yen\nRank Up Scenes\n-Rank 1-\nAutomatically on May 5th\n-Rank 2-\nAccept the ema's Request\nTalk to Female Student on Classroom Building 1F (NOTE: Some quests require you to wait until the next day before you can continue with the quest.)\nTalk to Female Student on Classroom Building 2F\n\"I read it.\"\nTalk to Love Note Sender on Classroom Building 2F\nReport to Fox\n-Rank 3-\nAccept the ema's Request\nTalk to Slim Woman in Shopping District South\nTalk to Chie on Roof\nTalk to Slim Woman at Shopping District South\nReport to Fox\n-Rank 4-\nAccept the ema's Request\nTalk to Dog at Riverbank in Samegawa Flood Plain\nTalk to Missing Dog in Shopping District North\nTalk to it gently\nTalk to Missing Dog at Samegawa Flood Plain\nTalk to it gently\nBuy Steak Skewer at Souzai Daigaku\nTalk to Missing Dog at Samegawa Flood Plain\nTalk to it gently\nGive Steak Skewer\nReport to Fox\n-Rank 5-\nAccept the ema's Request\nTalk to Lonely Boy in Samegawa Flood Plain\nGive him a Sticker (Obtained by ordering something from the TV Shopping Program)\nTalk to Lonely Boy in Samegawa Flood Plain\nTalk to Nanako\nTalk to Lonely Boy at Samegawa Flood Plain\nTalk to Lonely Boy at Samegawa Flood Plain\nReport to Fox\n-Rank 6-\nAccept the ema's Request\nTalk to Haggard Man at Shopping District North\nMake a Model at Work Table (x3)\nTalk to Despondent Man at Shopping District North\nReport to Fox\n-Rank 7-\nAccept the ema's Request\nTalk to Female Student on Roof (Requires Understanding Rank Generous)\nTalk to Awkward Girl on Roof\nOption A, A (Requires Expression Rank Persuasive)\nTalk to Awkward Girl on Roof\nOption A (Requires Courage Rank Brave)\nReport to Fox\n-Rank 8-\nAccept the ema's Request\nTalk to Man at Samegawa Flood Plain\nTalk to Cat at Dojima Residence\nBring Man to Cat\nTalk to Ailurophobe at Samegawa Flood Plain\nGive Red Goldfish (Obtained by fishing or other various ways)\nTalk to Ailurophobe at Samegawa Flood Plain\nReport to Fox\n-Rank 9-\nAccept the ema's Request\nTalk to Woman at Samegawa Flood Plain\nCheck bushes next to stairs at Samegawa Riverbank\nReport back to Woman\nCheck bushes next to Shrine at Shopping District North\nReport back to Woman\nReport to Fox\n-Rank 10-\nAccept the ema's Request\n(NOTE: The following can be done before accepting the request)\nTry to Fish at Shichiri Beach then Return to Inaba\nTalk to Old Man at Samegawa Riverbank\nAsk him about the Guardian\nShow him the Guardian (Obtained by using Inaba Jewel Beetle while fishing)\n(NOTE: The following can only be done after accepting the request)\nAsk Old Man about Sea Guardian\nShow him the Sea Guardian (Obtained by using Genji Beetle while fishing)\nReport to Fox\nSpend time with Fox (NOTE: Must talk to Fox twice after completing request to rank up)\nNight Time Dates\nN/A"
+}

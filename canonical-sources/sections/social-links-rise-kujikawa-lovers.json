@@ -1,0 +1,429 @@
+{
+  "id": "social-links-rise-kujikawa-lovers",
+  "title": "Rise Kujikawa/Lovers",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "rise-kujikawa-lovers",
+  "type": "social-link",
+  "order": 83,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday",
+            "md": "**Monday**"
+          },
+          {
+            "text": "Tuesday",
+            "md": "**Tuesday**"
+          },
+          {
+            "text": "Wednesday",
+            "md": "**Wednesday**"
+          },
+          {
+            "text": "Thursday",
+            "md": "**Thursday**"
+          },
+          {
+            "text": "Friday",
+            "md": "**Friday**"
+          },
+          {
+            "text": "Saturday",
+            "md": "**Saturday**"
+          },
+          {
+            "text": "Sunday",
+            "md": "**Sunday**"
+          },
+          {
+            "text": "Rain",
+            "md": "**Rain**"
+          }
+        ],
+        [
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: July 23rd"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 5th"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Automatic"
+    },
+    {
+      "type": "p",
+      "text": "Location: Classroom Building 1F, Shopping District South"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Ishtar"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Signed Photo"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Social Link has 2 different routes that splits at Rank 8. Skills/Abilities Social Link earns are different from the rest of the party."
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "8"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "9"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Automatically on July 23rd"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"But it's a little embarrassing to show up alone, you know?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or +2\nOption B: +2 or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"It'll take time to get back, so let's walk around quick!\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Rise is worried..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +? or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Rise looks desperate..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"I'm sorry...Lying about marrying you and all...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"Senpai, have you ever thought that you're pushing yourself too far, or that you were just acting...?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +2 or +3\nOption C: +? or +2"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"You're with me right now because I am Risette, yeah?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +? or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Inoue: \"A fan letter came, you see...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"To think I trusted him...I feel betrayed!\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"I gave up on being Risette. I can't meet her expectations...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +0\nOption C (Requires Understanding Rank Saintly): +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"Doesn't that sound fun? H-How about it? Haha...Ha...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"...She was cute, so I figured she would sell.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"You like having such a cute underclassman, right? I'm an ex-idol, after all.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +0\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Rise looks helpless..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +3\nOption C (Requires Courage Rank Heroic): +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"Senpai...I...I don't know why I'm crying...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: ...You sense this is an important moment. There's no turning back."
+    },
+    {
+      "type": "p",
+      "text": "Option A: Intimate\nOption B: Platonic"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"And yet...I felt so angry about it...Why do you think that is?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or +3\nOption B: +? or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Platonic"
+    },
+    {
+      "type": "p",
+      "text": "No options"
+    },
+    {
+      "type": "p",
+      "text": "Intimate"
+    },
+    {
+      "type": "p",
+      "text": "Rise: \"I'll ask the man himself! So where do you hide them!?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "Need to Research"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nNo | No | No | No | Yes | Yes | Yes | No\nInformation\nFirst Day: July 23rd\nLast Day: February 5th\nActivation: Automatic\nLocation: Classroom Building 1F, Shopping District South\nUltimate Persona: Ishtar\nKey Item: Signed Photo\nNotes: Social Link has 2 different routes that splits at Rank 8. Skills/Abilities Social Link earns are different from the rest of the party.\nPoints Needed\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 4\nRank 5 | 6\nRank 6 | 6\nRank 7 | 6\nRank 8 | 8\nRank 9 | 6\nRank 10 | 9\nRank Up Scenes\n-Rank 1-\nAutomatically on July 23rd\n-Rank 2-\nRise: \"But it's a little embarrassing to show up alone, you know?\"\nOption A: +? or +2\nOption B: +2 or +3\nOption C: +3\n-Rank 3-\nRise: \"It'll take time to get back, so let's walk around quick!\"\nOption A: +3\nOption B: +? or +3\nOption C: +? or +3\n-Rank 4-\nNarrator: Rise is worried...\nOption A: +0\nOption B: +? or +3\nOption C: +3\nNarrator: Rise looks desperate...\nOption A: +3\nOption B: +0\nRise: \"I'm sorry...Lying about marrying you and all...\"\nOption A: +3\nOption B: +0\nOption C: +? or +3\n-Rank 5-\nRise: \"Senpai, have you ever thought that you're pushing yourself too far, or that you were just acting...?\"\nOption A: +3\nOption B: +2 or +3\nOption C: +? or +2\nRise: \"You're with me right now because I am Risette, yeah?\"\nOption A: +0\nOption B: +? or +3\nOption C: +3\n-Rank 6-\nInoue: \"A fan letter came, you see...\"\nAny option: +0\nRise: \"To think I trusted him...I feel betrayed!\"\nAny option: +0\nRise: \"I gave up on being Risette. I can't meet her expectations...\"\nOption A: +2 or +3\nOption B: +0\nOption C (Requires Understanding Rank Saintly): +2 or +3\nRise: \"Doesn't that sound fun? H-How about it? Haha...Ha...\"\nOption A: +2 or +3\nOption B: +3\nOption C: +0\n-Rank 7-\nRise: \"...She was cute, so I figured she would sell.\"\nAny option: +0\nRise: \"You like having such a cute underclassman, right? I'm an ex-idol, after all.\"\nOption A: +1 or +2\nOption B: +0\nOption C: +2 or +3\nNarrator: Rise looks helpless...\nOption A: +2 or +3\nOption B: +3\nOption C (Requires Courage Rank Heroic): +3\n-Rank 8-\nRise: \"Senpai...I...I don't know why I'm crying...\"\nAny option: +0\nNarrator: ...You sense this is an important moment. There's no turning back.\nOption A: Intimate\nOption B: Platonic\n-Rank 9-\nRise: \"And yet...I felt so angry about it...Why do you think that is?\"\nOption A: +? or +3\nOption B: +? or +3\nOption C: +3\n-Rank 10-\nPlatonic\nNo options\nIntimate\nRise: \"I'll ask the man himself! So where do you hide them!?\"\nAny option: +0\nNight Time Dates\nNeed to Research"
+}

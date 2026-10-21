@@ -1,0 +1,184 @@
+{
+  "id": "persona-compendium-priestess",
+  "title": "Priestess",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "priestess",
+  "type": "arcana",
+  "order": 54,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Jester\nPriestess x Priestess\nEmpress x Devil\nEmpress x Sun\nEmpress x Judgement\nEmperor x Hermit\nHierophant x Fortune\nLovers x Justice\nJustice x Hanged Man\nFortune x Sun\nFortune x Aeon\nHanged Man x Death\nHanged Man x Moon\nHanged Man x Jester\nDeath x Moon\nTower x Moon\nSun x Aeon"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Jester\nPriestess x Priestess\nEmpress x Hierophant\nEmperor x Fortune\nEmperor x Tower\nChariot x Hermit\nChariot x Sun\nJustice x Fortune\nJustice x Strength\nJustice x Devil\nFortune x Strength\nTemperance x Jester"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Saki Mitama"
+          },
+          {
+            "text": "11"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Sarasvati"
+          },
+          {
+            "text": "17"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "High Pixie"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Ganga"
+          },
+          {
+            "text": "29"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Parvati"
+          },
+          {
+            "text": "37"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kikuri-Hime"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Hariti"
+          },
+          {
+            "text": "59"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Tzitzimitl"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Scathach"
+          },
+          {
+            "text": "79"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Jester\nPriestess x Priestess\nEmpress x Devil\nEmpress x Sun\nEmpress x Judgement\nEmperor x Hermit\nHierophant x Fortune\nLovers x Justice\nJustice x Hanged Man\nFortune x Sun\nFortune x Aeon\nHanged Man x Death\nHanged Man x Moon\nHanged Man x Jester\nDeath x Moon\nTower x Moon\nSun x Aeon\nTriangle Spread\nFool x Jester\nPriestess x Priestess\nEmpress x Hierophant\nEmperor x Fortune\nEmperor x Tower\nChariot x Hermit\nChariot x Sun\nJustice x Fortune\nJustice x Strength\nJustice x Devil\nFortune x Strength\nTemperance x Jester\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nSaki Mitama | 11 |  | \nSarasvati | 17 |  | \nHigh Pixie | 22 |  | \nGanga | 29 |  | \nParvati | 37 |  | \nKikuri-Hime | 48 |  | \nHariti | 59 |  | \nTzitzimitl | 70 |  | \nScathach | 79 |  | X"
+}

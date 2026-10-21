@@ -1,0 +1,305 @@
+{
+  "id": "activities-beach-hot-springs",
+  "title": "Beach/Hot Springs",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "beach-hot-springs",
+  "type": "article",
+  "order": 106,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Once the Party Members have access to scooters, they will sometimes be available to go on a trip to the Beach or Hot Springs. These trips allow Party Members to either learn new Skills they otherwise don't have access to, or relearn Skills you decided to get rid of. There are 5 new Skills each Party Member can learn, and they will always be learned in the same order. This section will list who is available on what days, and the new Skills they can learn."
+    },
+    {
+      "type": "p",
+      "text": "Yosuke Hanamura",
+      "md": "**Yosuke Hanamura**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st Skill: Confuse Boost"
+        },
+        {
+          "text": "2nd Skill: Megido"
+        },
+        {
+          "text": "3rd Skill: Green Wall"
+        },
+        {
+          "text": "4th Skill: Makara Break"
+        },
+        {
+          "text": "5th Skill: Diarahan"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Chie Satonaka",
+      "md": "**Chie Satonaka**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st Skill: Hama"
+        },
+        {
+          "text": "2nd Skill: Mind Slice"
+        },
+        {
+          "text": "3rd Skill: Hamaon"
+        },
+        {
+          "text": "4th Skill: Tetra Break"
+        },
+        {
+          "text": "5th Skill: Bufudyne"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Yukiko Amagi",
+      "md": "**Yukiko Amagi**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st Skill: Valiant Dance"
+        },
+        {
+          "text": "2nd Skill: Matarunda"
+        },
+        {
+          "text": "3rd Skill: Red Wall"
+        },
+        {
+          "text": "4th Skill: Spirit Drain"
+        },
+        {
+          "text": "5th Skill: Mind Charge"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Kanji Tatsumi",
+      "md": "**Kanji Tatsumi**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st Skill: Media"
+        },
+        {
+          "text": "2nd Skill: Atom Smasher"
+        },
+        {
+          "text": "3rd Skill: Blue Wall"
+        },
+        {
+          "text": "4th Skill: Speedy Recovery"
+        },
+        {
+          "text": "5th Skill: Mediarama"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rise Kujikawa",
+      "md": "**Rise Kujikawa**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st-5th Skill: Increases Rise's All-Out Attack damage"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Teddie",
+      "md": "**Teddie**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st Skill: Dekunda"
+        },
+        {
+          "text": "2nd Skill: Life Drain"
+        },
+        {
+          "text": "3rd Skill: Mustard Bomb"
+        },
+        {
+          "text": "4th Skill: White Wall"
+        },
+        {
+          "text": "5th Skill: Evade Physical"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Naoto Shirogane",
+      "md": "**Naoto Shirogane**"
+    },
+    {
+      "type": "p",
+      "text": "Available:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Placeholder"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "New Skills:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "1st Skill: Bufudyne"
+        },
+        {
+          "text": "2nd Skill: Ziodyne"
+        },
+        {
+          "text": "3rd Skill: Tetraja"
+        },
+        {
+          "text": "4th Skill: Myriad Arrows"
+        },
+        {
+          "text": "5th Skill: Angelic Grace"
+        }
+      ]
+    }
+  ],
+  "text": "Once the Party Members have access to scooters, they will sometimes be available to go on a trip to the Beach or Hot Springs. These trips allow Party Members to either learn new Skills they otherwise don't have access to, or relearn Skills you decided to get rid of. There are 5 new Skills each Party Member can learn, and they will always be learned in the same order. This section will list who is available on what days, and the new Skills they can learn.\nYosuke Hanamura\nAvailable:\nPlaceholder\nNew Skills:\n1st Skill: Confuse Boost\n2nd Skill: Megido\n3rd Skill: Green Wall\n4th Skill: Makara Break\n5th Skill: Diarahan\nChie Satonaka\nAvailable:\nPlaceholder\nNew Skills:\n1st Skill: Hama\n2nd Skill: Mind Slice\n3rd Skill: Hamaon\n4th Skill: Tetra Break\n5th Skill: Bufudyne\nYukiko Amagi\nAvailable:\nPlaceholder\nNew Skills:\n1st Skill: Valiant Dance\n2nd Skill: Matarunda\n3rd Skill: Red Wall\n4th Skill: Spirit Drain\n5th Skill: Mind Charge\nKanji Tatsumi\nAvailable:\nPlaceholder\nNew Skills:\n1st Skill: Media\n2nd Skill: Atom Smasher\n3rd Skill: Blue Wall\n4th Skill: Speedy Recovery\n5th Skill: Mediarama\nRise Kujikawa\nAvailable:\nPlaceholder\nNew Skills\n1st-5th Skill: Increases Rise's All-Out Attack damage\nTeddie\nAvailable:\nPlaceholder\nNew Skills\n1st Skill: Dekunda\n2nd Skill: Life Drain\n3rd Skill: Mustard Bomb\n4th Skill: White Wall\n5th Skill: Evade Physical\nNaoto Shirogane\nAvailable:\nPlaceholder\nNew Skills:\n1st Skill: Bufudyne\n2nd Skill: Ziodyne\n3rd Skill: Tetraja\n4th Skill: Myriad Arrows\n5th Skill: Angelic Grace"
+}

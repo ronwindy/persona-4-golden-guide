@@ -1,0 +1,198 @@
+{
+  "id": "persona-compendium-sun",
+  "title": "Sun",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "sun",
+  "type": "arcana",
+  "order": 71,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Chariot\nMagician x Hanged Man\nMagician x Devil\nPriestess x Hierophant\nPriestess x Judgement\nPriestess x Aeon\nEmperor x Temperance\nHierophant x Chariot\nHierophant x Strength\nLovers x Jester\nChariot x Moon\nHermit x Death\nStrength x Temperance\nSun x Sun"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Magician x Empress\nMagician x Temperance\nMagician x Moon\nMagician x Judgement\nEmpress x Hanged Man\nEmperor x Star\nEmperor x Aeon\nHierophant x Aeon\nJustice x Star\nJustice x Judgement\nHanged Man x Star\nSun x Sun\nJudgement x Aeon"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Cu Sith"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Phoenix"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Gdon"
+          },
+          {
+            "text": "31"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Yatagarasu"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Narasimha"
+          },
+          {
+            "text": "47"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Tam Lin"
+          },
+          {
+            "text": "53"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Jatayu"
+          },
+          {
+            "text": "61"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Horus"
+          },
+          {
+            "text": "68"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Suparna"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Asura"
+          },
+          {
+            "text": "86"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Chariot\nMagician x Hanged Man\nMagician x Devil\nPriestess x Hierophant\nPriestess x Judgement\nPriestess x Aeon\nEmperor x Temperance\nHierophant x Chariot\nHierophant x Strength\nLovers x Jester\nChariot x Moon\nHermit x Death\nStrength x Temperance\nSun x Sun\nTriangle Spread\nMagician x Empress\nMagician x Temperance\nMagician x Moon\nMagician x Judgement\nEmpress x Hanged Man\nEmperor x Star\nEmperor x Aeon\nHierophant x Aeon\nJustice x Star\nJustice x Judgement\nHanged Man x Star\nSun x Sun\nJudgement x Aeon\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nCu Sith | 10 |  | \nPhoenix | 20 |  | \nGdon | 31 |  | \nYatagarasu | 40 |  | \nNarasimha | 47 |  | \nTam Lin | 53 | X | \nJatayu | 61 |  | \nHorus | 68 |  | \nSuparna | 77 |  | \nAsura | 86 |  | X"
+}

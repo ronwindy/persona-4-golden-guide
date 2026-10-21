@@ -1,0 +1,233 @@
+{
+  "id": "activities-models",
+  "title": "Models",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "models",
+  "type": "article",
+  "order": 119,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Models can usually be bought from Marutake Hobby Shop in Shopping District North after completing Quest 11. Models bought from the Hobby Shop can be constructed at the Work Table in your Room. Placing all models of a specific type on the shelf will earn you a stat increase for every Status Parameter. This is the list of models you can make."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Model Name",
+            "md": "**Model Name**"
+          },
+          {
+            "text": "Model Type",
+            "md": "**Model Type**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "MF-06S Brahman"
+          },
+          {
+            "text": "Robot"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Heavy-Armor Agni"
+          },
+          {
+            "text": "Robot"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Melee Harihara"
+          },
+          {
+            "text": "Robot"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Turbo Recon Dyaus"
+          },
+          {
+            "text": "Robot"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Mobile Model Varna"
+          },
+          {
+            "text": "Robot"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "D-Type Prithvi"
+          },
+          {
+            "text": "Robot"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Jack Frost Doll"
+          },
+          {
+            "text": "Persona"
+          },
+          {
+            "text": "Crane Game"
+          }
+        ],
+        [
+          {
+            "text": "Black Frost Doll"
+          },
+          {
+            "text": "Persona"
+          },
+          {
+            "text": "Crane Game"
+          }
+        ],
+        [
+          {
+            "text": "King Frost Doll"
+          },
+          {
+            "text": "Persona"
+          },
+          {
+            "text": "Crane Game"
+          }
+        ],
+        [
+          {
+            "text": "Pyro Jack Doll"
+          },
+          {
+            "text": "Persona"
+          },
+          {
+            "text": "Crane Game"
+          }
+        ],
+        [
+          {
+            "text": "Neko Shogun Doll"
+          },
+          {
+            "text": "Persona"
+          },
+          {
+            "text": "Crane Game"
+          }
+        ],
+        [
+          {
+            "text": "Mokoi Doll"
+          },
+          {
+            "text": "Persona"
+          },
+          {
+            "text": "Quest 56"
+          }
+        ],
+        [
+          {
+            "text": "Silver Scooter"
+          },
+          {
+            "text": "Scooter"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Orange Scooter"
+          },
+          {
+            "text": "Scooter"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Light Blue Scooter"
+          },
+          {
+            "text": "Scooter"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Red Scooter"
+          },
+          {
+            "text": "Scooter"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Pink Scooter"
+          },
+          {
+            "text": "Scooter"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ],
+        [
+          {
+            "text": "Blue Scooter"
+          },
+          {
+            "text": "Scooter"
+          },
+          {
+            "text": "Hobby Shop"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Models can usually be bought from Marutake Hobby Shop in Shopping District North after completing Quest 11. Models bought from the Hobby Shop can be constructed at the Work Table in your Room. Placing all models of a specific type on the shelf will earn you a stat increase for every Status Parameter. This is the list of models you can make.\nModel Name | Model Type | Location\nMF-06S Brahman | Robot | Hobby Shop\nHeavy-Armor Agni | Robot | Hobby Shop\nMelee Harihara | Robot | Hobby Shop\nTurbo Recon Dyaus | Robot | Hobby Shop\nMobile Model Varna | Robot | Hobby Shop\nD-Type Prithvi | Robot | Hobby Shop\nJack Frost Doll | Persona | Crane Game\nBlack Frost Doll | Persona | Crane Game\nKing Frost Doll | Persona | Crane Game\nPyro Jack Doll | Persona | Crane Game\nNeko Shogun Doll | Persona | Crane Game\nMokoi Doll | Persona | Quest 56\nSilver Scooter | Scooter | Hobby Shop\nOrange Scooter | Scooter | Hobby Shop\nLight Blue Scooter | Scooter | Hobby Shop\nRed Scooter | Scooter | Hobby Shop\nPink Scooter | Scooter | Hobby Shop\nBlue Scooter | Scooter | Hobby Shop"
+}

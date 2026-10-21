@@ -1,0 +1,2537 @@
+{
+  "id": "item-list-materials",
+  "title": "Materials",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "materials",
+  "type": "catalog",
+  "order": 131,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Weapon Materials",
+      "md": "**Weapon Materials**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Material",
+            "md": "**Material**"
+          },
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          },
+          {
+            "text": "Result",
+            "md": "**Result**"
+          }
+        ],
+        [
+          {
+            "text": "Black Lamp"
+          },
+          {
+            "text": "Black Raven"
+          },
+          {
+            "text": "Long Sword"
+          }
+        ],
+        [
+          {
+            "text": "Supple Metal"
+          },
+          {
+            "text": "Magical Magus"
+          },
+          {
+            "text": "5-Iron"
+          }
+        ],
+        [
+          {
+            "text": "Golden Cloth"
+          },
+          {
+            "text": "Phantom Mage"
+          },
+          {
+            "text": "Iai Katana"
+          }
+        ],
+        [
+          {
+            "text": "Powered Iron"
+          },
+          {
+            "text": "Autonomic Basalt"
+          },
+          {
+            "text": "Bastard Sword"
+          }
+        ],
+        [
+          {
+            "text": "Pure Iron Lump"
+          },
+          {
+            "text": "Iron Dice"
+          },
+          {
+            "text": "Zweihander"
+          }
+        ],
+        [
+          {
+            "text": "Iron Eyeball"
+          },
+          {
+            "text": "Death Seeker"
+          },
+          {
+            "text": "Gothic Sword"
+          }
+        ],
+        [
+          {
+            "text": "Silver Lump"
+          },
+          {
+            "text": "Silver Dice"
+          },
+          {
+            "text": "Type-98 Gunto"
+          }
+        ],
+        [
+          {
+            "text": "Nice Ornament"
+          },
+          {
+            "text": "Justice Sword"
+          },
+          {
+            "text": "Edge"
+          }
+        ],
+        [
+          {
+            "text": "Compacted Metal"
+          },
+          {
+            "text": "Monomaniac Fuzz"
+          },
+          {
+            "text": "Kage-Dachi"
+          }
+        ],
+        [
+          {
+            "text": "Blade Metal"
+          },
+          {
+            "text": "Ardent Dancer"
+          },
+          {
+            "text": "Anglaise"
+          }
+        ],
+        [
+          {
+            "text": "Tungsten"
+          },
+          {
+            "text": "Steel Machine"
+          },
+          {
+            "text": "Great Sword"
+          }
+        ],
+        [
+          {
+            "text": "Insolence Steel"
+          },
+          {
+            "text": "Insolent Basalt"
+          },
+          {
+            "text": "Midare Hamon"
+          }
+        ],
+        [
+          {
+            "text": "Iron Gear"
+          },
+          {
+            "text": "Wild Drive"
+          },
+          {
+            "text": "Kakitsubata"
+          }
+        ],
+        [
+          {
+            "text": "Damascus"
+          },
+          {
+            "text": "Dominating Machine"
+          },
+          {
+            "text": "Gardenia Sword"
+          }
+        ],
+        [
+          {
+            "text": "Flame Steel"
+          },
+          {
+            "text": "Brave Wheel"
+          },
+          {
+            "text": "Krieg"
+          }
+        ],
+        [
+          {
+            "text": "Sacrilege Iron"
+          },
+          {
+            "text": "Apostate Tower"
+          },
+          {
+            "text": "Number One"
+          }
+        ],
+        [
+          {
+            "text": "Prime Steel"
+          },
+          {
+            "text": "Stasis Giant"
+          },
+          {
+            "text": "Kenka"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Reins"
+          },
+          {
+            "text": "Intrepid Knight"
+          },
+          {
+            "text": "Kijintou"
+          }
+        ],
+        [
+          {
+            "text": "Diamond Canine"
+          },
+          {
+            "text": "Agitating Hablerie"
+          },
+          {
+            "text": "El Caliente"
+          }
+        ],
+        [
+          {
+            "text": "Brilliant Armor"
+          },
+          {
+            "text": "Battle Wheel"
+          },
+          {
+            "text": "Shichisei-Ken"
+          }
+        ],
+        [
+          {
+            "text": "Spark Ornament"
+          },
+          {
+            "text": "Judgement Sword"
+          },
+          {
+            "text": "Yahiro Sword"
+          }
+        ],
+        [
+          {
+            "text": "Oricalcum"
+          },
+          {
+            "text": "Solemn Machine"
+          },
+          {
+            "text": "Triumph"
+          }
+        ],
+        [
+          {
+            "text": "Crown of Truth"
+          },
+          {
+            "text": "Grudge Tower"
+          },
+          {
+            "text": "Tajikarao Sword"
+          }
+        ],
+        [
+          {
+            "text": "Ripper Horse"
+          },
+          {
+            "text": "Jotun of Grief"
+          },
+          {
+            "text": "Futsuno Mitama"
+          }
+        ],
+        [
+          {
+            "text": "Soul-Death Steel"
+          },
+          {
+            "text": "Void Giant"
+          },
+          {
+            "text": "Soul Crusher"
+          }
+        ],
+        [
+          {
+            "text": "Light Iron"
+          },
+          {
+            "text": "Magic Hand"
+          },
+          {
+            "text": "Kunai"
+          }
+        ],
+        [
+          {
+            "text": "Poison Flower"
+          },
+          {
+            "text": "Secret Bambino"
+          },
+          {
+            "text": "Poison Kunai"
+          }
+        ],
+        [
+          {
+            "text": "4th Girl's Talc"
+          },
+          {
+            "text": "Rainy Sister 4"
+          },
+          {
+            "text": "Reign Skinner"
+          }
+        ],
+        [
+          {
+            "text": "Gray Shackle"
+          },
+          {
+            "text": "Killer Twins"
+          },
+          {
+            "text": "Santou"
+          }
+        ],
+        [
+          {
+            "text": "Hard Rock"
+          },
+          {
+            "text": "Creation Relic"
+          },
+          {
+            "text": "Kozuka"
+          }
+        ],
+        [
+          {
+            "text": "Haori Iron"
+          },
+          {
+            "text": "Venus Eagle"
+          },
+          {
+            "text": "Throwing Kunai"
+          }
+        ],
+        [
+          {
+            "text": "Sharp Thorn"
+          },
+          {
+            "text": "Mighty Cyclops"
+          },
+          {
+            "text": "Kris Naga"
+          }
+        ],
+        [
+          {
+            "text": "Steel Thorn"
+          },
+          {
+            "text": "Mad Cyclops"
+          },
+          {
+            "text": "Kaiken"
+          }
+        ],
+        [
+          {
+            "text": "Alluring Lily"
+          },
+          {
+            "text": "Avarice Bambino"
+          },
+          {
+            "text": "Yashioori Dagger"
+          }
+        ],
+        [
+          {
+            "text": "Alloy Signature"
+          },
+          {
+            "text": "Blue Sigil"
+          },
+          {
+            "text": "Bashin"
+          }
+        ],
+        [
+          {
+            "text": "Trial Obsidian"
+          },
+          {
+            "text": "Leading Idol"
+          },
+          {
+            "text": "Yashima"
+          }
+        ],
+        [
+          {
+            "text": "Iron Barrel"
+          },
+          {
+            "text": "Dismayed Panzer"
+          },
+          {
+            "text": "En-Giri"
+          }
+        ],
+        [
+          {
+            "text": "Shining Dish"
+          },
+          {
+            "text": "World Balance"
+          },
+          {
+            "text": "Fearful Kunai"
+          }
+        ],
+        [
+          {
+            "text": "1st Boy's Talc"
+          },
+          {
+            "text": "Rainy Brother 1"
+          },
+          {
+            "text": "Bloody Kunai"
+          }
+        ],
+        [
+          {
+            "text": "Black Sheet"
+          },
+          {
+            "text": "Wicked Turret"
+          },
+          {
+            "text": "Castilla Knife"
+          }
+        ],
+        [
+          {
+            "text": "Flame Scale"
+          },
+          {
+            "text": "Finicky Papillon"
+          },
+          {
+            "text": "Ohorinomikoto"
+          }
+        ],
+        [
+          {
+            "text": "Treasure Cloth"
+          },
+          {
+            "text": "Phantom Lord"
+          },
+          {
+            "text": "Flying Kato"
+          }
+        ],
+        [
+          {
+            "text": "Perpetual Edge"
+          },
+          {
+            "text": "Conviction Sword"
+          },
+          {
+            "text": "Basho"
+          }
+        ],
+        [
+          {
+            "text": "Nightmare Sand"
+          },
+          {
+            "text": "Infinite Sand"
+          },
+          {
+            "text": "Fuuma Kotarou"
+          }
+        ],
+        [
+          {
+            "text": "Unthinkable Metal"
+          },
+          {
+            "text": "Happy Gene"
+          },
+          {
+            "text": "Militia Dagger"
+          }
+        ],
+        [
+          {
+            "text": "Knowledge Staff"
+          },
+          {
+            "text": "Reformed Okina"
+          },
+          {
+            "text": "Hattori"
+          }
+        ],
+        [
+          {
+            "text": "Cruel Thorn"
+          },
+          {
+            "text": "Brilliant Cyclops"
+          },
+          {
+            "text": "Blitz Knife"
+          }
+        ],
+        [
+          {
+            "text": "Mobius Sand"
+          },
+          {
+            "text": "Eternal Sand"
+          },
+          {
+            "text": "Ogre Tooth"
+          }
+        ],
+        [
+          {
+            "text": "Sephirot Staff"
+          },
+          {
+            "text": "Moon Okina"
+          },
+          {
+            "text": "Rappa"
+          }
+        ],
+        [
+          {
+            "text": "Vengeance Steel"
+          },
+          {
+            "text": "Reckoning Dice"
+          },
+          {
+            "text": "Kashin Koji"
+          }
+        ],
+        [
+          {
+            "text": "Hard Horn"
+          },
+          {
+            "text": "Burning Beetle"
+          },
+          {
+            "text": "Shield Boots"
+          }
+        ],
+        [
+          {
+            "text": "Golden Dish"
+          },
+          {
+            "text": "Heat Balance"
+          },
+          {
+            "text": "Nanman Gusoku"
+          }
+        ],
+        [
+          {
+            "text": "Tough Hide"
+          },
+          {
+            "text": "Bribed Fuzz"
+          },
+          {
+            "text": "Punk Shoes"
+          }
+        ],
+        [
+          {
+            "text": "Thick Hide"
+          },
+          {
+            "text": "Dancing Hand"
+          },
+          {
+            "text": "Hard Boots"
+          }
+        ],
+        [
+          {
+            "text": "Rubbery Object"
+          },
+          {
+            "text": "Miss Gene"
+          },
+          {
+            "text": "Skill Greaves"
+          }
+        ],
+        [
+          {
+            "text": "Sturdy Molar"
+          },
+          {
+            "text": "Forgotten Hablerie"
+          },
+          {
+            "text": "Cowboy Boots"
+          }
+        ],
+        [
+          {
+            "text": "Wrought Lamp"
+          },
+          {
+            "text": "Sonic Raven"
+          },
+          {
+            "text": "Heavy Heels"
+          }
+        ],
+        [
+          {
+            "text": "Jet Black Scale"
+          },
+          {
+            "text": "Lustful Snake"
+          },
+          {
+            "text": "Bishamonten"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Crown"
+          },
+          {
+            "text": "Corrupt Tower"
+          },
+          {
+            "text": "Furinkazan"
+          }
+        ],
+        [
+          {
+            "text": "Curious Boulder"
+          },
+          {
+            "text": "Rainy Castle"
+          },
+          {
+            "text": "Amami Legs"
+          }
+        ],
+        [
+          {
+            "text": "Stone Hide"
+          },
+          {
+            "text": "Constancy Relic"
+          },
+          {
+            "text": "Bucking Broncos"
+          }
+        ],
+        [
+          {
+            "text": "Stretchy Object"
+          },
+          {
+            "text": "Fail Gene"
+          },
+          {
+            "text": "Sleipnir"
+          }
+        ],
+        [
+          {
+            "text": "Riveted Hide"
+          },
+          {
+            "text": "Jotun of Power"
+          },
+          {
+            "text": "Four Beasts"
+          }
+        ],
+        [
+          {
+            "text": "Crimson Cover"
+          },
+          {
+            "text": "Maniacal Book"
+          },
+          {
+            "text": "Vampire Shoes"
+          }
+        ],
+        [
+          {
+            "text": "Cursed Stone"
+          },
+          {
+            "text": "Curse Dice"
+          },
+          {
+            "text": "Mjolnir Boots"
+          }
+        ],
+        [
+          {
+            "text": "Bloody Hide"
+          },
+          {
+            "text": "Jotun of Blood"
+          },
+          {
+            "text": "Vidar's Boots"
+          }
+        ],
+        [
+          {
+            "text": "Miracle Scale"
+          },
+          {
+            "text": "Fickle Papillon"
+          },
+          {
+            "text": "Demon Boots"
+          }
+        ],
+        [
+          {
+            "text": "Snow Stone"
+          },
+          {
+            "text": "King Castle"
+          },
+          {
+            "text": "Hero Legs"
+          }
+        ],
+        [
+          {
+            "text": "Prime Hide"
+          },
+          {
+            "text": "Phantom King"
+          },
+          {
+            "text": "Kehaya"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Hide"
+          },
+          {
+            "text": "Minotaur I"
+          },
+          {
+            "text": "Gigant Fall"
+          }
+        ],
+        [
+          {
+            "text": "Love Scale"
+          },
+          {
+            "text": "Pure Papillon"
+          },
+          {
+            "text": "Peerless Heels"
+          }
+        ],
+        [
+          {
+            "text": "Death Sentence"
+          },
+          {
+            "text": "Eternal Eagle"
+          },
+          {
+            "text": "Judgement Boots"
+          }
+        ],
+        [
+          {
+            "text": "Tyrannical Hide"
+          },
+          {
+            "text": "Neo Minotaur"
+          },
+          {
+            "text": "Stella Greaves"
+          }
+        ],
+        [
+          {
+            "text": "Cloth Wings"
+          },
+          {
+            "text": "Monopolizing Cupid"
+          },
+          {
+            "text": "Silk Fan"
+          }
+        ],
+        [
+          {
+            "text": "4th Boy's Talc"
+          },
+          {
+            "text": "Rainy Brother 4"
+          },
+          {
+            "text": "Arazuyu Fan"
+          }
+        ],
+        [
+          {
+            "text": "Passion Clasp"
+          },
+          {
+            "text": "Soul Dancer"
+          },
+          {
+            "text": "Tesseb"
+          }
+        ],
+        [
+          {
+            "text": "Glossy Clasp"
+          },
+          {
+            "text": "Killing Hand"
+          },
+          {
+            "text": "Hanachirusato"
+          }
+        ],
+        [
+          {
+            "text": "Tortoise Shell"
+          },
+          {
+            "text": "Large Basalt"
+          },
+          {
+            "text": "Masquerade"
+          }
+        ],
+        [
+          {
+            "text": "3rd Girl's Talc"
+          },
+          {
+            "text": "Rainy Sister 3"
+          },
+          {
+            "text": "Akisame Fan"
+          }
+        ],
+        [
+          {
+            "text": "Devilish Feather"
+          },
+          {
+            "text": "Amenti Raven"
+          },
+          {
+            "text": "Madam's Charm"
+          }
+        ],
+        [
+          {
+            "text": "Gazing Clasp"
+          },
+          {
+            "text": "Fate Seeker"
+          },
+          {
+            "text": "Inversion Fan"
+          }
+        ],
+        [
+          {
+            "text": "2nd Girl's Talc"
+          },
+          {
+            "text": "Rainy Sister 2"
+          },
+          {
+            "text": "Amagyou Fan"
+          }
+        ],
+        [
+          {
+            "text": "Azalea Cord"
+          },
+          {
+            "text": "Inviting Nyogo"
+          },
+          {
+            "text": "Mogari-Bue"
+          }
+        ],
+        [
+          {
+            "text": "Dogma Clasp"
+          },
+          {
+            "text": "Dogmatic Tower"
+          },
+          {
+            "text": "Fickle Madam"
+          }
+        ],
+        [
+          {
+            "text": "Fur Clasp"
+          },
+          {
+            "text": "Elegant Mother"
+          },
+          {
+            "text": "Ganar"
+          }
+        ],
+        [
+          {
+            "text": "Smart Clasp"
+          },
+          {
+            "text": "Prime Magus"
+          },
+          {
+            "text": "Courtesia"
+          }
+        ],
+        [
+          {
+            "text": "Scorching Scale"
+          },
+          {
+            "text": "Carnal Snake"
+          },
+          {
+            "text": "Adoracion"
+          }
+        ],
+        [
+          {
+            "text": "Rare Raincoat"
+          },
+          {
+            "text": "Raindrop Castle"
+          },
+          {
+            "text": "Uhi Fan"
+          }
+        ],
+        [
+          {
+            "text": "Blessed Dish"
+          },
+          {
+            "text": "Light Balance"
+          },
+          {
+            "text": "Suzumushi"
+          }
+        ],
+        [
+          {
+            "text": "God Tailfeather"
+          },
+          {
+            "text": "Jupiter Eagle"
+          },
+          {
+            "text": "Noblesse Oblige"
+          }
+        ],
+        [
+          {
+            "text": "Love Clasp"
+          },
+          {
+            "text": "Harem Dancer"
+          },
+          {
+            "text": "Hototogisu"
+          }
+        ],
+        [
+          {
+            "text": "Golden Film"
+          },
+          {
+            "text": "Noble Seeker"
+          },
+          {
+            "text": "Secret Fan"
+          }
+        ],
+        [
+          {
+            "text": "Red-Gold Cord"
+          },
+          {
+            "text": "Silent Nyogo"
+          },
+          {
+            "text": "Kacho Fugetsu"
+          }
+        ],
+        [
+          {
+            "text": "Merciless Cord"
+          },
+          {
+            "text": "El Dorado Beast"
+          },
+          {
+            "text": "Pieta"
+          }
+        ],
+        [
+          {
+            "text": "Forbidden Scale"
+          },
+          {
+            "text": "Stoic Snake"
+          },
+          {
+            "text": "Yume no Ukihashi"
+          }
+        ],
+        [
+          {
+            "text": "Heavy Iron Lump"
+          },
+          {
+            "text": "Liberating Idol"
+          },
+          {
+            "text": "Steel Plate"
+          }
+        ],
+        [
+          {
+            "text": "Steel Collar"
+          },
+          {
+            "text": "Enslaved Beast"
+          },
+          {
+            "text": "Photon Plate"
+          }
+        ],
+        [
+          {
+            "text": "Dependent Iron"
+          },
+          {
+            "text": "Dependent Basalt"
+          },
+          {
+            "text": "Hard Board"
+          }
+        ],
+        [
+          {
+            "text": "Electric Rock"
+          },
+          {
+            "text": "Almighty Hand"
+          },
+          {
+            "text": "Thunder Plate"
+          }
+        ],
+        [
+          {
+            "text": "Chirping Wings"
+          },
+          {
+            "text": "Blind Cupid"
+          },
+          {
+            "text": "Power Plate"
+          }
+        ],
+        [
+          {
+            "text": "Super-Alloy"
+          },
+          {
+            "text": "Scarlet Turret"
+          },
+          {
+            "text": "Alloyed Plate"
+          }
+        ],
+        [
+          {
+            "text": "Source Lump"
+          },
+          {
+            "text": "Source Basalt"
+          },
+          {
+            "text": "Gorgon Plate"
+          }
+        ],
+        [
+          {
+            "text": "Illusionary Sand"
+          },
+          {
+            "text": "Flowing Sand"
+          },
+          {
+            "text": "Scutum"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Lump"
+          },
+          {
+            "text": "Chaos Fuzz"
+          },
+          {
+            "text": "Barbarian Shield"
+          }
+        ],
+        [
+          {
+            "text": "Fixed Lump"
+          },
+          {
+            "text": "Order Giant"
+          },
+          {
+            "text": "Golden Plate"
+          }
+        ],
+        [
+          {
+            "text": "Jet Black Steel"
+          },
+          {
+            "text": "Dark Eagle"
+          },
+          {
+            "text": "Demon Shield"
+          }
+        ],
+        [
+          {
+            "text": "Divine Bark"
+          },
+          {
+            "text": "Angry Table"
+          },
+          {
+            "text": "Mega Buckler"
+          }
+        ],
+        [
+          {
+            "text": "Heavy Chains"
+          },
+          {
+            "text": "Minotaur IV"
+          },
+          {
+            "text": "Oni-Gawara"
+          }
+        ],
+        [
+          {
+            "text": "Dignified Lump"
+          },
+          {
+            "text": "Great King"
+          },
+          {
+            "text": "Sol Breaker"
+          }
+        ],
+        [
+          {
+            "text": "Scaly Lump"
+          },
+          {
+            "text": "Amorous Snake"
+          },
+          {
+            "text": "Phalanx"
+          }
+        ],
+        [
+          {
+            "text": "Death Lump"
+          },
+          {
+            "text": "Death Dice"
+          },
+          {
+            "text": "Asturias"
+          }
+        ],
+        [
+          {
+            "text": "Golden Chains"
+          },
+          {
+            "text": "Minotaur II"
+          },
+          {
+            "text": "Black Targe"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Shell"
+          },
+          {
+            "text": "Emperor Beetle"
+          },
+          {
+            "text": "Aegis Shield"
+          }
+        ],
+        [
+          {
+            "text": "Holy Gold Lump"
+          },
+          {
+            "text": "Doom Sword"
+          },
+          {
+            "text": "Dullahan"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Gear"
+          },
+          {
+            "text": "Rampage Drive"
+          },
+          {
+            "text": "Christ Mirror"
+          }
+        ],
+        [
+          {
+            "text": "Shiny Scale"
+          },
+          {
+            "text": "Whimsical Papillon"
+          },
+          {
+            "text": "Drunken Fist"
+          }
+        ],
+        [
+          {
+            "text": "2nd Boy's Talc"
+          },
+          {
+            "text": "Rainy Brother 2"
+          },
+          {
+            "text": "Typhoon Claw"
+          }
+        ],
+        [
+          {
+            "text": "Sharp Premolar"
+          },
+          {
+            "text": "Flattering Hablerie"
+          },
+          {
+            "text": "Air Break"
+          }
+        ],
+        [
+          {
+            "text": "Venomous Fang"
+          },
+          {
+            "text": "Immoral Snake"
+          },
+          {
+            "text": "Poison Claw"
+          }
+        ],
+        [
+          {
+            "text": "Guard Stationary"
+          },
+          {
+            "text": "Truth Pesce"
+          },
+          {
+            "text": "Mail Duster"
+          }
+        ],
+        [
+          {
+            "text": "Claw of Myth"
+          },
+          {
+            "text": "Mythical Gigas"
+          },
+          {
+            "text": "Assault Spike"
+          }
+        ],
+        [
+          {
+            "text": "Thirsty Claw"
+          },
+          {
+            "text": "Dry Dixie"
+          },
+          {
+            "text": "Gehenna Claw"
+          }
+        ],
+        [
+          {
+            "text": "Blade Thorn"
+          },
+          {
+            "text": "Chaos Cyclops"
+          },
+          {
+            "text": "Chain Glove"
+          }
+        ],
+        [
+          {
+            "text": "Queen's Nail"
+          },
+          {
+            "text": "Pistil Mother"
+          },
+          {
+            "text": "Needle Spike"
+          }
+        ],
+        [
+          {
+            "text": "Silver Claw"
+          },
+          {
+            "text": "Change Relic"
+          },
+          {
+            "text": "Seiryu Claw"
+          }
+        ],
+        [
+          {
+            "text": "Strength Claw"
+          },
+          {
+            "text": "Minotaur III"
+          },
+          {
+            "text": "Jakotsu Claw"
+          }
+        ],
+        [
+          {
+            "text": "Force Rock"
+          },
+          {
+            "text": "Primitive Idol"
+          },
+          {
+            "text": "Platinum Claw"
+          }
+        ],
+        [
+          {
+            "text": "Bloody Thorn"
+          },
+          {
+            "text": "Rebellious Cyclops"
+          },
+          {
+            "text": "The Ripper"
+          }
+        ],
+        [
+          {
+            "text": "Mysterious Eye"
+          },
+          {
+            "text": "Acheron Seeker"
+          },
+          {
+            "text": "Shitisei Jakotsu"
+          }
+        ],
+        [
+          {
+            "text": "Steel Barrel"
+          },
+          {
+            "text": "Rash Panzer"
+          },
+          {
+            "text": "Raging Bull"
+          }
+        ],
+        [
+          {
+            "text": "Fixing Bolt"
+          },
+          {
+            "text": "Killer Drive"
+          },
+          {
+            "text": "Crimson Dirge"
+          }
+        ],
+        [
+          {
+            "text": "Judgement Shot"
+          },
+          {
+            "text": "Hallowed Turret"
+          },
+          {
+            "text": ".44 Anaconda"
+          }
+        ],
+        [
+          {
+            "text": "Orb of Love"
+          },
+          {
+            "text": "Yearning Pot"
+          },
+          {
+            "text": "Chrome Heart"
+          }
+        ],
+        [
+          {
+            "text": "Gold Signature"
+          },
+          {
+            "text": "Purple Sigil"
+          },
+          {
+            "text": "Jovian Thunder"
+          }
+        ],
+        [
+          {
+            "text": "Thunder Bead"
+          },
+          {
+            "text": "Jotun of Evil"
+          },
+          {
+            "text": "Unlimited"
+          }
+        ],
+        [
+          {
+            "text": "Golden Barrel"
+          },
+          {
+            "text": "Conceited Panzer"
+          },
+          {
+            "text": "Camel Red"
+          }
+        ],
+        [
+          {
+            "text": "Prophecy Orb"
+          },
+          {
+            "text": "Wrathful Book"
+          },
+          {
+            "text": "From Zero"
+          }
+        ],
+        [
+          {
+            "text": "Pure White Bead"
+          },
+          {
+            "text": "Gracious Cupid"
+          },
+          {
+            "text": "Athena Kiss R"
+          }
+        ],
+        [
+          {
+            "text": "Bull's-Eye Shot"
+          },
+          {
+            "text": "Berserk Turret"
+          },
+          {
+            "text": "Judge of Hell"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Armor Materials",
+      "md": "**Armor Materials**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Material",
+            "md": "**Material**"
+          },
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          },
+          {
+            "text": "Result",
+            "md": "**Result**"
+          }
+        ],
+        [
+          {
+            "text": "Moustache Fiber"
+          },
+          {
+            "text": "Positive King"
+          },
+          {
+            "text": "Kevlar Vest"
+          }
+        ],
+        [
+          {
+            "text": "Wonder Cloth"
+          },
+          {
+            "text": "Trance Twins"
+          },
+          {
+            "text": "Survival Guard"
+          }
+        ],
+        [
+          {
+            "text": "Bronze Reins"
+          },
+          {
+            "text": "Avenger Knight"
+          },
+          {
+            "text": "Metal Jacket"
+          }
+        ],
+        [
+          {
+            "text": "Power String"
+          },
+          {
+            "text": "Bronze Dice"
+          },
+          {
+            "text": "Lion Happi"
+          }
+        ],
+        [
+          {
+            "text": "Magic Cross"
+          },
+          {
+            "text": "Laughing Table"
+          },
+          {
+            "text": "Charm Robe"
+          }
+        ],
+        [
+          {
+            "text": "Curious Line"
+          },
+          {
+            "text": "Cloudgirl Pot"
+          },
+          {
+            "text": "Miori Shirt"
+          }
+        ],
+        [
+          {
+            "text": "Karma Lamp"
+          },
+          {
+            "text": "Vicious Raven"
+          },
+          {
+            "text": "Battle Camisole"
+          }
+        ],
+        [
+          {
+            "text": "Proof of Spirit"
+          },
+          {
+            "text": "Daring Gigas"
+          },
+          {
+            "text": "Knifeproof Coat"
+          }
+        ],
+        [
+          {
+            "text": "Firm Cloth"
+          },
+          {
+            "text": "Pursuing Pesce"
+          },
+          {
+            "text": "Doumaru"
+          }
+        ],
+        [
+          {
+            "text": "Sharp Horn"
+          },
+          {
+            "text": "Grave Beetle"
+          },
+          {
+            "text": "Desperate Plate"
+          }
+        ],
+        [
+          {
+            "text": "Smooth Fabric"
+          },
+          {
+            "text": "Wondrous Magus"
+          },
+          {
+            "text": "Hard Bolero"
+          }
+        ],
+        [
+          {
+            "text": "Zero Cloth"
+          },
+          {
+            "text": "Rain Wheel"
+          },
+          {
+            "text": "Zero Kosode"
+          }
+        ],
+        [
+          {
+            "text": "Zero Board"
+          },
+          {
+            "text": "Rain Leg Musha"
+          },
+          {
+            "text": "Ame-Otoko"
+          }
+        ],
+        [
+          {
+            "text": "Tanned Hide"
+          },
+          {
+            "text": "Persistent Fuzz"
+          },
+          {
+            "text": "Wolf Tunic"
+          }
+        ],
+        [
+          {
+            "text": "Idle Stone Iron"
+          },
+          {
+            "text": "Idle Basalt"
+          },
+          {
+            "text": "Black Stone Mail"
+          }
+        ],
+        [
+          {
+            "text": "Sheet Metal"
+          },
+          {
+            "text": "Arcane Turret"
+          },
+          {
+            "text": "Knight Scale"
+          }
+        ],
+        [
+          {
+            "text": "Steel Reins"
+          },
+          {
+            "text": "Champion Knight"
+          },
+          {
+            "text": "Action Vest"
+          }
+        ],
+        [
+          {
+            "text": "Fashionable Dish"
+          },
+          {
+            "text": "Sky Balance"
+          },
+          {
+            "text": "Hard Armor"
+          }
+        ],
+        [
+          {
+            "text": "Rain Steel"
+          },
+          {
+            "text": "Rain End Musha"
+          },
+          {
+            "text": "Ama-Gakure"
+          }
+        ],
+        [
+          {
+            "text": "Rare Poncho"
+          },
+          {
+            "text": "Rainy Pot"
+          },
+          {
+            "text": "Amakaze Happi"
+          }
+        ],
+        [
+          {
+            "text": "Anguish Stone"
+          },
+          {
+            "text": "Anguish Basalt"
+          },
+          {
+            "text": "Capital Robe"
+          }
+        ],
+        [
+          {
+            "text": "Golden Horn"
+          },
+          {
+            "text": "Golden Beetle"
+          },
+          {
+            "text": "Plate Mail"
+          }
+        ],
+        [
+          {
+            "text": "Light String"
+          },
+          {
+            "text": "Platinum Dice"
+          },
+          {
+            "text": "Breeze Tutu"
+          }
+        ],
+        [
+          {
+            "text": "Proof of Fight"
+          },
+          {
+            "text": "Beastly Gigas"
+          },
+          {
+            "text": "Passion Sweats"
+          }
+        ],
+        [
+          {
+            "text": "Proof of Passion"
+          },
+          {
+            "text": "Furious Gigas"
+          },
+          {
+            "text": "Divine Blouse"
+          }
+        ],
+        [
+          {
+            "text": "Demon Collar"
+          },
+          {
+            "text": "Mighty Beast"
+          },
+          {
+            "text": "Kuroito-odoshi"
+          }
+        ],
+        [
+          {
+            "text": "Bushy Fur"
+          },
+          {
+            "text": "Mach Wheel"
+          },
+          {
+            "text": "Talisman Cape"
+          }
+        ],
+        [
+          {
+            "text": "1st Girl's Talc"
+          },
+          {
+            "text": "Rainy Sister 1"
+          },
+          {
+            "text": "Niagra Climber"
+          }
+        ],
+        [
+          {
+            "text": "Cascade String"
+          },
+          {
+            "text": "Rainbow Twins"
+          },
+          {
+            "text": "Uin Haori"
+          }
+        ],
+        [
+          {
+            "text": "Black Reins"
+          },
+          {
+            "text": "Hell Knight"
+          },
+          {
+            "text": "Hurricane Coat"
+          }
+        ],
+        [
+          {
+            "text": "Power Rock"
+          },
+          {
+            "text": "Power Castle"
+          },
+          {
+            "text": "Invincible Mini"
+          }
+        ],
+        [
+          {
+            "text": "Rain Metal"
+          },
+          {
+            "text": "Raindrop Musha"
+          },
+          {
+            "text": "Amamusha Armor"
+          }
+        ],
+        [
+          {
+            "text": "Golden Sand"
+          },
+          {
+            "text": "Perpetual Sand"
+          },
+          {
+            "text": "Mythos Robe"
+          }
+        ],
+        [
+          {
+            "text": "Porcelain Statue"
+          },
+          {
+            "text": "Growth Relic"
+          },
+          {
+            "text": "Dragon Scale"
+          }
+        ],
+        [
+          {
+            "text": "Mink Fur"
+          },
+          {
+            "text": "Regal Mother"
+          },
+          {
+            "text": "Lan Ling Wang"
+          }
+        ],
+        [
+          {
+            "text": "Practical Cloth"
+          },
+          {
+            "text": "Reckless Okina"
+          },
+          {
+            "text": "Stylish Kimono"
+          }
+        ],
+        [
+          {
+            "text": "Ayanishiki"
+          },
+          {
+            "text": "Blossom Nyogo"
+          },
+          {
+            "text": "Rune Dress"
+          }
+        ],
+        [
+          {
+            "text": "Oracle Textile"
+          },
+          {
+            "text": "Revelation Pesce"
+          },
+          {
+            "text": "Oracle Gown"
+          }
+        ],
+        [
+          {
+            "text": "Hemp Cloth"
+          },
+          {
+            "text": "Natural Dancer"
+          },
+          {
+            "text": "Elint Duffle"
+          }
+        ],
+        [
+          {
+            "text": "Cascade Metal"
+          },
+          {
+            "text": "Rain Wind Musha"
+          },
+          {
+            "text": "Ame-agiri Kesshi"
+          }
+        ],
+        [
+          {
+            "text": "Royal Blossom"
+          },
+          {
+            "text": "Free Bambino"
+          },
+          {
+            "text": "Kikusui Awase"
+          }
+        ],
+        [
+          {
+            "text": "Calm Marble"
+          },
+          {
+            "text": "Vehement Idol"
+          },
+          {
+            "text": "1000-Stud Coat"
+          }
+        ],
+        [
+          {
+            "text": "Thought Cross"
+          },
+          {
+            "text": "Sleeping Table"
+          },
+          {
+            "text": "Komaryo Uchinugi"
+          }
+        ],
+        [
+          {
+            "text": "Oguruma Brocade"
+          },
+          {
+            "text": "Valuing Nyogo"
+          },
+          {
+            "text": "Shinra Robe"
+          }
+        ],
+        [
+          {
+            "text": "Formidable Proof"
+          },
+          {
+            "text": "Immortal Gigas"
+          },
+          {
+            "text": "Mikagura Vest"
+          }
+        ],
+        [
+          {
+            "text": "Word String"
+          },
+          {
+            "text": "Silent Book"
+          },
+          {
+            "text": "Kotodama Cape"
+          }
+        ],
+        [
+          {
+            "text": "Flame Sheet"
+          },
+          {
+            "text": "Spastic Turret"
+          },
+          {
+            "text": "Mizuha Armor"
+          }
+        ],
+        [
+          {
+            "text": "Diamond Sheet"
+          },
+          {
+            "text": "Harmony Giant"
+          },
+          {
+            "text": "Surcoat"
+          }
+        ],
+        [
+          {
+            "text": "Klein Bottle"
+          },
+          {
+            "text": "Mistress Pot"
+          },
+          {
+            "text": "Yomi Sleeves"
+          }
+        ],
+        [
+          {
+            "text": "Demon Cloth"
+          },
+          {
+            "text": "Phantom Hero"
+          },
+          {
+            "text": "Opera Coat"
+          }
+        ],
+        [
+          {
+            "text": "Unknowable Fiber"
+          },
+          {
+            "text": "Next Gene"
+          },
+          {
+            "text": "Emery Meisen"
+          }
+        ],
+        [
+          {
+            "text": "Unknown Barrel"
+          },
+          {
+            "text": "Ptarmigan Panzer"
+          },
+          {
+            "text": "Lorica Hamata"
+          }
+        ],
+        [
+          {
+            "text": "Pyroxene Fiber"
+          },
+          {
+            "text": "Heartless Machine"
+          },
+          {
+            "text": "Full Jin-Baori"
+          }
+        ],
+        [
+          {
+            "text": "Silver String"
+          },
+          {
+            "text": "Brilliant King"
+          },
+          {
+            "text": "Haten Robe"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Accessory Materials",
+      "md": "**Accessory Materials**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          },
+          {
+            "text": "Result",
+            "md": "**Result**"
+          }
+        ],
+        [
+          {
+            "text": "Big Incisor"
+          },
+          {
+            "text": "Lying Hablerie"
+          },
+          {
+            "text": "Lizard Charm, Vigor Fob"
+          }
+        ],
+        [
+          {
+            "text": "Idea Paper"
+          },
+          {
+            "text": "Calm Pesce"
+          },
+          {
+            "text": "Plum Potpourri"
+          }
+        ],
+        [
+          {
+            "text": "Black Lamp"
+          },
+          {
+            "text": "Black Raven"
+          },
+          {
+            "text": "Lucky Coin"
+          }
+        ],
+        [
+          {
+            "text": "Moustache Fiber"
+          },
+          {
+            "text": "Positive King"
+          },
+          {
+            "text": "Feather Strap"
+          }
+        ],
+        [
+          {
+            "text": "Bronze Reins"
+          },
+          {
+            "text": "Avenger Knight"
+          },
+          {
+            "text": "Feng Shui Brace"
+          }
+        ],
+        [
+          {
+            "text": "Life Collar"
+          },
+          {
+            "text": "Nizam Beast"
+          },
+          {
+            "text": "Land Badge"
+          }
+        ],
+        [
+          {
+            "text": "Magic Cloth"
+          },
+          {
+            "text": "Phantom Master"
+          },
+          {
+            "text": "Mage's Mark"
+          }
+        ],
+        [
+          {
+            "text": "Beard Fiber"
+          },
+          {
+            "text": "Egotistical King"
+          },
+          {
+            "text": "Disinfectant"
+          }
+        ],
+        [
+          {
+            "text": "Decorative Stone"
+          },
+          {
+            "text": "Tranquil Idol"
+          },
+          {
+            "text": "Disguise Mask"
+          }
+        ],
+        [
+          {
+            "text": "Selfish Ornament"
+          },
+          {
+            "text": "Selfish Basalt"
+          },
+          {
+            "text": "Revenge Ring"
+          }
+        ],
+        [
+          {
+            "text": "Brave Lumber"
+          },
+          {
+            "text": "Crying Table"
+          },
+          {
+            "text": "Bravery Vessel"
+          }
+        ],
+        [
+          {
+            "text": "Safety Angle"
+          },
+          {
+            "text": "Adamant Beetle"
+          },
+          {
+            "text": "Tranquil Buddha"
+          }
+        ],
+        [
+          {
+            "text": "Quiet Bouquet"
+          },
+          {
+            "text": "Blooming Bambino"
+          },
+          {
+            "text": "Cool Beads"
+          }
+        ],
+        [
+          {
+            "text": "Paleograph"
+          },
+          {
+            "text": "Spurious Book"
+          },
+          {
+            "text": "Healthy Recipe"
+          }
+        ],
+        [
+          {
+            "text": "Guard Cloth"
+          },
+          {
+            "text": "Protective Rexy"
+          },
+          {
+            "text": "Kid's Hachimaki"
+          }
+        ],
+        [
+          {
+            "text": "Yellow Cord"
+          },
+          {
+            "text": "Royal Dancer"
+          },
+          {
+            "text": "Wooden Ebisu"
+          }
+        ],
+        [
+          {
+            "text": "Silver Signature"
+          },
+          {
+            "text": "Red Sigil"
+          },
+          {
+            "text": "Witch Charm"
+          }
+        ],
+        [
+          {
+            "text": "Windcutter Cloth"
+          },
+          {
+            "text": "Shallow Okina"
+          },
+          {
+            "text": "Festival Drum"
+          }
+        ],
+        [
+          {
+            "text": "Hard Thorn"
+          },
+          {
+            "text": "Fierce Cyclops"
+          },
+          {
+            "text": "Guard Rosary"
+          }
+        ],
+        [
+          {
+            "text": "Mental Thread"
+          },
+          {
+            "text": "Mind Dice"
+          },
+          {
+            "text": "Pegasus Strap"
+          }
+        ],
+        [
+          {
+            "text": "Crystal of Light"
+          },
+          {
+            "text": "Devoted Cupid"
+          },
+          {
+            "text": "White Feather"
+          }
+        ],
+        [
+          {
+            "text": "Black Signature"
+          },
+          {
+            "text": "Green Sigil"
+          },
+          {
+            "text": "Black Feather"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Fur"
+          },
+          {
+            "text": "Nemean Beast"
+          },
+          {
+            "text": "Sigma Drive"
+          }
+        ],
+        [
+          {
+            "text": "Ruinous Crown"
+          },
+          {
+            "text": "Fanatic Tower"
+          },
+          {
+            "text": "Safety Belt"
+          }
+        ],
+        [
+          {
+            "text": "Torrent Gear"
+          },
+          {
+            "text": "Slaughter Drive"
+          },
+          {
+            "text": "Ouryu Brace"
+          }
+        ],
+        [
+          {
+            "text": "Activated Felt"
+          },
+          {
+            "text": "Earnest Carothy"
+          },
+          {
+            "text": "Blessed Hands"
+          }
+        ],
+        [
+          {
+            "text": "Silver Fox Fur"
+          },
+          {
+            "text": "Divine Mother"
+          },
+          {
+            "text": "Sorcerer's Mark"
+          }
+        ],
+        [
+          {
+            "text": "Ill Will Claw"
+          },
+          {
+            "text": "Crazy Twins"
+          },
+          {
+            "text": "Earth Badge"
+          }
+        ],
+        [
+          {
+            "text": "Living Metal"
+          },
+          {
+            "text": "Grand Magus"
+          },
+          {
+            "text": "Life Fob"
+          }
+        ],
+        [
+          {
+            "text": "Invincible Felt"
+          },
+          {
+            "text": "Successful Junshi"
+          },
+          {
+            "text": "Soul Potpourri"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Weapon Materials\nMaterial | Enemy | Result\nBlack Lamp | Black Raven | Long Sword\nSupple Metal | Magical Magus | 5-Iron\nGolden Cloth | Phantom Mage | Iai Katana\nPowered Iron | Autonomic Basalt | Bastard Sword\nPure Iron Lump | Iron Dice | Zweihander\nIron Eyeball | Death Seeker | Gothic Sword\nSilver Lump | Silver Dice | Type-98 Gunto\nNice Ornament | Justice Sword | Edge\nCompacted Metal | Monomaniac Fuzz | Kage-Dachi\nBlade Metal | Ardent Dancer | Anglaise\nTungsten | Steel Machine | Great Sword\nInsolence Steel | Insolent Basalt | Midare Hamon\nIron Gear | Wild Drive | Kakitsubata\nDamascus | Dominating Machine | Gardenia Sword\nFlame Steel | Brave Wheel | Krieg\nSacrilege Iron | Apostate Tower | Number One\nPrime Steel | Stasis Giant | Kenka\nPlatinum Reins | Intrepid Knight | Kijintou\nDiamond Canine | Agitating Hablerie | El Caliente\nBrilliant Armor | Battle Wheel | Shichisei-Ken\nSpark Ornament | Judgement Sword | Yahiro Sword\nOricalcum | Solemn Machine | Triumph\nCrown of Truth | Grudge Tower | Tajikarao Sword\nRipper Horse | Jotun of Grief | Futsuno Mitama\nSoul-Death Steel | Void Giant | Soul Crusher\nLight Iron | Magic Hand | Kunai\nPoison Flower | Secret Bambino | Poison Kunai\n4th Girl's Talc | Rainy Sister 4 | Reign Skinner\nGray Shackle | Killer Twins | Santou\nHard Rock | Creation Relic | Kozuka\nHaori Iron | Venus Eagle | Throwing Kunai\nSharp Thorn | Mighty Cyclops | Kris Naga\nSteel Thorn | Mad Cyclops | Kaiken\nAlluring Lily | Avarice Bambino | Yashioori Dagger\nAlloy Signature | Blue Sigil | Bashin\nTrial Obsidian | Leading Idol | Yashima\nIron Barrel | Dismayed Panzer | En-Giri\nShining Dish | World Balance | Fearful Kunai\n1st Boy's Talc | Rainy Brother 1 | Bloody Kunai\nBlack Sheet | Wicked Turret | Castilla Knife\nFlame Scale | Finicky Papillon | Ohorinomikoto\nTreasure Cloth | Phantom Lord | Flying Kato\nPerpetual Edge | Conviction Sword | Basho\nNightmare Sand | Infinite Sand | Fuuma Kotarou\nUnthinkable Metal | Happy Gene | Militia Dagger\nKnowledge Staff | Reformed Okina | Hattori\nCruel Thorn | Brilliant Cyclops | Blitz Knife\nMobius Sand | Eternal Sand | Ogre Tooth\nSephirot Staff | Moon Okina | Rappa\nVengeance Steel | Reckoning Dice | Kashin Koji\nHard Horn | Burning Beetle | Shield Boots\nGolden Dish | Heat Balance | Nanman Gusoku\nTough Hide | Bribed Fuzz | Punk Shoes\nThick Hide | Dancing Hand | Hard Boots\nRubbery Object | Miss Gene | Skill Greaves\nSturdy Molar | Forgotten Hablerie | Cowboy Boots\nWrought Lamp | Sonic Raven | Heavy Heels\nJet Black Scale | Lustful Snake | Bishamonten\nPlatinum Crown | Corrupt Tower | Furinkazan\nCurious Boulder | Rainy Castle | Amami Legs\nStone Hide | Constancy Relic | Bucking Broncos\nStretchy Object | Fail Gene | Sleipnir\nRiveted Hide | Jotun of Power | Four Beasts\nCrimson Cover | Maniacal Book | Vampire Shoes\nCursed Stone | Curse Dice | Mjolnir Boots\nBloody Hide | Jotun of Blood | Vidar's Boots\nMiracle Scale | Fickle Papillon | Demon Boots\nSnow Stone | King Castle | Hero Legs\nPrime Hide | Phantom King | Kehaya\nPlatinum Hide | Minotaur I | Gigant Fall\nLove Scale | Pure Papillon | Peerless Heels\nDeath Sentence | Eternal Eagle | Judgement Boots\nTyrannical Hide | Neo Minotaur | Stella Greaves\nCloth Wings | Monopolizing Cupid | Silk Fan\n4th Boy's Talc | Rainy Brother 4 | Arazuyu Fan\nPassion Clasp | Soul Dancer | Tesseb\nGlossy Clasp | Killing Hand | Hanachirusato\nTortoise Shell | Large Basalt | Masquerade\n3rd Girl's Talc | Rainy Sister 3 | Akisame Fan\nDevilish Feather | Amenti Raven | Madam's Charm\nGazing Clasp | Fate Seeker | Inversion Fan\n2nd Girl's Talc | Rainy Sister 2 | Amagyou Fan\nAzalea Cord | Inviting Nyogo | Mogari-Bue\nDogma Clasp | Dogmatic Tower | Fickle Madam\nFur Clasp | Elegant Mother | Ganar\nSmart Clasp | Prime Magus | Courtesia\nScorching Scale | Carnal Snake | Adoracion\nRare Raincoat | Raindrop Castle | Uhi Fan\nBlessed Dish | Light Balance | Suzumushi\nGod Tailfeather | Jupiter Eagle | Noblesse Oblige\nLove Clasp | Harem Dancer | Hototogisu\nGolden Film | Noble Seeker | Secret Fan\nRed-Gold Cord | Silent Nyogo | Kacho Fugetsu\nMerciless Cord | El Dorado Beast | Pieta\nForbidden Scale | Stoic Snake | Yume no Ukihashi\nHeavy Iron Lump | Liberating Idol | Steel Plate\nSteel Collar | Enslaved Beast | Photon Plate\nDependent Iron | Dependent Basalt | Hard Board\nElectric Rock | Almighty Hand | Thunder Plate\nChirping Wings | Blind Cupid | Power Plate\nSuper-Alloy | Scarlet Turret | Alloyed Plate\nSource Lump | Source Basalt | Gorgon Plate\nIllusionary Sand | Flowing Sand | Scutum\nPlatinum Lump | Chaos Fuzz | Barbarian Shield\nFixed Lump | Order Giant | Golden Plate\nJet Black Steel | Dark Eagle | Demon Shield\nDivine Bark | Angry Table | Mega Buckler\nHeavy Chains | Minotaur IV | Oni-Gawara\nDignified Lump | Great King | Sol Breaker\nScaly Lump | Amorous Snake | Phalanx\nDeath Lump | Death Dice | Asturias\nGolden Chains | Minotaur II | Black Targe\nPlatinum Shell | Emperor Beetle | Aegis Shield\nHoly Gold Lump | Doom Sword | Dullahan\nPlatinum Gear | Rampage Drive | Christ Mirror\nShiny Scale | Whimsical Papillon | Drunken Fist\n2nd Boy's Talc | Rainy Brother 2 | Typhoon Claw\nSharp Premolar | Flattering Hablerie | Air Break\nVenomous Fang | Immoral Snake | Poison Claw\nGuard Stationary | Truth Pesce | Mail Duster\nClaw of Myth | Mythical Gigas | Assault Spike\nThirsty Claw | Dry Dixie | Gehenna Claw\nBlade Thorn | Chaos Cyclops | Chain Glove\nQueen's Nail | Pistil Mother | Needle Spike\nSilver Claw | Change Relic | Seiryu Claw\nStrength Claw | Minotaur III | Jakotsu Claw\nForce Rock | Primitive Idol | Platinum Claw\nBloody Thorn | Rebellious Cyclops | The Ripper\nMysterious Eye | Acheron Seeker | Shitisei Jakotsu\nSteel Barrel | Rash Panzer | Raging Bull\nFixing Bolt | Killer Drive | Crimson Dirge\nJudgement Shot | Hallowed Turret | .44 Anaconda\nOrb of Love | Yearning Pot | Chrome Heart\nGold Signature | Purple Sigil | Jovian Thunder\nThunder Bead | Jotun of Evil | Unlimited\nGolden Barrel | Conceited Panzer | Camel Red\nProphecy Orb | Wrathful Book | From Zero\nPure White Bead | Gracious Cupid | Athena Kiss R\nBull's-Eye Shot | Berserk Turret | Judge of Hell\nArmor Materials\nMaterial | Enemy | Result\nMoustache Fiber | Positive King | Kevlar Vest\nWonder Cloth | Trance Twins | Survival Guard\nBronze Reins | Avenger Knight | Metal Jacket\nPower String | Bronze Dice | Lion Happi\nMagic Cross | Laughing Table | Charm Robe\nCurious Line | Cloudgirl Pot | Miori Shirt\nKarma Lamp | Vicious Raven | Battle Camisole\nProof of Spirit | Daring Gigas | Knifeproof Coat\nFirm Cloth | Pursuing Pesce | Doumaru\nSharp Horn | Grave Beetle | Desperate Plate\nSmooth Fabric | Wondrous Magus | Hard Bolero\nZero Cloth | Rain Wheel | Zero Kosode\nZero Board | Rain Leg Musha | Ame-Otoko\nTanned Hide | Persistent Fuzz | Wolf Tunic\nIdle Stone Iron | Idle Basalt | Black Stone Mail\nSheet Metal | Arcane Turret | Knight Scale\nSteel Reins | Champion Knight | Action Vest\nFashionable Dish | Sky Balance | Hard Armor\nRain Steel | Rain End Musha | Ama-Gakure\nRare Poncho | Rainy Pot | Amakaze Happi\nAnguish Stone | Anguish Basalt | Capital Robe\nGolden Horn | Golden Beetle | Plate Mail\nLight String | Platinum Dice | Breeze Tutu\nProof of Fight | Beastly Gigas | Passion Sweats\nProof of Passion | Furious Gigas | Divine Blouse\nDemon Collar | Mighty Beast | Kuroito-odoshi\nBushy Fur | Mach Wheel | Talisman Cape\n1st Girl's Talc | Rainy Sister 1 | Niagra Climber\nCascade String | Rainbow Twins | Uin Haori\nBlack Reins | Hell Knight | Hurricane Coat\nPower Rock | Power Castle | Invincible Mini\nRain Metal | Raindrop Musha | Amamusha Armor\nGolden Sand | Perpetual Sand | Mythos Robe\nPorcelain Statue | Growth Relic | Dragon Scale\nMink Fur | Regal Mother | Lan Ling Wang\nPractical Cloth | Reckless Okina | Stylish Kimono\nAyanishiki | Blossom Nyogo | Rune Dress\nOracle Textile | Revelation Pesce | Oracle Gown\nHemp Cloth | Natural Dancer | Elint Duffle\nCascade Metal | Rain Wind Musha | Ame-agiri Kesshi\nRoyal Blossom | Free Bambino | Kikusui Awase\nCalm Marble | Vehement Idol | 1000-Stud Coat\nThought Cross | Sleeping Table | Komaryo Uchinugi\nOguruma Brocade | Valuing Nyogo | Shinra Robe\nFormidable Proof | Immortal Gigas | Mikagura Vest\nWord String | Silent Book | Kotodama Cape\nFlame Sheet | Spastic Turret | Mizuha Armor\nDiamond Sheet | Harmony Giant | Surcoat\nKlein Bottle | Mistress Pot | Yomi Sleeves\nDemon Cloth | Phantom Hero | Opera Coat\nUnknowable Fiber | Next Gene | Emery Meisen\nUnknown Barrel | Ptarmigan Panzer | Lorica Hamata\nPyroxene Fiber | Heartless Machine | Full Jin-Baori\nSilver String | Brilliant King | Haten Robe\nAccessory Materials\nAccessory | Enemy | Result\nBig Incisor | Lying Hablerie | Lizard Charm, Vigor Fob\nIdea Paper | Calm Pesce | Plum Potpourri\nBlack Lamp | Black Raven | Lucky Coin\nMoustache Fiber | Positive King | Feather Strap\nBronze Reins | Avenger Knight | Feng Shui Brace\nLife Collar | Nizam Beast | Land Badge\nMagic Cloth | Phantom Master | Mage's Mark\nBeard Fiber | Egotistical King | Disinfectant\nDecorative Stone | Tranquil Idol | Disguise Mask\nSelfish Ornament | Selfish Basalt | Revenge Ring\nBrave Lumber | Crying Table | Bravery Vessel\nSafety Angle | Adamant Beetle | Tranquil Buddha\nQuiet Bouquet | Blooming Bambino | Cool Beads\nPaleograph | Spurious Book | Healthy Recipe\nGuard Cloth | Protective Rexy | Kid's Hachimaki\nYellow Cord | Royal Dancer | Wooden Ebisu\nSilver Signature | Red Sigil | Witch Charm\nWindcutter Cloth | Shallow Okina | Festival Drum\nHard Thorn | Fierce Cyclops | Guard Rosary\nMental Thread | Mind Dice | Pegasus Strap\nCrystal of Light | Devoted Cupid | White Feather\nBlack Signature | Green Sigil | Black Feather\nPlatinum Fur | Nemean Beast | Sigma Drive\nRuinous Crown | Fanatic Tower | Safety Belt\nTorrent Gear | Slaughter Drive | Ouryu Brace\nActivated Felt | Earnest Carothy | Blessed Hands\nSilver Fox Fur | Divine Mother | Sorcerer's Mark\nIll Will Claw | Crazy Twins | Earth Badge\nLiving Metal | Grand Magus | Life Fob\nInvincible Felt | Successful Junshi | Soul Potpourri"
+}

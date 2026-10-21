@@ -1,0 +1,3273 @@
+{
+  "id": "activities-daidara-list",
+  "title": "Daidara List",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "daidara-list",
+  "type": "article",
+  "order": 109,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "By selling materials at Daidara, new weapons, armor, and accessories will become available for purchase. Some of these items are needed for certain quests. Occasionally, Daidara Metalworks may be open at night. During these times Daidara will offer a 20% discount. Here is the list of what Daidara can sell and all related details."
+    },
+    {
+      "type": "p",
+      "text": "Weapons",
+      "md": "**Weapons**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Weapon",
+            "md": "**Weapon**"
+          },
+          {
+            "text": "Equipped By",
+            "md": "**Equipped By**"
+          },
+          {
+            "text": "Material Needed",
+            "md": "**Material Needed**"
+          },
+          {
+            "text": "Price",
+            "md": "**Price**"
+          }
+        ],
+        [
+          {
+            "text": "Imitation Katana"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "4,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Long Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Black Lamp"
+          },
+          {
+            "text": "10,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "5-Iron"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Supple Metal"
+          },
+          {
+            "text": "12,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Iai Katana"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "10 Golden Cloth"
+          },
+          {
+            "text": "13,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Bastard Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Powered Iron"
+          },
+          {
+            "text": "14,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Zweihander"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "8 Pure Iron Lump"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Gothic Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Iron Eyeball"
+          },
+          {
+            "text": "20,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Type-98 Gunto"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Silver Lump"
+          },
+          {
+            "text": "24,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Edge"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Nice Ornament"
+          },
+          {
+            "text": "27,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kage-Dachi"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "10 Compacted Metal"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Anglaise"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "10 Blade Metal"
+          },
+          {
+            "text": "31,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Great Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Tungsten"
+          },
+          {
+            "text": "32,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Midare Hamon"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Insolence Steel"
+          },
+          {
+            "text": "36,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kakitsubata"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Iron Gear"
+          },
+          {
+            "text": "37,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Gardenia Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Damascus"
+          },
+          {
+            "text": "38,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Krieg"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Flame Steel"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Number One"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "8 Sacrilege Iron"
+          },
+          {
+            "text": "42,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kenka"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Prime Steel"
+          },
+          {
+            "text": "42,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kijintou"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Platinum Reins"
+          },
+          {
+            "text": "43,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "El Caliente"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Diamond Canine"
+          },
+          {
+            "text": "50,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Shichisei-Ken"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "6 Brilliant Armor"
+          },
+          {
+            "text": "52,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Yahiro Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "8 Spark Ornament"
+          },
+          {
+            "text": "54,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Triumph"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Orichalcum"
+          },
+          {
+            "text": "56,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Tajikarao Sword"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "4 Crown of Truth"
+          },
+          {
+            "text": "58,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Futsuno Mitama"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "10 Ripper Horse"
+          },
+          {
+            "text": "61,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Soul Crusher"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "10 Soul-Death Steel"
+          },
+          {
+            "text": "63,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hunting Nata"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "4,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kunai"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Light Iron"
+          },
+          {
+            "text": "11,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Poison Kunai"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Poison Flower"
+          },
+          {
+            "text": "12,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Reign Skinner"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 4th Girl's Talc"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Santou"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Gray Shackle"
+          },
+          {
+            "text": "19,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kozuka"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Hard Rock"
+          },
+          {
+            "text": "22,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Throwing Kunai"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Haori Iron"
+          },
+          {
+            "text": "24,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kris Naga"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Sharp Thorn"
+          },
+          {
+            "text": "25,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kaiken"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Steel Thorn"
+          },
+          {
+            "text": "26,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Yashioori Dagger"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Alluring Lily"
+          },
+          {
+            "text": "26,900 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Bashin"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Alloy Signature"
+          },
+          {
+            "text": "28,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Yashima"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Trial Obsidian"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "En-Giri"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Iron Barrel"
+          },
+          {
+            "text": "32,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Fearful Kunai"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Shining Dish"
+          },
+          {
+            "text": "34,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Bloody Kunai"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "1st Boy's Talc"
+          },
+          {
+            "text": "37,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Castilla Knife"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Black Sheet"
+          },
+          {
+            "text": "38,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ohorinomikoto"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Flame Scale"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Flying Kato"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Treasure Cloth"
+          },
+          {
+            "text": "41,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Basho"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Perpetual Edge"
+          },
+          {
+            "text": "43,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Fuuma Kotaro"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Nightmare Sand"
+          },
+          {
+            "text": "48,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Militia Dagger"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Unthinkable Metal"
+          },
+          {
+            "text": "50,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hattori"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Knowledge Staff"
+          },
+          {
+            "text": "52,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Blitz Knife"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "6 Cruel Thorn"
+          },
+          {
+            "text": "54,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ogre Tooth"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "4 Mobius Sand"
+          },
+          {
+            "text": "57,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rappa"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "10 Sephirot Staff"
+          },
+          {
+            "text": "59,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kashin Koji"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "10 Vengeance Steel"
+          },
+          {
+            "text": "61,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Platform Sneaks"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "7,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Shield Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Hard Horn"
+          },
+          {
+            "text": "11,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Nanman Gusoku"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Golden Dish"
+          },
+          {
+            "text": "13,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Punk Shoes"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Tough Hide"
+          },
+          {
+            "text": "20,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hard Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "5 Thick Hide"
+          },
+          {
+            "text": "21,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Skill Greaves"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Rubbery Object"
+          },
+          {
+            "text": "25,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Cowboy Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "10 Sturdy Molar"
+          },
+          {
+            "text": "26,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Heavy Heels"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Wrought Lamp"
+          },
+          {
+            "text": "28,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Bishamonten"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Jet Black Scale"
+          },
+          {
+            "text": "31,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Furinkazan"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Platinum Crown"
+          },
+          {
+            "text": "33,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Bucking Broncos"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Stone Hide"
+          },
+          {
+            "text": "35,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Sleipnir"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Stretchy Object"
+          },
+          {
+            "text": "37,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Amami Legs"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "3 Curious Boulder"
+          },
+          {
+            "text": "32,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Four Beasts"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "10 Riveted Hide"
+          },
+          {
+            "text": "38,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Vampire Shoes"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Crimson Cover"
+          },
+          {
+            "text": "41,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mjolnir Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "6 Cursed Stone"
+          },
+          {
+            "text": "43,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Vidar's Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "8 Bloody Hide"
+          },
+          {
+            "text": "45,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Demon Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Miracle Scale"
+          },
+          {
+            "text": "50,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hero Legs"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Snow Stone"
+          },
+          {
+            "text": "51,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kehaya"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Prime Hide"
+          },
+          {
+            "text": "52,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Gigant Fall"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Platinum Hide"
+          },
+          {
+            "text": "55,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Peerless Heels"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "4 Love Scale"
+          },
+          {
+            "text": "57,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Judgment Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "10 Death Sentence"
+          },
+          {
+            "text": "59,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Stella Greaves"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "10 Tyrannical Hide"
+          },
+          {
+            "text": "61,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Noh Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "11,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Silk Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "10 Cloth Wings"
+          },
+          {
+            "text": "12,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Arazuyu Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4th Boy's Talc"
+          },
+          {
+            "text": "13,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Tesseb"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "6 Passion Clasp"
+          },
+          {
+            "text": "19,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hanachirusato"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "10 Glossy Clasp"
+          },
+          {
+            "text": "21,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Masquerade"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "8 Tortoise Shell"
+          },
+          {
+            "text": "23,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Madam's Charm"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "6 Devilish Feather"
+          },
+          {
+            "text": "25,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Inversion Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "6 Gazing Clasp"
+          },
+          {
+            "text": "26,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Amagyou Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 2nd Girl's Talc"
+          },
+          {
+            "text": "28,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mogari-Bue"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 Azalea Cord"
+          },
+          {
+            "text": "29,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Fickle Madam"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "10 Dogma Clasp"
+          },
+          {
+            "text": "32,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Akisame Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 3rd Girl's Talc"
+          },
+          {
+            "text": "25,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ganar"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "6 Fur Clasp"
+          },
+          {
+            "text": "32,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Courtesia"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 Smart Clasp"
+          },
+          {
+            "text": "36,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Adoracion"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "10 Scorching Scale"
+          },
+          {
+            "text": "37,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Uhi Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "5 Rare Raincoat"
+          },
+          {
+            "text": "38,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Suzumushi"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "6 Blessed Dish"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Noblesse Oblige"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 God Tailfeather"
+          },
+          {
+            "text": "44,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hototogisu"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 Love Clasp"
+          },
+          {
+            "text": "46,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Secret Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 Golden Film"
+          },
+          {
+            "text": "47,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kacho Fugetsu"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "4 Red-Gold Cord"
+          },
+          {
+            "text": "50,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Pieta"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "10 Merciless Cord"
+          },
+          {
+            "text": "51,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Yume no Ukihashi"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "10 Forbidden Scale"
+          },
+          {
+            "text": "56,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Yasogami Desk"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "16,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Steel Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "6 Heavy Iron Lump"
+          },
+          {
+            "text": "24,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Photon Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "6 Steel Collar"
+          },
+          {
+            "text": "28,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hard Board"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "6 Dependent Iron"
+          },
+          {
+            "text": "28,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Thunder Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "6 Electric Rock"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Power Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "8 Chirping Wings"
+          },
+          {
+            "text": "31,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Alloyed Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Super-Alloy"
+          },
+          {
+            "text": "33,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Gorgon Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Source Lump"
+          },
+          {
+            "text": "35,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Scutum"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "6 Illusionary Sand"
+          },
+          {
+            "text": "38,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Barbarian Shield"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "10 Platinum Lump"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Golden Plate"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "10 Fixed Lump"
+          },
+          {
+            "text": "42,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Demon Shield"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Jet Black Steel"
+          },
+          {
+            "text": "43,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mega Buckler"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "6 Divine Bark"
+          },
+          {
+            "text": "45,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Oni-Gawara"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "8 Heavy Chains"
+          },
+          {
+            "text": "45,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Sol Breaker"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Dignified Lump"
+          },
+          {
+            "text": "54,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Phalanx"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Scaly Lump"
+          },
+          {
+            "text": "54,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Asturias"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Death Lump"
+          },
+          {
+            "text": "56,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Black Targe"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Golden Chains"
+          },
+          {
+            "text": "58,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Aegis Shield"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "4 Platinum Shell"
+          },
+          {
+            "text": "60,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Dullahan"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "10 Holy Gold Lump"
+          },
+          {
+            "text": "62,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Christ Mirror"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "10 Platinum Gear"
+          },
+          {
+            "text": "64,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mewling Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "26,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Drunken Fist"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "6 Shiny Scale"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Typhoon Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "3 2nd Boy's Talc"
+          },
+          {
+            "text": "32,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Air Break"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "4 Sharp Premolar"
+          },
+          {
+            "text": "36,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Poison Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "6 Venomous Fang"
+          },
+          {
+            "text": "37,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mail Duster"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "10 Guard Stationary"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Assault Spike"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "4 Claw of Myth"
+          },
+          {
+            "text": "41,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Gehenna Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "6 Thirsty Claw"
+          },
+          {
+            "text": "43,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Chain Glove"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "8 Blade Thorn"
+          },
+          {
+            "text": "46,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Needle Spike"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "4 Queen's Nail"
+          },
+          {
+            "text": "54,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Seiryu Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "4 Silver Claw"
+          },
+          {
+            "text": "56,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Jakotsu Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "4 Strength Claw"
+          },
+          {
+            "text": "58,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Platinum Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "4 Force Rock"
+          },
+          {
+            "text": "60,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "The Ripper"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "10 Bloody Thorn"
+          },
+          {
+            "text": "62,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Shitisei Jakotsu"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "10 Mysterious Eye"
+          },
+          {
+            "text": "62,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Peacemaker"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "32,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Raging Bull"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "2 Steel Barrel"
+          },
+          {
+            "text": "38,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Crimson Dirge"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "6 Fixing Bolt"
+          },
+          {
+            "text": "42,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": ".44 Anaconda"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "6 Judgement Shot"
+          },
+          {
+            "text": "43,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Chrome Heart"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "4 Orb of Love"
+          },
+          {
+            "text": "46,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Jovian Thunder"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "4 Gold Signature"
+          },
+          {
+            "text": "49,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Unlimited"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "4 Thunder Bead"
+          },
+          {
+            "text": "50,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Camel Red"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "4 Golden Barrel"
+          },
+          {
+            "text": "52,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "From Zero"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "4 Prophecy Orb"
+          },
+          {
+            "text": "56,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Athena Kiss R"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "10 Pure White Bead"
+          },
+          {
+            "text": "58,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Judge of Hell"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "10 Bull's-Eye Shot"
+          },
+          {
+            "text": "62,800 Yen"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Armor",
+      "md": "**Armor**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Armor",
+            "md": "**Armor**"
+          },
+          {
+            "text": "Equipped By",
+            "md": "**Equipped By**"
+          },
+          {
+            "text": "Material Needed",
+            "md": "**Material Needed**"
+          },
+          {
+            "text": "Price",
+            "md": "**Price**"
+          }
+        ],
+        [
+          {
+            "text": "Chain Mail"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "3,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kevlar Vest"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "6 Moustache Fiber"
+          },
+          {
+            "text": "6,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Survival Guard"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "8 Wonder Cloth"
+          },
+          {
+            "text": "7,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Metal Jacket"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "6 Bronze Reins"
+          },
+          {
+            "text": "12,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hard Armor"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "6 Fashionable Dish"
+          },
+          {
+            "text": "28,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Talisman Cape"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "4 Bushy Fur"
+          },
+          {
+            "text": "42,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Lion Happi"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Power String"
+          },
+          {
+            "text": "14,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Knifeproof Coat"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Proof of Spirit"
+          },
+          {
+            "text": "16,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Doumaru"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "10 Firm Cloth"
+          },
+          {
+            "text": "17,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ama-Gakure"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "Rain Steel"
+          },
+          {
+            "text": "32,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Desperate Plate"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "4 Sharp Horn"
+          },
+          {
+            "text": "21,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ame-Otoko"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "Zero Board"
+          },
+          {
+            "text": "26,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Black Stone Mail"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Idle Stone Iron"
+          },
+          {
+            "text": "24,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Knight Scale"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Sheet Metal"
+          },
+          {
+            "text": "25,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Plate Mail"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Golden Horn"
+          },
+          {
+            "text": "29,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Passion Sweats"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "10 Proof of Fight"
+          },
+          {
+            "text": "34,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kuroito-odoshi"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Demon Collar"
+          },
+          {
+            "text": "36,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Niagra Climber"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "1st Girl's Talc"
+          },
+          {
+            "text": "38,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hurricane Coat"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "4 Black Reins"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Amamusha Armor"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "Rain Metal"
+          },
+          {
+            "text": "41,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Dragon Scale"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "4 Porcelain Statue"
+          },
+          {
+            "text": "42,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Stylish Kimono"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "10 Practical Cloth"
+          },
+          {
+            "text": "45,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Oracle Gown"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Oracle Textile"
+          },
+          {
+            "text": "47,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ame-agari Kesshi"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "Cascade Metal"
+          },
+          {
+            "text": "48,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "1000-Stud Coat"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Calm Marble"
+          },
+          {
+            "text": "49,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Komaryo Uchinugi"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "4 Thought Cross"
+          },
+          {
+            "text": "52,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mikagura Vest"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "4 Formidable Proof"
+          },
+          {
+            "text": "53,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Surcoat"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "6 Diamond Sheet"
+          },
+          {
+            "text": "54,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Opera Coat"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "4 Demon Cloth"
+          },
+          {
+            "text": "56,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Lorica Hamata"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "10 Unknown Barrel"
+          },
+          {
+            "text": "58,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Full Jin-Baori"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "10 Pyroxene Fiber"
+          },
+          {
+            "text": "60,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Miori Shirt"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "Curious Line"
+          },
+          {
+            "text": "22,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Charm Robe"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "4 Magic Cross"
+          },
+          {
+            "text": "15,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Battle Camisole"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Karma Lamp"
+          },
+          {
+            "text": "15,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Zero Kosode"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "Zero Cloth"
+          },
+          {
+            "text": "28,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Hard Bolero"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "10 Smooth Fabric"
+          },
+          {
+            "text": "21,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Amakaze Happi"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "Rare Poncho"
+          },
+          {
+            "text": "31,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Wolf Tunic"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "4 Tanned Hide"
+          },
+          {
+            "text": "24,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Action Vest"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "10 Steel Reins"
+          },
+          {
+            "text": "26,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Capital Robe"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Anguish Stone"
+          },
+          {
+            "text": "28,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Breeze Tutu"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "4 Light String"
+          },
+          {
+            "text": "32,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Divine Blouse"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Proof of Passion"
+          },
+          {
+            "text": "35,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Uin Haori"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "Cascade String"
+          },
+          {
+            "text": "39,200 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Invincible Mini"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "8 Power Rock"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mythos Robe"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Golden Sand"
+          },
+          {
+            "text": "42,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Lan Ling Wang"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "10 Mink Fur"
+          },
+          {
+            "text": "44,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Rune Dress"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "10 Ayanishiki"
+          },
+          {
+            "text": "46,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Elint Duffle"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Hemp Cloth"
+          },
+          {
+            "text": "48,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kikusui Awase"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Royal Blossom"
+          },
+          {
+            "text": "50,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Shinra Robe"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "6 Oguruma Brocade"
+          },
+          {
+            "text": "52,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kotodama Cape"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "4 Word String"
+          },
+          {
+            "text": "54,400 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mizuha Armor"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "4 Flame Sheet"
+          },
+          {
+            "text": "54,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Yomi Sleeves"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "4 Klein Bottle"
+          },
+          {
+            "text": "56,800 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Emery Meisen"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "10 Unknowable Fiber"
+          },
+          {
+            "text": "59,600 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Haten Robe"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "10 Silver String"
+          },
+          {
+            "text": "61,200 Yen"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Accessories",
+      "md": "**Accessories**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Accessory",
+            "md": "**Accessory**"
+          },
+          {
+            "text": "Material Needed",
+            "md": "**Material Needed**"
+          },
+          {
+            "text": "Price",
+            "md": "**Price**"
+          }
+        ],
+        [
+          {
+            "text": "Headband"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "3,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Lizard Charm"
+          },
+          {
+            "text": "Big Incisor"
+          },
+          {
+            "text": "3,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Amulet"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "3,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Feather Strap"
+          },
+          {
+            "text": "10 Moustache Fiber"
+          },
+          {
+            "text": "3,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Lucky Coin"
+          },
+          {
+            "text": "20 Lack Lamp"
+          },
+          {
+            "text": "3,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Feng Shui Brace"
+          },
+          {
+            "text": "10 Bronze Reins"
+          },
+          {
+            "text": "9,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Vigor Fob"
+          },
+          {
+            "text": "10 Big Incisor"
+          },
+          {
+            "text": "12,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Plum Potpourri"
+          },
+          {
+            "text": "10 Idea Paper"
+          },
+          {
+            "text": "12,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "White Feather"
+          },
+          {
+            "text": "10 Crystal of Light"
+          },
+          {
+            "text": "12,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Black Feather"
+          },
+          {
+            "text": "10 Black Signature"
+          },
+          {
+            "text": "12,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Festival Drum"
+          },
+          {
+            "text": "10 Windcutter Cloth"
+          },
+          {
+            "text": "15,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Witch Charm"
+          },
+          {
+            "text": "10 Silver Signature"
+          },
+          {
+            "text": "15,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Guard Rosary"
+          },
+          {
+            "text": "10 Hard Thorn"
+          },
+          {
+            "text": "15,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Pegasus Strap"
+          },
+          {
+            "text": "10 Mental Thread"
+          },
+          {
+            "text": "15,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Wooden Ebisu"
+          },
+          {
+            "text": "10 Yellow Cord"
+          },
+          {
+            "text": "15,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Disinfectant"
+          },
+          {
+            "text": "10 Beard Fiber"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Tranquil Buddha"
+          },
+          {
+            "text": "10 Safety Angle"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Bravery Vessel"
+          },
+          {
+            "text": "10 Brave Lumber"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Healthy Recipe"
+          },
+          {
+            "text": "10 Paleograph"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Kid's Hachimaki"
+          },
+          {
+            "text": "10 Guard Cloth"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Cool Beads"
+          },
+          {
+            "text": "10 Quiet Bouquet"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Safety Belt"
+          },
+          {
+            "text": "10 Ruinous Crown"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Disguise Mask"
+          },
+          {
+            "text": "10 Decorative Stone"
+          },
+          {
+            "text": "18,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Land Badge"
+          },
+          {
+            "text": "10 Life Collar"
+          },
+          {
+            "text": "25,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Mage's Mark"
+          },
+          {
+            "text": "10 Magic Cloth"
+          },
+          {
+            "text": "25,000Yen"
+          }
+        ],
+        [
+          {
+            "text": "Life Fob"
+          },
+          {
+            "text": "10 Living Metal"
+          },
+          {
+            "text": "25,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Soul Potpourri"
+          },
+          {
+            "text": "10 Invincible Felt"
+          },
+          {
+            "text": "25,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Sigma Drive"
+          },
+          {
+            "text": "10 Platinum Fur"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Revenge Ring"
+          },
+          {
+            "text": "10 Selfish Ornament"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Ouryu Brace"
+          },
+          {
+            "text": "10 Torrent Gear"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Earth Badge"
+          },
+          {
+            "text": "10 Ill Will Claw"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Sorcerer's Mark"
+          },
+          {
+            "text": "10 Silver Fox Fur"
+          },
+          {
+            "text": "30,000 Yen"
+          }
+        ],
+        [
+          {
+            "text": "Blessed Hands"
+          },
+          {
+            "text": "10 Activated Felt"
+          },
+          {
+            "text": "40,000 Yen"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "By selling materials at Daidara, new weapons, armor, and accessories will become available for purchase. Some of these items are needed for certain quests. Occasionally, Daidara Metalworks may be open at night. During these times Daidara will offer a 20% discount. Here is the list of what Daidara can sell and all related details.\nWeapons\nWeapon | Equipped By | Material Needed | Price\nImitation Katana | MC | Default | 4,800 Yen\nLong Sword | MC | 6 Black Lamp | 10,000 Yen\n5-Iron | MC | 4 Supple Metal | 12,000 Yen\nIai Katana | MC | 10 Golden Cloth | 13,600 Yen\nBastard Sword | MC | 6 Powered Iron | 14,000 Yen\nZweihander | MC | 8 Pure Iron Lump | 18,000 Yen\nGothic Sword | MC | 6 Iron Eyeball | 20,000 Yen\nType-98 Gunto | MC | 4 Silver Lump | 24,000 Yen\nEdge | MC | 6 Nice Ornament | 27,000 Yen\nKage-Dachi | MC | 10 Compacted Metal | 30,000 Yen\nAnglaise | MC | 10 Blade Metal | 31,000 Yen\nGreat Sword | MC | 4 Tungsten | 32,000 Yen\nMidare Hamon | MC | 4 Insolence Steel | 36,000 Yen\nKakitsubata | MC | 6 Iron Gear | 37,600 Yen\nGardenia Sword | MC | 6 Damascus | 38,000 Yen\nKrieg | MC | 4 Flame Steel | 40,000 Yen\nNumber One | MC | 8 Sacrilege Iron | 42,000 Yen\nKenka | MC | 4 Prime Steel | 42,000 Yen\nKijintou | MC | 6 Platinum Reins | 43,600 Yen\nEl Caliente | MC | 4 Diamond Canine | 50,000 Yen\nShichisei-Ken | MC | 6 Brilliant Armor | 52,000 Yen\nYahiro Sword | MC | 8 Spark Ornament | 54,000 Yen\nTriumph | MC | 4 Orichalcum | 56,000 Yen\nTajikarao Sword | MC | 4 Crown of Truth | 58,000 Yen\nFutsuno Mitama | MC | 10 Ripper Horse | 61,600 Yen\nSoul Crusher | MC | 10 Soul-Death Steel | 63,600 Yen\nHunting Nata | Yosuke | Default | 4,000 Yen\nKunai | Yosuke | 4 Light Iron | 11,800 Yen\nPoison Kunai | Yosuke | 4 Poison Flower | 12,000 Yen\nReign Skinner | Yosuke | 4 4th Girl's Talc | 18,000 Yen\nSantou | Yosuke | 6 Gray Shackle | 19,600 Yen\nKozuka | Yosuke | 6 Hard Rock | 22,000 Yen\nThrowing Kunai | Yosuke | 6 Haori Iron | 24,000 Yen\nKris Naga | Yosuke | 6 Sharp Thorn | 25,600 Yen\nKaiken | Yosuke | 6 Steel Thorn | 26,400 Yen\nYashioori Dagger | Yosuke | 6 Alluring Lily | 26,900 Yen\nBashin | Yosuke | 6 Alloy Signature | 28,000 Yen\nYashima | Yosuke | 6 Trial Obsidian | 30,000 Yen\nEn-Giri | Yosuke | 4 Iron Barrel | 32,000 Yen\nFearful Kunai | Yosuke | 6 Shining Dish | 34,000 Yen\nBloody Kunai | Yosuke | 1st Boy's Talc | 37,600 Yen\nCastilla Knife | Yosuke | 6 Black Sheet | 38,000 Yen\nOhorinomikoto | Yosuke | 4 Flame Scale | 40,000 Yen\nFlying Kato | Yosuke | 6 Treasure Cloth | 41,600 Yen\nBasho | Yosuke | 6 Perpetual Edge | 43,600 Yen\nFuuma Kotaro | Yosuke | 4 Nightmare Sand | 48,000 Yen\nMilitia Dagger | Yosuke | 4 Unthinkable Metal | 50,000 Yen\nHattori | Yosuke | 4 Knowledge Staff | 52,000 Yen\nBlitz Knife | Yosuke | 6 Cruel Thorn | 54,000 Yen\nOgre Tooth | Yosuke | 4 Mobius Sand | 57,600 Yen\nRappa | Yosuke | 10 Sephirot Staff | 59,600 Yen\nKashin Koji | Yosuke | 10 Vengeance Steel | 61,600 Yen\nPlatform Sneaks | Chie | Default | 7,600 Yen\nShield Boots | Chie | 6 Hard Horn | 11,200 Yen\nNanman Gusoku | Chie | 6 Golden Dish | 13,600 Yen\nPunk Shoes | Chie | 6 Tough Hide | 20,000 Yen\nHard Boots | Chie | 5 Thick Hide | 21,200 Yen\nSkill Greaves | Chie | 6 Rubbery Object | 25,600 Yen\nCowboy Boots | Chie | 10 Sturdy Molar | 26,800 Yen\nHeavy Heels | Chie | 6 Wrought Lamp | 28,400 Yen\nBishamonten | Chie | 6 Jet Black Scale | 31,600 Yen\nFurinkazan | Chie | 6 Platinum Crown | 33,200 Yen\nBucking Broncos | Chie | 4 Stone Hide | 35,600 Yen\nSleipnir | Chie | 6 Stretchy Object | 37,200 Yen\nAmami Legs | Chie | 3 Curious Boulder | 32,800 Yen\nFour Beasts | Chie | 10 Riveted Hide | 38,000 Yen\nVampire Shoes | Chie | 4 Crimson Cover | 41,200 Yen\nMjolnir Boots | Chie | 6 Cursed Stone | 43,600 Yen\nVidar's Boots | Chie | 8 Bloody Hide | 45,200 Yen\nDemon Boots | Chie | 4 Miracle Scale | 50,000 Yen\nHero Legs | Chie | 4 Snow Stone | 51,200 Yen\nKehaya | Chie | 4 Prime Hide | 52,000 Yen\nGigant Fall | Chie | 4 Platinum Hide | 55,200 Yen\nPeerless Heels | Chie | 4 Love Scale | 57,600 Yen\nJudgment Boots | Chie | 10 Death Sentence | 59,000 Yen\nStella Greaves | Chie | 10 Tyrannical Hide | 61,200 Yen\nNoh Fan | Yukiko | Default | 11,200 Yen\nSilk Fan | Yukiko | 10 Cloth Wings | 12,400 Yen\nArazuyu Fan | Yukiko | 4th Boy's Talc | 13,800 Yen\nTesseb | Yukiko | 6 Passion Clasp | 19,600 Yen\nHanachirusato | Yukiko | 10 Glossy Clasp | 21,600 Yen\nMasquerade | Yukiko | 8 Tortoise Shell | 23,600 Yen\nMadam's Charm | Yukiko | 6 Devilish Feather | 25,600 Yen\nInversion Fan | Yukiko | 6 Gazing Clasp | 26,800 Yen\nAmagyou Fan | Yukiko | 4 2nd Girl's Talc | 28,000 Yen\nMogari-Bue | Yukiko | 4 Azalea Cord | 29,600 Yen\nFickle Madam | Yukiko | 10 Dogma Clasp | 32,400 Yen\nAkisame Fan | Yukiko | 4 3rd Girl's Talc | 25,000 Yen\nGanar | Yukiko | 6 Fur Clasp | 32,000 Yen\nCourtesia | Yukiko | 4 Smart Clasp | 36,400 Yen\nAdoracion | Yukiko | 10 Scorching Scale | 37,400 Yen\nUhi Fan | Yukiko | 5 Rare Raincoat | 38,000 Yen\nSuzumushi | Yukiko | 6 Blessed Dish | 40,000 Yen\nNoblesse Oblige | Yukiko | 4 God Tailfeather | 44,400 Yen\nHototogisu | Yukiko | 4 Love Clasp | 46,000 Yen\nSecret Fan | Yukiko | 4 Golden Film | 47,200 Yen\nKacho Fugetsu | Yukiko | 4 Red-Gold Cord | 50,000 Yen\nPieta | Yukiko | 10 Merciless Cord | 51,200 Yen\nYume no Ukihashi | Yukiko | 10 Forbidden Scale | 56,000 Yen\nYasogami Desk | Kanji | Default | 16,000 Yen\nSteel Plate | Kanji | 6 Heavy Iron Lump | 24,400 Yen\nPhoton Plate | Kanji | 6 Steel Collar | 28,000 Yen\nHard Board | Kanji | 6 Dependent Iron | 28,800 Yen\nThunder Plate | Kanji | 6 Electric Rock | 30,000 Yen\nPower Plate | Kanji | 8 Chirping Wings | 31,200 Yen\nAlloyed Plate | Kanji | 4 Super-Alloy | 33,000 Yen\nGorgon Plate | Kanji | 4 Source Lump | 35,200 Yen\nScutum | Kanji | 6 Illusionary Sand | 38,000 Yen\nBarbarian Shield | Kanji | 10 Platinum Lump | 40,000 Yen\nGolden Plate | Kanji | 10 Fixed Lump | 42,000 Yen\nDemon Shield | Kanji | 4 Jet Black Steel | 43,200 Yen\nMega Buckler | Kanji | 6 Divine Bark | 45,200 Yen\nOni-Gawara | Kanji | 8 Heavy Chains | 45,200 Yen\nSol Breaker | Kanji | 4 Dignified Lump | 54,000 Yen\nPhalanx | Kanji | 4 Scaly Lump | 54,800 Yen\nAsturias | Kanji | 4 Death Lump | 56,400 Yen\nBlack Targe | Kanji | 4 Golden Chains | 58,800 Yen\nAegis Shield | Kanji | 4 Platinum Shell | 60,000 Yen\nDullahan | Kanji | 10 Holy Gold Lump | 62,000 Yen\nChrist Mirror | Kanji | 10 Platinum Gear | 64,000 Yen\nMewling Claw | Teddie | Default | 26,000 Yen\nDrunken Fist | Teddie | 6 Shiny Scale | 30,000 Yen\nTyphoon Claw | Teddie | 3 2nd Boy's Talc | 32,800 Yen\nAir Break | Teddie | 4 Sharp Premolar | 36,800 Yen\nPoison Claw | Teddie | 6 Venomous Fang | 37,200 Yen\nMail Duster | Teddie | 10 Guard Stationary | 40,000 Yen\nAssault Spike | Teddie | 4 Claw of Myth | 41,200 Yen\nGehenna Claw | Teddie | 6 Thirsty Claw | 43,600 Yen\nChain Glove | Teddie | 8 Blade Thorn | 46,000 Yen\nNeedle Spike | Teddie | 4 Queen's Nail | 54,800 Yen\nSeiryu Claw | Teddie | 4 Silver Claw | 56,800 Yen\nJakotsu Claw | Teddie | 4 Strength Claw | 58,800 Yen\nPlatinum Claw | Teddie | 4 Force Rock | 60,000 Yen\nThe Ripper | Teddie | 10 Bloody Thorn | 62,000 Yen\nShitisei Jakotsu | Teddie | 10 Mysterious Eye | 62,800 Yen\nPeacemaker | Naoto | Default | 32,800 Yen\nRaging Bull | Naoto | 2 Steel Barrel | 38,000 Yen\nCrimson Dirge | Naoto | 6 Fixing Bolt | 42,000 Yen\n.44 Anaconda | Naoto | 6 Judgement Shot | 43,200 Yen\nChrome Heart | Naoto | 4 Orb of Love | 46,800 Yen\nJovian Thunder | Naoto | 4 Gold Signature | 49,200 Yen\nUnlimited | Naoto | 4 Thunder Bead | 50,000 Yen\nCamel Red | Naoto | 4 Golden Barrel | 52,800 Yen\nFrom Zero | Naoto | 4 Prophecy Orb | 56,000 Yen\nAthena Kiss R | Naoto | 10 Pure White Bead | 58,800 Yen\nJudge of Hell | Naoto | 10 Bull's-Eye Shot | 62,800 Yen\nArmor\nArmor | Equipped By | Material Needed | Price\nChain Mail | Everybody | Default | 3,000 Yen\nKevlar Vest | Everybody | 6 Moustache Fiber | 6,800 Yen\nSurvival Guard | Everybody | 8 Wonder Cloth | 7,200 Yen\nMetal Jacket | Everybody | 6 Bronze Reins | 12,800 Yen\nHard Armor | Everybody | 6 Fashionable Dish | 28,000 Yen\nTalisman Cape | Everybody | 4 Bushy Fur | 42,000 Yen\nLion Happi | Guys | 6 Power String | 14,400 Yen\nKnifeproof Coat | Guys | 6 Proof of Spirit | 16,800 Yen\nDoumaru | Guys | 10 Firm Cloth | 17,800 Yen\nAma-Gakure | Guys | Rain Steel | 32,000 Yen\nDesperate Plate | Guys | 4 Sharp Horn | 21,600 Yen\nAme-Otoko | Guys | Zero Board | 26,000 Yen\nBlack Stone Mail | Guys | 6 Idle Stone Iron | 24,000 Yen\nKnight Scale | Guys | 6 Sheet Metal | 25,600 Yen\nPlate Mail | Guys | 6 Golden Horn | 29,800 Yen\nPassion Sweats | Guys | 10 Proof of Fight | 34,000 Yen\nKuroito-odoshi | Guys | 6 Demon Collar | 36,800 Yen\nNiagra Climber | Guys | 1st Girl's Talc | 38,400 Yen\nHurricane Coat | Guys | 4 Black Reins | 40,000 Yen\nAmamusha Armor | Guys | Rain Metal | 41,200 Yen\nDragon Scale | Guys | 4 Porcelain Statue | 42,800 Yen\nStylish Kimono | Guys | 10 Practical Cloth | 45,800 Yen\nOracle Gown | Guys | 6 Oracle Textile | 47,200 Yen\nAme-agari Kesshi | Guys | Cascade Metal | 48,000 Yen\n1000-Stud Coat | Guys | 6 Calm Marble | 49,200 Yen\nKomaryo Uchinugi | Guys | 4 Thought Cross | 52,000 Yen\nMikagura Vest | Guys | 4 Formidable Proof | 53,200 Yen\nSurcoat | Guys | 6 Diamond Sheet | 54,000 Yen\nOpera Coat | Guys | 4 Demon Cloth | 56,000 Yen\nLorica Hamata | Guys | 10 Unknown Barrel | 58,000 Yen\nFull Jin-Baori | Guys | 10 Pyroxene Fiber | 60,000 Yen\nMiori Shirt | Girls | Curious Line | 22,400 Yen\nCharm Robe | Girls | 4 Magic Cross | 15,200 Yen\nBattle Camisole | Girls | 6 Karma Lamp | 15,600 Yen\nZero Kosode | Girls | Zero Cloth | 28,000 Yen\nHard Bolero | Girls | 10 Smooth Fabric | 21,200 Yen\nAmakaze Happi | Girls | Rare Poncho | 31,200 Yen\nWolf Tunic | Girls | 4 Tanned Hide | 24,800 Yen\nAction Vest | Girls | 10 Steel Reins | 26,400 Yen\nCapital Robe | Girls | 6 Anguish Stone | 28,400 Yen\nBreeze Tutu | Girls | 4 Light String | 32,600 Yen\nDivine Blouse | Girls | 6 Proof of Passion | 35,600 Yen\nUin Haori | Girls | Cascade String | 39,200 Yen\nInvincible Mini | Girls | 8 Power Rock | 40,000 Yen\nMythos Robe | Girls | 6 Golden Sand | 42,000 Yen\nLan Ling Wang | Girls | 10 Mink Fur | 44,000 Yen\nRune Dress | Girls | 10 Ayanishiki | 46,000 Yen\nElint Duffle | Girls | 6 Hemp Cloth | 48,800 Yen\nKikusui Awase | Girls | 6 Royal Blossom | 50,000 Yen\nShinra Robe | Girls | 6 Oguruma Brocade | 52,800 Yen\nKotodama Cape | Girls | 4 Word String | 54,400 Yen\nMizuha Armor | Girls | 4 Flame Sheet | 54,800 Yen\nYomi Sleeves | Girls | 4 Klein Bottle | 56,800 Yen\nEmery Meisen | Girls | 10 Unknowable Fiber | 59,600 Yen\nHaten Robe | Girls | 10 Silver String | 61,200 Yen\nAccessories\nAccessory | Material Needed | Price\nHeadband | Default | 3,000 Yen\nLizard Charm | Big Incisor | 3,000 Yen\nAmulet | Default | 3,000 Yen\nFeather Strap | 10 Moustache Fiber | 3,000 Yen\nLucky Coin | 20 Lack Lamp | 3,000 Yen\nFeng Shui Brace | 10 Bronze Reins | 9,000 Yen\nVigor Fob | 10 Big Incisor | 12,000 Yen\nPlum Potpourri | 10 Idea Paper | 12,000 Yen\nWhite Feather | 10 Crystal of Light | 12,000 Yen\nBlack Feather | 10 Black Signature | 12,000 Yen\nFestival Drum | 10 Windcutter Cloth | 15,000 Yen\nWitch Charm | 10 Silver Signature | 15,000 Yen\nGuard Rosary | 10 Hard Thorn | 15,000 Yen\nPegasus Strap | 10 Mental Thread | 15,000 Yen\nWooden Ebisu | 10 Yellow Cord | 15,000 Yen\nDisinfectant | 10 Beard Fiber | 18,000 Yen\nTranquil Buddha | 10 Safety Angle | 18,000 Yen\nBravery Vessel | 10 Brave Lumber | 18,000 Yen\nHealthy Recipe | 10 Paleograph | 18,000 Yen\nKid's Hachimaki | 10 Guard Cloth | 18,000 Yen\nCool Beads | 10 Quiet Bouquet | 18,000 Yen\nSafety Belt | 10 Ruinous Crown | 18,000 Yen\nDisguise Mask | 10 Decorative Stone | 18,000 Yen\nLand Badge | 10 Life Collar | 25,000 Yen\nMage's Mark | 10 Magic Cloth | 25,000Yen\nLife Fob | 10 Living Metal | 25,000 Yen\nSoul Potpourri | 10 Invincible Felt | 25,000 Yen\nSigma Drive | 10 Platinum Fur | 30,000 Yen\nRevenge Ring | 10 Selfish Ornament | 30,000 Yen\nOuryu Brace | 10 Torrent Gear | 30,000 Yen\nEarth Badge | 10 Ill Will Claw | 30,000 Yen\nSorcerer's Mark | 10 Silver Fox Fur | 30,000 Yen\nBlessed Hands | 10 Activated Felt | 40,000 Yen"
+}

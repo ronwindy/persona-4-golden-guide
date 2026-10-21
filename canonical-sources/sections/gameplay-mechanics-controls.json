@@ -1,0 +1,119 @@
+{
+  "id": "gameplay-mechanics-controls",
+  "title": "Controls",
+  "chapter": "Gameplay Mechanics",
+  "chapter_id": "gameplay-mechanics",
+  "anchor": "controls",
+  "type": "article",
+  "order": 11,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "These controls listed are for the PS Vita version of the game. With the PS4, Xbox, Switch, and Steam release these controls may now be remapped as you see fit."
+    },
+    {
+      "type": "p",
+      "text": "Menu Controls",
+      "md": "**Menu Controls**"
+    },
+    {
+      "type": "p",
+      "text": "D-Pad/Left Analog---Move Selection"
+    },
+    {
+      "type": "p",
+      "text": "Cross/X Button---Select"
+    },
+    {
+      "type": "p",
+      "text": "Circle Button---Back"
+    },
+    {
+      "type": "p",
+      "text": "Square Button---Skill Order"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Button---Exit Main Menu"
+    },
+    {
+      "type": "p",
+      "text": "L Button/R Button---Move Page"
+    },
+    {
+      "type": "p",
+      "text": "Field Controls",
+      "md": "**Field Controls**"
+    },
+    {
+      "type": "p",
+      "text": "D-Pad/Left Analog---Move"
+    },
+    {
+      "type": "p",
+      "text": "Right Analog/L Button/R Button---Move Camera"
+    },
+    {
+      "type": "p",
+      "text": "Cross/X Button---Confirm/Search/Swing Sword"
+    },
+    {
+      "type": "p",
+      "text": "Circle Button---Back/Center Camera"
+    },
+    {
+      "type": "p",
+      "text": "Square Button---Fast Travel"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Button---Open Menu"
+    },
+    {
+      "type": "p",
+      "text": "Start Button---Fast Forward/Check Map"
+    },
+    {
+      "type": "p",
+      "text": "Select Button---Log"
+    },
+    {
+      "type": "p",
+      "text": "Touch Screen---Vox Populi/Rescue Request/TV Channels"
+    },
+    {
+      "type": "p",
+      "text": "Battle Controls",
+      "md": "**Battle Controls**"
+    },
+    {
+      "type": "p",
+      "text": "D-Pad/Left Analog---Move Selection"
+    },
+    {
+      "type": "p",
+      "text": "Cross/X Button---Select"
+    },
+    {
+      "type": "p",
+      "text": "Circle Button---Cancel/Reset"
+    },
+    {
+      "type": "p",
+      "text": "Square Button---Persona"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Button---Rush"
+    },
+    {
+      "type": "p",
+      "text": "L Button---Analyze"
+    },
+    {
+      "type": "p",
+      "text": "R Button---Turn Order"
+    }
+  ],
+  "text": "These controls listed are for the PS Vita version of the game. With the PS4, Xbox, Switch, and Steam release these controls may now be remapped as you see fit.\nMenu Controls\nD-Pad/Left Analog---Move Selection\nCross/X Button---Select\nCircle Button---Back\nSquare Button---Skill Order\nTriangle Button---Exit Main Menu\nL Button/R Button---Move Page\nField Controls\nD-Pad/Left Analog---Move\nRight Analog/L Button/R Button---Move Camera\nCross/X Button---Confirm/Search/Swing Sword\nCircle Button---Back/Center Camera\nSquare Button---Fast Travel\nTriangle Button---Open Menu\nStart Button---Fast Forward/Check Map\nSelect Button---Log\nTouch Screen---Vox Populi/Rescue Request/TV Channels\nBattle Controls\nD-Pad/Left Analog---Move Selection\nCross/X Button---Select\nCircle Button---Cancel/Reset\nSquare Button---Persona\nTriangle Button---Rush\nL Button---Analyze\nR Button---Turn Order"
+}

@@ -1,0 +1,198 @@
+{
+  "id": "persona-compendium-chariot",
+  "title": "Chariot",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "chariot",
+  "type": "arcana",
+  "order": 59,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Hierophant\nMagician x Sun\nEmpress x Death\nEmpress x Star\nEmperor x Sun\nHierophant x Judgement\nChariot x Chariot\nChariot x Jester\nFortune x Tower\nStrength x Aeon\nDeath x Temperance\nDevil x Jester\nTower x Sun\nStar x Aeon\nJudgement x Jester"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Justice\nMagician x Justice\nMagician x Devil\nPriestess x Hanged Man\nPriestess x Death\nEmperor x Hierophant\nEmperor x Jester\nJustice x Tower\nFortune x Sun\nTemperance x Judgement\nStar x Sun\nSun x Judgement"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Slime"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Nata Taishi"
+          },
+          {
+            "text": "6"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Eligor"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Ara Mitama"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Ares"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Triglav"
+          },
+          {
+            "text": "43"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kin-ki"
+          },
+          {
+            "text": "54"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Thor"
+          },
+          {
+            "text": "65"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Atavaka"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Futsunushi"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Hierophant\nMagician x Sun\nEmpress x Death\nEmpress x Star\nEmperor x Sun\nHierophant x Judgement\nChariot x Chariot\nChariot x Jester\nFortune x Tower\nStrength x Aeon\nDeath x Temperance\nDevil x Jester\nTower x Sun\nStar x Aeon\nJudgement x Jester\nTriangle Spread\nFool x Justice\nMagician x Justice\nMagician x Devil\nPriestess x Hanged Man\nPriestess x Death\nEmperor x Hierophant\nEmperor x Jester\nJustice x Tower\nFortune x Sun\nTemperance x Judgement\nStar x Sun\nSun x Judgement\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nSlime | 2 | X | \nNata Taishi | 6 |  | \nEligor | 12 |  | \nAra Mitama | 18 |  | \nAres | 25 |  | \nTriglav | 43 |  | \nKin-ki | 54 |  | \nThor | 65 |  | \nAtavaka | 72 |  | \nFutsunushi | 80 | X | X"
+}

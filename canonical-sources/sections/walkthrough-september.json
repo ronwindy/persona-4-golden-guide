@@ -1,0 +1,3076 @@
+{
+  "id": "walkthrough-september",
+  "title": "September",
+  "chapter": "Walkthrough",
+  "chapter_id": "walkthrough",
+  "anchor": "september",
+  "type": "calendar",
+  "order": 31,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "------------------------\n~September 1st~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: \"Venison\" is the meat of what animal?\nOption D: \"All of the above.\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "Check the fridge\nCourage GREATLY UP"
+    },
+    {
+      "type": "p",
+      "text": "-Justice Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Option A, Any"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 2nd~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 27: Acquire a Charmed Veil-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Timid Female Student in Classroom 2-2\nObtained 5 Chest Key\nQuest 27 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 42: Riddle Senpai Returns!-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Funky Student on Classroom Building 3F\nOption A, B, B, B\nObtained Snuff Soul\nQuest 42 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 41: What Was That in the Movie?"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Film Buff Girl at Okina City\nTalk to Ms. Sofue on Clasroom Building 2F\nTalk to Film Buff Girl at Okina City\nObtained Mystical Scarab\nQuest 41 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Fishing-"
+    },
+    {
+      "type": "p",
+      "text": "Save Abuse\nFish at Shichiri Beach\nNeed at least one Guardian\nObtained Sea Guardian\nObtained Bus Stop Sign"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "NOTE!\nBus Stop Sign should show up the first time you cast the fishing line.",
+            "md": "**NOTE!**\nBus Stop Sign should show up the first time you cast the fishing line."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained Fishing Master Trophy!\nCaught Sea Guardian."
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Marie's Poems-"
+    },
+    {
+      "type": "p",
+      "text": "Enter the Velvet Room\nObtained Metal Bat"
+    },
+    {
+      "type": "p",
+      "text": "-Catching Bugs-"
+    },
+    {
+      "type": "p",
+      "text": "Keep bug hunting"
+    },
+    {
+      "type": "p",
+      "text": "-Devil Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Courage UP\nCourage UP\nObtained 5,000 Yen\nWill become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 3rd~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-TV Channel-"
+    },
+    {
+      "type": "p",
+      "text": "TV Classroom Lesson 6 Unlocked"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 22: Cat Needs Food Badly-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Cat at Samegawa Flood Plain\nFeed him all the fish you got (He doesn't like fish from the sea)"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 15: The Shichiri Beach Guardian-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Old Man at Samegawa Riverbank\nQuest 15 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Lovers Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Option Any, A (Intimate) or B (Platonic)\nObtained New Skill: Stamina Song"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Off Today\nUnderstanding UP\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 4th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-TV Shopping-"
+    },
+    {
+      "type": "p",
+      "text": "Recommend Chest Keys"
+    },
+    {
+      "type": "p",
+      "text": "-Magician Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Any options\nObtained New Skill: Diarama"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Option B"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NOTE!",
+          "md": "**NOTE!**"
+        },
+        {
+          "type": "p",
+          "text": "I was able to rank up today, but some people haven't been able to get it to rank up? If so, replace reading a book at some point with ranking up."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 5th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: Which of the following is a kigo for fall?\nOption A: \"Brisk.\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Costumes-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Housewife in Farming Clothes\nObtained Junes Apron\nObtained Teddie's Apron"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 43: Experiments in Telepathy-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Older Twin at Shopping District South\nTalk to Younger Twin at Samegawa Riverbank\nTalk to Older Twin at Shopping District South\nObtained 5 Dokudami Tea\nQuest 43 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Hanged Man Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Option A, Any"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "Check the fridge"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Won't become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 6th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Sun Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Expression UP\nWill become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Will become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 7th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Aeon Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Any options"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 8th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Star Rank 5 (Auto)-"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 9th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: What will your orders be...?\nOption A: \"#1 rests on my lap.\"\nLovers + 3 Points"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 10th~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Chie: \"Hey, let's buy a souvenir at the station. I bet Nanako-chan will be expecting one.\"\nOption C: Buy an Iwatodai Lamp\nJustice + 3 Points"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Did you have fun?\"\nOption C: \"Come with me next time.\"\nJustice + 2 Points"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 11th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-TV Shopping-"
+    },
+    {
+      "type": "p",
+      "text": "Buy Inaba Trout"
+    },
+    {
+      "type": "p",
+      "text": "-Magician Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Will become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Cooking-"
+    },
+    {
+      "type": "p",
+      "text": "Make lunch at fridge\nOption B\nObtained Golden Chakin Sushi"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 12th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Lunchtime",
+      "md": "**Lunchtime**"
+    },
+    {
+      "type": "p",
+      "text": "-Lunch-"
+    },
+    {
+      "type": "p",
+      "text": "Invite Rise\nLovers + 2 Points"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Knowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Chariot Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Persona no longer needed\nPersona Evolution\nTomoe to Suzuka Gongen\nObtained Wristbands\nNew fusion: Futsunushi\nObtained New Skill: Evade Fire"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~September 13~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Strength Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Option B"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Option C, C (Requires Courage Rank Heroic)"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 14th~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Hermit Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 15th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 16th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Investigation-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Female Student on Practice Building 1F\nTalk to Police Officer at Shopping District North\nTalk to Chie at Samegawa Riverbank\nTalk to Police Officer at Shopping District North"
+    },
+    {
+      "type": "p",
+      "text": "-Costumes-"
+    },
+    {
+      "type": "p",
+      "text": "Located at Okina City\nCheer Squad Set\nDangerous Briefs\nSailor Trunks"
+    },
+    {
+      "type": "p",
+      "text": "-Crane Game-"
+    },
+    {
+      "type": "p",
+      "text": "Give it a whirl"
+    },
+    {
+      "type": "p",
+      "text": "-Hanged Man Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Option Any, B or C"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Justice Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Option B, A, A or C"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 17th~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: How short was history's shortest war?\nOption A: \"40 minutes.\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Investigation-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Policeman at Shopping District South\nOption C, B"
+    },
+    {
+      "type": "p",
+      "text": "-Strength Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Option B (Requires Understanding Rank Motherly)\nDiligence UP"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Short on Cash\nUnderstanding UP\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 18th~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-TV Shopping-"
+    },
+    {
+      "type": "p",
+      "text": "Recommend Reprisal Chain"
+    },
+    {
+      "type": "p",
+      "text": "-Death Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Any options (WAQX2: Why don't I need a Death Persona?)",
+      "md": "Any options [(WAQX2: Why don't I need a Death Persona?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Changing Careers\nUnderstanding UP\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 19th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-Death Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Any options"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "Check the fridge"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Picross Rules!"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 20th~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: What do you call somebody who's between ninety and one hundred years old?\nOption C: \"A nonagenarian.\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 44: Extracurricular Activities, Part 2-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Ms. Sofue on Classroom Building 2F"
+    },
+    {
+      "type": "p",
+      "text": "-Books-"
+    },
+    {
+      "type": "p",
+      "text": "Sensei's Friends"
+    },
+    {
+      "type": "p",
+      "text": "-Crane Game-"
+    },
+    {
+      "type": "p",
+      "text": "Give it a twirl\nObtained Neko Shogun Doll"
+    },
+    {
+      "type": "p",
+      "text": "-Strength Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Option Any, A, A, A, A\nDiligence UP"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Picross Rules!\nUnderstanding UP\nDiligence GREATLY UP\nDiligence Rank Up!\nStrong to Thorough\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 21st~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Moon Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Option B, B, A or B or D (C will Reverse) (WAQ14: Reversing and breaking Social Links?)",
+      "md": "Option B, B, A or B or D (C will Reverse) [(WAQ14: Reversing and breaking Social Links?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Sensei's Friends\nUnderstanding UP\nUnderstanding Rank Up!\nMotherly to Saintly\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 22nd~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-TV World-"
+    },
+    {
+      "type": "p",
+      "text": "Rescue Naoto"
+    },
+    {
+      "type": "p",
+      "text": "TV World",
+      "md": "**TV World**"
+    },
+    {
+      "type": "p",
+      "text": "-Costume-"
+    },
+    {
+      "type": "p",
+      "text": "Pat the Fox\nObtained Kingpin Duster"
+    },
+    {
+      "type": "p",
+      "text": "-Miniboss-"
+    },
+    {
+      "type": "p",
+      "text": "Dominating Machine on 4F"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 36: Carbon Copy: Part 2-"
+    },
+    {
+      "type": "p",
+      "text": "Obtain a Leaf Pochette\nDropped by Blind Cupid at Void Quest 3-4F"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 39: Acquire an Eternal Lamp-"
+    },
+    {
+      "type": "p",
+      "text": "Obtain an Eternal Lamp\nDropped by Amenti Raven at Void Quest 3-4F"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 44: Extracurricular Activities, Part 2-"
+    },
+    {
+      "type": "p",
+      "text": "Obtain Culurium\nDropped by Steel Machine at Void Quest 8-9F"
+    },
+    {
+      "type": "p",
+      "text": "-Sideboss-"
+    },
+    {
+      "type": "p",
+      "text": "Escapist Soldier\nCourage UP\nSearch for Gaia Sword"
+    },
+    {
+      "type": "p",
+      "text": "-Quest Prerequisite-"
+    },
+    {
+      "type": "p",
+      "text": "Need to sell 8 Power Rocks to Daidara\nDropped by Power Castle at Secret Laboratory 3-7F"
+    },
+    {
+      "type": "p",
+      "text": "Need 3 Proof of Passion\nDropped by Furious Gigas at Secret Laboratory 3-4F"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "This is a material. Don't sell them to Daidara!"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained Going Nova Trophy!\nDeal over 999 damage in a single attack."
+    },
+    {
+      "type": "p",
+      "text": "-Personas Needed-"
+    },
+    {
+      "type": "p",
+      "text": "Tower, Fortune"
+    },
+    {
+      "type": "p",
+      "text": "-Objective-"
+    },
+    {
+      "type": "p",
+      "text": "Defeat the Boss"
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained Boarded-Up Lab Trophy!\nRescued Naoto Shirogane"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 23rd~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 36: Carbon Copy, Part 2-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Younger Twin at Samegawa Riverbank\nObtained 3 Macca Leaf\nQuest 36 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 39: Acquire an Eternal Lamp-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Refreshed Old Man at Samegawa Flood Plain\nObtained 30,000 Yen\nQuest 39 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Aeon Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Any options"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Justice Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Will become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 24th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Knowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 44: Extracurricular Activities, Part 2-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Ms. Sofue on Classroom Building 2F\nObtained 2 Mystical Scarab\nQuest 44 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Aeon Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Any options"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Poly-land"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 25th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-TV Shopping-"
+    },
+    {
+      "type": "p",
+      "text": "Recommend Diet Food"
+    },
+    {
+      "type": "p",
+      "text": "-Death Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Any options"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Option B, A"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 26th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Sun Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Option B\nExpression UP"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Spend Time-"
+    },
+    {
+      "type": "p",
+      "text": "Will become closer soon"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 27th~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 45: A Test of Literary Memory-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Avid Reader at Shopping District South\nOption C, B, B, B\nObtained Who Am I?\nQuest 45 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Strength Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Option A, Any, A"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "Check the fridge"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Poly-land\nDiligence GREATLY UP\nKnowledge GREATLY UP\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 28th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"Hey, MC... Do you know the answer?\nOption C: \"Throat.\"\nMagician + 2 Points\nExpression UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Moon Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Option A, A"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Devil Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Any options\nCourage UP\nCourage UP\nObtained 6,500 Yen"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 29th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Lunchtime",
+      "md": "**Lunchtime**"
+    },
+    {
+      "type": "p",
+      "text": "-Invite-"
+    },
+    {
+      "type": "p",
+      "text": "Spend time with Ai"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Moon Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Option A or B, B, A"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Hierophant Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Persona no longer needed\nObtained Coffee Mug\nNew fusion: Kohryu"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 30th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Lunchtime",
+      "md": "**Lunchtime**"
+    },
+    {
+      "type": "p",
+      "text": "-Invite-"
+    },
+    {
+      "type": "p",
+      "text": "Spend time with Rise"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Lovers Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Option C\nLovers Rank 9 or higher will have Rise block an attack that hits the whole party if someone would be KO'd once per battle"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Justice Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Persona no longer needed\nObtained Family Picture\nNew fusion: Sraosha"
+    },
+    {
+      "type": "p",
+      "text": "---------------------------\n~Monthly Progress~\n---------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Social Links",
+      "md": "**Social Links**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Arcana #",
+            "md": "**Arcana #**"
+          },
+          {
+            "text": "Social Link",
+            "md": "**Social Link**"
+          },
+          {
+            "text": "Arcana",
+            "md": "**Arcana**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "0"
+          },
+          {
+            "text": "Investigation Team"
+          },
+          {
+            "text": "Fool"
+          },
+          {
+            "text": "Rank 7"
+          }
+        ],
+        [
+          {
+            "text": "1"
+          },
+          {
+            "text": "Yosuke Hanamura"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "Rank 8"
+          }
+        ],
+        [
+          {
+            "text": "2"
+          },
+          {
+            "text": "Yukiko Amagi"
+          },
+          {
+            "text": "Priestess"
+          },
+          {
+            "text": "Rank MAX"
+          }
+        ],
+        [
+          {
+            "text": "3"
+          },
+          {
+            "text": "Margaret"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "Rank 1"
+          }
+        ],
+        [
+          {
+            "text": "4"
+          },
+          {
+            "text": "Kanji Tatsumi"
+          },
+          {
+            "text": "Emperor"
+          },
+          {
+            "text": "Rank 6"
+          }
+        ],
+        [
+          {
+            "text": "5"
+          },
+          {
+            "text": "Ryotaro Dojima"
+          },
+          {
+            "text": "Hierophant"
+          },
+          {
+            "text": "Complete! Rank MAX"
+          }
+        ],
+        [
+          {
+            "text": "6"
+          },
+          {
+            "text": "Rise Kujikawa"
+          },
+          {
+            "text": "Lovers"
+          },
+          {
+            "text": "Rank 9"
+          }
+        ],
+        [
+          {
+            "text": "7"
+          },
+          {
+            "text": "Chie Satonaka"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "Complete! Rank MAX"
+          }
+        ],
+        [
+          {
+            "text": "8"
+          },
+          {
+            "text": "Nanako Dojima"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "Complete! Rank MAX"
+          }
+        ],
+        [
+          {
+            "text": "9"
+          },
+          {
+            "text": "Fox"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "Rank 9"
+          }
+        ],
+        [
+          {
+            "text": "11"
+          },
+          {
+            "text": "Fellow Athletes"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "Rank 8"
+          }
+        ],
+        [
+          {
+            "text": "12"
+          },
+          {
+            "text": "Saki's Brother"
+          },
+          {
+            "text": "Hanged Man"
+          },
+          {
+            "text": "Rank 6"
+          }
+        ],
+        [
+          {
+            "text": "13"
+          },
+          {
+            "text": "Old Lady"
+          },
+          {
+            "text": "Death"
+          },
+          {
+            "text": "Rank 4"
+          }
+        ],
+        [
+          {
+            "text": "14"
+          },
+          {
+            "text": "Young Mother"
+          },
+          {
+            "text": "Temperance"
+          },
+          {
+            "text": "Rank 5"
+          }
+        ],
+        [
+          {
+            "text": "15"
+          },
+          {
+            "text": "Nurse"
+          },
+          {
+            "text": "Devil"
+          },
+          {
+            "text": "Rank 9"
+          }
+        ],
+        [
+          {
+            "text": "17"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Star"
+          },
+          {
+            "text": "Rank 5"
+          }
+        ],
+        [
+          {
+            "text": "18"
+          },
+          {
+            "text": "Ai Ebihara"
+          },
+          {
+            "text": "Moon"
+          },
+          {
+            "text": "Rank 5"
+          }
+        ],
+        [
+          {
+            "text": "19"
+          },
+          {
+            "text": "Yumi Ozawa"
+          },
+          {
+            "text": "Sun"
+          },
+          {
+            "text": "Rank 7"
+          }
+        ],
+        [
+          {
+            "text": "00"
+          },
+          {
+            "text": "Tohru Adachi"
+          },
+          {
+            "text": "Jester"
+          },
+          {
+            "text": "Rank 6"
+          }
+        ],
+        [
+          {
+            "text": "20"
+          },
+          {
+            "text": "Marie"
+          },
+          {
+            "text": "Aeon"
+          },
+          {
+            "text": "Rank 8"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Status Parameters",
+      "md": "**Status Parameters**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Status Parameter",
+            "md": "**Status Parameter**"
+          },
+          {
+            "text": "Rank #",
+            "md": "**Rank #**"
+          },
+          {
+            "text": "Rank",
+            "md": "**Rank**"
+          }
+        ],
+        [
+          {
+            "text": "Courage"
+          },
+          {
+            "text": "MAX"
+          },
+          {
+            "text": "Heroic"
+          }
+        ],
+        [
+          {
+            "text": "Diligence"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Thorough"
+          }
+        ],
+        [
+          {
+            "text": "Knowledge"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Professor"
+          }
+        ],
+        [
+          {
+            "text": "Expression"
+          },
+          {
+            "text": "MAX"
+          },
+          {
+            "text": "Enthralling"
+          }
+        ],
+        [
+          {
+            "text": "Understaning"
+          },
+          {
+            "text": "MAX"
+          },
+          {
+            "text": "Saintly"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Quests",
+      "md": "**Quests**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Quest #",
+            "md": "**Quest #**"
+          },
+          {
+            "text": "Quest Name",
+            "md": "**Quest Name**"
+          },
+          {
+            "text": "Objective",
+            "md": "**Objective**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "1"
+          },
+          {
+            "text": "Who's the Riddle Master!?"
+          },
+          {
+            "text": "Answer the riddles correctly"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "2"
+          },
+          {
+            "text": "The Girl on the Rooftop"
+          },
+          {
+            "text": "Ask about her hobbies"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "3"
+          },
+          {
+            "text": "Acquire Mori Ranmaru Shochu"
+          },
+          {
+            "text": "Give Mori Ranmaru shochu"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "4"
+          },
+          {
+            "text": "Acquire an Angel Statue"
+          },
+          {
+            "text": "Give Angel Statue"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "5"
+          },
+          {
+            "text": "Acquire a Demon Statue"
+          },
+          {
+            "text": "Give Demon Statue"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "6"
+          },
+          {
+            "text": "Acquire a Ritz Wire"
+          },
+          {
+            "text": "Give Ritz Wire"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "7"
+          },
+          {
+            "text": "I Wish for Love"
+          },
+          {
+            "text": "Give her confidence"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "8"
+          },
+          {
+            "text": "I Wish I Didn't Crave Snacks"
+          },
+          {
+            "text": "Give Meat Gum"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "9"
+          },
+          {
+            "text": "We Wish Our Dog Would Return"
+          },
+          {
+            "text": "Calm the dog down"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "10"
+          },
+          {
+            "text": "I Wish I Had Friends"
+          },
+          {
+            "text": "Give him some stickers"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "11"
+          },
+          {
+            "text": "I Wish My Life Had Meaning Again"
+          },
+          {
+            "text": "Make Unfinished Model"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "12"
+          },
+          {
+            "text": "I Wish I Was Beetter at Speaking"
+          },
+          {
+            "text": "Give her advice"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "13"
+          },
+          {
+            "text": "I Wish I Didn't Fear Cats"
+          },
+          {
+            "text": "Show him some cats"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "14"
+          },
+          {
+            "text": "I Wish My Wallet Would Return"
+          },
+          {
+            "text": "Find her wallet"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "15"
+          },
+          {
+            "text": "The Shichiri Beach Guardian"
+          },
+          {
+            "text": "Give Shichiri Guardian"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "16"
+          },
+          {
+            "text": "Desk Refurbishing"
+          },
+          {
+            "text": "Give Fitting Board"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "17"
+          },
+          {
+            "text": "Extracurricular Activities"
+          },
+          {
+            "text": "Give Suspicious Pole"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "18"
+          },
+          {
+            "text": "Book Exchange"
+          },
+          {
+            "text": "Give Peach Seed"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "19"
+          },
+          {
+            "text": "Tissue Distribution Agent"
+          },
+          {
+            "text": "Give everyone tissues"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "20"
+          },
+          {
+            "text": "Please Feed the Cat"
+          },
+          {
+            "text": "Feed the cat"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "21"
+          },
+          {
+            "text": "Feed the Cat"
+          },
+          {
+            "text": "Feed the cat more"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "22"
+          },
+          {
+            "text": "Cat Needs Food Badly"
+          },
+          {
+            "text": "Feed the cat endlessly"
+          },
+          {
+            "text": "In Progress"
+          }
+        ],
+        [
+          {
+            "text": "23"
+          },
+          {
+            "text": "Acquire an Old Key"
+          },
+          {
+            "text": "Give Old Key"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "24"
+          },
+          {
+            "text": "Acquire Coal"
+          },
+          {
+            "text": "Give Coal"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "25"
+          },
+          {
+            "text": "100% Inaba-Grown Cabbage"
+          },
+          {
+            "text": "Give Hiranya Cabbage"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "26"
+          },
+          {
+            "text": "Acquire a Crooked Cross"
+          },
+          {
+            "text": "Give Crooked Cross"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "27"
+          },
+          {
+            "text": "Acquire a Charmed Veil"
+          },
+          {
+            "text": "Give Charmed Veil"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "28"
+          },
+          {
+            "text": "Desk Refurbishing, Part 2"
+          },
+          {
+            "text": "Give Reflecting Board"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "29"
+          },
+          {
+            "text": "Acquire a Horn"
+          },
+          {
+            "text": "Give Grand Horn"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "30"
+          },
+          {
+            "text": "Please Find My Younger Twin"
+          },
+          {
+            "text": "Find the twin"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "31"
+          },
+          {
+            "text": "The Cleaning Club's Passion"
+          },
+          {
+            "text": "Give cleaning cosplay"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "32"
+          },
+          {
+            "text": "Acquire Inaba Trout"
+          },
+          {
+            "text": "Give Inaba Trout"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "33"
+          },
+          {
+            "text": "Acquire a Silver Lump"
+          },
+          {
+            "text": "Give Silver Lump"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "34"
+          },
+          {
+            "text": "Acquire Hard Boots"
+          },
+          {
+            "text": "Give Hard Boots"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "35"
+          },
+          {
+            "text": "Carbon Copy"
+          },
+          {
+            "text": "Give Flower Brooch"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "36"
+          },
+          {
+            "text": "Carbon Copy, Part 2"
+          },
+          {
+            "text": "Give Leaf Pochette"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "37"
+          },
+          {
+            "text": "Pining For Stylish Formalwear"
+          },
+          {
+            "text": "Give Gentleman's Tux"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "38"
+          },
+          {
+            "text": "Harvest Two Types of Corn"
+          },
+          {
+            "text": "Give Tetracorn and Makaracorn"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "39"
+          },
+          {
+            "text": "Acquire an Eternal Lamp"
+          },
+          {
+            "text": "Give Eternal Lamp"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "40"
+          },
+          {
+            "text": "Acquire Some Fashionable Dishes"
+          },
+          {
+            "text": "Give Fashionable Dishes"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "41"
+          },
+          {
+            "text": "What Was That in the Movie?"
+          },
+          {
+            "text": "Learn about OOPArts"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "42"
+          },
+          {
+            "text": "Riddle Senpai Returns!"
+          },
+          {
+            "text": "Answer more riddles"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "43"
+          },
+          {
+            "text": "Experiments in Telepathy"
+          },
+          {
+            "text": "Talk to the twins"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "44"
+          },
+          {
+            "text": "Extracurricular Activities, Part 2"
+          },
+          {
+            "text": "Give Culurium"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "45"
+          },
+          {
+            "text": "A Test of Literary Memory"
+          },
+          {
+            "text": "Answer some questions"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "46"
+          },
+          {
+            "text": "Desk Refurbishing, Part 3"
+          },
+          {
+            "text": "Give Proof of Passion"
+          },
+          {
+            "text": "Complete!"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Books",
+      "md": "**Books**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Book",
+            "md": "**Book**"
+          },
+          {
+            "text": "Chapters",
+            "md": "**Chapters**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "The Lovely Man"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Forever Macho"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Man of History"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Man-God"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Off Today"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Short on Cash"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Changing Careers"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Sensei's Friends"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "The O-Cha Way"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "The Gentle Way"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "The Divine Way"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "The Ramen Way"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "The Punk's Way"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Witch Detective"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Poly-land"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Guide to Pests"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Picross Rules!"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Who Am I?"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Expert Study Methods"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "English Made Easy"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "100 Ghost Stories"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Office Work Manual"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Easy Origami"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Food Fight!"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Beginner Fishing"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Expert Fishing"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Catching Bugs"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "2 Chapters Left"
+          }
+        ],
+        [
+          {
+            "text": "Home Gardening"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Not Started"
+          }
+        ],
+        [
+          {
+            "text": "Hyperspeed Reading"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Finished"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Trophies",
+      "md": "**Trophies**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Trophy",
+            "md": "**Trophy**"
+          },
+          {
+            "text": "Rarity",
+            "md": "**Rarity**"
+          },
+          {
+            "text": "Objective",
+            "md": "**Objective**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "A Favor for Marie"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Register a Skill Card"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "A Prince Appears (Secret Trophy)"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Rescue Yukiko Amagi"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "A Special Lady"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Enter a special relationship with someone"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "A True Bond"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Max out a Social Link"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "A True Man's Stand (Secret Trophy)"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Rescue Kanji Tatsumi"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Advantage Mine"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Enter a battle with Player Advantage"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "An Acquired Taste"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Drink the coffee at Chagall Cafe"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Boarded-Up Lab (Secret Trophy)"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Rescue Naoto Shirogane"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Bug Hunter"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Swing the net with perfect timing"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Fashion Plate"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Fight a battle in costume"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Fishing Master"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Catch the Sea Guardian"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Game Over (Secret Trophy)"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Secure Mitsuo Kubo"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Going Nova"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Deal over 999 damage in 1 attack"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Granter of Your Desires"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Buy 5 things from Tanaka's Amazing Commodities"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Grasping at Greed"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Defeat a Golden Hand"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Head of the Class"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Rank #1 in your class on an exam"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Lucky Me!"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Win a prize from the vending machine"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Persona Shopper"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Buy a Persona from the Compendium"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Seize the Moment"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Buy a special croquette from Souzai Daigaku"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "Skilled Commander"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Perform 50 All-Out Attacks"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "The Lounge is Closed (Secret Trophy)"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Rescue Rise Kujikawa"
+          },
+          {
+            "text": "Finished"
+          }
+        ],
+        [
+          {
+            "text": "The Other Self"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Obtain the Persona Izanagi"
+          },
+          {
+            "text": "Finished"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "------------------------\n~September 1st~\n------------------------\nAfternoon\n-Lesson-\nQuestion: \"Venison\" is the meat of what animal?\nOption D: \"All of the above.\"\nKnowledge UP\nEvening\n-Fridge-\nCheck the fridge\nCourage GREATLY UP\n-Justice Rank 8-\nOption A, Any\n-------------------------\n~September 2nd~\n-------------------------\nAfter School\n-Quest 27: Acquire a Charmed Veil-\nTalk to Timid Female Student in Classroom 2-2\nObtained 5 Chest Key\nQuest 27 Complete!\n-Quest 42: Riddle Senpai Returns!-\nTalk to Funky Student on Classroom Building 3F\nOption A, B, B, B\nObtained Snuff Soul\nQuest 42 Complete!\n-Quest 41: What Was That in the Movie?\nTalk to Film Buff Girl at Okina City\nTalk to Ms. Sofue on Clasroom Building 2F\nTalk to Film Buff Girl at Okina City\nObtained Mystical Scarab\nQuest 41 Complete!\n-Fishing-\nSave Abuse\nFish at Shichiri Beach\nNeed at least one Guardian\nObtained Sea Guardian\nObtained Bus Stop Sign\nNOTE! / Bus Stop Sign should show up the first time you cast the fishing line.\n-Trophy-\nObtained Fishing Master Trophy!\nCaught Sea Guardian.\nEvening\n-Marie's Poems-\nEnter the Velvet Room\nObtained Metal Bat\n-Catching Bugs-\nKeep bug hunting\n-Devil Spend Time-\nCourage UP\nCourage UP\nObtained 5,000 Yen\nWill become closer soon\n------------------------\n~September 3rd~\n------------------------\nAfter School\n-TV Channel-\nTV Classroom Lesson 6 Unlocked\n-Quest 22: Cat Needs Food Badly-\nTalk to Cat at Samegawa Flood Plain\nFeed him all the fish you got (He doesn't like fish from the sea)\n-Quest 15: The Shichiri Beach Guardian-\nTalk to Old Man at Samegawa Riverbank\nQuest 15 Complete!\n-Lovers Rank 8-\nOption Any, A (Intimate) or B (Platonic)\nObtained New Skill: Stamina Song\nEvening\n-Read-\nRead Off Today\nUnderstanding UP\nBook Finished!\n------------------------\n~September 4th~\n------------------------\nDaytime\n-TV Shopping-\nRecommend Chest Keys\n-Magician Rank 8-\nAny options\nObtained New Skill: Diarama\nEvening\n-Hierophant Rank 7-\nOption B\nNOTE!\nI was able to rank up today, but some people haven't been able to get it to rank up? If so, replace reading a book at some point with ranking up.\n------------------------\n~September 5th~\n------------------------\nMorning\n-Lesson-\nQuestion: Which of the following is a kigo for fall?\nOption A: \"Brisk.\"\nKnowledge UP\nAfter School\n-Costumes-\nTalk to Housewife in Farming Clothes\nObtained Junes Apron\nObtained Teddie's Apron\n-Quest 43: Experiments in Telepathy-\nTalk to Older Twin at Shopping District South\nTalk to Younger Twin at Samegawa Riverbank\nTalk to Older Twin at Shopping District South\nObtained 5 Dokudami Tea\nQuest 43 Complete!\n-Hanged Man Rank 5-\nOption A, Any\nEvening\n-Fridge-\nCheck the fridge\n-Hierophant Spend Time-\nWon't become closer soon\n------------------------\n~September 6th~\n------------------------\nAfter School\n-Sun Spend Time-\nExpression UP\nWill become closer soon\nEvening\n-Hierophant Spend Time-\nWill become closer soon\n------------------------\n~September 7th~\n------------------------\nAfter School\n-Aeon Rank 6-\nAny options\nEvening\n-Sleep-\nGo to your room\n------------------------\n~September 8th~\n------------------------\nEvening\n-Star Rank 5 (Auto)-\n------------------------\n~September 9th~\n------------------------\nEvening\n-Response-\nNarrator: What will your orders be...?\nOption A: \"#1 rests on my lap.\"\nLovers + 3 Points\n--------------------------\n~September 10th~\n--------------------------\nAfternoon\n-Response-\nChie: \"Hey, let's buy a souvenir at the station. I bet Nanako-chan will be expecting one.\"\nOption C: Buy an Iwatodai Lamp\nJustice + 3 Points\nEvening\n-Response-\nNanako: \"Did you have fun?\"\nOption C: \"Come with me next time.\"\nJustice + 2 Points\n-------------------------\n~September 11th~\n-------------------------\nDaytime\n-TV Shopping-\nBuy Inaba Trout\n-Magician Spend Time-\nWill become closer soon\nEvening\n-Cooking-\nMake lunch at fridge\nOption B\nObtained Golden Chakin Sushi\n-------------------------\n~September 12th~\n-------------------------\nLunchtime\n-Lunch-\nInvite Rise\nLovers + 2 Points\nAfternoon\n-Lesson-\nKnowledge UP\nAfter School\n-Chariot Rank 10-\nPersona no longer needed\nPersona Evolution\nTomoe to Suzuka Gongen\nObtained Wristbands\nNew fusion: Futsunushi\nObtained New Skill: Evade Fire\n-----------------------\n~September 13~\n-----------------------\nAfter School\n-Strength Rank 5-\nOption B\nEvening\n-Hierophant Rank 8-\nOption C, C (Requires Courage Rank Heroic)\n--------------------------\n~September 14th~\n--------------------------\nAfter School\n-Hermit Spend Time-\nEvening\n-Sleep-\nGo to your room\n-------------------------\n~September 15th~\n-------------------------\nEvening\n-Sleep-\nGo to your room\n-------------------------\n~September 16th~\n-------------------------\nAfter School\n-Investigation-\nTalk to Female Student on Practice Building 1F\nTalk to Police Officer at Shopping District North\nTalk to Chie at Samegawa Riverbank\nTalk to Police Officer at Shopping District North\n-Costumes-\nLocated at Okina City\nCheer Squad Set\nDangerous Briefs\nSailor Trunks\n-Crane Game-\nGive it a whirl\n-Hanged Man Rank 6-\nOption Any, B or C\nEvening\n-Justice Rank 9-\nOption B, A, A or C\n--------------------------\n~September 17th~\n--------------------------\nMorning\n-Lesson-\nQuestion: How short was history's shortest war?\nOption A: \"40 minutes.\"\nKnowledge UP\nAfter School\n-Investigation-\nTalk to Policeman at Shopping District South\nOption C, B\n-Strength Rank 6-\nOption B (Requires Understanding Rank Motherly)\nDiligence UP\nEvening\n-Read-\nRead Short on Cash\nUnderstanding UP\nBook Finished!\n--------------------------\n~September 18th~\n--------------------------\nDaytime\n-TV Shopping-\nRecommend Reprisal Chain\n-Death Rank 2-\nAny options (WAQX2: Why don't I need a Death Persona?)\nEvening\n-Read-\nRead Changing Careers\nUnderstanding UP\nBook Finished!\n-------------------------\n~September 19th~\n-------------------------\nDaytime\n-Death Rank 3-\nAny options\nEvening\n-Fridge-\nCheck the fridge\n-Read-\nRead Picross Rules!\n--------------------------\n~September 20th~\n--------------------------\nAfternoon\n-Lesson-\nQuestion: What do you call somebody who's between ninety and one hundred years old?\nOption C: \"A nonagenarian.\"\nKnowledge UP\nAfter School\n-Quest 44: Extracurricular Activities, Part 2-\nTalk to Ms. Sofue on Classroom Building 2F\n-Books-\nSensei's Friends\n-Crane Game-\nGive it a twirl\nObtained Neko Shogun Doll\n-Strength Rank 7-\nOption Any, A, A, A, A\nDiligence UP\nEvening\n-Read-\nRead Picross Rules!\nUnderstanding UP\nDiligence GREATLY UP\nDiligence Rank Up!\nStrong to Thorough\nBook Finished!\n-------------------------\n~September 21st~\n-------------------------\nAfter School\n-Moon Rank 3-\nOption B, B, A or B or D (C will Reverse) (WAQ14: Reversing and breaking Social Links?)\nEvening\n-Read-\nRead Sensei's Friends\nUnderstanding UP\nUnderstanding Rank Up!\nMotherly to Saintly\nBook Finished!\n--------------------------\n~September 22nd~\n--------------------------\nAfter School\n-TV World-\nRescue Naoto\nTV World\n-Costume-\nPat the Fox\nObtained Kingpin Duster\n-Miniboss-\nDominating Machine on 4F\n-Quest 36: Carbon Copy: Part 2-\nObtain a Leaf Pochette\nDropped by Blind Cupid at Void Quest 3-4F\n-Quest 39: Acquire an Eternal Lamp-\nObtain an Eternal Lamp\nDropped by Amenti Raven at Void Quest 3-4F\n-Quest 44: Extracurricular Activities, Part 2-\nObtain Culurium\nDropped by Steel Machine at Void Quest 8-9F\n-Sideboss-\nEscapist Soldier\nCourage UP\nSearch for Gaia Sword\n-Quest Prerequisite-\nNeed to sell 8 Power Rocks to Daidara\nDropped by Power Castle at Secret Laboratory 3-7F\nNeed 3 Proof of Passion\nDropped by Furious Gigas at Secret Laboratory 3-4F\nIMPORTANT! IMPORTANT! IMPORTANT!\nThis is a material. Don't sell them to Daidara!\n-Trophy-\nObtained Going Nova Trophy!\nDeal over 999 damage in a single attack.\n-Personas Needed-\nTower, Fortune\n-Objective-\nDefeat the Boss\n-Trophy-\nObtained Boarded-Up Lab Trophy!\nRescued Naoto Shirogane\n--------------------------\n~September 23rd~\n--------------------------\nDaytime\n-Quest 36: Carbon Copy, Part 2-\nTalk to Younger Twin at Samegawa Riverbank\nObtained 3 Macca Leaf\nQuest 36 Complete!\n-Quest 39: Acquire an Eternal Lamp-\nTalk to Refreshed Old Man at Samegawa Flood Plain\nObtained 30,000 Yen\nQuest 39 Complete!\n-Aeon Rank 7-\nAny options\nEvening\n-Justice Spend Time-\nWill become closer soon\n-------------------------\n~September 24th~\n-------------------------\nMorning\n-Lesson-\nKnowledge UP\nAfter School\n-Quest 44: Extracurricular Activities, Part 2-\nTalk to Ms. Sofue on Classroom Building 2F\nObtained 2 Mystical Scarab\nQuest 44 Complete!\n-Aeon Rank 8-\nAny options\nEvening\n-Read-\nRead Poly-land\n-------------------------\n~September 25th~\n-------------------------\nDaytime\n-TV Shopping-\nRecommend Diet Food\n-Death Rank 4-\nAny options\nEvening\n-Hierophant Rank 9-\nOption B, A\n-------------------------\n~September 26th~\n-------------------------\nAfter School\n-Sun Rank 7-\nOption B\nExpression UP\nEvening\n-Hierophant Spend Time-\nWill become closer soon\n--------------------------\n~September 27th~\n--------------------------\nAfter School\n-Quest 45: A Test of Literary Memory-\nTalk to Avid Reader at Shopping District South\nOption C, B, B, B\nObtained Who Am I?\nQuest 45 Complete!\n-Strength Rank 8-\nOption A, Any, A\nEvening\n-Fridge-\nCheck the fridge\n-Read-\nRead Poly-land\nDiligence GREATLY UP\nKnowledge GREATLY UP\nBook Finished!\n-------------------------\n~September 28th~\n-------------------------\nAfternoon\n-Lesson-\nYosuke: \"Hey, MC... Do you know the answer?\nOption C: \"Throat.\"\nMagician + 2 Points\nExpression UP\nAfter School\n-Moon Rank 4-\nOption A, A\nEvening\n-Devil Rank 9-\nAny options\nCourage UP\nCourage UP\nObtained 6,500 Yen\n-------------------------\n~September 29th~\n-------------------------\nLunchtime\n-Invite-\nSpend time with Ai\nAfter School\n-Moon Rank 5-\nOption A or B, B, A\nEvening\n-Hierophant Rank 10-\nPersona no longer needed\nObtained Coffee Mug\nNew fusion: Kohryu\n-------------------------\n~September 30th~\n-------------------------\nLunchtime\n-Invite-\nSpend time with Rise\nAfter School\n-Lovers Rank 9-\nOption C\nLovers Rank 9 or higher will have Rise block an attack that hits the whole party if someone would be KO'd once per battle\nEvening\n-Justice Rank 10-\nPersona no longer needed\nObtained Family Picture\nNew fusion: Sraosha\n---------------------------\n~Monthly Progress~\n---------------------------\nSocial Links\nArcana # | Social Link | Arcana | Status\n0 | Investigation Team | Fool | Rank 7\n1 | Yosuke Hanamura | Magician | Rank 8\n2 | Yukiko Amagi | Priestess | Rank MAX\n3 | Margaret | Empress | Rank 1\n4 | Kanji Tatsumi | Emperor | Rank 6\n5 | Ryotaro Dojima | Hierophant | Complete! Rank MAX\n6 | Rise Kujikawa | Lovers | Rank 9\n7 | Chie Satonaka | Chariot | Complete! Rank MAX\n8 | Nanako Dojima | Justice | Complete! Rank MAX\n9 | Fox | Hermit | Rank 9\n11 | Fellow Athletes | Strength | Rank 8\n12 | Saki's Brother | Hanged Man | Rank 6\n13 | Old Lady | Death | Rank 4\n14 | Young Mother | Temperance | Rank 5\n15 | Nurse | Devil | Rank 9\n17 | Teddie | Star | Rank 5\n18 | Ai Ebihara | Moon | Rank 5\n19 | Yumi Ozawa | Sun | Rank 7\n00 | Tohru Adachi | Jester | Rank 6\n20 | Marie | Aeon | Rank 8\nStatus Parameters\nStatus Parameter | Rank # | Rank\nCourage | MAX | Heroic\nDiligence | 4 | Thorough\nKnowledge | 4 | Professor\nExpression | MAX | Enthralling\nUnderstaning | MAX | Saintly\nQuests\nQuest # | Quest Name | Objective | Status\n1 | Who's the Riddle Master!? | Answer the riddles correctly | Finished\n2 | The Girl on the Rooftop | Ask about her hobbies | Finished\n3 | Acquire Mori Ranmaru Shochu | Give Mori Ranmaru shochu | Finished\n4 | Acquire an Angel Statue | Give Angel Statue | Finished\n5 | Acquire a Demon Statue | Give Demon Statue | Finished\n6 | Acquire a Ritz Wire | Give Ritz Wire | Finished\n7 | I Wish for Love | Give her confidence | Finished\n8 | I Wish I Didn't Crave Snacks | Give Meat Gum | Finished\n9 | We Wish Our Dog Would Return | Calm the dog down | Finished\n10 | I Wish I Had Friends | Give him some stickers | Finished\n11 | I Wish My Life Had Meaning Again | Make Unfinished Model | Finished\n12 | I Wish I Was Beetter at Speaking | Give her advice | Finished\n13 | I Wish I Didn't Fear Cats | Show him some cats | Finished\n14 | I Wish My Wallet Would Return | Find her wallet | Finished\n15 | The Shichiri Beach Guardian | Give Shichiri Guardian | Complete!\n16 | Desk Refurbishing | Give Fitting Board | Finished\n17 | Extracurricular Activities | Give Suspicious Pole | Finished\n18 | Book Exchange | Give Peach Seed | Finished\n19 | Tissue Distribution Agent | Give everyone tissues | Finished\n20 | Please Feed the Cat | Feed the cat | Finished\n21 | Feed the Cat | Feed the cat more | Finished\n22 | Cat Needs Food Badly | Feed the cat endlessly | In Progress\n23 | Acquire an Old Key | Give Old Key | Finished\n24 | Acquire Coal | Give Coal | Finished\n25 | 100% Inaba-Grown Cabbage | Give Hiranya Cabbage | Finished\n26 | Acquire a Crooked Cross | Give Crooked Cross | Finished\n27 | Acquire a Charmed Veil | Give Charmed Veil | Complete!\n28 | Desk Refurbishing, Part 2 | Give Reflecting Board | Finished\n29 | Acquire a Horn | Give Grand Horn | Finished\n30 | Please Find My Younger Twin | Find the twin | Finished\n31 | The Cleaning Club's Passion | Give cleaning cosplay | Finished\n32 | Acquire Inaba Trout | Give Inaba Trout | Finished\n33 | Acquire a Silver Lump | Give Silver Lump | Finished\n34 | Acquire Hard Boots | Give Hard Boots | Finished\n35 | Carbon Copy | Give Flower Brooch | Finished\n36 | Carbon Copy, Part 2 | Give Leaf Pochette | Complete!\n37 | Pining For Stylish Formalwear | Give Gentleman's Tux | Finished\n38 | Harvest Two Types of Corn | Give Tetracorn and Makaracorn | Finished\n39 | Acquire an Eternal Lamp | Give Eternal Lamp | Complete!\n40 | Acquire Some Fashionable Dishes | Give Fashionable Dishes | Finished\n41 | What Was That in the Movie? | Learn about OOPArts | Complete!\n42 | Riddle Senpai Returns! | Answer more riddles | Complete!\n43 | Experiments in Telepathy | Talk to the twins | Complete!\n44 | Extracurricular Activities, Part 2 | Give Culurium | Complete!\n45 | A Test of Literary Memory | Answer some questions | Complete!\n46 | Desk Refurbishing, Part 3 | Give Proof of Passion | Complete!\nBooks\nBook | Chapters | Status\nThe Lovely Man | 2 | Finished\nForever Macho | 2 | Not Started\nMan of History | 2 | Not Started\nMan-God | 2 | Not Started\nOff Today | 2 | Complete!\nShort on Cash | 2 | Complete!\nChanging Careers | 2 | Complete!\nSensei's Friends | 2 | Complete!\nThe O-Cha Way | 4 | Not Started\nThe Gentle Way | 4 | Finished\nThe Divine Way | 4 | Not Started\nThe Ramen Way | 4 | Not Started\nThe Punk's Way | 4 | Finished\nWitch Detective | 4 | Finished\nPoly-land | 4 | Complete!\nGuide to Pests | 4 | Not Started\nPicross Rules! | 4 | Complete!\nWho Am I? | 4 | Not Started\nExpert Study Methods | 3 | Finished\nEnglish Made Easy | 3 | Finished\n100 Ghost Stories | 3 | Finished\nOffice Work Manual | 3 | Not Started\nEasy Origami | 3 | Not Started\nFood Fight! | 3 | Not Started\nBeginner Fishing | 3 | Finished\nExpert Fishing | 3 | Finished\nCatching Bugs | 3 | 2 Chapters Left\nHome Gardening | 3 | Not Started\nHyperspeed Reading | 3 | Finished\nTrophies\nTrophy | Rarity | Objective | Status\nA Favor for Marie | Bronze | Register a Skill Card | Finished\nA Prince Appears (Secret Trophy) | Bronze | Rescue Yukiko Amagi | Finished\nA Special Lady | Bronze | Enter a special relationship with someone | Finished\nA True Bond | Bronze | Max out a Social Link | Finished\nA True Man's Stand (Secret Trophy) | Bronze | Rescue Kanji Tatsumi | Finished\nAdvantage Mine | Bronze | Enter a battle with Player Advantage | Finished\nAn Acquired Taste | Bronze | Drink the coffee at Chagall Cafe | Finished\nBoarded-Up Lab (Secret Trophy) | Bronze | Rescue Naoto Shirogane | Complete!\nBug Hunter | Bronze | Swing the net with perfect timing | Finished\nFashion Plate | Bronze | Fight a battle in costume | Finished\nFishing Master | Bronze | Catch the Sea Guardian | Complete!\nGame Over (Secret Trophy) | Bronze | Secure Mitsuo Kubo | Finished\nGoing Nova | Bronze | Deal over 999 damage in 1 attack | Complete!\nGranter of Your Desires | Bronze | Buy 5 things from Tanaka's Amazing Commodities | Finished\nGrasping at Greed | Bronze | Defeat a Golden Hand | Finished\nHead of the Class | Bronze | Rank #1 in your class on an exam | Finished\nLucky Me! | Bronze | Win a prize from the vending machine | Finished\nPersona Shopper | Bronze | Buy a Persona from the Compendium | Finished\nSeize the Moment | Bronze | Buy a special croquette from Souzai Daigaku | Finished\nSkilled Commander | Bronze | Perform 50 All-Out Attacks | Finished\nThe Lounge is Closed (Secret Trophy) | Bronze | Rescue Rise Kujikawa | Finished\nThe Other Self | Bronze | Obtain the Persona Izanagi | Finished"
+}

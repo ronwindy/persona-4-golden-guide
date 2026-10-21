@@ -1,0 +1,5650 @@
+{
+  "id": "skill-list-all-skills",
+  "title": "All Skills",
+  "chapter": "Skill List",
+  "chapter_id": "skill-list",
+  "anchor": "all-skills",
+  "type": "catalog",
+  "order": 123,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "This section lists every Skill, and what they do. The Skills here are sorted based on type. There is a separate sorting system used when changing Skills based on Shuffle Time or Fusion Forecast, however this sorting system isn't well known, so it won't be included in this guide. Here is the list of every Skill:"
+    },
+    {
+      "type": "p",
+      "text": "Legend",
+      "md": "**Legend**"
+    },
+    {
+      "type": "p",
+      "text": "Skill: Skill Name."
+    },
+    {
+      "type": "p",
+      "text": "Effect: Effect of Skill."
+    },
+    {
+      "type": "p",
+      "text": "Power: Stat used to calculate damage of Skill."
+    },
+    {
+      "type": "p",
+      "text": "Acc: Accuracy. Base percent chance of Skill landing."
+    },
+    {
+      "type": "p",
+      "text": "Crit: Base percent chance of Skill landing a critical hit. Only applies to Physical Skills."
+    },
+    {
+      "type": "p",
+      "text": "Cost: Cost to use Skill. All Skills cost SP, except Physical Skills cost HP."
+    },
+    {
+      "type": "p",
+      "text": "Exclusive: Skill exclusive to listed Persona or Party Member. Exclusive Skills can't be inherited through fusion."
+    },
+    {
+      "type": "p",
+      "text": "Enemy: Skill exclusive to listed enemy. Only applies to Enemy Exclusive Skills."
+    },
+    {
+      "type": "p",
+      "text": "How Skills Stack",
+      "md": "**How Skills Stack**"
+    },
+    {
+      "type": "p",
+      "text": "Some Skills are stronger versions of other Skills. Here is how they work:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Skills that increase stats for 3 turns (ex. Tarukaja) will extend the time the Skill is active if recast on the same ally/foe."
+        },
+        {
+          "text": "Auto-Ma Skills (ex. Auto-Matarukaja) takes priority over Auto Skills (ex. Auto-Tarukaja)."
+        },
+        {
+          "text": "Power Charge and Mind Charge cannot be cast on an ally/foe that already has that Skill in effect."
+        },
+        {
+          "text": "Counter, Counterstrike, High Counter, and accessories with the same effects do not stack. The strongest Skill/accessory takes priority."
+        },
+        {
+          "text": "Resist Skills (ex. Resist Fire, Null Fire, Repel Fire, Absorb Fire) and accessories with the same effects can cause overlap with a Personas innate affinity. Only one of these Skills, accessories, or innate affinities are used, and they follow the following priority: Drain/Absorb, Repel/Reflect, Nullify/Block, Resist/Strong, Blank or Weak."
+        },
+        {
+          "text": "If both Dodge and Evade Skills (ex. Dodge Fire, Evade Fire) or accessories are present, Evade takes priority."
+        },
+        {
+          "text": "Boost and Amp Skills (ex. Fire Boost, Fire Amp) and accessories with the same effects can stack. However, only two of these can stack at a time, and Skills will take priority over accessories."
+        },
+        {
+          "text": "Regenerate and Invigorate Skills can stack. However, Skills and accessories with the same effect not stack (ex. Mage's Mark and Invigorate 1 will only restore 3 SP per turn instead of 6 SP)."
+        },
+        {
+          "text": "Growth Skills do not stack. Priority is given to the strongest Skill."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Physical Skills",
+      "md": "**Physical Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Power",
+            "md": "**Power**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "Crit",
+            "md": "**Crit**"
+          },
+          {
+            "text": "Max. HP Cost",
+            "md": "**Max. HP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Bash"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": "6%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Cleave"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "65"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": "5%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Skewer"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": "5%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Sonic Punch"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "8%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Double Fangs"
+          },
+          {
+            "text": "2 hits of light damage to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "8%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Single Shot"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "8%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Arm Chopper"
+          },
+          {
+            "text": "2 hits of light damage to one foe, chance of Fear"
+          },
+          {
+            "text": "45"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "9%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Hysterical Slap"
+          },
+          {
+            "text": "2 hits of light damage to 1 foe, chance of Rage"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "9%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Poison Skewer"
+          },
+          {
+            "text": "Light damage to one foe, chance of Poison"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "9%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Skull Cracker"
+          },
+          {
+            "text": "Light damage to one foe, chance of Panic"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "9%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Muzzle Shot"
+          },
+          {
+            "text": "Light damage to one foe, chance of Silence"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "9%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Assault Dive"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": "10%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Twin Shot"
+          },
+          {
+            "text": "2 hits of light damage to one foe"
+          },
+          {
+            "text": "55"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "10%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Kill Rush"
+          },
+          {
+            "text": "1 to 3 hits of light damage to one foe"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "10%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Cell Breaker"
+          },
+          {
+            "text": "Light damage to one foe, chance of Enervation"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "10%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Brain Shake"
+          },
+          {
+            "text": "1 to 3 hits of light damage to one foe, chance of Exhaustion"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "12%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Power Slash"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "120"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Cruel Attack"
+          },
+          {
+            "text": "Medium damage to one foe, bonus damage if foe is Down"
+          },
+          {
+            "text": "120"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "35"
+          },
+          {
+            "text": "12%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fatal End"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "125"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Black Spot"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "130"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "35"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Poison Arrow"
+          },
+          {
+            "text": "Medium damage to one foe, chance of Poison"
+          },
+          {
+            "text": "130"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mighty Swing"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "135"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Torrent Shot"
+          },
+          {
+            "text": "2 to 3 hits of medium damage to one foe"
+          },
+          {
+            "text": "45"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "12%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Tempest Slash"
+          },
+          {
+            "text": "1 to 2 hits of heavy damage to one foe"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "15%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Heaven's Blade"
+          },
+          {
+            "text": "Heavy damage to one foe"
+          },
+          {
+            "text": "230"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "19%"
+          },
+          {
+            "text": "Michael, Metatron"
+          }
+        ],
+        [
+          {
+            "text": "Gigantic Fist"
+          },
+          {
+            "text": "Heavy damage to one foe"
+          },
+          {
+            "text": "330"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Vile Assault"
+          },
+          {
+            "text": "Heavy damage to one foe, bonus damage if foe is Down"
+          },
+          {
+            "text": "350"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Rainy Death"
+          },
+          {
+            "text": "Heavy damage to one foe, higher crit rate during Rain or Snow"
+          },
+          {
+            "text": "175"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "35"
+          },
+          {
+            "text": "20%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Brave Blade"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "700"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": "20%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "God's Hand"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "800"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "22%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Primal Force"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "1100"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "20%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Gale Slash"
+          },
+          {
+            "text": "Light damage to all foes"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "12%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Rampage"
+          },
+          {
+            "text": "1 to 3 hits of light damage to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "12%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Swift Strike"
+          },
+          {
+            "text": "1 to 2 hits of light damage to all foes"
+          },
+          {
+            "text": "65"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "12%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Hassou Tobi"
+          },
+          {
+            "text": "8 hits of light damage to all foes"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "24%"
+          },
+          {
+            "text": "Yoshitsune"
+          }
+        ],
+        [
+          {
+            "text": "Herculean Strike"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mind Slice"
+          },
+          {
+            "text": "Medium damage to all foes, chance of Panic"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Crazy Chain"
+          },
+          {
+            "text": "Medium damage to all foes, chance of Rage"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Seal Bomb"
+          },
+          {
+            "text": "Medium damage to all foes, chance of Silence"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "14%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Atom Smasher"
+          },
+          {
+            "text": "1 to 2 hits of medium damage to all foes, chance of Fear"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mustard Bomb"
+          },
+          {
+            "text": "Medium damage to all foes, chance of Enervation"
+          },
+          {
+            "text": "110"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Navas Nebula"
+          },
+          {
+            "text": "Medium damage to all foes, chance of Exhaustion"
+          },
+          {
+            "text": "110"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Heat Wave"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "125"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Blade of Fury"
+          },
+          {
+            "text": "2 to 4 hits of medium damage to all foes"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Aeon Rain"
+          },
+          {
+            "text": "1 to 3 hits of medium damage to all foes"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Virus Wave"
+          },
+          {
+            "text": "Heavy damage to all foes, chance of Poison"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Vicious Strike"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "140"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Deathbound"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "145"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "20%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Arrow Rain"
+          },
+          {
+            "text": "2 hits of heavy damage to all foes"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Blight"
+          },
+          {
+            "text": "Heavy damage to all foes, chance of Poison"
+          },
+          {
+            "text": "130"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "16%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Myriad Arrows"
+          },
+          {
+            "text": "1 to 3 hits of heavy damage to all foes"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "85"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "22%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Akasha Arts"
+          },
+          {
+            "text": "1 to 2 hits of heavy damage to all foes"
+          },
+          {
+            "text": "130"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "18%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Agneyastra"
+          },
+          {
+            "text": "1 to 3 hits of heavy damage to all foes"
+          },
+          {
+            "text": "120"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "24%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Vorpal Blade"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "25%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Pralaya"
+          },
+          {
+            "text": "Severe damage to all foes, 50% chance of instakill"
+          },
+          {
+            "text": "220"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "25%"
+          },
+          {
+            "text": "Shiva"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Fire Skills",
+      "md": "**Fire Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Power",
+            "md": "**Power**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Agi"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Maragi"
+          },
+          {
+            "text": "Light damage to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Agilao"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Maragion"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "16"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Agidyne"
+          },
+          {
+            "text": "Heavy damage to one foe"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Maragidyne"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ragnarok"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "Surt"
+          }
+        ],
+        [
+          {
+            "text": "Burning Petals"
+          },
+          {
+            "text": "Severe damage to all foes"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "34"
+          },
+          {
+            "text": "Yukiko"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Ice Skills",
+      "md": "**Ice Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Power",
+            "md": "**Power**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Bufu"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mabufu"
+          },
+          {
+            "text": "Light damage to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Bufula"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mabufula"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "16"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Bufudyne"
+          },
+          {
+            "text": "Heavy damage to one foe"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mabufudyne"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Niflheim"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "Loki"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Electric Skills",
+      "md": "**Electric Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Power",
+            "md": "**Power**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Zio"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mazio"
+          },
+          {
+            "text": "Light damage to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Zionga"
+          },
+          {
+            "text": "Medium damage to one foe"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mazionga"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "16"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ziodyne"
+          },
+          {
+            "text": "Heavy damage to one foe"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Maziodyne"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Thunder Reign"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "Thor"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Wind Skills",
+      "md": "**Wind Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Power",
+            "md": "**Power**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Garu"
+          },
+          {
+            "text": "Light damage to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Magaru"
+          },
+          {
+            "text": "Light damage to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Garula"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Magarula"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "16"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Garudyne"
+          },
+          {
+            "text": "Heavy damage to one foe"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Magarudyne"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Panta Rhei"
+          },
+          {
+            "text": "Severe damage to one foe"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "Odin"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Light Skills",
+      "md": "**Light Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Hama"
+          },
+          {
+            "text": "Low chance of instakill to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mahama"
+          },
+          {
+            "text": "Low chance of instakill to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Hamaon"
+          },
+          {
+            "text": "High chance of instakill to one foe"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mahamaon"
+          },
+          {
+            "text": "High chance of instakill to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "34"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Samsara"
+          },
+          {
+            "text": "Very high chance of instakill to all foes"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "44"
+          },
+          {
+            "text": "Daisoujou"
+          }
+        ],
+        [
+          {
+            "text": "God's Judgment"
+          },
+          {
+            "text": "Chance of reducing one foes HP by half"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "N/A"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Dark Skills",
+      "md": "**Dark Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Mudo"
+          },
+          {
+            "text": "Low chance of instakill to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mamudo"
+          },
+          {
+            "text": "Low chance of instakill to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mudoon"
+          },
+          {
+            "text": "High chance of instakill to one foe"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mamudoon"
+          },
+          {
+            "text": "High chance of instakill to all foes"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "34"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Die For Me!"
+          },
+          {
+            "text": "Very high chance of instakill to all foes"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "44"
+          },
+          {
+            "text": "Alice"
+          }
+        ],
+        [
+          {
+            "text": "Ghastly Wail"
+          },
+          {
+            "text": "Instakill all foes inflicted with Fear"
+          },
+          {
+            "text": "Guaranteed"
+          },
+          {
+            "text": "28"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Hell's Judgment"
+          },
+          {
+            "text": "Chance of reducing one foes HP by half"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "N/A"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Almighty Skills",
+      "md": "**Almighty Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Power",
+            "md": "**Power**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Life Drain"
+          },
+          {
+            "text": "Drain 30 HP from one foe"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Guaranteed"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Spirit Drain"
+          },
+          {
+            "text": "Drain 30 SP from one foe"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Guaranteed"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Foul Breath"
+          },
+          {
+            "text": "Doubles chance to inflict ailments and Light/Dark Skills to one foe for 3 turns"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Guaranteed"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Stagnant Air"
+          },
+          {
+            "text": "Doubles chance to inflict ailments and Light/Dark Skills to all foes for 3 turns"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Guaranteed"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Megido"
+          },
+          {
+            "text": "Medium damage to all foes"
+          },
+          {
+            "text": "120"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Megidola"
+          },
+          {
+            "text": "Heavy damage to all foes"
+          },
+          {
+            "text": "180"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "32"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Megidolaon"
+          },
+          {
+            "text": "Severe damage to all foes"
+          },
+          {
+            "text": "210"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Black Viper"
+          },
+          {
+            "text": "Massive damage to all foes"
+          },
+          {
+            "text": "220"
+          },
+          {
+            "text": "98"
+          },
+          {
+            "text": "64"
+          },
+          {
+            "text": "Satan"
+          }
+        ],
+        [
+          {
+            "text": "Morning Star"
+          },
+          {
+            "text": "Massive damage to all foes"
+          },
+          {
+            "text": "220"
+          },
+          {
+            "text": "95"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "Helel"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Ailment Skills",
+      "md": "**Ailment Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Acc",
+            "md": "**Acc**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Evil Touch"
+          },
+          {
+            "text": "Chance of Fear to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Evil Smile"
+          },
+          {
+            "text": "Chance of Fear to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Pulinpa"
+          },
+          {
+            "text": "Chance of Panic to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Tentarafoo"
+          },
+          {
+            "text": "Chance of Panic to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Poisma"
+          },
+          {
+            "text": "Chance of Poison to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Poison Mist"
+          },
+          {
+            "text": "Chance of Poison to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Balzac"
+          },
+          {
+            "text": "Chance of Rage to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Valiant Dance"
+          },
+          {
+            "text": "Chance of Rage to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Makajam"
+          },
+          {
+            "text": "Chance of Silence to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Foolish Whisper"
+          },
+          {
+            "text": "Chance of Silence to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Soul Break"
+          },
+          {
+            "text": "Chance of Exhaustion to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Anima Freeze"
+          },
+          {
+            "text": "Chance of Exhaustion to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Enervation"
+          },
+          {
+            "text": "Chance of Enervation to one foe"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Old One"
+          },
+          {
+            "text": "Chance of Enervation to all foes"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "The Man's Way"
+          },
+          {
+            "text": "Chance of Down and Dizzy to all foes"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "Kanji"
+          }
+        ],
+        [
+          {
+            "text": "Kamui Miracle"
+          },
+          {
+            "text": "One of the following occurs at random:\n1. All allies and/or foes fully recover HP and SP\n2. All allies and/or foes inflicted with Down\n3. All allies and/or foes inflicted with random ailment\n4. Nothing"
+          },
+          {
+            "text": "Guaranteed"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "Teddie"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Recovery Skills",
+      "md": "**Recovery Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Dia"
+          },
+          {
+            "text": "Slightly restores HP to one ally"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Media"
+          },
+          {
+            "text": "Slightly restores HP to all allies"
+          },
+          {
+            "text": "7"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Diarama"
+          },
+          {
+            "text": "Moderately restores HP to one ally"
+          },
+          {
+            "text": "6"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mediarama"
+          },
+          {
+            "text": "Moderately restores HP to all allies"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Diarahan"
+          },
+          {
+            "text": "Fully restores HP to one ally"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mediarahan"
+          },
+          {
+            "text": "Fully restores HP to all allies"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Recarm"
+          },
+          {
+            "text": "Revives one ally with 50% HP"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Samarecarm"
+          },
+          {
+            "text": "Revives one ally with full HP"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Patra"
+          },
+          {
+            "text": "Cures Rage, Fear, and Panic for one ally"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Me Patra"
+          },
+          {
+            "text": "Cures Rage, Fear, and Panic for all allies"
+          },
+          {
+            "text": "6"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Re Patra"
+          },
+          {
+            "text": "Cures Down and Dizzy for one ally"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Posumudi"
+          },
+          {
+            "text": "Cures Poison for one ally"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mutudi"
+          },
+          {
+            "text": "Cures Silence for one ally"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Nervundi"
+          },
+          {
+            "text": "Cures Exhaustion and Enervation for one ally"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Energy Shower"
+          },
+          {
+            "text": "Cures Exhaustion and Enervation for all allies"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Amrita"
+          },
+          {
+            "text": "Cures all ailments except Down for all allies"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Salvation"
+          },
+          {
+            "text": "Fully restores HP and cures all ailments except Down for all allies"
+          },
+          {
+            "text": "40"
+          },
+          {
+            "text": "N/A"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Support Skills",
+      "md": "**Support Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "SP Cost",
+            "md": "**SP Cost**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Tarukaja"
+          },
+          {
+            "text": "Increases damage dealt for 3 turns for one ally"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Matarukaja"
+          },
+          {
+            "text": "Increases damage dealt for 3 turns for all allies"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Tarunda"
+          },
+          {
+            "text": "Decreases damage dealt for 3 turns for one foe"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Matarunda"
+          },
+          {
+            "text": "Decreases damage dealt for 3 turns for one foe"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Rakukaja"
+          },
+          {
+            "text": "Decreases damage received for 3 turns for one ally"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Marakukaja"
+          },
+          {
+            "text": "Decreases damage received for 3 turns for all allies"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Rakunda"
+          },
+          {
+            "text": "Increases damage received for 3 turns for one foe"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Marakunda"
+          },
+          {
+            "text": "Increases damage received for 3 turns for all foes"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Sukukaja"
+          },
+          {
+            "text": "Increases Hit/Evasion rate for 3 turns for one ally"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Masukukaja"
+          },
+          {
+            "text": "Increases Hit/Evasion rate for 3 turns for all allies"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Sukunda"
+          },
+          {
+            "text": "Decreases Hit/Evasion rate for 3 turns for one foe"
+          },
+          {
+            "text": "12"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Masukunda"
+          },
+          {
+            "text": "Decreases Hit/Evasion rate for 3 turns for all foes"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Heat Riser"
+          },
+          {
+            "text": "Increases damage dealt, Hit/Evasion rate, and decreases damage received for 3 turns for one ally"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Debilitate"
+          },
+          {
+            "text": "Decreases damage dealt, Hit/Evasion rate, and increases damage received for 3 turns for one foe"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dekaja"
+          },
+          {
+            "text": "Removes stat bonuses on all foes"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dekunda"
+          },
+          {
+            "text": "Removes stat penalties on all allies"
+          },
+          {
+            "text": "10"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Rebellion"
+          },
+          {
+            "text": "Increases critical rate for 3 turns for one ally"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Revolution"
+          },
+          {
+            "text": "Increases critical rate for 3 turns for all allies and foes"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Power Charge"
+          },
+          {
+            "text": "Multiplies damage of next Physical attack by 250% for one ally"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mind Charge"
+          },
+          {
+            "text": "Multiplies damage of next Fire, Ice, Elec, Wind, or Almighty attack by 250% for one ally"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Red Wall"
+          },
+          {
+            "text": "Gives Fire resistance for 3 turns to one ally"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fire Break"
+          },
+          {
+            "text": "Removes Fire resistance from one foe"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "White Wall"
+          },
+          {
+            "text": "Gives Ice resistance for 3 turns to one ally"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ice Break"
+          },
+          {
+            "text": "Removes Ice resistance from one foe"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Blue Wall"
+          },
+          {
+            "text": "Gives Electric resistance for 3 turns to one ally"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Elec Break"
+          },
+          {
+            "text": "Removes Electric resistance from one foe"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Green Wall"
+          },
+          {
+            "text": "Gives Wind resistance for 3 turns to one ally"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Wind Break"
+          },
+          {
+            "text": "Removes Wind resistance from one foe"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Tetrakarn"
+          },
+          {
+            "text": "Gives a barrier that reflects Physical damage once to all allies"
+          },
+          {
+            "text": "36"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Tetra Break"
+          },
+          {
+            "text": "Removes Physical barriers from all foes"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Makarakarn"
+          },
+          {
+            "text": "Gives a barrier that reflects Fire, Ice, Elec, and Wind damage once to all allies"
+          },
+          {
+            "text": "36"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Makara Break"
+          },
+          {
+            "text": "Removes Fire/Ice/Elec/Wind barrier from all foes"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Tetraja"
+          },
+          {
+            "text": "Gives a barrier that nullifies instakill once to one ally"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Traesto"
+          },
+          {
+            "text": "Leave current dungeon, except during combat"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Youthful Wind"
+          },
+          {
+            "text": "Moderately restores HP and increases Hit/Evasion rate for 3 turns to all allies"
+          },
+          {
+            "text": "25"
+          },
+          {
+            "text": "Yosuke"
+          }
+        ],
+        [
+          {
+            "text": "Dragon Hustle"
+          },
+          {
+            "text": "Increases damage dealt, Hit/Evasion rate, and decreases damage received for 3 turns for all allies"
+          },
+          {
+            "text": "150"
+          },
+          {
+            "text": "Chie"
+          }
+        ],
+        [
+          {
+            "text": "Shield of Justice"
+          },
+          {
+            "text": "Gives a barrier that reflects all damage once to all allies"
+          },
+          {
+            "text": "160"
+          },
+          {
+            "text": "Naoto"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Passive Skills",
+      "md": "**Passive Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Counter"
+          },
+          {
+            "text": "10% chance of reflecting Physical attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Counterstrike"
+          },
+          {
+            "text": "15% chance of reflecting Physical attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "High Counter"
+          },
+          {
+            "text": "20% chance of reflecting Physical attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Sharp Student"
+          },
+          {
+            "text": "Decreases chance of receiving a critical hit"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Firm Stance"
+          },
+          {
+            "text": "Reduces all damage by half, unable to evade attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Physical"
+          },
+          {
+            "text": "Gives Physical resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Fire"
+          },
+          {
+            "text": "Gives Fire resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Ice"
+          },
+          {
+            "text": "Gives Ice resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Elec"
+          },
+          {
+            "text": "Gives Electric resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Wind"
+          },
+          {
+            "text": "Gives Wind resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Light"
+          },
+          {
+            "text": "Gives Light resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Dark"
+          },
+          {
+            "text": "Gives Dark resistance"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Physical"
+          },
+          {
+            "text": "Gives Physical immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Fire"
+          },
+          {
+            "text": "Gives Fire immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Ice"
+          },
+          {
+            "text": "Gives Ice immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Elec"
+          },
+          {
+            "text": "Gives Electric immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Wind"
+          },
+          {
+            "text": "Gives Wind immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Light"
+          },
+          {
+            "text": "Gives Light immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Dark"
+          },
+          {
+            "text": "Gives Dark immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Physical"
+          },
+          {
+            "text": "Reflects Physical attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Fire"
+          },
+          {
+            "text": "Reflects Fire attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Ice"
+          },
+          {
+            "text": "Reflects Ice attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Elec"
+          },
+          {
+            "text": "Reflects Electric attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Wind"
+          },
+          {
+            "text": "Reflects Wind attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Light"
+          },
+          {
+            "text": "Reflects Light attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Repel Dark"
+          },
+          {
+            "text": "Repels Dark attacks"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Absorb Physical"
+          },
+          {
+            "text": "Absorbs Physical damage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Absorb Fire"
+          },
+          {
+            "text": "Absorb Fire damage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Absorb Ice"
+          },
+          {
+            "text": "Absorb Ice damage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Absorb Elec"
+          },
+          {
+            "text": "Absorb Electric damage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Absorb Wind"
+          },
+          {
+            "text": "Absorb Wind damage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dodge Physical"
+          },
+          {
+            "text": "Doubles Physical evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dodge Fire"
+          },
+          {
+            "text": "Doubles Fire evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dodge Ice"
+          },
+          {
+            "text": "Doubles Ice evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dodge Elec"
+          },
+          {
+            "text": "Doubles Electricity evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dodge Wind"
+          },
+          {
+            "text": "Doubles Wind evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Evade Physical"
+          },
+          {
+            "text": "Triples Physical evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Evade Fire"
+          },
+          {
+            "text": "Triples Fire evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Evade Ice"
+          },
+          {
+            "text": "Triples Ice evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Evade Elec"
+          },
+          {
+            "text": "Triples Electric evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Evade Wind"
+          },
+          {
+            "text": "Triples Wind evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Angelic Grace"
+          },
+          {
+            "text": "Doubles Fire/Ice/Electric/Wind evasion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ali Dance"
+          },
+          {
+            "text": "Halves Hit rate of attacking foe"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Fear"
+          },
+          {
+            "text": "Reduces chance of getting hit with Fear"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Panic"
+          },
+          {
+            "text": "Reduces chance of getting hit with Panic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Poison"
+          },
+          {
+            "text": "Reduces chance of getting hit with Poison"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Rage"
+          },
+          {
+            "text": "Reduces chance of getting hit with Rage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Mute"
+          },
+          {
+            "text": "Reduces chance of getting hit with Silence"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Enervate"
+          },
+          {
+            "text": "Reduces chance of getting hit with Enervation"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Exhaust"
+          },
+          {
+            "text": "Reduces chance of getting hit with Exhaustion"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Resist Dizzy"
+          },
+          {
+            "text": "Reduces chance of getting hit with Dizzy"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Fear"
+          },
+          {
+            "text": "Gives Fear immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Panic"
+          },
+          {
+            "text": "Gives Panic immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Poison"
+          },
+          {
+            "text": "Gives Poison immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Rage"
+          },
+          {
+            "text": "Gives Rage immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Mute"
+          },
+          {
+            "text": "Gives Silence immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Enervate"
+          },
+          {
+            "text": "Gives Enervation immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Exhaust"
+          },
+          {
+            "text": "Gives Exhaustion immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Null Dizzy"
+          },
+          {
+            "text": "Gives Dizzy immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Unshaken Will"
+          },
+          {
+            "text": "Gives Fear/Rage/Panic/Silence/Enervation immunity"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fast Heal"
+          },
+          {
+            "text": "Halves ailment recovery time"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Insta-Heal"
+          },
+          {
+            "text": "Recover from ailments in 1 turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Apt Pupil"
+          },
+          {
+            "text": "Doubles critical rate"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fire Boost"
+          },
+          {
+            "text": "Increases Fire damage by 25%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fire Amp"
+          },
+          {
+            "text": "Increases Fire damage by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ice Boost"
+          },
+          {
+            "text": "Increases Ice damage by 25%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ice Amp"
+          },
+          {
+            "text": "Increases Ice damage by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Elec Boost"
+          },
+          {
+            "text": "Increases Electric damage by 25%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Elec Amp"
+          },
+          {
+            "text": "Increases Electric damage by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Wind Boost"
+          },
+          {
+            "text": "Increases Wind damage by 25%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Wind Amp"
+          },
+          {
+            "text": "Increases Wind damage by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Hama Boost"
+          },
+          {
+            "text": "Increases chance of Light instakill by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Mudo Boost"
+          },
+          {
+            "text": "Increases chance of Dark instakill by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fear Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Fear by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Panic Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Panic by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Poison Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Poison by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Rage Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Rage by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Silence Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Silence by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Enervate Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Enervation by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Exhaust Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Exhaustion by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Dizzy Boost"
+          },
+          {
+            "text": "Increases chance of inflicting Dizzy by 50%"
+          },
+          {
+            "text": "Kanji"
+          }
+        ],
+        [
+          {
+            "text": "Ailment Boost"
+          },
+          {
+            "text": "Increases chance of inflicting all ailments by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Alertness"
+          },
+          {
+            "text": "Reduces chance of an enemy advantage"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Tarukaja"
+          },
+          {
+            "text": "Start battles with Tarukaja"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Mataru"
+          },
+          {
+            "text": "Start battles with Matarukaja"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Rakukaja"
+          },
+          {
+            "text": "Start battles with Rakukaja"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Maraku"
+          },
+          {
+            "text": "Start battles with Marakukaja"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Sukukaja"
+          },
+          {
+            "text": "Start battles with Sukukaja"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Auto-Masuku"
+          },
+          {
+            "text": "Start battles with Masukukaja"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Survive Light"
+          },
+          {
+            "text": "50% of surviving Light instakill with 1 HP once per battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Survive Dark"
+          },
+          {
+            "text": "50% of surviving Dark instakill with 1 HP once per battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Endure Light"
+          },
+          {
+            "text": "Survive Light instakill with 1 HP once per battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Endure Dark"
+          },
+          {
+            "text": "Survive Dark instakill with 1 HP once per battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Endure"
+          },
+          {
+            "text": "Survive KO with 1 HP once per battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Enduring Soul"
+          },
+          {
+            "text": "Survive KO and restore all HP once per battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Arms Master"
+          },
+          {
+            "text": "Halves HP cost of Physical Skills"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Spell Master"
+          },
+          {
+            "text": "Halves SP cost of all Skills except Physical"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Divine Grace"
+          },
+          {
+            "text": "Increases healing Skills by 50%"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Regenerate 1"
+          },
+          {
+            "text": "Restores 2% of Max HP every turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Regenerate 2"
+          },
+          {
+            "text": "Restores 4% of Max HP every turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Regenerate 3"
+          },
+          {
+            "text": "Restores 6% of Max HP every turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Invigorate 1"
+          },
+          {
+            "text": "Restores 3 SP every turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Invigorate 2"
+          },
+          {
+            "text": "Restores 5 SP every turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Invigorate 3"
+          },
+          {
+            "text": "Restores 7 SP every turn"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Growth 1"
+          },
+          {
+            "text": "Persona gains 25% of Exp while inactive"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Growth 2"
+          },
+          {
+            "text": "Persona gains 50% of Exp while inactive"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Growth 3"
+          },
+          {
+            "text": "Persona gains 100% of Exp while inactive"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Cool Breeze"
+          },
+          {
+            "text": "Recover 8% of Max HP and Max SP after battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Victory Cry"
+          },
+          {
+            "text": "Recover all HP and SP after battle"
+          },
+          {
+            "text": "N/A"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Navigator Skills",
+      "md": "**Navigator Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Exclusive",
+            "md": "**Exclusive**"
+          }
+        ],
+        [
+          {
+            "text": "Analysis"
+          },
+          {
+            "text": "Keeps track of enemy stats and affinities"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Full Analysis"
+          },
+          {
+            "text": "Keeps track of enemy stats, skills, and affinities"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Complete Analysis"
+          },
+          {
+            "text": "Keeps track of enemy stats, skills, and all affinities"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Weakness Scan"
+          },
+          {
+            "text": "Chance to reveal an enemy weakness or resistance"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Third Eye"
+          },
+          {
+            "text": "Shows an icon for Null/Reflect/Absorb when targeting a foe"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Certain Escape"
+          },
+          {
+            "text": "Guaranteed to immediately escape battle if possible"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Treasure Radar"
+          },
+          {
+            "text": "Shows location of treasure chests on map"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Enemy Radar"
+          },
+          {
+            "text": "Shows location of nearby Shadows on map"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Healing Wave"
+          },
+          {
+            "text": "Recover 5% of Max HP for all allies"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Stamina Song"
+          },
+          {
+            "text": "Recover 10% of Max HP for all allies"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Relaxing Wave"
+          },
+          {
+            "text": "Recover 5% of Max SP for all allies"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "Vigor Song"
+          },
+          {
+            "text": "Recover 10% of Max SP for all allies"
+          },
+          {
+            "text": "Rise"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Enemy Exclusive Skills",
+      "md": "**Enemy Exclusive Skills**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Skill",
+            "md": "**Skill**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          }
+        ],
+        [
+          {
+            "text": "Last Resort"
+          },
+          {
+            "text": "Sacrifice self to deal medium to heavy Almighty damage to all foes"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Spirit Leech"
+          },
+          {
+            "text": "Drain 100 SP from one foe"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Galgalim Eyes"
+          },
+          {
+            "text": "Reduces one foe's health to 1 HP, chance of Enervation"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Recarmdra"
+          },
+          {
+            "text": "Sacrifice self to heal all allies"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Summon"
+          },
+          {
+            "text": "Summon an ally"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Wind of Oblivion"
+          },
+          {
+            "text": "Scaling Wind damage to one foe"
+          },
+          {
+            "text": "Shadow Yosuke"
+          }
+        ],
+        [
+          {
+            "text": "Bottomless Envy"
+          },
+          {
+            "text": "Scaling Physical damage to one foe, inflicts Dizzy"
+          },
+          {
+            "text": "Shadow Chie"
+          }
+        ],
+        [
+          {
+            "text": "Burn to Ashes"
+          },
+          {
+            "text": "Medium Fire damage to all foes"
+          },
+          {
+            "text": "Shadow Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "Terror Voice"
+          },
+          {
+            "text": "Chance of Fear to all foes"
+          },
+          {
+            "text": "Shadow Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "Shivering Rondo"
+          },
+          {
+            "text": "Heavy Almighty damage to a foe inflicted with Fear"
+          },
+          {
+            "text": "Shadow Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "Forbidden Murmur"
+          },
+          {
+            "text": "Inflicts Poison on Male foes"
+          },
+          {
+            "text": "Shadow Kanji"
+          }
+        ],
+        [
+          {
+            "text": "Roar of Wrath"
+          },
+          {
+            "text": "Inflicts Rage on Female foes"
+          },
+          {
+            "text": "Shadow Kanji"
+          }
+        ],
+        [
+          {
+            "text": "Fanatical Spark"
+          },
+          {
+            "text": "Medium Electric damage to all foes"
+          },
+          {
+            "text": "Shadow Kanji"
+          }
+        ],
+        [
+          {
+            "text": "Supreme Insight"
+          },
+          {
+            "text": "All foes will always miss attacks"
+          },
+          {
+            "text": "Shadow Rise"
+          }
+        ],
+        [
+          {
+            "text": "Nihil Hand"
+          },
+          {
+            "text": "Heavy Almighty damage to all foes, chance of Down"
+          },
+          {
+            "text": "Shadow Teddie"
+          }
+        ],
+        [
+          {
+            "text": "Ultra Charge"
+          },
+          {
+            "text": "Charges Nihil Hand"
+          },
+          {
+            "text": "Shadow Teddie"
+          }
+        ],
+        [
+          {
+            "text": "Nullity Guidance"
+          },
+          {
+            "text": "Medium Almighty damage to one foe, chance of Dizzy"
+          },
+          {
+            "text": "Shadow Teddie"
+          }
+        ],
+        [
+          {
+            "text": "Character Setup"
+          },
+          {
+            "text": "Constructs Hero"
+          },
+          {
+            "text": "Shadow Mitsuo"
+          }
+        ],
+        [
+          {
+            "text": "Whisper"
+          },
+          {
+            "text": "Starts construction of Hero"
+          },
+          {
+            "text": "Shadow Mitsuo"
+          }
+        ],
+        [
+          {
+            "text": "Chant"
+          },
+          {
+            "text": "Continues construction of Hero"
+          },
+          {
+            "text": "Shadow Mitsuo"
+          }
+        ],
+        [
+          {
+            "text": "Prayer"
+          },
+          {
+            "text": "Completes construction of Hero"
+          },
+          {
+            "text": "Shadow Mitsuo"
+          }
+        ],
+        [
+          {
+            "text": "Command"
+          },
+          {
+            "text": "Hero uses one of following:\nAttack: Medium Almighty damage to one foe\nBomb: Medium Almighty damage to one foe, chance of Enervation\nSpell: Medium Almighty damage to all foes"
+          },
+          {
+            "text": "Shadow Mitsuo"
+          }
+        ],
+        [
+          {
+            "text": "Element Zero"
+          },
+          {
+            "text": "Removes all elemental resistances for 3 turns"
+          },
+          {
+            "text": "Shadow Naoto"
+          }
+        ],
+        [
+          {
+            "text": "Mute Ray"
+          },
+          {
+            "text": "Medium Almighty damage, drains 50 SP, inflicts Silence"
+          },
+          {
+            "text": "Shadow Naoto"
+          }
+        ],
+        [
+          {
+            "text": "Quad Converge"
+          },
+          {
+            "text": "Increases damage of random elements and decreases damage of all other elements for all allies and foes"
+          },
+          {
+            "text": "Kunino-Sagiri"
+          }
+        ],
+        [
+          {
+            "text": "Control"
+          },
+          {
+            "text": "Control 1-3 foes"
+          },
+          {
+            "text": "Kunino-Sagiri"
+          }
+        ],
+        [
+          {
+            "text": "Unerring Justice"
+          },
+          {
+            "text": "Massive Almighty damage to all foes"
+          },
+          {
+            "text": "Kunino-Sagiri"
+          }
+        ],
+        [
+          {
+            "text": "Nebula Oculus"
+          },
+          {
+            "text": "Heavy Almighty damage to all foes"
+          },
+          {
+            "text": "Ameno-Sagiri"
+          }
+        ],
+        [
+          {
+            "text": "Quake"
+          },
+          {
+            "text": "Heavy Almighty damage to all foes, chance of Down"
+          },
+          {
+            "text": "Ameno-Sagiri"
+          }
+        ],
+        [
+          {
+            "text": "Bewildering Fog"
+          },
+          {
+            "text": "All foes will always miss attacks until move is used again"
+          },
+          {
+            "text": "Ameno-Sagiri"
+          }
+        ],
+        [
+          {
+            "text": "World's End"
+          },
+          {
+            "text": "Heavy Almighty damage to all foes, chance of Enervation"
+          },
+          {
+            "text": "Izanami-No-Okami"
+          }
+        ],
+        [
+          {
+            "text": "Fury of Yasogami"
+          },
+          {
+            "text": "Heavy Almighty damage to all foes"
+          },
+          {
+            "text": "Izanami-No-Okami"
+          }
+        ],
+        [
+          {
+            "text": "Summons To Yomi"
+          },
+          {
+            "text": "Instakill all foes inflicted with an ailment"
+          },
+          {
+            "text": "Izanami-No-Okami"
+          }
+        ],
+        [
+          {
+            "text": "Kuro Ikazuchi"
+          },
+          {
+            "text": "Heavy Almighty damage to all foes"
+          },
+          {
+            "text": "Izanami-No-Okami"
+          }
+        ],
+        [
+          {
+            "text": "Thousand Curses"
+          },
+          {
+            "text": "Removes one foe from battle"
+          },
+          {
+            "text": "Izanami-No-Okami"
+          }
+        ],
+        [
+          {
+            "text": "Oho Ikazuchi"
+          },
+          {
+            "text": "Deals 999 Almighty damage to all foes"
+          },
+          {
+            "text": "Izanami-No-Okami"
+          }
+        ],
+        [
+          {
+            "text": "Shell of Denial"
+          },
+          {
+            "text": "Reflects all attacks"
+          },
+          {
+            "text": "Marie"
+          }
+        ],
+        [
+          {
+            "text": "Hot Lightning"
+          },
+          {
+            "text": "Heavy Almighty damage to two random foes, chance of Dizzy"
+          },
+          {
+            "text": "Marie"
+          }
+        ],
+        [
+          {
+            "text": "Ragnarok"
+          },
+          {
+            "text": "Heavy Fire damage to one foe"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Prominence"
+          },
+          {
+            "text": "Heavy Fire damage to all foes"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Niflheim"
+          },
+          {
+            "text": "Heavy Ice damage to one foe"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Cocytus Pain"
+          },
+          {
+            "text": "Heavy Ice damage to all foes"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Thunder Reign"
+          },
+          {
+            "text": "Heavy Electric damage to one foe"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Jihad"
+          },
+          {
+            "text": "Heavy Electric damage to all foes"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Panta Rhei"
+          },
+          {
+            "text": "Heavy Wind damage to one foe"
+          },
+          {
+            "text": "Margaret"
+          }
+        ],
+        [
+          {
+            "text": "Divine Vacuum"
+          },
+          {
+            "text": "Heavy Wind damage to all foes"
+          },
+          {
+            "text": "Margaret"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "This section lists every Skill, and what they do. The Skills here are sorted based on type. There is a separate sorting system used when changing Skills based on Shuffle Time or Fusion Forecast, however this sorting system isn't well known, so it won't be included in this guide. Here is the list of every Skill:\nLegend\nSkill: Skill Name.\nEffect: Effect of Skill.\nPower: Stat used to calculate damage of Skill.\nAcc: Accuracy. Base percent chance of Skill landing.\nCrit: Base percent chance of Skill landing a critical hit. Only applies to Physical Skills.\nCost: Cost to use Skill. All Skills cost SP, except Physical Skills cost HP.\nExclusive: Skill exclusive to listed Persona or Party Member. Exclusive Skills can't be inherited through fusion.\nEnemy: Skill exclusive to listed enemy. Only applies to Enemy Exclusive Skills.\nHow Skills Stack\nSome Skills are stronger versions of other Skills. Here is how they work:\nSkills that increase stats for 3 turns (ex. Tarukaja) will extend the time the Skill is active if recast on the same ally/foe.\nAuto-Ma Skills (ex. Auto-Matarukaja) takes priority over Auto Skills (ex. Auto-Tarukaja).\nPower Charge and Mind Charge cannot be cast on an ally/foe that already has that Skill in effect.\nCounter, Counterstrike, High Counter, and accessories with the same effects do not stack. The strongest Skill/accessory takes priority.\nResist Skills (ex. Resist Fire, Null Fire, Repel Fire, Absorb Fire) and accessories with the same effects can cause overlap with a Personas innate affinity. Only one of these Skills, accessories, or innate affinities are used, and they follow the following priority: Drain/Absorb, Repel/Reflect, Nullify/Block, Resist/Strong, Blank or Weak.\nIf both Dodge and Evade Skills (ex. Dodge Fire, Evade Fire) or accessories are present, Evade takes priority.\nBoost and Amp Skills (ex. Fire Boost, Fire Amp) and accessories with the same effects can stack. However, only two of these can stack at a time, and Skills will take priority over accessories.\nRegenerate and Invigorate Skills can stack. However, Skills and accessories with the same effect not stack (ex. Mage's Mark and Invigorate 1 will only restore 3 SP per turn instead of 6 SP).\nGrowth Skills do not stack. Priority is given to the strongest Skill.\nPhysical Skills\nSkill | Effect | Power | Acc | Crit | Max. HP Cost | Exclusive\nBash | Light damage to one foe | 60 | 100 | 20 | 6% | N/A\nCleave | Light damage to one foe | 65 | 100 | 20 | 5% | N/A\nSkewer | Light damage to one foe | 70 | 85 | 20 | 5% | N/A\nSonic Punch | Light damage to one foe | 75 | 90 | 25 | 8% | N/A\nDouble Fangs | 2 hits of light damage to one foe | 40 | 90 | 15 | 8% | N/A\nSingle Shot | Light damage to one foe | 85 | 90 | 25 | 8% | N/A\nArm Chopper | 2 hits of light damage to one foe, chance of Fear | 45 | 90 | 5 | 9% | N/A\nHysterical Slap | 2 hits of light damage to 1 foe, chance of Rage | 50 | 90 | 5 | 9% | N/A\nPoison Skewer | Light damage to one foe, chance of Poison | 60 | 90 | 5 | 9% | N/A\nSkull Cracker | Light damage to one foe, chance of Panic | 60 | 90 | 5 | 9% | N/A\nMuzzle Shot | Light damage to one foe, chance of Silence | 60 | 90 | 5 | 9% | N/A\nAssault Dive | Light damage to one foe | 100 | 90 | 20 | 10% | N/A\nTwin Shot | 2 hits of light damage to one foe | 55 | 90 | 10 | 10% | N/A\nKill Rush | 1 to 3 hits of light damage to one foe | 50 | 90 | 10 | 10% | N/A\nCell Breaker | Light damage to one foe, chance of Enervation | 80 | 90 | 5 | 10% | N/A\nBrain Shake | 1 to 3 hits of light damage to one foe, chance of Exhaustion | 80 | 90 | 5 | 12% | N/A\nPower Slash | Medium damage to one foe | 120 | 80 | 25 | 14% | N/A\nCruel Attack | Medium damage to one foe, bonus damage if foe is Down | 120 | 90 | 35 | 12% | N/A\nFatal End | Medium damage to one foe | 125 | 90 | 20 | 14% | N/A\nBlack Spot | Medium damage to one foe | 130 | 80 | 35 | 16% | N/A\nPoison Arrow | Medium damage to one foe, chance of Poison | 130 | 85 | 5 | 14% | N/A\nMighty Swing | Medium damage to one foe | 135 | 90 | 30 | 14% | N/A\nTorrent Shot | 2 to 3 hits of medium damage to one foe | 45 | 90 | 8 | 12% | N/A\nTempest Slash | 1 to 2 hits of heavy damage to one foe | 90 | 85 | 10 | 15% | N/A\nHeaven's Blade | Heavy damage to one foe | 230 | 90 | 30 | 19% | Michael, Metatron\nGigantic Fist | Heavy damage to one foe | 330 | 90 | 25 | 16% | N/A\nVile Assault | Heavy damage to one foe, bonus damage if foe is Down | 350 | 95 | 5 | 18% | N/A\nRainy Death | Heavy damage to one foe, higher crit rate during Rain or Snow | 175 | 85 | 35 | 20% | N/A\nBrave Blade | Severe damage to one foe | 700 | 90 | 20 | 20% | N/A\nGod's Hand | Severe damage to one foe | 800 | 90 | 15 | 22% | N/A\nPrimal Force | Severe damage to one foe | 1100 | 90 | 25 | 20% | N/A\nGale Slash | Light damage to all foes | 80 | 85 | 5 | 12% | N/A\nRampage | 1 to 3 hits of light damage to all foes | 40 | 75 | 5 | 12% | N/A\nSwift Strike | 1 to 2 hits of light damage to all foes | 65 | 80 | 5 | 12% | N/A\nHassou Tobi | 8 hits of light damage to all foes | 60 | 75 | 5 | 24% | Yoshitsune\nHerculean Strike | Medium damage to all foes | 90 | 80 | 5 | 16% | N/A\nMind Slice | Medium damage to all foes, chance of Panic | 90 | 80 | 5 | 14% | N/A\nCrazy Chain | Medium damage to all foes, chance of Rage | 90 | 80 | 5 | 14% | N/A\nSeal Bomb | Medium damage to all foes, chance of Silence | 90 | 80 | 5 | 14% | N/A\nAtom Smasher | 1 to 2 hits of medium damage to all foes, chance of Fear | 50 | 80 | 5 | 16% | N/A\nMustard Bomb | Medium damage to all foes, chance of Enervation | 110 | 80 | 5 | 16% | N/A\nNavas Nebula | Medium damage to all foes, chance of Exhaustion | 110 | 80 | 5 | 18% | N/A\nHeat Wave | Medium damage to all foes | 125 | 75 | 5 | 16% | N/A\nBlade of Fury | 2 to 4 hits of medium damage to all foes | 50 | 90 | 5 | 18% | N/A\nAeon Rain | 1 to 3 hits of medium damage to all foes | 70 | 75 | 5 | 18% | N/A\nVirus Wave | Heavy damage to all foes, chance of Poison | 90 | 80 | 5 | 16% | N/A\nVicious Strike | Heavy damage to all foes | 140 | 90 | 5 | 18% | N/A\nDeathbound | Heavy damage to all foes | 145 | 80 | 5 | 20% | N/A\nArrow Rain | 2 hits of heavy damage to all foes | 80 | 75 | 5 | 18% | N/A\nBlight | Heavy damage to all foes, chance of Poison | 130 | 80 | 5 | 16% | N/A\nMyriad Arrows | 1 to 3 hits of heavy damage to all foes | 75 | 85 | 5 | 22% | N/A\nAkasha Arts | 1 to 2 hits of heavy damage to all foes | 130 | 80 | 5 | 18% | N/A\nAgneyastra | 1 to 3 hits of heavy damage to all foes | 120 | 75 | 5 | 24% | N/A\nVorpal Blade | Heavy damage to all foes | 200 | 80 | 5 | 25% | N/A\nPralaya | Severe damage to all foes, 50% chance of instakill | 220 | 80 | 5 | 25% | Shiva\nFire Skills\nSkill | Effect | Power | Acc | SP Cost | Exclusive\nAgi | Light damage to one foe | 40 | 98 | 4 | N/A\nMaragi | Light damage to all foes | 40 | 95 | 10 | N/A\nAgilao | Medium damage to one foe | 100 | 98 | 8 | N/A\nMaragion | Medium damage to all foes | 100 | 95 | 16 | N/A\nAgidyne | Heavy damage to one foe | 160 | 98 | 12 | N/A\nMaragidyne | Heavy damage to all foes | 160 | 95 | 22 | N/A\nRagnarok | Severe damage to one foe | 200 | 98 | 48 | Surt\nBurning Petals | Severe damage to all foes | 200 | 95 | 34 | Yukiko\nIce Skills\nSkill | Effect | Power | Acc | SP Cost | Exclusive\nBufu | Light damage to one foe | 40 | 98 | 4 | N/A\nMabufu | Light damage to all foes | 40 | 95 | 10 | N/A\nBufula | Medium damage to one foe | 100 | 98 | 8 | N/A\nMabufula | Medium damage to all foes | 100 | 95 | 16 | N/A\nBufudyne | Heavy damage to one foe | 160 | 98 | 12 | N/A\nMabufudyne | Heavy damage to all foes | 160 | 95 | 22 | N/A\nNiflheim | Severe damage to one foe | 200 | 98 | 48 | Loki\nElectric Skills\nSkill | Effect | Power | Acc | SP Cost | Exclusive\nZio | Light damage to one foe | 40 | 98 | 4 | N/A\nMazio | Light damage to all foes | 40 | 95 | 10 | N/A\nZionga | Medium damage to one foe | 100 | 98 | 8 | N/A\nMazionga | Medium damage to all foes | 100 | 95 | 16 | N/A\nZiodyne | Heavy damage to one foe | 160 | 98 | 12 | N/A\nMaziodyne | Heavy damage to all foes | 160 | 95 | 22 | N/A\nThunder Reign | Severe damage to one foe | 200 | 98 | 48 | Thor\nWind Skills\nSkill | Effect | Power | Acc | SP Cost | Exclusive\nGaru | Light damage to one foe | 40 | 98 | 4 | N/A\nMagaru | Light damage to all foes | 40 | 95 | 10 | N/A\nGarula | Medium damage to all foes | 100 | 98 | 8 | N/A\nMagarula | Medium damage to all foes | 100 | 95 | 16 | N/A\nGarudyne | Heavy damage to one foe | 160 | 98 | 12 | N/A\nMagarudyne | Heavy damage to all foes | 160 | 95 | 22 | N/A\nPanta Rhei | Severe damage to one foe | 200 | 98 | 48 | Odin\nLight Skills\nSkill | Effect | Acc | SP Cost | Exclusive\nHama | Low chance of instakill to one foe | 40 | 8 | N/A\nMahama | Low chance of instakill to all foes | 30 | 18 | N/A\nHamaon | High chance of instakill to one foe | 60 | 15 | N/A\nMahamaon | High chance of instakill to all foes | 40 | 34 | N/A\nSamsara | Very high chance of instakill to all foes | 60 | 44 | Daisoujou\nGod's Judgment | Chance of reducing one foes HP by half | ? | 48 | N/A\nDark Skills\nSkill | Effect | Acc | SP Cost | Exclusive\nMudo | Low chance of instakill to one foe | 40 | 8 | N/A\nMamudo | Low chance of instakill to all foes | 30 | 18 | N/A\nMudoon | High chance of instakill to one foe | 60 | 15 | N/A\nMamudoon | High chance of instakill to all foes | 40 | 34 | N/A\nDie For Me! | Very high chance of instakill to all foes | 60 | 44 | Alice\nGhastly Wail | Instakill all foes inflicted with Fear | Guaranteed | 28 | N/A\nHell's Judgment | Chance of reducing one foes HP by half | ? | 48 | N/A\nAlmighty Skills\nSkill | Effect | Power | Acc | SP Cost | Exclusive\nLife Drain | Drain 30 HP from one foe | N/A | Guaranteed | 3 | N/A\nSpirit Drain | Drain 30 SP from one foe | N/A | Guaranteed | 3 | N/A\nFoul Breath | Doubles chance to inflict ailments and Light/Dark Skills to one foe for 3 turns | N/A | Guaranteed | 5 | N/A\nStagnant Air | Doubles chance to inflict ailments and Light/Dark Skills to all foes for 3 turns | N/A | Guaranteed | 8 | N/A\nMegido | Medium damage to all foes | 120 | 95 | 18 | N/A\nMegidola | Heavy damage to all foes | 180 | 95 | 32 | N/A\nMegidolaon | Severe damage to all foes | 210 | 95 | 60 | N/A\nBlack Viper | Massive damage to all foes | 220 | 98 | 64 | Satan\nMorning Star | Massive damage to all foes | 220 | 95 | 72 | Helel\nAilment Skills\nSkill | Effect | Acc | SP Cost | Exclusive\nEvil Touch | Chance of Fear to one foe | 40 | 5 | N/A\nEvil Smile | Chance of Fear to all foes | 30 | 12 | N/A\nPulinpa | Chance of Panic to one foe | 40 | 5 | N/A\nTentarafoo | Chance of Panic to all foes | 30 | 12 | N/A\nPoisma | Chance of Poison to one foe | 40 | 5 | N/A\nPoison Mist | Chance of Poison to all foes | 30 | 12 | N/A\nBalzac | Chance of Rage to one foe | 40 | 5 | N/A\nValiant Dance | Chance of Rage to all foes | 30 | 12 | N/A\nMakajam | Chance of Silence to one foe | 40 | 5 | N/A\nFoolish Whisper | Chance of Silence to all foes | 30 | 12 | N/A\nSoul Break | Chance of Exhaustion to one foe | 40 | 5 | N/A\nAnima Freeze | Chance of Exhaustion to all foes | 30 | 12 | N/A\nEnervation | Chance of Enervation to one foe | 40 | 5 | N/A\nOld One | Chance of Enervation to all foes | 30 | 12 | N/A\nThe Man's Way | Chance of Down and Dizzy to all foes | ? | 30 | Kanji\nKamui Miracle | One of the following occurs at random: / 1. All allies and/or foes fully recover HP and SP / 2. All allies and/or foes inflicted with Down / 3. All allies and/or foes inflicted with random ailment / 4. Nothing | Guaranteed | 25 | Teddie\nRecovery Skills\nSkill | Effect | SP Cost | Exclusive\nDia | Slightly restores HP to one ally | 3 | N/A\nMedia | Slightly restores HP to all allies | 7 | N/A\nDiarama | Moderately restores HP to one ally | 6 | N/A\nMediarama | Moderately restores HP to all allies | 12 | N/A\nDiarahan | Fully restores HP to one ally | 18 | N/A\nMediarahan | Fully restores HP to all allies | 30 | N/A\nRecarm | Revives one ally with 50% HP | 8 | N/A\nSamarecarm | Revives one ally with full HP | 18 | N/A\nPatra | Cures Rage, Fear, and Panic for one ally | 3 | N/A\nMe Patra | Cures Rage, Fear, and Panic for all allies | 6 | N/A\nRe Patra | Cures Down and Dizzy for one ally | 3 | N/A\nPosumudi | Cures Poison for one ally | 3 | N/A\nMutudi | Cures Silence for one ally | 3 | N/A\nNervundi | Cures Exhaustion and Enervation for one ally | 3 | N/A\nEnergy Shower | Cures Exhaustion and Enervation for all allies | 18 | N/A\nAmrita | Cures all ailments except Down for all allies | 12 | N/A\nSalvation | Fully restores HP and cures all ailments except Down for all allies | 40 | N/A\nSupport Skills\nSkill | Effect | SP Cost | Exclusive\nTarukaja | Increases damage dealt for 3 turns for one ally | 12 | N/A\nMatarukaja | Increases damage dealt for 3 turns for all allies | 24 | N/A\nTarunda | Decreases damage dealt for 3 turns for one foe | 12 | N/A\nMatarunda | Decreases damage dealt for 3 turns for one foe | 24 | N/A\nRakukaja | Decreases damage received for 3 turns for one ally | 12 | N/A\nMarakukaja | Decreases damage received for 3 turns for all allies | 24 | N/A\nRakunda | Increases damage received for 3 turns for one foe | 12 | N/A\nMarakunda | Increases damage received for 3 turns for all foes | 24 | N/A\nSukukaja | Increases Hit/Evasion rate for 3 turns for one ally | 12 | N/A\nMasukukaja | Increases Hit/Evasion rate for 3 turns for all allies | 24 | N/A\nSukunda | Decreases Hit/Evasion rate for 3 turns for one foe | 12 | N/A\nMasukunda | Decreases Hit/Evasion rate for 3 turns for all foes | 24 | N/A\nHeat Riser | Increases damage dealt, Hit/Evasion rate, and decreases damage received for 3 turns for one ally | 30 | N/A\nDebilitate | Decreases damage dealt, Hit/Evasion rate, and increases damage received for 3 turns for one foe | 30 | N/A\nDekaja | Removes stat bonuses on all foes | 10 | N/A\nDekunda | Removes stat penalties on all allies | 10 | N/A\nRebellion | Increases critical rate for 3 turns for one ally | 5 | N/A\nRevolution | Increases critical rate for 3 turns for all allies and foes | 5 | N/A\nPower Charge | Multiplies damage of next Physical attack by 250% for one ally | 15 | N/A\nMind Charge | Multiplies damage of next Fire, Ice, Elec, Wind, or Almighty attack by 250% for one ally | 15 | N/A\nRed Wall | Gives Fire resistance for 3 turns to one ally | 18 | N/A\nFire Break | Removes Fire resistance from one foe | 15 | N/A\nWhite Wall | Gives Ice resistance for 3 turns to one ally | 18 | N/A\nIce Break | Removes Ice resistance from one foe | 15 | N/A\nBlue Wall | Gives Electric resistance for 3 turns to one ally | 18 | N/A\nElec Break | Removes Electric resistance from one foe | 15 | N/A\nGreen Wall | Gives Wind resistance for 3 turns to one ally | 18 | N/A\nWind Break | Removes Wind resistance from one foe | 15 | N/A\nTetrakarn | Gives a barrier that reflects Physical damage once to all allies | 36 | N/A\nTetra Break | Removes Physical barriers from all foes | 18 | N/A\nMakarakarn | Gives a barrier that reflects Fire, Ice, Elec, and Wind damage once to all allies | 36 | N/A\nMakara Break | Removes Fire/Ice/Elec/Wind barrier from all foes | 18 | N/A\nTetraja | Gives a barrier that nullifies instakill once to one ally | 24 | N/A\nTraesto | Leave current dungeon, except during combat | 18 | N/A\nYouthful Wind | Moderately restores HP and increases Hit/Evasion rate for 3 turns to all allies | 25 | Yosuke\nDragon Hustle | Increases damage dealt, Hit/Evasion rate, and decreases damage received for 3 turns for all allies | 150 | Chie\nShield of Justice | Gives a barrier that reflects all damage once to all allies | 160 | Naoto\nPassive Skills\nSkill | Effect | Exclusive\nCounter | 10% chance of reflecting Physical attacks | N/A\nCounterstrike | 15% chance of reflecting Physical attacks | N/A\nHigh Counter | 20% chance of reflecting Physical attacks | N/A\nSharp Student | Decreases chance of receiving a critical hit | N/A\nFirm Stance | Reduces all damage by half, unable to evade attacks | N/A\nResist Physical | Gives Physical resistance | N/A\nResist Fire | Gives Fire resistance | N/A\nResist Ice | Gives Ice resistance | N/A\nResist Elec | Gives Electric resistance | N/A\nResist Wind | Gives Wind resistance | N/A\nResist Light | Gives Light resistance | N/A\nResist Dark | Gives Dark resistance | N/A\nNull Physical | Gives Physical immunity | N/A\nNull Fire | Gives Fire immunity | N/A\nNull Ice | Gives Ice immunity | N/A\nNull Elec | Gives Electric immunity | N/A\nNull Wind | Gives Wind immunity | N/A\nNull Light | Gives Light immunity | N/A\nNull Dark | Gives Dark immunity | N/A\nRepel Physical | Reflects Physical attacks | N/A\nRepel Fire | Reflects Fire attacks | N/A\nRepel Ice | Reflects Ice attacks | N/A\nRepel Elec | Reflects Electric attacks | N/A\nRepel Wind | Reflects Wind attacks | N/A\nRepel Light | Reflects Light attacks | N/A\nRepel Dark | Repels Dark attacks | N/A\nAbsorb Physical | Absorbs Physical damage | N/A\nAbsorb Fire | Absorb Fire damage | N/A\nAbsorb Ice | Absorb Ice damage | N/A\nAbsorb Elec | Absorb Electric damage | N/A\nAbsorb Wind | Absorb Wind damage | N/A\nDodge Physical | Doubles Physical evasion | N/A\nDodge Fire | Doubles Fire evasion | N/A\nDodge Ice | Doubles Ice evasion | N/A\nDodge Elec | Doubles Electricity evasion | N/A\nDodge Wind | Doubles Wind evasion | N/A\nEvade Physical | Triples Physical evasion | N/A\nEvade Fire | Triples Fire evasion | N/A\nEvade Ice | Triples Ice evasion | N/A\nEvade Elec | Triples Electric evasion | N/A\nEvade Wind | Triples Wind evasion | N/A\nAngelic Grace | Doubles Fire/Ice/Electric/Wind evasion | N/A\nAli Dance | Halves Hit rate of attacking foe | N/A\nResist Fear | Reduces chance of getting hit with Fear | N/A\nResist Panic | Reduces chance of getting hit with Panic | N/A\nResist Poison | Reduces chance of getting hit with Poison | N/A\nResist Rage | Reduces chance of getting hit with Rage | N/A\nResist Mute | Reduces chance of getting hit with Silence | N/A\nResist Enervate | Reduces chance of getting hit with Enervation | N/A\nResist Exhaust | Reduces chance of getting hit with Exhaustion | N/A\nResist Dizzy | Reduces chance of getting hit with Dizzy | N/A\nNull Fear | Gives Fear immunity | N/A\nNull Panic | Gives Panic immunity | N/A\nNull Poison | Gives Poison immunity | N/A\nNull Rage | Gives Rage immunity | N/A\nNull Mute | Gives Silence immunity | N/A\nNull Enervate | Gives Enervation immunity | N/A\nNull Exhaust | Gives Exhaustion immunity | N/A\nNull Dizzy | Gives Dizzy immunity | N/A\nUnshaken Will | Gives Fear/Rage/Panic/Silence/Enervation immunity | N/A\nFast Heal | Halves ailment recovery time | N/A\nInsta-Heal | Recover from ailments in 1 turn | N/A\nApt Pupil | Doubles critical rate | N/A\nFire Boost | Increases Fire damage by 25% | N/A\nFire Amp | Increases Fire damage by 50% | N/A\nIce Boost | Increases Ice damage by 25% | N/A\nIce Amp | Increases Ice damage by 50% | N/A\nElec Boost | Increases Electric damage by 25% | N/A\nElec Amp | Increases Electric damage by 50% | N/A\nWind Boost | Increases Wind damage by 25% | N/A\nWind Amp | Increases Wind damage by 50% | N/A\nHama Boost | Increases chance of Light instakill by 50% | N/A\nMudo Boost | Increases chance of Dark instakill by 50% | N/A\nFear Boost | Increases chance of inflicting Fear by 50% | N/A\nPanic Boost | Increases chance of inflicting Panic by 50% | N/A\nPoison Boost | Increases chance of inflicting Poison by 50% | N/A\nRage Boost | Increases chance of inflicting Rage by 50% | N/A\nSilence Boost | Increases chance of inflicting Silence by 50% | N/A\nEnervate Boost | Increases chance of inflicting Enervation by 50% | N/A\nExhaust Boost | Increases chance of inflicting Exhaustion by 50% | N/A\nDizzy Boost | Increases chance of inflicting Dizzy by 50% | Kanji\nAilment Boost | Increases chance of inflicting all ailments by 50% | N/A\nAlertness | Reduces chance of an enemy advantage | N/A\nAuto-Tarukaja | Start battles with Tarukaja | N/A\nAuto-Mataru | Start battles with Matarukaja | N/A\nAuto-Rakukaja | Start battles with Rakukaja | N/A\nAuto-Maraku | Start battles with Marakukaja | N/A\nAuto-Sukukaja | Start battles with Sukukaja | N/A\nAuto-Masuku | Start battles with Masukukaja | N/A\nSurvive Light | 50% of surviving Light instakill with 1 HP once per battle | N/A\nSurvive Dark | 50% of surviving Dark instakill with 1 HP once per battle | N/A\nEndure Light | Survive Light instakill with 1 HP once per battle | N/A\nEndure Dark | Survive Dark instakill with 1 HP once per battle | N/A\nEndure | Survive KO with 1 HP once per battle | N/A\nEnduring Soul | Survive KO and restore all HP once per battle | N/A\nArms Master | Halves HP cost of Physical Skills | N/A\nSpell Master | Halves SP cost of all Skills except Physical | N/A\nDivine Grace | Increases healing Skills by 50% | N/A\nRegenerate 1 | Restores 2% of Max HP every turn | N/A\nRegenerate 2 | Restores 4% of Max HP every turn | N/A\nRegenerate 3 | Restores 6% of Max HP every turn | N/A\nInvigorate 1 | Restores 3 SP every turn | N/A\nInvigorate 2 | Restores 5 SP every turn | N/A\nInvigorate 3 | Restores 7 SP every turn | N/A\nGrowth 1 | Persona gains 25% of Exp while inactive | N/A\nGrowth 2 | Persona gains 50% of Exp while inactive | N/A\nGrowth 3 | Persona gains 100% of Exp while inactive | N/A\nCool Breeze | Recover 8% of Max HP and Max SP after battle | N/A\nVictory Cry | Recover all HP and SP after battle | N/A\nNavigator Skills\nSkill | Effect | Exclusive\nAnalysis | Keeps track of enemy stats and affinities | Rise\nFull Analysis | Keeps track of enemy stats, skills, and affinities | Rise\nComplete Analysis | Keeps track of enemy stats, skills, and all affinities | Rise\nWeakness Scan | Chance to reveal an enemy weakness or resistance | Rise\nThird Eye | Shows an icon for Null/Reflect/Absorb when targeting a foe | Rise\nCertain Escape | Guaranteed to immediately escape battle if possible | Rise\nTreasure Radar | Shows location of treasure chests on map | Rise\nEnemy Radar | Shows location of nearby Shadows on map | Rise\nHealing Wave | Recover 5% of Max HP for all allies | Rise\nStamina Song | Recover 10% of Max HP for all allies | Rise\nRelaxing Wave | Recover 5% of Max SP for all allies | Rise\nVigor Song | Recover 10% of Max SP for all allies | Rise\nEnemy Exclusive Skills\nSkill | Effect | Enemy\nLast Resort | Sacrifice self to deal medium to heavy Almighty damage to all foes | N/A\nSpirit Leech | Drain 100 SP from one foe | N/A\nGalgalim Eyes | Reduces one foe's health to 1 HP, chance of Enervation | N/A\nRecarmdra | Sacrifice self to heal all allies | N/A\nSummon | Summon an ally | N/A\nWind of Oblivion | Scaling Wind damage to one foe | Shadow Yosuke\nBottomless Envy | Scaling Physical damage to one foe, inflicts Dizzy | Shadow Chie\nBurn to Ashes | Medium Fire damage to all foes | Shadow Yukiko\nTerror Voice | Chance of Fear to all foes | Shadow Yukiko\nShivering Rondo | Heavy Almighty damage to a foe inflicted with Fear | Shadow Yukiko\nForbidden Murmur | Inflicts Poison on Male foes | Shadow Kanji\nRoar of Wrath | Inflicts Rage on Female foes | Shadow Kanji\nFanatical Spark | Medium Electric damage to all foes | Shadow Kanji\nSupreme Insight | All foes will always miss attacks | Shadow Rise\nNihil Hand | Heavy Almighty damage to all foes, chance of Down | Shadow Teddie\nUltra Charge | Charges Nihil Hand | Shadow Teddie\nNullity Guidance | Medium Almighty damage to one foe, chance of Dizzy | Shadow Teddie\nCharacter Setup | Constructs Hero | Shadow Mitsuo\nWhisper | Starts construction of Hero | Shadow Mitsuo\nChant | Continues construction of Hero | Shadow Mitsuo\nPrayer | Completes construction of Hero | Shadow Mitsuo\nCommand | Hero uses one of following: / Attack: Medium Almighty damage to one foe / Bomb: Medium Almighty damage to one foe, chance of Enervation / Spell: Medium Almighty damage to all foes | Shadow Mitsuo\nElement Zero | Removes all elemental resistances for 3 turns | Shadow Naoto\nMute Ray | Medium Almighty damage, drains 50 SP, inflicts Silence | Shadow Naoto\nQuad Converge | Increases damage of random elements and decreases damage of all other elements for all allies and foes | Kunino-Sagiri\nControl | Control 1-3 foes | Kunino-Sagiri\nUnerring Justice | Massive Almighty damage to all foes | Kunino-Sagiri\nNebula Oculus | Heavy Almighty damage to all foes | Ameno-Sagiri\nQuake | Heavy Almighty damage to all foes, chance of Down | Ameno-Sagiri\nBewildering Fog | All foes will always miss attacks until move is used again | Ameno-Sagiri\nWorld's End | Heavy Almighty damage to all foes, chance of Enervation | Izanami-No-Okami\nFury of Yasogami | Heavy Almighty damage to all foes | Izanami-No-Okami\nSummons To Yomi | Instakill all foes inflicted with an ailment | Izanami-No-Okami\nKuro Ikazuchi | Heavy Almighty damage to all foes | Izanami-No-Okami\nThousand Curses | Removes one foe from battle | Izanami-No-Okami\nOho Ikazuchi | Deals 999 Almighty damage to all foes | Izanami-No-Okami\nShell of Denial | Reflects all attacks | Marie\nHot Lightning | Heavy Almighty damage to two random foes, chance of Dizzy | Marie\nRagnarok | Heavy Fire damage to one foe | Margaret\nProminence | Heavy Fire damage to all foes | Margaret\nNiflheim | Heavy Ice damage to one foe | Margaret\nCocytus Pain | Heavy Ice damage to all foes | Margaret\nThunder Reign | Heavy Electric damage to one foe | Margaret\nJihad | Heavy Electric damage to all foes | Margaret\nPanta Rhei | Heavy Wind damage to one foe | Margaret\nDivine Vacuum | Heavy Wind damage to all foes | Margaret"
+}

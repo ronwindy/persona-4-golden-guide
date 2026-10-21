@@ -1,0 +1,198 @@
+{
+  "id": "persona-compendium-strength",
+  "title": "Strength",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "strength",
+  "type": "arcana",
+  "order": 63,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Hermit\nFool x Hanged Man\nMagician x Emperor\nMagician x Justice\nMagician x Temperance\nEmpress x Jester\nHierophant x Sun\nLovers x Judgement\nChariot x Sun\nJustice x Hermit\nJustice x Death\nJustice x Moon\nStrength x Strength\nMoon x Sun"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Hermit\nMagician x Fortune\nEmpress x Fortune\nEmperor x Death\nEmperor x Moon\nChariot x Jester\nHermit x Hanged Man\nFortune x Moon\nStrength x Strength\nDeath x Judgement\nDeath x Aeon"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Sandman"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Valkyrie"
+          },
+          {
+            "text": "8"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Titan"
+          },
+          {
+            "text": "14"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Rakshasa"
+          },
+          {
+            "text": "23"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kusi Mitama"
+          },
+          {
+            "text": "28"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Oni"
+          },
+          {
+            "text": "30"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Hanuman"
+          },
+          {
+            "text": "42"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kali"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Siegfried"
+          },
+          {
+            "text": "63"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Zaou-Gongen"
+          },
+          {
+            "text": "90"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Hermit\nFool x Hanged Man\nMagician x Emperor\nMagician x Justice\nMagician x Temperance\nEmpress x Jester\nHierophant x Sun\nLovers x Judgement\nChariot x Sun\nJustice x Hermit\nJustice x Death\nJustice x Moon\nStrength x Strength\nMoon x Sun\nTriangle Spread\nFool x Hermit\nMagician x Fortune\nEmpress x Fortune\nEmperor x Death\nEmperor x Moon\nChariot x Jester\nHermit x Hanged Man\nFortune x Moon\nStrength x Strength\nDeath x Judgement\nDeath x Aeon\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nSandman | 5 |  | \nValkyrie | 8 |  | \nTitan | 14 |  | \nRakshasa | 23 |  | \nKusi Mitama | 28 |  | \nOni | 30 |  | \nHanuman | 42 |  | \nKali | 50 |  | \nSiegfried | 63 |  | \nZaou-Gongen | 90 |  | X"
+}

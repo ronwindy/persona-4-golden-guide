@@ -1,0 +1,277 @@
+{
+  "id": "activities-artisan-apprentice",
+  "title": "Artisan Apprentice",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "artisan-apprentice",
+  "type": "article",
+  "order": 113,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Artisan Apprentice is an NPC that can trade for exclusive weapons. He is located at Practice Building 2F. Here is the list of everything you can obtain from him."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Weapon",
+            "md": "**Weapon**"
+          },
+          {
+            "text": "Equipped By",
+            "md": "**Equipped By**"
+          },
+          {
+            "text": "Traded From",
+            "md": "**Traded From**"
+          }
+        ],
+        [
+          {
+            "text": "Cleaning Mop"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Iai Katana"
+          }
+        ],
+        [
+          {
+            "text": "Cheering Flag"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Zweihander"
+          }
+        ],
+        [
+          {
+            "text": "Carbon Pole"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "Anglaise"
+          }
+        ],
+        [
+          {
+            "text": "Chinese Cleaver"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "Kris Naga"
+          }
+        ],
+        [
+          {
+            "text": "Feather Dagger"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "Yashima"
+          }
+        ],
+        [
+          {
+            "text": "Wrestling Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Nanman Gusoku"
+          }
+        ],
+        [
+          {
+            "text": "Jet Boots"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Sleipnir"
+          }
+        ],
+        [
+          {
+            "text": "Animal Slippers"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Vidar Boots"
+          }
+        ],
+        [
+          {
+            "text": "Tennis Racket"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Silk Fan"
+          }
+        ],
+        [
+          {
+            "text": "Gothic Fan"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Masquerade"
+          }
+        ],
+        [
+          {
+            "text": "Feather Boomerang"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Ganar"
+          }
+        ],
+        [
+          {
+            "text": "Factory Sign"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Photon Plate"
+          }
+        ],
+        [
+          {
+            "text": "Feather Shield"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Thunder Plate"
+          }
+        ],
+        [
+          {
+            "text": "Flat Taiko"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Barbarian Shield"
+          }
+        ],
+        [
+          {
+            "text": "Casket Lid"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Mega Buckler"
+          }
+        ],
+        [
+          {
+            "text": "Beach Ball"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Drunken Fist"
+          }
+        ],
+        [
+          {
+            "text": "Feather Claw"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Air Break"
+          }
+        ],
+        [
+          {
+            "text": "Frost Puppet"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Chain Glove"
+          }
+        ],
+        [
+          {
+            "text": "Pyro Puppet"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Seiryu Claw"
+          }
+        ],
+        [
+          {
+            "text": "Bat Magnum"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Crimson Dirge"
+          }
+        ],
+        [
+          {
+            "text": "Special Ray Gun"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": ".44 Anaconda"
+          }
+        ],
+        [
+          {
+            "text": "Feather Shot"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Camel Red"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "The Artisan Apprentice is an NPC that can trade for exclusive weapons. He is located at Practice Building 2F. Here is the list of everything you can obtain from him.\nWeapon | Equipped By | Traded From\nCleaning Mop | MC | Iai Katana\nCheering Flag | MC | Zweihander\nCarbon Pole | MC | Anglaise\nChinese Cleaver | Yosuke | Kris Naga\nFeather Dagger | Yosuke | Yashima\nWrestling Boots | Chie | Nanman Gusoku\nJet Boots | Chie | Sleipnir\nAnimal Slippers | Chie | Vidar Boots\nTennis Racket | Yukiko | Silk Fan\nGothic Fan | Yukiko | Masquerade\nFeather Boomerang | Yukiko | Ganar\nFactory Sign | Kanji | Photon Plate\nFeather Shield | Kanji | Thunder Plate\nFlat Taiko | Kanji | Barbarian Shield\nCasket Lid | Kanji | Mega Buckler\nBeach Ball | Teddie | Drunken Fist\nFeather Claw | Teddie | Air Break\nFrost Puppet | Teddie | Chain Glove\nPyro Puppet | Teddie | Seiryu Claw\nBat Magnum | Naoto | Crimson Dirge\nSpecial Ray Gun | Naoto | .44 Anaconda\nFeather Shot | Naoto | Camel Red"
+}

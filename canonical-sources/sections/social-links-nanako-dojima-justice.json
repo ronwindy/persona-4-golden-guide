@@ -1,0 +1,420 @@
+{
+  "id": "social-links-nanako-dojima-justice",
+  "title": "Nanako Dojima/Justice",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "nanako-dojima-justice",
+  "type": "social-link",
+  "order": 85,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "p",
+      "text": "Social Link's availability is based on the current dungeon. This Social Link is unavailable when Hierophant is available."
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: May 3rd"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: November 3rd (NOTE: I think you can hang out in late January as well. Will need to test.)"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Automatic"
+    },
+    {
+      "type": "p",
+      "text": "Location: Living Room"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Sraosha"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Family Photo"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Only available at night."
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "3"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "9"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "10"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "12"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "9"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "10"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "12"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Automatically on May 3rd"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Nanako is fidgeting."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Are you an only child?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3 (Skips Response 3)\nOption B: Advances to Response 3"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Hmmm...Then do you have a little sister?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 or +?\nOption B: +?\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Dad'll be disappointed.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Nanako looks sad."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C (Requires Courage Rank Brave): +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Requires Expression Rank Persuasive"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Nanako is nodding her head cheerfully."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"What happens to a person when they die?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +3\nOption C: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Why do bad people do bad things?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Are bad people more important to Dad than I am?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"What do they mean by 'real'?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +3\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Daddy doesn't come home because I'm not his 'real' daughter?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: What should you do?"
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +0\nOption C (Requires Understanding Rank Generous): +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Requires Expression Rank Enthralling"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Nanako looks like she's about to cry..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"He can't come, huh?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +0\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Dojima: \"What's gotten into her...?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Dojima: \"She'll listen to you...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Big bro...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Is he going to throw me away, too...?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"What should I do...? The teacher will yell at me.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Why did Dad stop smiling...?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Big bro...I love my dad.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +?\nOption B: +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"...I feel sorry for him, losing someone he loves.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: What will you do?"
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B:+ 0\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"Big bro, can you make me a salad?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +1 or +?\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Nanako: \"You're my family, too, so...Let's work hard together!\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +3\nOption C: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    }
+  ],
+  "text": "Availability\nSocial Link's availability is based on the current dungeon. This Social Link is unavailable when Hierophant is available.\nInformation\nFirst Day: May 3rd\nLast Day: November 3rd (NOTE: I think you can hang out in late January as well. Will need to test.)\nActivation: Automatic\nLocation: Living Room\nUltimate Persona: Sraosha\nKey Item: Family Photo\nNotes: Only available at night.\nPoints Needed\nRank 1 | 0\nRank 2 | 3\nRank 3 | 6\nRank 4 | 9\nRank 5 | 10\nRank 6 | 12\nRank 7 | 9\nRank 8 | 6\nRank 9 | 10\nRank 10 | 12\nRank Up Scenes\n-Rank 1-\nAutomatically on May 3rd\n-Rank 2-\nNarrator: Nanako is fidgeting.\nOption A: +1 or +2\nOption B: +2 or +3\nNanako: \"Are you an only child?\"\nOption A: +3 (Skips Response 3)\nOption B: Advances to Response 3\nNanako: \"Hmmm...Then do you have a little sister?\"\nOption A: +0 or +?\nOption B: +?\nOption C: +3\n-Rank 3-\nNanako: \"Dad'll be disappointed.\"\nOption A: +3\nOption B: +3\nOption C: +0\nNarrator: Nanako looks sad.\nOption A: +0\nOption B: +0\nOption C (Requires Courage Rank Brave): +3\n-Rank 4-\nRequires Expression Rank Persuasive\nNarrator: Nanako is nodding her head cheerfully.\nOption A: +0\nOption B: +2 or +3\nNanako: \"What happens to a person when they die?\"\nOption A: +0\nOption B: +3\nOption C: +1 or +2\nNanako: \"Why do bad people do bad things?\"\nOption A: +0\nOption B: +0\nOption C: +1 or +2\nNanako: \"Are bad people more important to Dad than I am?\"\nOption A: +0\nOption B: +0\nOption C: +1 or +2\n-Rank 5-\nNanako: \"What do they mean by 'real'?\"\nOption A: +0\nOption B: +3\nOption C: +2 or +3\nNanako: \"Daddy doesn't come home because I'm not his 'real' daughter?\"\nOption A: +3\nOption B: +0\nOption C: +2\nNarrator: What should you do?\nOption A: +2 or +3\nOption B: +0\nOption C (Requires Understanding Rank Generous): +3\n-Rank 6-\nRequires Expression Rank Enthralling\nNarrator: Nanako looks like she's about to cry...\nOption A: +0\nOption B: +1 or +2\nNanako: \"He can't come, huh?\"\nOption A: +2 or +3\nOption B: +0\nOption C: +3\n-Rank 7-\nDojima: \"What's gotten into her...?\"\nAny option: +0\nDojima: \"She'll listen to you...\"\nAny option: +0\nNanako: \"Big bro...\"\nOption A: +0\nOption B: +3\nOption C: +0\nNanako: \"Is he going to throw me away, too...?\"\nAny option: +0\n-Rank 8-\nNanako: \"What should I do...? The teacher will yell at me.\"\nOption A: +3\nOption B: +0\nNanako: \"Why did Dad stop smiling...?\"\nAny option: +3\n-Rank 9-\nNanako: \"Big bro...I love my dad.\"\nOption A: +2 or +?\nOption B: +3\nOption C: +0\nNanako: \"...I feel sorry for him, losing someone he loves.\"\nAny option: +2 or +3\nNarrator: What will you do?\nOption A: +2 or +3\nOption B:+ 0\nOption C: +3\n-Rank 10-\nNanako: \"Big bro, can you make me a salad?\"\nOption A: +2 or +3\nOption B: +1 or +?\nOption C: +0\nNanako: \"You're my family, too, so...Let's work hard together!\"\nOption A: +1 or +2\nOption B: +3\nOption C: +1 or +2\nNight Time Dates\nN/A"
+}

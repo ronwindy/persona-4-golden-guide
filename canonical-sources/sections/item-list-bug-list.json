@@ -1,0 +1,113 @@
+{
+  "id": "item-list-bug-list",
+  "title": "Bug List",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "bug-list",
+  "type": "catalog",
+  "order": 135,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Bug List",
+      "md": "**Bug List**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Bug",
+            "md": "**Bug**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Tatsuhime Ladybug"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine, Gardening (Winter)"
+          }
+        ],
+        [
+          {
+            "text": "Yaso Locust"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine, Gardening (Winter)"
+          }
+        ],
+        [
+          {
+            "text": "Meiou Cricket"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine, Gardening (Winter)"
+          }
+        ],
+        [
+          {
+            "text": "Inaba Jewel Beetle"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine, Gardening (Winter)"
+          }
+        ],
+        [
+          {
+            "text": "Daimyo Grasshopper"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine, Gardening (Winter)"
+          }
+        ],
+        [
+          {
+            "text": "Heike Stag Beetle"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine, Gardening (Winter)"
+          }
+        ],
+        [
+          {
+            "text": "Genji Beetle"
+          },
+          {
+            "text": "Used in Fishing"
+          },
+          {
+            "text": "Tatsuhime Shrine (Night), Gardening (Winter)"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Bug List\nBug | Effect | Location\nTatsuhime Ladybug | Used in Fishing | Tatsuhime Shrine, Gardening (Winter)\nYaso Locust | Used in Fishing | Tatsuhime Shrine, Gardening (Winter)\nMeiou Cricket | Used in Fishing | Tatsuhime Shrine, Gardening (Winter)\nInaba Jewel Beetle | Used in Fishing | Tatsuhime Shrine, Gardening (Winter)\nDaimyo Grasshopper | Used in Fishing | Tatsuhime Shrine, Gardening (Winter)\nHeike Stag Beetle | Used in Fishing | Tatsuhime Shrine, Gardening (Winter)\nGenji Beetle | Used in Fishing | Tatsuhime Shrine (Night), Gardening (Winter)"
+}

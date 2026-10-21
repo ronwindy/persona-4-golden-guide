@@ -1,0 +1,375 @@
+{
+  "id": "activities-cooking",
+  "title": "Cooking",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "cooking",
+  "type": "article",
+  "order": 104,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Sometimes when checking the fridge, you will be able to cook lunch for the next day. You must choose the correct response to successfully cook lunch. You can invite a classmate Social Link to share lunch with to earn points. If it's their favorite, they will earn extra points. Here is the list of what you can cook and all related details."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Date",
+            "md": "**Date**"
+          },
+          {
+            "text": "Lunch",
+            "md": "**Lunch**"
+          },
+          {
+            "text": "Response",
+            "md": "**Response**"
+          },
+          {
+            "text": "Favorite",
+            "md": "**Favorite**"
+          }
+        ],
+        [
+          {
+            "text": "5/12"
+          },
+          {
+            "text": "Meat Stew"
+          },
+          {
+            "text": "Simmer with a drop lid"
+          },
+          {
+            "text": "Yosuke, Chie"
+          }
+        ],
+        [
+          {
+            "text": "5/24"
+          },
+          {
+            "text": "Sweet and Sour Pork"
+          },
+          {
+            "text": "Use potato starch"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "5/31"
+          },
+          {
+            "text": "Yakiniku Bento"
+          },
+          {
+            "text": "Use soy sauce instead"
+          },
+          {
+            "text": "Chie"
+          }
+        ],
+        [
+          {
+            "text": "6/12"
+          },
+          {
+            "text": "Potato Salad"
+          },
+          {
+            "text": "Smash them while still hot"
+          },
+          {
+            "text": "?"
+          }
+        ],
+        [
+          {
+            "text": "6/29"
+          },
+          {
+            "text": "Hamburgers"
+          },
+          {
+            "text": "Cut a hole and look for juice"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "7/6"
+          },
+          {
+            "text": "Daigaku-imo"
+          },
+          {
+            "text": "Deep fry them"
+          },
+          {
+            "text": "Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "7/12"
+          },
+          {
+            "text": "Pudding"
+          },
+          {
+            "text": "Vanilla extract"
+          },
+          {
+            "text": "Kanji"
+          }
+        ],
+        [
+          {
+            "text": "7/14"
+          },
+          {
+            "text": "Fried Chicken"
+          },
+          {
+            "text": "Potato starch"
+          },
+          {
+            "text": "Chie"
+          }
+        ],
+        [
+          {
+            "text": "9/4"
+          },
+          {
+            "text": "Carrot and Burdock Root Kinpira"
+          },
+          {
+            "text": "Add soy sauce and mirin"
+          },
+          {
+            "text": "Yumi and Ayane"
+          }
+        ],
+        [
+          {
+            "text": "9/11"
+          },
+          {
+            "text": "Chakin Sushi"
+          },
+          {
+            "text": "Thinned eggs"
+          },
+          {
+            "text": "Rise"
+          }
+        ],
+        [
+          {
+            "text": "9/26"
+          },
+          {
+            "text": "Marinated Spinach"
+          },
+          {
+            "text": "Strain it"
+          },
+          {
+            "text": "Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "9/29"
+          },
+          {
+            "text": "Tonkatsu"
+          },
+          {
+            "text": "Flour, egg, then panko"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "10/12"
+          },
+          {
+            "text": "Croquettes"
+          },
+          {
+            "text": "High"
+          },
+          {
+            "text": "Ayane"
+          }
+        ],
+        [
+          {
+            "text": "10/25"
+          },
+          {
+            "text": "Grilled Fish"
+          },
+          {
+            "text": "Strong heat but from far away"
+          },
+          {
+            "text": "Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "11/1"
+          },
+          {
+            "text": "California Rolls"
+          },
+          {
+            "text": "Mix and cool simultaneously"
+          },
+          {
+            "text": "Naoto"
+          }
+        ],
+        [
+          {
+            "text": "1/11"
+          },
+          {
+            "text": "Gyoza"
+          },
+          {
+            "text": "Olive Oil"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "1/16"
+          },
+          {
+            "text": "Mentaiko Pasta"
+          },
+          {
+            "text": "Mayonnaise"
+          },
+          {
+            "text": "Naoto"
+          }
+        ],
+        [
+          {
+            "text": "1/23"
+          },
+          {
+            "text": "Oden"
+          },
+          {
+            "text": "Keep on a low flame and don't boil"
+          },
+          {
+            "text": "Yosuke"
+          }
+        ],
+        [
+          {
+            "text": "1/26"
+          },
+          {
+            "text": "Cream Stew"
+          },
+          {
+            "text": "Dump in all the cold milk"
+          },
+          {
+            "text": "Rise and Ai"
+          }
+        ],
+        [
+          {
+            "text": "2/1"
+          },
+          {
+            "text": "Broiled Fish"
+          },
+          {
+            "text": "Wrap it tightly"
+          },
+          {
+            "text": "Yukiko"
+          }
+        ],
+        [
+          {
+            "text": "?"
+          },
+          {
+            "text": "Curry"
+          },
+          {
+            "text": "Simmer"
+          },
+          {
+            "text": "Ai"
+          }
+        ],
+        [
+          {
+            "text": "?"
+          },
+          {
+            "text": "Ginger Pork"
+          },
+          {
+            "text": "Score it with a knife"
+          },
+          {
+            "text": "Kou and Daisuke"
+          }
+        ],
+        [
+          {
+            "text": "?"
+          },
+          {
+            "text": "Kakuni"
+          },
+          {
+            "text": "Mirin, sugar, and sake"
+          },
+          {
+            "text": "Chie"
+          }
+        ],
+        [
+          {
+            "text": "?"
+          },
+          {
+            "text": "Vichyssoise"
+          },
+          {
+            "text": "Add lots of milk"
+          },
+          {
+            "text": "Ai"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Sometimes when checking the fridge, you will be able to cook lunch for the next day. You must choose the correct response to successfully cook lunch. You can invite a classmate Social Link to share lunch with to earn points. If it's their favorite, they will earn extra points. Here is the list of what you can cook and all related details.\nDate | Lunch | Response | Favorite\n5/12 | Meat Stew | Simmer with a drop lid | Yosuke, Chie\n5/24 | Sweet and Sour Pork | Use potato starch | N/A\n5/31 | Yakiniku Bento | Use soy sauce instead | Chie\n6/12 | Potato Salad | Smash them while still hot | ?\n6/29 | Hamburgers | Cut a hole and look for juice | N/A\n7/6 | Daigaku-imo | Deep fry them | Yukiko\n7/12 | Pudding | Vanilla extract | Kanji\n7/14 | Fried Chicken | Potato starch | Chie\n9/4 | Carrot and Burdock Root Kinpira | Add soy sauce and mirin | Yumi and Ayane\n9/11 | Chakin Sushi | Thinned eggs | Rise\n9/26 | Marinated Spinach | Strain it | Yukiko\n9/29 | Tonkatsu | Flour, egg, then panko | N/A\n10/12 | Croquettes | High | Ayane\n10/25 | Grilled Fish | Strong heat but from far away | Yukiko\n11/1 | California Rolls | Mix and cool simultaneously | Naoto\n1/11 | Gyoza | Olive Oil | N/A\n1/16 | Mentaiko Pasta | Mayonnaise | Naoto\n1/23 | Oden | Keep on a low flame and don't boil | Yosuke\n1/26 | Cream Stew | Dump in all the cold milk | Rise and Ai\n2/1 | Broiled Fish | Wrap it tightly | Yukiko\n? | Curry | Simmer | Ai\n? | Ginger Pork | Score it with a knife | Kou and Daisuke\n? | Kakuni | Mirin, sugar, and sake | Chie\n? | Vichyssoise | Add lots of milk | Ai"
+}

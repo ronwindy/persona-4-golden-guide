@@ -1,0 +1,413 @@
+{
+  "id": "social-links-kanji-tatsumi-emperor",
+  "title": "Kanji Tatsumi/Emperor",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "kanji-tatsumi-emperor",
+  "type": "social-link",
+  "order": 81,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday",
+            "md": "**Monday**"
+          },
+          {
+            "text": "Tuesday",
+            "md": "**Tuesday**"
+          },
+          {
+            "text": "Wednesday",
+            "md": "**Wednesday**"
+          },
+          {
+            "text": "Thursday",
+            "md": "**Thursday**"
+          },
+          {
+            "text": "Friday",
+            "md": "**Friday**"
+          },
+          {
+            "text": "Saturday",
+            "md": "**Saturday**"
+          },
+          {
+            "text": "Sunday",
+            "md": "**Sunday**"
+          },
+          {
+            "text": "Rain",
+            "md": "**Rain**"
+          }
+        ],
+        [
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: June 9th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 5th"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Talk to Female Student on Classroom Building 2F, then talk to Kanji"
+    },
+    {
+      "type": "p",
+      "text": "Location: Practice Building 1F or Shopping District North"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Odin"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Cute Strap"
+    },
+    {
+      "type": "p",
+      "text": "Notes: N/A"
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "5"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "6"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Female Student on Classroom Building 2F (who shows up from June 9th onwards), then talk to Kanji"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"She's always apologizing for me. She's been sprouting more and more white hairs...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +3\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Sorry. Looks like it was no big deal...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Kanji's Mother: \"He's always had trouble getting along with people. He didn't have any friends like you before.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Ughh...When you met Ma at the hospital...She say anything about me?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +2\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Oh, uhh...I'm gonna go now.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +3"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Oh...Anyways, sorry 'bout dragging you into this...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Er...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Hah, he said I'm cool...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +2"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"Strange situation I got myself into, ain't it?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"That okay with you 'big bro'?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or +3\nOption B: +? or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"There's something else I gotta confront too, ain't there?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Police Officer: \"...Come with me.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +? or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "Police Officer: \"Hmph, so you admit it. Not a shred of remorse, either.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Police Officer: \"What a load of...There's no way you're getting me to believe that.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or 3\nOption B: +? or +2\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"It's the first time I went on my own...Well, I had a lot to tell him.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2\nOption B: +2 or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "Kanji: \"As long as there's someone like that snot-nosed kid to accept me, I ain't afraid of nothing!\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3 or +2 (NOTE: That's clearly not correct, so I'll need to test it.)\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "No options"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "Need to research"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nNo | No | Yes | Yes | No | Yes | Yes | No\nInformation\nFirst Day: June 9th\nLast Day: February 5th\nActivation: Talk to Female Student on Classroom Building 2F, then talk to Kanji\nLocation: Practice Building 1F or Shopping District North\nUltimate Persona: Odin\nKey Item: Cute Strap\nNotes: N/A\nPoints Needed\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 2\nRank 5 | 4\nRank 6 | 6\nRank 7 | 4\nRank 8 | 5\nRank 9 | 6\nRank 10 | 6\nRank Up Scenes\n-Rank 1-\nTalk to Female Student on Classroom Building 2F (who shows up from June 9th onwards), then talk to Kanji\n-Rank 2-\nKanji: \"She's always apologizing for me. She's been sprouting more and more white hairs...\"\nOption A: +2 or +3\nOption B: +3\nOption C: +2\n-Rank 3-\nKanji: \"...\"\nAny option: +0\nKanji: \"Sorry. Looks like it was no big deal...\"\nAny option: +0\nKanji's Mother: \"He's always had trouble getting along with people. He didn't have any friends like you before.\"\nAny option: +0\n-Rank 4-\nKanji: \"Ughh...When you met Ma at the hospital...She say anything about me?\"\nOption A: +3\nOption B: +2\nOption C: +0\nKanji: \"Oh, uhh...I'm gonna go now.\"\nOption A: +2 or +3\nOption B: +3\nKanji: \"Oh...Anyways, sorry 'bout dragging you into this...\"\nOption A: +0\nOption B: +0\nOption C: +2 or +3\n-Rank 5-\nKanji: \"Er...\"\nAny option: +0\nKanji: \"Hah, he said I'm cool...\"\nOption A: +3\nOption B: +? or +2\n-Rank 6-\nKanji: \"Strange situation I got myself into, ain't it?\"\nAny option: +0\n-Rank 7-\nKanji: \"That okay with you 'big bro'?\"\nOption A: +? or +3\nOption B: +? or +3\nOption C: +3\nKanji: \"There's something else I gotta confront too, ain't there?\"\nAny option: +0\n-Rank 8-\nPolice Officer: \"...Come with me.\"\nOption A: +0\nOption B: +? or +3\nOption C: +3\nPolice Officer: \"Hmph, so you admit it. Not a shred of remorse, either.\"\nAny option: +0\nPolice Officer: \"What a load of...There's no way you're getting me to believe that.\"\nOption A: +? or 3\nOption B: +? or +2\nOption C: +3\n-Rank 9-\nKanji: \"It's the first time I went on my own...Well, I had a lot to tell him.\"\nOption A: +2\nOption B: +2 or +3\nOption C: +3\nKanji: \"As long as there's someone like that snot-nosed kid to accept me, I ain't afraid of nothing!\"\nOption A: +3 or +2 (NOTE: That's clearly not correct, so I'll need to test it.)\nOption B: +2 or +3\nOption C: +0\n-Rank 10-\nNo options\nNight Time Dates\nNeed to research"
+}

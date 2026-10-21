@@ -1,0 +1,1667 @@
+{
+  "id": "dungeons-hollow-forest",
+  "title": "Hollow Forest",
+  "chapter": "Dungeons",
+  "chapter_id": "dungeons",
+  "anchor": "hollow-forest",
+  "type": "dungeon",
+  "order": 47,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The eighth dungeon. Has a lot of special rules."
+    },
+    {
+      "type": "p",
+      "text": "Available: 2/13"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: 2/13"
+    },
+    {
+      "type": "p",
+      "text": "Floors: 10"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        {
+          "text": "Memories of Parting"
+        },
+        {
+          "text": "Memories of Pain"
+        },
+        {
+          "text": "Memories of Grief"
+        },
+        {
+          "text": "Memories of Sorrow"
+        },
+        {
+          "text": "Memories of Love"
+        },
+        {
+          "text": "Memories of Suffering"
+        },
+        {
+          "text": "Memories of Anger"
+        },
+        {
+          "text": "Memories of Loneliness"
+        },
+        {
+          "text": "Memories of Invitation"
+        },
+        {
+          "text": "Memories of Meeting"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Fixed Floors: 4 (Sorrow), 7 (Anger), 10 (Meeting)"
+    },
+    {
+      "type": "p",
+      "text": "Boss Floors: 4 (Sorrow), 7 (Anger), 10 (Meeting)"
+    },
+    {
+      "type": "p",
+      "text": "Hidden Item: N/A"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Must have triggered Good Ending Flag and maxed Aeon Social Link"
+    },
+    {
+      "type": "p",
+      "text": "Rules:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Items/Equip/Yen can't be brought into the dungeon. Any Items/Equip found in the dungeon can only be used here"
+        },
+        {
+          "text": "SP is halved after every battle"
+        },
+        {
+          "text": "Accessories heal SP every turn"
+        },
+        {
+          "text": "Gold Shadows can only be found in rare chests"
+        },
+        {
+          "text": "Can't use Traesto"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Treasure Chests",
+      "md": "**Treasure Chests**"
+    },
+    {
+      "type": "p",
+      "text": "Regular Chest"
+    },
+    {
+      "type": "p",
+      "text": "Sentou Seed\nSentou Petal\nSentou Fruit\nSacred Branch\nRevival Bead\nFire Bell\nIce Bell\nLightning Bell\nWind Bell\nFire Breaker\nIce Breaker\nLightning Breaker\nWind Breaker\nFire Joue\nIce Joue\nLightning Joue\nWind Joue\nFire Repel Joue\nIce Repel Joue\nElec Repel Joue\nWind Repel Joue\nParting Stone\nPain Stone\nGrief Stone\nSorrow Stone\nLove Stone\nSuffering Stone\nAnger Stone\nChest Key"
+    },
+    {
+      "type": "p",
+      "text": "Rare Chest"
+    },
+    {
+      "type": "p",
+      "text": "Fire Joue\nIce Houe\nLighting Houe\nWind Joue\nFire Repel Joue\nIce Repel Joue\nElec Repel Joue\nWind Repel Joue\nSorrow Stone\nLove Stone"
+    },
+    {
+      "type": "p",
+      "text": "Shuffle Time Personas",
+      "md": "**Shuffle Time Personas**"
+    },
+    {
+      "type": "p",
+      "text": "Siegfried\nBarong\nThor\nHell Biker\nMelchizedek\nKartikeya\nBelial\nHorus\nSeth\nSurt\nYurlungur\nAlilat\nHachiman\nTzitzimitl\nVasuki"
+    },
+    {
+      "type": "p",
+      "text": "Enemies",
+      "md": "**Enemies**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          },
+          {
+            "text": "Arcana",
+            "md": "**Arcana**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "RD",
+            "md": "**RD**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Lying Hablerie"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "125"
+          },
+          {
+            "text": "328"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1, 4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Snowfall Musha"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "330"
+          },
+          {
+            "text": "129"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "3, 7-9F"
+          }
+        ],
+        [
+          {
+            "text": "Praying Papillon"
+          },
+          {
+            "text": "Lovers"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "150"
+          },
+          {
+            "text": "511"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "5, 9F"
+          }
+        ],
+        [
+          {
+            "text": "Stupendous Relic"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": "485"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "3, 5-8F"
+          }
+        ],
+        [
+          {
+            "text": "Spectral Raven"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "150"
+          },
+          {
+            "text": "445"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1, 4F"
+          }
+        ],
+        [
+          {
+            "text": "Wheeled Bambino"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "245"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1-3F"
+          }
+        ],
+        [
+          {
+            "text": "Reverent Table"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "200"
+          },
+          {
+            "text": "231"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "2-5F"
+          }
+        ],
+        [
+          {
+            "text": "Superstitious Okina"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "400"
+          },
+          {
+            "text": "519"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Lawless Fuzz"
+          },
+          {
+            "text": "Hierophant"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "400"
+          },
+          {
+            "text": "344"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "6-7F"
+          }
+        ],
+        [
+          {
+            "text": "Emaciated Garcy"
+          },
+          {
+            "text": "Hanged"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "500"
+          },
+          {
+            "text": "629"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "7-8F"
+          }
+        ],
+        [
+          {
+            "text": "Gauntlet Hand"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "600"
+          },
+          {
+            "text": "354"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "4-8F"
+          }
+        ],
+        [
+          {
+            "text": "Cursed Pot"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "55"
+          },
+          {
+            "text": "400"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Praying Nyogo"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "175"
+          },
+          {
+            "text": "256"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1, 4-6F"
+          }
+        ],
+        [
+          {
+            "text": "Stone Panzer"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "300"
+          },
+          {
+            "text": "666"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "6-7F"
+          }
+        ],
+        [
+          {
+            "text": "Execution Sword"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "777"
+          },
+          {
+            "text": "234"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "8-9F"
+          }
+        ],
+        [
+          {
+            "text": "Clear Sky Musha"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "1000"
+          },
+          {
+            "text": "555"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "8-9F"
+          }
+        ],
+        [
+          {
+            "text": "Calm Machine"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "76"
+          },
+          {
+            "text": "1000"
+          },
+          {
+            "text": "310"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "1-3F"
+          }
+        ],
+        [
+          {
+            "text": "Harmonious Giant"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "76"
+          },
+          {
+            "text": "250"
+          },
+          {
+            "text": "169"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "3, 5-8F"
+          }
+        ],
+        [
+          {
+            "text": "Indignant Machine"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "888"
+          },
+          {
+            "text": "385"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "9F"
+          }
+        ],
+        [
+          {
+            "text": "Isolated Hand"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "80"
+          },
+          {
+            "text": "550"
+          },
+          {
+            "text": "999"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rare Chest"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Mini Boss",
+      "md": "**Mini Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Gorgeous King"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "4000"
+          },
+          {
+            "text": "575"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "4F"
+          }
+        ],
+        [
+          {
+            "text": "Lying Hablerie"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "125"
+          },
+          {
+            "text": "328"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Wheeled Bambino"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "245"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Reverent Table"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "950"
+          },
+          {
+            "text": "231"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Superstitious Okina"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "400"
+          },
+          {
+            "text": "519"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Praying Nyogo"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "175"
+          },
+          {
+            "text": "256"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Praying Papillon"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "150"
+          },
+          {
+            "text": "511"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Gauntlet Hand"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "600"
+          },
+          {
+            "text": "354"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Calm Machine"
+          },
+          {
+            "text": "76"
+          },
+          {
+            "text": "1000"
+          },
+          {
+            "text": "310"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Heaven's Giant"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "3333"
+          },
+          {
+            "text": "3333"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "7F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Gorgeous King can summon a lot of Shadows, and can cast Fear, Poison, Rage, Silence, Enervation, and Exhaustion. Also likes to use Mind Charged Megidolaon a lot. Be very careful of him. Heaven's Giant can also cast a lot of Status Ailments. You may need some items/Skills that break resistances."
+    },
+    {
+      "type": "p",
+      "text": "Boss",
+      "md": "**Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Marie"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "5000"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "10F"
+          }
+        ],
+        [
+          {
+            "text": "Kusumi-no-Okami"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "8000"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "10F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Marie is pretty easy, the one to worry about is Kusumi-no-Okami. You will need items/Skills that break resistances. She also has some heavy hitting attacks and Enclosure Shell which makes her invincible. She can be tough."
+    }
+  ],
+  "text": "The eighth dungeon. Has a lot of special rules.\nAvailable: 2/13\nLast Day: 2/13\nFloors: 10\nMemories of Parting\nMemories of Pain\nMemories of Grief\nMemories of Sorrow\nMemories of Love\nMemories of Suffering\nMemories of Anger\nMemories of Loneliness\nMemories of Invitation\nMemories of Meeting\nFixed Floors: 4 (Sorrow), 7 (Anger), 10 (Meeting)\nBoss Floors: 4 (Sorrow), 7 (Anger), 10 (Meeting)\nHidden Item: N/A\nNotes: Must have triggered Good Ending Flag and maxed Aeon Social Link\nRules:\nItems/Equip/Yen can't be brought into the dungeon. Any Items/Equip found in the dungeon can only be used here\nSP is halved after every battle\nAccessories heal SP every turn\nGold Shadows can only be found in rare chests\nCan't use Traesto\nTreasure Chests\nRegular Chest\nSentou Seed\nSentou Petal\nSentou Fruit\nSacred Branch\nRevival Bead\nFire Bell\nIce Bell\nLightning Bell\nWind Bell\nFire Breaker\nIce Breaker\nLightning Breaker\nWind Breaker\nFire Joue\nIce Joue\nLightning Joue\nWind Joue\nFire Repel Joue\nIce Repel Joue\nElec Repel Joue\nWind Repel Joue\nParting Stone\nPain Stone\nGrief Stone\nSorrow Stone\nLove Stone\nSuffering Stone\nAnger Stone\nChest Key\nRare Chest\nFire Joue\nIce Houe\nLighting Houe\nWind Joue\nFire Repel Joue\nIce Repel Joue\nElec Repel Joue\nWind Repel Joue\nSorrow Stone\nLove Stone\nShuffle Time Personas\nSiegfried\nBarong\nThor\nHell Biker\nMelchizedek\nKartikeya\nBelial\nHorus\nSeth\nSurt\nYurlungur\nAlilat\nHachiman\nTzitzimitl\nVasuki\nEnemies\nEnemy | Arcana | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | RD | Floor\nLying Hablerie | Magician | 73 | 125 | 328 |  | Wk | Wk | Wk | Wk | Wk | Wk |  | 1, 4-5F\nSnowfall Musha | Strength | 73 | 330 | 129 | Str |  |  |  |  |  |  |  | 3, 7-9F\nPraying Papillon | Lovers | 73 | 150 | 511 |  | Nul | Nul | Wk | Wk |  |  |  | 5, 9F\nStupendous Relic | Empress | 73 | 50 | 485 | Wk | Drn | Drn | Drn | Drn | Nul | Nul |  | 3, 5-8F\nSpectral Raven | Hermit | 74 | 150 | 445 |  |  |  | Wk | Wk | Wk | Wk |  | 1, 4F\nWheeled Bambino | Empress | 74 | 70 | 245 |  |  | Wk | Wk |  | Wk | Wk |  | 1-3F\nReverent Table | Magician | 74 | 200 | 231 | Str | Wk | Wk | Wk | Wk |  |  |  | 2-5F\nSuperstitious Okina | Hermit | 74 | 400 | 519 |  |  | Wk |  | Wk |  |  |  | 4-5F\nLawless Fuzz | Hierophant | 74 | 400 | 344 |  | Wk | Rpl |  |  |  |  |  | 6-7F\nEmaciated Garcy | Hanged | 74 | 500 | 629 |  | Wk | Wk | Wk | Wk |  | Rpl |  | 7-8F\nGauntlet Hand | Magician | 75 | 600 | 354 |  |  |  | Wk |  |  |  |  | 4-8F\nCursed Pot | ? | 75 | 55 | 400 | Drn | Wk | Wk | Wk | Wk | Wk | Wk |  | 4-5F\nPraying Nyogo | Strength | 75 | 175 | 256 |  | Wk |  |  | Wk | Wk | Wk |  | 1, 4-6F\nStone Panzer | Chariot | 75 | 300 | 666 | Str | Rpl |  |  | Wk |  |  |  | 6-7F\nExecution Sword | Justice | 75 | 777 | 234 | Rpl |  |  |  |  | Wk | Nul |  | 8-9F\nClear Sky Musha | Strength | 75 | 1000 | 555 |  |  |  |  |  | Rpl |  |  | 8-9F\nCalm Machine | Justice | 76 | 1000 | 310 | Str | Wk | Wk | Wk | Wk |  |  |  | 1-3F\nHarmonious Giant | Justice | 76 | 250 | 169 | Wk |  |  |  |  |  |  |  | 3, 5-8F\nIndignant Machine | Justice | 77 | 888 | 385 | Str | Str | Str | Str | Str | Nul | Nul |  | 9F\nIsolated Hand | ? | 80 | 550 | 999 | Str | Drn | Drn | Drn | Drn | Nul | Nul |  | Rare Chest\nMini Boss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nGorgeous King | 77 | 4000 | 575 | Wk | Str | Str | Str | Str | Nul | Nul | 4F\nLying Hablerie | 73 | 125 | 328 |  | Wk | Wk | Wk | Wk | Wk | Wk | N/A\nWheeled Bambino | 75 | 70 | 245 |  |  | Wk | Wk |  | Wk | Wk | N/A\nReverent Table | 74 | 950 | 231 | Str | Wk | Wk | Wk | Wk |  |  | N/A\nSuperstitious Okina | 74 | 400 | 519 |  |  | Wk |  | Wk |  |  | N/A\nPraying Nyogo | 75 | 175 | 256 |  | Wk |  |  | Wk | Wk | Wk | N/A\nPraying Papillon | 73 | 150 | 511 |  | Nul | Nul | Wk | Wk |  |  | N/A\nGauntlet Hand | 75 | 600 | 354 |  |  |  | Wk |  |  |  | N/A\nCalm Machine | 76 | 1000 | 310 | Str | Wk | Wk | Wk | Wk |  |  | N/A\nHeaven's Giant | 77 | 3333 | 3333 | Str | Nul | Nul | Nul | Nul | Nul | Nul | 7F\nGorgeous King can summon a lot of Shadows, and can cast Fear, Poison, Rage, Silence, Enervation, and Exhaustion. Also likes to use Mind Charged Megidolaon a lot. Be very careful of him. Heaven's Giant can also cast a lot of Status Ailments. You may need some items/Skills that break resistances.\nBoss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nMarie | 77 | 5000 | ? | Str |  |  |  |  | Rpl | Rpl | 10F\nKusumi-no-Okami | 77 | 8000 | ? | Rpl | Rpl | Rpl | Rpl | Rpl | Rpl | Rpl | 10F\nMarie is pretty easy, the one to worry about is Kusumi-no-Okami. You will need items/Skills that break resistances. She also has some heavy hitting attacks and Enclosure Shell which makes her invincible. She can be tough."
+}

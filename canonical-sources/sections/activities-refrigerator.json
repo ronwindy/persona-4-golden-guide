@@ -1,0 +1,587 @@
+{
+  "id": "activities-refrigerator",
+  "title": "Refrigerator",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "refrigerator",
+  "type": "article",
+  "order": 118,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Sometimes the fridge has some food you can interact with. If you eat said food, there are two things that can happen. Sometimes your Courage will increase, and sometimes time will pass. These are not mutually exclusive. Here is the list of everything you can find in the fridge."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Food",
+            "md": "**Food**"
+          },
+          {
+            "text": "Date",
+            "md": "**Date**"
+          },
+          {
+            "text": "Can Eat",
+            "md": "**Can Eat**"
+          },
+          {
+            "text": "Courage",
+            "md": "**Courage**"
+          },
+          {
+            "text": "Pass Time",
+            "md": "**Pass Time**"
+          }
+        ],
+        [
+          {
+            "text": "Fried Rice"
+          },
+          {
+            "text": "April 11th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Instant Ramen"
+          },
+          {
+            "text": "April 18th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Expired Red Miso"
+          },
+          {
+            "text": "April 25th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Dried Pickle"
+          },
+          {
+            "text": "May 2nd"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Cream Soda"
+          },
+          {
+            "text": "May 18th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Slice of Ham"
+          },
+          {
+            "text": "May 23rd"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Expired Milk"
+          },
+          {
+            "text": "May 30th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Choco Flakes"
+          },
+          {
+            "text": "June 6th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Frozen Banana"
+          },
+          {
+            "text": "June 13th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Wasabi"
+          },
+          {
+            "text": "June 20th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Junes Side Dish"
+          },
+          {
+            "text": "June 27th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Nanako's Pudding"
+          },
+          {
+            "text": "July 4th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Alarm Clock"
+          },
+          {
+            "text": "July 11th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Bitter Melon"
+          },
+          {
+            "text": "July 18th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Barley Tea"
+          },
+          {
+            "text": "July 25th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Homerun Bar"
+          },
+          {
+            "text": "August 1st"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Beer"
+          },
+          {
+            "text": "August 8th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Note"
+          },
+          {
+            "text": "August 22nd"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Junes Shiokara"
+          },
+          {
+            "text": "September 1st"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Watermelon Slice"
+          },
+          {
+            "text": "September 5th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Unknown Mushroom"
+          },
+          {
+            "text": "September 13th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Fried Dough"
+          },
+          {
+            "text": "September 19th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Camera Film"
+          },
+          {
+            "text": "September 27th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Shortcake"
+          },
+          {
+            "text": "October 3rd"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Clams"
+          },
+          {
+            "text": "October 10th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Pear"
+          },
+          {
+            "text": "October 24th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Iced Coffee"
+          },
+          {
+            "text": "November 2nd"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          }
+        ],
+        [
+          {
+            "text": "Rice Ball"
+          },
+          {
+            "text": "November 6th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Magazine"
+          },
+          {
+            "text": "January 10th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Animal Hair"
+          },
+          {
+            "text": "January 17th"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Crab"
+          },
+          {
+            "text": "January 24th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ],
+        [
+          {
+            "text": "Steak Bento"
+          },
+          {
+            "text": "January 30th"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Sometimes the fridge has some food you can interact with. If you eat said food, there are two things that can happen. Sometimes your Courage will increase, and sometimes time will pass. These are not mutually exclusive. Here is the list of everything you can find in the fridge.\nFood | Date | Can Eat | Courage | Pass Time\nFried Rice | April 11th | Yes | No | No\nInstant Ramen | April 18th | No | No | No\nExpired Red Miso | April 25th | Yes | Yes | Yes\nDried Pickle | May 2nd | Yes | Yes | Yes\nCream Soda | May 18th | Yes | No | No\nSlice of Ham | May 23rd | No | No | No\nExpired Milk | May 30th | Yes | Yes | Yes\nChoco Flakes | June 6th | Yes | No | No\nFrozen Banana | June 13th | Yes | No | No\nWasabi | June 20th | Yes | Yes | Yes\nJunes Side Dish | June 27th | Yes | No | No\nNanako's Pudding | July 4th | Yes | Yes | No\nAlarm Clock | July 11th | No | No | No\nBitter Melon | July 18th | Yes | Yes | Yes\nBarley Tea | July 25th | Yes | No | Yes\nHomerun Bar | August 1st | Yes | No | No\nBeer | August 8th | No | No | No\nNote | August 22nd | No | No | No\nJunes Shiokara | September 1st | Yes | Yes | No\nWatermelon Slice | September 5th | Yes | No | No\nUnknown Mushroom | September 13th | Yes | Yes | Yes\nFried Dough | September 19th | Yes | No | No\nCamera Film | September 27th | No | No | No\nShortcake | October 3rd | Yes | No | No\nClams | October 10th | No | No | No\nPear | October 24th | Yes | Yes | Yes\nIced Coffee | November 2nd | Yes | No | Yes\nRice Ball | November 6th | Yes | No | No\nMagazine | January 10th | No | No | No\nAnimal Hair | January 17th | No | No | No\nCrab | January 24th | Yes | No | No\nSteak Bento | January 30th | Yes | No | No"
+}

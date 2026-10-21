@@ -1,0 +1,736 @@
+{
+  "id": "social-links-yumi-ozawa-and-ayane-matsunaga-sun",
+  "title": "Yumi Ozawa and Ayane Matsunaga/Sun",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "yumi-ozawa-and-ayane-matsunaga-sun",
+  "type": "social-link",
+  "order": 96,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday",
+            "md": "**Monday**"
+          },
+          {
+            "text": "Tuesday",
+            "md": "**Tuesday**"
+          },
+          {
+            "text": "Wednesday",
+            "md": "**Wednesday**"
+          },
+          {
+            "text": "Thursday",
+            "md": "**Thursday**"
+          },
+          {
+            "text": "Friday",
+            "md": "**Friday**"
+          },
+          {
+            "text": "Saturday",
+            "md": "**Saturday**"
+          },
+          {
+            "text": "Sunday",
+            "md": "**Sunday**"
+          },
+          {
+            "text": "Rain",
+            "md": "**Rain**"
+          }
+        ],
+        [
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: April 25th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 3rd"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Join a Culture Club"
+    },
+    {
+      "type": "p",
+      "text": "Location: Drama Club or Music Club on Practice Building 1F, Classroom Building 2F"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Asura"
+    },
+    {
+      "type": "p",
+      "text": "Key Items: Annotated Script (Drama), Handmade Ticket (Music)"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Social Link has 2 routes depending on which Culture Club you join. Both routes also split for a total of 4 routes. Drama splits at Rank 10, and Music splits at Rank 8. Social Link won't be available during the week before exams."
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "p",
+      "text": "Drama"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "8"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "7"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "5"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Music"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "6"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Join the Drama Club on April 25th or later"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: The line began..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: Skips Response 2\nOption B: Advances to Response 2\nOption C: Skips Response 2"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Then it went..."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"...But I do want us to take it seriously, so give it a shot okay?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"Huh...? Oh, er...what should I do? We're still...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0\nYumi: \"Wh-When did you get here!? Were you listening to me?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Yumi is trebling with anger..."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"...Was I wrong when I said that?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2 or +3\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: '...Anywhere but at home.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +0\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"Just forget about this, okay?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"MC-kun...Why are you...?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2\nOption B: +2 or +3\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"She's pushing herself too far. She's so stupid.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"It's all because of my parents. They're both holding me back.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"It's not like you have anything to do with what's happening in my life.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +2"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"...I just came from Dad's---that man's room...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"...Why do I have to go through all of this? Why me!?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"...He's so stupid.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +?\nOption B: +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"There's...just somethings I just don't understand.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Yumi is not doing good."
+    },
+    {
+      "type": "p",
+      "text": "Any option:+0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Yumi seems to be enduring the tragedy."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"I am good at something...But what kind of thing?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Drama Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"I'll turn around, so if you're going to reject me, just leave the room. That way, I won't have to see you go...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: Intimate (Advances to Response 2)\nOption B: Platonic (Skips Response 2)"
+    },
+    {
+      "type": "p",
+      "text": "Yumi: \"Picturing it...It's kind of embarrassing, huh?"
+    },
+    {
+      "type": "p",
+      "text": "Option A: +?\nOption B: +?\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Join the Music Club on April 25th or later"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"I wish I had as much talent as you.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B (Requires Unknown Rank Understanding): +2 or +3\nOption C: +0 or +?"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Cleanup looks like a big task for just one person..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3 (Understanding UP)\nOption B: +1 or +2 (Diligence UP)"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"I think I'll stick around and practice. I was out so long, I didn't even touch my trombone.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2\nOption B: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"...Not that I'll be in it, but still...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"Because there are lots of other things I can do for the club. Scheduling, accounting, cleaning up...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"Shoot...I still can't play the part I was messing up last time.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C (Requires Courage Rank Brave): +3"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"It'd be nice to be able to play outside, but I'd embarrass myself if I went alone...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 (Understanding UP) (Expression UP)\nOption B: +3 (Understanding UP) (Expression UP)\nOption C (Requires Unknown Rank Courage): +3 (Expression UP)"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"Oh...I'm distracting you from your own practice, aren't I...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B (Requires Understanding Rank Generous): +3\nOption C: +2 (Diligence UP)"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: As the others leave, Ayane stays engrossed in her practice..."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ayane: \"I can't...I can't do it...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3 (Expression UP)\nOption B: +0 (Courage UP)\nOption C (Requires Understanding Rank Generous): +3"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "No options"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: The other members are remaining silent..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 (Expression UP)\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Ayane is weeping..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 (Expression UP)\nOption B: +0\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: What should you do...?"
+    },
+    {
+      "type": "p",
+      "text": "Option A: Intimate\nOption B: Platonic"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Platonic"
+    },
+    {
+      "type": "p",
+      "text": "No options"
+    },
+    {
+      "type": "p",
+      "text": "Intimate"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Ayane looks at the ground nervously."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or +3\nOption B: +? or +3\nOption C (Requires Unknown Rank Courage): +3"
+    },
+    {
+      "type": "p",
+      "text": "-Music Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Platonic"
+    },
+    {
+      "type": "p",
+      "text": "No options"
+    },
+    {
+      "type": "p",
+      "text": "Intimate"
+    },
+    {
+      "type": "p",
+      "text": "No options"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "May 20th or 27th\nJune 10th or 24th\nNeed to Research the rest"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nYes | Yes | No | Yes | No | No | No | Yes\nInformation\nFirst Day: April 25th\nLast Day: February 3rd\nActivation: Join a Culture Club\nLocation: Drama Club or Music Club on Practice Building 1F, Classroom Building 2F\nUltimate Persona: Asura\nKey Items: Annotated Script (Drama), Handmade Ticket (Music)\nNotes: Social Link has 2 routes depending on which Culture Club you join. Both routes also split for a total of 4 routes. Drama splits at Rank 10, and Music splits at Rank 8. Social Link won't be available during the week before exams.\nPoints Needed\nDrama\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 2\nRank 5 | 6\nRank 6 | 8\nRank 7 | 6\nRank 8 | 7\nRank 9 | 0\nRank 10 | 5\nMusic\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 2\nRank 5 | 4\nRank 6 | 6\nRank 7 | 6\nRank 8 | 6\nRank 9 | 4\nRank 10 | 6\nRank Up Scenes\n-Drama Rank 1-\nJoin the Drama Club on April 25th or later\n-Drama Rank 2-\nNarrator: The line began...\nOption A: Skips Response 2\nOption B: Advances to Response 2\nOption C: Skips Response 2\nNarrator: Then it went...\nAny option: +0\nYumi: \"...But I do want us to take it seriously, so give it a shot okay?\"\nOption A: +3\nOption B: +0\n-Drama Rank 3-\nYumi: \"Huh...? Oh, er...what should I do? We're still...\"\nAny option: +0\nYumi: \"Wh-When did you get here!? Were you listening to me?\"\nAny option: +0\nNarrator: Yumi is trebling with anger...\nAny option: +0\n-Drama Rank 4-\nYumi: \"...Was I wrong when I said that?\"\nOption A: +0\nOption B: +2 or +3\nOption C: +2\nYumi: '...Anywhere but at home.\"\nOption A: +2 or +3\nOption B: +0\nOption C: +2\nYumi: \"Just forget about this, okay?\"\nOption A: +2 or +3\nOption B: +3\n-Drama Rank 5-\nYumi: \"MC-kun...Why are you...?\"\nOption A: +2\nOption B: +2 or +3\nOption C: +2\nYumi: \"She's pushing herself too far. She's so stupid.\"\nAny option: +0\nYumi: \"It's all because of my parents. They're both holding me back.\"\nOption A: +0\nOption B: +0\nOption C: +2\nYumi: \"It's not like you have anything to do with what's happening in my life.\"\nOption A: +3\nOption B: +2\n-Drama Rank 6-\nYumi: \"...I just came from Dad's---that man's room...\"\nOption A: +0\nOption B: +0\nOption C: +2\nYumi: \"...Why do I have to go through all of this? Why me!?\"\nAny option: +0\n-Drama Rank 7-\nYumi: \"...He's so stupid.\"\nOption A: +?\nOption B: +3\nOption C: +0\n-Drama Rank 8-\nYumi: \"There's...just somethings I just don't understand.\"\nOption A: +3\nOption B: +? or +3\nOption C: +0\n-Drama Rank 9-\nNarrator: Yumi is not doing good.\nAny option:+0\nNarrator: Yumi seems to be enduring the tragedy.\nAny option: +0\nYumi: \"I am good at something...But what kind of thing?\"\nAny option: +? or +3\n-Drama Rank 10-\nYumi: \"I'll turn around, so if you're going to reject me, just leave the room. That way, I won't have to see you go...\"\nOption A: Intimate (Advances to Response 2)\nOption B: Platonic (Skips Response 2)\nYumi: \"Picturing it...It's kind of embarrassing, huh?\nOption A: +?\nOption B: +?\nOption C: +0\n-Music Rank 1-\nJoin the Music Club on April 25th or later\n-Music Rank 2-\nAyane: \"I wish I had as much talent as you.\"\nOption A: +1 or +2\nOption B (Requires Unknown Rank Understanding): +2 or +3\nOption C: +0 or +?\nNarrator: Cleanup looks like a big task for just one person...\nOption A: +2 or +3 (Understanding UP)\nOption B: +1 or +2 (Diligence UP)\n-Music Rank 3-\nAyane: \"I think I'll stick around and practice. I was out so long, I didn't even touch my trombone.\"\nOption A: +2\nOption B: +2 or +3\nAyane: \"...Not that I'll be in it, but still...\"\nAny option: +0\nAyane: \"Because there are lots of other things I can do for the club. Scheduling, accounting, cleaning up...\"\nOption A: +1 or +2\nOption B: +0\n-Music Rank 4-\nAyane: \"Shoot...I still can't play the part I was messing up last time.\"\nOption A: +0\nOption B: +0\nOption C (Requires Courage Rank Brave): +3\nAyane: \"It'd be nice to be able to play outside, but I'd embarrass myself if I went alone...\"\nOption A: +0 (Understanding UP) (Expression UP)\nOption B: +3 (Understanding UP) (Expression UP)\nOption C (Requires Unknown Rank Courage): +3 (Expression UP)\nAyane: \"Oh...I'm distracting you from your own practice, aren't I...\"\nOption A: +0\nOption B (Requires Understanding Rank Generous): +3\nOption C: +2 (Diligence UP)\n-Music Rank 5-\nNarrator: As the others leave, Ayane stays engrossed in her practice...\nAny option: +0\nAyane: \"I can't...I can't do it...\"\nOption A: +2 or +3 (Expression UP)\nOption B: +0 (Courage UP)\nOption C (Requires Understanding Rank Generous): +3\n-Music Rank 6-\nNo options\n-Music Rank 7-\nNarrator: The other members are remaining silent...\nOption A: +0 (Expression UP)\nOption B: +0\nNarrator: Ayane is weeping...\nOption A: +0 (Expression UP)\nOption B: +0\nOption C: +? or +3\n-Music Rank 8-\nNarrator: What should you do...?\nOption A: Intimate\nOption B: Platonic\n-Music Rank 9-\nPlatonic\nNo options\nIntimate\nNarrator: Ayane looks at the ground nervously.\nOption A: +? or +3\nOption B: +? or +3\nOption C (Requires Unknown Rank Courage): +3\n-Music Rank 10-\nPlatonic\nNo options\nIntimate\nNo options\nNight Time Dates\nMay 20th or 27th\nJune 10th or 24th\nNeed to Research the rest"
+}

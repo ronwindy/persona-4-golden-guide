@@ -1,0 +1,417 @@
+{
+  "id": "social-links-yosuke-hanamura-magician",
+  "title": "Yosuke Hanamura/Magician",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "yosuke-hanamura-magician",
+  "type": "social-link",
+  "order": 78,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday",
+            "md": "**Monday**"
+          },
+          {
+            "text": "Tuesday",
+            "md": "**Tuesday**"
+          },
+          {
+            "text": "Wednesday",
+            "md": "**Wednesday**"
+          },
+          {
+            "text": "Thursday",
+            "md": "**Thursday**"
+          },
+          {
+            "text": "Friday",
+            "md": "**Friday**"
+          },
+          {
+            "text": "Saturday",
+            "md": "**Saturday**"
+          },
+          {
+            "text": "Sunday",
+            "md": "**Sunday**"
+          },
+          {
+            "text": "Rain",
+            "md": "**Rain**"
+          }
+        ],
+        [
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Holiday"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: April 16th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 5th"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Automatic"
+    },
+    {
+      "type": "p",
+      "text": "Location: Classroom Building 2F or Junes"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Mada"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Buddy's Bandage"
+    },
+    {
+      "type": "p",
+      "text": "Notes: N/A"
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "3"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "8"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Automatically on April 16th"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"Sorry about that. You know me, I'm infamous around here.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"Wait a minute... Am I starting to sound like Teddie?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +1 or +2\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"Looks like someone got my address. I get a lot of spam.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"Phew, I'm beat... I'm not the complaints department...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1\nOption B: +1 or +2\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"I have to do what I can...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"So...? You keep the goods under your futon?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +3\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"So, you ever invited a girl in here?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +2 or +3\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"But hey, I'm glad you were there! Thanks.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"So... there's no need to bother with outsiders.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: +2"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: They started to badmouth Saki-senpai."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B (Requires Understanding Rank Generous): +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"I just blurted out a buncha crap, huh?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0 (NOTE: Need to test this)"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"But then...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"I'm sorry... Saki-senpai. I'm sorry... MC.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"MC... I think I'm all cried out...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0 (NOTE: Need to test this)"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Yosuke is smiling sadly..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2\nOption B: +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"Just being born, living your life... Before you know it, you're already special to someone.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"I like you for that, and I'm proud of you... But I guess I was jealous at the same time.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Will hitting Yosuke make you and him equal...?"
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "April 19th\nMay 3rd and 27th\nJune 7th and 10th\nJuly 5th\nAugust 5th\nSeptember 2nd and 13th\nOctober 11th\nNovember 1st and 15th\nDecember 9th and 16th\nJanuary 13th, 24th, and 31st\nFebruary 1st"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nYes | Holiday | No | Yes | Yes | Yes | Yes | No\nInformation\nFirst Day: April 16th\nLast Day: February 5th\nActivation: Automatic\nLocation: Classroom Building 2F or Junes\nUltimate Persona: Mada\nKey Item: Buddy's Bandage\nNotes: N/A\nPoints Needed\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 3\nRank 5 | 4\nRank 6 | 4\nRank 7 | 6\nRank 8 | 6\nRank 9 | 4\nRank 10 | 8\nRank Up Scenes\n-Rank 1-\nAutomatically on April 16th\n-Rank 2-\nYosuke: \"Sorry about that. You know me, I'm infamous around here.\"\nOption A: +3\nOption B: +0\nOption C: +0\n-Rank 3-\nYosuke: \"Wait a minute... Am I starting to sound like Teddie?\"\nOption A: +0\nOption B: +1 or +2\nOption C: +3\nYosuke: \"Looks like someone got my address. I get a lot of spam.\"\nAny option: +0\n-Rank 4-\nYosuke: \"Phew, I'm beat... I'm not the complaints department...\"\nOption A: +1\nOption B: +1 or +2\nOption C: +2 or +3\nYosuke: \"I have to do what I can...\"\nOption A: +2 or +3\nOption B: +0\nOption C: +0\n-Rank 5-\nYosuke: \"So...? You keep the goods under your futon?\"\nOption A: +3\nOption B: +3\nOption C: +2 or +3\nYosuke: \"So, you ever invited a girl in here?\"\nOption A: +2 or +3\nOption B: +2 or +3\nOption C: +3\n-Rank 6-\nYosuke: \"But hey, I'm glad you were there! Thanks.\"\nOption A: +3\nOption B: +? or +3\nOption C: +? or +3\nYosuke: \"So... there's no need to bother with outsiders.\"\nOption A: +3\nOption B: +? or +3\nOption C: +2\n-Rank 7-\nNarrator: They started to badmouth Saki-senpai.\nOption A: +0\nOption B (Requires Understanding Rank Generous): +0\nOption C: +0\nYosuke: \"I just blurted out a buncha crap, huh?\"\nAny option: +0 (NOTE: Need to test this)\n-Rank 8-\nYosuke: \"But then...\"\nAny option: +0\nYosuke: \"I'm sorry... Saki-senpai. I'm sorry... MC.\"\nAny option: +0\nYosuke: \"MC... I think I'm all cried out...\"\nAny option: +0 (NOTE: Need to test this)\n-Rank 9-\nNarrator: Yosuke is smiling sadly...\nOption A: +2\nOption B: +0\nOption C: +0\nYosuke: \"Just being born, living your life... Before you know it, you're already special to someone.\"\nOption A: +3\nOption B: +? or +3\nOption C: +? or +3\n-Rank 10-\nYosuke: \"I like you for that, and I'm proud of you... But I guess I was jealous at the same time.\"\nAny option: +0\nNarrator: Will hitting Yosuke make you and him equal...?\nAny option: +0\nNight Time Dates\nApril 19th\nMay 3rd and 27th\nJune 7th and 10th\nJuly 5th\nAugust 5th\nSeptember 2nd and 13th\nOctober 11th\nNovember 1st and 15th\nDecember 9th and 16th\nJanuary 13th, 24th, and 31st\nFebruary 1st"
+}

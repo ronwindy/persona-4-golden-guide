@@ -1,0 +1,184 @@
+{
+  "id": "persona-compendium-hanged-man",
+  "title": "Hanged Man",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "hanged-man",
+  "type": "arcana",
+  "order": 64,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Judgement\nMagician x Tower\nPriestess x Fortune\nEmperor x Aeon\nHierophant x Tower\nLovers x Moon\nChariot x Tower\nStrength x Death\nStrength x Tower\nHanged Man x Hanged Man\nDeath x Aeon\nTemperance x Moon\nTower x Star\nJudgement x Aeon"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Priestess x Lovers\nEmperor x Judgement\nHierophant x Lovers\nHierophant x Fortune\nLovers x Fortune\nLovers x Moon\nHanged Man x Hanged Man\nDeath x Moon\nTemperance x Moon\nTower x Moon\nMoon x Jester"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Berith"
+          },
+          {
+            "text": "15"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Yomotsu-Ikusa"
+          },
+          {
+            "text": "22"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Makami"
+          },
+          {
+            "text": "27"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Orthrus"
+          },
+          {
+            "text": "39"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Yatsufusa"
+          },
+          {
+            "text": "49"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Taowu"
+          },
+          {
+            "text": "56"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Hell Biker"
+          },
+          {
+            "text": "66"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Vasuki"
+          },
+          {
+            "text": "71"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Attis"
+          },
+          {
+            "text": "82"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Judgement\nMagician x Tower\nPriestess x Fortune\nEmperor x Aeon\nHierophant x Tower\nLovers x Moon\nChariot x Tower\nStrength x Death\nStrength x Tower\nHanged Man x Hanged Man\nDeath x Aeon\nTemperance x Moon\nTower x Star\nJudgement x Aeon\nTriangle Spread\nPriestess x Lovers\nEmperor x Judgement\nHierophant x Lovers\nHierophant x Fortune\nLovers x Fortune\nLovers x Moon\nHanged Man x Hanged Man\nDeath x Moon\nTemperance x Moon\nTower x Moon\nMoon x Jester\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nBerith | 15 |  | \nYomotsu-Ikusa | 22 |  | \nMakami | 27 |  | \nOrthrus | 39 |  | \nYatsufusa | 49 |  | \nTaowu | 56 | X | \nHell Biker | 66 |  | \nVasuki | 71 |  | \nAttis | 82 |  | X"
+}

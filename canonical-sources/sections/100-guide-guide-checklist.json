@@ -1,0 +1,76 @@
+{
+  "id": "100-guide-guide-checklist",
+  "title": "Guide Checklist",
+  "chapter": "100% Guide",
+  "chapter_id": "100-guide",
+  "anchor": "guide-checklist",
+  "type": "reference",
+  "order": 1,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "This section exists to keep track of what needs to be done for the guide. The guide was posted on version 0.50 and will be completely finished on version 2.00. The list is the order of things that need to be done from top to bottom. This section will be erased in version 2.00."
+    },
+    {
+      "type": "p",
+      "text": "Walkthrough 0.50"
+    },
+    {
+      "type": "p",
+      "text": "Dungeons 0.55"
+    },
+    {
+      "type": "p",
+      "text": "Boss List 0.60"
+    },
+    {
+      "type": "p",
+      "text": "Persona Compendium 0.65"
+    },
+    {
+      "type": "p",
+      "text": "Social Links 0.70"
+    },
+    {
+      "type": "p",
+      "text": "Activities 0.75"
+    },
+    {
+      "type": "p",
+      "text": "Skill List 0.80"
+    },
+    {
+      "type": "p",
+      "text": "Item List 0.85"
+    },
+    {
+      "type": "p",
+      "text": "Tips and Tricks 0.90"
+    },
+    {
+      "type": "p",
+      "text": "Conclusion 0.95"
+    },
+    {
+      "type": "p",
+      "text": "Check/Edit the Guide 1.00"
+    },
+    {
+      "type": "p",
+      "text": "Playthrough New Game Plus 1.25"
+    },
+    {
+      "type": "p",
+      "text": "Replay and test Walkthrough 1.50"
+    },
+    {
+      "type": "p",
+      "text": "Test info in Guide 1.75"
+    },
+    {
+      "type": "p",
+      "text": "Check, Edit, Reread, and finalize Guide 2.00"
+    }
+  ],
+  "text": "This section exists to keep track of what needs to be done for the guide. The guide was posted on version 0.50 and will be completely finished on version 2.00. The list is the order of things that need to be done from top to bottom. This section will be erased in version 2.00.\nWalkthrough 0.50\nDungeons 0.55\nBoss List 0.60\nPersona Compendium 0.65\nSocial Links 0.70\nActivities 0.75\nSkill List 0.80\nItem List 0.85\nTips and Tricks 0.90\nConclusion 0.95\nCheck/Edit the Guide 1.00\nPlaythrough New Game Plus 1.25\nReplay and test Walkthrough 1.50\nTest info in Guide 1.75\nCheck, Edit, Reread, and finalize Guide 2.00"
+}

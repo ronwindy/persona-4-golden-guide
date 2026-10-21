@@ -1,0 +1,94 @@
+{
+  "id": "gameplay-mechanics-new-game-plus",
+  "title": "New Game Plus",
+  "chapter": "Gameplay Mechanics",
+  "chapter_id": "gameplay-mechanics",
+  "anchor": "new-game-plus",
+  "type": "article",
+  "order": 20,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "After completing the game, you can save clear data. Loading clear data activates New Game Plus. New Game Plus is an extra in some RPG's where you restart the game with some things carried over, and new things unlocked. This section goes over what gets carried over and what is new."
+    },
+    {
+      "type": "p",
+      "text": "What gets carried over:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Play Time"
+        },
+        {
+          "text": "Amount of Yen"
+        },
+        {
+          "text": "Status Parameters"
+        },
+        {
+          "text": "Persona Compendium"
+        },
+        {
+          "text": "Persona Compendium Discount Items"
+        },
+        {
+          "text": "Social Link Key Items"
+        },
+        {
+          "text": "Registered Skill Cards"
+        },
+        {
+          "text": "Persona Slots"
+        },
+        {
+          "text": "Costumes"
+        },
+        {
+          "text": "Weapons Crafted in Daidara"
+        },
+        {
+          "text": "Hardcore Risette Fan. This is a highly debated topic. Tons of research has been done by the community. The evidence highly suggests this does carry over between playthroughs."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "What does NOT get carried over:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Character Levels"
+        },
+        {
+          "text": "Personas in your deck"
+        },
+        {
+          "text": "Equipment you own"
+        },
+        {
+          "text": "All other items you own"
+        },
+        {
+          "text": "Social Links"
+        },
+        {
+          "text": "Quests"
+        },
+        {
+          "text": "Analysis Data"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "There are only 3 pieces of new content in New Game Plus: Difficulty Select (PS Vita only), A new Persona Fusion, and the Secret Boss. On PS Vita changing or customizing the difficulty is locked behind New Game Plus, the new Persona Fusion requires 12 Personas, and the Secret Boss takes place on the last day in the game."
+    }
+  ],
+  "text": "After completing the game, you can save clear data. Loading clear data activates New Game Plus. New Game Plus is an extra in some RPG's where you restart the game with some things carried over, and new things unlocked. This section goes over what gets carried over and what is new.\nWhat gets carried over:\nPlay Time\nAmount of Yen\nStatus Parameters\nPersona Compendium\nPersona Compendium Discount Items\nSocial Link Key Items\nRegistered Skill Cards\nPersona Slots\nCostumes\nWeapons Crafted in Daidara\nHardcore Risette Fan. This is a highly debated topic. Tons of research has been done by the community. The evidence highly suggests this does carry over between playthroughs.\nWhat does NOT get carried over:\nCharacter Levels\nPersonas in your deck\nEquipment you own\nAll other items you own\nSocial Links\nQuests\nAnalysis Data\nThere are only 3 pieces of new content in New Game Plus: Difficulty Select (PS Vita only), A new Persona Fusion, and the Secret Boss. On PS Vita changing or customizing the difficulty is locked behind New Game Plus, the new Persona Fusion requires 12 Personas, and the Secret Boss takes place on the last day in the game."
+}

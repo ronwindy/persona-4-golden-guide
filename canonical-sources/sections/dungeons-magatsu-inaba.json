@@ -1,0 +1,2170 @@
+{
+  "id": "dungeons-magatsu-inaba",
+  "title": "Magatsu Inaba",
+  "chapter": "Dungeons",
+  "chapter_id": "dungeons",
+  "anchor": "magatsu-inaba",
+  "type": "dungeon",
+  "order": 46,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The seventh dungeon. The dungeon is split into 2 areas."
+    },
+    {
+      "type": "p",
+      "text": "Available: 12/8"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: 12/24"
+    },
+    {
+      "type": "p",
+      "text": "Floors: 9"
+    },
+    {
+      "type": "p",
+      "text": "Fixed Floors: Magatsu Inaba 2 and 3, Magatsu Mandala 3 and 6"
+    },
+    {
+      "type": "p",
+      "text": "Boss Floors: Magatsu Inaba 3, Magatsu Mandala 3 and 6"
+    },
+    {
+      "type": "p",
+      "text": "Hidden Item: N/A"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Must have triggered Good Ending Flag. Time will pass to 12/23 if completed by 12/22 or earlier, and will pass to 12/25 if completed on 12/23 or 12/24. Glorious Hands are marked as having 999 HP in analysis, but they actually have 9999 HP"
+    },
+    {
+      "type": "p",
+      "text": "Treasure Chests",
+      "md": "**Treasure Chests**"
+    },
+    {
+      "type": "p",
+      "text": "Regular Chest"
+    },
+    {
+      "type": "p",
+      "text": "Peach Seed\nLife Stone\nSoul Drop\nSnuff Soul\nRevival Bead\nBalm of Life\nHiranya\nAmrita Soda\nFirecracker\nSan-zun Tama\nHell Magatama\nIce Cube\nDry Ice\nFrost Magatama\nBall Lightning\nTesla Coil\nArc Magatama\nPinwheel\nYashichi\nCyclone Magatama\nSegaki Rice\nCurse Paper\nPurifying Water\nPurifying Salt\nPhysical Mirror\nMagic Mirror\nAssault Signal\nDiamond Shield\nSuper Sonic\nHomunculus\nVanish Ball\nGoho-M\nSmart Bomb\nChest Key"
+    },
+    {
+      "type": "p",
+      "text": "Rare Chest"
+    },
+    {
+      "type": "p",
+      "text": "Bead\nBead Chain\nChewing Soul\nSoul Food\nSoma\nMagatsu Kiba\nNubatama Suit\nAngel Skirt\nInferno Vow\nInferno Pin\nEye of Flame\nIcicle Vow\nIcicle Pin\nEye of Ice\nLightning Vow\nLightning Pin\nEye of Thunder\nGale Vow\nGale Pin\nEye of Wind\nPower Muscle\nDemon Charm\nDefense Essence\nSpeed Star\nLucky Seven\nReisen Brace\nAmaterasu Fob\nMoon Potpourri\nEagle Eye\nSigma Drive\nOmega Drive\nAwareness Note\nRebirth Prophecy\nSpace Badge\nWizard's Mask\nDivine Pillar\nCat Whisker\nBarbaric Bracers\nRudra Ring\nRetribution Mask\nBlessed Hands\nGas Mask\nConfusion Hat\nBold Ball\nMask of Truth\nFrozen Rose\nHealthy Homa\nPitch Pipes\nBook of the Void\n3 Chest Key"
+    },
+    {
+      "type": "p",
+      "text": "Shuffle Time Personas",
+      "md": "**Shuffle Time Personas**"
+    },
+    {
+      "type": "p",
+      "text": "Shiki-Ouji\nTaowu\nGaruda\nSui-Ki\nUriel\nWhite Rider\nHariti\nMother Harlot\nDaisoujou\nBelphegor\nJatayu\nJinn\nSyakko\nNebiros\nSiegfried\nBarong\nThor\nMelchizedek\nHell Biker\nKartikeya\nBelial\nSeth\nHorus\nSurt\nHachiman\nVasuki\nAtavaka\nArahabaki"
+    },
+    {
+      "type": "p",
+      "text": "Enemies",
+      "md": "**Enemies**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Enemy",
+            "md": "**Enemy**"
+          },
+          {
+            "text": "Arcana",
+            "md": "**Arcana**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "RD",
+            "md": "**RD**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Agitating Hablerie"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "66"
+          },
+          {
+            "text": "238"
+          },
+          {
+            "text": "280"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MI 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Jupiter Eagle"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "67"
+          },
+          {
+            "text": "296"
+          },
+          {
+            "text": "229"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MI 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Fickle Papillon"
+          },
+          {
+            "text": "Lovers"
+          },
+          {
+            "text": "67"
+          },
+          {
+            "text": "224"
+          },
+          {
+            "text": "100"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MI 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Infinite Sand"
+          },
+          {
+            "text": "Fortune"
+          },
+          {
+            "text": "67"
+          },
+          {
+            "text": "256"
+          },
+          {
+            "text": "197"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MI 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Vehement Idol"
+          },
+          {
+            "text": "Priestess"
+          },
+          {
+            "text": "68"
+          },
+          {
+            "text": "301"
+          },
+          {
+            "text": "487"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MI 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Great King"
+          },
+          {
+            "text": "Emperor"
+          },
+          {
+            "text": "68"
+          },
+          {
+            "text": "359"
+          },
+          {
+            "text": "199"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MI 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Free Bambino"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "66"
+          },
+          {
+            "text": "254"
+          },
+          {
+            "text": "170"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Fanatic Tower"
+          },
+          {
+            "text": "Hierophant"
+          },
+          {
+            "text": "69"
+          },
+          {
+            "text": "325"
+          },
+          {
+            "text": "422"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 1-3F"
+          }
+        ],
+        [
+          {
+            "text": "Amorous Snake"
+          },
+          {
+            "text": "Lovers"
+          },
+          {
+            "text": "69"
+          },
+          {
+            "text": "268"
+          },
+          {
+            "text": "183"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 1-3, 6F"
+          }
+        ],
+        [
+          {
+            "text": "Pistil Mother"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "69"
+          },
+          {
+            "text": "370"
+          },
+          {
+            "text": "483"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "King Castle"
+          },
+          {
+            "text": "Emperor"
+          },
+          {
+            "text": "69"
+          },
+          {
+            "text": "431"
+          },
+          {
+            "text": "243"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 1F"
+          }
+        ],
+        [
+          {
+            "text": "Yearning Pot"
+          },
+          {
+            "text": "Priestess"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "298"
+          },
+          {
+            "text": "230"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 1-3F"
+          }
+        ],
+        [
+          {
+            "text": "Nemean Beast"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "362"
+          },
+          {
+            "text": "155"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 1F"
+          }
+        ],
+        [
+          {
+            "text": "Purple Sigil"
+          },
+          {
+            "text": "Hierophant"
+          },
+          {
+            "text": "71"
+          },
+          {
+            "text": "328"
+          },
+          {
+            "text": "523"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Sleeping Table"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "71"
+          },
+          {
+            "text": "333"
+          },
+          {
+            "text": "60"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Valuing Nyogo"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "288"
+          },
+          {
+            "text": "206"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-5F"
+          }
+        ],
+        [
+          {
+            "text": "Battle Wheel"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "278"
+          },
+          {
+            "text": "194"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Judgement Sword"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "388"
+          },
+          {
+            "text": "139"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Silent Book"
+          },
+          {
+            "text": "Priestess"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "307"
+          },
+          {
+            "text": "421"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Harem Dancer"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "368"
+          },
+          {
+            "text": "294"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Happy Gene"
+          },
+          {
+            "text": "Fortune"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "193"
+          },
+          {
+            "text": "354"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Reformed Okina"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "315"
+          },
+          {
+            "text": "519"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Brilliant Cyclops"
+          },
+          {
+            "text": "Hanged"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "324"
+          },
+          {
+            "text": "285"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Jotun of Evil"
+          },
+          {
+            "text": "Hanged"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "560"
+          },
+          {
+            "text": "344"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-3F"
+          }
+        ],
+        [
+          {
+            "text": "Immortal Gigas"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "333"
+          },
+          {
+            "text": "129"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 3-4F"
+          }
+        ],
+        [
+          {
+            "text": "Death Dice"
+          },
+          {
+            "text": "Fortune"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "44"
+          },
+          {
+            "text": "444"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 3-4F"
+          }
+        ],
+        [
+          {
+            "text": "Noble Seeker"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "550"
+          },
+          {
+            "text": "634"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Earnest Carothy"
+          },
+          {
+            "text": "?"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "420"
+          },
+          {
+            "text": "629"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Slaughter Drive"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "380"
+          },
+          {
+            "text": "150"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 4-5F"
+          }
+        ],
+        [
+          {
+            "text": "Change Relic"
+          },
+          {
+            "text": "Empress"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": "279"
+          },
+          {
+            "text": "485"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 3-4F"
+          }
+        ],
+        [
+          {
+            "text": "Conceited Panzer"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "320"
+          },
+          {
+            "text": "254"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Phantom King"
+          },
+          {
+            "text": "Hermit"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "432"
+          },
+          {
+            "text": "122"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Spastic Turret"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "400"
+          },
+          {
+            "text": "429"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Minotaur III"
+          },
+          {
+            "text": "Hanged"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "680"
+          },
+          {
+            "text": "234"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-6F"
+          }
+        ],
+        [
+          {
+            "text": "Minotaur II"
+          },
+          {
+            "text": "Hanged"
+          },
+          {
+            "text": "76"
+          },
+          {
+            "text": "845"
+          },
+          {
+            "text": "583"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 2-6F"
+          }
+        ],
+        [
+          {
+            "text": "Minotaur I"
+          },
+          {
+            "text": "Hanged"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "595"
+          },
+          {
+            "text": "310"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Harmony Giant"
+          },
+          {
+            "text": "Justice"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": "305"
+          },
+          {
+            "text": "128"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "MM 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Glorious Hand"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "9999"
+          },
+          {
+            "text": "777"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Any"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Mini Boss",
+      "md": "**Mini Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Chaos Fuzz"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "600"
+          },
+          {
+            "text": "124"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "MM 3F"
+          }
+        ],
+        [
+          {
+            "text": "Amorous Snake"
+          },
+          {
+            "text": "69"
+          },
+          {
+            "text": "268"
+          },
+          {
+            "text": "183"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Yearning Pot"
+          },
+          {
+            "text": "70"
+          },
+          {
+            "text": "298"
+          },
+          {
+            "text": "230"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Wk"
+          },
+          {
+            "text": "Rpl"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Envious Giant"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "3333"
+          },
+          {
+            "text": "3333"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Drn"
+          },
+          {
+            "text": "Str"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "MM 6F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Chaos Fuzz constantly summons copies of itself, Amorous Snake, and Yearning Pot. Try to wipe them out ASAP. Envious Giant can cause Panic and has Almighty, so be well prepared."
+    },
+    {
+      "type": "p",
+      "text": "Boss",
+      "md": "**Boss**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Boss",
+            "md": "**Boss**"
+          },
+          {
+            "text": "Lv",
+            "md": "**Lv**"
+          },
+          {
+            "text": "HP",
+            "md": "**HP**"
+          },
+          {
+            "text": "SP",
+            "md": "**SP**"
+          },
+          {
+            "text": "Phy",
+            "md": "**Phy**"
+          },
+          {
+            "text": "Fir",
+            "md": "**Fir**"
+          },
+          {
+            "text": "Ice",
+            "md": "**Ice**"
+          },
+          {
+            "text": "Elc",
+            "md": "**Elc**"
+          },
+          {
+            "text": "Wnd",
+            "md": "**Wnd**"
+          },
+          {
+            "text": "Lgt",
+            "md": "**Lgt**"
+          },
+          {
+            "text": "Drk",
+            "md": "**Drk**"
+          },
+          {
+            "text": "Floor",
+            "md": "**Floor**"
+          }
+        ],
+        [
+          {
+            "text": "Tohru Adachi"
+          },
+          {
+            "text": "73"
+          },
+          {
+            "text": "4200"
+          },
+          {
+            "text": "2200"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "MI 3F"
+          }
+        ],
+        [
+          {
+            "text": "Ameno-sagiri"
+          },
+          {
+            "text": "75"
+          },
+          {
+            "text": "8000"
+          },
+          {
+            "text": "2500"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "Nul"
+          },
+          {
+            "text": "MI 3F"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Adachi is pretty easy, its Ameno-sagiri you gotta worry about. He has a ton of powerful moves and likes to decrease your Party Members stats. He also has Bewildering Fog, which makes him invincible for 3 turns. Come well prepared for this battle."
+    }
+  ],
+  "text": "The seventh dungeon. The dungeon is split into 2 areas.\nAvailable: 12/8\nLast Day: 12/24\nFloors: 9\nFixed Floors: Magatsu Inaba 2 and 3, Magatsu Mandala 3 and 6\nBoss Floors: Magatsu Inaba 3, Magatsu Mandala 3 and 6\nHidden Item: N/A\nNotes: Must have triggered Good Ending Flag. Time will pass to 12/23 if completed by 12/22 or earlier, and will pass to 12/25 if completed on 12/23 or 12/24. Glorious Hands are marked as having 999 HP in analysis, but they actually have 9999 HP\nTreasure Chests\nRegular Chest\nPeach Seed\nLife Stone\nSoul Drop\nSnuff Soul\nRevival Bead\nBalm of Life\nHiranya\nAmrita Soda\nFirecracker\nSan-zun Tama\nHell Magatama\nIce Cube\nDry Ice\nFrost Magatama\nBall Lightning\nTesla Coil\nArc Magatama\nPinwheel\nYashichi\nCyclone Magatama\nSegaki Rice\nCurse Paper\nPurifying Water\nPurifying Salt\nPhysical Mirror\nMagic Mirror\nAssault Signal\nDiamond Shield\nSuper Sonic\nHomunculus\nVanish Ball\nGoho-M\nSmart Bomb\nChest Key\nRare Chest\nBead\nBead Chain\nChewing Soul\nSoul Food\nSoma\nMagatsu Kiba\nNubatama Suit\nAngel Skirt\nInferno Vow\nInferno Pin\nEye of Flame\nIcicle Vow\nIcicle Pin\nEye of Ice\nLightning Vow\nLightning Pin\nEye of Thunder\nGale Vow\nGale Pin\nEye of Wind\nPower Muscle\nDemon Charm\nDefense Essence\nSpeed Star\nLucky Seven\nReisen Brace\nAmaterasu Fob\nMoon Potpourri\nEagle Eye\nSigma Drive\nOmega Drive\nAwareness Note\nRebirth Prophecy\nSpace Badge\nWizard's Mask\nDivine Pillar\nCat Whisker\nBarbaric Bracers\nRudra Ring\nRetribution Mask\nBlessed Hands\nGas Mask\nConfusion Hat\nBold Ball\nMask of Truth\nFrozen Rose\nHealthy Homa\nPitch Pipes\nBook of the Void\n3 Chest Key\nShuffle Time Personas\nShiki-Ouji\nTaowu\nGaruda\nSui-Ki\nUriel\nWhite Rider\nHariti\nMother Harlot\nDaisoujou\nBelphegor\nJatayu\nJinn\nSyakko\nNebiros\nSiegfried\nBarong\nThor\nMelchizedek\nHell Biker\nKartikeya\nBelial\nSeth\nHorus\nSurt\nHachiman\nVasuki\nAtavaka\nArahabaki\nEnemies\nEnemy | Arcana | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | RD | Floor\nAgitating Hablerie | Magician | 66 | 238 | 280 |  | Wk | Nul | Drn |  |  |  |  | MI 1-2F\nJupiter Eagle | Empress | 67 | 296 | 229 |  |  |  | Wk | Drn |  | Nul |  | MI 1-2F\nFickle Papillon | Lovers | 67 | 224 | 100 |  | Str | Str | Str | Str |  |  |  | MI 1-2F\nInfinite Sand | Fortune | 67 | 256 | 197 |  |  |  | Nul | Wk | Nul |  |  | MI 1-2F\nVehement Idol | Priestess | 68 | 301 | 487 |  |  | Rpl |  | Str | Rpl | Wk |  | MI 1-2F\nGreat King | Emperor | 68 | 359 | 199 | Str |  |  |  |  | Wk | Rpl |  | MI 1-2F\nFree Bambino | Empress | 66 | 254 | 170 |  |  | Wk | Rpl | Str | Nul | Nul |  | N/A\nFanatic Tower | Hierophant | 69 | 325 | 422 | Str |  | Wk |  | Nul | Nul | Nul |  | MM 1-3F\nAmorous Snake | Lovers | 69 | 268 | 183 |  |  | Wk | Str | Str | Rpl | Wk |  | MM 1-3, 6F\nPistil Mother | Empress | 69 | 370 | 483 |  | Str | Drn | Str | Drn |  |  |  | MM 1-2F\nKing Castle | Emperor | 69 | 431 | 243 | Nul | Wk |  |  |  |  |  |  | MM 1F\nYearning Pot | Priestess | 70 | 298 | 230 | Drn | Wk |  |  | Nul | Wk | Rpl |  | MM 1-3F\nNemean Beast | Strength | 70 | 362 | 155 |  | Rpl | Rpl |  |  | Nul | Wk |  | MM 1F\nPurple Sigil | Hierophant | 71 | 328 | 523 |  | Str | Str | Str | Str |  |  |  | MM 2-3F\nSleeping Table | Magician | 71 | 333 | 60 | Nul | Wk |  | Nul |  | Rpl | Wk |  | MM 2-3F\nValuing Nyogo | Strength | 72 | 288 | 206 | Rpl | Str |  | Wk |  | Wk |  |  | MM 2-5F\nBattle Wheel | Chariot | 72 | 278 | 194 |  |  | Wk | Str |  | Nul | Wk |  | MM 2-3F\nJudgement Sword | ? | 72 | 388 | 139 | Str |  | Nul |  | Wk |  |  |  | MM 2-3F\nSilent Book | Priestess | 72 | 307 | 421 | Str |  |  |  |  | Wk | Wk |  | MM 2-3F\nHarem Dancer | ? | 73 | 368 | 294 |  |  | Str | Drn |  |  |  |  | MM 2-3F\nHappy Gene | Fortune | 73 | 193 | 354 | Wk |  |  |  |  | Nul | Nul |  | MM 4-5F\nReformed Okina | Hermit | 73 | 315 | 519 |  | Wk | Str | Str |  |  |  |  | MM 4-5F\nBrilliant Cyclops | Hanged | 73 | 324 | 285 |  | Rpl | Wk | Rpl | Rpl |  |  |  | MM 4-5F\nJotun of Evil | Hanged | 73 | 560 | 344 | Wk |  | Rpl | Rpl | Nul |  |  |  | MM 2-3F\nImmortal Gigas | Strength | 73 | 333 | 129 | Str |  |  |  |  |  |  |  | MM 3-4F\nDeath Dice | Fortune | 73 | 44 | 444 | Str | Str | Str | Str | Str |  |  |  | MM 3-4F\nNoble Seeker | Hermit | 74 | 550 | 634 | Rpl |  |  |  |  |  |  |  | MM 5-6F\nEarnest Carothy | ? | 74 | 420 | 629 |  |  |  |  |  | Wk | Wk |  | MM 5-6F\nSlaughter Drive | Chariot | 74 | 380 | 150 |  |  |  | Wk | Wk |  |  |  | MM 4-5F\nChange Relic | Empress | 74 | 279 | 485 | Rpl |  |  | Wk |  | Rpl | Wk |  | MM 3-4F\nConceited Panzer | Chariot | 75 | 320 | 254 | Nul |  | Wk |  | Wk |  |  |  | MM 5-6F\nPhantom King | Hermit | 75 | 432 | 122 | Str |  |  | Wk | Str | Wk | Nul |  | MM 5-6F\nSpastic Turret | Chariot | 75 | 400 | 429 | Str | Wk | Nul |  |  |  |  |  | MM 5-6F\nMinotaur III | Hanged | 75 | 680 | 234 |  | Wk | Rpl | Drn | Str | Nul |  |  | MM 2-6F\nMinotaur II | Hanged | 76 | 845 | 583 | Str | Rpl | Wk |  | Drn |  | Nul |  | MM 2-6F\nMinotaur I | Hanged | 77 | 595 | 310 |  | Str | Drn | Wk | Rpl | Rpl | Rpl |  | MM 5-6F\nHarmony Giant | Justice | 77 | 305 | 128 | Wk | Str | Str | Str | Str |  |  |  | MM 5-6F\nGlorious Hand | Magician | 70 | 9999 | 777 |  | Rpl | Rpl | Rpl | Rpl | Str | Str |  | Any\nMini Boss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nChaos Fuzz | 70 | 600 | 124 |  |  |  |  |  | Nul | Nul | MM 3F\nAmorous Snake | 69 | 268 | 183 |  |  | Wk | Str | Str | Rpl | Wk | N/A\nYearning Pot | 70 | 298 | 230 | Drn | Wk |  |  | Nul | Wk | Rpl | N/A\nEnvious Giant | 75 | 3333 | 3333 |  | Str | Str | Drn | Str | Nul | Nul | MM 6F\nChaos Fuzz constantly summons copies of itself, Amorous Snake, and Yearning Pot. Try to wipe them out ASAP. Envious Giant can cause Panic and has Almighty, so be well prepared.\nBoss\nBoss | Lv | HP | SP | Phy | Fir | Ice | Elc | Wnd | Lgt | Drk | Floor\nTohru Adachi | 73 | 4200 | 2200 |  |  |  |  |  | Nul | Nul | MI 3F\nAmeno-sagiri | 75 | 8000 | 2500 |  |  |  |  |  | Nul | Nul | MI 3F\nAdachi is pretty easy, its Ameno-sagiri you gotta worry about. He has a ton of powerful moves and likes to decrease your Party Members stats. He also has Bewildering Fog, which makes him invincible for 3 turns. Come well prepared for this battle."
+}

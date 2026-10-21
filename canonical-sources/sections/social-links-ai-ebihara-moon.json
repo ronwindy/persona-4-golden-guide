@@ -1,0 +1,553 @@
+{
+  "id": "social-links-ai-ebihara-moon",
+  "title": "Ai Ebihara/Moon",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "ai-ebihara-moon",
+  "type": "social-link",
+  "order": 95,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday",
+            "md": "**Monday**"
+          },
+          {
+            "text": "Tuesday",
+            "md": "**Tuesday**"
+          },
+          {
+            "text": "Wednesday",
+            "md": "**Wednesday**"
+          },
+          {
+            "text": "Thursday",
+            "md": "**Thursday**"
+          },
+          {
+            "text": "Friday",
+            "md": "**Friday**"
+          },
+          {
+            "text": "Saturday",
+            "md": "**Saturday**"
+          },
+          {
+            "text": "Sunday",
+            "md": "**Sunday**"
+          },
+          {
+            "text": "Rain",
+            "md": "**Rain**"
+          }
+        ],
+        [
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: Sometime after April 26th (Will ask to skip class on certain days)"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 2nd"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Reach Strength Rank 4, then talk to Ai on Classroom Building 1F. Accept her invitation to skip class."
+    },
+    {
+      "type": "p",
+      "text": "Location: Classroom Building 1F"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Sandalphon"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Compact"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Requires Courage Rank Brave to skip class. Social Link has 2 routes that splits at Rank 6."
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "8"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "8"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "6"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Reach Strength Rank 4, then talk to Ai on Classroom Building 1F (Requires Courage Rank Brave). Accept her invitation to skip class."
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Hmmm, doesn't look like they've gotten anything new in. I already have all of this...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Buy me an ice latte.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +3\nOption C: +1"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"They should get rid of all sales people and put in vending machines. Press a button, and out comes your clothes.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"What should we do instead?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Looking at it from your perspective, I'd say you got pretty lucky.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Ai rejected him without a second thought..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: Reverse\nOption D: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: The conversation is getting more and more vulgar..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: Strength +2 or Strength +3\nOption B: Strength +2"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"......\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 or +3\nOption B: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Th-Thank you for that, last time...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +2"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Do you think maybe I'm his type? O-Or do you think he hates...people like me?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2\nOption C: +0\nOption D: +2"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"All I need you to do is...Ask him what's his type. That's it.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: Reverse"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"But if I can't be loved, then what's the point!?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"It's not like I have any other redeeming qualities...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Haha, just kidding.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: End Platonic (Skips Response 4)\nOption B: Advances to Response 4"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Hey...Why don't you and I just go out?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: End Platonic\nOption B: End Intimate"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "End Platonic"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Hey, why don't you pick out some clothes for me? What do you think I'd look good in?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or +3\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Isn't that right, MC?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +?"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"...Do you think I'm pretty?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +?\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "End Intimate"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"I'm sorry. I don't mean to keep making you hang out with me...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +2 or +?"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"I wonder why...?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +3\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "End Platonic"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"MC...Do you love me?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: Repeats Response"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"You need me, right?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: Repeats Response"
+    },
+    {
+      "type": "p",
+      "text": "End Intimate"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"He was just...a normal, good guy. I guess what I felt was kind of a fleeting thing.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: +?"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "End Platonic"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"I think we need to...break up.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 or +?\nOption B: +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"I'm so worthless...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +2 or +3\nOption B: +? or +2\nOption C: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"I'm sure you'll eventually hate me...and then you'll leave me.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Is there any way...that we could just be friends?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +? or +3\nOption C: Broken"
+    },
+    {
+      "type": "p",
+      "text": "End Intimate"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Things don't look good...You feel Ai is in danger."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Uh...Sorry, was that unnecessary?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "End Platonic"
+    },
+    {
+      "type": "p",
+      "text": "Ai: \"Still...I'm not good at being alone. I know it's a lot to ask, but...will you stay by my side?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "End Intimate"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: What will you do?"
+    },
+    {
+      "type": "p",
+      "text": "Option A: Intimate\nOption B: Platonic"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "Need to Research"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nNo | No | Yes | Yes | Yes | No | No | No\nInformation\nFirst Day: Sometime after April 26th (Will ask to skip class on certain days)\nLast Day: February 2nd\nActivation: Reach Strength Rank 4, then talk to Ai on Classroom Building 1F. Accept her invitation to skip class.\nLocation: Classroom Building 1F\nUltimate Persona: Sandalphon\nKey Item: Compact\nNotes: Requires Courage Rank Brave to skip class. Social Link has 2 routes that splits at Rank 6.\nPoints Needed\nRank 1 | 0\nRank 2 | 0\nRank 3 | 4\nRank 4 | 4\nRank 5 | 4\nRank 6 | 0\nRank 7 | 4\nRank 8 | 8\nRank 9 | 8\nRank 10 | 6\nRank Up Scenes\n-Rank 1-\nReach Strength Rank 4, then talk to Ai on Classroom Building 1F (Requires Courage Rank Brave). Accept her invitation to skip class.\n-Rank 2-\nAi: \"Hmmm, doesn't look like they've gotten anything new in. I already have all of this...\"\nOption A: +0\nOption B: +2 or +3\nOption C: +0\nAi: \"Buy me an ice latte.\"\nOption A: +0\nOption B: +3\nOption C: +1\nAi: \"They should get rid of all sales people and put in vending machines. Press a button, and out comes your clothes.\"\nAny option: +0\n-Rank 3-\nAi: \"What should we do instead?\"\nOption A: +2\nOption B: +2 or +3\nOption C: +0\nAi: \"Looking at it from your perspective, I'd say you got pretty lucky.\"\nAny option: +0\nNarrator: Ai rejected him without a second thought...\nOption A: +0\nOption B: +0\nOption C: Reverse\nOption D: +0\n-Rank 4-\nNarrator: The conversation is getting more and more vulgar...\nOption A: Strength +2 or Strength +3\nOption B: Strength +2\nAi: \"......\"\nOption A: +0 or +3\nOption B: +3\n-Rank 5-\nAi: \"Th-Thank you for that, last time...\"\nAny option: +2\nAi: \"Do you think maybe I'm his type? O-Or do you think he hates...people like me?\"\nOption A: +0\nOption B: +2\nOption C: +0\nOption D: +2\nAi: \"All I need you to do is...Ask him what's his type. That's it.\"\nOption A: +0\nOption B: Reverse\n-Rank 6-\nAi: \"But if I can't be loved, then what's the point!?\"\nAny option: +0\nAi: \"It's not like I have any other redeeming qualities...\"\nAny option: +0\nAi: \"Haha, just kidding.\"\nOption A: End Platonic (Skips Response 4)\nOption B: Advances to Response 4\nAi: \"Hey...Why don't you and I just go out?\"\nOption A: End Platonic\nOption B: End Intimate\n-Rank 7-\nEnd Platonic\nAi: \"Hey, why don't you pick out some clothes for me? What do you think I'd look good in?\"\nOption A: +? or +3\nOption B: +2 or +3\nOption C: +0\nAi: \"Isn't that right, MC?\"\nOption A: +2 or +3\nOption B: +?\nAi: \"...Do you think I'm pretty?\"\nOption A: +3\nOption B: +?\nOption C: +0\nEnd Intimate\nAi: \"I'm sorry. I don't mean to keep making you hang out with me...\"\nOption A: +3\nOption B: +2 or +?\nAi: \"I wonder why...?\"\nOption A: +3\nOption B: +3\nOption C: +? or +3\n-Rank 8-\nEnd Platonic\nAi: \"MC...Do you love me?\"\nOption A: +3\nOption B: Repeats Response\nAi: \"You need me, right?\"\nOption A: +3\nOption B: Repeats Response\nEnd Intimate\nAi: \"He was just...a normal, good guy. I guess what I felt was kind of a fleeting thing.\"\nOption A: +3\nOption B: +? or +3\nOption C: +?\n-Rank 9-\nEnd Platonic\nAi: \"I think we need to...break up.\"\nOption A: +0 or +?\nOption B: +0\nOption C: +0\nAi: \"I'm so worthless...\"\nOption A: +2 or +3\nOption B: +? or +2\nOption C: +? or +3\nAi: \"I'm sure you'll eventually hate me...and then you'll leave me.\"\nAny option: +0\nAi: \"Is there any way...that we could just be friends?\"\nOption A: +3\nOption B: +? or +3\nOption C: Broken\nEnd Intimate\nNarrator: Things don't look good...You feel Ai is in danger.\nAny option: +0\nAi: \"Uh...Sorry, was that unnecessary?\"\nAny option: +3\n-Rank 10-\nEnd Platonic\nAi: \"Still...I'm not good at being alone. I know it's a lot to ask, but...will you stay by my side?\"\nAny option: +0\nEnd Intimate\nNarrator: What will you do?\nOption A: Intimate\nOption B: Platonic\nNight Time Dates\nNeed to Research"
+}

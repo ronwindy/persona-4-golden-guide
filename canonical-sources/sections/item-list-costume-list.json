@@ -1,0 +1,1426 @@
+{
+  "id": "item-list-costume-list",
+  "title": "Costume List",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "costume-list",
+  "type": "catalog",
+  "order": 129,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Legend",
+      "md": "**Legend**"
+    },
+    {
+      "type": "p",
+      "text": "Costume: Costume Name"
+    },
+    {
+      "type": "p",
+      "text": "Worn By: Who can equip it"
+    },
+    {
+      "type": "p",
+      "text": "Pose: Special victory pose if costume is equipped. Some costumes share the same pose."
+    },
+    {
+      "type": "p",
+      "text": "Quote: Special victory quote if costume is equipped. If Everybody is listed, MC isn't included because he is silent."
+    },
+    {
+      "type": "p",
+      "text": "Comment: Unique dialog between multiple Party Members if costume is equipped. This dialog can be accessed via the Sub Menu in dungeons. The format listed will be (Party Member) and (Party Member). The first Party Member listed must be in the party and have the costume equipped. The second Party Member listed must also be in the party (Rise is always in the party), but can be wearing any costume. Sometimes you may need to talk to said Party Member twice to get the unique dialog."
+    },
+    {
+      "type": "p",
+      "text": "Available: First day costume can be obtained"
+    },
+    {
+      "type": "p",
+      "text": "Location: Location of costume"
+    },
+    {
+      "type": "p",
+      "text": "Requirements: Any additional requirements to obtain costume"
+    },
+    {
+      "type": "p",
+      "text": "Costume List",
+      "md": "**Costume List**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Costume",
+            "md": "**Costume**"
+          },
+          {
+            "text": "Worn By",
+            "md": "**Worn By**"
+          },
+          {
+            "text": "Pose",
+            "md": "**Pose**"
+          },
+          {
+            "text": "Quote",
+            "md": "**Quote**"
+          },
+          {
+            "text": "Comment",
+            "md": "**Comment**"
+          },
+          {
+            "text": "Available",
+            "md": "**Available**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          },
+          {
+            "text": "Requirements",
+            "md": "**Requirements**"
+          }
+        ],
+        [
+          {
+            "text": "Winter Yaso Outfit"
+          },
+          {
+            "text": "Everybody except Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Summer Yaso Outfit"
+          },
+          {
+            "text": "Everybody except Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "June 13th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Midwinter Yaso"
+          },
+          {
+            "text": "Everybody except Teddie"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "January 10th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Winter Clothes"
+          },
+          {
+            "text": "Everybody except Teddie"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Summer Clothes"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "June 13th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Midwinter Outfit"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "December 31st"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Gag Winter Outfit"
+          },
+          {
+            "text": "Everybody except Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Yukiko, Chie and Yukiko, Yukiko and Yosuke, Kanji and Yukiko, Naoto and Yukiko"
+          },
+          {
+            "text": "May 7th"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Gag Summer Outfit"
+          },
+          {
+            "text": "Everybody except Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Teddie, Chie and Teddie, Yukiko and Kanji, Kanji and Chie, Naoto and Teddie"
+          },
+          {
+            "text": "June 13th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Gekkou Uniform"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Yosuke and Chie, Chie and Yosuke, Yukiko and Chie, Kanji and Yosuke, Teddie and Chie, Naoto and Rise"
+          },
+          {
+            "text": "10/24 (men),1/16 (women)"
+          },
+          {
+            "text": "Kashiwagi at Classroom Building 1F"
+          },
+          {
+            "text": "Ace October or December exams (men), Obtain male Gekkou Uniform (women)"
+          }
+        ],
+        [
+          {
+            "text": "Drag Costume"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "MC, Teddie"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "Yosuke and Chie, Kanji and Rise, Teddie and Naoto"
+          },
+          {
+            "text": "October 30th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Yaso High Jersey"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Kanji, Chie and Kanji, Yukiko and Chie, Kanji and Chie, Teddie and Chie, Naoto and Yosuke"
+          },
+          {
+            "text": "April 17th"
+          },
+          {
+            "text": "Morooka at Shopping District South"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Neo Featherman Suit"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Yosuke and Chie, Chie and Teddie, Yukiko and Chie, Kanji and Chie, Teddie and Rise, Naoto and Chie"
+          },
+          {
+            "text": "October 12th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Bath Towel"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Rise, Kanji and Teddie, Teddie and Kanji"
+          },
+          {
+            "text": "October 30th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Agent Suit"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Rise, Chie and Rise, Yukiko and Naoto, Kanji and Yosuke, Teddie and Yosuke, Naoto and Yosuke"
+          },
+          {
+            "text": "June 11th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Christmas Costume"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Chie, Chie and Yukiko, Yukiko and Teddie, Kanji and Yosuke, Teddie and Yosuke, Naoto and Teddie"
+          },
+          {
+            "text": "December 25th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Festival Jinbei"
+          },
+          {
+            "text": "MC, Yosuke, Kanji, Naoto"
+          },
+          {
+            "text": "MC, Yosuke"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Kanji, Kanji and Teddie, Naoto and Rise"
+          },
+          {
+            "text": "August 22nd"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Festival Yukata"
+          },
+          {
+            "text": "Chie, Yukiko"
+          },
+          {
+            "text": "Chie, Yukiko"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Chie and Yosuke, Yukiko and Rise"
+          },
+          {
+            "text": "August 22nd"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Festival Happi"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Teddie and Yosuke"
+          },
+          {
+            "text": "August 22nd"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Halloween Costume"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "MC, Chie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Naoto, Chie and Naoto, Yukiko and Naoto, Kanji and Naoto, Teddie and Chie, Naoto and Yukiko"
+          },
+          {
+            "text": "October 31st"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Butler Suit"
+          },
+          {
+            "text": "Guys"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Yukiko, Kanji and Yukiko, Teddie and Chie"
+          },
+          {
+            "text": "July 11th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Maid Uniform"
+          },
+          {
+            "text": "Girls"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "Chie and Rise, Yukiko and Yosuke, Naoto and Kanji"
+          },
+          {
+            "text": "January 10th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Cheer Squad Outfit"
+          },
+          {
+            "text": "MC, Yosuke, Kanji, Naoto"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Teddie, Kanji and Naoto, Naoto and Chie"
+          },
+          {
+            "text": "September 12th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Cheerleader Outfit"
+          },
+          {
+            "text": "Chie, Yukiko, Teddie"
+          },
+          {
+            "text": "Chie, Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Chie and Yukiko, Yukiko and Kanji, Teddie and Rise"
+          },
+          {
+            "text": "September 12th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Deep Blue Clothes"
+          },
+          {
+            "text": "Everybody"
+          },
+          {
+            "text": "MC, Chie"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Yosuke and Naoto, Chie and Teddie, Yukiko and Teddie, Kanji and Rise, Teddie and Kanji, Naoto and Rise"
+          },
+          {
+            "text": "Max Empress Social Link"
+          },
+          {
+            "text": "Velvet Room"
+          },
+          {
+            "text": "Max Empress Social Link"
+          }
+        ],
+        [
+          {
+            "text": "Cool Trunks"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "June 19th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Cleaning Uniform"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "June 19th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City, Work as Janitor once"
+          }
+        ],
+        [
+          {
+            "text": "Hardboiled Look"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "MC"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Clear Heaven"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City, Clear Heaven"
+          }
+        ],
+        [
+          {
+            "text": "Summer Trunks"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Yukiko"
+          },
+          {
+            "text": "June 19th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Junes Apron"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Kanji"
+          },
+          {
+            "text": "April 26th"
+          },
+          {
+            "text": "Housewife in Farming Clothes at Junes"
+          },
+          {
+            "text": "Magician Social Link Rank 6"
+          }
+        ],
+        [
+          {
+            "text": "Junes Coveralls"
+          },
+          {
+            "text": "Yosuke"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yosuke and Teddie"
+          },
+          {
+            "text": "October 12th"
+          },
+          {
+            "text": "Housewife in Farming Clothes at Junes"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Striped Bikini"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Chie and Kanji"
+          },
+          {
+            "text": "June 19th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Track Suit"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Chie and Yosuke"
+          },
+          {
+            "text": "August 27th"
+          },
+          {
+            "text": "Fox"
+          },
+          {
+            "text": "Happy Fox, Kung Fu Costume, Kingpin Duster, Lord Flauntleroy"
+          }
+        ],
+        [
+          {
+            "text": "Fighter Armor"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Chie and Teddie"
+          },
+          {
+            "text": "January 16th"
+          },
+          {
+            "text": "Quest 66"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Kung Fu Costume"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Chie"
+          },
+          {
+            "text": "Chie and Naoto"
+          },
+          {
+            "text": "May 22nd"
+          },
+          {
+            "text": "Fox"
+          },
+          {
+            "text": "Happy Fox, Pet Fox once beforehand"
+          }
+        ],
+        [
+          {
+            "text": "Trim Bikini"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yukiko and Rise"
+          },
+          {
+            "text": "June 19th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Tsukesage"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Yukiko and Yosuke"
+          },
+          {
+            "text": "June 11th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Magical Armor"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Yukiko and Kanji"
+          },
+          {
+            "text": "January 17th"
+          },
+          {
+            "text": "Quest 67"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Ceremonial Kimono"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Yukiko"
+          },
+          {
+            "text": "Yukiko and Yosuke"
+          },
+          {
+            "text": "January 19th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City, Max Priestess Social Link"
+          }
+        ],
+        [
+          {
+            "text": "Dangerous Briefs"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Kanji and Naoto"
+          },
+          {
+            "text": "August 24th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Kingpin Duster"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Kanji and Yukiko"
+          },
+          {
+            "text": "June 21st"
+          },
+          {
+            "text": "Fox"
+          },
+          {
+            "text": "Happy Fox, Kung Fu Costume"
+          }
+        ],
+        [
+          {
+            "text": "Working Clothes"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "Kanji"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Kanji and Rise"
+          },
+          {
+            "text": "Mid July"
+          },
+          {
+            "text": "Kanji's Mother at Shopping District North"
+          },
+          {
+            "text": "Emperor Social Link Rank 8"
+          }
+        ],
+        [
+          {
+            "text": "Teddie Costume"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Gag Glasses"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Teddie and Yukiko"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Sailor Trunks"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Teddie and Rise"
+          },
+          {
+            "text": "August 24th"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ],
+        [
+          {
+            "text": "Lord Flauntleroy"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Teddie and Yukiko"
+          },
+          {
+            "text": "July 12th"
+          },
+          {
+            "text": "Fox"
+          },
+          {
+            "text": "Happy Fox, Kung Fu Costume, Kingpin Duster"
+          }
+        ],
+        [
+          {
+            "text": "Teddie's Apron"
+          },
+          {
+            "text": "Teddie"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Teddie and Yosuke"
+          },
+          {
+            "text": "July 12th"
+          },
+          {
+            "text": "Automatic"
+          },
+          {
+            "text": "Junes Apron"
+          }
+        ],
+        [
+          {
+            "text": "School Swimsuit"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Naoto and Kanji"
+          },
+          {
+            "text": "January 18th"
+          },
+          {
+            "text": "Quest 68"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Girls' Yaso Outfit"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "Naoto and Kanji"
+          },
+          {
+            "text": "December 24th"
+          },
+          {
+            "text": "Naoto Christmas event"
+          },
+          {
+            "text": "Max Fortune Social Link Intimate Route, Choose \"I like it higher.\" Response on Rank 10"
+          }
+        ],
+        [
+          {
+            "text": "Coronet Armor"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Naoto and Yosuke"
+          },
+          {
+            "text": "January 16th"
+          },
+          {
+            "text": "Quest 65"
+          },
+          {
+            "text": "N/A"
+          }
+        ],
+        [
+          {
+            "text": "Detective Costume"
+          },
+          {
+            "text": "Naoto"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "N/A"
+          },
+          {
+            "text": "Naoto and Teddie"
+          },
+          {
+            "text": "February 1st"
+          },
+          {
+            "text": "Crocofur"
+          },
+          {
+            "text": "Unlock Okina City"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Happy Fox Dates",
+      "md": "**Happy Fox Dates**"
+    },
+    {
+      "type": "p",
+      "text": "Four costumes are obtained by petting the Fox when he is happy. This works on a set schedule of Happy to Neutral to Angry. In addition to this, these four costumes have the following requirements:"
+    },
+    {
+      "type": "p",
+      "text": "Kung Fu Costume: Pet the fox once beforehand, regardless of mood. Earliest day to pet the Fox is May 6th, making the first day to obtain this costume May 22nd."
+    },
+    {
+      "type": "p",
+      "text": "Kingpin Duster: Available starting on June 21st after first obtaining the Kung Fu Costume."
+    },
+    {
+      "type": "p",
+      "text": "Lord Flauntleroy: Available starting on July 12th after first obtaining the Kung Fu Costume and Kingpin Duster."
+    },
+    {
+      "type": "p",
+      "text": "Track Suit: Available starting on August 27th after first obtaining the Kung Fu Costume, Kingpin Duster, and Lord Flauntleroy."
+    },
+    {
+      "type": "p",
+      "text": "Here is the list of dates the Fox is Happy:"
+    },
+    {
+      "type": "p",
+      "text": "May 6th, 22nd, 26th, 30th\nJune 1st, 9th, 13th, 21st, 25th, 29th\nJuly 4th, 8th, 12th, 16th, 24th\nAugust 3rd, 7th, 11th, and 27th\nSeptember 2nd, 6th, 14th, 18th, 22nd, 26th, 30th\nOctober 1st, 5th, 13th, 21st, 25th\nNovember 4th, 8th, 12th, 16th, 20th\nDecember 11th, 15th, 19th, 23rd\nJanuary 10th, 14th, 18th, 26th, 30th\nFebruary 1st, 5th, 13th\nMarch 20th"
+    }
+  ],
+  "text": "Legend\nCostume: Costume Name\nWorn By: Who can equip it\nPose: Special victory pose if costume is equipped. Some costumes share the same pose.\nQuote: Special victory quote if costume is equipped. If Everybody is listed, MC isn't included because he is silent.\nComment: Unique dialog between multiple Party Members if costume is equipped. This dialog can be accessed via the Sub Menu in dungeons. The format listed will be (Party Member) and (Party Member). The first Party Member listed must be in the party and have the costume equipped. The second Party Member listed must also be in the party (Rise is always in the party), but can be wearing any costume. Sometimes you may need to talk to said Party Member twice to get the unique dialog.\nAvailable: First day costume can be obtained\nLocation: Location of costume\nRequirements: Any additional requirements to obtain costume\nCostume List\nCostume | Worn By | Pose | Quote | Comment | Available | Location | Requirements\nWinter Yaso Outfit | Everybody except Teddie | N/A | N/A | N/A | Default | Automatic | N/A\nSummer Yaso Outfit | Everybody except Teddie | N/A | N/A | N/A | June 13th | Automatic | N/A\nMidwinter Yaso | Everybody except Teddie | MC | N/A | N/A | January 10th | Automatic | N/A\nWinter Clothes | Everybody except Teddie | Naoto | Naoto | N/A | Default | Automatic | N/A\nSummer Clothes | Everybody | N/A | N/A | N/A | June 13th | Automatic | N/A\nMidwinter Outfit | Everybody | MC | N/A | N/A | December 31st | Automatic | N/A\nGag Winter Outfit | Everybody except Teddie | N/A | N/A | Yosuke and Yukiko, Chie and Yukiko, Yukiko and Yosuke, Kanji and Yukiko, Naoto and Yukiko | May 7th | Teddie | N/A\nGag Summer Outfit | Everybody except Teddie | N/A | N/A | Yosuke and Teddie, Chie and Teddie, Yukiko and Kanji, Kanji and Chie, Naoto and Teddie | June 13th | Automatic | N/A\nGekkou Uniform | Everybody | Everybody | Everybody | Yosuke and Chie, Chie and Yosuke, Yukiko and Chie, Kanji and Yosuke, Teddie and Chie, Naoto and Rise | 10/24 (men),1/16 (women) | Kashiwagi at Classroom Building 1F | Ace October or December exams (men), Obtain male Gekkou Uniform (women)\nDrag Costume | Guys | MC, Teddie | Teddie | Yosuke and Chie, Kanji and Rise, Teddie and Naoto | October 30th | Automatic | N/A\nYaso High Jersey | Everybody | MC | N/A | Yosuke and Kanji, Chie and Kanji, Yukiko and Chie, Kanji and Chie, Teddie and Chie, Naoto and Yosuke | April 17th | Morooka at Shopping District South | N/A\nNeo Featherman Suit | Everybody | Everybody | Everybody | Yosuke and Chie, Chie and Teddie, Yukiko and Chie, Kanji and Chie, Teddie and Rise, Naoto and Chie | October 12th | Crocofur | Unlock Okina City\nBath Towel | Guys | N/A | N/A | Yosuke and Rise, Kanji and Teddie, Teddie and Kanji | October 30th | Automatic | N/A\nAgent Suit | Everybody | N/A | N/A | Yosuke and Rise, Chie and Rise, Yukiko and Naoto, Kanji and Yosuke, Teddie and Yosuke, Naoto and Yosuke | June 11th | Crocofur | Unlock Okina City\nChristmas Costume | Everybody | N/A | N/A | Yosuke and Chie, Chie and Yukiko, Yukiko and Teddie, Kanji and Yosuke, Teddie and Yosuke, Naoto and Teddie | December 25th | Automatic | N/A\nFestival Jinbei | MC, Yosuke, Kanji, Naoto | MC, Yosuke | N/A | Yosuke and Kanji, Kanji and Teddie, Naoto and Rise | August 22nd | Crocofur | Unlock Okina City\nFestival Yukata | Chie, Yukiko | Chie, Yukiko | N/A | Chie and Yosuke, Yukiko and Rise | August 22nd | Crocofur | Unlock Okina City\nFestival Happi | Teddie | N/A | N/A | Teddie and Yosuke | August 22nd | Crocofur | Unlock Okina City\nHalloween Costume | Everybody | MC, Chie | N/A | Yosuke and Naoto, Chie and Naoto, Yukiko and Naoto, Kanji and Naoto, Teddie and Chie, Naoto and Yukiko | October 31st | Automatic | N/A\nButler Suit | Guys | Kanji | N/A | Yosuke and Yukiko, Kanji and Yukiko, Teddie and Chie | July 11th | Crocofur | Unlock Okina City\nMaid Uniform | Girls | Everybody | Everybody | Chie and Rise, Yukiko and Yosuke, Naoto and Kanji | January 10th | Crocofur | Unlock Okina City\nCheer Squad Outfit | MC, Yosuke, Kanji, Naoto | MC | N/A | Yosuke and Teddie, Kanji and Naoto, Naoto and Chie | September 12th | Crocofur | Unlock Okina City\nCheerleader Outfit | Chie, Yukiko, Teddie | Chie, Teddie | N/A | Chie and Yukiko, Yukiko and Kanji, Teddie and Rise | September 12th | Crocofur | Unlock Okina City\nDeep Blue Clothes | Everybody | MC, Chie | Chie | Yosuke and Naoto, Chie and Teddie, Yukiko and Teddie, Kanji and Rise, Teddie and Kanji, Naoto and Rise | Max Empress Social Link | Velvet Room | Max Empress Social Link\nCool Trunks | MC | N/A | N/A | N/A | June 19th | Crocofur | Unlock Okina City\nCleaning Uniform | MC | N/A | N/A | N/A | June 19th | Crocofur | Unlock Okina City, Work as Janitor once\nHardboiled Look | MC | MC | N/A | N/A | Clear Heaven | Crocofur | Unlock Okina City, Clear Heaven\nSummer Trunks | Yosuke | Yosuke | N/A | Yosuke and Yukiko | June 19th | Crocofur | Unlock Okina City\nJunes Apron | Yosuke | N/A | N/A | Yosuke and Kanji | April 26th | Housewife in Farming Clothes at Junes | Magician Social Link Rank 6\nJunes Coveralls | Yosuke | N/A | N/A | Yosuke and Teddie | October 12th | Housewife in Farming Clothes at Junes | N/A\nStriped Bikini | Chie | N/A | N/A | Chie and Kanji | June 19th | Crocofur | Unlock Okina City\nTrack Suit | Chie | Chie | Chie | Chie and Yosuke | August 27th | Fox | Happy Fox, Kung Fu Costume, Kingpin Duster, Lord Flauntleroy\nFighter Armor | Chie | N/A | N/A | Chie and Teddie | January 16th | Quest 66 | N/A\nKung Fu Costume | Chie | Chie | Chie | Chie and Naoto | May 22nd | Fox | Happy Fox, Pet Fox once beforehand\nTrim Bikini | Yukiko | N/A | N/A | Yukiko and Rise | June 19th | Crocofur | Unlock Okina City\nTsukesage | Yukiko | Yukiko | Yukiko | Yukiko and Yosuke | June 11th | Crocofur | Unlock Okina City\nMagical Armor | Yukiko | N/A | N/A | Yukiko and Kanji | January 17th | Quest 67 | N/A\nCeremonial Kimono | Yukiko | Yukiko | Yukiko | Yukiko and Yosuke | January 19th | Crocofur | Unlock Okina City, Max Priestess Social Link\nDangerous Briefs | Kanji | N/A | N/A | Kanji and Naoto | August 24th | Crocofur | Unlock Okina City\nKingpin Duster | Kanji | Kanji | N/A | Kanji and Yukiko | June 21st | Fox | Happy Fox, Kung Fu Costume\nWorking Clothes | Kanji | Kanji | N/A | Kanji and Rise | Mid July | Kanji's Mother at Shopping District North | Emperor Social Link Rank 8\nTeddie Costume | Teddie | N/A | N/A | N/A | Default | Automatic | N/A\nGag Glasses | Teddie | N/A | N/A | Teddie and Yukiko | Default | Automatic | N/A\nSailor Trunks | Teddie | N/A | N/A | Teddie and Rise | August 24th | Crocofur | Unlock Okina City\nLord Flauntleroy | Teddie | N/A | N/A | Teddie and Yukiko | July 12th | Fox | Happy Fox, Kung Fu Costume, Kingpin Duster\nTeddie's Apron | Teddie | N/A | N/A | Teddie and Yosuke | July 12th | Automatic | Junes Apron\nSchool Swimsuit | Naoto | N/A | N/A | Naoto and Kanji | January 18th | Quest 68 | N/A\nGirls' Yaso Outfit | Naoto | Naoto | Naoto | Naoto and Kanji | December 24th | Naoto Christmas event | Max Fortune Social Link Intimate Route, Choose \"I like it higher.\" Response on Rank 10\nCoronet Armor | Naoto | N/A | N/A | Naoto and Yosuke | January 16th | Quest 65 | N/A\nDetective Costume | Naoto | N/A | N/A | Naoto and Teddie | February 1st | Crocofur | Unlock Okina City\nHappy Fox Dates\nFour costumes are obtained by petting the Fox when he is happy. This works on a set schedule of Happy to Neutral to Angry. In addition to this, these four costumes have the following requirements:\nKung Fu Costume: Pet the fox once beforehand, regardless of mood. Earliest day to pet the Fox is May 6th, making the first day to obtain this costume May 22nd.\nKingpin Duster: Available starting on June 21st after first obtaining the Kung Fu Costume.\nLord Flauntleroy: Available starting on July 12th after first obtaining the Kung Fu Costume and Kingpin Duster.\nTrack Suit: Available starting on August 27th after first obtaining the Kung Fu Costume, Kingpin Duster, and Lord Flauntleroy.\nHere is the list of dates the Fox is Happy:\nMay 6th, 22nd, 26th, 30th\nJune 1st, 9th, 13th, 21st, 25th, 29th\nJuly 4th, 8th, 12th, 16th, 24th\nAugust 3rd, 7th, 11th, and 27th\nSeptember 2nd, 6th, 14th, 18th, 22nd, 26th, 30th\nOctober 1st, 5th, 13th, 21st, 25th\nNovember 4th, 8th, 12th, 16th, 20th\nDecember 11th, 15th, 19th, 23rd\nJanuary 10th, 14th, 18th, 26th, 30th\nFebruary 1st, 5th, 13th\nMarch 20th"
+}

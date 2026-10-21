@@ -1,0 +1,184 @@
+{
+  "id": "persona-compendium-aeon",
+  "title": "Aeon",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "aeon",
+  "type": "arcana",
+  "order": 74,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Priestess x Fortune\nPriestess x Sun\nEmpress x Temperance\nHierophant x Moon\nLovers x Justice\nChariot x Strength\nChariot x Star\nHermit x Jester\nDevil x Jester\nTower x Judgement\nAeon x Aeon"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Ame-no-Uzume"
+          },
+          {
+            "text": "18"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Narcissus"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Sati"
+          },
+          {
+            "text": "31"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Raja Naga"
+          },
+          {
+            "text": "37"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kushinada-Hime"
+          },
+          {
+            "text": "44"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Quetzalcoatl"
+          },
+          {
+            "text": "51"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kingu"
+          },
+          {
+            "text": "58"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Lakshmi"
+          },
+          {
+            "text": "65"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Kaguya"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nN/A\nTriangle Spread\nPriestess x Fortune\nPriestess x Sun\nEmpress x Temperance\nHierophant x Moon\nLovers x Justice\nChariot x Strength\nChariot x Star\nHermit x Jester\nDevil x Jester\nTower x Judgement\nAeon x Aeon\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nAme-no-Uzume | 18 |  | \nNarcissus | 24 |  | \nSati | 31 |  | \nRaja Naga | 37 |  | \nKushinada-Hime | 44 |  | \nQuetzalcoatl | 51 |  | \nKingu | 58 |  | \nLakshmi | 65 |  | \nKaguya | 74 |  | X"
+}

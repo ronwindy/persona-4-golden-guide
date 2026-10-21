@@ -1,0 +1,50 @@
+{
+  "id": "gameplay-mechanics-social-link",
+  "title": "Social Link",
+  "chapter": "Gameplay Mechanics",
+  "chapter_id": "gameplay-mechanics",
+  "anchor": "social-link",
+  "type": "article",
+  "order": 14,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Social Links are a key mechanic of the modern Persona series and are closely connected to the calendar system. Social Links are the bonds you create with your friends over the course of the year. They have 10 ranks each, and generally speaking, you spend time with the Social Link to rank up. There are 23 Social Links in Persona 4 Golden. 3 of them rank up with the story, and 2 of them rank up by completing Quests. The rest of them rank up with a point system. You earn points for the following:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Spending time with Social Link"
+        },
+        {
+          "text": "Choosing responses the Social Link likes"
+        },
+        {
+          "text": "Certain responses during story events"
+        },
+        {
+          "text": "Answering a question for the Social Link"
+        },
+        {
+          "text": "Eating lunch with the Social Link"
+        },
+        {
+          "text": "Hanging out with Social Link at night"
+        },
+        {
+          "text": "Using a fortune at shrine"
+        },
+        {
+          "text": "Sleeping in futon"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "You will earn one to three points depending on the action you take, and to rank up, you need to earn a certain amount of points. If you have a Persona in your deck with the same arcana the Social Link is, you will earn extra points. It is highly suggested to take advantage of this to rank up as fast as possible. It is possible to max out all Social Links in one run, but it can be quite challenging. More info about Social Links can be found in the Social Links section of the guide."
+    }
+  ],
+  "text": "Social Links are a key mechanic of the modern Persona series and are closely connected to the calendar system. Social Links are the bonds you create with your friends over the course of the year. They have 10 ranks each, and generally speaking, you spend time with the Social Link to rank up. There are 23 Social Links in Persona 4 Golden. 3 of them rank up with the story, and 2 of them rank up by completing Quests. The rest of them rank up with a point system. You earn points for the following:\nSpending time with Social Link\nChoosing responses the Social Link likes\nCertain responses during story events\nAnswering a question for the Social Link\nEating lunch with the Social Link\nHanging out with Social Link at night\nUsing a fortune at shrine\nSleeping in futon\nYou will earn one to three points depending on the action you take, and to rank up, you need to earn a certain amount of points. If you have a Persona in your deck with the same arcana the Social Link is, you will earn extra points. It is highly suggested to take advantage of this to rank up as fast as possible. It is possible to max out all Social Links in one run, but it can be quite challenging. More info about Social Links can be found in the Social Links section of the guide."
+}

@@ -1,0 +1,135 @@
+{
+  "id": "item-list-fish-list",
+  "title": "Fish List",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "fish-list",
+  "type": "catalog",
+  "order": 133,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Fish Items",
+      "md": "**Fish Items**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Fish",
+            "md": "**Fish**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Red Goldfish"
+          },
+          {
+            "text": "Restores 10 HP to one ally"
+          },
+          {
+            "text": "Samegawa Fishing, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Genji Ayu"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Samegawa Fishing"
+          }
+        ],
+        [
+          {
+            "text": "Amber Seema"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Samegawa Fishing"
+          }
+        ],
+        [
+          {
+            "text": "Inaba Trout"
+          },
+          {
+            "text": "Restores 100 HP to one ally"
+          },
+          {
+            "text": "Samegawa Fishing, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Huge Fish"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Samegawa Fishing, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Guardian"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Samegawa Fishing"
+          }
+        ],
+        [
+          {
+            "text": "Hachiro Octopus"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Shichiri Fishing"
+          }
+        ],
+        [
+          {
+            "text": "Meguro Tuna"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Shichiri Fishing"
+          }
+        ],
+        [
+          {
+            "text": "Sea Guardian"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Shichiri Fishing"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Fish Items\nFish | Effect | Location\nRed Goldfish | Restores 10 HP to one ally | Samegawa Fishing, TV Shopping\nGenji Ayu | Restores 25 HP to one ally | Samegawa Fishing\nAmber Seema | Restores 50 HP to one ally | Samegawa Fishing\nInaba Trout | Restores 100 HP to one ally | Samegawa Fishing, TV Shopping\nHuge Fish | Restores all HP to one ally | Samegawa Fishing, TV Shopping\nGuardian | Restores all SP to one ally | Samegawa Fishing\nHachiro Octopus | Restores 10 SP to one ally | Shichiri Fishing\nMeguro Tuna | Restores all HP to one ally | Shichiri Fishing\nSea Guardian | Restores all SP to one ally | Shichiri Fishing"
+}

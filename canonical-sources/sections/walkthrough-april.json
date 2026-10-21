@@ -1,0 +1,1701 @@
+{
+  "id": "walkthrough-april",
+  "title": "April",
+  "chapter": "Walkthrough",
+  "chapter_id": "walkthrough",
+  "anchor": "april",
+  "type": "calendar",
+  "order": 26,
+  "blocks": [
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT!",
+          "md": "**HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "Make sure to read the Important Notes section before starting this walkthrough. Without the information in that section, you will start falling behind the walkthrough. And on that note, enjoy the walkthrough!"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Introduction-"
+    },
+    {
+      "type": "p",
+      "text": "Thank you very much for following this guide! This walkthrough will be focused on completing this game 100% in 2 playthroughs. Before we begin, check the Config menu to adjust the settings of the game however you like. And with that, relax and have fun with the game!"
+    },
+    {
+      "type": "p",
+      "text": "-Difficulty-"
+    },
+    {
+      "type": "p",
+      "text": "This walkthrough can be enjoyed on any difficulty. However, the higher difficulties can make it hard to follow this walkthrough if you aren't familiar with them. For my test playthrough, I played the game on Normal difficulty."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "NOTE!\nIn every version except the PS Vita version, you can change the difficulty at any time and even customize the difficulty. Feel free to change difficulty settings as needed to complete dungeons in one day or to reduce the amount of time needed to grind for levels or money.",
+            "md": "**NOTE!**\nIn every version except the PS Vita version, you can change the difficulty at any time and even customize the difficulty. Feel free to change difficulty settings as needed to complete dungeons in one day or to reduce the amount of time needed to grind for levels or money."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~April 11th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "-Entering Your Name-"
+    },
+    {
+      "type": "p",
+      "text": "Make sure to enter your last name first and your first name second. The canon name in the anime and video games is Yu Narukami, and the canon name for the manga is Souji Seta."
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Responses-"
+    },
+    {
+      "type": "p",
+      "text": "You frequently will be able to respond to a character by choosing a response to give. Normally during the story these responses don't matter. However, there are certain responses late in the game that determine what ending you will get. I will make sure to make note of them when they happen."
+    },
+    {
+      "type": "p",
+      "text": "-Exploration-"
+    },
+    {
+      "type": "p",
+      "text": "You are given a chance to look around the immediate area next to the gas station. You can talk to NPCs to discover some lore, get advice or hints of what to do, and hints of other activities that may be available to you."
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "There is also a blue butterfly to save your game. Make sure to save often! (WAQ1: Why do I need to save frequently?)",
+          "md": "There is also a blue butterfly to save your game. Make sure to save often! [(WAQ1: Why do I need to save frequently?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "If you check the fridge, you will find some Fried Rice. Feel free to eat it, but nothing will happen. There will be a new food item in the fridge every Monday. Some food items will greatly increase your Courage. which is a Status Parameter."
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "If I don't mention a food item on Monday, don't look in the fridge! Sometimes we will save the food for a different day, because it may take time. So be mindful of when to check the fridge!"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Futon-"
+    },
+    {
+      "type": "p",
+      "text": "Here you can sleep to pass time. If you sleep in the futon any day but today, you will dream about a Social Link and earn bonus points toward it. However, we will never be making use of this. The futon gets no love from us."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 12th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Early Morning",
+      "md": "**Early Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Story Events-"
+    },
+    {
+      "type": "p",
+      "text": "At certain points in the game, time will be spent completing tasks related to the main story. When this happens, I will skip to when we next have control of how to spend time."
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Morooka: \"Tell 'em your name, kid, and make it quick.\"\nOption C: \"...You calling me a loser?\"\nCourage UP (WAQ2: What are Status Parameters?)",
+      "md": "Morooka: \"Tell 'em your name, kid, and make it quick.\"\nOption C: \"...You calling me a loser?\"\nCourage UP [(WAQ2: What are Status Parameters?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Exploration-"
+    },
+    {
+      "type": "p",
+      "text": "You are given a chance to explore the whole city. You can talk to NPCs to discover some lore, get advice or hints of what to do, and hints of other activities that may be available to you. Once you are ready to proceed, head back home."
+    },
+    {
+      "type": "p",
+      "text": "-Fast Travel-"
+    },
+    {
+      "type": "p",
+      "text": "You can press Square to Fast Travel across town."
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 13th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Knowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 14th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: What is the year before 1 A.D. called?\nOption B: \"1 B.C.\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Chie: \"So...uh...We're still alive...right?\"\nOption B: \"Are you guys okay?\"\nUnderstanding UP"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 15th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"What about you? Could you just walk away?\"\nOption C: \"I'm worried about Chie.\"\nUnderstanding UP"
+    },
+    {
+      "type": "p",
+      "text": "-Advice-"
+    },
+    {
+      "type": "p",
+      "text": "Outside of fulfilling certain objectives for 100% completion, this walkthrough will not focus on dungeons or battles. However, I will be offering advice as we go through the game to help you clear dungeons easily. To start, there are two basic types of attacks you can use. Melee attacks, and Persona Skills. Melee attacks are weaker than other attacks, but weapons can be bought later in the game to increase damage. Persona Skills are more powerful, but will cost either HP or SP. Keep a close eye on your health, because if MC's HP hits 0, then it's game over."
+    },
+    {
+      "type": "p",
+      "text": "-Trophies-"
+    },
+    {
+      "type": "p",
+      "text": "Throughout the game, you will earn Trophies for completing certain objectives. We will be obtaining all Trophies in this walkthrough."
+    },
+    {
+      "type": "p",
+      "text": "Obtained The Other Self Trophy!\nObtained Izanagi (Condition to unlock Trophy)."
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 16th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Early Morning",
+      "md": "**Early Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Magician Social Link Rank 1 (Auto)-"
+    },
+    {
+      "type": "p",
+      "text": "Party Members who have a Social Link rank of 1 or higher have about a 25-33% chance to help an ally with Down status back up to their feet. This will not take up their turn."
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 17th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-Daidara Metalworks-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke gives you 5,000 yen. Save all of it and don't buy anything. Money is a scarce resource in the early game, and plentiful late game. Right now any equipment you buy have minimal increases in stats, and there are ways to get good equipment without buying it."
+    },
+    {
+      "type": "p",
+      "text": "-TV World-"
+    },
+    {
+      "type": "p",
+      "text": "Enter the TV."
+    },
+    {
+      "type": "p",
+      "text": "TV World",
+      "md": "**TV World**"
+    },
+    {
+      "type": "p",
+      "text": "-Items-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Teddie.\nObtained 3 Revival Beads, 5 Peach Seeds, and 5 Soul Drops"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "A quest later in the game requires a Peach Seed. Keep one on hand to fulfill this Quest."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Advice-"
+    },
+    {
+      "type": "p",
+      "text": "Each Skill has a certain type of affinity, and most enemies are weak to certain affinities. Hitting an enemy's weakness, you will inflict Down status. When an enemy is knocked down, you will obtain a One More, and can take another turn. You can chain multiple One Mores together as long as you keep knocking enemies down. By hitting enemy's weaknesses and knocking down every enemy, you can perform an All-Out Attack. This is a hard hitting attack of Almighty damage to all enemies, and will usually kill them instantly. Using All-Out Attacks can be a saving grace in an otherwise difficult battle. This system is a crucial part of battles, and understanding this mechanic is important to deal with harder enemies later down the line."
+    },
+    {
+      "type": "p",
+      "text": "MC has the power of the Wild Card, which means he can wield multiple Personas. Because of this, MC is the most versatile Party Member. However, keep in mind that weaknesses and stats change depending on which Persona is equipped. Enemies can and will punish you if you aren't paying attention to the Persona you have equipped."
+    },
+    {
+      "type": "p",
+      "text": "You can now change Party Tactics. While the AI is decent, I highly recommend putting them on Direct Commands. It will save you from headaches later."
+    },
+    {
+      "type": "p",
+      "text": "-Shuffle Time-"
+    },
+    {
+      "type": "p",
+      "text": "Shuffle Time is one of two ways to obtain Personas. Shuffle Time is obtained by exploiting enemy weaknesses, using All-Out Attacks, and finishing the battle quickly. If there are no Personas to collect, your priority should be something close to this: Sweep Bonus, Magician, Temperance, Hermit, Emperor. Getting a Sweep Bonus guarantees Shuffle Time next battle, gives you 3 picks instead of one, and gets rid of cards with negative effects."
+    },
+    {
+      "type": "p",
+      "text": "-Required Personas-"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "Before the boss, you should make sure you have a Magician and a Strength Persona, or have a way to fuse them. It can be hard to get a Strength Persona, so I would be at Lv 5 to fuse it. (WAQ3: Why do I need specific Personas?)",
+          "md": "Before the boss, you should make sure you have a Magician and a Strength Persona, or have a way to fuse them. It can be hard to get a Strength Persona, so I would be at Lv 5 to fuse it. [(WAQ3: Why do I need specific Personas?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained Advantage Mine Trophy!\nGet a Player Advantage."
+    },
+    {
+      "type": "p",
+      "text": "-Objective-"
+    },
+    {
+      "type": "p",
+      "text": "Defeat the Boss."
+    },
+    {
+      "type": "p",
+      "text": "-Fool Social Link Rank 1 (Auto)-"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Costumes-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained Yaso High Jersey\nThere are a wide variety of costumes to obtain. They are quite entertaining and spark some hilarious dialogue. This walkthrough will focus on obtaining all costumes."
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 18th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Early Morning",
+      "md": "**Early Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Chariot Social Link Rank 1 (Auto)-"
+    },
+    {
+      "type": "p",
+      "text": "Chie: \"I dunno, I guess that's what draws people to you, or something like that\"\nOption C: \"Falling for me, huh?\" (Requires unknown rank Courage) (Only available on New Game Plus)\nNarrator: You have not yet asked Chie for her contact information.\nOption A: Ask her straight out. (Requires unknown rank Courage) (Only available on New Game Plus)"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: The word \"alphabet\" comes from the words \"alpha\" and what other one?\nOption C: \"Beta\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Exploration-"
+    },
+    {
+      "type": "p",
+      "text": "We can now spend time as we see fit. Feel free to explore as much as you want as long as you don't spend a bunch of money, and you don't pass time. For the next couple of days, hold off on spending any money. You will be able to grind for money pretty soon. The game also informs you to be mindful of weather. (WAQ4: Why is the weather important?)",
+      "md": "We can now spend time as we see fit. Feel free to explore as much as you want as long as you don't spend a bunch of money, and you don't pass time. For the next couple of days, hold off on spending any money. You will be able to grind for money pretty soon. The game also informs you to be mindful of weather. [(WAQ4: Why is the weather important?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 1: Who's the Riddle Master!?-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Funky Student on Classroom Building 3F\nOption A: \"Group A\"; Option B: \"6 Flag Colors\"\nObtained 3 Chest Keys\nQuest 1 Complete!"
+    },
+    {
+      "type": "p",
+      "text": "-Bug Catching-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Bug-Catching Kid at Shopping District Shrine\nHe will ask for a different item every day for a bug. The item can be from the Vending Machine or Souzai Daigaku. Grab it and bring it to him. Evidence suggests it will always be a Dr. Salt NEO today.\nObtained 2 Tatshumie Ladybugs\nNeeded for Fishing Rod"
+    },
+    {
+      "type": "p",
+      "text": "-Gardening-"
+    },
+    {
+      "type": "p",
+      "text": "You can talk to the Gardening Woman at Junes to obtain gardening items. Today she sells 3 Tiny Soul Tomatoes, which heal 20 SP each. I don't use her often during the early game, but you may be interested."
+    },
+    {
+      "type": "p",
+      "text": "-Vending Machine-"
+    },
+    {
+      "type": "p",
+      "text": "In the Shopping District South, you can buy soda from the vending machines. TaP Soda costs 120 yen, and it restores 10 SP, which is hard to come by. You can buy 5 a week, and it restocks on Monday. I would recommend investing in these, especially if you find yourself having trouble with saving SP."
+    },
+    {
+      "type": "p",
+      "text": "-Aeon Social Link Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Enter the Velvet Room, leave, and come back. Marie should comment on how often you visit the Velvet Room.\nCheck on Dwellers, Listen to Marie's Request"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "Check the fridge. Some of these are quite humorous."
+    },
+    {
+      "type": "p",
+      "text": "-Study-"
+    },
+    {
+      "type": "p",
+      "text": "Save your game\nStudy at your Desk\nKnowledge UP\nKnowledge UP"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "There is a random chance for Knowledge to increase twice in one night. Sometimes it will be required in the walkthrough to get 2 increases instead of one. If so, then I will show 2 Knowledge UP's instead of one, like right now. If you don't get 2 increases, reload and try again until you do. From here on out, this will be referred to as Save Abuse."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 19th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Advice-"
+    },
+    {
+      "type": "p",
+      "text": "If you don't have a Magician or Strength Persona, head to the Velvet Room and look under Fusion Search to fuse what you need."
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained Persona Shopper Trophy!\nBuy a Persona from the Compendium."
+    },
+    {
+      "type": "p",
+      "text": "-Strength Social Link Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "You can go to the Faculty Room on Classroom Building 1F to ask about clubs, but it's not required.\nGo to the Emergency Exit on Classroom Building 1F\nYou can choose either Basketball or Soccer. This guide will be following Soccer. (WAQ5: Why soccer instead of basketball?)",
+      "md": "You can go to the Faculty Room on Classroom Building 1F to ask about clubs, but it's not required.\nGo to the Emergency Exit on Classroom Building 1F\nYou can choose either Basketball or Soccer. This guide will be following Soccer. [(WAQ5: Why soccer instead of basketball?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Study-"
+    },
+    {
+      "type": "p",
+      "text": "Save Abuse\nStudy in your Room\nKnowledge UP\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 20th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Afternoon",
+      "md": "**Afternoon**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"MC! C'mon, man, help me here!\"\nOption B: \"Three\"\nMagician + 2 Points\nExpression UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Books-"
+    },
+    {
+      "type": "p",
+      "text": "We will be reading all books in this playthrough, so make sure to pick up the books in the bookstore located in Shopping District South when I note them.\nThe Lovely Man\nExpert Study Methods\nBeginning Fishing"
+    },
+    {
+      "type": "p",
+      "text": "-Magician Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Persona required from now on\nFound at Classroom Building 2F\nOption A (WAQ6: How do Social Links work?)\nObtained New Skill: Trafuri",
+      "md": "Persona required from now on\nFound at Classroom Building 2F\nOption A [(WAQ6: How do Social Links work?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)\nObtained New Skill: Trafuri"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Expert Study Methods on your sofa."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 21st~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Lunchtime",
+      "md": "**Lunchtime**"
+    },
+    {
+      "type": "p",
+      "text": "-Info-"
+    },
+    {
+      "type": "p",
+      "text": "During lunchtime, if a Social Link approaches you, then they are ready to rank up. They will either ask you how you are doing, or if you want to hang out."
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "If they ask you to hang out, saying yes will lock yourself out of doing anything after school before you hang out. As such, you should never accept unless I note it in the walkthrough. It is unknown if accepting earns you bonus points, but my testing suggests that it doesn't."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Strength Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Persona required from now on\nLocated at Classroom Building 2F\nDiligence UP\nOption A (Understanding UP), A"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Expert Study Methods"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~April 22nd~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Magician Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Option C, Any\nParty Members with a Social Link rank of 3 or higher have about a 25% chance of following up a One More. This will negate your One More."
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read Expert Study Methods\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 23rd~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"H-Help, MC! What's this ergonomic bubble she's asking about!?\"\nOption D: \"Tulip mania\"\nMagician + 2 Points\nExpression UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Part-time Jobs-"
+    },
+    {
+      "type": "p",
+      "text": "From today on, you can now apply for part-time jobs. You can apply for them at the Town Bulletin Board in Shopping District North. They will not only give you money, but also give you points toward your Status Parameters. Some part-time jobs require a Status Parameter to be at a certain rank.\nAccept Envelope Constructor\nAccept Day Care Assistant"
+    },
+    {
+      "type": "p",
+      "text": "-Day Care-"
+    },
+    {
+      "type": "p",
+      "text": "Work at Day Care\nLocated at Bus Stop in Shopping District South\nUnderstanding UP\nObtained 4,000 Yen"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read The Lovely Man"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 24th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-Phone Calls-"
+    },
+    {
+      "type": "p",
+      "text": "On Sundays, usually a Social Link will call and ask to hang out. These pass the time, and normally don't rank up the Social Link, although there are exceptions. Unless noted, deny the phone calls."
+    },
+    {
+      "type": "p",
+      "text": "-Magician Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Located at Junes\nOption C, A\nObtained New Skill: Dekaja"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Read-"
+    },
+    {
+      "type": "p",
+      "text": "Read The Lovely Man\nCourage GREATLY UP\nBook Finished!"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 25th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: What's it called when you gain more muscle after getting sore through exercise?\nOption B: \"Overcompensation\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 2: The Girl on the Rooftop-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Male Student in Class 2-2\nTalk to Long-haired Girl on Roof\nAsk about her hobbies"
+    },
+    {
+      "type": "p",
+      "text": "-Vending Machine-"
+    },
+    {
+      "type": "p",
+      "text": "TaP Soda restocks today. This is the last time I'll buy these, so remember they restock on Mondays from now on."
+    },
+    {
+      "type": "p",
+      "text": "-Sun Social Link Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "You can join either the Drama Club or the Music Club. There are no silly book restrictions, but this guide will be following the Drama Club, as evidence suggests its easier to rank up.\nLocated at Meeting Room in Practice Building 1F"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fridge-"
+    },
+    {
+      "type": "p",
+      "text": "Eat white miso in fridge\nCourage GREATLY UP\nCourage Rank Up!\nAverage to Reliable"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 26th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Chie: \"Do you know, MC? I don't think I've heard of any of these!\"\nOption C: \"Marriage numbers.\"\nChariot + 2 Points\nExpression UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Quest 2: The Girl on the Rooftop-"
+    },
+    {
+      "type": "p",
+      "text": "Talk to Long-haired Girl on Roof\nAsk about her hobbies"
+    },
+    {
+      "type": "p",
+      "text": "-Strength Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Diligence UP\nNo options"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Study-"
+    },
+    {
+      "type": "p",
+      "text": "Study\nKnowledge UP\nKnowledge UP\nKnowledge Rank Up!\nAware to Informed"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 27th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Purchase a Super Croquette at Sozai Daigaku in Shopping District North.\nObtained Seize the Moment Trophy!\nObtained a Super Croquette."
+    },
+    {
+      "type": "p",
+      "text": "-Shopping-"
+    },
+    {
+      "type": "p",
+      "text": "Sell all materials at Daidara.\nBuy at least 30 Ball Lightnings. Buy a multiple of 3. I recommend buying 39.\nBuy anything else you need for the TV World. You won't need to buy Goho-M."
+    },
+    {
+      "type": "p",
+      "text": "-TV World-"
+    },
+    {
+      "type": "p",
+      "text": "Rescue Yukiko"
+    },
+    {
+      "type": "p",
+      "text": "TV World",
+      "md": "**TV World**"
+    },
+    {
+      "type": "p",
+      "text": "-Advice-"
+    },
+    {
+      "type": "p",
+      "text": "From here on out, we need to finish every dungeon in one day. This can be tricky, especially in the early game. For this dungeon, we will use 3 Ball Lightnings to take out one Golden Shadow. (WAQ7: How do you beat a dungeon in one day?)",
+      "md": "From here on out, we need to finish every dungeon in one day. This can be tricky, especially in the early game. For this dungeon, we will use 3 Ball Lightnings to take out one Golden Shadow. [(WAQ7: How do you beat a dungeon in one day?)](https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145/walkthrough-faq)"
+    },
+    {
+      "type": "p",
+      "text": "You can now fuse Personas. You may notice that MC's Personas level up slower compared to the rest of the team. In order to stay caught up with the team, you will need to fuse Personas constantly. You will also need to fuse certain Personas for Social Links. More on that later."
+    },
+    {
+      "type": "p",
+      "text": "Because of how expensive things are in this game, we will need to get as much money as possible. The best ways to do this is to grind from Golden Shadows. We will need at least 50,000 Yen before we leave."
+    },
+    {
+      "type": "p",
+      "text": "-The Reaper-"
+    },
+    {
+      "type": "p",
+      "text": "After opening 20 chests, a random chest on the floor you are on will contain The Reaper. He is a Lv 85 optional boss. I will note when I decide to take him down."
+    },
+    {
+      "type": "p",
+      "text": "-Fishing Rod-"
+    },
+    {
+      "type": "p",
+      "text": "You will need to obtain a Gem. Blue Quartz is an example. You don't need a specific gem. They drop from enemies."
+    },
+    {
+      "type": "p",
+      "text": "-Quest Prerequisite-"
+    },
+    {
+      "type": "p",
+      "text": "10 Golden Cloths need to be sold to Daidara for a quest later on. They drop from Phantom Mage on Floor 5-7. You don't need to grab all 10 right now, but keep track of how many you sell, to save a headache later on. I had 2 at the end of this dungeon."
+    },
+    {
+      "type": "p",
+      "text": "-Trophies-"
+    },
+    {
+      "type": "p",
+      "text": "The Trophies listed during dungeons are Trophies that you will most likely obtain at this point in the game. It's okay if you obtain these Trophies later."
+    },
+    {
+      "type": "p",
+      "text": "Obtained Grasping at Greed Trophy!\nDefeat a Golden Hand."
+    },
+    {
+      "type": "p",
+      "text": "Obtained A Favor for Marie Trophy!\nRegister a Skill Card."
+    },
+    {
+      "type": "p",
+      "text": "-Personas Needed-"
+    },
+    {
+      "type": "p",
+      "text": "Sun, Aeon, Chariot, Justice, Temperance, Hierophant"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NOTE!",
+          "md": "**NOTE!**"
+        },
+        {
+          "type": "p",
+          "text": "MC needs to be at Lv 18 to fuse an Aeon Persona."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "-Money Needed-"
+    },
+    {
+      "type": "p",
+      "text": "Make sure to leave with 50,000 Yen."
+    },
+    {
+      "type": "p",
+      "text": "-Objective-"
+    },
+    {
+      "type": "p",
+      "text": "Defeat the Boss"
+    },
+    {
+      "type": "p",
+      "text": "-Response-"
+    },
+    {
+      "type": "p",
+      "text": "Yosuke: \"What kinda person could be doing this?\"\nOption B: \"Let's call it a day.\"\nUnderstanding UP"
+    },
+    {
+      "type": "p",
+      "text": "-Trophy-"
+    },
+    {
+      "type": "p",
+      "text": "Obtained A Prince Appears Trophy!\nRescued Yukiko Amagi."
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 28th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Sun Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Persona required from now on\nExpression UP\nOption B, A, A"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Fishing Rod-"
+    },
+    {
+      "type": "p",
+      "text": "Go to the Shiroku Pub in Shopping District South. Give her a Tatshumie Ladybug.\nObtained Fishhook and Bread Crumbs"
+    },
+    {
+      "type": "p",
+      "text": "-Study-"
+    },
+    {
+      "type": "p",
+      "text": "Study\nKnowledge UP\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 29th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Daytime",
+      "md": "**Daytime**"
+    },
+    {
+      "type": "p",
+      "text": "-Advice-"
+    },
+    {
+      "type": "p",
+      "text": "Last day to Save Yukiko."
+    },
+    {
+      "type": "p",
+      "text": "-Mega Beef Bowl Challenge-"
+    },
+    {
+      "type": "p",
+      "text": "Save Abuse\nLocated at Aiya in Shopping District North\nCosts 3,000 Yen. Need to take the challenge 8 times to obtain a book. Also doubles as a great way to increase stats. You get 3 random stat buffs. You can't get two of the same stat buffs in one day, and you can't get Expression. It's also required to beat the challenge for a Trophy, which requires a max rank in every stat except Expression.\nUnderstanding UP\nUnderstanding Rank Up!\nBasic to Kindly\nCourage UP\nDiligence UP"
+    },
+    {
+      "type": "quote",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "IMPORTANT! IMPORTANT! IMPORTANT!",
+          "md": "**IMPORTANT! IMPORTANT! IMPORTANT!**"
+        },
+        {
+          "type": "p",
+          "text": "Reload if you don't get these stat increases. This can take a while."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Sleep-"
+    },
+    {
+      "type": "p",
+      "text": "Go to your room"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 30th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Morning",
+      "md": "**Morning**"
+    },
+    {
+      "type": "p",
+      "text": "-Lesson-"
+    },
+    {
+      "type": "p",
+      "text": "Question: What is the greatest canyon in the solar system?\nOption B: \"Valles Marineris\"\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "After School",
+      "md": "**After School**"
+    },
+    {
+      "type": "p",
+      "text": "-Fool Rank 2 (Auto)-"
+    },
+    {
+      "type": "p",
+      "text": "Evening",
+      "md": "**Evening**"
+    },
+    {
+      "type": "p",
+      "text": "-Study-"
+    },
+    {
+      "type": "p",
+      "text": "Study\nKnowledge UP\nKnowledge UP"
+    },
+    {
+      "type": "p",
+      "text": "---------------------------\n~Monthly Progress~\n---------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Social Links",
+      "md": "**Social Links**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Arcana #",
+            "md": "**Arcana #**"
+          },
+          {
+            "text": "Social Link",
+            "md": "**Social Link**"
+          },
+          {
+            "text": "Arcana",
+            "md": "**Arcana**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "0"
+          },
+          {
+            "text": "Investigation Team"
+          },
+          {
+            "text": "Fool"
+          },
+          {
+            "text": "NEW! Rank 2"
+          }
+        ],
+        [
+          {
+            "text": "1"
+          },
+          {
+            "text": "Yosuke Hanamura"
+          },
+          {
+            "text": "Magician"
+          },
+          {
+            "text": "NEW! Rank 4"
+          }
+        ],
+        [
+          {
+            "text": "7"
+          },
+          {
+            "text": "Chie Satonaka"
+          },
+          {
+            "text": "Chariot"
+          },
+          {
+            "text": "NEW! Rank 1"
+          }
+        ],
+        [
+          {
+            "text": "11"
+          },
+          {
+            "text": "Fellow Athletes"
+          },
+          {
+            "text": "Strength"
+          },
+          {
+            "text": "NEW! Rank 3"
+          }
+        ],
+        [
+          {
+            "text": "19"
+          },
+          {
+            "text": "Yumi Ozawa"
+          },
+          {
+            "text": "Sun"
+          },
+          {
+            "text": "NEW! Rank 2"
+          }
+        ],
+        [
+          {
+            "text": "20"
+          },
+          {
+            "text": "Marie"
+          },
+          {
+            "text": "Aeon"
+          },
+          {
+            "text": "NEW! Rank 1"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Status Parameters",
+      "md": "**Status Parameters**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Status Parameter",
+            "md": "**Status Parameter**"
+          },
+          {
+            "text": "Rank #",
+            "md": "**Rank #**"
+          },
+          {
+            "text": "Rank Name",
+            "md": "**Rank Name**"
+          }
+        ],
+        [
+          {
+            "text": "Courage"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Reliable"
+          }
+        ],
+        [
+          {
+            "text": "Diligence"
+          },
+          {
+            "text": "1"
+          },
+          {
+            "text": "Callow"
+          }
+        ],
+        [
+          {
+            "text": "Knowledge"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Informed"
+          }
+        ],
+        [
+          {
+            "text": "Expression"
+          },
+          {
+            "text": "1"
+          },
+          {
+            "text": "Rough"
+          }
+        ],
+        [
+          {
+            "text": "Understanding"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Kindly"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Quests",
+      "md": "**Quests**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Quest #",
+            "md": "**Quest #**"
+          },
+          {
+            "text": "Quest Name",
+            "md": "**Quest Name**"
+          },
+          {
+            "text": "Objective",
+            "md": "**Objective**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "1"
+          },
+          {
+            "text": "Who's the Riddle Master!?"
+          },
+          {
+            "text": "Answer the riddles correctly"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "2"
+          },
+          {
+            "text": "The Girl on the Rooftop"
+          },
+          {
+            "text": "Ask about her hobbies"
+          },
+          {
+            "text": "Accepted"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Books",
+      "md": "**Books**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Book",
+            "md": "**Book**"
+          },
+          {
+            "text": "Chapters",
+            "md": "**Chapters**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "The Lovely Man"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Expert Study Methods"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Beginner Fishing"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Not Started"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Trophies",
+      "md": "**Trophies**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Trophy",
+            "md": "**Trophy**"
+          },
+          {
+            "text": "Rarity",
+            "md": "**Rarity**"
+          },
+          {
+            "text": "Objective",
+            "md": "**Objective**"
+          },
+          {
+            "text": "Status",
+            "md": "**Status**"
+          }
+        ],
+        [
+          {
+            "text": "A Favor for Marie"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Register a Skill Card"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "A Prince Appears (Secret Trophy)"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Rescue Yukiko Amagi"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Advantage Mine"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Enter a battle with a Player Advantage"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Grasping at Greed"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Defeat a Golden Hand"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Persona Shopper"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Buy a Persona from the Compendium"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "Seize the Moment"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Buy a Special Croquette from Souzai Daigaku"
+          },
+          {
+            "text": "Complete!"
+          }
+        ],
+        [
+          {
+            "text": "The Other Self"
+          },
+          {
+            "text": "Bronze"
+          },
+          {
+            "text": "Obtain the Persona Izanagi"
+          },
+          {
+            "text": "Complete!"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT! HIGHLY IMPORTANT!\nMake sure to read the Important Notes section before starting this walkthrough. Without the information in that section, you will start falling behind the walkthrough. And on that note, enjoy the walkthrough!\n-Introduction-\nThank you very much for following this guide! This walkthrough will be focused on completing this game 100% in 2 playthroughs. Before we begin, check the Config menu to adjust the settings of the game however you like. And with that, relax and have fun with the game!\n-Difficulty-\nThis walkthrough can be enjoyed on any difficulty. However, the higher difficulties can make it hard to follow this walkthrough if you aren't familiar with them. For my test playthrough, I played the game on Normal difficulty.\nNOTE! / In every version except the PS Vita version, you can change the difficulty at any time and even customize the difficulty. Feel free to change difficulty settings as needed to complete dungeons in one day or to reduce the amount of time needed to grind for levels or money.\n----------------\n~April 11th~\n----------------\n-Entering Your Name-\nMake sure to enter your last name first and your first name second. The canon name in the anime and video games is Yu Narukami, and the canon name for the manga is Souji Seta.\nAfternoon\n-Responses-\nYou frequently will be able to respond to a character by choosing a response to give. Normally during the story these responses don't matter. However, there are certain responses late in the game that determine what ending you will get. I will make sure to make note of them when they happen.\n-Exploration-\nYou are given a chance to look around the immediate area next to the gas station. You can talk to NPCs to discover some lore, get advice or hints of what to do, and hints of other activities that may be available to you.\nIMPORTANT! IMPORTANT! IMPORTANT!\nThere is also a blue butterfly to save your game. Make sure to save often! (WAQ1: Why do I need to save frequently?)\nEvening\n-Fridge-\nIf you check the fridge, you will find some Fried Rice. Feel free to eat it, but nothing will happen. There will be a new food item in the fridge every Monday. Some food items will greatly increase your Courage. which is a Status Parameter.\nIMPORTANT! IMPORTANT! IMPORTANT!\nIf I don't mention a food item on Monday, don't look in the fridge! Sometimes we will save the food for a different day, because it may take time. So be mindful of when to check the fridge!\n-Futon-\nHere you can sleep to pass time. If you sleep in the futon any day but today, you will dream about a Social Link and earn bonus points toward it. However, we will never be making use of this. The futon gets no love from us.\n-----------------\n~April 12th~\n-----------------\nEarly Morning\n-Story Events-\nAt certain points in the game, time will be spent completing tasks related to the main story. When this happens, I will skip to when we next have control of how to spend time.\n-Response-\nMorooka: \"Tell 'em your name, kid, and make it quick.\"\nOption C: \"...You calling me a loser?\"\nCourage UP (WAQ2: What are Status Parameters?)\nAfter School\n-Exploration-\nYou are given a chance to explore the whole city. You can talk to NPCs to discover some lore, get advice or hints of what to do, and hints of other activities that may be available to you. Once you are ready to proceed, head back home.\n-Fast Travel-\nYou can press Square to Fast Travel across town.\nEvening\n-Sleep-\nGo to your room.\n-----------------\n~April 13th~\n-----------------\nMorning\n-Lesson-\nKnowledge UP\nEvening\n-Sleep-\nGo to your room.\n-----------------\n~April 14th~\n-----------------\nMorning\n-Lesson-\nQuestion: What is the year before 1 A.D. called?\nOption B: \"1 B.C.\"\nKnowledge UP\nAfter School\n-Response-\nChie: \"So...uh...We're still alive...right?\"\nOption B: \"Are you guys okay?\"\nUnderstanding UP\nEvening\n-Sleep-\nGo to your room.\n-----------------\n~April 15th~\n-----------------\nAfter School\n-Response-\nYosuke: \"What about you? Could you just walk away?\"\nOption C: \"I'm worried about Chie.\"\nUnderstanding UP\n-Advice-\nOutside of fulfilling certain objectives for 100% completion, this walkthrough will not focus on dungeons or battles. However, I will be offering advice as we go through the game to help you clear dungeons easily. To start, there are two basic types of attacks you can use. Melee attacks, and Persona Skills. Melee attacks are weaker than other attacks, but weapons can be bought later in the game to increase damage. Persona Skills are more powerful, but will cost either HP or SP. Keep a close eye on your health, because if MC's HP hits 0, then it's game over.\n-Trophies-\nThroughout the game, you will earn Trophies for completing certain objectives. We will be obtaining all Trophies in this walkthrough.\nObtained The Other Self Trophy!\nObtained Izanagi (Condition to unlock Trophy).\nEvening\n-Sleep-\nGo to your room.\n-----------------\n~April 16th~\n-----------------\nEarly Morning\n-Magician Social Link Rank 1 (Auto)-\nParty Members who have a Social Link rank of 1 or higher have about a 25-33% chance to help an ally with Down status back up to their feet. This will not take up their turn.\nEvening\n-Sleep-\nGo to your room.\n-----------------\n~April 17th~\n-----------------\nDaytime\n-Daidara Metalworks-\nYosuke gives you 5,000 yen. Save all of it and don't buy anything. Money is a scarce resource in the early game, and plentiful late game. Right now any equipment you buy have minimal increases in stats, and there are ways to get good equipment without buying it.\n-TV World-\nEnter the TV.\nTV World\n-Items-\nTalk to Teddie.\nObtained 3 Revival Beads, 5 Peach Seeds, and 5 Soul Drops\nIMPORTANT! IMPORTANT! IMPORTANT!\nA quest later in the game requires a Peach Seed. Keep one on hand to fulfill this Quest.\n-Advice-\nEach Skill has a certain type of affinity, and most enemies are weak to certain affinities. Hitting an enemy's weakness, you will inflict Down status. When an enemy is knocked down, you will obtain a One More, and can take another turn. You can chain multiple One Mores together as long as you keep knocking enemies down. By hitting enemy's weaknesses and knocking down every enemy, you can perform an All-Out Attack. This is a hard hitting attack of Almighty damage to all enemies, and will usually kill them instantly. Using All-Out Attacks can be a saving grace in an otherwise difficult battle. This system is a crucial part of battles, and understanding this mechanic is important to deal with harder enemies later down the line.\nMC has the power of the Wild Card, which means he can wield multiple Personas. Because of this, MC is the most versatile Party Member. However, keep in mind that weaknesses and stats change depending on which Persona is equipped. Enemies can and will punish you if you aren't paying attention to the Persona you have equipped.\nYou can now change Party Tactics. While the AI is decent, I highly recommend putting them on Direct Commands. It will save you from headaches later.\n-Shuffle Time-\nShuffle Time is one of two ways to obtain Personas. Shuffle Time is obtained by exploiting enemy weaknesses, using All-Out Attacks, and finishing the battle quickly. If there are no Personas to collect, your priority should be something close to this: Sweep Bonus, Magician, Temperance, Hermit, Emperor. Getting a Sweep Bonus guarantees Shuffle Time next battle, gives you 3 picks instead of one, and gets rid of cards with negative effects.\n-Required Personas-\nIMPORTANT! IMPORTANT! IMPORTANT!\nBefore the boss, you should make sure you have a Magician and a Strength Persona, or have a way to fuse them. It can be hard to get a Strength Persona, so I would be at Lv 5 to fuse it. (WAQ3: Why do I need specific Personas?)\n-Trophy-\nObtained Advantage Mine Trophy!\nGet a Player Advantage.\n-Objective-\nDefeat the Boss.\n-Fool Social Link Rank 1 (Auto)-\nEvening\n-Costumes-\nObtained Yaso High Jersey\nThere are a wide variety of costumes to obtain. They are quite entertaining and spark some hilarious dialogue. This walkthrough will focus on obtaining all costumes.\n-Sleep-\nGo to your room.\n-----------------\n~April 18th~\n-----------------\nEarly Morning\n-Chariot Social Link Rank 1 (Auto)-\nChie: \"I dunno, I guess that's what draws people to you, or something like that\"\nOption C: \"Falling for me, huh?\" (Requires unknown rank Courage) (Only available on New Game Plus)\nNarrator: You have not yet asked Chie for her contact information.\nOption A: Ask her straight out. (Requires unknown rank Courage) (Only available on New Game Plus)\nAfternoon\n-Lesson-\nQuestion: The word \"alphabet\" comes from the words \"alpha\" and what other one?\nOption C: \"Beta\"\nKnowledge UP\nAfter School\n-Exploration-\nWe can now spend time as we see fit. Feel free to explore as much as you want as long as you don't spend a bunch of money, and you don't pass time. For the next couple of days, hold off on spending any money. You will be able to grind for money pretty soon. The game also informs you to be mindful of weather. (WAQ4: Why is the weather important?)\n-Quest 1: Who's the Riddle Master!?-\nTalk to Funky Student on Classroom Building 3F\nOption A: \"Group A\"; Option B: \"6 Flag Colors\"\nObtained 3 Chest Keys\nQuest 1 Complete!\n-Bug Catching-\nTalk to Bug-Catching Kid at Shopping District Shrine\nHe will ask for a different item every day for a bug. The item can be from the Vending Machine or Souzai Daigaku. Grab it and bring it to him. Evidence suggests it will always be a Dr. Salt NEO today.\nObtained 2 Tatshumie Ladybugs\nNeeded for Fishing Rod\n-Gardening-\nYou can talk to the Gardening Woman at Junes to obtain gardening items. Today she sells 3 Tiny Soul Tomatoes, which heal 20 SP each. I don't use her often during the early game, but you may be interested.\n-Vending Machine-\nIn the Shopping District South, you can buy soda from the vending machines. TaP Soda costs 120 yen, and it restores 10 SP, which is hard to come by. You can buy 5 a week, and it restocks on Monday. I would recommend investing in these, especially if you find yourself having trouble with saving SP.\n-Aeon Social Link Rank 1-\nEnter the Velvet Room, leave, and come back. Marie should comment on how often you visit the Velvet Room.\nCheck on Dwellers, Listen to Marie's Request\nEvening\n-Fridge-\nCheck the fridge. Some of these are quite humorous.\n-Study-\nSave your game\nStudy at your Desk\nKnowledge UP\nKnowledge UP\nIMPORTANT! IMPORTANT! IMPORTANT!\nThere is a random chance for Knowledge to increase twice in one night. Sometimes it will be required in the walkthrough to get 2 increases instead of one. If so, then I will show 2 Knowledge UP's instead of one, like right now. If you don't get 2 increases, reload and try again until you do. From here on out, this will be referred to as Save Abuse.\n-----------------\n~April 19th~\n-----------------\nAfter School\n-Advice-\nIf you don't have a Magician or Strength Persona, head to the Velvet Room and look under Fusion Search to fuse what you need.\n-Trophy-\nObtained Persona Shopper Trophy!\nBuy a Persona from the Compendium.\n-Strength Social Link Rank 1-\nYou can go to the Faculty Room on Classroom Building 1F to ask about clubs, but it's not required.\nGo to the Emergency Exit on Classroom Building 1F\nYou can choose either Basketball or Soccer. This guide will be following Soccer. (WAQ5: Why soccer instead of basketball?)\nEvening\n-Study-\nSave Abuse\nStudy in your Room\nKnowledge UP\nKnowledge UP\n-----------------\n~April 20th~\n-----------------\nAfternoon\n-Lesson-\nYosuke: \"MC! C'mon, man, help me here!\"\nOption B: \"Three\"\nMagician + 2 Points\nExpression UP\nAfter School\n-Books-\nWe will be reading all books in this playthrough, so make sure to pick up the books in the bookstore located in Shopping District South when I note them.\nThe Lovely Man\nExpert Study Methods\nBeginning Fishing\n-Magician Rank 2-\nPersona required from now on\nFound at Classroom Building 2F\nOption A (WAQ6: How do Social Links work?)\nObtained New Skill: Trafuri\nEvening\n-Read-\nRead Expert Study Methods on your sofa.\n-----------------\n~April 21st~\n-----------------\nLunchtime\n-Info-\nDuring lunchtime, if a Social Link approaches you, then they are ready to rank up. They will either ask you how you are doing, or if you want to hang out.\nIMPORTANT! IMPORTANT! IMPORTANT!\nIf they ask you to hang out, saying yes will lock yourself out of doing anything after school before you hang out. As such, you should never accept unless I note it in the walkthrough. It is unknown if accepting earns you bonus points, but my testing suggests that it doesn't.\nAfter School\n-Strength Rank 2-\nPersona required from now on\nLocated at Classroom Building 2F\nDiligence UP\nOption A (Understanding UP), A\nEvening\n-Read-\nRead Expert Study Methods\n------------------\n~April 22nd~\n------------------\nAfter School\n-Magician Rank 3-\nOption C, Any\nParty Members with a Social Link rank of 3 or higher have about a 25% chance of following up a One More. This will negate your One More.\nEvening\n-Read-\nRead Expert Study Methods\nBook Finished!\n-----------------\n~April 23rd~\n-----------------\nMorning\n-Lesson-\nYosuke: \"H-Help, MC! What's this ergonomic bubble she's asking about!?\"\nOption D: \"Tulip mania\"\nMagician + 2 Points\nExpression UP\nAfter School\n-Part-time Jobs-\nFrom today on, you can now apply for part-time jobs. You can apply for them at the Town Bulletin Board in Shopping District North. They will not only give you money, but also give you points toward your Status Parameters. Some part-time jobs require a Status Parameter to be at a certain rank.\nAccept Envelope Constructor\nAccept Day Care Assistant\n-Day Care-\nWork at Day Care\nLocated at Bus Stop in Shopping District South\nUnderstanding UP\nObtained 4,000 Yen\nEvening\n-Read-\nRead The Lovely Man\n-----------------\n~April 24th~\n-----------------\nDaytime\n-Phone Calls-\nOn Sundays, usually a Social Link will call and ask to hang out. These pass the time, and normally don't rank up the Social Link, although there are exceptions. Unless noted, deny the phone calls.\n-Magician Rank 4-\nLocated at Junes\nOption C, A\nObtained New Skill: Dekaja\nEvening\n-Read-\nRead The Lovely Man\nCourage GREATLY UP\nBook Finished!\n-----------------\n~April 25th~\n-----------------\nMorning\n-Lesson-\nQuestion: What's it called when you gain more muscle after getting sore through exercise?\nOption B: \"Overcompensation\"\nKnowledge UP\nAfter School\n-Quest 2: The Girl on the Rooftop-\nTalk to Male Student in Class 2-2\nTalk to Long-haired Girl on Roof\nAsk about her hobbies\n-Vending Machine-\nTaP Soda restocks today. This is the last time I'll buy these, so remember they restock on Mondays from now on.\n-Sun Social Link Rank 1-\nYou can join either the Drama Club or the Music Club. There are no silly book restrictions, but this guide will be following the Drama Club, as evidence suggests its easier to rank up.\nLocated at Meeting Room in Practice Building 1F\nEvening\n-Fridge-\nEat white miso in fridge\nCourage GREATLY UP\nCourage Rank Up!\nAverage to Reliable\n-----------------\n~April 26th~\n-----------------\nMorning\n-Lesson-\nChie: \"Do you know, MC? I don't think I've heard of any of these!\"\nOption C: \"Marriage numbers.\"\nChariot + 2 Points\nExpression UP\nAfter School\n-Quest 2: The Girl on the Rooftop-\nTalk to Long-haired Girl on Roof\nAsk about her hobbies\n-Strength Rank 3-\nDiligence UP\nNo options\nEvening\n-Study-\nStudy\nKnowledge UP\nKnowledge UP\nKnowledge Rank Up!\nAware to Informed\n-----------------\n~April 27th~\n-----------------\nAfter School\n-Trophy-\nPurchase a Super Croquette at Sozai Daigaku in Shopping District North.\nObtained Seize the Moment Trophy!\nObtained a Super Croquette.\n-Shopping-\nSell all materials at Daidara.\nBuy at least 30 Ball Lightnings. Buy a multiple of 3. I recommend buying 39.\nBuy anything else you need for the TV World. You won't need to buy Goho-M.\n-TV World-\nRescue Yukiko\nTV World\n-Advice-\nFrom here on out, we need to finish every dungeon in one day. This can be tricky, especially in the early game. For this dungeon, we will use 3 Ball Lightnings to take out one Golden Shadow. (WAQ7: How do you beat a dungeon in one day?)\nYou can now fuse Personas. You may notice that MC's Personas level up slower compared to the rest of the team. In order to stay caught up with the team, you will need to fuse Personas constantly. You will also need to fuse certain Personas for Social Links. More on that later.\nBecause of how expensive things are in this game, we will need to get as much money as possible. The best ways to do this is to grind from Golden Shadows. We will need at least 50,000 Yen before we leave.\n-The Reaper-\nAfter opening 20 chests, a random chest on the floor you are on will contain The Reaper. He is a Lv 85 optional boss. I will note when I decide to take him down.\n-Fishing Rod-\nYou will need to obtain a Gem. Blue Quartz is an example. You don't need a specific gem. They drop from enemies.\n-Quest Prerequisite-\n10 Golden Cloths need to be sold to Daidara for a quest later on. They drop from Phantom Mage on Floor 5-7. You don't need to grab all 10 right now, but keep track of how many you sell, to save a headache later on. I had 2 at the end of this dungeon.\n-Trophies-\nThe Trophies listed during dungeons are Trophies that you will most likely obtain at this point in the game. It's okay if you obtain these Trophies later.\nObtained Grasping at Greed Trophy!\nDefeat a Golden Hand.\nObtained A Favor for Marie Trophy!\nRegister a Skill Card.\n-Personas Needed-\nSun, Aeon, Chariot, Justice, Temperance, Hierophant\nNOTE!\nMC needs to be at Lv 18 to fuse an Aeon Persona.\n-Money Needed-\nMake sure to leave with 50,000 Yen.\n-Objective-\nDefeat the Boss\n-Response-\nYosuke: \"What kinda person could be doing this?\"\nOption B: \"Let's call it a day.\"\nUnderstanding UP\n-Trophy-\nObtained A Prince Appears Trophy!\nRescued Yukiko Amagi.\n-----------------\n~April 28th~\n-----------------\nAfter School\n-Sun Rank 2-\nPersona required from now on\nExpression UP\nOption B, A, A\nEvening\n-Fishing Rod-\nGo to the Shiroku Pub in Shopping District South. Give her a Tatshumie Ladybug.\nObtained Fishhook and Bread Crumbs\n-Study-\nStudy\nKnowledge UP\nKnowledge UP\n-----------------\n~April 29th~\n-----------------\nDaytime\n-Advice-\nLast day to Save Yukiko.\n-Mega Beef Bowl Challenge-\nSave Abuse\nLocated at Aiya in Shopping District North\nCosts 3,000 Yen. Need to take the challenge 8 times to obtain a book. Also doubles as a great way to increase stats. You get 3 random stat buffs. You can't get two of the same stat buffs in one day, and you can't get Expression. It's also required to beat the challenge for a Trophy, which requires a max rank in every stat except Expression.\nUnderstanding UP\nUnderstanding Rank Up!\nBasic to Kindly\nCourage UP\nDiligence UP\nIMPORTANT! IMPORTANT! IMPORTANT!\nReload if you don't get these stat increases. This can take a while.\nEvening\n-Sleep-\nGo to your room\n-----------------\n~April 30th~\n-----------------\nMorning\n-Lesson-\nQuestion: What is the greatest canyon in the solar system?\nOption B: \"Valles Marineris\"\nKnowledge UP\nAfter School\n-Fool Rank 2 (Auto)-\nEvening\n-Study-\nStudy\nKnowledge UP\nKnowledge UP\n---------------------------\n~Monthly Progress~\n---------------------------\nSocial Links\nArcana # | Social Link | Arcana | Status\n0 | Investigation Team | Fool | NEW! Rank 2\n1 | Yosuke Hanamura | Magician | NEW! Rank 4\n7 | Chie Satonaka | Chariot | NEW! Rank 1\n11 | Fellow Athletes | Strength | NEW! Rank 3\n19 | Yumi Ozawa | Sun | NEW! Rank 2\n20 | Marie | Aeon | NEW! Rank 1\nStatus Parameters\nStatus Parameter | Rank # | Rank Name\nCourage | 2 | Reliable\nDiligence | 1 | Callow\nKnowledge | 2 | Informed\nExpression | 1 | Rough\nUnderstanding | 2 | Kindly\nQuests\nQuest # | Quest Name | Objective | Status\n1 | Who's the Riddle Master!? | Answer the riddles correctly | Complete!\n2 | The Girl on the Rooftop | Ask about her hobbies | Accepted\nBooks\nBook | Chapters | Status\nThe Lovely Man | 2 | Complete!\nExpert Study Methods | 3 | Complete!\nBeginner Fishing | 3 | Not Started\nTrophies\nTrophy | Rarity | Objective | Status\nA Favor for Marie | Bronze | Register a Skill Card | Complete!\nA Prince Appears (Secret Trophy) | Bronze | Rescue Yukiko Amagi | Complete!\nAdvantage Mine | Bronze | Enter a battle with a Player Advantage | Complete!\nGrasping at Greed | Bronze | Defeat a Golden Hand | Complete!\nPersona Shopper | Bronze | Buy a Persona from the Compendium | Complete!\nSeize the Moment | Bronze | Buy a Special Croquette from Souzai Daigaku | Complete!\nThe Other Self | Bronze | Obtain the Persona Izanagi | Complete!"
+}

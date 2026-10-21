@@ -1,0 +1,49 @@
+{
+  "id": "gameplay-mechanics-status-ailments",
+  "title": "Status Ailments",
+  "chapter": "Gameplay Mechanics",
+  "chapter_id": "gameplay-mechanics",
+  "anchor": "status-ailments",
+  "type": "article",
+  "order": 19,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Status Ailments can be given to almost every character, except for bosses. I created this section for a quick reference because I can never remember what these do accurately."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Poison: Lose 10% of Max HP every turn. Damage dealt is halved. Cannot be KO'd from Poison."
+        },
+        {
+          "text": "Rage: Character will always attack a random foe. Damage dealt and damage received is doubled. Accuracy is halved."
+        },
+        {
+          "text": "Down: Character receives about 10% more damage. Evasion becomes 0. Occurs when hit by weakness/critical hit."
+        },
+        {
+          "text": "Dizzy: Lose a turn. 100% chance to occur when hit by weakness/critical hit while Down. 50% chance to occur when hit by an attack while Down."
+        },
+        {
+          "text": "Panic: Will do one of the following. Attack an ally, throw away money, or do nothing."
+        },
+        {
+          "text": "Fear: About a 50% chance to do nothing. About a 50% chance to run away, if possible. MC cannot run away."
+        },
+        {
+          "text": "Silence: Cannot use Skills. Enemies can waste a turn. MC cannot switch Personas."
+        },
+        {
+          "text": "Enervation: All stats and accuracy are halved. About 50-75% chance of failing to use a Skill."
+        },
+        {
+          "text": "Exhaustion: Lose about 10% of Max SP. Damage received is doubled. SP cannot reach 0 because of Exhaustion."
+        }
+      ]
+    }
+  ],
+  "text": "Status Ailments can be given to almost every character, except for bosses. I created this section for a quick reference because I can never remember what these do accurately.\nPoison: Lose 10% of Max HP every turn. Damage dealt is halved. Cannot be KO'd from Poison.\nRage: Character will always attack a random foe. Damage dealt and damage received is doubled. Accuracy is halved.\nDown: Character receives about 10% more damage. Evasion becomes 0. Occurs when hit by weakness/critical hit.\nDizzy: Lose a turn. 100% chance to occur when hit by weakness/critical hit while Down. 50% chance to occur when hit by an attack while Down.\nPanic: Will do one of the following. Attack an ally, throw away money, or do nothing.\nFear: About a 50% chance to do nothing. About a 50% chance to run away, if possible. MC cannot run away.\nSilence: Cannot use Skills. Enemies can waste a turn. MC cannot switch Personas.\nEnervation: All stats and accuracy are halved. About 50-75% chance of failing to use a Skill.\nExhaustion: Lose about 10% of Max SP. Damage received is doubled. SP cannot reach 0 because of Exhaustion."
+}

@@ -1,0 +1,236 @@
+{
+  "id": "activities-fishing",
+  "title": "Fishing",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "fishing",
+  "type": "article",
+  "order": 102,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Fishing is a side activity that is needed for a decent amount of quests. There are two places to fish, Samegawa Riverbank and Shichiri Beach, which is unlocked from riding the scooter a few times. The fish you can obtain depends on where you are and what bug you use as bait. The higher your Diligence, the more lines you can cast in one sitting. Here is how to get the fishing rods."
+    },
+    {
+      "type": "p",
+      "text": "River Rod",
+      "md": "**River Rod**"
+    },
+    {
+      "type": "p",
+      "text": "The River Rod is required to fish at Samegawa Riverbank. Talk to Bug-Catching Kid at Shopping District Shrine to get a Tatshumie Ladybug. Then obtain some kind of gem, like a Blue Quartz. They randomly drop from enemies. Once you have both, visit the Shiroku Pub at night and give her a Tatshumie Ladybug to get a Fishing Hook and some Bread Crumbs. Talk to Old Man at Samegawa Riverbank to get the River Rod."
+    },
+    {
+      "type": "p",
+      "text": "Deep-Sea Rod",
+      "md": "**Deep-Sea Rod**"
+    },
+    {
+      "type": "p",
+      "text": "The Deep-Sea Rod is required to fish at Shichiri Beach. After obtaining the River Rod, ask Old Man at Samegawa Riverbank about Guardian so Inaba Jewel Beetles to become available to catch. Catch a few at Shopping District Shrine, then use them as bait to catch a Guardian. Show the Guardian to Old Man to get the Deep-Sea Rod. Make sure to ask the Old Man about the Sea Guardian so Genji Beetles become available to catch."
+    },
+    {
+      "type": "p",
+      "text": "Fishing Minigame",
+      "md": "**Fishing Minigame**"
+    },
+    {
+      "type": "p",
+      "text": "First, select the bait you wish to use. Typically, each bait can catch two fish represented by small ripples or big ripples to tell which one you will catch. If the ripples aren't the ones you want, reel in early and cast again. Once the fish bites, hit Circle to hook the fish. Once the fish is hooked, a bar will appear. Use the Left Stick to manipulate the arrow left and right. The bigger the fish, the more resistance it'll have. To reel in the fish, move the arrow to the blue area of the bar, and hold Circle. The longer you reel in, the smaller the blue area becomes. Let go of Circle, and the blue area will grow bigger, but at the cost of the fish pulling farther away. If you hit Circle on the red area multiple times, the line will break and the fish will escape. After reading Expert Fishing, sometimes the Triangle button will show up. Hitting it reels in the fish a big amount. This book is almost required for the guardians."
+    },
+    {
+      "type": "p",
+      "text": "Fish List",
+      "md": "**Fish List**"
+    },
+    {
+      "type": "p",
+      "text": "This is the list for everything you can catch, and how to catch them. Note that Shichiri Beach has some joke weapons. You can only catch one joke weapon per day, and they are on a set rotation. Note that Chie is the only one without a joke weapon from fishing."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Fish",
+            "md": "**Fish**"
+          },
+          {
+            "text": "Bait",
+            "md": "**Bait**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Red Goldfish"
+          },
+          {
+            "text": "Bread Crumbs"
+          },
+          {
+            "text": "Samegawa"
+          }
+        ],
+        [
+          {
+            "text": "Genji Ayu"
+          },
+          {
+            "text": "Bread Crumbs or Tatshumie Ladybug"
+          },
+          {
+            "text": "Samegawa"
+          }
+        ],
+        [
+          {
+            "text": "Amber Seema"
+          },
+          {
+            "text": "Tatshumie Ladybug or Yaso Locust"
+          },
+          {
+            "text": "Samegawa"
+          }
+        ],
+        [
+          {
+            "text": "Inaba Trout"
+          },
+          {
+            "text": "Yaso Locust or Mei-ou Cricket"
+          },
+          {
+            "text": "Samegawa"
+          }
+        ],
+        [
+          {
+            "text": "Huge Fish"
+          },
+          {
+            "text": "Mei-ou Cricket or Inaba Jewel Beetle"
+          },
+          {
+            "text": "Samegawa"
+          }
+        ],
+        [
+          {
+            "text": "Guardian"
+          },
+          {
+            "text": "Inaba Jewel Beetle"
+          },
+          {
+            "text": "Samegawa"
+          }
+        ],
+        [
+          {
+            "text": "Hachiro Octopus"
+          },
+          {
+            "text": "Damiyo Grasshopper or Heike Stag Beetle"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Meguro Tuna"
+          },
+          {
+            "text": "Heike Stag Beetle or Genji Beetle"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Sea Guardian"
+          },
+          {
+            "text": "Genji Beetle"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Bus Stop Sign"
+          },
+          {
+            "text": "Any"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Pinwheel"
+          },
+          {
+            "text": "Any"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Bat Saucer"
+          },
+          {
+            "text": "Any"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Colored Bench"
+          },
+          {
+            "text": "Any"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Hyper Drill"
+          },
+          {
+            "text": "Any"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ],
+        [
+          {
+            "text": "Flintlock"
+          },
+          {
+            "text": "Any"
+          },
+          {
+            "text": "Shichiri"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Fishing is a side activity that is needed for a decent amount of quests. There are two places to fish, Samegawa Riverbank and Shichiri Beach, which is unlocked from riding the scooter a few times. The fish you can obtain depends on where you are and what bug you use as bait. The higher your Diligence, the more lines you can cast in one sitting. Here is how to get the fishing rods.\nRiver Rod\nThe River Rod is required to fish at Samegawa Riverbank. Talk to Bug-Catching Kid at Shopping District Shrine to get a Tatshumie Ladybug. Then obtain some kind of gem, like a Blue Quartz. They randomly drop from enemies. Once you have both, visit the Shiroku Pub at night and give her a Tatshumie Ladybug to get a Fishing Hook and some Bread Crumbs. Talk to Old Man at Samegawa Riverbank to get the River Rod.\nDeep-Sea Rod\nThe Deep-Sea Rod is required to fish at Shichiri Beach. After obtaining the River Rod, ask Old Man at Samegawa Riverbank about Guardian so Inaba Jewel Beetles to become available to catch. Catch a few at Shopping District Shrine, then use them as bait to catch a Guardian. Show the Guardian to Old Man to get the Deep-Sea Rod. Make sure to ask the Old Man about the Sea Guardian so Genji Beetles become available to catch.\nFishing Minigame\nFirst, select the bait you wish to use. Typically, each bait can catch two fish represented by small ripples or big ripples to tell which one you will catch. If the ripples aren't the ones you want, reel in early and cast again. Once the fish bites, hit Circle to hook the fish. Once the fish is hooked, a bar will appear. Use the Left Stick to manipulate the arrow left and right. The bigger the fish, the more resistance it'll have. To reel in the fish, move the arrow to the blue area of the bar, and hold Circle. The longer you reel in, the smaller the blue area becomes. Let go of Circle, and the blue area will grow bigger, but at the cost of the fish pulling farther away. If you hit Circle on the red area multiple times, the line will break and the fish will escape. After reading Expert Fishing, sometimes the Triangle button will show up. Hitting it reels in the fish a big amount. This book is almost required for the guardians.\nFish List\nThis is the list for everything you can catch, and how to catch them. Note that Shichiri Beach has some joke weapons. You can only catch one joke weapon per day, and they are on a set rotation. Note that Chie is the only one without a joke weapon from fishing.\nFish | Bait | Location\nRed Goldfish | Bread Crumbs | Samegawa\nGenji Ayu | Bread Crumbs or Tatshumie Ladybug | Samegawa\nAmber Seema | Tatshumie Ladybug or Yaso Locust | Samegawa\nInaba Trout | Yaso Locust or Mei-ou Cricket | Samegawa\nHuge Fish | Mei-ou Cricket or Inaba Jewel Beetle | Samegawa\nGuardian | Inaba Jewel Beetle | Samegawa\nHachiro Octopus | Damiyo Grasshopper or Heike Stag Beetle | Shichiri\nMeguro Tuna | Heike Stag Beetle or Genji Beetle | Shichiri\nSea Guardian | Genji Beetle | Shichiri\nBus Stop Sign | Any | Shichiri\nPinwheel | Any | Shichiri\nBat Saucer | Any | Shichiri\nColored Bench | Any | Shichiri\nHyper Drill | Any | Shichiri\nFlintlock | Any | Shichiri"
+}

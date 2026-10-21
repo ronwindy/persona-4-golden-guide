@@ -1,0 +1,299 @@
+{
+  "id": "activities-shiroku-store",
+  "title": "Shiroku Store",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "shiroku-store",
+  "type": "article",
+  "order": 110,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Shiroku Store sells various consumable items. New items will become available after certain days. During rain, Old Lady Shiroku will offer a 20% discount. At night, the Shiroku Store turns into the Shiroku Pub. Here is the list of what you can buy."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Item",
+            "md": "**Item**"
+          },
+          {
+            "text": "Price",
+            "md": "**Price**"
+          },
+          {
+            "text": "Available",
+            "md": "**Available**"
+          }
+        ],
+        [
+          {
+            "text": "Medicine"
+          },
+          {
+            "text": "850 Yen"
+          },
+          {
+            "text": "April 17th"
+          }
+        ],
+        [
+          {
+            "text": "Value Medicine"
+          },
+          {
+            "text": "1,900 Yen"
+          },
+          {
+            "text": "April 17th"
+          }
+        ],
+        [
+          {
+            "text": "Stimulant"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Revival Bead"
+          },
+          {
+            "text": "1,950 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Goho-M"
+          },
+          {
+            "text": "950 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Vanish Ball"
+          },
+          {
+            "text": "950 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Firecracker"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Ice Cube"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Pinwheel"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Ball Lightning"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "April 18th"
+          }
+        ],
+        [
+          {
+            "text": "Royal Jelly"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "May 18th"
+          }
+        ],
+        [
+          {
+            "text": "Dokudami Tea"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "May 18th"
+          }
+        ],
+        [
+          {
+            "text": "Mouthwash"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "May 18th"
+          }
+        ],
+        [
+          {
+            "text": "Sedative"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "May 18th"
+          }
+        ],
+        [
+          {
+            "text": "Stimulant"
+          },
+          {
+            "text": "450 Yen"
+          },
+          {
+            "text": "May 18th"
+          }
+        ],
+        [
+          {
+            "text": "Ointment"
+          },
+          {
+            "text": "1,600 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Medical Kit"
+          },
+          {
+            "text": "3,400 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "San-zun Tama"
+          },
+          {
+            "text": "850 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Dry Ice"
+          },
+          {
+            "text": "850 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Yashichi"
+          },
+          {
+            "text": "850 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Tesla Coil"
+          },
+          {
+            "text": "850 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Antibiotic Gel"
+          },
+          {
+            "text": "2,900 Yen"
+          },
+          {
+            "text": "August 13th"
+          }
+        ],
+        [
+          {
+            "text": "Macca Leaf"
+          },
+          {
+            "text": "6,400 Yen"
+          },
+          {
+            "text": "August 13th"
+          }
+        ],
+        [
+          {
+            "text": "Balm of Life"
+          },
+          {
+            "text": "4,850 Yen"
+          },
+          {
+            "text": "August 13th"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "The Shiroku Store sells various consumable items. New items will become available after certain days. During rain, Old Lady Shiroku will offer a 20% discount. At night, the Shiroku Store turns into the Shiroku Pub. Here is the list of what you can buy.\nItem | Price | Available\nMedicine | 850 Yen | April 17th\nValue Medicine | 1,900 Yen | April 17th\nStimulant | 450 Yen | April 18th\nRevival Bead | 1,950 Yen | April 18th\nGoho-M | 950 Yen | April 18th\nVanish Ball | 950 Yen | April 18th\nFirecracker | 450 Yen | April 18th\nIce Cube | 450 Yen | April 18th\nPinwheel | 450 Yen | April 18th\nBall Lightning | 450 Yen | April 18th\nRoyal Jelly | 450 Yen | May 18th\nDokudami Tea | 450 Yen | May 18th\nMouthwash | 450 Yen | May 18th\nSedative | 450 Yen | May 18th\nStimulant | 450 Yen | May 18th\nOintment | 1,600 Yen | June 5th\nMedical Kit | 3,400 Yen | June 5th\nSan-zun Tama | 850 Yen | June 5th\nDry Ice | 850 Yen | June 5th\nYashichi | 850 Yen | June 5th\nTesla Coil | 850 Yen | June 5th\nAntibiotic Gel | 2,900 Yen | August 13th\nMacca Leaf | 6,400 Yen | August 13th\nBalm of Life | 4,850 Yen | August 13th"
+}

@@ -1,0 +1,257 @@
+{
+  "id": "activities-gardening",
+  "title": "Gardening",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "gardening",
+  "type": "article",
+  "order": 103,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Gardening is a side activity that allows you to harvest items for dungeons. You can access the garden at home, typically during the night. In addition to planting seeds, you can maintain the garden. This will pass time, but will reduce the time needed to harvest the plants, or on the day before harvest increase the amount harvested. This can also increase Diligence and earn points toward Hierophant and Justice. If you wait too long to harvest, the plants will wither and you will lose the items."
+    },
+    {
+      "type": "p",
+      "text": "Gardening Woman",
+      "md": "**Gardening Woman**"
+    },
+    {
+      "type": "p",
+      "text": "The Gardening Woman appears either at Junes or the Dojima Residence. Before gardening is unlocked, you can talk to her to buy harvest items. Once gardening is unlocked, she will instead sell seedlings you can plant. As time passes, more plants unlock. Once winter arrives, she will go back to selling harvest items. Here is the list of what she sells:"
+    },
+    {
+      "type": "p",
+      "text": "Placeholder (Need to research)"
+    },
+    {
+      "type": "p",
+      "text": "Gardening Items",
+      "md": "**Gardening Items**"
+    },
+    {
+      "type": "p",
+      "text": "Here is the list of what you can harvest and all relevant details:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Seed",
+            "md": "**Seed**"
+          },
+          {
+            "text": "Item",
+            "md": "**Item**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Harvest Amount",
+            "md": "**Harvest Amount**"
+          },
+          {
+            "text": "Harvest Time",
+            "md": "**Harvest Time**"
+          },
+          {
+            "text": "Seed Price",
+            "md": "**Seed Price**"
+          },
+          {
+            "text": "Available",
+            "md": "**Available**"
+          }
+        ],
+        [
+          {
+            "text": "Tomato Seedling"
+          },
+          {
+            "text": "Tiny Soul Tomato"
+          },
+          {
+            "text": "Recover 20 SP to one ally"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "5 Days"
+          },
+          {
+            "text": "500 Yen"
+          },
+          {
+            "text": "May 22nd"
+          }
+        ],
+        [
+          {
+            "text": "Daikon Seedling"
+          },
+          {
+            "text": "Return Daikon"
+          },
+          {
+            "text": "Leave the dungeon"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "5 Days"
+          },
+          {
+            "text": "500 Yen"
+          },
+          {
+            "text": "May 22nd"
+          }
+        ],
+        [
+          {
+            "text": "Wheat Seedling"
+          },
+          {
+            "text": "Cracked Wheat"
+          },
+          {
+            "text": "Unlock Rare Chest"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "6 Days"
+          },
+          {
+            "text": "1,000 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Cabbage Seedling"
+          },
+          {
+            "text": "Hiranya Cabbage"
+          },
+          {
+            "text": "Cures all Status Ailments except Down for one ally"
+          },
+          {
+            "text": "2"
+          },
+          {
+            "text": "5 Days"
+          },
+          {
+            "text": "1,800 Yen"
+          },
+          {
+            "text": "June 5th"
+          }
+        ],
+        [
+          {
+            "text": "Wall Paprika"
+          },
+          {
+            "text": "Red/White/Blue/Green Paprika"
+          },
+          {
+            "text": "Resist Fire/Ice/Electric/Wind for 3 turns (one ally)"
+          },
+          {
+            "text": "1 of each"
+          },
+          {
+            "text": "7 Days"
+          },
+          {
+            "text": "2,300 Yen"
+          },
+          {
+            "text": "June 25th"
+          }
+        ],
+        [
+          {
+            "text": "Barrier Corn"
+          },
+          {
+            "text": "Tetracorn/Makaracorn"
+          },
+          {
+            "text": "Reflect Physical/Magic once (one ally)"
+          },
+          {
+            "text": "1 of each"
+          },
+          {
+            "text": "8 Days"
+          },
+          {
+            "text": "2,300 Yen"
+          },
+          {
+            "text": "June 25th"
+          }
+        ],
+        [
+          {
+            "text": "Eggplant Seedling"
+          },
+          {
+            "text": "Scapegoat Eggplant"
+          },
+          {
+            "text": "Negates Instakill Skill (used automatically)"
+          },
+          {
+            "text": "1"
+          },
+          {
+            "text": "9 Days"
+          },
+          {
+            "text": "3,000 Yen"
+          },
+          {
+            "text": "July 24th"
+          }
+        ],
+        [
+          {
+            "text": "Melon Seedling"
+          },
+          {
+            "text": "Bead Melon"
+          },
+          {
+            "text": "Fully heal HP and SP for one ally"
+          },
+          {
+            "text": "1"
+          },
+          {
+            "text": "10 Days"
+          },
+          {
+            "text": "5,000 Yen"
+          },
+          {
+            "text": "August 14th"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Gardening is a side activity that allows you to harvest items for dungeons. You can access the garden at home, typically during the night. In addition to planting seeds, you can maintain the garden. This will pass time, but will reduce the time needed to harvest the plants, or on the day before harvest increase the amount harvested. This can also increase Diligence and earn points toward Hierophant and Justice. If you wait too long to harvest, the plants will wither and you will lose the items.\nGardening Woman\nThe Gardening Woman appears either at Junes or the Dojima Residence. Before gardening is unlocked, you can talk to her to buy harvest items. Once gardening is unlocked, she will instead sell seedlings you can plant. As time passes, more plants unlock. Once winter arrives, she will go back to selling harvest items. Here is the list of what she sells:\nPlaceholder (Need to research)\nGardening Items\nHere is the list of what you can harvest and all relevant details:\nSeed | Item | Effect | Harvest Amount | Harvest Time | Seed Price | Available\nTomato Seedling | Tiny Soul Tomato | Recover 20 SP to one ally | 2 | 5 Days | 500 Yen | May 22nd\nDaikon Seedling | Return Daikon | Leave the dungeon | 2 | 5 Days | 500 Yen | May 22nd\nWheat Seedling | Cracked Wheat | Unlock Rare Chest | 2 | 6 Days | 1,000 Yen | June 5th\nCabbage Seedling | Hiranya Cabbage | Cures all Status Ailments except Down for one ally | 2 | 5 Days | 1,800 Yen | June 5th\nWall Paprika | Red/White/Blue/Green Paprika | Resist Fire/Ice/Electric/Wind for 3 turns (one ally) | 1 of each | 7 Days | 2,300 Yen | June 25th\nBarrier Corn | Tetracorn/Makaracorn | Reflect Physical/Magic once (one ally) | 1 of each | 8 Days | 2,300 Yen | June 25th\nEggplant Seedling | Scapegoat Eggplant | Negates Instakill Skill (used automatically) | 1 | 9 Days | 3,000 Yen | July 24th\nMelon Seedling | Bead Melon | Fully heal HP and SP for one ally | 1 | 10 Days | 5,000 Yen | August 14th"
+}

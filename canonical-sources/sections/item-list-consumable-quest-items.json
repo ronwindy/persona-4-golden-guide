@@ -1,0 +1,1666 @@
+{
+  "id": "item-list-consumable-quest-items",
+  "title": "Consumable/Quest Items",
+  "chapter": "Item List",
+  "chapter_id": "item-list",
+  "anchor": "consumable-quest-items",
+  "type": "catalog",
+  "order": 130,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Consumable Items",
+      "md": "**Consumable Items**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Item",
+            "md": "**Item**"
+          },
+          {
+            "text": "Effect",
+            "md": "**Effect**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Peach Seed"
+          },
+          {
+            "text": "Restores 20 HP to one ally"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Medicine"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Shiroku Store, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Ointment"
+          },
+          {
+            "text": "Restores 100 HP to one ally"
+          },
+          {
+            "text": "Shiroku Store, Quest 26, Men's Bathroom, Yukiko in Dungeon, Chie in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Muscle Drink"
+          },
+          {
+            "text": "Restores 100 HP to one ally, Chance of Rage"
+          },
+          {
+            "text": "Shoe Locker, Prize Sticker Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Odd Morsel"
+          },
+          {
+            "text": "Restores 100 HP to one ally, Chance of Fear"
+          },
+          {
+            "text": "Shoe Locker, Prize Sticker Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Rancid Gravy"
+          },
+          {
+            "text": "Restores 100 HP to one ally, Chance of Silence"
+          },
+          {
+            "text": "Men's Bathroom, Prize Sticker Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Antibiotic Gel"
+          },
+          {
+            "text": "Restores 200 HP to one ally"
+          },
+          {
+            "text": "Shiroku Store, Quest 21"
+          }
+        ],
+        [
+          {
+            "text": "Life Stone"
+          },
+          {
+            "text": "Restores 30% of Max. HP to one ally"
+          },
+          {
+            "text": "Chests"
+          }
+        ],
+        [
+          {
+            "text": "Bead"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Chests, Quest 46"
+          }
+        ],
+        [
+          {
+            "text": "Value Medicine"
+          },
+          {
+            "text": "Restores 50 HP to all allies"
+          },
+          {
+            "text": "Shiroku Store, Quest 35"
+          }
+        ],
+        [
+          {
+            "text": "Medical Kit"
+          },
+          {
+            "text": "Restores 100 HP to all allies"
+          },
+          {
+            "text": "Shiroku Store, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Macca Leaf"
+          },
+          {
+            "text": "Restores 200 HP to all allies"
+          },
+          {
+            "text": "Shiroku Store, Quest 36"
+          }
+        ],
+        [
+          {
+            "text": "Bead Chain"
+          },
+          {
+            "text": "Restores all HP to all allies"
+          },
+          {
+            "text": "Rare Chests, Quest 52, Prize Stickers Plentiful Combo, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Soul Drop"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Sentou Seed"
+          },
+          {
+            "text": "Restores 20 SP to one ally"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Sentou Petal"
+          },
+          {
+            "text": "Restores 50 SP to one ally"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Snuff Soul"
+          },
+          {
+            "text": "Restores 50 SP to one ally"
+          },
+          {
+            "text": "Chests, Quest 38, Quest 42, Prize Sticker Rare Combo"
+          }
+        ],
+        [
+          {
+            "text": "Chewing Soul"
+          },
+          {
+            "text": "Restores 100 SP to one ally"
+          },
+          {
+            "text": "Rare Chests, Quest 55, Prize Stickers Rare Combo"
+          }
+        ],
+        [
+          {
+            "text": "Pulsating Stone"
+          },
+          {
+            "text": "Restores 100 SP to one ally"
+          },
+          {
+            "text": "Quest 17"
+          }
+        ],
+        [
+          {
+            "text": "Soul Food"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Rare Chest, Quest 64, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Mystical Scarab"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Quest 41, Quest 44"
+          }
+        ],
+        [
+          {
+            "text": "Spirit Radio"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Quest 58"
+          }
+        ],
+        [
+          {
+            "text": "Sentou Fruit"
+          },
+          {
+            "text": "Restores all HP and SP to one ally"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Soma"
+          },
+          {
+            "text": "Restores all HP and SP to all allies"
+          },
+          {
+            "text": "Rare Chest, Quest 22, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Dokudami Tea"
+          },
+          {
+            "text": "Cures Poison for one ally"
+          },
+          {
+            "text": "Shiroku Store, Quest 5, Quest 43, Yosuke Night Event, Chie Night Event, Yumi Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Royal Jelly"
+          },
+          {
+            "text": "Cures Enervation and Exhaustion for one ally"
+          },
+          {
+            "text": "Shiroku Store, Quest 16, Quest 37, Yosuke Night Event, Chie Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Mouthwash"
+          },
+          {
+            "text": "Cures Silence for one ally"
+          },
+          {
+            "text": "Shiroku Store, Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Sedative"
+          },
+          {
+            "text": "Cures Rage, Fear, and Panic for one ally"
+          },
+          {
+            "text": "Shiroku Store"
+          }
+        ],
+        [
+          {
+            "text": "Stimulant"
+          },
+          {
+            "text": "Cures Dizzy and Down for one ally"
+          },
+          {
+            "text": "Shiroku Store, Chie Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Hiranya"
+          },
+          {
+            "text": "Cures all ailments for one ally"
+          },
+          {
+            "text": "Chests"
+          }
+        ],
+        [
+          {
+            "text": "Amrita Soda"
+          },
+          {
+            "text": "Cures all ailments for all allies"
+          },
+          {
+            "text": "Chests, Prize Sticker Rare Combo, Rare Chest"
+          }
+        ],
+        [
+          {
+            "text": "Revival Bead"
+          },
+          {
+            "text": "Revives and restores 50% Max HP to one ally"
+          },
+          {
+            "text": "Shiroku Store, Chests, Pray at Shrine"
+          }
+        ],
+        [
+          {
+            "text": "Balm of Life"
+          },
+          {
+            "text": "Revives and restores all HP to one ally"
+          },
+          {
+            "text": "Shiroku Store, Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Grilled Steak Croquette"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Souzai Daigaku"
+          }
+        ],
+        [
+          {
+            "text": "Steak Skewer"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Souzai Daigaku"
+          }
+        ],
+        [
+          {
+            "text": "Super Croquette"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Souzai Daigaku Rainy Day"
+          }
+        ],
+        [
+          {
+            "text": "Orange Smash"
+          },
+          {
+            "text": "Restores 10 HP to one ally"
+          },
+          {
+            "text": "Vending Machine"
+          }
+        ],
+        [
+          {
+            "text": "Dr. Salt NEO"
+          },
+          {
+            "text": "Restores 5 SP to one ally"
+          },
+          {
+            "text": "Vending Machine, Chie Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Second Maid"
+          },
+          {
+            "text": "Restores 5 SP to one ally"
+          },
+          {
+            "text": "Vending Machine, Kou Night Event"
+          }
+        ],
+        [
+          {
+            "text": "The Natural"
+          },
+          {
+            "text": "Restores 5 SP to one ally"
+          },
+          {
+            "text": "Vending Machine, Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "TaP Soda"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Vending Machine"
+          }
+        ],
+        [
+          {
+            "text": "Mini Anpan"
+          },
+          {
+            "text": "Restores 10 HP to one ally"
+          },
+          {
+            "text": "Chie Night Event, Yukiko Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Mini Cornet"
+          },
+          {
+            "text": "Restores 10 HP to one ally"
+          },
+          {
+            "text": "Kou Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Blue Cheese Chips"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Kou Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Quelorie Mate"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Corn Potage Cracker"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Yumi Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Seaweed Cracker"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Yukiko Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Choco Melon Bread"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Chie Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Yakisoba Cornet"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Yumi Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Mochi Anpan"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "White Karinto"
+          },
+          {
+            "text": "Restores 5 SP to one ally"
+          },
+          {
+            "text": "Yukiko Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Caramel Drop"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Rich Milky Candy"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Chie Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Fruit Candy"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Yukiko Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Checkerboard Cookie"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Kanji Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Red Bean Cornet"
+          },
+          {
+            "text": "Restores 25 SP to one ally"
+          },
+          {
+            "text": "Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Cream Anpan"
+          },
+          {
+            "text": "Restores 25 SP to one ally"
+          },
+          {
+            "text": "Yumi Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Cream Melon Bread"
+          },
+          {
+            "text": "Restores 25 SP to one ally"
+          },
+          {
+            "text": "Naoto Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Love Marshmallow"
+          },
+          {
+            "text": "Restores 50 SP to one ally"
+          },
+          {
+            "text": "Rise Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Bone Senbei"
+          },
+          {
+            "text": "Restores 10 HP to one ally"
+          },
+          {
+            "text": "Kanji in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Quelorie Magic"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Yukiko in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Meat Gum"
+          },
+          {
+            "text": "Restores 25 HP to one ally"
+          },
+          {
+            "text": "Quest 8, Chie in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Junes Lunch"
+          },
+          {
+            "text": "Restores 100 HP to one ally"
+          },
+          {
+            "text": "Yosuke in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Sample Food Set"
+          },
+          {
+            "text": "Restores 100 HP to one ally"
+          },
+          {
+            "text": "Teddie in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Steak Skewer DX"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Chie in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Amagi Manju"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Yukiko in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Mom's Lunch"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Kanji in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Tater Longs"
+          },
+          {
+            "text": "Restores all HP to one ally"
+          },
+          {
+            "text": "Junes Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Cough Drop"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Yosuke in Dungeon, Yosuke Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Milk Chocolate"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Naoto in Dungeon, Naoto Night Event"
+          }
+        ],
+        [
+          {
+            "text": "Yummy Gummy"
+          },
+          {
+            "text": "Restores 10 SP to one ally"
+          },
+          {
+            "text": "Teddie in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Chie's Muffin"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Chie in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Yukiko's Lunch"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Yukiko in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Naoto's Candy"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Naoto in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Mini Mechavator"
+          },
+          {
+            "text": "Restores all SP to one ally"
+          },
+          {
+            "text": "Naoto in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Diet Food"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Slimming Food"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Heavy Soup"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Giant Candy"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Wasabi Jelly"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Herbal Pill"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Longevity Pill"
+          },
+          {
+            "text": "Restores 50 HP to one ally"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Physical Mirror"
+          },
+          {
+            "text": "Reflect one Physical attack for one ally"
+          },
+          {
+            "text": "Chests, Quest 50, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Magic Mirror"
+          },
+          {
+            "text": "Reflect one magic attack for one ally"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Assault Signal"
+          },
+          {
+            "text": "Matarukaja"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Uplifting Radio"
+          },
+          {
+            "text": "Matarukaja"
+          },
+          {
+            "text": "Quest 33"
+          }
+        ],
+        [
+          {
+            "text": "Diamond Shield"
+          },
+          {
+            "text": "Marakukaja"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Super Sonic"
+          },
+          {
+            "text": "Masukukaja"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Olympic Tape"
+          },
+          {
+            "text": "Masukukaja"
+          },
+          {
+            "text": "Quest 6"
+          }
+        ],
+        [
+          {
+            "text": "Purifying Water"
+          },
+          {
+            "text": "Dekaja"
+          },
+          {
+            "text": "Chests"
+          }
+        ],
+        [
+          {
+            "text": "Purifying Salt"
+          },
+          {
+            "text": "Dekunda"
+          },
+          {
+            "text": "Chests"
+          }
+        ],
+        [
+          {
+            "text": "Firecracker"
+          },
+          {
+            "text": "Deals 50 Fire damage to one foe"
+          },
+          {
+            "text": "Shiroku Store, Chest, Prize Sticker Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Fire Bell"
+          },
+          {
+            "text": "Deals 50 Fire damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "San-zun Tama"
+          },
+          {
+            "text": "Deals 50 Fire damage to all foes"
+          },
+          {
+            "text": "Shiroku Store, Capsule Machine, Chests"
+          }
+        ],
+        [
+          {
+            "text": "Ice Cube"
+          },
+          {
+            "text": "Deals 50 Ice damage to one foe"
+          },
+          {
+            "text": "Shiroku Store, Chest, Prize Stickers Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Ice Bell"
+          },
+          {
+            "text": "Deals 50 Ice damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Dry Ice"
+          },
+          {
+            "text": "Deals 50 Ice damage to all foes"
+          },
+          {
+            "text": "Shiroku Store, Capsule Machine, Crane Game, Chests"
+          }
+        ],
+        [
+          {
+            "text": "Ball Lightning"
+          },
+          {
+            "text": "Deals 50 Elec damage to one foe"
+          },
+          {
+            "text": "Shiroku Store, Chests, Prize Stickers Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Lightning Bell"
+          },
+          {
+            "text": "Deals 50 Elec damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Tesla Coil"
+          },
+          {
+            "text": "Deals 50 Elec damage to all foes"
+          },
+          {
+            "text": "Shiroku Store, Capsule Machine, Chests"
+          }
+        ],
+        [
+          {
+            "text": "Pinwheel"
+          },
+          {
+            "text": "Deals 50 Wind damage to one foe"
+          },
+          {
+            "text": "Shiroku Store, Chests, Prize Stickers Plentiful Combo"
+          }
+        ],
+        [
+          {
+            "text": "Wind Ball"
+          },
+          {
+            "text": "Deals 50 Wind damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Yashichi"
+          },
+          {
+            "text": "Deals 50 Wind damage to all foes"
+          },
+          {
+            "text": "Shiroku Store, Capsule Machine, Chests, Yosuke in Dungeon"
+          }
+        ],
+        [
+          {
+            "text": "Smart Bomb"
+          },
+          {
+            "text": "Deals 100 Almighty damage to all foes"
+          },
+          {
+            "text": "Chests"
+          }
+        ],
+        [
+          {
+            "text": "Hell Magatama"
+          },
+          {
+            "text": "Deals 150 Fire damage to one foe"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Flame Dotaku"
+          },
+          {
+            "text": "Deals 150 Fire damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Frost Magatama"
+          },
+          {
+            "text": "Deals 150 Ice damage to one foe"
+          },
+          {
+            "text": "Chests"
+          }
+        ],
+        [
+          {
+            "text": "Frigid Dotaku"
+          },
+          {
+            "text": "Deals 150 Ice damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Arc Magatama"
+          },
+          {
+            "text": "Deals 150 Elec damage to one foe"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Bolt Dotaku"
+          },
+          {
+            "text": "Deals 150 Elec damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Cyclone Magatama"
+          },
+          {
+            "text": "Deals 150 Wind damage to one foe"
+          },
+          {
+            "text": "Chests, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Gale Dotaku"
+          },
+          {
+            "text": "Deals 150 Wind damage to one foe"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Segaki Rice"
+          },
+          {
+            "text": "Hamaon"
+          },
+          {
+            "text": "Chests, Shoe Locker"
+          }
+        ],
+        [
+          {
+            "text": "Curse Paper"
+          },
+          {
+            "text": "Mudoon"
+          },
+          {
+            "text": "Chests, Men's Bathroom"
+          }
+        ],
+        [
+          {
+            "text": "Homunculus"
+          },
+          {
+            "text": "Automatically protects an ally from instakill"
+          },
+          {
+            "text": "Chests, Prize Sticker Rare Combo, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Goho-M"
+          },
+          {
+            "text": "Leave dungeon"
+          },
+          {
+            "text": "Shiroku Store, Quest 2, Quest 30"
+          }
+        ],
+        [
+          {
+            "text": "Sacred Branch"
+          },
+          {
+            "text": "Leave dungeon"
+          },
+          {
+            "text": "Hollow Forest"
+          }
+        ],
+        [
+          {
+            "text": "Vanish Ball"
+          },
+          {
+            "text": "Escape battle (if possible)"
+          },
+          {
+            "text": "Shiroku Store"
+          }
+        ],
+        [
+          {
+            "text": "Chest Key"
+          },
+          {
+            "text": "Unlock Rare Chests"
+          },
+          {
+            "text": "Chests, Capsule Machine, Teddie in Dungeon, TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Prize Sticker"
+          },
+          {
+            "text": "Can be traded in for prizes"
+          },
+          {
+            "text": "TV Shopping"
+          }
+        ],
+        [
+          {
+            "text": "Bread Crumbs"
+          },
+          {
+            "text": "Used for fishing"
+          },
+          {
+            "text": "Shiroku Pub, TV Shopping"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Quest Items",
+      "md": "**Quest Items**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Item",
+            "md": "**Item**"
+          },
+          {
+            "text": "Quest #",
+            "md": "**Quest #**"
+          },
+          {
+            "text": "Location",
+            "md": "**Location**"
+          }
+        ],
+        [
+          {
+            "text": "Mori Ranmaru"
+          },
+          {
+            "text": "3"
+          },
+          {
+            "text": "Former Konishi Liquors (TV World)"
+          }
+        ],
+        [
+          {
+            "text": "Angel Statue"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": "Avenger Knight at Yukiko's Castle 5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Demon Statue"
+          },
+          {
+            "text": "5"
+          },
+          {
+            "text": "Magical Magus at Yukiko's Castle 5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Ritz Wire"
+          },
+          {
+            "text": "6"
+          },
+          {
+            "text": "Heat Balance at Yukiko's Castle 5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Fitting Board"
+          },
+          {
+            "text": "16"
+          },
+          {
+            "text": "Laughing Table at Yukiko's Castle 5-7F"
+          }
+        ],
+        [
+          {
+            "text": "Suspicious Pole"
+          },
+          {
+            "text": "17"
+          },
+          {
+            "text": "Trance Twins at Yukiko's Castle 3-5F"
+          }
+        ],
+        [
+          {
+            "text": "Old Key"
+          },
+          {
+            "text": "23"
+          },
+          {
+            "text": "Bribed Fuzz at Steamy Bathhouse 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Coal"
+          },
+          {
+            "text": "24"
+          },
+          {
+            "text": "Selfish Basalt at Steamy Bathhouse 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Crooked Cross"
+          },
+          {
+            "text": "26"
+          },
+          {
+            "text": "Tranquil Idol at Steamy Bathhouse 7-8F"
+          }
+        ],
+        [
+          {
+            "text": "Charmed Veil"
+          },
+          {
+            "text": "27"
+          },
+          {
+            "text": "Liberating Idol at Marukyu Striptease 5-10F"
+          }
+        ],
+        [
+          {
+            "text": "Reflecting Board"
+          },
+          {
+            "text": "28"
+          },
+          {
+            "text": "Crying Table at Steamy Bathhouse 9-10F"
+          }
+        ],
+        [
+          {
+            "text": "Grand Horn"
+          },
+          {
+            "text": "29"
+          },
+          {
+            "text": "Grave Beetle at Steamy Bathhouse 9-10F"
+          }
+        ],
+        [
+          {
+            "text": "Flower Brooch"
+          },
+          {
+            "text": "35"
+          },
+          {
+            "text": "Soul Dancer at Marukyu Striptease 1-3F"
+          }
+        ],
+        [
+          {
+            "text": "Leaf Pochette"
+          },
+          {
+            "text": "36"
+          },
+          {
+            "text": "Blind Cupid at Void Quest 3-4F"
+          }
+        ],
+        [
+          {
+            "text": "Eternal Lamp"
+          },
+          {
+            "text": "39"
+          },
+          {
+            "text": "Amenti Raven at Void Quest 3-4F"
+          }
+        ],
+        [
+          {
+            "text": "Culurium"
+          },
+          {
+            "text": "44"
+          },
+          {
+            "text": "Steel Machine at Void Quest 8-9F"
+          }
+        ],
+        [
+          {
+            "text": "Crystal Ball"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": "Constancy Relic at Secret Laboratory 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Training Shell"
+          },
+          {
+            "text": "49"
+          },
+          {
+            "text": "Wicked Turret at Secret Laboratory 7-8F"
+          }
+        ],
+        [
+          {
+            "text": "High-Speed Gear"
+          },
+          {
+            "text": "50"
+          },
+          {
+            "text": "Mach Wheel at Secret Laboratory 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Fine Coal"
+          },
+          {
+            "text": "51"
+          },
+          {
+            "text": "Power Castle at Secret Laboratory 3-7F"
+          }
+        ],
+        [
+          {
+            "text": "Branch Headband"
+          },
+          {
+            "text": "52"
+          },
+          {
+            "text": "Elegant Mother at Secret Laboratory 7-8F"
+          }
+        ],
+        [
+          {
+            "text": "Animal Guide"
+          },
+          {
+            "text": "56"
+          },
+          {
+            "text": "Prime Magus at Heaven 1-2F"
+          }
+        ],
+        [
+          {
+            "text": "Classy Lumber"
+          },
+          {
+            "text": "57"
+          },
+          {
+            "text": "Angry Table at Heaven 5-6F"
+          }
+        ],
+        [
+          {
+            "text": "Old Ore"
+          },
+          {
+            "text": "58"
+          },
+          {
+            "text": "Revelation Pesce at Heaven 6-7F"
+          }
+        ],
+        [
+          {
+            "text": "Modest Lamp"
+          },
+          {
+            "text": "59"
+          },
+          {
+            "text": "Phantom Lord at Heaven 3-6F"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Consumable Items\nItem | Effect | Location\nPeach Seed | Restores 20 HP to one ally | Chests, TV Shopping\nMedicine | Restores 50 HP to one ally | Shiroku Store, TV Shopping\nOintment | Restores 100 HP to one ally | Shiroku Store, Quest 26, Men's Bathroom, Yukiko in Dungeon, Chie in Dungeon\nMuscle Drink | Restores 100 HP to one ally, Chance of Rage | Shoe Locker, Prize Sticker Plentiful Combo\nOdd Morsel | Restores 100 HP to one ally, Chance of Fear | Shoe Locker, Prize Sticker Plentiful Combo\nRancid Gravy | Restores 100 HP to one ally, Chance of Silence | Men's Bathroom, Prize Sticker Plentiful Combo\nAntibiotic Gel | Restores 200 HP to one ally | Shiroku Store, Quest 21\nLife Stone | Restores 30% of Max. HP to one ally | Chests\nBead | Restores all HP to one ally | Chests, Quest 46\nValue Medicine | Restores 50 HP to all allies | Shiroku Store, Quest 35\nMedical Kit | Restores 100 HP to all allies | Shiroku Store, TV Shopping\nMacca Leaf | Restores 200 HP to all allies | Shiroku Store, Quest 36\nBead Chain | Restores all HP to all allies | Rare Chests, Quest 52, Prize Stickers Plentiful Combo, TV Shopping\nSoul Drop | Restores 10 SP to one ally | Chests, TV Shopping\nSentou Seed | Restores 20 SP to one ally | Hollow Forest\nSentou Petal | Restores 50 SP to one ally | Hollow Forest\nSnuff Soul | Restores 50 SP to one ally | Chests, Quest 38, Quest 42, Prize Sticker Rare Combo\nChewing Soul | Restores 100 SP to one ally | Rare Chests, Quest 55, Prize Stickers Rare Combo\nPulsating Stone | Restores 100 SP to one ally | Quest 17\nSoul Food | Restores all SP to one ally | Rare Chest, Quest 64, TV Shopping\nMystical Scarab | Restores all SP to one ally | Quest 41, Quest 44\nSpirit Radio | Restores all SP to one ally | Quest 58\nSentou Fruit | Restores all HP and SP to one ally | Hollow Forest\nSoma | Restores all HP and SP to all allies | Rare Chest, Quest 22, TV Shopping\nDokudami Tea | Cures Poison for one ally | Shiroku Store, Quest 5, Quest 43, Yosuke Night Event, Chie Night Event, Yumi Night Event\nRoyal Jelly | Cures Enervation and Exhaustion for one ally | Shiroku Store, Quest 16, Quest 37, Yosuke Night Event, Chie Night Event\nMouthwash | Cures Silence for one ally | Shiroku Store, Yosuke Night Event\nSedative | Cures Rage, Fear, and Panic for one ally | Shiroku Store\nStimulant | Cures Dizzy and Down for one ally | Shiroku Store, Chie Night Event\nHiranya | Cures all ailments for one ally | Chests\nAmrita Soda | Cures all ailments for all allies | Chests, Prize Sticker Rare Combo, Rare Chest\nRevival Bead | Revives and restores 50% Max HP to one ally | Shiroku Store, Chests, Pray at Shrine\nBalm of Life | Revives and restores all HP to one ally | Shiroku Store, Chests, TV Shopping\nGrilled Steak Croquette | Restores 25 HP to one ally | Souzai Daigaku\nSteak Skewer | Restores 50 HP to one ally | Souzai Daigaku\nSuper Croquette | Restores 50 HP to one ally | Souzai Daigaku Rainy Day\nOrange Smash | Restores 10 HP to one ally | Vending Machine\nDr. Salt NEO | Restores 5 SP to one ally | Vending Machine, Chie Night Event\nSecond Maid | Restores 5 SP to one ally | Vending Machine, Kou Night Event\nThe Natural | Restores 5 SP to one ally | Vending Machine, Yosuke Night Event\nTaP Soda | Restores 10 SP to one ally | Vending Machine\nMini Anpan | Restores 10 HP to one ally | Chie Night Event, Yukiko Night Event\nMini Cornet | Restores 10 HP to one ally | Kou Night Event\nBlue Cheese Chips | Restores 25 HP to one ally | Kou Night Event\nQuelorie Mate | Restores 25 HP to one ally | Yosuke Night Event\nCorn Potage Cracker | Restores 25 HP to one ally | Yumi Night Event\nSeaweed Cracker | Restores 25 HP to one ally | Yukiko Night Event\nChoco Melon Bread | Restores 50 HP to one ally | Chie Night Event\nYakisoba Cornet | Restores 50 HP to one ally | Yumi Night Event\nMochi Anpan | Restores 50 HP to one ally | Yosuke Night Event\nWhite Karinto | Restores 5 SP to one ally | Yukiko Night Event\nCaramel Drop | Restores 10 SP to one ally | Yosuke Night Event\nRich Milky Candy | Restores 10 SP to one ally | Chie Night Event\nFruit Candy | Restores 10 SP to one ally | Yukiko Night Event\nCheckerboard Cookie | Restores 10 SP to one ally | Kanji Night Event\nRed Bean Cornet | Restores 25 SP to one ally | Yosuke Night Event\nCream Anpan | Restores 25 SP to one ally | Yumi Night Event\nCream Melon Bread | Restores 25 SP to one ally | Naoto Night Event\nLove Marshmallow | Restores 50 SP to one ally | Rise Night Event\nBone Senbei | Restores 10 HP to one ally | Kanji in Dungeon\nQuelorie Magic | Restores 25 HP to one ally | Yukiko in Dungeon\nMeat Gum | Restores 25 HP to one ally | Quest 8, Chie in Dungeon\nJunes Lunch | Restores 100 HP to one ally | Yosuke in Dungeon\nSample Food Set | Restores 100 HP to one ally | Teddie in Dungeon\nSteak Skewer DX | Restores all HP to one ally | Chie in Dungeon\nAmagi Manju | Restores all HP to one ally | Yukiko in Dungeon\nMom's Lunch | Restores all HP to one ally | Kanji in Dungeon\nTater Longs | Restores all HP to one ally | Junes Night Event\nCough Drop | Restores 10 SP to one ally | Yosuke in Dungeon, Yosuke Night Event\nMilk Chocolate | Restores 10 SP to one ally | Naoto in Dungeon, Naoto Night Event\nYummy Gummy | Restores 10 SP to one ally | Teddie in Dungeon\nChie's Muffin | Restores all SP to one ally | Chie in Dungeon\nYukiko's Lunch | Restores all SP to one ally | Yukiko in Dungeon\nNaoto's Candy | Restores all SP to one ally | Naoto in Dungeon\nMini Mechavator | Restores all SP to one ally | Naoto in Dungeon\nDiet Food | Restores 50 HP to one ally | TV Shopping\nSlimming Food | Restores 50 HP to one ally | TV Shopping\nHeavy Soup | Restores 50 HP to one ally | TV Shopping\nGiant Candy | Restores 50 HP to one ally | TV Shopping\nWasabi Jelly | Restores 50 HP to one ally | TV Shopping\nHerbal Pill | Restores 50 HP to one ally | TV Shopping\nLongevity Pill | Restores 50 HP to one ally | TV Shopping\nPhysical Mirror | Reflect one Physical attack for one ally | Chests, Quest 50, TV Shopping\nMagic Mirror | Reflect one magic attack for one ally | Chests, TV Shopping\nAssault Signal | Matarukaja | Chests, TV Shopping\nUplifting Radio | Matarukaja | Quest 33\nDiamond Shield | Marakukaja | Chests, TV Shopping\nSuper Sonic | Masukukaja | Chests, TV Shopping\nOlympic Tape | Masukukaja | Quest 6\nPurifying Water | Dekaja | Chests\nPurifying Salt | Dekunda | Chests\nFirecracker | Deals 50 Fire damage to one foe | Shiroku Store, Chest, Prize Sticker Plentiful Combo\nFire Bell | Deals 50 Fire damage to one foe | Hollow Forest\nSan-zun Tama | Deals 50 Fire damage to all foes | Shiroku Store, Capsule Machine, Chests\nIce Cube | Deals 50 Ice damage to one foe | Shiroku Store, Chest, Prize Stickers Plentiful Combo\nIce Bell | Deals 50 Ice damage to one foe | Hollow Forest\nDry Ice | Deals 50 Ice damage to all foes | Shiroku Store, Capsule Machine, Crane Game, Chests\nBall Lightning | Deals 50 Elec damage to one foe | Shiroku Store, Chests, Prize Stickers Plentiful Combo\nLightning Bell | Deals 50 Elec damage to one foe | Hollow Forest\nTesla Coil | Deals 50 Elec damage to all foes | Shiroku Store, Capsule Machine, Chests\nPinwheel | Deals 50 Wind damage to one foe | Shiroku Store, Chests, Prize Stickers Plentiful Combo\nWind Ball | Deals 50 Wind damage to one foe | Hollow Forest\nYashichi | Deals 50 Wind damage to all foes | Shiroku Store, Capsule Machine, Chests, Yosuke in Dungeon\nSmart Bomb | Deals 100 Almighty damage to all foes | Chests\nHell Magatama | Deals 150 Fire damage to one foe | Chests, TV Shopping\nFlame Dotaku | Deals 150 Fire damage to one foe | Hollow Forest\nFrost Magatama | Deals 150 Ice damage to one foe | Chests\nFrigid Dotaku | Deals 150 Ice damage to one foe | Hollow Forest\nArc Magatama | Deals 150 Elec damage to one foe | Chests, TV Shopping\nBolt Dotaku | Deals 150 Elec damage to one foe | Hollow Forest\nCyclone Magatama | Deals 150 Wind damage to one foe | Chests, TV Shopping\nGale Dotaku | Deals 150 Wind damage to one foe | Hollow Forest\nSegaki Rice | Hamaon | Chests, Shoe Locker\nCurse Paper | Mudoon | Chests, Men's Bathroom\nHomunculus | Automatically protects an ally from instakill | Chests, Prize Sticker Rare Combo, TV Shopping\nGoho-M | Leave dungeon | Shiroku Store, Quest 2, Quest 30\nSacred Branch | Leave dungeon | Hollow Forest\nVanish Ball | Escape battle (if possible) | Shiroku Store\nChest Key | Unlock Rare Chests | Chests, Capsule Machine, Teddie in Dungeon, TV Shopping\nPrize Sticker | Can be traded in for prizes | TV Shopping\nBread Crumbs | Used for fishing | Shiroku Pub, TV Shopping\nQuest Items\nItem | Quest # | Location\nMori Ranmaru | 3 | Former Konishi Liquors (TV World)\nAngel Statue | 4 | Avenger Knight at Yukiko's Castle 5-7F\nDemon Statue | 5 | Magical Magus at Yukiko's Castle 5-7F\nRitz Wire | 6 | Heat Balance at Yukiko's Castle 5-7F\nFitting Board | 16 | Laughing Table at Yukiko's Castle 5-7F\nSuspicious Pole | 17 | Trance Twins at Yukiko's Castle 3-5F\nOld Key | 23 | Bribed Fuzz at Steamy Bathhouse 1-2F\nCoal | 24 | Selfish Basalt at Steamy Bathhouse 5-6F\nCrooked Cross | 26 | Tranquil Idol at Steamy Bathhouse 7-8F\nCharmed Veil | 27 | Liberating Idol at Marukyu Striptease 5-10F\nReflecting Board | 28 | Crying Table at Steamy Bathhouse 9-10F\nGrand Horn | 29 | Grave Beetle at Steamy Bathhouse 9-10F\nFlower Brooch | 35 | Soul Dancer at Marukyu Striptease 1-3F\nLeaf Pochette | 36 | Blind Cupid at Void Quest 3-4F\nEternal Lamp | 39 | Amenti Raven at Void Quest 3-4F\nCulurium | 44 | Steel Machine at Void Quest 8-9F\nCrystal Ball | 48 | Constancy Relic at Secret Laboratory 1-2F\nTraining Shell | 49 | Wicked Turret at Secret Laboratory 7-8F\nHigh-Speed Gear | 50 | Mach Wheel at Secret Laboratory 5-6F\nFine Coal | 51 | Power Castle at Secret Laboratory 3-7F\nBranch Headband | 52 | Elegant Mother at Secret Laboratory 7-8F\nAnimal Guide | 56 | Prime Magus at Heaven 1-2F\nClassy Lumber | 57 | Angry Table at Heaven 5-6F\nOld Ore | 58 | Revelation Pesce at Heaven 6-7F\nModest Lamp | 59 | Phantom Lord at Heaven 3-6F"
+}

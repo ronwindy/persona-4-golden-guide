@@ -1,0 +1,198 @@
+{
+  "id": "persona-compendium-justice",
+  "title": "Justice",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "justice",
+  "type": "arcana",
+  "order": 60,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Magician x Empress\nMagician x Strength\nPriestess x Strength\nPriestess x Devil\nEmpress x Lovers\nEmpress x Chariot\nEmperor x Lovers\nEmperor x Jester\nHierophant x Hermit\nLovers x Aeon\nChariot x Hermit\nJustice x Justice\nHermit x Devil\nHermit x Star\nStrength x Moon\nHanged Man x Devil"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Temperance\nPriestess x Emperor\nLovers x Hanged Man\nChariot x Aeon\nHermit x Strength\nHanged Man x Temperance\nHanged Man x Devil\nDeath x Tower\nTemperance x Devil"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Angel"
+          },
+          {
+            "text": "4"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Archangel"
+          },
+          {
+            "text": "11"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Pricipality"
+          },
+          {
+            "text": "19"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Power"
+          },
+          {
+            "text": "27"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Virtue"
+          },
+          {
+            "text": "33"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Dominion"
+          },
+          {
+            "text": "38"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Throne"
+          },
+          {
+            "text": "49"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Uriel"
+          },
+          {
+            "text": "58"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Melchizedek"
+          },
+          {
+            "text": "66"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Sraosha"
+          },
+          {
+            "text": "74"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nMagician x Empress\nMagician x Strength\nPriestess x Strength\nPriestess x Devil\nEmpress x Lovers\nEmpress x Chariot\nEmperor x Lovers\nEmperor x Jester\nHierophant x Hermit\nLovers x Aeon\nChariot x Hermit\nJustice x Justice\nHermit x Devil\nHermit x Star\nStrength x Moon\nHanged Man x Devil\nTriangle Spread\nFool x Temperance\nPriestess x Emperor\nLovers x Hanged Man\nChariot x Aeon\nHermit x Strength\nHanged Man x Temperance\nHanged Man x Devil\nDeath x Tower\nTemperance x Devil\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nAngel | 4 |  | \nArchangel | 11 |  | \nPricipality | 19 |  | \nPower | 27 |  | \nVirtue | 33 |  | \nDominion | 38 |  | \nThrone | 49 |  | \nUriel | 58 |  | \nMelchizedek | 66 |  | \nSraosha | 74 |  | X"
+}

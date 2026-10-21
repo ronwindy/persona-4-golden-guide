@@ -1,0 +1,353 @@
+{
+  "id": "gameplay-mechanics-battle-mechanics",
+  "title": "Battle Mechanics",
+  "chapter": "Gameplay Mechanics",
+  "chapter_id": "gameplay-mechanics",
+  "anchor": "battle-mechanics",
+  "type": "article",
+  "order": 17,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Stats",
+      "md": "**Stats**"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Exp: Experience. Used to level up. There is no way to confirm how the Exp system works as of this version of the guide, but here is what is assumed to be the Exp system. Enemies drop a fixed amount of Exp. Party members and Personas will obtain the same amount of Exp if they are the same level. They obtain more Exp if lower leveled, and less if higher leveled."
+        },
+        {
+          "text": "Lv: Level. Level increases after a certain amount of Exp. Level determines what Personas can be fused, and when Skills are learned."
+        },
+        {
+          "text": "HP: Hit Points. Used for Physical Skills. When HP equals 0, the Party Member becomes KO'd. MC will die if he loses all HP, resulting in a game over. A popular theory is that's his drawback for having the power of the wild card."
+        },
+        {
+          "text": "SP: Spirit Points. Used for Magic Skills. Nothing happens if SP equals 0."
+        },
+        {
+          "text": "AT: Attack. Modifier on ST used for attack command. Damage done is assumed to be based on (ST/EN)*AT."
+        },
+        {
+          "text": "DF: Defense. Assumed to be a modifier on EN to reduce damage."
+        },
+        {
+          "text": "HT: Hit Rate. Assumed to be a modifier on AG specifically for the probability of hitting an enemy."
+        },
+        {
+          "text": "EV: Evasion. Assumed to be a modifier on AG specifically to decrease the probability of dodging an enemy."
+        },
+        {
+          "text": "ST: Strength. Base stat for damage done for attack command and Physical Skills. Damage done is assumed to be based on (ST/EN)* either attack or power of Physical Skill."
+        },
+        {
+          "text": "MA: Magic. Base stat for all Magic Skills. Damage done is assumed to be based on (MA/EN)* power of Magic Skill. Also affects the amount of HP healed with Healing Skills."
+        },
+        {
+          "text": "EN: Endurance. Base stat for how much damage a character receives."
+        },
+        {
+          "text": "AG: Agility. Assumed to be base stat for chance of hitting/dodging an enemy. Also seems to determine turn order."
+        },
+        {
+          "text": "LU: Luck. Primarily affects critical hit rate. Also assumed to affect the following: dodge rate, hit rate, chance of being hit by Status Ailments. Unsure what else this stat affects."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Commands",
+      "md": "**Commands**"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Analysis: Shows enemy attributes and information."
+        },
+        {
+          "text": "Tactics: Gives instructions to Party Members.",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "Act Freely: Does whatever they determine is the best move. Decent, but doesn't understand advanced tactics you may want to employ."
+                },
+                {
+                  "text": "Full Assault: Attacks with most damage possible. Won't heal unless they have next to no health, and \"usually\" won't make absurd decisions. Again, \"usually\"."
+                },
+                {
+                  "text": "Conserve SP: Avoids using SP whenever possible. Only uses SP in emergencies."
+                },
+                {
+                  "text": "Heal/Support: Will heal, use status ailments, or buffs/debuffs."
+                },
+                {
+                  "text": "Direct Commands: You control what they do. Recommended unless you like the AI deciding what to do. This is the tactic I use."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Guard: Reduces damage taken by about 50%. Negates weaknesses. Only guards one attack."
+        },
+        {
+          "text": "Attack: Uses equipped weapon."
+        },
+        {
+          "text": "Skill: Uses a Persona's Skill."
+        },
+        {
+          "text": "Persona: MC can switch Personas, Party Members can only check Persona stats."
+        },
+        {
+          "text": "Item: Use a consumable item."
+        },
+        {
+          "text": "Escape: Attempt to run from battle. If you can't escape immediately, it takes a turn and you have to wait until the navigator finds an opening to run away. Not always a reliable way to escape."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Attributes",
+      "md": "**Attributes**"
+    },
+    {
+      "type": "p",
+      "text": "These attributes are the type of attacks in the game. Personas and enemies have susceptibilities to certain attributes. Susceptibilities are listed first, and attributes are listed from left to right as shown on analysis screen and Persona status screen."
+    },
+    {
+      "type": "p",
+      "text": "Susceptibilities:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Blank or \"-\": No susceptibility."
+        },
+        {
+          "text": "Wk: Weak. Will knock down character. Does about 10% more damage."
+        },
+        {
+          "text": "Res/Str: Resist/Strong. Character receives about 25-50% less damage."
+        },
+        {
+          "text": "Nul/Blk: Nullify/Block. Character receives no damage."
+        },
+        {
+          "text": "Drn/Asb: Drain/Absorb: Character heals HP equal to damage received."
+        },
+        {
+          "text": "Rpl/Ref: Repel/Reflect: Character deals damage back to attacker. If attacker also Repels/Reflects, attacker blocks instead."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Attributes"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Physical. Only attribute that can Critical Hit."
+        },
+        {
+          "text": "Fire."
+        },
+        {
+          "text": "Ice."
+        },
+        {
+          "text": "Electric."
+        },
+        {
+          "text": "Wind."
+        },
+        {
+          "text": "Light. Usually an instakill. Bosses Null. Weak/Resist affect hit rate. Cannot Drain."
+        },
+        {
+          "text": "Dark. Usually an instakill. Bosses Null. Weak/Resist affect hit rate. Cannot Drain."
+        },
+        {
+          "text": "Almighty. Not listed. All Out Attack is this attribute. There should be no susceptibilities, but apparently, some enemies resist Almighty. Nobody is really sure why. Golden Hands take a lot of damage from this."
+        },
+        {
+          "text": "Status Ailments. Not listed. Some enemies Resist/Null. Bosses Null."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "One More",
+      "md": "**One More**"
+    },
+    {
+      "type": "p",
+      "text": "When a character is inflicted with Down status, the attacker obtains a One More, which is another turn. The attacker can get as many One Mores as there are enemies to knock down. If the attacker uses a Skill that hits multiple enemies, they only need to knock down one to get a One More. You cannot gain a One More from an enemy already knocked down."
+    },
+    {
+      "type": "p",
+      "text": "All-Out Attack",
+      "md": "**All-Out Attack**"
+    },
+    {
+      "type": "p",
+      "text": "After every enemy is Down, you can preform an All-Out Attack. Everyone will charge the enemies and inflict Almighty damage to every enemy. An All-Out Attack can't be done if MC is inflicted by a Status Ailment or if MC is by himself, and if a Party Member is inflicted by certain Status Ailments, they can't participate in an All-Out Attack."
+    },
+    {
+      "type": "p",
+      "text": "Combination Attacks",
+      "md": "**Combination Attacks**"
+    },
+    {
+      "type": "p",
+      "text": "After an All-Out Attack, a Combination Attack will occur if you meet 2 requirements: certain characters are in your party, and one of them knocks down the last enemy to initiate an AOA. A Combination attack is simply another AOA but flashier. These are the different Combination Attacks:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Twin Dragons: Chie Satonaka and Yukiko Amagi"
+        },
+        {
+          "text": "Junes Bomber: Yosuke Hanamura and Teddie"
+        },
+        {
+          "text": "Beauty and the Beast: Kanji Tatsumi and Naoto Shirogane"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Social Link Abilities",
+      "md": "**Social Link Abilities**"
+    },
+    {
+      "type": "p",
+      "text": "Party Members will earn new abilities in battle on certain Social Link Ranks. Everyone has the same abilities except for Rise, who gets her own unique abilities. Here is the list of abilities:"
+    },
+    {
+      "type": "p",
+      "text": "Everyone Except Rise"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Rank 1: At the beginning of their turn, there is about a 25% chance of helping an ally with Down status back up to their feet. This will not take up their turn."
+        },
+        {
+          "text": "Rank 3: When MC knocks down an enemy, they have about a 25% chance to perform a Follow Up Attack. This will negate your One More. Each Party Member has a unique Follow Up Attack.",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "Yosuke: Yosuke Strike. Critical hit to one enemy."
+                },
+                {
+                  "text": "Chie (Regular Enemy): Galactic Punt. Instantly defeats one enemy."
+                },
+                {
+                  "text": "Chie (Boss): Galaxy Kick. Deals damage to one enemy."
+                },
+                {
+                  "text": "Yukiko: Fan Assault. Critical hit to one enemy and inflicts Dizzy."
+                },
+                {
+                  "text": "Kanji: Atomic Press. Critical hit to a random number of enemies."
+                },
+                {
+                  "text": "Teddie: Wild Ways. Critical hit to one enemy."
+                },
+                {
+                  "text": "Naoto: Ultra Trigger. Critical hit to a random number of enemies and inflicts Dizzy."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Rank 5: At the beginning of their turn, there is about a 25% chance of curing an ally with Panic, Fear, or Rage. This will not take up their turn."
+        },
+        {
+          "text": "Rank 7: They will survive a hit that would inflict KO'd status with one HP once per battle."
+        },
+        {
+          "text": "Rank 9: They will protect MC from a hit that would inflict KO'd status once per battle."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rise Only"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Rank 1: Rise has about a 25-50% chance of increasing All-Out Attack damage."
+        },
+        {
+          "text": "Rank 6: Rise will inform you if you can currently target an enemy's weakness."
+        },
+        {
+          "text": "Rank 7: Rise will randomly provide one of the following to the entire party:",
+          "children": [
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "text": "Heal HP and/or SP."
+                },
+                {
+                  "text": "Raise attack, defense, or hit/evasion."
+                },
+                {
+                  "text": "Cast Power Charge or Mind Charge"
+                },
+                {
+                  "text": "Cure all ailments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Rank 9: Rise will block an attack that hits the whole party if someone would be KO'd once per battle."
+        },
+        {
+          "text": "Rank 10: If MC is KO'd, Rise will revive with full HP and SP once per battle."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Cavalry Attacks",
+      "md": "**Cavalry Attacks**"
+    },
+    {
+      "type": "p",
+      "text": "After the Investigation Team obtains scooters, they can use Cavalry Attacks. It's the same thing as a Follow Up Attack, but its a character not in your party. Each Party Member's Cavalry Attack has the same effects as thier Follow Up Attack. Everyone except MC and Rise Kujikawa can use Scooter Attacks."
+    }
+  ],
+  "text": "Stats\nExp: Experience. Used to level up. There is no way to confirm how the Exp system works as of this version of the guide, but here is what is assumed to be the Exp system. Enemies drop a fixed amount of Exp. Party members and Personas will obtain the same amount of Exp if they are the same level. They obtain more Exp if lower leveled, and less if higher leveled.\nLv: Level. Level increases after a certain amount of Exp. Level determines what Personas can be fused, and when Skills are learned.\nHP: Hit Points. Used for Physical Skills. When HP equals 0, the Party Member becomes KO'd. MC will die if he loses all HP, resulting in a game over. A popular theory is that's his drawback for having the power of the wild card.\nSP: Spirit Points. Used for Magic Skills. Nothing happens if SP equals 0.\nAT: Attack. Modifier on ST used for attack command. Damage done is assumed to be based on (ST/EN)*AT.\nDF: Defense. Assumed to be a modifier on EN to reduce damage.\nHT: Hit Rate. Assumed to be a modifier on AG specifically for the probability of hitting an enemy.\nEV: Evasion. Assumed to be a modifier on AG specifically to decrease the probability of dodging an enemy.\nST: Strength. Base stat for damage done for attack command and Physical Skills. Damage done is assumed to be based on (ST/EN)* either attack or power of Physical Skill.\nMA: Magic. Base stat for all Magic Skills. Damage done is assumed to be based on (MA/EN)* power of Magic Skill. Also affects the amount of HP healed with Healing Skills.\nEN: Endurance. Base stat for how much damage a character receives.\nAG: Agility. Assumed to be base stat for chance of hitting/dodging an enemy. Also seems to determine turn order.\nLU: Luck. Primarily affects critical hit rate. Also assumed to affect the following: dodge rate, hit rate, chance of being hit by Status Ailments. Unsure what else this stat affects.\nCommands\nAnalysis: Shows enemy attributes and information.\nTactics: Gives instructions to Party Members.\nAct Freely: Does whatever they determine is the best move. Decent, but doesn't understand advanced tactics you may want to employ.\nFull Assault: Attacks with most damage possible. Won't heal unless they have next to no health, and \"usually\" won't make absurd decisions. Again, \"usually\".\nConserve SP: Avoids using SP whenever possible. Only uses SP in emergencies.\nHeal/Support: Will heal, use status ailments, or buffs/debuffs.\nDirect Commands: You control what they do. Recommended unless you like the AI deciding what to do. This is the tactic I use.\nGuard: Reduces damage taken by about 50%. Negates weaknesses. Only guards one attack.\nAttack: Uses equipped weapon.\nSkill: Uses a Persona's Skill.\nPersona: MC can switch Personas, Party Members can only check Persona stats.\nItem: Use a consumable item.\nEscape: Attempt to run from battle. If you can't escape immediately, it takes a turn and you have to wait until the navigator finds an opening to run away. Not always a reliable way to escape.\nAttributes\nThese attributes are the type of attacks in the game. Personas and enemies have susceptibilities to certain attributes. Susceptibilities are listed first, and attributes are listed from left to right as shown on analysis screen and Persona status screen.\nSusceptibilities:\nBlank or \"-\": No susceptibility.\nWk: Weak. Will knock down character. Does about 10% more damage.\nRes/Str: Resist/Strong. Character receives about 25-50% less damage.\nNul/Blk: Nullify/Block. Character receives no damage.\nDrn/Asb: Drain/Absorb: Character heals HP equal to damage received.\nRpl/Ref: Repel/Reflect: Character deals damage back to attacker. If attacker also Repels/Reflects, attacker blocks instead.\nAttributes\nPhysical. Only attribute that can Critical Hit.\nFire.\nIce.\nElectric.\nWind.\nLight. Usually an instakill. Bosses Null. Weak/Resist affect hit rate. Cannot Drain.\nDark. Usually an instakill. Bosses Null. Weak/Resist affect hit rate. Cannot Drain.\nAlmighty. Not listed. All Out Attack is this attribute. There should be no susceptibilities, but apparently, some enemies resist Almighty. Nobody is really sure why. Golden Hands take a lot of damage from this.\nStatus Ailments. Not listed. Some enemies Resist/Null. Bosses Null.\nOne More\nWhen a character is inflicted with Down status, the attacker obtains a One More, which is another turn. The attacker can get as many One Mores as there are enemies to knock down. If the attacker uses a Skill that hits multiple enemies, they only need to knock down one to get a One More. You cannot gain a One More from an enemy already knocked down.\nAll-Out Attack\nAfter every enemy is Down, you can preform an All-Out Attack. Everyone will charge the enemies and inflict Almighty damage to every enemy. An All-Out Attack can't be done if MC is inflicted by a Status Ailment or if MC is by himself, and if a Party Member is inflicted by certain Status Ailments, they can't participate in an All-Out Attack.\nCombination Attacks\nAfter an All-Out Attack, a Combination Attack will occur if you meet 2 requirements: certain characters are in your party, and one of them knocks down the last enemy to initiate an AOA. A Combination attack is simply another AOA but flashier. These are the different Combination Attacks:\nTwin Dragons: Chie Satonaka and Yukiko Amagi\nJunes Bomber: Yosuke Hanamura and Teddie\nBeauty and the Beast: Kanji Tatsumi and Naoto Shirogane\nSocial Link Abilities\nParty Members will earn new abilities in battle on certain Social Link Ranks. Everyone has the same abilities except for Rise, who gets her own unique abilities. Here is the list of abilities:\nEveryone Except Rise\nRank 1: At the beginning of their turn, there is about a 25% chance of helping an ally with Down status back up to their feet. This will not take up their turn.\nRank 3: When MC knocks down an enemy, they have about a 25% chance to perform a Follow Up Attack. This will negate your One More. Each Party Member has a unique Follow Up Attack.\nYosuke: Yosuke Strike. Critical hit to one enemy.\nChie (Regular Enemy): Galactic Punt. Instantly defeats one enemy.\nChie (Boss): Galaxy Kick. Deals damage to one enemy.\nYukiko: Fan Assault. Critical hit to one enemy and inflicts Dizzy.\nKanji: Atomic Press. Critical hit to a random number of enemies.\nTeddie: Wild Ways. Critical hit to one enemy.\nNaoto: Ultra Trigger. Critical hit to a random number of enemies and inflicts Dizzy.\nRank 5: At the beginning of their turn, there is about a 25% chance of curing an ally with Panic, Fear, or Rage. This will not take up their turn.\nRank 7: They will survive a hit that would inflict KO'd status with one HP once per battle.\nRank 9: They will protect MC from a hit that would inflict KO'd status once per battle.\nRise Only\nRank 1: Rise has about a 25-50% chance of increasing All-Out Attack damage.\nRank 6: Rise will inform you if you can currently target an enemy's weakness.\nRank 7: Rise will randomly provide one of the following to the entire party:\nHeal HP and/or SP.\nRaise attack, defense, or hit/evasion.\nCast Power Charge or Mind Charge\nCure all ailments.\nRank 9: Rise will block an attack that hits the whole party if someone would be KO'd once per battle.\nRank 10: If MC is KO'd, Rise will revive with full HP and SP once per battle.\nCavalry Attacks\nAfter the Investigation Team obtains scooters, they can use Cavalry Attacks. It's the same thing as a Follow Up Attack, but its a character not in your party. Each Party Member's Cavalry Attack has the same effects as thier Follow Up Attack. Everyone except MC and Rise Kujikawa can use Scooter Attacks."
+}

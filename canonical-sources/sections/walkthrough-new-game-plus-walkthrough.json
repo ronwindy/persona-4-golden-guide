@@ -1,0 +1,63 @@
+{
+  "id": "walkthrough-new-game-plus-walkthrough",
+  "title": "New Game Plus Walkthrough",
+  "chapter": "Walkthrough",
+  "chapter_id": "walkthrough",
+  "anchor": "new-game-plus-walkthrough",
+  "type": "calendar",
+  "order": 38,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "This checklist is for the New Game Plus playthrough to complete the game. There will be a complete walkthrough added in a later version of the guide. Required tasks are needed for the Golden Completed Trophy. Optional tasks are extra content you can view in a second playthrough, but isn't required for the Golden Competed Trophy."
+    },
+    {
+      "type": "p",
+      "text": "Required"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "Complete the Compendium"
+        },
+        {
+          "text": "Beat the Secret Boss"
+        },
+        {
+          "text": "Obtain Big Bro is Worried Trophy (Visit Nanako in the hospital 3 times)"
+        },
+        {
+          "text": "Obtain Hardcore Risette Fan Trophy (Hear 250 of Rise's navigation lines)"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Optional"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "text": "See alternate school club Social Links"
+        },
+        {
+          "text": "See alternate female Social Link routes (alternate Sun requires multiple playthroughs or Save Abuse)"
+        },
+        {
+          "text": "See all Hot Spring Skills/Events"
+        },
+        {
+          "text": "See all Night Events"
+        },
+        {
+          "text": "Ace every exam"
+        }
+      ]
+    }
+  ],
+  "text": "This checklist is for the New Game Plus playthrough to complete the game. There will be a complete walkthrough added in a later version of the guide. Required tasks are needed for the Golden Completed Trophy. Optional tasks are extra content you can view in a second playthrough, but isn't required for the Golden Competed Trophy.\nRequired\nComplete the Compendium\nBeat the Secret Boss\nObtain Big Bro is Worried Trophy (Visit Nanako in the hospital 3 times)\nObtain Hardcore Risette Fan Trophy (Hear 250 of Rise's navigation lines)\nOptional\nSee alternate school club Social Links\nSee alternate female Social Link routes (alternate Sun requires multiple playthroughs or Save Abuse)\nSee all Hot Spring Skills/Events\nSee all Night Events\nAce every exam"
+}

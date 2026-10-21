@@ -1,0 +1,142 @@
+{
+  "id": "persona-compendium-fortune",
+  "title": "Fortune",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "fortune",
+  "type": "arcana",
+  "order": 62,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fortune X Fortune"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Magician\nFool x Tower\nMagician x Priestess\nMagician x Hanged Man\nMagician x Sun\nHierophant x Jester\nLovers x Temperance\nHanged Man x Tower\nDeath x Star\nDeath x Jester\nTemperance x Sun\nDevil x Star\nTower x Aeon"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Fortuna"
+          },
+          {
+            "text": "35"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Clotho"
+          },
+          {
+            "text": "44"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Lachesis"
+          },
+          {
+            "text": "51"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Ananta"
+          },
+          {
+            "text": "58"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Atropos"
+          },
+          {
+            "text": "65"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Norn"
+          },
+          {
+            "text": "72"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": "X"
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFortune X Fortune\nTriangle Spread\nFool x Magician\nFool x Tower\nMagician x Priestess\nMagician x Hanged Man\nMagician x Sun\nHierophant x Jester\nLovers x Temperance\nHanged Man x Tower\nDeath x Star\nDeath x Jester\nTemperance x Sun\nDevil x Star\nTower x Aeon\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nFortuna | 35 |  | \nClotho | 44 |  | \nLachesis | 51 |  | \nAnanta | 58 |  | \nAtropos | 65 |  | \nNorn | 72 | X | X"
+}

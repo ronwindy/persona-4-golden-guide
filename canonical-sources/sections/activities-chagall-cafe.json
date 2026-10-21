@@ -1,0 +1,16 @@
+{
+  "id": "activities-chagall-cafe",
+  "title": "Chagall Cafe",
+  "chapter": "Activities",
+  "chapter_id": "activities",
+  "anchor": "chagall-cafe",
+  "type": "article",
+  "order": 116,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The Chagall Cafe is located in Okina City and can be used to obtain Skill Cards. After the first visit to the cafe, some Persona Skills will have a card icon. Visiting Chagall Cafe with a Persona equipped that has a Skill with a card icon will let you obtain that Skill as a Skill Card. There are a few special rules for this mechanic. The Persona equipped must have a Skill with a card icon, otherwise nothing happens. After a Skill Card is obtained, the card icon disappears from the skill. Finally, when fusing any Skills inherited with a card icon will lose the icon after fusion. Meaning, card icons are exclusive to that Persona, and can't be passed down through fusion. The list of Personas with card icons are listed under the Skill Cards section."
+    }
+  ],
+  "text": "The Chagall Cafe is located in Okina City and can be used to obtain Skill Cards. After the first visit to the cafe, some Persona Skills will have a card icon. Visiting Chagall Cafe with a Persona equipped that has a Skill with a card icon will let you obtain that Skill as a Skill Card. There are a few special rules for this mechanic. The Persona equipped must have a Skill with a card icon, otherwise nothing happens. After a Skill Card is obtained, the card icon disappears from the skill. Finally, when fusing any Skills inherited with a card icon will lose the icon after fusion. Meaning, card icons are exclusive to that Persona, and can't be passed down through fusion. The list of Personas with card icons are listed under the Skill Cards section."
+}

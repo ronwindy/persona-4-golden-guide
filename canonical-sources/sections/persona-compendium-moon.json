@@ -1,0 +1,184 @@
+{
+  "id": "persona-compendium-moon",
+  "title": "Moon",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "moon",
+  "type": "arcana",
+  "order": 70,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Normal Spread",
+      "md": "**Normal Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Fool x Empress\nMagician x Priestess\nPriestess x Hanged Man\nEmpress x Emperor\nEmperor x Death\nEmperor x Devil\nHierophant x Star\nHierophant x Aeon\nLovers x Hanged Man\nChariot x Devil\nJustice x Star\nHermit x Hanged Man\nHermit x Jester\nStar x Sun\nMoon x Moon"
+    },
+    {
+      "type": "p",
+      "text": "Triangle Spread",
+      "md": "**Triangle Spread**"
+    },
+    {
+      "type": "p",
+      "text": "Priestess x Tower\nPriestess x Jester\nEmpress x Moon\nEmperor x Hermit\nHierophant x Strength\nHierophant x Devil\nChariot x Temperance\nHermit x Aeon\nFortune x Death\nHanged Man x Jester\nMoon x Moon"
+    },
+    {
+      "type": "p",
+      "text": "Personas",
+      "md": "**Personas**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Persona",
+            "md": "**Persona**"
+          },
+          {
+            "text": "Base Level",
+            "md": "**Base Level**"
+          },
+          {
+            "text": "Special Fusion",
+            "md": "**Special Fusion**"
+          },
+          {
+            "text": "Ultimate Persona",
+            "md": "**Ultimate Persona**"
+          }
+        ],
+        [
+          {
+            "text": "Andra"
+          },
+          {
+            "text": "20"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Nozuchi"
+          },
+          {
+            "text": "27"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Yamata-no-Orochi"
+          },
+          {
+            "text": "34"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Alraune"
+          },
+          {
+            "text": "41"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Girimehkala"
+          },
+          {
+            "text": "48"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Sui-ki"
+          },
+          {
+            "text": "57"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Seth"
+          },
+          {
+            "text": "68"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Baal Zebul"
+          },
+          {
+            "text": "77"
+          },
+          {
+            "text": ""
+          },
+          {
+            "text": ""
+          }
+        ],
+        [
+          {
+            "text": "Sandalphon"
+          },
+          {
+            "text": "84"
+          },
+          {
+            "text": "X"
+          },
+          {
+            "text": ""
+          }
+        ]
+      ]
+    }
+  ],
+  "text": "Normal Spread\nFool x Empress\nMagician x Priestess\nPriestess x Hanged Man\nEmpress x Emperor\nEmperor x Death\nEmperor x Devil\nHierophant x Star\nHierophant x Aeon\nLovers x Hanged Man\nChariot x Devil\nJustice x Star\nHermit x Hanged Man\nHermit x Jester\nStar x Sun\nMoon x Moon\nTriangle Spread\nPriestess x Tower\nPriestess x Jester\nEmpress x Moon\nEmperor x Hermit\nHierophant x Strength\nHierophant x Devil\nChariot x Temperance\nHermit x Aeon\nFortune x Death\nHanged Man x Jester\nMoon x Moon\nPersonas\nPersona | Base Level | Special Fusion | Ultimate Persona\nAndra | 20 |  | \nNozuchi | 27 |  | \nYamata-no-Orochi | 34 |  | \nAlraune | 41 |  | \nGirimehkala | 48 |  | \nSui-ki | 57 |  | \nSeth | 68 |  | \nBaal Zebul | 77 |  | \nSandalphon | 84 | X | "
+}

@@ -1,0 +1,1672 @@
+{
+  "id": "persona-compendium-fusion-forecast",
+  "title": "Fusion Forecast",
+  "chapter": "Persona Compendium",
+  "chapter_id": "persona-compendium",
+  "anchor": "fusion-forecast",
+  "type": "article",
+  "order": 51,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Fusing Personas on a certain day may grant you additional bonuses. You can check the Fusion Forecast of the current day and the next day, so keep an eye out for the Fusion Forecast. It can sneak up on you sometimes. Note that if there is no Trigger, than the effect happens on that day every time you fuse."
+    },
+    {
+      "type": "p",
+      "text": "April",
+      "md": "**April**"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 18th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 19th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Magician Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Zio"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~April 21st~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Archangel"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 23rd~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Ghoul or Orobas"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Rakunda"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 24th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 25th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Cu Sith or Orobas"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Media and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 27th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 28th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Berith"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Mabufu"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 29th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~April 30th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "May",
+      "md": "**May**"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~May 1st~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Jack Frost"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Resist Fire and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~May 2nd~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~May 3rd~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~May 4th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~May 7th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~May 12th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Ara Mitama"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Auto-Tarukaja"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~May 18th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~May 21st~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Justice Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Maragi and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~May 24th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Andras in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Resist Wind"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~May 25th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Aeon Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Agilao"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~May 28th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse King Frost"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Growth 1"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~May 31st~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Shiisaa in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "June",
+      "md": "**June**"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 2nd~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Magician Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Evade Skill and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~June 3rd~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Ares"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Null Poison"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~June 4th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~June 7th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Hanged Man Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Resist Ice and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~June 9th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Moon and Devil Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Wind Boost"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 10th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 12th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Incubus"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Null Ice"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 13th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Rakshasa and Matador in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Resist Ice and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~June 14th~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 21st~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Evade Skill and earns random Stat Increases and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 24th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 27th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Jester Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 28th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Yomotsu-ikusa in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Resist Wind"
+    },
+    {
+      "type": "p",
+      "text": "-----------------\n~June 30th~\n-----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Titania and Makami in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Bufula and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "July",
+      "md": "**July**"
+    },
+    {
+      "type": "p",
+      "text": "--------------\n~July 1st~\n--------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~July 4th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~July 5th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Emperor Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Support Skill"
+    },
+    {
+      "type": "p",
+      "text": "---------------\n~July 8th~\n---------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "--------------\n~July 9th~\n--------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 14th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 15th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 16th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 18th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Flauros"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Power Charge"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 24th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Pyro Jack in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Ice Resist Skill"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 26th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------\n~July 30th~\n----------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "August",
+      "md": "**August**"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~August 1st~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-------------------\n~August 2nd~\n-------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Samael in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change and Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~August 4th~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~August 5th~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~August 6th~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Orthrus and Yatagarasu in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Null Exhaust and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "------------------\n~August 7th~\n------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 10th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Support Skill"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 11th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 12th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 13th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Death Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Mediarama and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 14th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~August 22nd~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 23rd~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 24th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 25th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 27th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Rangda"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Null Ice"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~August 29th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "September",
+      "md": "**September**"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~September 1st~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 2nd~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 3rd~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Moon Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Support Skill and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 4th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~September 5th~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 6th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~September 7th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Cu Chulainn"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Null Elec and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 16th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 17th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Leanan Sidhe in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Ice Skill and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 18th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 21st~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Tam Lin"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Amrita and earns random Stat Increases and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "--------------------------\n~September 22nd~\n--------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 25th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Throne in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Ice Skill and gets random Skill Change and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 27th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~September 28th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "October",
+      "md": "**October**"
+    },
+    {
+      "type": "p",
+      "text": "-------------------\n~October 1st~\n-------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Fool Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Recovery Skill and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~October 3rd~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~October 4th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "--------------------\n~October 5th~\n--------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-------------------\n~October 8th~\n-------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Raphael"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Mind Charge"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~October 11th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~October 12th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~October 16th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Justice and Priestess Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Repel Fire"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~October 21st~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Empress Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "----------------------\n~October 22nd~\n----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "----------------------\n~October 23rd~\n----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~October 25th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Garuda"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Spell Master and earns random Stat Increases and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~October 26th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "November",
+      "md": "**November**"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~November 2nd~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Cerberus in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Samarecarm and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~November 3rd~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change and Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~November 7th~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "----------------------\n~November 8th~\n----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Daisoujou"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Mind Charge"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~November 9th~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 11th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 12th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Magician Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Elec Skill and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 13th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 15th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Siegfried"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Enduring Soul and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 18th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~November 19th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Nebiros"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Aliment Dance and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 20th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 24th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Kartikeya"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Angelic Grace"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~November 26th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Magician Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Marakukaja"
+    },
+    {
+      "type": "p",
+      "text": "December",
+      "md": "**December**"
+    },
+    {
+      "type": "p",
+      "text": "-----------------------\n~December 8th~\n-----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Hell Biker"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Evade Ice and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 11th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Judgement Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Fire and Elec Skills and earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 12th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~December 13th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 15th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Alice"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Angelic Grace"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 16th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 17th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 19th~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Yoshitsune"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Arms Master"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 21st~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Ishtar"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Insta-Heal and random Fire Skill"
+    },
+    {
+      "type": "p",
+      "text": "------------------------\n~December 23rd~\n------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "-------------------------\n~December 24th~\n-------------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Yoshitsune"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Debilitate"
+    },
+    {
+      "type": "p",
+      "text": "January",
+      "md": "**January**"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 11th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Aeon Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Enduring Soul"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 13th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 14th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Fool and Judgement Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Salvation"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 16th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 18th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Suparna"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Evade Ice and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 21st~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 24th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 27th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Fortune Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Ice Skill and earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 28th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns Bonus Exp"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~January 31st~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Use Death Arcana in a Fusion"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns random Recovery Skill"
+    },
+    {
+      "type": "p",
+      "text": "February",
+      "md": "**February**"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~February 1st~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~February 3rd~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: Fuse Persona of the Moon Arcana"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona learns Unshaken Will"
+    },
+    {
+      "type": "p",
+      "text": "---------------------\n~February 5th~\n---------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    },
+    {
+      "type": "p",
+      "text": "----------------------\n~February 13th~\n----------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona earns random Stat Increases"
+    },
+    {
+      "type": "p",
+      "text": "March",
+      "md": "**March**"
+    },
+    {
+      "type": "p",
+      "text": "-------------------\n~March 20th~\n-------------------"
+    },
+    {
+      "type": "p",
+      "text": "Trigger: None"
+    },
+    {
+      "type": "p",
+      "text": "Effect: Persona gets random Skill Change"
+    }
+  ],
+  "text": "Fusing Personas on a certain day may grant you additional bonuses. You can check the Fusion Forecast of the current day and the next day, so keep an eye out for the Fusion Forecast. It can sneak up on you sometimes. Note that if there is no Trigger, than the effect happens on that day every time you fuse.\nApril\n-----------------\n~April 18th~\n-----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-----------------\n~April 19th~\n-----------------\nTrigger: Use Magician Arcana in a Fusion\nEffect: Persona learns Zio\n----------------\n~April 21st~\n----------------\nTrigger: Fuse Archangel\nEffect: Persona earns random Stat Increases\n-----------------\n~April 23rd~\n-----------------\nTrigger: Fuse Ghoul or Orobas\nEffect: Persona learns Rakunda\n-----------------\n~April 24th~\n-----------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-----------------\n~April 25th~\n-----------------\nTrigger: Fuse Cu Sith or Orobas\nEffect: Persona learns Media and earns random Stat Increases\n-----------------\n~April 27th~\n-----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-----------------\n~April 28th~\n-----------------\nTrigger: Fuse Berith\nEffect: Persona learns Mabufu\n-----------------\n~April 29th~\n-----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-----------------\n~April 30th~\n-----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\nMay\n---------------\n~May 1st~\n---------------\nTrigger: Fuse Jack Frost\nEffect: Persona learns Resist Fire and earns random Stat Increases\n----------------\n~May 2nd~\n----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n---------------\n~May 3rd~\n---------------\nTrigger: None\nEffect: Persona gets random Skill Change\n---------------\n~May 4th~\n---------------\nTrigger: None\nEffect: Persona gets random Skill Change\n---------------\n~May 7th~\n---------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-----------------\n~May 12th~\n-----------------\nTrigger: Fuse Ara Mitama\nEffect: Persona learns Auto-Tarukaja\n-----------------\n~May 18th~\n-----------------\nTrigger: None\nEffect: Persona gets random Skill Change\n----------------\n~May 21st~\n----------------\nTrigger: Fuse Persona of the Justice Arcana\nEffect: Persona learns Maragi and earns Bonus Exp\n----------------\n~May 24th~\n----------------\nTrigger: Use Andras in a Fusion\nEffect: Persona learns Resist Wind\n----------------\n~May 25th~\n----------------\nTrigger: Fuse Persona of the Aeon Arcana\nEffect: Persona learns Agilao\n----------------\n~May 28th~\n----------------\nTrigger: Fuse King Frost\nEffect: Persona learns Growth 1\n----------------\n~May 31st~\n----------------\nTrigger: Use Shiisaa in a Fusion\nEffect: Persona earns random Stat Increases and Bonus Exp\nJune\n-----------------\n~June 2nd~\n-----------------\nTrigger: Fuse Persona of the Magician Arcana\nEffect: Persona learns random Evade Skill and earns random Stat Increases\n----------------\n~June 3rd~\n----------------\nTrigger: Fuse Ares\nEffect: Persona learns Null Poison\n---------------\n~June 4th~\n---------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n----------------\n~June 7th~\n----------------\nTrigger: Use Hanged Man Arcana in a Fusion\nEffect: Persona learns Resist Ice and earns random Stat Increases\n---------------\n~June 9th~\n---------------\nTrigger: Use Moon and Devil Arcana in a Fusion\nEffect: Persona learns Wind Boost\n-----------------\n~June 10th~\n-----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-----------------\n~June 12th~\n-----------------\nTrigger: Fuse Incubus\nEffect: Persona learns Null Ice\n-----------------\n~June 13th~\n-----------------\nTrigger: Use Rakshasa and Matador in a Fusion\nEffect: Persona learns Resist Ice and earns random Stat Increases\n------------------\n~June 14th~\n------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-----------------\n~June 21st~\n-----------------\nTrigger: None\nEffect: Persona learns random Evade Skill and earns random Stat Increases and Bonus Exp\n-----------------\n~June 24th~\n-----------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-----------------\n~June 27th~\n-----------------\nTrigger: Fuse Persona of the Jester Arcana\nEffect: Persona gets random Skill Change\n-----------------\n~June 28th~\n-----------------\nTrigger: Use Yomotsu-ikusa in a Fusion\nEffect: Persona learns Resist Wind\n-----------------\n~June 30th~\n-----------------\nTrigger: Use Titania and Makami in a Fusion\nEffect: Persona learns Bufula and earns random Stat Increases\nJuly\n--------------\n~July 1st~\n--------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n---------------\n~July 4th~\n---------------\nTrigger: None\nEffect: Persona gets random Skill Change\n---------------\n~July 5th~\n---------------\nTrigger: Fuse Persona of the Emperor Arcana\nEffect: Persona learns random Support Skill\n---------------\n~July 8th~\n---------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n--------------\n~July 9th~\n--------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n----------------\n~July 14th~\n----------------\nTrigger: None\nEffect: Persona gets random Skill Change\n----------------\n~July 15th~\n----------------\nTrigger: None\nEffect: Persona gets random Skill Change\n----------------\n~July 16th~\n----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n----------------\n~July 18th~\n----------------\nTrigger: Fuse Flauros\nEffect: Persona learns Power Charge\n----------------\n~July 24th~\n----------------\nTrigger: Use Pyro Jack in a Fusion\nEffect: Persona learns random Ice Resist Skill\n----------------\n~July 26th~\n----------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n----------------\n~July 30th~\n----------------\nTrigger: None\nEffect: Persona gets random Skill Change\nAugust\n------------------\n~August 1st~\n------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n-------------------\n~August 2nd~\n-------------------\nTrigger: Use Samael in a Fusion\nEffect: Persona gets random Skill Change and Stat Increases\n------------------\n~August 4th~\n------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n------------------\n~August 5th~\n------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n------------------\n~August 6th~\n------------------\nTrigger: Use Orthrus and Yatagarasu in a Fusion\nEffect: Persona learns Null Exhaust and earns Bonus Exp\n------------------\n~August 7th~\n------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n--------------------\n~August 10th~\n--------------------\nTrigger: None\nEffect: Persona learns random Support Skill\n--------------------\n~August 11th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n--------------------\n~August 12th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n--------------------\n~August 13th~\n--------------------\nTrigger: Fuse Persona of the Death Arcana\nEffect: Persona learns Mediarama and earns Bonus Exp\n--------------------\n~August 14th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n---------------------\n~August 22nd~\n---------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n--------------------\n~August 23rd~\n--------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n--------------------\n~August 24th~\n--------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n--------------------\n~August 25th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n--------------------\n~August 27th~\n--------------------\nTrigger: Fuse Rangda\nEffect: Persona learns Null Ice\n--------------------\n~August 29th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\nSeptember\n-----------------------\n~September 1st~\n-----------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-------------------------\n~September 2nd~\n-------------------------\nTrigger: None\nEffect: Persona gets Bonus Exp\n------------------------\n~September 3rd~\n------------------------\nTrigger: Use Moon Arcana in a Fusion\nEffect: Persona learns random Support Skill and earns random Stat Increases\n------------------------\n~September 4th~\n------------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-----------------------\n~September 5th~\n-----------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n------------------------\n~September 6th~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n------------------------\n~September 7th~\n------------------------\nTrigger: Fuse Cu Chulainn\nEffect: Persona learns Null Elec and earns random Stat Increases\n-------------------------\n~September 16th~\n-------------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-------------------------\n~September 17th~\n-------------------------\nTrigger: Use Leanan Sidhe in a Fusion\nEffect: Persona learns random Ice Skill and earns Bonus Exp\n-------------------------\n~September 18th~\n-------------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-------------------------\n~September 21st~\n-------------------------\nTrigger: Fuse Tam Lin\nEffect: Persona learns Amrita and earns random Stat Increases and Bonus Exp\n--------------------------\n~September 22nd~\n--------------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n-------------------------\n~September 25th~\n-------------------------\nTrigger: Use Throne in a Fusion\nEffect: Persona learns random Ice Skill and gets random Skill Change and Bonus Exp\n-------------------------\n~September 27th~\n-------------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n-------------------------\n~September 28th~\n-------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\nOctober\n-------------------\n~October 1st~\n-------------------\nTrigger: Use Fool Arcana in a Fusion\nEffect: Persona learns random Recovery Skill and earns Bonus Exp\n--------------------\n~October 3rd~\n--------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n--------------------\n~October 4th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n--------------------\n~October 5th~\n--------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-------------------\n~October 8th~\n-------------------\nTrigger: Fuse Raphael\nEffect: Persona learns Mind Charge\n---------------------\n~October 11th~\n---------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n---------------------\n~October 12th~\n---------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n---------------------\n~October 16th~\n---------------------\nTrigger: Use Justice and Priestess Arcana in a Fusion\nEffect: Persona learns Repel Fire\n---------------------\n~October 21st~\n---------------------\nTrigger: Use Empress Arcana in a Fusion\nEffect: Persona earns random Stat Increases and Bonus Exp\n----------------------\n~October 22nd~\n----------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n----------------------\n~October 23rd~\n----------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n---------------------\n~October 25th~\n---------------------\nTrigger: Fuse Garuda\nEffect: Persona learns Spell Master and earns random Stat Increases and Bonus Exp\n---------------------\n~October 26th~\n---------------------\nTrigger: None\nEffect: Persona gets random Skill Change\nNovember\n-----------------------\n~November 2nd~\n-----------------------\nTrigger: Use Cerberus in a Fusion\nEffect: Persona learns Samarecarm and earns random Stat Increases\n-----------------------\n~November 3rd~\n-----------------------\nTrigger: None\nEffect: Persona gets random Skill Change and Bonus Exp\n-----------------------\n~November 7th~\n-----------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n----------------------\n~November 8th~\n----------------------\nTrigger: Fuse Daisoujou\nEffect: Persona learns Mind Charge\n-----------------------\n~November 9th~\n-----------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n------------------------\n~November 11th~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n------------------------\n~November 12th~\n------------------------\nTrigger: Use Magician Arcana in a Fusion\nEffect: Persona learns random Elec Skill and earns Bonus Exp\n------------------------\n~November 13th~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n------------------------\n~November 15th~\n------------------------\nTrigger: Fuse Siegfried\nEffect: Persona learns Enduring Soul and earns random Stat Increases\n------------------------\n~November 18th~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-------------------------\n~November 19th~\n-------------------------\nTrigger: Fuse Nebiros\nEffect: Persona learns Aliment Dance and earns Bonus Exp\n------------------------\n~November 20th~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n------------------------\n~November 24th~\n------------------------\nTrigger: Fuse Kartikeya\nEffect: Persona learns Angelic Grace\n------------------------\n~November 26th~\n------------------------\nTrigger: Use Magician Arcana in a Fusion\nEffect: Persona learns Marakukaja\nDecember\n-----------------------\n~December 8th~\n-----------------------\nTrigger: Fuse Hell Biker\nEffect: Persona learns Evade Ice and earns random Stat Increases\n------------------------\n~December 11th~\n------------------------\nTrigger: Use Judgement Arcana in a Fusion\nEffect: Persona learns random Fire and Elec Skills and earns Bonus Exp\n------------------------\n~December 12th~\n------------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n-------------------------\n~December 13th~\n-------------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n------------------------\n~December 15th~\n------------------------\nTrigger: Fuse Alice\nEffect: Persona learns Angelic Grace\n------------------------\n~December 16th~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n------------------------\n~December 17th~\n------------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n------------------------\n~December 19th~\n------------------------\nTrigger: Fuse Yoshitsune\nEffect: Persona learns Arms Master\n------------------------\n~December 21st~\n------------------------\nTrigger: Fuse Ishtar\nEffect: Persona learns Insta-Heal and random Fire Skill\n------------------------\n~December 23rd~\n------------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n-------------------------\n~December 24th~\n-------------------------\nTrigger: Fuse Yoshitsune\nEffect: Persona learns Debilitate\nJanuary\n---------------------\n~January 11th~\n---------------------\nTrigger: Use Aeon Arcana in a Fusion\nEffect: Persona learns Enduring Soul\n---------------------\n~January 13th~\n---------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n---------------------\n~January 14th~\n---------------------\nTrigger: Use Fool and Judgement Arcana in a Fusion\nEffect: Persona learns Salvation\n---------------------\n~January 16th~\n---------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n---------------------\n~January 18th~\n---------------------\nTrigger: Fuse Suparna\nEffect: Persona learns Evade Ice and earns random Stat Increases\n---------------------\n~January 21st~\n---------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n---------------------\n~January 24th~\n---------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n---------------------\n~January 27th~\n---------------------\nTrigger: Use Fortune Arcana in a Fusion\nEffect: Persona learns random Ice Skill and earns random Stat Increases\n---------------------\n~January 28th~\n---------------------\nTrigger: None\nEffect: Persona earns Bonus Exp\n---------------------\n~January 31st~\n---------------------\nTrigger: Use Death Arcana in a Fusion\nEffect: Persona learns random Recovery Skill\nFebruary\n---------------------\n~February 1st~\n---------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\n---------------------\n~February 3rd~\n---------------------\nTrigger: Fuse Persona of the Moon Arcana\nEffect: Persona learns Unshaken Will\n---------------------\n~February 5th~\n---------------------\nTrigger: None\nEffect: Persona gets random Skill Change\n----------------------\n~February 13th~\n----------------------\nTrigger: None\nEffect: Persona earns random Stat Increases\nMarch\n-------------------\n~March 20th~\n-------------------\nTrigger: None\nEffect: Persona gets random Skill Change"
+}

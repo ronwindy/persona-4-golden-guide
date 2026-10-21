@@ -1,0 +1,465 @@
+{
+  "id": "social-links-young-mother-temperance",
+  "title": "Young Mother/Temperance",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "young-mother-temperance",
+  "type": "social-link",
+  "order": 91,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday"
+          },
+          {
+            "text": "Tuesday"
+          },
+          {
+            "text": "Wednesday"
+          },
+          {
+            "text": "Thursday"
+          },
+          {
+            "text": "Friday"
+          },
+          {
+            "text": "Saturday"
+          },
+          {
+            "text": "Sunday"
+          },
+          {
+            "text": "Rain"
+          }
+        ],
+        [
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "No"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: April 25th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 4th"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Work at the Day Care twice"
+    },
+    {
+      "type": "p",
+      "text": "Location: Bus Stop in Shopping District South"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Vishnu"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Clover Bookmark"
+    },
+    {
+      "type": "p",
+      "text": "Notes: N/A"
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "3"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "13"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Work at the Day Care twice"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"...Do you like children?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +1 or +2\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"I don't hate him, but...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"I guess he wants to see his father.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"(sigh) He's so inconsiderate...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"I should have known better than to try. We're not related, so there's nothing I can do about it.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"Doesn't that make you feel better? Isn't that a wonderful idea?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +3\nOption B: +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"Honestly, though...I just want to go back to the city.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"Please, don't tell Yuu-kun...Or the other mothers.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"...Is she mad at me?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"......\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"...I've never seen Phoenix Ranger Featherman R.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"...She's always watching TV.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"(huff) (huff) I'm sorry I'm late...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"I don't know what a child wants...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +3\nOption B: +0\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"You told her I liked Phoenix Ranger Featherman R, huh?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"I-In return for her gift!?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"I wonder if he's afraid of me.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0 or +2\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"He must hate the fact I'm here.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Ms. Nakamura: \"Oh, who is this? He seems a bit young to be your husband.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"If only...If only he was a more studious child...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"I'm sorry about the other day. Were you hurt?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +3\nOption B: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "Yuuta: \"...Sor...ry...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"He's actually a sweet boy...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +3\nOption B: +? or +3"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"...What took me so long, huh?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +? or +3\nOption B: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Eri: \"So, today's the last day he'll be here. When Yuuta's done with school, we'll spend time together at the house.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +3\nOption B: +3"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nYes | No | No | No | Yes | Yes | No | No\nInformation\nFirst Day: April 25th\nLast Day: February 4th\nActivation: Work at the Day Care twice\nLocation: Bus Stop in Shopping District South\nUltimate Persona: Vishnu\nKey Item: Clover Bookmark\nNotes: N/A\nPoints Needed\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 2\nRank 5 | 4\nRank 6 | 3\nRank 7 | 4\nRank 8 | 6\nRank 9 | 4\nRank 10 | 13\nRank Up Scenes\n-Rank 1-\nWork at the Day Care twice\n-Rank 2-\nEri: \"...Do you like children?\"\nOption A: +0\nOption B: +1 or +2\nOption C: +3\nEri: \"I don't hate him, but...\"\nAny option: +0\n-Rank 3-\nEri: \"I guess he wants to see his father.\"\nAny option: +1 or +2\nEri: \"(sigh) He's so inconsiderate...\"\nAny option: +0\n-Rank 4-\nEri: \"I should have known better than to try. We're not related, so there's nothing I can do about it.\"\nAny option: +0\nEri: \"Doesn't that make you feel better? Isn't that a wonderful idea?\"\nOption A: +3\nOption B: +0\nOption C: +0\nEri: \"Honestly, though...I just want to go back to the city.\"\nOption A: +0\nOption B: +0\nOption C: +1 or +2\nEri: \"Please, don't tell Yuu-kun...Or the other mothers.\"\nAny option: +0\n-Rank 5-\nYuuta: \"...Is she mad at me?\"\nAny option: +0\nYuuta: \"......\"\nAny option: +0\n-Rank 6-\nYuuta: \"...I've never seen Phoenix Ranger Featherman R.\"\nAny option: +0\nYuuta: \"...She's always watching TV.\"\nAny option: +0\nEri: \"(huff) (huff) I'm sorry I'm late...\"\nAny option: +0\nEri: \"I don't know what a child wants...\"\nOption A: +1 or +3\nOption B: +0\nOption C: +0\n-Rank 7-\nYuuta: \"You told her I liked Phoenix Ranger Featherman R, huh?\"\nAny option: +0\nYuuta: \"I-In return for her gift!?\"\nAny option: +0\nEri: \"I wonder if he's afraid of me.\"\nOption A: +0\nOption B: +0 or +2\nOption C: +2 or +3\nEri: \"He must hate the fact I'm here.\"\nOption A: +0\nOption B: +2 or +3\n-Rank 8-\nMs. Nakamura: \"Oh, who is this? He seems a bit young to be your husband.\"\nAny option: +0\nEri: \"If only...If only he was a more studious child...\"\nAny option: +0\n-Rank 9-\nEri: \"I'm sorry about the other day. Were you hurt?\"\nOption A: +1 or +3\nOption B: +? or +3\nYuuta: \"...Sor...ry...\"\nAny option: +0\nEri: \"He's actually a sweet boy...\"\nOption A: +1 or +3\nOption B: +? or +3\nEri: \"...What took me so long, huh?\"\nOption A: +? or +3\nOption B: +3\n-Rank 10-\nEri: \"So, today's the last day he'll be here. When Yuuta's done with school, we'll spend time together at the house.\"\nOption A: +1 or +3\nOption B: +3\nNight Time Dates\nN/A"
+}

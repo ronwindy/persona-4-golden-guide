@@ -1,0 +1,477 @@
+{
+  "id": "social-links-tutored-student-tower",
+  "title": "Tutored Student/Tower",
+  "chapter": "Social Links",
+  "chapter_id": "social-links",
+  "anchor": "tutored-student-tower",
+  "type": "social-link",
+  "order": 93,
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Availability",
+      "md": "**Availability**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Monday",
+            "md": "**Monday**"
+          },
+          {
+            "text": "Tuesday",
+            "md": "**Tuesday**"
+          },
+          {
+            "text": "Wednesday",
+            "md": "**Wednesday**"
+          },
+          {
+            "text": "Thursday",
+            "md": "**Thursday**"
+          },
+          {
+            "text": "Friday",
+            "md": "**Friday**"
+          },
+          {
+            "text": "Saturday",
+            "md": "**Saturday**"
+          },
+          {
+            "text": "Sunday",
+            "md": "**Sunday**"
+          },
+          {
+            "text": "Rain",
+            "md": "**Rain**"
+          }
+        ],
+        [
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          },
+          {
+            "text": "No"
+          },
+          {
+            "text": "Yes"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Information",
+      "md": "**Information**"
+    },
+    {
+      "type": "p",
+      "text": "First Day: May 26th"
+    },
+    {
+      "type": "p",
+      "text": "Last Day: February 4th"
+    },
+    {
+      "type": "p",
+      "text": "Activation: Work as a Tutor"
+    },
+    {
+      "type": "p",
+      "text": "Location: Bus Stop in Shopping District South"
+    },
+    {
+      "type": "p",
+      "text": "Ultimate Persona: Shiva"
+    },
+    {
+      "type": "p",
+      "text": "Key Item: Test Results"
+    },
+    {
+      "type": "p",
+      "text": "Notes: Requires Understanding Rank Saintly to Work as a Tutor"
+    },
+    {
+      "type": "p",
+      "text": "Points Needed",
+      "md": "**Points Needed**"
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          {
+            "text": "Rank 1",
+            "md": "**Rank 1**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 2",
+            "md": "**Rank 2**"
+          },
+          {
+            "text": "0"
+          }
+        ],
+        [
+          {
+            "text": "Rank 3",
+            "md": "**Rank 3**"
+          },
+          {
+            "text": "2"
+          }
+        ],
+        [
+          {
+            "text": "Rank 4",
+            "md": "**Rank 4**"
+          },
+          {
+            "text": "6"
+          }
+        ],
+        [
+          {
+            "text": "Rank 5",
+            "md": "**Rank 5**"
+          },
+          {
+            "text": "3"
+          }
+        ],
+        [
+          {
+            "text": "Rank 6",
+            "md": "**Rank 6**"
+          },
+          {
+            "text": "5"
+          }
+        ],
+        [
+          {
+            "text": "Rank 7",
+            "md": "**Rank 7**"
+          },
+          {
+            "text": "5"
+          }
+        ],
+        [
+          {
+            "text": "Rank 8",
+            "md": "**Rank 8**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 9",
+            "md": "**Rank 9**"
+          },
+          {
+            "text": "4"
+          }
+        ],
+        [
+          {
+            "text": "Rank 10",
+            "md": "**Rank 10**"
+          },
+          {
+            "text": "0"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rank Up Scenes",
+      "md": "**Rank Up Scenes**"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 1-"
+    },
+    {
+      "type": "p",
+      "text": "Work as a Tutor"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 2-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"...If I get into a good college...Am I really 'set'?\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"...Do you know what that means?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Huh...Time's already up. We were still the middle of that last question...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B (Requires Diligence Rank Rock Solid): +1 or +2"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 3-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"What do you think of your school?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +1 or +2\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"......\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 4-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"...They don't get what it means to learn at all.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"That place...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +2 or +3 (Courage UP)"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 5-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Is there any bullying at your school?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +1 or +2\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Maybe that's not the same thing as bullying.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"It seems that I've been talking to you about things that really aren't relevant to my studies...\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +1 or +2 (Understanding UP)"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 6-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"(sigh)\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"...They're all stupid.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Um...You only come here because you're being paid to, right?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +1 or +2\nOption C: +3"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 7-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"...I wish I was a genius.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Let's change the subject to something else, what's up?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0 (Expression UP)\nOption B: +1 or +2 (Expression UP)\nOption C: +2 or +3 (Courage UP)"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 8-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Is it possible for anyone to be all those things? Do you know anyone like that?\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0\nOption B: +0\nOption C: +2 or +3"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"...Every time I have that dream, the person gets one car closer to me.\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Shu suddenly looks tormented."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +2\nOption B: +2 or +3\nOption C: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 9-"
+    },
+    {
+      "type": "p",
+      "text": "Must Spend Time before Social Link Ranks Up"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Today...is my birthday, I forgot...\""
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Shu looks sad..."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: First, you need..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: Advances to Response 4\nOption B: Advances to Response 4\nOption C: Skips Response 4"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Only one place springs to mind..."
+    },
+    {
+      "type": "p",
+      "text": "Option A: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Shu begins to sob..."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "Narrator: Shu begins to cry again."
+    },
+    {
+      "type": "p",
+      "text": "Any option: +0"
+    },
+    {
+      "type": "p",
+      "text": "-Rank 10-"
+    },
+    {
+      "type": "p",
+      "text": "Shu: \"Thank you for recognizing...'me'. I wouldn't have been able to talk to Mom if you hadn't.\""
+    },
+    {
+      "type": "p",
+      "text": "Option A: +1 or +3\nOption B: +3"
+    },
+    {
+      "type": "p",
+      "text": "Night Time Dates",
+      "md": "**Night Time Dates**"
+    },
+    {
+      "type": "p",
+      "text": "N/A"
+    }
+  ],
+  "text": "Availability\nMonday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | Rain\nNo | Yes | No | Yes | No | Yes | No | Yes\nInformation\nFirst Day: May 26th\nLast Day: February 4th\nActivation: Work as a Tutor\nLocation: Bus Stop in Shopping District South\nUltimate Persona: Shiva\nKey Item: Test Results\nNotes: Requires Understanding Rank Saintly to Work as a Tutor\nPoints Needed\nRank 1 | 0\nRank 2 | 0\nRank 3 | 2\nRank 4 | 6\nRank 5 | 3\nRank 6 | 5\nRank 7 | 5\nRank 8 | 4\nRank 9 | 4\nRank 10 | 0\nRank Up Scenes\n-Rank 1-\nWork as a Tutor\n-Rank 2-\nShu: \"...If I get into a good college...Am I really 'set'?\"\nAny option: +0\nShu: \"...Do you know what that means?\"\nOption A: +1 or +2\nOption B: +0\nShu: \"Huh...Time's already up. We were still the middle of that last question...\"\nOption A: +0\nOption B (Requires Diligence Rank Rock Solid): +1 or +2\n-Rank 3-\nShu: \"What do you think of your school?\"\nOption A: +0\nOption B: +1 or +2\nOption C: +2 or +3\nShu: \"......\"\nOption A: +0\nOption B: +2 or +3\nOption C: +0\n-Rank 4-\nShu: \"...They don't get what it means to learn at all.\"\nOption A: +1 or +2\nOption B: +0\nShu: \"That place...\"\nOption A: +0\nOption B: +0\nOption C: +2 or +3 (Courage UP)\n-Rank 5-\nShu: \"Is there any bullying at your school?\"\nOption A: +0\nOption B: +1 or +2\nOption C: +0\nShu: \"Maybe that's not the same thing as bullying.\"\nOption A: +0\nOption B: +2 or +3\nOption C: +0\nShu: \"It seems that I've been talking to you about things that really aren't relevant to my studies...\"\nOption A: +1 or +2\nOption B: +1 or +2 (Understanding UP)\n-Rank 6-\nShu: \"(sigh)\"\nAny option: +0\nShu: \"...They're all stupid.\"\nAny option: +0\nShu: \"Um...You only come here because you're being paid to, right?\"\nOption A: +0\nOption B: +1 or +2\nOption C: +3\n-Rank 7-\nShu: \"...I wish I was a genius.\"\nAny option: +0\nShu: \"Let's change the subject to something else, what's up?\"\nOption A: +0 (Expression UP)\nOption B: +1 or +2 (Expression UP)\nOption C: +2 or +3 (Courage UP)\n-Rank 8-\nShu: \"Is it possible for anyone to be all those things? Do you know anyone like that?\"\nOption A: +0\nOption B: +0\nOption C: +2 or +3\nShu: \"...Every time I have that dream, the person gets one car closer to me.\"\nAny option: +0\nNarrator: Shu suddenly looks tormented.\nOption A: +1 or +2\nOption B: +2 or +3\nOption C: +0\n-Rank 9-\nMust Spend Time before Social Link Ranks Up\nShu: \"Today...is my birthday, I forgot...\"\nAny option: +0\nNarrator: Shu looks sad...\nAny option: +0\nNarrator: First, you need...\nOption A: Advances to Response 4\nOption B: Advances to Response 4\nOption C: Skips Response 4\nNarrator: Only one place springs to mind...\nOption A: +0\nNarrator: Shu begins to sob...\nAny option: +0\nNarrator: Shu begins to cry again.\nAny option: +0\n-Rank 10-\nShu: \"Thank you for recognizing...'me'. I wouldn't have been able to talk to Mom if you hadn't.\"\nOption A: +1 or +3\nOption B: +3\nNight Time Dates\nN/A"
+}
