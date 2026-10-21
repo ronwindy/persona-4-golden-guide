@@ -24,10 +24,16 @@ List rule: prose with 3+ sentences or ~40+ words becomes a bullet list (numbered
 
 Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming items/characters/locations/enemies, changing numbers or requirements, silently resolving contradictions. If the source is ambiguous or contradictory, **preserve and flag it**. Extra research only if explicitly requested, and kept visibly separate.
 
-## 3. Design: nothing decided
-- The frontend is a plain placeholder: greyscale, system font, light only, all values in the `:root` tokens of `src/styles/global.css`. No logo, art, ornaments, web fonts or icon libraries.
-- **Do not copy any design element from Shadow Hearts or Limbo** (gold headers, backgrounds, fonts, ornaments, icons). Do not assume any style choice; ask the user first.
-- Fixed by the user: 3-part layout on desktop (sidebar | content | on-this-page), drawer on mobile, step checklists with saved progress. Every other element (callouts, tables, badges, gamepad support, boss/shop blocks, hero, ...) is decided per guide, with the user, when the source needs it.
+## 3. Design: P4 yellow & TV-world (decided)
+- Stack: Tailwind 4 (`@tailwindcss/vite`) + `@lucide/astro` icons. All values live in the `:root` tokens of `src/styles/global.css`; Tailwind utilities read the same tokens via `@theme inline`.
+- Look: dark warm base (`#0d0d0d`), P4 yellow `#FFE600` accent, off-white text; red = warnings, cyan = links/info. Dark only.
+- Fonts: **Jost** (body), **Archivo Black** (headers), Google Fonts. **No monospace anywhere.**
+- Headers: h1/h2 are black text on a skewed yellow slab with a hard offset shadow; h3 is plain yellow.
+- Motifs (CSS only): skewed/angled panels, fog/gradient backdrop, faint static scanlines.
+- Icons and visuals: use Lucide icons wherever they fit. Turn content into flows/timelines/diagrams wherever the source supports it, as Astro components in HTML/CSS (no Mermaid, no bespoke SVG). Visuals must come from source facts only.
+- Images: wherever an image suits, use `GuideImage` with a path under `public/images/...`; it renders a labelled placeholder until the user saves a file at that path. Never fetch or generate images.
+- Do not copy design elements from Shadow Hearts or Limbo. Ask before adding ornaments or styles beyond the above.
+- Fixed by the user: 3-part layout on desktop (sidebar | content | on-this-page), drawer on mobile, step checklists with saved progress. Other blocks (callouts, tables, badges, gamepad support, boss/shop blocks, hero, ...) are decided per guide, with the user, when the source needs them.
 
 ## 4. Orientation & Status (do this first)
 - Read the first 45 lines of [`STATUS.md`](STATUS.md) (or run `node scripts/guide.mjs status`) before starting. Never scan directories to orient yourself.

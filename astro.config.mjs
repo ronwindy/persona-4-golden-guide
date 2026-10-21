@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import { readFileSync } from 'node:fs';
+import tailwindcss from '@tailwindcss/vite';
 
 const project = JSON.parse(readFileSync(new URL('./project.config.json', import.meta.url), 'utf8'));
 
@@ -10,5 +11,8 @@ export default defineConfig({
   output: 'static',
   build: {
     format: 'file'
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

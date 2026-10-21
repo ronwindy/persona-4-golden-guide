@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@lucide/astro": "^1.61.0",
+    "@tailwindcss/vite": "^4.3.3",
     "astro": "^5.4.2",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
