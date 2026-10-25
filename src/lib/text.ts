@@ -9,13 +9,15 @@ export type RichText = string | RichBlock[];
 const escapeHtml = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-/** **bold** -> <strong> (game terms), then *italic* -> <em> (spoken dialogue); bold may sit inside italic. */
+/** **bold** -> <strong> (game terms), then *italic* -> <em> (editorial emphasis), or <em class="say"> when the run starts with a quote (spoken dialogue). */
 export function inline(text: string | null | undefined): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   return escapeHtml(text ?? '')
     .replace(/\[([^\]]+)\]\(guide:([a-z0-9-]+)\)/g, `<a href="${base}/guide/$2">$1</a>`)
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+    .replace(/\*([^*]+)\*/g, (_m, t: string) =>
+      t.startsWith('"') ? `<em class="say">${t}</em>` : `<em>${t}</em>`,
+    );
 }
 
 type PageListItem = string | { text: string; children: { ordered: boolean; items: PageListItem[] } };
