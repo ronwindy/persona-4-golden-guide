@@ -1,14 +1,18 @@
 # Persona 4 Golden Guide — Design (`DESIGN.md`)
 
-**Status: nothing decided.** The site uses a plain placeholder style. Decisions are recorded here only after the user makes them.
+Visual decisions for the guide site. Agent behaviour rules (no monospace, don't copy Shadow Hearts/Limbo, ask before new ornaments, `GuideImage` for images) live in [`CLAUDE.md`](CLAUDE.md) §3. Record new design decisions here, not in CLAUDE.md. Decisions are recorded only after the user makes them.
 
 ## Decided
-- Layout: 3 parts on desktop (left sidebar, content, right "on this page"), drawer on mobile.
-- Step checklists with progress saved in the browser (localStorage).
-
-## Placeholder (to be replaced)
-- Greyscale, system font, light only. All values are tokens in `:root` in `src/styles/global.css`.
-- No logo, favicon, background art, ornaments, web fonts or icon libraries.
+- **Theme:** P4 yellow & TV-world. Dark only.
+- **Palette:** dark warm base `#0d0d0d`, P4 yellow `#FFE600` accent, off-white text. Red = warnings, cyan = links/info.
+- **Fonts:** Jost (body), Archivo Black (headers), from Google Fonts.
+- **Headers:** h1/h2 are black text on a skewed yellow slab with a hard offset shadow. h3 is plain yellow.
+- **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
+- **Icons and visuals:** Lucide icons where they fit. Flows, timelines and diagrams are Astro components in HTML/CSS, drawn only from source facts (no Mermaid, no bespoke SVG).
+- **Tokens:** all values live in the `:root` tokens of `src/styles/global.css`. Tailwind utilities read them via `@theme inline`.
+- **Stack:** Tailwind 4 (`@tailwindcss/vite`) and `@lucide/astro` icons.
+- **Layout:** 3 parts on desktop (left sidebar, content, right "on this page"), drawer on mobile.
+- **Step checklists** with progress saved in the browser (localStorage).
 
 ## Open (ask the user when the source needs them)
-Palette, typography, logo/branding, home page, callout and badge styles, tables, icons, dark mode, gamepad support, game-specific blocks.
+Logo/branding, home page, callout and badge styles, tables, dark-mode details beyond the base theme, gamepad support, boss/shop/game-specific blocks, and any ornament beyond the motifs above.

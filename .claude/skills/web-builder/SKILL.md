@@ -10,9 +10,9 @@ Renders `structured-content/sections/*.json` into the Astro static site (`src/`)
 
 ## Rules
 - Content integrity: every name, number, warning and ordering from structured JSON renders as given. No invented text.
-- **No design is decided yet** (see `DESIGN.md`). Keep the plain placeholder style. Never copy design elements from Shadow Hearts or Limbo, and never assume a style choice: ask the user first. New components (callouts, tables, badges, icons, ...) are added only when the source needs them and the user agrees.
+- **Design:** follow `DESIGN.md` (P4 yellow & TV-world, dark only). Never copy design elements from Shadow Hearts or Limbo, and never assume a style choice beyond `DESIGN.md`: ask the user first. New components (callouts, tables, badges, icons, ...) are added only when the source needs them and the user agrees.
 - Layout is fixed: sidebar | content | on-this-page on desktop, drawer on mobile. Step checklists save progress in localStorage.
-- Styling lives in tokens in `src/styles/global.css`; plain CSS, no Tailwind, no icon library.
+- Styling lives in tokens in `src/styles/global.css`; Tailwind 4 utilities read the same tokens via `@theme inline`; icons are `@lucide/astro`.
 - Responsive and accessible (semantic HTML, contrast, keyboard nav). No internal pipeline ids in user-facing text.
 - GitHub Pages compatible: static output, respect `base` in `astro.config.mjs`.
 - Do not use browser tools; the user verifies visuals.

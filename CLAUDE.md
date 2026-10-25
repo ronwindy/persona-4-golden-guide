@@ -26,16 +26,14 @@ Inline emphasis (automatic in `check`, rules in `docs/p4g-spec.md` §5): game te
 
 Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming items/characters/locations/enemies, changing numbers or requirements, silently resolving contradictions. If the source is ambiguous or contradictory, **preserve and flag it**. Extra research only if explicitly requested, and kept visibly separate.
 
-## 3. Design: P4 yellow & TV-world (decided)
-- Stack: Tailwind 4 (`@tailwindcss/vite`) + `@lucide/astro` icons. All values live in the `:root` tokens of `src/styles/global.css`; Tailwind utilities read the same tokens via `@theme inline`.
-- Look: dark warm base (`#0d0d0d`), P4 yellow `#FFE600` accent, off-white text; red = warnings, cyan = links/info. Dark only.
-- Fonts: **Jost** (body), **Archivo Black** (headers), Google Fonts. **No monospace anywhere.**
-- Headers: h1/h2 are black text on a skewed yellow slab with a hard offset shadow; h3 is plain yellow.
-- Motifs (CSS only): skewed/angled panels, fog/gradient backdrop, faint static scanlines.
-- Icons and visuals: use Lucide icons wherever they fit. Turn content into flows/timelines/diagrams wherever the source supports it, as Astro components in HTML/CSS (no Mermaid, no bespoke SVG). Visuals must come from source facts only.
-- Images: wherever an image suits, use `GuideImage` with a path under `public/images/...`; it renders a labelled placeholder until the user saves a file at that path. Never fetch or generate images.
-- Do not copy design elements from Shadow Hearts or Limbo. Ask before adding ornaments or styles beyond the above.
-- Fixed by the user: 3-part layout on desktop (sidebar | content | on-this-page), drawer on mobile, step checklists with saved progress. Other blocks (callouts, tables, badges, gamepad support, boss/shop blocks, hero, ...) are decided per guide, with the user, when the source needs them.
+## 3. Design rules (visuals live in `DESIGN.md`)
+The decided look (palette, fonts, headers, motifs, stack, layout) is in [`DESIGN.md`](DESIGN.md). Record new design decisions there, not here.
+- **No monospace anywhere.**
+- Never copy design elements from Shadow Hearts or Limbo. Ask before adding ornaments or styles beyond `DESIGN.md`.
+- Visuals (flows, timelines, diagrams) are Astro components in HTML/CSS, not Mermaid or bespoke SVG, and must come from source facts only.
+- Images: use `GuideImage` with a path under `public/images/...`; it renders a labelled placeholder until the user saves a file there. Never fetch or generate images.
+- Use Lucide icons wherever they fit.
+- Ask before adding a new block type or component.
 
 ## 4. Orientation & Status (do this first)
 - Read the first 45 lines of [`STATUS.md`](STATUS.md) (or run `node scripts/guide.mjs status`) before starting. Never scan directories to orient yourself.
