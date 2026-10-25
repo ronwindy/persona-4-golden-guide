@@ -32,7 +32,7 @@ The decided look (palette, fonts, headers, motifs, stack, layout) is in [`DESIGN
 - Never copy design elements from Shadow Hearts or Limbo. Ask before adding ornaments or styles beyond `DESIGN.md`.
 - Visuals (flows, timelines, diagrams) are Astro components in HTML/CSS, not Mermaid or bespoke SVG, and must come from source facts only.
 - Images: use `GuideImage` with a path under `public/images/...`; it renders a labelled placeholder until the user saves a file there. Never fetch or generate images.
-- Use Lucide icons wherever they fit.
+- Use Lucide icons wherever they fit. Every guide page shows icons on slot labels and step titles via `src/lib/icon-rules.mjs`; when `check` prints `[NOTE] no icon rule`, add a rule (see `DESIGN.md`).
 - Ask before adding a new block type or component.
 
 ## 4. Orientation & Status (do this first)

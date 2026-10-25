@@ -39,6 +39,7 @@
   --say: #e8d9a0;
 
   --font-body: 'Jost', system-ui, sans-serif;
+  --font-sub: 'Sriracha', 'Jost', system-ui, sans-serif;
   --font-say: 'Kalam', 'Jost', cursive;
   --font-head: 'Archivo Black', 'Jost', system-ui, sans-serif;
 
@@ -94,7 +95,7 @@ a:hover { color: var(--accent); }
 h1, h2, h3 { margin: 0; line-height: 1.2; font-family: var(--font-head); font-weight: 400; }
 
 h1, h2 {
-  display: inline-block;
+  display: inline-flex;
   max-width: 100%;
   background: var(--accent);
   color: var(--accent-ink);
@@ -103,6 +104,7 @@ h1, h2 {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
+h1, h2 { align-items: center; gap: 0.6rem; }
 h1 { font-size: 1.9rem; padding: 0.35rem 1.1rem; margin: 0.5rem 0 1.25rem; }
 h2 { font-size: 1.25rem; padding: 0.25rem 0.9rem; margin: 2rem 0 1rem; }
 h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
@@ -284,9 +286,10 @@ nav[aria-label='On this page'] li a[aria-current='location'] { background: var(-
 .step-body { min-width: 0; }
 .step-body > :first-child { margin-top: 0; }
 .step-body > :last-child { margin-bottom: 0; }
-.step-title { margin: 0 0 0.25rem; font-size: 1rem; }
+.step-title { display: flex; align-items: center; gap: 0.45rem; margin: 0 0 0.25rem; font-family: var(--font-sub); font-size: 1.15rem; font-weight: 400; }
+.step-title svg, .slot-label svg { flex: none; color: var(--accent); }
 .step-checkbox:checked + .step-body { color: var(--text-muted); text-decoration: line-through; }
-.slot-label { margin: 1.25rem 0 0.5rem; font-size: 1.05rem; color: var(--accent); }
+.slot-label { display: flex; align-items: center; gap: 0.5rem; margin: 1.25rem 0 0.5rem; font-family: var(--font-sub); font-size: 1.3rem; font-weight: 400; color: var(--accent); }
 .day-progress { margin-left: 0.75rem; font-size: 0.85rem; font-weight: 400; color: var(--text-muted); }
 
 /* Image placeholder: shows the path where the image should be saved */

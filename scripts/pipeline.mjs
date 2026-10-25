@@ -12,6 +12,7 @@ import { loadMerges, navigationProblems } from "../.claude/skills/qa/scripts/mer
 import { PROJECT } from "./project_config.mjs";
 import { getSectionPaths, getCanonicalManifest, sectionType, isWalkthroughType } from "./sections.mjs";
 import { scaffoldGuide } from "./p4g/scaffold.mjs";
+import { iconNameFor } from "../src/lib/icon-rules.mjs";
 import { italicGuide, emphasisProblems } from "./emphasis.mjs";
 import { boldGuide, compilePattern, buildDictionary } from "./bold_terms.mjs";
 import { verifyPage as verifyGuide } from "./p4g/qa.mjs";
@@ -122,6 +123,20 @@ export function runLint(sec) {
   console.log(`
 --- Lint: ${sec.id} --- ${warns.length} warning(s)`);
   for (const w of warns) console.log(`  [WARN] ${w}`);
+  // Icon coverage is advisory: unmapped titles render the fallback icon, so this never fails the run.
+  const unmapped = new Set();
+  if (guide.title && !iconNameFor(guide.title)) unmapped.add(guide.title);
+  for (const s of guide.sections ?? []) if (s.heading && !iconNameFor(s.heading)) unmapped.add(s.heading);
+  (function walk(n) {
+    if (Array.isArray(n)) return n.forEach(walk);
+    if (!n || typeof n !== "object") return;
+    if (Array.isArray(n.steps)) {
+      if (n.label && !iconNameFor(n.label)) unmapped.add(n.label);
+      for (const st of n.steps) if (st.title && !iconNameFor(st.title)) unmapped.add(st.title);
+    }
+    Object.values(n).forEach(walk);
+  })(guide.sections ?? []);
+  for (const t of unmapped) console.log(`  [NOTE] no icon rule for '${t}' (fallback icon used): add one to src/lib/icon-rules.mjs`);
   return warns.length === 0;
 }
 

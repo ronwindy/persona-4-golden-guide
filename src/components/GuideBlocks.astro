@@ -1,6 +1,7 @@
 ---
 import { inline, pageList } from '../lib/text';
 import { Info, TriangleAlert, GitCompareArrows } from '@lucide/astro';
+import { iconFor } from '../lib/icons';
 import type { Block } from '../lib/guideData';
 
 interface Props {
@@ -59,13 +60,13 @@ const calloutLabel = { note: 'Note', warning: 'Warning', discrepancy: 'Source di
         <div class="day-slots" data-day={stepKey}>
           {b.slots.map((sl, li) => (
             <section class="slot">
-              {sl.label && <h3 class="slot-label" set:html={inline(sl.label)} />}
+              {sl.label && (() => { const SlotIcon = iconFor(sl.label); return <h3 class="slot-label"><SlotIcon size={22} aria-hidden="true" /><span set:html={inline(sl.label)} /></h3>; })()}
               <ol class="step-list">
                 {sl.steps.map((st, si) => (
                   <li class="step">
                     <input type="checkbox" class="step-checkbox day-step" data-key={`p4g-step-${stepKey}-${li}-${si}`} aria-label={`${sl.label ?? ''} ${st.title ?? 'Step'} done`.trim()} />
                     <div class="step-body">
-                      {st.title && <h4 class="step-title" set:html={inline(st.title)} />}
+                      {st.title && (() => { const StepIcon = iconFor(st.title); return <h4 class="step-title"><StepIcon size={18} aria-hidden="true" /><span set:html={inline(st.title)} /></h4>; })()}
                       <Astro.self blocks={st.blocks} />
                     </div>
                   </li>
