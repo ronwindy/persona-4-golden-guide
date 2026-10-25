@@ -1,26 +1,67 @@
 // bold_terms.mjs - Bold important game terms (**term**) in the prose of structured sections.
 //
-// Dictionary = hand-listed names in scripts/term_extras.json (characters, locations, deny list). Only prose fields are touched
-// (step description, notes text, boss strategy, hub text); data fields keep exact names.
+// Dictionary = names mined from the canonical catalogs (see mineTerms) + hand-listed names in scripts/term_extras.json
+// (characters, locations, deny list). Only prose strings are touched (not table cells, headings or labels).
 
-import { readFileSync, existsSync, writeFileSync } from "node:fs";
+import { readFileSync, existsSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT_DIR } from "./status.mjs";
 import { PROJECT } from "./project_config.mjs";
 import { pyJson } from "./status.mjs";
+import { eachString } from "./emphasis.mjs";
 
 const EXTRAS = join(ROOT_DIR, PROJECT.termExtrasFile);
+const SECTIONS_DIR = join(ROOT_DIR, "canonical-sources", "sections");
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const allMatches = (text, re) => [...text.matchAll(re)];
 
-/** Terms are listed by hand in term_extras.json; there are no appendices to mine. */
+/** First-column headers of the canonical tables that list named things (items, skills, personas, enemies). */
+const NAME_HEADERS = new Set(["Accessory", "Armor", "Weapon", "Item", "Seed", "Bug", "Fish", "Gem", "Material", "Book",
+  "Costume", "Skill", "Persona", "Enemy", "Boss"]);
+const usable = (n) => n.length >= 3 && !/^[\d\s,.%+-]+$/.test(n) && !/^N\/A$/i.test(n) && !n.includes("\n");
+
+/**
+ * Mines term categories from the canonical sections: first-column names of catalog/arcana/dungeon tables,
+ * page titles of arcana, social links and dungeons. Returns Map(category -> Set(name)).
+ */
+let mined = null;
 export function mineTerms() {
-  return new Map();
+  if (mined) return mined;
+  const cats = (mined = new Map());
+  const add = (cat, name) => {
+    const n = String(name ?? "").trim();
+    if (!usable(n)) return;
+    if (!cats.has(cat)) cats.set(cat, new Set());
+    cats.get(cat).add(n);
+  };
+  if (!existsSync(SECTIONS_DIR)) return cats;
+  for (const f of readdirSync(SECTIONS_DIR).filter((x) => x.endsWith(".json"))) {
+    const c = JSON.parse(readFileSync(join(SECTIONS_DIR, f), "utf8"));
+    if (c.type === "dungeon") add("dungeons", c.title);
+    if (c.type === "arcana") add("arcana", c.title);
+    if (c.type === "social-link") {
+      const [who, arcana] = c.title.split("/");
+      add("social-links", who);
+      add("arcana", arcana);
+    }
+    if (!["catalog", "arcana", "dungeon"].includes(c.type)) continue;
+    for (const b of c.blocks) {
+      if (b.type !== "table" || !NAME_HEADERS.has(b.rows[0]?.[0]?.text?.trim())) continue;
+      const header = b.rows[0][0].text.trim();
+      for (const row of b.rows.slice(1)) add(header.toLowerCase(), row[0]?.text);
+    }
+  }
+  return cats;
 }
 
+/** Arcana names are English words (Strength, Death, Sun...): skipped at sentence start like the "ambiguous" list. */
+export function arcanaNames() {
+  return mineTerms().get("arcana") ?? new Set();
+}
+
+let extras = null;
 export function loadExtras() {
-  return existsSync(EXTRAS) ? JSON.parse(readFileSync(EXTRAS, "utf8")) : {};
+  return (extras ??= existsSync(EXTRAS) ? JSON.parse(readFileSync(EXTRAS, "utf8")) : {});
 }
 
 export function buildDictionary() {
@@ -29,14 +70,14 @@ export function buildDictionary() {
   const terms = new Set();
   for (const names of cats.values()) for (const n of names) terms.add(n);
   for (const [key, names] of Object.entries(extras)) {
-    if (!["deny", "_doc", "numbered"].includes(key)) for (const n of names) terms.add(n);
+    if (!["deny", "_doc", "numbered", "ambiguous", "italic_deny"].includes(key)) for (const n of names) terms.add(n);
   }
   for (const n of extras.deny ?? []) terms.delete(n);
   return [...terms].sort((a, b) => b.length - a.length || (a < b ? -1 : a > b ? 1 : 0));
 }
 
 export function ambiguousTerms() {
-  return new Set(loadExtras().ambiguous ?? []);
+  return new Set([...(loadExtras().ambiguous ?? []), ...arcanaNames()]);
 }
 
 // --- applying -------------------------------------------------------------------------
@@ -97,61 +138,24 @@ export function boldText(text, pat, ambiguous = ambiguousTerms()) {
   return parts.join("");
 }
 
-function walkRich(node, pat) {
-  if (typeof node === "string") return boldText(node, pat);
-  if (Array.isArray(node)) return node.map((n) => walkRich(n, pat));
-  if (node && typeof node === "object") {
-    const out = { ...node };
-    if ("text" in out) out.text = walkRich(out.text, pat);
-    if ("items" in out) out.items = walkRich(out.items, pat);
-    if ("children" in out) out.children = walkRich(out.children, pat);
-    return out;
-  }
-  return node;
-}
-
-function boldSection(guide, pat) {
-  const g = structuredClone(guide);
-  if (Array.isArray(g.objectives)) g.objectives = g.objectives.map((o) => boldText(o, pat));
-  if (typeof g.initial_setup?.note === "string") g.initial_setup.note = boldText(g.initial_setup.note, pat);
-  for (const step of g.steps ?? []) {
-    if (typeof step.description === "string") step.description = boldText(step.description, pat);
-    for (const note of step.notes ?? []) note.text = walkRich(note.text, pat);
-    const boss = step.boss;
-    if (boss && boss.strategy) boss.strategy = walkRich(boss.strategy, pat);
-  }
-  for (const boss of g.bosses ?? []) {
-    if (boss.strategy) boss.strategy = walkRich(boss.strategy, pat);
-  }
-  for (const callout of g.callouts ?? []) {
-    if (typeof callout.text === "string") callout.text = boldText(callout.text, pat);
-  }
-  return g;
-}
-
-function diffTerms(oldVal, newVal, found) {
-  if (typeof oldVal === "string" && typeof newVal === "string") {
-    const before = new Set([...oldVal.matchAll(/\*\*([^*]+)\*\*/g)].map((m) => m[1]));
-    for (const m of newVal.matchAll(/\*\*([^*]+)\*\*/g)) {
-      if (!before.has(m[1])) found.push(m[1]);
-    }
-  } else if (oldVal && typeof oldVal === "object" && newVal && typeof newVal === "object"
-             && !Array.isArray(oldVal) && !Array.isArray(newVal)) {
-    for (const k of Object.keys(oldVal)) diffTerms(oldVal[k], newVal[k], found);
-  } else if (Array.isArray(oldVal) && Array.isArray(newVal)) {
-    oldVal.forEach((o, i) => { if (i < newVal.length) diffTerms(o, newVal[i], found); });
-  }
+/** Bold unmarked occurrences in every prose string of a page; returns the newly bolded terms. */
+export function boldGuide(guide, pat, found = []) {
+  eachString(guide, (t, kind, _p, set) => {
+    if (kind !== "prose") return;
+    const n = boldText(t, pat);
+    if (n === t) return;
+    const spans = (s) => [...s.matchAll(/\*\*([^*]+)\*\*/g)].map((m) => m[1]);
+    const before = new Set(spans(t));
+    for (const term of spans(n)) if (!before.has(term)) found.push(term);
+    set(n);
+  });
+  return found;
 }
 
 /** Bolds terms in one structured file; returns the newly bolded terms (writes only when found). */
 export function boldFile(path, pat = compilePattern(buildDictionary()), write = true) {
   const data = JSON.parse(readFileSync(path, "utf8"));
-  const newGuide = boldSection(data.guide, pat);
-  const found = [];
-  diffTerms(data.guide, newGuide, found);
-  if (write && found.length) {
-    data.guide = newGuide;
-    writeFileSync(path, pyJson(data) + "\n", "utf8");
-  }
+  const found = boldGuide(data.guide, pat);
+  if (write && found.length) writeFileSync(path, pyJson(data) + "\n", "utf8");
   return found;
 }

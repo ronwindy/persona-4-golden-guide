@@ -15,7 +15,7 @@ import { mineTerms, loadExtras, buildDictionary, compilePattern, boldFile } from
 import { runFrontendAudit } from "./audit_frontend.mjs";
 import {
   runScaffold, runValidate, runLint, runQa, runVerdict, printSubagentPrompt, runFinalize,
-  runBuild, runCheck, printSectionStatus, resolveBacklog,
+  runBuild, runCheck, printSectionStatus, resolveBacklog, runEmphasis,
 } from "./pipeline.mjs";
 
 const HELP = `Guide conversion CLI
@@ -23,7 +23,7 @@ const HELP = `Guide conversion CLI
 Usage: node scripts/guide.mjs <command> [options]
 
 Commands:
-  check <id...> [--full] [--no-build]   Per-section gate: bold -> validate -> lint -> QA -> build -> status
+  check <id...> [--full] [--no-build]   Per-section gate: italic + bold -> validate -> lint -> QA -> build -> status
                                         (several ids build once at the end; --full adds the frontend audit)
   scaffold <id> [--force]               Generate a structured draft from the canonical source
   validate <id>                         Validate structured JSON against the schema
@@ -37,7 +37,8 @@ Commands:
   patch <id> [patch.json|-] [--rename OLD=NEW] [--dry-run] [--force]
                                         Merge a JSON patch into a structured section and re-validate
   bold <id> [--write]                   Bold terms in one section (dry run unless --write)
-  bold --all [--write]                  Bold terms in every walkthrough section
+  bold --all [--write]                  Bold terms in every structured section
+  emphasis <id>                         Apply italic dialogue + bold terms to one section (what check does first)
   bold --terms                          Print the bold-term dictionary by category
   status [--update] [--json]            Project status (--update rewrites STATUS.md)
   status <id>                           Status of one section
@@ -119,7 +120,7 @@ function cmdBold(positional, flags) {
   const pat = compilePattern(buildDictionary());
   let files;
   if (flags.all) {
-    files = getCanonicalManifest().sections.filter((sec) => isWalkthroughType(sectionType(sec))).map((sec) => getSectionPaths(sec).structuredPath).filter(existsSync);
+    files = getCanonicalManifest().sections.map((sec) => getSectionPaths(sec).structuredPath).filter(existsSync);
   } else {
     if (!positional.length) {
       console.log("[ERROR] 'bold' needs a section id, --all or --terms.");
@@ -212,6 +213,8 @@ export function main(argv) {
       return cmdPatch(positional, flags);
     case "bold":
       return cmdBold(positional, flags);
+    case "emphasis":
+      return runEmphasis(requireId(positional, command)) ? 0 : 1;
     case "status":
       return cmdStatus(positional, flags);
     default:

@@ -7,9 +7,15 @@ export interface NavRef {
   title?: string;
 }
 
+export type ListItem = string | { text: string; children: SubList };
+export interface SubList {
+  ordered: boolean;
+  items: ListItem[];
+}
+
 export type Block =
   | { type: 'p'; text: string }
-  | { type: 'list'; ordered: boolean; items: string[] }
+  | { type: 'list'; ordered: boolean; items: ListItem[] }
   | { type: 'callout'; kind: 'note' | 'warning' | 'discrepancy'; blocks: Block[] }
   | { type: 'table'; headers: string[] | null; rows: string[][] }
   | { type: 'info'; items: { label: string; value: string }[] }
@@ -74,16 +80,22 @@ function orderedBuilt(): Array<{ id: string; title: string; category: string }> 
     });
 }
 
-/** Sidebar data: built pages only, in source order, grouped by chapter. */
+/** Sidebar data: every indexed page in source order, grouped by chapter; unbuilt ones flagged. */
 export function getToc(): TocCategory[] {
+  const structured = new Map(getAllStructuredSections().map((s) => [s.id, s]));
+  const index: Array<{ id: string; title: string; category?: string }> = fs.existsSync(CANONICAL_INDEX)
+    ? JSON.parse(fs.readFileSync(CANONICAL_INDEX, 'utf-8')).sections_index ?? []
+    : [];
   const categories: TocCategory[] = [];
-  for (const e of orderedBuilt()) {
+  for (const e of index) {
+    const g = structured.get(e.id)?.data.guide;
+    const category = g?.category ?? e.category ?? 'Guide';
     let cat = categories[categories.length - 1];
-    if (!cat || cat.category !== e.category) {
-      cat = { category: e.category, entries: [] };
+    if (!cat || cat.category !== category) {
+      cat = { category, entries: [] };
       categories.push(cat);
     }
-    cat.entries.push({ id: e.id, title: e.title, has_structured: true });
+    cat.entries.push({ id: e.id, title: g?.title ?? e.title, has_structured: !!g });
   }
   return categories;
 }

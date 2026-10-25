@@ -1,5 +1,5 @@
 ---
-import { inline } from '../lib/text';
+import { inline, pageList } from '../lib/text';
 import { Info, TriangleAlert, GitCompareArrows } from '@lucide/astro';
 import type { Block } from '../lib/guideData';
 
@@ -17,10 +17,8 @@ const calloutLabel = { note: 'Note', warning: 'Warning', discrepancy: 'Source di
   switch (b.type) {
     case 'p':
       return <p set:html={inline(b.text)} />;
-    case 'list': {
-      const Tag = b.ordered ? 'ol' : 'ul';
-      return <Tag>{b.items.map((i) => <li set:html={inline(i)} />)}</Tag>;
-    }
+    case 'list':
+      return <Fragment set:html={pageList(b)} />;
     case 'callout': {
       const Icon = calloutIcon[b.kind];
       return (

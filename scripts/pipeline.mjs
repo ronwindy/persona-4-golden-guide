@@ -12,6 +12,8 @@ import { loadMerges, navigationProblems } from "../.claude/skills/qa/scripts/mer
 import { PROJECT } from "./project_config.mjs";
 import { getSectionPaths, getCanonicalManifest, sectionType, isWalkthroughType } from "./sections.mjs";
 import { scaffoldGuide } from "./p4g/scaffold.mjs";
+import { italicGuide, emphasisProblems } from "./emphasis.mjs";
+import { boldGuide, compilePattern, buildDictionary } from "./bold_terms.mjs";
 import { verifyPage as verifyGuide } from "./p4g/qa.mjs";
 import { validateFile, validateInstance, compileSchemaFile } from "../.claude/skills/guide-transformer/scripts/validate_guide.mjs";
 import { formatMarkdownReport } from "../.claude/skills/qa/scripts/verify_guide.mjs";
@@ -90,7 +92,19 @@ export function runValidate(sec) {
   return false;
 }
 
-/** Lint: navigation ids must exist in the canonical index. Warnings fail the run. */
+/** Emphasis pass: italic dialogue, then bold game terms. Writes the file only when something changed. */
+export function runEmphasis(sec, write = true) {
+  const { structuredPath } = getSectionPaths(sec);
+  if (!existsSync(structuredPath)) return true;
+  const data = JSON.parse(readFileSync(structuredPath, "utf8"));
+  const italics = italicGuide(data.guide);
+  const bolded = boldGuide(data.guide, compilePattern(buildDictionary()));
+  console.log(`\n--- Emphasis: ${sec.id} --- ${italics} dialogue span(s) italicised, ${bolded.length} term(s) bolded`);
+  if (write && (italics || bolded.length)) writeFileSync(structuredPath, pyJson(data) + "\n", "utf8");
+  return true;
+}
+
+/** Lint: navigation ids must exist in the canonical index; dialogue italic; no walls of prose. Warnings fail the run. */
 export function runLint(sec) {
   const { structuredPath } = getSectionPaths(sec);
   if (!existsSync(structuredPath)) {
@@ -104,6 +118,7 @@ export function runLint(sec) {
     const ref = guide.navigation?.[dir];
     if (ref && !known.has(ref.id)) warns.push(`navigation.${dir}: unknown id '${ref.id}'`);
   }
+  warns.push(...emphasisProblems(guide));
   console.log(`
 --- Lint: ${sec.id} --- ${warns.length} warning(s)`);
   for (const w of warns) console.log(`  [WARN] ${w}`);
@@ -350,9 +365,10 @@ export function resolveBacklog() {
   return verified;
 }
 
-/** Single per-section gate: validate -> lint -> QA -> build -> status. */
+/** Single per-section gate: emphasis -> validate -> lint -> QA -> build -> status. */
 export function runCheck(sec, build = true) {
   let ok;
+  runEmphasis(sec);
   if (!runValidate(sec)) {
     // QA would record a result against an invalid file, and the build is wasted.
     console.log("[SKIP] lint, QA and build skipped: fix schema validation first.");

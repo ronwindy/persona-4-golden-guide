@@ -77,7 +77,16 @@ The inherited schema (`docs/structured-schema.md`) assumes Shadow Hearts: `route
 | Metadata | Per CLAUDE.md section 8: `id`, `title`, `type`, `source`, `navigation` only |
 | Source object | `{game, author, version, url, source_file}`; version taken from the saved page, not guessed |
 
-Lists: prose with 3+ sentences or ~40+ words becomes a bullet list (one fact per item), per `guide-transformer`.
+### Inline emphasis and lists (decided with the user, 2026-10-25)
+
+Three text rules apply to every page. Markers in structured strings: `**bold**` and `*italic*`.
+
+| Rule | Decision |
+| :-- | :-- |
+| Bold game terms | `scripts/bold_terms.mjs` bolds names of items, places, people, skills, personas, enemies. The dictionary is **mined from canonical**: first-column names of the catalog / arcana / dungeon tables (Accessory, Armor, Weapon, Item, Seed, Bug, Fish, Gem, Material, Book, Costume, Skill, Persona, Enemy, Boss), plus arcana, social-link and dungeon page titles. `scripts/term_extras.json` adds what the source tables miss (`characters`, `locations`), `deny` removes false hits, `ambiguous` (and every arcana name) is skipped at sentence start. Table cells, headings and labels are never bolded. Bold also applies inside dialogue |
+| Italic dialogue | Every **straight-quoted span** (`"..."`) is spoken dialogue and is italic: `*"Sorry about that."*` (the quote marks are part of the italic run). The speaker label stays upright (bold if a known name). Unquoted narration and thoughts are not italic. Applies to prose and table cells (e.g. Costume Quote). Quotes that are not speech go in `italic_deny` in `term_extras.json` |
+| Multi-level lists | Prose of 3+ sentences or ~40+ words becomes a bullet list (numbered only if order matters), one fact per item. Sub-points nest: a list item may be `{ "text", "children": { "ordered", "items" } }` to any depth. Dialogue spans do not count towards the limit, so a long spoken line stays one italic line |
+| Enforcement | `check` first runs the italic and bold passes (`node scripts/guide.mjs emphasis <id>` alone), then lint **fails** on: dialogue left upright, unbalanced quotes, and prose over the list limit. Script QA compares words only, so markers and list nesting must never change wording or order |
 
 ## 6. UI blocks the source actually needs
 

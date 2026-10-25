@@ -61,11 +61,11 @@
               },
               {
                 "label": "Ultimate Persona",
-                "value": "Mada"
+                "value": "**Mada**"
               },
               {
                 "label": "Key Item",
-                "value": "Buddy's Bandage"
+                "value": "**Buddy's Bandage**"
               },
               {
                 "label": "Notes",
@@ -147,7 +147,7 @@
                 "title": "Rank 2",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"Sorry about that. You know me, I'm infamous around here.\"",
+                    "prompt": "**Yosuke**: *\"Sorry about that. You know me, I'm infamous around here.\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -169,7 +169,7 @@
                 "title": "Rank 3",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"Wait a minute... Am I starting to sound like Teddie?\"",
+                    "prompt": "**Yosuke**: *\"Wait a minute... Am I starting to sound like **Teddie**?\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -186,7 +186,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"Looks like someone got my address. I get a lot of spam.\"",
+                    "prompt": "**Yosuke**: *\"Looks like someone got my address. I get a lot of spam.\"*",
                     "options": [
                       {
                         "label": "Any option",
@@ -200,7 +200,7 @@
                 "title": "Rank 4",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"Phew, I'm beat... I'm not the complaints department...\"",
+                    "prompt": "**Yosuke**: *\"Phew, I'm beat... I'm not the complaints department...\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -217,7 +217,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"I have to do what I can...\"",
+                    "prompt": "**Yosuke**: *\"I have to do what I can...\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -239,7 +239,7 @@
                 "title": "Rank 5",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"So...? You keep the goods under your futon?\"",
+                    "prompt": "**Yosuke**: *\"So...? You keep the goods under your futon?\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -256,7 +256,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"So, you ever invited a girl in here?\"",
+                    "prompt": "**Yosuke**: *\"So, you ever invited a girl in here?\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -278,7 +278,7 @@
                 "title": "Rank 6",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"But hey, I'm glad you were there! Thanks.\"",
+                    "prompt": "**Yosuke**: *\"But hey, I'm glad you were there! Thanks.\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -295,7 +295,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"So... there's no need to bother with outsiders.\"",
+                    "prompt": "**Yosuke**: *\"So... there's no need to bother with outsiders.\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -334,7 +334,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"I just blurted out a buncha crap, huh?\"",
+                    "prompt": "**Yosuke**: *\"I just blurted out a buncha crap, huh?\"*",
                     "options": [
                       {
                         "label": "Any option",
@@ -348,7 +348,7 @@
                 "title": "Rank 8",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"But then...\"",
+                    "prompt": "**Yosuke**: *\"But then...\"*",
                     "options": [
                       {
                         "label": "Any option",
@@ -357,7 +357,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"I'm sorry... Saki-senpai. I'm sorry... MC.\"",
+                    "prompt": "**Yosuke**: *\"I'm sorry... Saki-senpai. I'm sorry... MC.\"*",
                     "options": [
                       {
                         "label": "Any option",
@@ -366,7 +366,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"MC... I think I'm all cried out...\"",
+                    "prompt": "**Yosuke**: *\"MC... I think I'm all cried out...\"*",
                     "options": [
                       {
                         "label": "Any option",
@@ -380,7 +380,7 @@
                 "title": "Rank 9",
                 "scenes": [
                   {
-                    "prompt": "Narrator: Yosuke is smiling sadly...",
+                    "prompt": "Narrator: **Yosuke** is smiling sadly...",
                     "options": [
                       {
                         "label": "Option A",
@@ -397,7 +397,7 @@
                     ]
                   },
                   {
-                    "prompt": "Yosuke: \"Just being born, living your life... Before you know it, you're already special to someone.\"",
+                    "prompt": "**Yosuke**: *\"Just being born, living your life... Before you know it, you're already special to someone.\"*",
                     "options": [
                       {
                         "label": "Option A",
@@ -419,7 +419,7 @@
                 "title": "Rank 10",
                 "scenes": [
                   {
-                    "prompt": "Yosuke: \"I like you for that, and I'm proud of you... But I guess I was jealous at the same time.\"",
+                    "prompt": "**Yosuke**: *\"I like you for that, and I'm proud of you... But I guess I was jealous at the same time.\"*",
                     "options": [
                       {
                         "label": "Any option",
@@ -428,7 +428,7 @@
                     ]
                   },
                   {
-                    "prompt": "Narrator: Will hitting Yosuke make you and him equal...?",
+                    "prompt": "Narrator: Will hitting **Yosuke** make you and him equal...?",
                     "options": [
                       {
                         "label": "Any option",

@@ -17,12 +17,20 @@ function canonicalWords(blocks, out = []) {
   return out;
 }
 
+/** List items are strings or { text, children } (sub-points); nesting only regroups, so words stay in reading order. */
+function listWords(l, out) {
+  for (const i of l.items) {
+    if (typeof i === "string") out.push(...words(i));
+    else { out.push(...words(i.text)); listWords(i.children, out); }
+  }
+}
+
 function structuredWords(guide) {
   const out = [];
   const blk = (b) => {
     switch (b.type) {
       case "p": out.push(...words(b.text)); break;
-      case "list": for (const i of b.items) out.push(...words(i)); break;
+      case "list": listWords(b, out); break;
       case "callout": b.blocks.forEach(blk); break;
       case "table": for (const r of [b.headers ?? [], ...b.rows]) for (const c of r) out.push(...words(c)); break;
       case "info": for (const i of b.items) out.push(...words(`${i.label}: ${i.value}`)); break;
