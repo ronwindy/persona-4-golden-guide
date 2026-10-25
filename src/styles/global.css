@@ -37,6 +37,7 @@
   --active-bg: #2a2a10;
 
   --say: #e8d9a0;
+  --emph: #9fe3ff;
 
   --font-body: 'Jost', system-ui, sans-serif;
   --font-sub: 'Sriracha', 'Jost', system-ui, sans-serif;
@@ -115,7 +116,7 @@ h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
 .content ol { list-style: decimal; }
 .content li { margin-bottom: 0.25rem; }
 .content strong { color: var(--accent); font-weight: 600; }
-.content em { font-style: italic; }
+.content em { font-style: italic; color: var(--emph); }
 .content em.say { font-family: var(--font-say); color: var(--say); font-style: normal; font-size: 1em; }
 .content li > ul, .content li > ol { margin: 0.25rem 0 0.25rem; }
 .content li > ul { list-style: circle; }
