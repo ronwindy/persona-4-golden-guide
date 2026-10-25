@@ -152,6 +152,21 @@ html[data-sidebar='collapsed'] .sidebar { display: none; }
 .sidebar-toggle:hover { background: var(--accent); color: var(--accent-ink); }
 html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-width) + 0.75rem); }
 
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  display: inline-flex;
+  padding: 0.5rem;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+  color: var(--accent);
+  cursor: pointer;
+}
+.back-to-top[hidden] { display: none; }
+.back-to-top:hover { background: var(--accent); color: var(--accent-ink); }
+
 /* Mobile header + drawer (below 1024px) */
 .mobile-header { display: none; }
 .drawer, .drawer-backdrop { display: none; }

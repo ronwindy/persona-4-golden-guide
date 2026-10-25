@@ -3,7 +3,7 @@ import '../styles/global.css';
 import project from '../../project.config.json';
 import SidebarNav from '../components/SidebarNav.astro';
 import PageToc from '../components/PageToc.astro';
-import { Menu, X, PanelLeft } from '@lucide/astro';
+import { Menu, X, PanelLeft, ArrowUp } from '@lucide/astro';
 import type { PageTocItem } from '../lib/guideData';
 
 interface Props {
@@ -94,9 +94,18 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
       </div>
     </div>
 
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top" hidden><ArrowUp size={20} aria-hidden="true" /></button>
+
     <script is:inline>
       (function () {
         var root = document.documentElement;
+        var topBtn = document.getElementById('back-to-top');
+        if (topBtn) {
+          var syncTop = function () { topBtn.hidden = window.scrollY < window.innerHeight; };
+          window.addEventListener('scroll', syncTop, { passive: true });
+          topBtn.addEventListener('click', function () { window.scrollTo({ top: 0 }); });
+          syncTop();
+        }
         var body = document.body;
         var toggle = document.getElementById('sidebar-toggle');
         if (toggle) {
