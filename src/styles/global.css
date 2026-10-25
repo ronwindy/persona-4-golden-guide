@@ -271,7 +271,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   color: var(--accent);
 }
 .nav-list ul, .page-toc ul { list-style: none; margin: 0; padding: 0; }
-.nav-list li a, .nav-list li span, .page-toc li a {
+.nav-list li > a, .nav-list li > span, .page-toc li a {
   display: block;
   padding: 0.3rem 0.5rem 0.3rem 1rem;
   text-decoration: none;
@@ -280,7 +280,11 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 }
 .nav-list li a:hover, .page-toc li a:hover { background: var(--active-bg); color: var(--accent); }
 .nav-list li a[aria-current='page'] { background: var(--accent); color: var(--accent-ink); font-weight: 600; border-left-color: var(--accent-ink); }
-.nav-list li span { color: var(--text-muted); opacity: 0.55; cursor: default; }
+.nav-list li > span { color: var(--text-muted); opacity: 0.55; cursor: default; }
+.nav-list li > a, .nav-list li > span { display: flex; align-items: center; gap: 0.5rem; }
+.nav-label { display: inline-flex; align-items: center; gap: 0.5rem; vertical-align: middle; }
+.nav-icon { flex: none; opacity: 0.6; }
+.nav-list li > a:hover .nav-icon, .nav-list summary .nav-icon, .nav-list li > a[aria-current='page'] .nav-icon { opacity: 1; }
 .nav-list details.nav-unbuilt summary { color: var(--text-muted); opacity: 0.55; }
 .page-toc-title { margin: 0 0 0.5rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
 .page-toc li a { font-size: 0.92rem; padding-left: 0.75rem; border-left-color: var(--border); }
