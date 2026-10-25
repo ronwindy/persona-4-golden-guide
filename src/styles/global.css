@@ -52,7 +52,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { font-size: 17px; color-scheme: dark; scroll-behavior: smooth; }
+html { font-size: 18px; color-scheme: dark; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
