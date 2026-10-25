@@ -105,9 +105,23 @@ h1, h2 {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
-h1, h2 { align-items: center; gap: 0.6rem; }
-h1 { font-size: 1.9rem; padding: 0.35rem 1.1rem; margin: 0.5rem 0 1.25rem; }
-h2 { font-size: 1.25rem; padding: 0.25rem 0.9rem; margin: 2rem 0 1rem; }
+h1, h2 { align-items: center; gap: 0.6rem; position: relative; }
+h1 { font-size: 1.9rem; padding: 0.35rem 1.1rem; margin: 0.5rem 0 1.75rem; }
+h2 { font-size: 1.25rem; padding: 0.25rem 0.9rem; margin: 2rem 0 1.5rem; }
+
+/* Full-width rule under h1/h2: inherits the slab's skew, thick bar over a hairline, both fading out to the right. */
+h1::after, h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.6rem);
+  width: 100cqw;
+  height: 6px;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--accent) 0, var(--accent) 35%, transparent 100%) top / 100% 3px no-repeat,
+    linear-gradient(90deg, rgb(255 230 0 / 0.55) 0, transparent 75%) bottom / 100% 1px no-repeat;
+}
 h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
 
 .content p { margin: 0 0 0.9rem; }
@@ -137,7 +151,7 @@ h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
 html[data-sidebar='collapsed'] .sidebar { display: none; }
 
 .content-col { flex: 1; min-width: 0; display: flex; gap: 2rem; padding: 1.5rem 2rem; justify-content: center; }
-.content { flex: 1; min-width: 0; max-width: var(--content-max); }
+.content { flex: 1; min-width: 0; max-width: var(--content-max); container-type: inline-size; }
 
 .page-toc {
   position: sticky;

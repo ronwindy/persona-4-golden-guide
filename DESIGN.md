@@ -8,6 +8,7 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 - **Fonts:** Jost (body), Archivo Black (h1/h2), Sriracha (slot labels and step titles, single weight), Kalam (spoken dialogue only), from Google Fonts.
 - **Inline marks:** `**bold**` = game terms, menu names, numbers. `*italic*` = editorial emphasis (key action phrase or whole sentence), ice blue `#9fe3ff` (`--emph`). `*"..."*` = spoken dialogue, rendered in Kalam (naturally slanted, so no synthetic italic), soft gold `#e8d9a0` (`--say`) (`em.say`).
 - **Headers:** h1/h2 are black text on a skewed yellow slab with a hard offset shadow. h3 is plain yellow.
+- **Header rule:** every h1/h2 has a full-content-width skewed rule below it: a 3px yellow bar fading to transparent over a 1px hairline (`::after`, width `100cqw` of `.content`).
 - **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
 - **Panels:** frosted dark glass on every panel (callouts, steps, tables, info lists, rank cards): `backdrop-filter` blur, ~55% dark tint, thin light edge with a top sheen, 10px radius. Tokens: `--glass-*`.
 - **Callouts:** louder than other panels. Every kind (note, warning, discrepancy, any future one) shares one red alert look: red-tinted glass, 1.5px red border with outer glow, and a solid red label strip across the top. The kind is shown only by icon and label text, so a new kind needs no new color.
