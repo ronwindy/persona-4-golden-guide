@@ -298,10 +298,10 @@ nav[aria-label='On this page'] li a[aria-current='location'] { background: var(-
   margin-bottom: 0.6rem;
 }
 .step-checkbox { flex: none; width: 1.25rem; height: 1.25rem; margin-top: 0.2rem; accent-color: var(--accent); }
-.step-body { min-width: 0; }
+.step-body { flex: 1; min-width: 0; }
 .step-body > :first-child { margin-top: 0; }
 .step-body > :last-child { margin-bottom: 0; }
-.step-title { display: flex; align-items: center; gap: 0.45rem; margin: 0 0 0.25rem; font-family: var(--font-sub); font-size: 1.15rem; font-weight: 400; }
+.step-title { display: flex; align-items: center; gap: 0.45rem; margin: 0 -1rem 0.6rem -3rem; padding: 0 1rem 0.4rem 3rem; pointer-events: none; background: linear-gradient(var(--border), var(--border)) no-repeat left bottom / 100% 1px; font-family: var(--font-sub); font-size: 1.15rem; font-weight: 400; }
 .step-title svg, .slot-label svg { flex: none; color: var(--accent); }
 .step-checkbox:checked + .step-body { color: var(--text-muted); text-decoration: line-through; }
 .slot-label { display: flex; align-items: center; gap: 0.5rem; margin: 1.25rem 0 0.5rem; font-family: var(--font-sub); font-size: 1.3rem; font-weight: 400; color: var(--accent); }
