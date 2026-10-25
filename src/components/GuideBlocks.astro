@@ -5,9 +5,11 @@ import type { Block } from '../lib/guideData';
 
 interface Props {
   blocks: Block[];
+  /** Prefix for saved checklist ticks, e.g. "<guide-id>/<section-id>". */
+  stepKey?: string;
 }
 
-const { blocks = [] } = Astro.props;
+const { blocks = [], stepKey = '' } = Astro.props;
 
 const calloutIcon = { note: Info, warning: TriangleAlert, discrepancy: GitCompareArrows } as const;
 const calloutLabel = { note: 'Note', warning: 'Warning', discrepancy: 'Source discrepancy' } as const;
@@ -52,6 +54,27 @@ const calloutLabel = { note: 'Note', warning: 'Warning', discrepancy: 'Source di
           ))}
         </dl>
       );
+    case 'slots':
+      return (
+        <div class="day-slots" data-day={stepKey}>
+          {b.slots.map((sl, li) => (
+            <section class="slot">
+              {sl.label && <h3 class="slot-label" set:html={inline(sl.label)} />}
+              <ol class="step-list">
+                {sl.steps.map((st, si) => (
+                  <li class="step">
+                    <input type="checkbox" class="step-checkbox day-step" data-key={`p4g-step-${stepKey}-${li}-${si}`} aria-label={`${sl.label ?? ''} ${st.title ?? 'Step'} done`.trim()} />
+                    <div class="step-body">
+                      {st.title && <h4 class="step-title" set:html={inline(st.title)} />}
+                      <Astro.self blocks={st.blocks} />
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ))}
+        </div>
+      );
     case 'ranks':
       return (
         <div class="rank-list">
@@ -76,3 +99,25 @@ const calloutLabel = { note: 'Note', warning: 'Warning', discrepancy: 'Source di
       );
   }
 })}
+
+<script>
+  // Day steps: ticks saved per step in localStorage (no account, no server); each day shows done/total.
+  document.querySelectorAll<HTMLElement>('.day-slots').forEach((day) => {
+    const boxes = [...day.querySelectorAll<HTMLInputElement>('.day-step')];
+    const heading = day.closest('section')?.querySelector('h2');
+    const badge = document.createElement('span');
+    badge.className = 'day-progress';
+    heading?.append(badge);
+    const update = () => { badge.textContent = `${boxes.filter((b) => b.checked).length}/${boxes.length}`; };
+    boxes.forEach((cb) => {
+      const key = cb.dataset.key;
+      if (!key) return;
+      try { cb.checked = localStorage.getItem(key) === 'true'; } catch {}
+      cb.addEventListener('change', () => {
+        try { localStorage.setItem(key, String(cb.checked)); } catch {}
+        update();
+      });
+    });
+    update();
+  });
+</script>

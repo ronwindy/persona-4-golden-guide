@@ -11,7 +11,9 @@ const escapeHtml = (s: string) =>
 
 /** **bold** -> <strong> (game terms), then *italic* -> <em> (spoken dialogue); bold may sit inside italic. */
 export function inline(text: string | null | undefined): string {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   return escapeHtml(text ?? '')
+    .replace(/\[([^\]]+)\]\(guide:([a-z0-9-]+)\)/g, `<a href="${base}/guide/$2">$1</a>`)
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>');
 }

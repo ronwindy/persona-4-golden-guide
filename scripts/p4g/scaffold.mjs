@@ -7,7 +7,9 @@ import { readFileSync } from "node:fs";
 
 export const slug = (s) => String(s).toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const lines = (s) => String(s).split("\n").map((l) => l.trim()).filter(Boolean);
-const mdOf = (b) => b.md ?? b.text ?? "";
+const SOURCE_LINK = /\]\(https:\/\/gamefaqs\.gamespot\.com\/vita\/641695-persona-4-golden\/faqs\/76145\/([a-z0-9-]+)\)/g;
+/** The source's links to its own sections become internal page links: [text](guide:<id>). */
+const mdOf = (b) => (b.md ?? b.text ?? "").replace(SOURCE_LINK, "](guide:$1)");
 
 /** A paragraph whose whole content is bold is a sub-heading in the source. */
 const headingText = (b) => {
@@ -98,9 +100,47 @@ function buildSection(sec, type) {
   return { id: sec.heading ? slug(sec.heading) : "intro", heading: sec.heading, blocks };
 }
 
+/** Time-of-day labels as the calendar source writes them (kept verbatim). */
+const TIME_SLOTS = new Set(["Early Morning", "Morning", "Daytime", "Lunchtime", "After School", "Afternoon", "Evening"]);
+/** "-----\n~April 11th~\n-----" is a day heading in the source. */
+const dayHeading = (b) => {
+  if (b.type !== "p") return null;
+  const m = /^-{5,}\n~([^~\n]+)~\n-{5,}$/.exec(b.text.trim());
+  return m ? m[1].trim() : null;
+};
+const isSlotLabel = (b) => b.type === "p" && TIME_SLOTS.has(b.text.trim());
+
+/** One day: time-slot groups (verbatim labels), each holding steps (one "-Label-" block = one step). */
+function slotsBlock(raw) {
+  const slots = [];
+  const slot = (label) => { slots.push({ label, steps: [] }); return slots[slots.length - 1]; };
+  for (const b of raw) {
+    if (isSlotLabel(b)) { slot(b.text.trim()); continue; }
+    const cur = slots[slots.length - 1] ?? slot(null);
+    const label = dashLabel(b);
+    if (label) { cur.steps.push({ title: label, blocks: [] }); continue; }
+    if (!cur.steps.length) cur.steps.push({ title: null, blocks: [] });
+    cur.steps[cur.steps.length - 1].blocks.push(plainBlock(b));
+  }
+  return { type: "slots", slots };
+}
+
+/** Calendar pages: preamble, then one section per day, then any closing section such as Monthly Progress. */
+function calendarSections(blocks) {
+  const out = [{ heading: null, id: "intro", day: false, raw: [] }];
+  for (const b of blocks) {
+    const h = dayHeading(b);
+    if (h) out.push({ heading: h, id: slug(h), day: !/progress/i.test(h), raw: [] });
+    else out[out.length - 1].raw.push(b);
+  }
+  return out
+    .filter((s) => s.heading || s.raw.length)
+    .map((s) => ({ id: s.id, heading: s.heading, blocks: s.day ? [slotsBlock(s.raw)] : s.raw.map(plainBlock) }));
+}
+
 export function scaffoldGuide(canonicalPath, ctx = {}) {
   const c = JSON.parse(readFileSync(canonicalPath, "utf8"));
-  const sections = splitSections(c.blocks).map((s) => buildSection(s, c.type));
+  const sections = c.type === "calendar" ? calendarSections(c.blocks) : splitSections(c.blocks).map((s) => buildSection(s, c.type));
   const ids = new Set();
   for (const s of sections) {
     if (ids.has(s.id)) throw new Error(`Duplicate section id '${s.id}'`);

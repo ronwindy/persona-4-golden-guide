@@ -28,6 +28,9 @@ export function eachString(guide, visit) {
           b.rows.forEach((r, ri) => r.forEach((c, ci) => visit(c, "cell", `${at}.rows[${ri}][${ci}]`, (v) => { b.rows[ri][ci] = v; })));
           break;
         case "info": b.items.forEach((it, k) => visit(it.value, "prose", `${at}.items[${k}].value`, (v) => { it.value = v; })); break;
+        case "slots":
+          b.slots.forEach((sl, li) => sl.steps.forEach((st, si) => blocks(st.blocks, `${at}.slots[${li}].steps[${si}].blocks`)));
+          break;
         case "ranks":
           b.ranks.forEach((r, ri) => r.scenes.forEach((s, si) => {
             const sp = `${at}.ranks[${ri}].scenes[${si}]`;
@@ -67,6 +70,7 @@ export function italicGuide(guide, deny = denySet()) {
 
 export const MAX_WORDS = 40;
 export const MAX_SENTENCES = 3;
+export const MIN_WORDS_FOR_SENTENCES = 12;
 
 const dialogueFree = (t) => t.replace(/\*?"[^"]*"\*?/g, " ").replace(/\*+/g, "");
 const sentenceCount = (t) => t.trim().split(/(?<=[.!?]["')\]]?)\s+(?=[A-Z"(])/).filter((s) => /\w/.test(s)).length;
@@ -84,7 +88,8 @@ export function emphasisProblems(guide, deny = denySet()) {
     const rest = dialogueFree(t);
     const words = rest.split(/\s+/).filter(Boolean).length;
     const sentences = sentenceCount(rest);
-    if (words >= MAX_WORDS || sentences >= MAX_SENTENCES) {
+    // Short exclamation banners ("NOTE! NOTE! NOTE!") are not prose: the sentence rule needs real length.
+    if (words >= MAX_WORDS || (sentences >= MAX_SENTENCES && words >= MIN_WORDS_FOR_SENTENCES)) {
       out.push(`${path}: ${words} words, ${sentences} sentence(s); break into a bullet/numbered list (children for sub-points)`);
     }
   });

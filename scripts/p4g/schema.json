@@ -58,8 +58,52 @@
         { "$ref": "#/$defs/callout" },
         { "$ref": "#/$defs/table" },
         { "$ref": "#/$defs/info" },
-        { "$ref": "#/$defs/ranks" }
+        { "$ref": "#/$defs/ranks" },
+        { "$ref": "#/$defs/slots" }
       ]
+    },
+    "slots": {
+      "type": "object",
+      "required": ["type", "slots"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "const": "slots" },
+        "slots": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["label", "steps"],
+            "additionalProperties": false,
+            "properties": {
+              "label": { "type": ["string", "null"] },
+              "steps": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": ["title", "blocks"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "title": { "type": ["string", "null"] },
+                    "blocks": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          { "$ref": "#/$defs/p" },
+                          { "$ref": "#/$defs/list" },
+                          { "$ref": "#/$defs/callout" },
+                          { "$ref": "#/$defs/table" }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
     "p": {
       "type": "object",

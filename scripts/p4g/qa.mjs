@@ -5,7 +5,7 @@
 // ignored; headings are compared as words too.
 
 const words = (s) =>
-  String(s ?? "").toLowerCase().replace(/\*\*/g, "").replace(/[^a-z0-9+?]+/g, " ").split(" ").filter(Boolean);
+  String(s ?? "").toLowerCase().replace(/\]\(guide:[a-z0-9-]+\)/g, "").replace(/\*\*/g, "").replace(/[^a-z0-9+?]+/g, " ").split(" ").filter(Boolean);
 
 function canonicalWords(blocks, out = []) {
   for (const b of blocks) {
@@ -40,6 +40,15 @@ function structuredWords(guide) {
           for (const s of r.scenes) {
             if (s.prompt) out.push(...words(s.prompt));
             for (const o of s.options) out.push(...words(`${o.label}: ${o.text}`));
+          }
+        }
+        break;
+      case "slots":
+        for (const sl of b.slots) {
+          if (sl.label) out.push(...words(sl.label));
+          for (const st of sl.steps) {
+            if (st.title) out.push(...words(st.title));
+            st.blocks.forEach(blk);
           }
         }
         break;

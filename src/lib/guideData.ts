@@ -19,6 +19,7 @@ export type Block =
   | { type: 'callout'; kind: 'note' | 'warning' | 'discrepancy'; blocks: Block[] }
   | { type: 'table'; headers: string[] | null; rows: string[][] }
   | { type: 'info'; items: { label: string; value: string }[] }
+  | { type: 'slots'; slots: { label: string | null; steps: { title: string | null; blocks: Block[] }[] }[] }
   | { type: 'ranks'; ranks: { title: string; scenes: { prompt?: string; options: { label: string; text: string }[] }[] }[] };
 
 export interface GuideSection {

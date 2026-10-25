@@ -36,7 +36,7 @@ const title = guide.title || 'Guide section';
     {(guide.sections ?? []).map((sec) => (
       <section id={sec.id}>
         {sec.heading && <h2>{sec.heading}</h2>}
-        <GuideBlocks blocks={sec.blocks} />
+        <GuideBlocks blocks={sec.blocks} stepKey={`${guide.id}-${sec.id}`} />
       </section>
     ))}
 

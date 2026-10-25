@@ -1,12 +1,13 @@
 # Persona 4 Golden Guide - Project Status
 
-> Last synced: `2026-10-21 21:59:38`
+> Last synced: `2026-10-25 11:49:44`
 
 ```text
-=== PROJECT STATUS (2026-10-21 21:59:38) ===
-Canonical 141/141 | Structured 1/141 | QA pass 1/141 (fail 0) | Web built 1/141
+=== PROJECT STATUS (2026-10-25 11:49:44) ===
+Canonical 141/141 | Structured 2/141 | QA pass 2/141 (fail 0) | Web built 2/141
 Next:
-  1. Structure walkthrough-objectives (Walkthrough Objectives) - next chronological
+  1. Structure walkthrough-objectives (Walkthrough Objectives) - sequence gap
+Sequence gaps: walkthrough-objectives, walkthrough-faq, walkthrough-important-notes, walkthrough-current-problems
 ```
 
 ## Section Matrix
@@ -35,7 +36,7 @@ Next:
 | `` | `walkthrough-faq` | Walkthrough FAQ | Walkthrough | NOT_STRUCTURED |
 | `` | `walkthrough-important-notes` | Important Notes | Walkthrough | NOT_STRUCTURED |
 | `` | `walkthrough-current-problems` | Current Problems | Walkthrough | NOT_STRUCTURED |
-| `` | `walkthrough-april` | April | Walkthrough | NOT_STRUCTURED |
+| `` | `walkthrough-april` | April | Walkthrough | WEB_BUILT |
 | `` | `walkthrough-may` | May | Walkthrough | NOT_STRUCTURED |
 | `` | `walkthrough-june` | June | Walkthrough | NOT_STRUCTURED |
 | `` | `walkthrough-july` | July | Walkthrough | NOT_STRUCTURED |

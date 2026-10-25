@@ -1,0 +1,22 @@
+{
+  "section_id": "walkthrough-april",
+  "verdict": "PASS_WITH_NOTES",
+  "structured_sha256": "cc5e0c6f2acb76cab4c59fbc261bdee59fa1c7707f6d92551da8194492a5bb76",
+  "spot_checked": [
+    "Full word-by-word sequence comparison of canonical text vs all structured strings (markdown and guide: links stripped): no added, dropped, reordered or altered words or numbers in any day",
+    "Per-day time-of-day labels and day headings (April 11th-30th) match canonical order",
+    "April 11th preamble NOTE (PS Vita difficulty) and IMPORTANT warnings kept as callouts",
+    "April 21st Lunchtime/Info block, April 27th long After School block, Monthly Progress tables",
+    "Social link options (e.g. Strength Rank 2 Option A, A) and trophies/advice lines"
+  ],
+  "findings": [
+    {
+      "severity": "low",
+      "category": "other",
+      "location": "april-21st slots[0]",
+      "canonical": "Lunchtime (time-of-day label before -Info-)",
+      "structured": "slot label null; step title null with paragraph **Lunchtime**, followed by step Info",
+      "issue": "The source label Lunchtime is rendered as a bold paragraph in an unlabelled slot instead of as the slot label. No content lost; presentation inconsistency only."
+    }
+  ]
+}
