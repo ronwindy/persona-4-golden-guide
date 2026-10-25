@@ -5,8 +5,8 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 ## Decided
 - **Theme:** P4 yellow & TV-world. Dark only.
 - **Palette:** dark warm base `#0d0d0d`, P4 yellow `#FFE600` accent, off-white text. Red = warnings, cyan = links/info.
-- **Fonts:** Jost (body), Archivo Black (headers), Caveat (spoken dialogue only), from Google Fonts.
-- **Inline marks:** `**bold**` = game terms, menu names, numbers. `*italic*` = editorial emphasis (key action phrase or whole sentence). `*"..."*` = spoken dialogue, rendered italic in Caveat (`em.say`).
+- **Fonts:** Jost (body), Archivo Black (headers), Kalam (spoken dialogue only), from Google Fonts.
+- **Inline marks:** `**bold**` = game terms, menu names, numbers. `*italic*` = editorial emphasis (key action phrase or whole sentence). `*"..."*` = spoken dialogue, rendered in Kalam (naturally slanted, so no synthetic italic), soft gold `#e8d9a0` (`--say`) (`em.say`).
 - **Headers:** h1/h2 are black text on a skewed yellow slab with a hard offset shadow. h3 is plain yellow.
 - **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
 - **Panels:** frosted dark glass on every panel (callouts, steps, tables, info lists, rank cards): `backdrop-filter` blur, ~55% dark tint, thin light edge with a top sheen, 10px radius. Tokens: `--glass-*`.
