@@ -11,8 +11,8 @@
     }
   },
   "walkthrough-april": {
-    "checked_at": "2026-10-25T12:25:34",
-    "content_hash": "0ab6c16d56fe2fe1",
+    "checked_at": "2026-10-25T12:55:47",
+    "content_hash": "dcc39c8e9d721ff5",
     "status": "PASS",
     "summary": {
       "critical": 0,

@@ -26,7 +26,16 @@ const dashLabel = (b) => {
 
 const isBoldCell = (c) => /^\*\*.+\*\*$/s.test((c.md ?? "").trim());
 
+/** A one-cell table whose text opens with "NOTE!" is a note callout in the source, not data. */
+function noteCell(b) {
+  if (b.rows.length !== 1 || b.rows[0].length !== 1) return null;
+  const m = /^\**NOTE!\**\s+(.+)$/s.exec((b.rows[0][0].md ?? b.rows[0][0].text ?? "").trim());
+  return m ? m[1].replace(/\s*\n\s*/g, " ") : null;
+}
+
 export function tableBlock(b) {
+  const note = noteCell(b);
+  if (note) return { type: "callout", kind: "note", blocks: [{ type: "p", text: "**NOTE!**" }, { type: "p", text: note }] };
   const rows = b.rows.map((r) => r.map((c) => c.text ?? ""));
   const firstBold = b.rows.length > 1 && b.rows[0].every(isBoldCell);
   return firstBold ? { type: "table", headers: rows[0], rows: rows.slice(1) } : { type: "table", headers: null, rows };

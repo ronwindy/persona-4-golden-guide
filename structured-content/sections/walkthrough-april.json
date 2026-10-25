@@ -60,12 +60,21 @@
             ]
           },
           {
-            "type": "table",
-            "headers": null,
-            "rows": [
-              [
-                "NOTE!\nIn every version except the PS Vita version, you can change the difficulty at any time and even customize the difficulty. Feel free to change difficulty settings as needed to complete dungeons in one day or to reduce the amount of time needed to grind for levels or money."
-              ]
+            "type": "callout",
+            "kind": "note",
+            "blocks": [
+              {
+                "type": "p",
+                "text": "**NOTE!**"
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  "In every version except the **PS Vita** version, you can change the difficulty at any time and even customize the difficulty.",
+                  "Feel free to change difficulty settings as needed to complete dungeons in one day or to reduce the amount of time needed to grind for levels or money."
+                ]
+              }
             ]
           }
         ]
