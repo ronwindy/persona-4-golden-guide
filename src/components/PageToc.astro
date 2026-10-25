@@ -18,3 +18,46 @@ const { sections = [] } = Astro.props;
     ))}
   </ul>
 </nav>
+
+<script>
+  // Scroll-spy: the current section is the last one whose top has passed 20% down the viewport.
+  const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('nav[aria-label="On this page"] a[href^="#"]'));
+  const targets = [...new Set(links.map((a) => a.getAttribute('href')!.slice(1)))]
+    .map((id) => document.getElementById(id))
+    .filter((el): el is HTMLElement => !!el);
+
+  let current = '';
+  const update = () => {
+    const line = window.innerHeight * 0.2;
+    let id = targets[0]?.id ?? '';
+    for (const el of targets) {
+      if (el.getBoundingClientRect().top <= line) id = el.id;
+      else break;
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) id = targets[targets.length - 1]?.id ?? id;
+    if (id === current) return;
+    current = id;
+    for (const a of links) {
+      const on = a.getAttribute('href') === `#${id}`;
+      if (on) a.setAttribute('aria-current', 'location');
+      else a.removeAttribute('aria-current');
+      const box = a.closest<HTMLElement>('.page-toc');
+      if (on && box && box.offsetParent) {
+        const top = a.offsetTop - box.offsetTop;
+        if (top < box.scrollTop || top + a.offsetHeight > box.scrollTop + box.clientHeight) box.scrollTop = top - box.clientHeight / 2;
+      }
+    }
+  };
+
+  if (targets.length) {
+    let queued = false;
+    const onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => { queued = false; update(); });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+  }
+</script>
