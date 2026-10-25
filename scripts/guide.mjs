@@ -9,29 +9,28 @@ import { readFileSync, existsSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { join } from "node:path";
 import { ROOT_DIR, computeProjectStatus, renderCompactSummary, writeStatusMarkdown, pyJson } from "./status.mjs";
-import { resolveSection, getSectionPaths, getCanonicalManifest, sectionType, isWalkthroughType } from "./sections.mjs";
+import { resolveSection, getSectionPaths, getCanonicalManifest } from "./sections.mjs";
 import { runPatch } from "./patch_section.mjs";
 import { mineTerms, loadExtras, buildDictionary, compilePattern, boldFile } from "./bold_terms.mjs";
 import { runFrontendAudit } from "./audit_frontend.mjs";
 import {
-  runScaffold, runValidate, runLint, runQa, runVerdict, printSubagentPrompt, runFinalize,
-  runBuild, runCheck, printSectionStatus, resolveBacklog, runEmphasis,
+  runScaffold, runValidate, runLint, runQa, runBuild, runCheck, printSectionStatus, resolveBacklog, runEmphasis,
 } from "./pipeline.mjs";
+import { runVerdict } from "./review_gate.mjs";
 
 const HELP = `Guide conversion CLI
 
 Usage: node scripts/guide.mjs <command> [options]
 
 Commands:
-  check <id...> [--full] [--no-build]   Per-section gate: italic + bold -> validate -> lint -> QA -> build -> status
-                                        (several ids build once at the end; --full adds the frontend audit)
+  check <id...> [--full]                Per-section gate: italic + bold -> validate -> lint -> script QA -> meaning review -> status
+                                        (--full also builds and runs the frontend audit)
+  build                                 Astro build (run it before a commit, or when you suspect a build error)
   scaffold <id> [--force]               Generate a structured draft from the canonical source
   validate <id>                         Validate structured JSON against the schema
   lint [<id>]                           Presentation lint (all sections when no id)
   qa <id>                               Run QA verification and record the result in qa-status.json
-  qa-prompt <id>                        Print the independent QA subagent prompt and verdict path
-  verdict <id> <file|->                 Validate and store the independent QA subagent verdict
-  finalize <id>                         Stage exactly this section's files (no commit)
+  verdict <id> <pass|file|->            Record the meaning-review verdict ('pass', or a verdict JSON with findings)
   backlog                               Run QA on every structured section without a current result
   frontend                              Run the frontend / UX audit
   patch <id> [patch.json|-] [--rename OLD=NEW] [--dry-run] [--force]
@@ -92,11 +91,8 @@ function cmdCheck(positional, flags) {
     process.exit(1);
   }
   const secs = resolveAll(positional);
-  const batch = secs.length > 1;
-  const build = !(flags.noBuild || batch);
-  let ok = secs.map((sec) => runCheck(sec, build)).every(Boolean);
-  if (batch && !flags.noBuild) ok = ok && runBuild(); // a build on top of failed sections is wasted
-  if (flags.full && ok) ok = runFrontendAudit(); // the audit reads the built HTML, so it runs last
+  let ok = secs.map((sec) => runCheck(sec)).every(Boolean);
+  if (flags.full && ok) ok = runBuild() && runFrontendAudit(); // the audit reads the built HTML, so it runs last
   return ok ? 0 : 1;
 }
 
@@ -192,18 +188,16 @@ export function main(argv) {
       return cmdLint(positional);
     case "qa":
       return runQa(requireId(positional, command)) ? 0 : 1;
-    case "qa-prompt":
-      return printSubagentPrompt(requireId(positional, command)) ? 0 : 1;
     case "verdict": {
       const sec = requireId(positional, command);
       if (!positional[1]) {
-        console.log("[ERROR] 'verdict' needs a verdict JSON file, or '-' for stdin.");
+        console.log("[ERROR] 'verdict' needs 'pass', a verdict JSON file, or '-' for stdin.");
         return 1;
       }
       return runVerdict(sec, positional[1], readStdin) ? 0 : 1;
     }
-    case "finalize":
-      return runFinalize(requireId(positional, command)) ? 0 : 1;
+    case "build":
+      return runBuild() ? 0 : 1;
     case "backlog":
       resolveBacklog();
       return 0;

@@ -2,9 +2,9 @@
 //
 // Every word of the canonical page (paragraphs, quotes, table cells, lists) must appear in the structured
 // page in the same order, and nothing may be added. Markdown marks, "-Label-" dashes and punctuation are
-// ignored; headings are compared as words too.
+// ignored; headings are compared as words too. Every divergence is listed (aligned word diff), not just the first.
 
-const words = (s) =>
+export const words = (s) =>
   String(s ?? "").toLowerCase().replace(/\]\(guide:[a-z0-9-]+\)/g, "").replace(/\*\*/g, "").replace(/[^a-z0-9+?]+/g, " ").split(" ").filter(Boolean);
 
 function canonicalWords(blocks, out = []) {
@@ -62,17 +62,55 @@ function structuredWords(guide) {
   return out;
 }
 
+/**
+ * Aligned word diff (LCS). Returns hunks { a0, a1, b0, b1 }: a[a0..a1) is missing from b, b[b0..b1) is extra.
+ * Common prefix/suffix are trimmed first; an oversized middle degrades to one hunk at the first divergence.
+ */
+export function diffWords(a, b) {
+  let lo = 0;
+  while (lo < a.length && lo < b.length && a[lo] === b[lo]) lo++;
+  let ea = a.length, eb = b.length;
+  while (ea > lo && eb > lo && a[ea - 1] === b[eb - 1]) { ea--; eb--; }
+  const n = ea - lo, m = eb - lo;
+  if (n === 0 && m === 0) return [];
+  if (n * m > 40e6) return [{ a0: lo, a1: lo + 1, b0: lo, b1: lo + 1 }];
+  const W = m + 1;
+  const dp = new (Math.min(n, m) < 65535 ? Uint16Array : Uint32Array)((n + 1) * W);
+  for (let i = n - 1; i >= 0; i--) {
+    for (let j = m - 1; j >= 0; j--) {
+      dp[i * W + j] = a[lo + i] === b[lo + j] ? dp[(i + 1) * W + j + 1] + 1 : Math.max(dp[(i + 1) * W + j], dp[i * W + j + 1]);
+    }
+  }
+  const hunks = [];
+  let i = 0, j = 0, cur = null;
+  const flush = () => { if (cur) { hunks.push(cur); cur = null; } };
+  while (i < n || j < m) {
+    if (i < n && j < m && a[lo + i] === b[lo + j]) { flush(); i++; j++; continue; }
+    cur ??= { a0: lo + i, a1: lo + i, b0: lo + j, b1: lo + j };
+    if (j >= m || (i < n && dp[(i + 1) * W + j] >= dp[i * W + j + 1])) { i++; cur.a1 = lo + i; }
+    else { j++; cur.b1 = lo + j; }
+  }
+  flush();
+  return hunks;
+}
+
 export function verifyPage(canonical, structured) {
   const src = canonicalWords(canonical.blocks);
   const gen = structuredWords(structured.guide);
   const findings = [];
-  const n = Math.max(src.length, gen.length);
-  for (let i = 0; i < n; i++) {
-    if (src[i] === gen[i]) continue;
-    const ctx = (a) => a.slice(Math.max(0, i - 4), i + 6).join(" ");
-    findings.push({ severity: "high", category: "fidelity", location: `word ${i}`, source: { text: ctx(src) }, generated: { text: ctx(gen) },
-      description: "First divergence between canonical and structured word order" });
-    break; // later words would all shift
+  const MAX_LISTED = 25;
+  const hunks = diffWords(src, gen);
+  const ctx = (a, i) => a.slice(Math.max(0, i - 4), i + 6).join(" ");
+  for (const h of hunks.slice(0, MAX_LISTED)) {
+    const gone = src.slice(h.a0, h.a1).join(" ");
+    const added = gen.slice(h.b0, h.b1).join(" ");
+    const what = [gone && `missing from structured: "${gone}"`, added && `added in structured: "${added}"`].filter(Boolean).join("; ");
+    findings.push({ severity: "high", category: "fidelity", location: `canonical word ${h.a0}`,
+      source: { text: ctx(src, h.a0) }, generated: { text: ctx(gen, h.b0) }, description: what });
+  }
+  if (hunks.length > MAX_LISTED) {
+    findings.push({ severity: "high", category: "fidelity", location: "further", source: { text: "" }, generated: { text: "" },
+      description: `${hunks.length - MAX_LISTED} more divergence(s) not listed; fix these and re-run` });
   }
   const g = structured.guide;
   if (g.id !== canonical.id) findings.push({ severity: "critical", category: "identity", location: "id", source: { text: canonical.id }, generated: { text: g.id }, description: "id differs" });
@@ -82,4 +120,40 @@ export function verifyPage(canonical, structured) {
   const summary = { critical: 0, high: 0, medium: 0, low: 0 };
   for (const f of findings) summary[f.severity]++;
   return { qa: { section_id: canonical.id, section_title: canonical.title, status: findings.length ? "FAIL" : "PASS", summary, findings }, words: { source: src.length, generated: gen.length } };
+}
+
+/** Formats a QA verification result as GitHub-flavored Markdown. */
+export function formatMarkdownReport(report) {
+  const qa = report.qa;
+  const statusIcon = qa.status === "PASS" ? "[PASS]" : (qa.status === "PASS WITH WARNINGS" ? "[PASS WITH WARNINGS]" : "[FAIL]");
+  const lines = [
+    `# QA Verification Report: ${qa.section_id ?? "Unknown"} - ${qa.section_title ?? ""}`,
+    `\n**Status:** ${statusIcon}\n`,
+    "## Summary",
+    `- **Critical:** ${qa.summary.critical}`,
+    `- **High:** ${qa.summary.high}`,
+    `- **Medium:** ${qa.summary.medium}`,
+    `- **Low:** ${qa.summary.low}\n`,
+  ];
+
+  if (qa.findings.length) {
+    lines.push("## Findings\n");
+    lines.push("| ID | Severity | Category | Location | Description | Owner |");
+    lines.push("|:---|:---|:---|:---|:---|:---|");
+    for (const f of qa.findings) {
+      lines.push(`| ${f.id} | **${f.severity.toUpperCase()}** | ${f.category} | \`${f.location}\` | ${f.description} | ${f.recommended_owner} |`);
+    }
+    lines.push("\n### Detailed Discrepancies\n");
+    for (const f of qa.findings) {
+      lines.push(`#### ${f.id} [${f.severity.toUpperCase()}] - ${f.category}`);
+      lines.push(`- **Location:** \`${f.location}\``);
+      lines.push(`- **Source:** \`${f.source.text}\``);
+      lines.push(`- **Generated:** \`${f.generated.text}\``);
+      lines.push(`- **Description:** ${f.description}`);
+      lines.push(`- **Recommended Owner:** \`${f.recommended_owner}\`\n`);
+    }
+  } else {
+    lines.push("**No discrepancies found! 100% source fidelity verified.**");
+  }
+  return lines.join("\n");
 }

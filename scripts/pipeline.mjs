@@ -1,23 +1,21 @@
-// pipeline.mjs - Per-section pipeline actions: scaffold, validate, lint, QA, verdict, finalize, check.
+// pipeline.mjs - Per-section pipeline actions: scaffold, validate, lint, QA, build, check.
 //
 // The CLI in guide.mjs parses arguments and calls these functions.
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, relative } from "node:path";
 import { spawnSync } from "node:child_process";
-import { createHash } from "node:crypto";
 import { ROOT_DIR, loadQaStatus, recordQaResult, auditSection, computeProjectStatus,
   renderCompactSummary, writeStatusMarkdown, pyJson, loadCanonicalIndex } from "./status.mjs";
-import { loadMerges, navigationProblems } from "../.claude/skills/qa/scripts/merges.mjs";
 import { PROJECT } from "./project_config.mjs";
-import { getSectionPaths, getCanonicalManifest, sectionType, isWalkthroughType } from "./sections.mjs";
+import { getSectionPaths, getCanonicalManifest } from "./sections.mjs";
+import { reviewGate } from "./review_gate.mjs";
 import { scaffoldGuide } from "./p4g/scaffold.mjs";
 import { iconNameFor } from "../src/lib/icon-rules.mjs";
 import { italicGuide, emphasisProblems } from "./emphasis.mjs";
 import { boldGuide, compilePattern, buildDictionary } from "./bold_terms.mjs";
-import { verifyPage as verifyGuide } from "./p4g/qa.mjs";
-import { validateFile, validateInstance, compileSchemaFile } from "./validate_guide.mjs";
-import { formatMarkdownReport } from "../.claude/skills/qa/scripts/verify_guide.mjs";
+import { verifyPage as verifyGuide, formatMarkdownReport } from "./p4g/qa.mjs";
+import { validateFile, compileSchemaFile } from "./validate_guide.mjs";
 
 const rel = (p) => relative(ROOT_DIR, p);
 const short = (text, limit = 90) => {
@@ -25,8 +23,6 @@ const short = (text, limit = 90) => {
   return s.length <= limit ? s : `${s.slice(0, limit - 3)}...`;
 };
 const schemaPath = join(ROOT_DIR, "scripts", "p4g", "schema.json");
-const verdictSchemaPath = join(ROOT_DIR, ".claude", "skills", "qa", "schemas", "qa-verdict.schema.json");
-const structuredSha = (path) => createHash("sha256").update(readFileSync(path)).digest("hex");
 
 /** Writes the full QA report to qa-reports/<id>.md (+ .json) and returns the markdown path. */
 function saveQaReport(sectionId, report) {
@@ -190,150 +186,6 @@ export function runBuild() {
   return true;
 }
 
-/** Warns when the stored subagent verdict no longer matches the structured file. */
-function staleVerdictNote(sec) {
-  const verdictPath = join(ROOT_DIR, "qa-reports", `${sec.id}.subagent.json`);
-  const { structuredPath } = getSectionPaths(sec);
-  if (!existsSync(verdictPath) || !existsSync(structuredPath)) return null;
-  let recorded;
-  try {
-    recorded = JSON.parse(readFileSync(verdictPath, "utf8")).structured_sha256;
-  } catch {
-    return null;
-  }
-  if (!recorded) {
-    return `[NOTE] ${sec.id}: stored subagent verdict has no content hash (recorded before hashing); ` +
-      "re-record with `verdict` to enable the stale check.";
-  }
-  if (recorded !== structuredSha(structuredPath)) {
-    return `[WARN] ${sec.id}: structured file changed after the subagent verdict; ` +
-      "re-run the independent QA subagent and record it with `verdict`.";
-  }
-  return null;
-}
-
-/** Validates the independent QA subagent's JSON verdict and stores it next to the QA report. */
-export function runVerdict(sec, verdictFile, readStdin) {
-  console.log(`\n--- Subagent QA Verdict: ${sec.id} ---`);
-  let verdict;
-  try {
-    const raw = verdictFile === "-" ? readStdin() : readFileSync(verdictFile, "utf8");
-    verdict = JSON.parse(raw.replace(/^﻿/, ""));
-  } catch (err) {
-    console.log(`[FAIL] Cannot read verdict JSON '${verdictFile}': ${err.message}`);
-    return false;
-  }
-  const errors = validateInstance(verdict, compileSchemaFile(verdictSchemaPath));
-  if (errors.length) {
-    console.log(`[FAIL] Verdict does not match qa-verdict.schema.json (${errors.length} error(s)):`);
-    for (const e of errors.slice(0, 10)) console.log(`  - ${e.path.join("/") || "<root>"}: ${e.message}`);
-    return false;
-  }
-  if (verdict.section_id !== sec.id) {
-    console.log(`[FAIL] Verdict is for '${verdict.section_id}', not '${sec.id}'`);
-    return false;
-  }
-  const outDir = join(ROOT_DIR, "qa-reports");
-  mkdirSync(outDir, { recursive: true });
-  const { structuredPath } = getSectionPaths(sec);
-  if (existsSync(structuredPath)) verdict.structured_sha256 = structuredSha(structuredPath); // stale check
-  writeFileSync(join(outDir, `${sec.id}.subagent.json`), pyJson(verdict) + "\n", "utf8");
-  const findings = verdict.findings ?? [];
-  console.log(`Verdict: [${verdict.verdict}] with ${findings.length} finding(s)`);
-  for (const f of findings) {
-    console.log(`  [${String(f.severity).toUpperCase()}] ${f.category} @ ${f.location}: ${f.issue}`);
-  }
-  console.log(`  Stored: qa-reports/${sec.id}.subagent.json`);
-  const draft = join(outDir, `${sec.id}.subagent-draft.json`);
-  if (existsSync(draft)) unlinkSync(draft); // the stored verdict supersedes the subagent's scratch file
-  return verdict.verdict !== "FAIL";
-}
-
-/** Walkthroughs need an independent QA subagent pass (manual step, see CLAUDE.md section 5). */
-function remindIndependentQa(sec) {
-  if (!isWalkthroughType(sectionType(sec))) return;
-  if (existsSync(join(ROOT_DIR, "qa-reports", `${sec.id}.subagent.json`))) {
-    const note = staleVerdictNote(sec);
-    if (note) console.log(`\n${note}`);
-    return; // verdict already stored via `verdict`
-  }
-  console.log(`\n[REMINDER] Independent QA subagent not run by the pipeline. For ${sec.id}, run ` +
-    `node scripts/guide.mjs qa-prompt ${sec.id}, give that prompt to a subagent, then store its ` +
-    `verdict with: node scripts/guide.mjs verdict ${sec.id} <file.json>`);
-}
-
-/** Prints the exact prompt for the independent QA subagent and the path it should write to. */
-/** Prompt lines describing merges that touch this section (empty when none). */
-function mergeNotes(sec) {
-  const notes = Object.entries(loadMerges(ROOT_DIR))
-    .filter(([from, m]) => from === sec.id || m.into === sec.id)
-    .map(([from, m]) => `\n  merge map: ${from} is folded into ${m.into} (${m.reason ?? "no reason recorded"}). ` +
-      `A navigation link to ${from} is correct when it points to ${m.into}; do not flag it.`);
-  return notes.join("");
-}
-
-export function printSubagentPrompt(sec) {
-  const { canonicalPath, structuredPath } = getSectionPaths(sec);
-  if (!existsSync(structuredPath)) {
-    console.log(`[FAIL] Structured file does not exist: ${structuredPath}`);
-    return false;
-  }
-  const verdictPath = join(ROOT_DIR, "qa-reports", `${sec.id}.subagent-draft.json`);
-  const posix = (p) => relative(ROOT_DIR, p).split(/[\\/]/).join("/");
-  console.log(`Use the \`qa\` skill. Independently review section ${sec.id} (${sec.title}).
-
-Compare the canonical source with the structured guide and judge whether the presentation changed
-while the source meaning stayed intact (names, numbers, conditions, warnings, choices, option points,
-items, ordering). Do not edit any file except the verdict.
-Not a finding: a section's heading location that is absent from \`route\` (side quests).${mergeNotes(sec)}
-
-  canonical:  ${posix(canonicalPath)}
-  structured: ${posix(structuredPath)}
-  script QA:  qa-reports/${sec.id}.md (for context only; do not trust it)
-
-Return ONLY a JSON verdict that validates against .claude/skills/qa/schemas/qa-verdict.schema.json and write it to
-${posix(verdictPath)}.
-
-Do NOT run \`guide.mjs verdict\` yourself: the caller records the verdict after reading it.
-(The caller stores it with: node scripts/guide.mjs verdict ${sec.id} ${posix(verdictPath)})`);
-  return true;
-}
-
-/** Stages exactly this section's files for one commit (never commits). */
-export function runFinalize(sec) {
-  const { structuredPath } = getSectionPaths(sec);
-  const sid = sec.id;
-  const verdictFile = join(ROOT_DIR, "qa-reports", `${sid}.subagent.json`);
-  const candidates = [structuredPath, join(ROOT_DIR, "qa-status.json"), join(ROOT_DIR, "STATUS.md"),
-    join(ROOT_DIR, "qa-reports", `${sid}.md`), join(ROOT_DIR, "qa-reports", `${sid}.json`), verdictFile];
-  console.log(`\n--- Finalize: ${sid} ---`);
-  if (!existsSync(structuredPath)) {
-    console.log(`[FAIL] Structured file does not exist: ${structuredPath}`);
-    return false;
-  }
-  if (isWalkthroughType(sectionType(sec)) && !existsSync(verdictFile)) {
-    console.log(`[FAIL] Independent QA verdict missing (qa-reports/${sid}.subagent.json); run \`verdict\` first.`);
-    return false;
-  }
-  const qa = auditSection(ROOT_DIR, sec, loadQaStatus(ROOT_DIR)).qa_status;
-  if (!String(qa).startsWith("PASS")) {
-    console.log(`[FAIL] Script QA is ${qa}; run \`check\` until it passes.`);
-    return false;
-  }
-  const note = staleVerdictNote(sec);
-  if (note) console.log(note);
-  const paths = candidates.filter(existsSync).map((p) => relative(ROOT_DIR, p).split(/[\\/]/).join("/"));
-  const result = spawnSync("git", ["add", "--", ...paths], { cwd: ROOT_DIR, encoding: "utf8" });
-  if (result.status !== 0) {
-    console.log(`[FAIL] git add failed: ${(result.stderr ?? "").trim()}`);
-    return false;
-  }
-  console.log("Staged:");
-  for (const p of paths) console.log(`  ${p}`);
-  console.log(`Suggested message: feat(guide): add ${sid} ${sec.title} structured section with QA verdict`);
-  return true;
-}
-
 export function updateProjectStatus() {
   console.log("\n--- Updating Project Status ---");
   const data = computeProjectStatus(ROOT_DIR);
@@ -380,19 +232,17 @@ export function resolveBacklog() {
   return verified;
 }
 
-/** Single per-section gate: emphasis -> validate -> lint -> QA -> build -> status. */
-export function runCheck(sec, build = true) {
+/** Single per-section gate: emphasis -> validate -> lint -> script QA -> meaning review -> status. */
+export function runCheck(sec) {
   let ok;
   runEmphasis(sec);
   if (!runValidate(sec)) {
-    // QA would record a result against an invalid file, and the build is wasted.
-    console.log("[SKIP] lint, QA and build skipped: fix schema validation first.");
+    console.log("[SKIP] lint and QA skipped: fix schema validation first.");
     ok = false;
   } else {
     ok = runLint(sec) && runQa(sec);
-    if (ok && build) ok = runBuild();
+    if (ok) reviewGate(sec);
   }
   updateProjectStatus(); // always: STATUS.md must reflect a failing QA too
-  if (ok) remindIndependentQa(sec);
   return ok;
 }

@@ -64,11 +64,6 @@ export function sectionType(sec) {
   return sec?.type ?? "walkthrough";
 }
 
-/** Calendar pages get an independent QA subagent pass (long prose, order carries meaning). */
-export function isWalkthroughType(type) {
-  return ["calendar"].includes(type);
-}
-
 /** Reference path: canonical text carried over verbatim, no LLM prose. */
 export function isReferenceType(type) {
   return type === "reference";

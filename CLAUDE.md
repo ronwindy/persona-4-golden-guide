@@ -59,9 +59,9 @@ Behavior comes from the section `type` (canonical manifest entry), never from th
 
 ```bash
 node scripts/guide.mjs scaffold <id>
-node scripts/guide.mjs check <id>      # bold + validate + lint + QA + build + status
+node scripts/guide.mjs check <id>      # bold + validate + lint + script QA + review triggers + status (no build)
 ```
-- Walkthrough-type sections: scaffold → refine (patch) → `check` → independent QA subagent (`qa-prompt <id>`, then `verdict <id> <file.json>`) → `finalize <id>` (stages, no commit).
+- Every non-reference section: scaffold → refine (patch) → `check`. If `check` prints a review packet (a risky restructure: condition split, callout, table, grouping), review it in-session and run `verdict <id> pass` (or a verdict file); no flags means no review. No subagent, no staging command: the user decides commits. Run `node scripts/guide.mjs build` only before a commit or on a suspected build error (see the `qa` skill).
 - Reference-type sections: deterministic scaffold only, no LLM prose; `check`.
 - Edit structured files with `node scripts/guide.mjs patch <id> <patch.json>` (write the patch with the Write tool, not a shell heredoc). Schema: `scripts/p4g/schema.json`; layout decisions in `docs/p4g-spec.md` §5.
 - Choice outcomes: set `outcome` only when the source states it; otherwise omit.
