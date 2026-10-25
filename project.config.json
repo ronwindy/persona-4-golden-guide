@@ -4,7 +4,7 @@
   "site": "https://ronwindy.github.io",
   "base": "/persona-4-golden-guide",
   "canonicalIndexFile": "persona-4-golden-guide.canonical.json",
-  "termExtrasFile": "scripts/term_extras.json",
+  "termExtrasFile": "scripts/emphasis/term_extras.json",
   "statusTitle": "Persona 4 Golden Guide - Project Status",
   "pageTitleSuffix": "Persona 4 Golden Guide",
   "pageDescriptionPrefix": "Persona 4 Golden Guide",

@@ -1,6 +1,6 @@
 // import_source.mjs - Imports the saved GameFAQs HTML into canonical-sources/ (verbatim, no interpretation).
 //
-// Usage: node scripts/import_source.mjs [--dry-run]
+// Usage: node scripts/import/import_source.mjs [--dry-run]
 //
 // The saved page holds every chapter twice: once as a chapter view (h2, then all its h3 sections) and then
 // section by section (h2 + one h3). The section-by-section copies are the canonical text; the chapter views are
@@ -10,9 +10,9 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "parse5";
-import { PROJECT } from "./project_config.mjs";
+import { PROJECT } from "../lib/project_config.mjs";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const RAW_DIR = join(ROOT, "raw-sources");
 const OUT_DIR = join(ROOT, "canonical-sources");
 const SOURCE_URL = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/76145";

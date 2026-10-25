@@ -1,6 +1,6 @@
 // validate_guide.mjs - JSON Schema validation for structured guide JSON (Ajv, 2020-12).
 //
-// The pipeline compiles scripts/p4g/schema.json with compileSchemaFile() and passes the validator in.
+// The pipeline compiles scripts/content/schema.json with compileSchemaFile() and passes the validator in.
 
 import { readFileSync, existsSync } from "node:fs";
 import Ajv2020 from "ajv/dist/2020.js";

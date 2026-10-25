@@ -6,10 +6,10 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadMerges } from "../.claude/skills/qa/scripts/merges.mjs";
+import { loadMerges } from "../../.claude/skills/qa/scripts/merges.mjs";
 import { PROJECT } from "./project_config.mjs";
 
-export const ROOT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+export const ROOT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const QA_STATUS_FILE = "qa-status.json";
 
 /** JSON in the shape Python's json.dumps(indent=2) produces; sortKeys/ensureAscii mirror its flags. */

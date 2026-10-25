@@ -17,7 +17,7 @@ Status: **draft, decided with the user (grill-me session, 2026-10-21); source im
 
 Layout of the saved page (`div#faqwrap`, flat children): every chapter appears **twice**, as a chapter view (`h2` + all its `h3` sections) and then as one `h2` + `h3` copy per section. The per-section copies are canonical; the importer compares each with its chapter-view copy (all 144 identical). The saved ToC lists only 20 sections for Persona Compendium, Social Links and Activities although the page has 27, 23 and 23; page headings are the authority and their anchors are derived from the heading.
 
-Extraction rules used by `scripts/import_source.mjs`: `<h2>` = chapter, `<h3>` = section, `<h4>` only 5 (centered, likely cover/credit text), `<blockquote>` and one-cell `ffaq` tables = NOTE/warning boxes, `<strong>` lines = sub-headings or labels, `-Label-` lines = inline sub-headings, `~April 11th~` between dashed lines = day heading.
+Extraction rules used by `scripts/import/import_source.mjs`: `<h2>` = chapter, `<h3>` = section, `<h4>` only 5 (centered, likely cover/credit text), `<blockquote>` and one-cell `ffaq` tables = NOTE/warning boxes, `<strong>` lines = sub-headings or labels, `-Label-` lines = inline sub-headings, `~April 11th~` between dashed lines = day heading.
 
 ## 2. Scope and section ids
 
@@ -83,7 +83,7 @@ Three text rules apply to every page. Markers in structured strings: `**bold**` 
 
 | Rule | Decision |
 | :-- | :-- |
-| Bold game terms | `scripts/bold_terms.mjs` bolds names of items, places, people, skills, personas, enemies. The dictionary is **mined from canonical**: first-column names of the catalog / arcana / dungeon tables (Accessory, Armor, Weapon, Item, Seed, Bug, Fish, Gem, Material, Book, Costume, Skill, Persona, Enemy, Boss), plus arcana, social-link and dungeon page titles. `scripts/term_extras.json` adds what the source tables miss (`characters`, `locations`), `deny` removes false hits, `ambiguous` (and every arcana name) is skipped at sentence start. Table cells, headings and labels are never bolded. Bold also applies inside dialogue |
+| Bold game terms | `scripts/emphasis/bold_terms.mjs` bolds names of items, places, people, skills, personas, enemies. The dictionary is **mined from canonical**: first-column names of the catalog / arcana / dungeon tables (Accessory, Armor, Weapon, Item, Seed, Bug, Fish, Gem, Material, Book, Costume, Skill, Persona, Enemy, Boss), plus arcana, social-link and dungeon page titles. `scripts/emphasis/term_extras.json` adds what the source tables miss (`characters`, `locations`), `deny` removes false hits, `ambiguous` (and every arcana name) is skipped at sentence start. Table cells, headings and labels are never bolded. Bold also applies inside dialogue |
 | Italic dialogue | Every **straight-quoted span** (`"..."`) is spoken dialogue and is italic: `*"Sorry about that."*` (the quote marks are part of the italic run). The speaker label stays upright (bold if a known name). Unquoted narration and thoughts are not italic. Applies to prose and table cells (e.g. Costume Quote). Quotes that are not speech go in `italic_deny` in `term_extras.json` |
 | Editorial italic | Taught by the user (2026-10-25): italicize the short phrase that carries the stakes, condition or warning (`*at any time*`, `*don't matter*`, `*certain responses*`, `*choosing a response to give*`), not the whole sentence. Meta asides by the author may be italic as a whole line (`*I will make sure to make note of them when they happen.*`). Plain instruction lines (e.g. "Feel free to change difficulty settings...") stay unmarked. Added by hand, never by script |
 | Multi-level lists | Prose of 3+ sentences or ~40+ words becomes a bullet list (numbered only if order matters), one fact per item. Sub-points nest: a list item may be `{ "text", "children": { "ordered", "items" } }` to any depth. Dialogue spans do not count towards the limit, so a long spoken line stays one italic line |
@@ -115,7 +115,7 @@ Proposed (user asked me to suggest; not yet confirmed): **Walkthrough April** (`
 ## 9. Next steps
 
 1. User reviews this spec.
-2. ~~Adapt `source-importer`, write the parser, import to `canonical-sources/`~~ **Done** (`node scripts/import_source.mjs`; 141 sections, word count check against the raw page matches).
-3. ~~Revise the schema and `guide-transformer` for the page types above~~ **Done** (`scripts/p4g/schema.json`; dead Shadow Hearts files removed).
+2. ~~Adapt `source-importer`, write the parser, import to `canonical-sources/`~~ **Done** (`node scripts/import/import_source.mjs`; 141 sections, word count check against the raw page matches).
+3. ~~Revise the schema and `guide-transformer` for the page types above~~ **Done** (`scripts/content/schema.json`; dead Shadow Hearts files removed).
 4. Pilot 3 sections: `scaffold`, `check`, QA.
 5. Review bottlenecks, then write the P4G `convert-section` skill.

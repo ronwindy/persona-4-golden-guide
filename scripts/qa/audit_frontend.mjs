@@ -5,7 +5,7 @@
 
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
-import { ROOT_DIR } from "./status.mjs";
+import { ROOT_DIR } from "../lib/status.mjs";
 
 const SRC_DIR = join(ROOT_DIR, "src");
 const DIST_DIR = join(ROOT_DIR, "dist");

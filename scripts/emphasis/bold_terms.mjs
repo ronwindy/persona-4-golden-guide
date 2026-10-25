@@ -1,13 +1,13 @@
 // bold_terms.mjs - Bold important game terms (**term**) in the prose of structured sections.
 //
-// Dictionary = names mined from the canonical catalogs (see mineTerms) + hand-listed names in scripts/term_extras.json
+// Dictionary = names mined from the canonical catalogs (see mineTerms) + hand-listed names in scripts/emphasis/term_extras.json
 // (characters, locations, deny list). Only prose strings are touched (not table cells, headings or labels).
 
 import { readFileSync, existsSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
-import { ROOT_DIR } from "./status.mjs";
-import { PROJECT } from "./project_config.mjs";
-import { pyJson } from "./status.mjs";
+import { ROOT_DIR } from "../lib/status.mjs";
+import { PROJECT } from "../lib/project_config.mjs";
+import { pyJson } from "../lib/status.mjs";
 import { eachString } from "./emphasis.mjs";
 
 const EXTRAS = join(ROOT_DIR, PROJECT.termExtrasFile);

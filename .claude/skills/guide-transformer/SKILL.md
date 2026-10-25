@@ -6,7 +6,7 @@ description: >-
 
 # Guide Transformer
 
-Owns `structured-content/sections/*.json`. Source of truth for facts: `canonical-sources/sections/*.json`. Valid page types and blocks are whatever [`scripts/p4g/schema.json`](../../../scripts/p4g/schema.json) defines; per-type layout decisions are in [`docs/p4g-spec.md`](../../../docs/p4g-spec.md) §5. Ask before adding a page type or block. For a format example, open a finished page in `structured-content/sections/`.
+Owns `structured-content/sections/*.json`. Source of truth for facts: `canonical-sources/sections/*.json`. Valid page types and blocks are whatever [`scripts/content/schema.json`](../../../scripts/content/schema.json) defines; per-type layout decisions are in [`docs/p4g-spec.md`](../../../docs/p4g-spec.md) §5. Ask before adding a page type or block. For a format example, open a finished page in `structured-content/sections/`.
 
 - **Transform presentation, not knowledge** (CLAUDE.md §2). Never invent, rename, renumber or silently resolve contradictions; flag them.
 - **Page `type`** comes from the canonical manifest, never from the id. Metadata follows CLAUDE.md §8.

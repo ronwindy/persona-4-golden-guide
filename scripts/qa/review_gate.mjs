@@ -1,15 +1,15 @@
 // review_gate.mjs - Meaning-review gate and verdict recording.
 //
 // Script QA proves the words and their order. This gate finds restructures that could shift meaning
-// (see p4g/review.mjs), prints a compact packet when there are any, and stores the reviewer's verdict.
+// (see review.mjs), prints a compact packet when there are any, and stores the reviewer's verdict.
 // The verdict is tied to the structured file and to the flag set, so any later edit makes it stale.
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
-import { ROOT_DIR, pyJson } from "./status.mjs";
-import { getSectionPaths, sectionType, isReferenceType } from "./sections.mjs";
-import { reviewFlags, formatPacket } from "./p4g/review.mjs";
+import { ROOT_DIR, pyJson } from "../lib/status.mjs";
+import { getSectionPaths, sectionType, isReferenceType } from "../lib/sections.mjs";
+import { reviewFlags, formatPacket } from "./review.mjs";
 import { validateInstance, compileSchemaFile } from "./validate_guide.mjs";
 
 const verdictSchemaPath = join(ROOT_DIR, ".claude", "skills", "qa", "schemas", "qa-verdict.schema.json");

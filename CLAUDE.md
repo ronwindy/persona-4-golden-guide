@@ -22,7 +22,7 @@ Allowed: restructure, reorder for readability (never where order carries gamepla
 
 List rule: prose with 3+ sentences or ~40+ words becomes a bullet list (numbered only if order matters); one fact/action per item, no changes to names/numbers/conditions (details in `guide-transformer`).
 
-Inline emphasis (automatic in `check`, rules in `docs/p4g-spec.md` §5): game terms are `**bold**` (dictionary mined from canonical + `scripts/term_extras.json`); every quoted spoken line is `*"italic"*`; long prose becomes nested lists (lint fails otherwise).
+Inline emphasis (automatic in `check`, rules in `docs/p4g-spec.md` §5): game terms are `**bold**` (dictionary mined from canonical + `scripts/emphasis/term_extras.json`); every quoted spoken line is `*"italic"*`; long prose becomes nested lists (lint fails otherwise).
 
 Forbidden: inventing or guessing facts, adding outside/model knowledge, renaming items/characters/locations/enemies, changing numbers or requirements, silently resolving contradictions. If the source is ambiguous or contradictory, **preserve and flag it**. Extra research only if explicitly requested, and kept visibly separate.
 
@@ -63,7 +63,7 @@ node scripts/guide.mjs check <id>      # bold + validate + lint + script QA + re
 ```
 - Every non-reference section: scaffold → refine (patch) → `check`. If `check` prints a review packet (a risky restructure: condition split, callout, table, grouping), review it in-session and run `verdict <id> pass` (or a verdict file); no flags means no review. No subagent, no staging command: the user decides commits. Run `node scripts/guide.mjs build` only before a commit or on a suspected build error (see the `qa` skill).
 - Reference-type sections: deterministic scaffold only, no LLM prose; `check`.
-- Edit structured files with `node scripts/guide.mjs patch <id> <patch.json>` (write the patch with the Write tool, not a shell heredoc). Schema: `scripts/p4g/schema.json`; layout decisions in `docs/p4g-spec.md` §5.
+- Edit structured files with `node scripts/guide.mjs patch <id> <patch.json>` (write the patch with the Write tool, not a shell heredoc). Schema: `scripts/content/schema.json`; layout decisions in `docs/p4g-spec.md` §5.
 - Choice outcomes: set `outcome` only when the source states it; otherwise omit.
 - The `convert-section` skill was removed (it described Shadow Hearts specifics); write a P4G one after the pilot.
 

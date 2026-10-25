@@ -8,15 +8,15 @@
 import { readFileSync, existsSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { join } from "node:path";
-import { ROOT_DIR, computeProjectStatus, renderCompactSummary, writeStatusMarkdown, pyJson } from "./status.mjs";
-import { resolveSection, getSectionPaths, getCanonicalManifest } from "./sections.mjs";
-import { runPatch } from "./patch_section.mjs";
-import { mineTerms, loadExtras, buildDictionary, compilePattern, boldFile } from "./bold_terms.mjs";
-import { runFrontendAudit } from "./audit_frontend.mjs";
+import { ROOT_DIR, computeProjectStatus, renderCompactSummary, writeStatusMarkdown, pyJson } from "./lib/status.mjs";
+import { resolveSection, getSectionPaths, getCanonicalManifest } from "./lib/sections.mjs";
+import { runPatch } from "./content/patch_section.mjs";
+import { mineTerms, loadExtras, buildDictionary, compilePattern, boldFile } from "./emphasis/bold_terms.mjs";
+import { runFrontendAudit } from "./qa/audit_frontend.mjs";
 import {
   runScaffold, runValidate, runLint, runQa, runBuild, runCheck, printSectionStatus, resolveBacklog, runEmphasis,
 } from "./pipeline.mjs";
-import { runVerdict } from "./review_gate.mjs";
+import { runVerdict } from "./qa/review_gate.mjs";
 
 const HELP = `Guide conversion CLI
 

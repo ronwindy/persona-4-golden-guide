@@ -2,7 +2,7 @@
 //
 // Bold terms live in bold_terms.mjs. Markup in structured strings: **bold** for game terms, *italic* for spoken
 // dialogue. A spoken line is any straight-quoted span ("..."); the quote marks are part of the italic run.
-// Quotes that are not speech go in scripts/term_extras.json under "italic_deny" (exact text between the quotes).
+// Quotes that are not speech go in scripts/emphasis/term_extras.json under "italic_deny" (exact text between the quotes).
 
 import { loadExtras } from "./bold_terms.mjs";
 

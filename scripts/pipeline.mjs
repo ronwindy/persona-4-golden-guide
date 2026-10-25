@@ -6,23 +6,23 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, relative } from "node:path";
 import { spawnSync } from "node:child_process";
 import { ROOT_DIR, loadQaStatus, recordQaResult, auditSection, computeProjectStatus,
-  renderCompactSummary, writeStatusMarkdown, pyJson, loadCanonicalIndex } from "./status.mjs";
-import { PROJECT } from "./project_config.mjs";
-import { getSectionPaths, getCanonicalManifest } from "./sections.mjs";
-import { reviewGate } from "./review_gate.mjs";
-import { scaffoldGuide } from "./p4g/scaffold.mjs";
+  renderCompactSummary, writeStatusMarkdown, pyJson, loadCanonicalIndex } from "./lib/status.mjs";
+import { PROJECT } from "./lib/project_config.mjs";
+import { getSectionPaths, getCanonicalManifest } from "./lib/sections.mjs";
+import { reviewGate } from "./qa/review_gate.mjs";
+import { scaffoldGuide } from "./content/scaffold.mjs";
 import { iconNameFor } from "../src/lib/icon-rules.mjs";
-import { italicGuide, emphasisProblems } from "./emphasis.mjs";
-import { boldGuide, compilePattern, buildDictionary } from "./bold_terms.mjs";
-import { verifyPage as verifyGuide, formatMarkdownReport } from "./p4g/qa.mjs";
-import { validateFile, compileSchemaFile } from "./validate_guide.mjs";
+import { italicGuide, emphasisProblems } from "./emphasis/emphasis.mjs";
+import { boldGuide, compilePattern, buildDictionary } from "./emphasis/bold_terms.mjs";
+import { verifyPage as verifyGuide, formatMarkdownReport } from "./qa/qa.mjs";
+import { validateFile, compileSchemaFile } from "./qa/validate_guide.mjs";
 
 const rel = (p) => relative(ROOT_DIR, p);
 const short = (text, limit = 90) => {
   const s = String(text ?? "").split(/\s+/).filter(Boolean).join(" ");
   return s.length <= limit ? s : `${s.slice(0, limit - 3)}...`;
 };
-const schemaPath = join(ROOT_DIR, "scripts", "p4g", "schema.json");
+const schemaPath = join(ROOT_DIR, "scripts", "content", "schema.json");
 
 /** Writes the full QA report to qa-reports/<id>.md (+ .json) and returns the markdown path. */
 function saveQaReport(sectionId, report) {

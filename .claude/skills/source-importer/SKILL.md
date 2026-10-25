@@ -6,7 +6,7 @@ description: >-
 
 # Source Importer (runbook)
 
-Run `node scripts/import_source.mjs` (add `--dry-run` to only print the report). It parses the saved HTML with parse5 and rewrites `canonical-sources/` completely.
+Run `node scripts/import/import_source.mjs` (add `--dry-run` to only print the report). It parses the saved HTML with parse5 and rewrites `canonical-sources/` completely.
 
 How the saved page is laid out (`div#faqwrap`, flat children): each chapter appears twice, as a chapter view (h2 + all its h3 sections) and then as one `h2`+`h3` copy per section. The per-section copies are the canonical text; the importer compares each against its chapter-view copy and reports any difference. The saved ToC is shorter than the page for 3 chapters, so page headings are the authority and missing anchors are derived from the heading.
 

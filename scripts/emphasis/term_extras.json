@@ -1,0 +1,8 @@
+{
+  "_doc": "Manual additions for scripts/emphasis/bold_terms.mjs and scripts/emphasis/emphasis.mjs. Mined from canonical (items, skills, personas, enemies, arcana, social-link and dungeon names); 'characters'/'locations' extend that dictionary; 'deny' removes names that are too generic; 'ambiguous' names are English words and are skipped at sentence start (arcana names are always ambiguous). 'numbered' names also match an optional ' No. <digits>' suffix. 'italic_deny' lists quoted text (exact text between the quotes) that is NOT speech and must stay upright.",
+  "characters": ["Yosuke", "Chie", "Yukiko", "Kanji", "Naoto", "Nanako", "Ryotaro", "Dojima", "Adachi", "Rise"],
+  "locations": [],
+  "deny": [],
+  "ambiguous": ["Rise"],
+  "italic_deny": []
+}

@@ -27,13 +27,13 @@ node scripts/guide.mjs build                   # Astro build: only before a comm
 node scripts/guide.mjs check <id> --full       # also build + frontend audit
 ```
 
-## 2. Script QA (`scripts/p4g/qa.mjs`)
+## 2. Script QA (`scripts/qa/qa.mjs`)
 
 Every word of the canonical blocks (paragraphs, quotes, table cells, lists) must appear in the structured page in the same order, with nothing added. Markdown marks, `-Label-` dashes and punctuation are ignored; headings count as words. A word diff lists **every** divergence (missing / added / changed words, with context) in one run. `id`, `title` and `type` must equal the canonical values.
 
 A PASS proves the words. It does not prove that a restructure kept the meaning.
 
-## 3. Meaning review (`scripts/p4g/review.mjs`, `scripts/review_gate.mjs`)
+## 3. Meaning review (`scripts/qa/review.mjs`, `scripts/qa/review_gate.mjs`)
 
 `check` flags only the restructures that can shift meaning while the words stay identical:
 
