@@ -63,7 +63,7 @@ node scripts/guide.mjs check <id>      # bold + validate + lint + QA + build + s
 ```
 - Walkthrough-type sections: scaffold → refine (patch) → `check` → independent QA subagent (`qa-prompt <id>`, then `verdict <id> <file.json>`) → `finalize <id>` (stages, no commit).
 - Reference-type sections: deterministic scaffold only, no LLM prose; `check`.
-- Edit structured files with `node scripts/guide.mjs patch <id> <patch.json>` (write the patch with the Write tool, not a shell heredoc). Schema reference: [`docs/structured-schema.md`](docs/structured-schema.md), inherited from earlier projects and to be revised in the spec.
+- Edit structured files with `node scripts/guide.mjs patch <id> <patch.json>` (write the patch with the Write tool, not a shell heredoc). Schema: `scripts/p4g/schema.json`; layout decisions in `docs/p4g-spec.md` §5.
 - Choice outcomes: set `outcome` only when the source states it; otherwise omit.
 - The `convert-section` skill was removed (it described Shadow Hearts specifics); write a P4G one after the pilot.
 

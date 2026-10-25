@@ -1,6 +1,6 @@
 # Persona 4 Golden Guide: Spec
 
-Status: **draft, decided with the user (grill-me session, 2026-10-21); source imported (141 canonical sections)**. Items marked **OPEN** need a decision or the pilot's evidence. Supersedes the inherited `docs/structured-schema.md` wherever they differ.
+Status: **draft, decided with the user (grill-me session, 2026-10-21); source imported (141 canonical sections)**. Items marked **OPEN** need a decision or the pilot's evidence.
 
 ## 1. Source inventory
 
@@ -60,7 +60,7 @@ Types are assigned by `sectionType()` in the importer and are provisional until 
 
 ## 5. Schema deltas vs the inherited schema
 
-The inherited schema (`docs/structured-schema.md`) assumes Shadow Hearts: `route`, `bosses`, `shops`, `items_summary`, `[W-x-xx]` codes, ASCII `preformatted` blocks. P4G changes:
+The inherited Shadow Hearts schema (since removed) assumed: `route`, `bosses`, `shops`, `items_summary`, `[W-x-xx]` codes, ASCII `preformatted` blocks. P4G changes:
 
 | Concern | Decision |
 | :-- | :-- |
@@ -116,6 +116,6 @@ Proposed (user asked me to suggest; not yet confirmed): **Walkthrough April** (`
 
 1. User reviews this spec.
 2. ~~Adapt `source-importer`, write the parser, import to `canonical-sources/`~~ **Done** (`node scripts/import_source.mjs`; 141 sections, word count check against the raw page matches).
-3. Revise the schema and `guide-transformer` for the page types above.
+3. ~~Revise the schema and `guide-transformer` for the page types above~~ **Done** (`scripts/p4g/schema.json`; dead Shadow Hearts files removed).
 4. Pilot 3 sections: `scaffold`, `check`, QA.
 5. Review bottlenecks, then write the P4G `convert-section` skill.

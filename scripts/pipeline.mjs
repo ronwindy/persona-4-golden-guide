@@ -16,7 +16,7 @@ import { iconNameFor } from "../src/lib/icon-rules.mjs";
 import { italicGuide, emphasisProblems } from "./emphasis.mjs";
 import { boldGuide, compilePattern, buildDictionary } from "./bold_terms.mjs";
 import { verifyPage as verifyGuide } from "./p4g/qa.mjs";
-import { validateFile, validateInstance, compileSchemaFile } from "../.claude/skills/guide-transformer/scripts/validate_guide.mjs";
+import { validateFile, validateInstance, compileSchemaFile } from "./validate_guide.mjs";
 import { formatMarkdownReport } from "../.claude/skills/qa/scripts/verify_guide.mjs";
 
 const rel = (p) => relative(ROOT_DIR, p);

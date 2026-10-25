@@ -14,7 +14,6 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { flattenGuide } from "../../guide-transformer/scripts/richtext.mjs";
 import { checkTextFidelity } from "./text_fidelity.mjs";
 import { loadMerges, expectedNavId } from "./merges.mjs";
 
@@ -40,7 +39,7 @@ const rowKey = (rows) => JSON.stringify(rows);
 
 /** Verifies that a structured guide accurately and faithfully preserves canonical source knowledge. */
 export function verifyGuide(canonical, structured, root = ROOT_DIR) {
-  const guide = flattenGuide(structured.guide ?? {}); // block-array rich text -> markdown-lite
+  const guide = structured.guide ?? {};
   const findings = [];
 
   const addFinding = (severity, category, location, srcText, genText, desc, owner = "Guide Transformer") => {

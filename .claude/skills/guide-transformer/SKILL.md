@@ -1,22 +1,20 @@
 ---
 name: guide-transformer
 description: >-
-  Transforms a canonical source guide artifact into structured, player-friendly guide content (objectives, routes, ordered step checklists, missable warnings, items, and rewards) while preserving factual meaning and game terminology. Use this skill when structuring, reorganizing, or preparing raw game guide content for static site presentation.
+  Turns a canonical Persona 4 Golden source section into structured guide JSON while preserving the source's facts, wording and order. Use when scaffolding, refining or patching structured-content/sections/*.json.
 ---
 
 # Guide Transformer
 
-Owns `structured-content/sections/*.json`. The working procedure and conventions live in the `convert-section` skill; this file holds the invariants only.
+Owns `structured-content/sections/*.json`. Source of truth for facts: `canonical-sources/sections/*.json`. Valid page types and blocks are whatever [`scripts/p4g/schema.json`](../../../scripts/p4g/schema.json) defines; per-type layout decisions are in [`docs/p4g-spec.md`](../../../docs/p4g-spec.md) §5. Ask before adding a page type or block. For a format example, open a finished page in `structured-content/sections/`.
 
-- **Transform presentation, not knowledge.** Everything stays grounded in the canonical source (`canonical-sources/sections/*.json`).
-- **Allowed:** group narrative into chronological steps; extract objectives, routes and checklists; categorize notes (`tip` / `warning` / `tutorial`); link markers to steps; highlight entities; place boss battles in the step where they occur; turn dense prose into lists.
-- **List rule:** prose with 3+ sentences or ~40+ words becomes a list (numbered only when order matters); one fact per item; never alter names, numbers, conditions or order that carries gameplay meaning. Do not list-ify short prose, table cells or plain-string fields. Nest sub-points as `{ "text", "children": { "ordered", "items" } }` list items. `check` fails the page (lint) while a prose string is still over the limit; dialogue spans do not count.
-- **Bold terms:** do not hand-bold; `check` runs `scripts/bold_terms.mjs`, whose dictionary is mined from canonical plus `scripts/term_extras.json` (add missing names there, `deny` false hits).
-- **Italic dialogue:** every straight-quoted spoken line is italic, `*"..."*`, applied by `check` (`scripts/emphasis.mjs`); keep the source's quote marks and never merge or split quoted spans. Quotes that are not speech go in `italic_deny` in `term_extras.json`.
-- **Forbidden:** inventing facts or outside knowledge; silently resolving source contradictions or errors; renaming characters, items, enemies, locations, mechanics; altering numbers; hoisting spoilers into headers.
-- **Choices:** `choices[].option` verbatim; set `outcome` only when the source states it.
+- **Transform presentation, not knowledge** (CLAUDE.md §2). Never invent, rename, renumber or silently resolve contradictions; flag them.
+- **Page `type`** comes from the canonical manifest, never from the id. Metadata follows CLAUDE.md §8.
+- **Order is source order.** Reorder only where the order carries no gameplay meaning.
+- **Callouts:** the kind is taken from the source's own wording, nothing else.
+- **Choices and options:** copy verbatim; set `outcome` only when the source states it.
 - **Source shouting** becomes bold normal case, never UPPERCASE.
-- Step `type` is one of: `story`, `exploration`, `battle`, `boss`, `loot`, `puzzle`, `shop`, `dialogue`, `navigation`, `quest`, `preparation`, `misc`.
-- Reference/appendix sections (`a-*`): scaffold in reference mode, no refinement; run `node scripts/guide.mjs check <id>` and stop.
+- **Text markup** (long prose to nested lists, bold terms, italic dialogue) is spec §5 "Inline emphasis and lists". Bold and dialogue italics are applied by `check`; do not hand-bold. Editorial italics are added by hand.
+- **Reference-type pages:** deterministic scaffold only, no refinement; run `check` and stop.
 
-Schema: `docs/structured-schema.md`. Format example: [example-walkthrough.json](references/example-walkthrough.json).
+Workflow commands: CLAUDE.md §7 (`scaffold`, `patch`, `check`).
