@@ -5,7 +5,7 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 ## Decided
 - **Theme:** P4 yellow & TV-world. Dark only.
 - **Palette:** dark warm base `#0d0d0d`, P4 yellow `#FFE600` accent, off-white text. Red = warnings, cyan = links/info.
-- **Fonts:** Jost (body), Archivo Black (h1/h2), Sriracha (slot labels and step titles, single weight), from Google Fonts.
+- **Fonts:** Jost (body), Dela Gothic One (h1/h2/h3, sidebar drawer head), Sriracha (slot labels and step titles, single weight), from Google Fonts.
 - **Headers:** h1/h2 are black text on a skewed yellow slab with a hard offset shadow. h3 is plain yellow.
 - **Header rule:** every h1/h2 has a full-content-width skewed rule below it: a 3px yellow bar fading to transparent over a 1px hairline (`::after`, width `100cqw` of `.content`).
 - **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
