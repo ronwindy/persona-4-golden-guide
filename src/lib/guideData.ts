@@ -37,6 +37,14 @@ export function tagCallouts(html: string): string {
   });
 }
 
+/** Marks "----<br>~April 11th~<br>----" day dividers so CSS can style them as headings. Text is untouched. */
+export function tagDateMarkers(html: string): string {
+  return html.replace(
+    /<p>(-{4,}<br>)(~[^~<]+~)(<br>-{4,})<\/p>/g,
+    '<p class="date-marker">$1<span class="date-marker-text">$2</span>$3</p>',
+  );
+}
+
 /** Sidebar data: pages grouped by consecutive category. */
 export function getToc(): TocCategory[] {
   const categories: TocCategory[] = [];

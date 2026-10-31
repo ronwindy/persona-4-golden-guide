@@ -411,6 +411,22 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .guide-body .callout-high > p:first-child > strong { font-size: 1.1rem; }
 .guide-body .callout-spoiler { --callout: #ff9a1f; }
 
+/* Day dividers (class added at render time by tagDateMarkers): dashes hidden, date shown as a heading. */
+.guide-body .date-marker {
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--accent);
+  font-size: 0;
+  line-height: 0;
+}
+.guide-body .date-marker-text {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 1.7rem;
+  line-height: 1.15;
+  color: var(--accent);
+}
+
 /* Frosted-glass table panels; tables scroll sideways inside their wrapper on narrow screens. */
 .table-wrap {
   margin: 0 0 1.25rem;
