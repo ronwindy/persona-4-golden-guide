@@ -30,7 +30,7 @@
   --skew: -8deg;
   --sidebar-width: 18rem;
   --content-max: 48rem;
-  --header-height: 3.5rem;
+  --header-height: 4rem;
   --gap: 1rem;
 }
 
@@ -212,13 +212,14 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
     position: sticky;
     top: 0;
     z-index: 30;
-    height: var(--header-height);
-    padding: 0 1rem;
+    min-height: var(--header-height);
+    padding: 0.5rem 1rem;
     border-bottom: 3px solid var(--accent);
     background: var(--surface);
     font-family: var(--font-head);
   }
-  .mobile-header a { color: var(--accent); text-decoration: none; }
+  .mobile-header a { display: flex; align-items: center; color: var(--accent); text-decoration: none; }
+  .mobile-header .logo-sm { height: 2.75rem; }
   .drawer-backdrop { position: fixed; inset: 0; z-index: 40; background: rgba(0, 0, 0, 0.65); }
   .drawer {
     position: fixed;
