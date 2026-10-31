@@ -214,13 +214,43 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
     z-index: 30;
     min-height: var(--header-height);
     padding: 0.5rem 1rem;
-    border-bottom: 3px solid var(--accent);
-    background: var(--surface);
+    padding-bottom: 0.9rem;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 85% 50%, rgb(255 230 0 / 0.3), transparent 60%),
+      radial-gradient(rgb(255 230 0 / 0.16) 1.2px, transparent 1.6px) 0 0 / 9px 9px,
+      var(--bg);
     font-family: var(--font-head);
   }
+  /* slanted yellow slab along the bottom edge, same as the sidebar title */
+  .mobile-header::after {
+    content: '';
+    position: absolute;
+    left: -10%;
+    right: -10%;
+    bottom: 0;
+    height: 0.5rem;
+    background: var(--accent);
+    transform: skewY(-2deg);
+    transform-origin: left bottom;
+    box-shadow: 0 -0.2rem 0 #000;
+  }
   .mobile-header a { display: flex; align-items: center; color: var(--accent); text-decoration: none; }
-  .mobile-header .logo-sm { height: 2.75rem; }
-  .mobile-header > a { margin-left: auto; }
+  .mobile-header .logo-sm { height: 2.75rem; filter: drop-shadow(0 3px 6px rgb(0 0 0 / 0.8)); transition: transform 0.2s; }
+  .mobile-header > a:active .logo-sm { transform: scale(1.06) rotate(-2deg); }
+  .mobile-header > a { margin-left: auto; position: relative; z-index: 1; }
+  .mobile-header .icon-btn {
+    position: relative;
+    z-index: 1;
+    padding: 0.4rem 0.9rem;
+    border: 0;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-family: var(--font-head);
+    transform: skewX(-8deg);
+    box-shadow: 0.25rem 0.25rem 0 #000;
+  }
+  .mobile-header .icon-btn:active { transform: skewX(-8deg) translate(0.15rem, 0.15rem); box-shadow: 0.1rem 0.1rem 0 #000; }
   .drawer-backdrop { position: fixed; inset: 0; z-index: 40; background: rgba(0, 0, 0, 0.65); }
   .drawer {
     position: fixed;
