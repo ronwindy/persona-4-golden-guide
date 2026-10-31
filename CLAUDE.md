@@ -17,6 +17,9 @@ Priority: source fidelity > user requirements > usability > visual polish.
   - `extract`: finds the guide body (`extract.bodyId`), drops the site TOC, splits at `chapterTag`/`sectionTag` into one verbatim HTML file per page, retargets GameFAQs section links to local pages, writes `docs/extract-report.md`.
   - The saved GameFAQs page repeats each chapter (full-chapter copy, then one block per section). `extract` keeps one copy and **refuses to continue unless the dropped copy matches the kept one word for word**.
   - `verify`: re-reads the raw source and the generated pages independently; fails on any word difference, any gap in the ledger, or a duplicate that does not match. Prints the word accounting.
+    - Checks: (1) the ledger in `src/data/manifest.json` covers every top-level body node once, in order; (2) each page's words equal the source words of its range; (3) each dropped duplicate's words equal the kept copy's; (4) kept + duplicate + dropped words = total body words.
+- Pages: one per `sectionTag` (h3) section, grouped under its `chapterTag` (h2) chapter; chapter text before its first h3 becomes an "Overview" page when it has words. Ids are the slug of chapter + section title. Page markup is the source markup, except tables get `div.table-wrap` and GameFAQs section links point to local pages. Everything outside the body (site header/footer, ads) is dropped and listed in `docs/extract-report.md`.
+- New game: save the HTML, adjust `project.config.json` (`game`, `slug`, `site`, `base`, `extract`), run `npm run sync`.
 - Generated `src/data/` is committed (CI has no raw source). Never hand-edit it.
 - Build: `cmd /c npm run build` (avoids PowerShell ExecutionPolicy errors). Ad-hoc JavaScript: temp `.mjs` file, not long `node -e`.
 
