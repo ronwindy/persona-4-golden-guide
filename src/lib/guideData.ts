@@ -25,6 +25,18 @@ export function getPageHtml(id: string): string {
   return fs.readFileSync(path.join(DATA_DIR, 'pages', `${id}.html`), 'utf-8');
 }
 
+/** Adds a severity class to each callout blockquote, chosen from its bold heading. Text is untouched. */
+export function tagCallouts(html: string): string {
+  return html.replace(/<blockquote>(?=<p><strong>\s*([^<]*))/g, (_m, heading: string) => {
+    const h = heading.trim().toUpperCase();
+    const level = h.startsWith('HIGHLY IMPORTANT') ? 'high'
+      : h.startsWith('IMPORTANT') || h.startsWith('WARNING') ? 'alert'
+      : h.includes('SPOILERS') ? 'spoiler'
+      : '';
+    return level ? `<blockquote class="callout callout-${level}">` : '<blockquote>';
+  });
+}
+
 /** Sidebar data: pages grouped by consecutive category. */
 export function getToc(): TocCategory[] {
   const categories: TocCategory[] = [];

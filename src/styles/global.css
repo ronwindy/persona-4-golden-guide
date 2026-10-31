@@ -383,6 +383,34 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .guide-body blockquote { margin: 0 0 1rem; padding: 0.6rem 1rem; border-left: 4px solid var(--accent); background: var(--glass-bg); }
 .guide-body blockquote > :last-child { margin-bottom: 0; }
 
+/* Severity callouts (class added at render time by tagCallouts): red glass panels. */
+.guide-body .callout {
+  --callout: var(--warn);
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--callout) 55%, transparent);
+  border-left: 6px solid var(--callout);
+  border-radius: var(--glass-radius);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--callout) 22%, transparent), color-mix(in srgb, var(--callout) 6%, transparent)),
+    var(--glass-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--callout) 25%, transparent);
+}
+.guide-body .callout > p:first-child > strong { color: var(--callout); letter-spacing: 0.02em; }
+.guide-body .callout-high {
+  border-width: 2px;
+  border-left-width: 8px;
+  padding: 1.25rem 1.5rem;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--callout) 34%, transparent), color-mix(in srgb, var(--callout) 10%, transparent)),
+    var(--glass-bg);
+  box-shadow: 0 0 28px color-mix(in srgb, var(--callout) 40%, transparent);
+}
+.guide-body .callout-high > p:first-child > strong { font-size: 1.1rem; }
+.guide-body .callout-spoiler { --callout: #ff9a1f; }
+
 /* Frosted-glass table panels; tables scroll sideways inside their wrapper on narrow screens. */
 .table-wrap {
   margin: 0 0 1.25rem;

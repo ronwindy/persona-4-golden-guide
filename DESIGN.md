@@ -10,6 +10,7 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 - **Header rule:** every h1/h2 has a full-content-width skewed rule below it: a 3px yellow bar fading to transparent over a 1px hairline (`::after`, width `100cqw` of `.content`).
 - **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
 - **Panels:** frosted dark glass on every panel (tables): `backdrop-filter` blur, ~55% dark tint, thin light edge with a top sheen, 10px radius. Tokens: `--glass-*`.
+- **Callouts:** blockquotes are tiered by their bold heading (class added at render time by `tagCallouts`, text untouched). HIGHLY IMPORTANT = strongest red glass panel with glow; IMPORTANT / WARNING = red glass panel; SPOILERS = same panel in amber; NOTE and others keep the plain yellow-bar quote.
 - **Tokens:** all values live in the `:root` tokens of `src/styles/global.css`. Tailwind utilities read them via `@theme inline`.
 - **Stack:** Tailwind 4 (`@tailwindcss/vite`) and `@lucide/astro` icons.
 - **Layout:** left sidebar and content on desktop, drawer on mobile. The source's own markup is restyled only (h2 = small slab label, h3 = page title, tables in glass panels).
