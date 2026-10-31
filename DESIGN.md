@@ -11,8 +11,8 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 - **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
 - **Panels:** frosted dark glass on every panel (tables): `backdrop-filter` blur, ~55% dark tint, thin light edge with a top sheen, 10px radius. Tokens: `--glass-*`.
 - **Callouts:** blockquotes are tiered by their bold heading (class added at render time by `tagCallouts`, text untouched). HIGHLY IMPORTANT = strongest red glass panel with glow; IMPORTANT / WARNING = red glass panel; SPOILERS = same panel in amber; NOTE and others keep the plain yellow-bar quote.
-- **Tokens:** all values live in the `:root` tokens of `src/styles/global.css`. Tailwind utilities read them via `@theme inline`.
-- **Stack:** Tailwind 4 (`@tailwindcss/vite`) and `@lucide/astro` icons.
+- **Tokens:** all values live in the `:root` tokens of `src/styles/global.css`.
+- **Stack:** plain CSS and `@lucide/astro` icons.
 - **Layout:** left sidebar and content on desktop, drawer on mobile. The source's own markup is restyled only (h2 = small slab label, h3 = page title, tables in glass panels).
 - **Progress:** sidebar shows read count, bar and a check per read page; "Mark as read" button per page; "Continue reading" link. Browser localStorage only.
 - **Icons:** Lucide icons in the sidebar only (`src/lib/nav-icon-rules.mjs`).
