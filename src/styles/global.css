@@ -262,8 +262,24 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
     background: var(--surface);
     border-right: 3px solid var(--accent);
   }
-  body[data-drawer='open'] .drawer-backdrop { display: block; }
-  body[data-drawer='open'] .drawer { display: flex; }
+  .drawer-backdrop {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+  .drawer {
+    display: flex;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0.35s;
+    box-shadow: none;
+  }
+  body[data-drawer='open'] .drawer-backdrop { opacity: 1; visibility: visible; transition-delay: 0s; }
+  body[data-drawer='open'] .drawer { transform: none; visibility: visible; transition-delay: 0s; box-shadow: 0.5rem 0 0 rgb(0 0 0 / 0.6); }
+  @media (prefers-reduced-motion: reduce) {
+    .drawer, .drawer-backdrop { transition-duration: 0s; }
+  }
   body[data-drawer='open'] { overflow: hidden; }
   .drawer-head { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 1rem; border-bottom: 1px solid var(--border); font-family: var(--font-head); }
   .drawer-head a { color: var(--accent); text-decoration: none; }
