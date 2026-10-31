@@ -214,7 +214,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
     z-index: 30;
     min-height: var(--header-height);
     padding: 0.5rem 1rem;
-    padding-bottom: 0.9rem;
+    padding-bottom: 1.8rem;
     overflow: hidden;
     background:
       radial-gradient(ellipse at 85% 50%, rgb(255 230 0 / 0.3), transparent 60%),
