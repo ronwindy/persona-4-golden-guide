@@ -45,6 +45,14 @@ export function tagDateMarkers(html: string): string {
   );
 }
 
+/** Marks standalone "-Label-" paragraphs (Fridge, Rank 3, Story Events...) so CSS can style them as sub-headings. Text is untouched. */
+export function tagLabelMarkers(html: string): string {
+  return html.replace(
+    /<p>(-)([A-Za-z][^<>~]{0,60})(-)<\/p>/g,
+    '<p class="label-marker">$1<span class="label-marker-text">$2</span>$3</p>',
+  );
+}
+
 /** Sidebar data: pages grouped by consecutive category. */
 export function getToc(): TocCategory[] {
   const categories: TocCategory[] = [];

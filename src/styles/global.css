@@ -439,6 +439,22 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   mask: var(--icon-calendar) center / contain no-repeat;
 }
 
+/* Section labels (class added at render time by tagLabelMarkers): dashes hidden, label shown as a sub-heading. */
+.guide-body .label-marker {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 0;
+  line-height: 0;
+}
+.guide-body .label-marker-text {
+  display: block;
+  padding-left: 0.75rem;
+  border-left: 5px solid var(--accent);
+  font-family: var(--font-sub);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
 /* Frosted-glass table panels; tables scroll sideways inside their wrapper on narrow screens. */
 .table-wrap {
   margin: 0 0 1.25rem;
