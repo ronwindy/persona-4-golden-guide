@@ -72,3 +72,11 @@ export function getNeighbours(id: string): { prev?: PageEntry; next?: PageEntry 
   const at = pages.findIndex((p) => p.id === id);
   return at < 0 ? {} : { prev: pages[at - 1], next: pages[at + 1] };
 }
+
+/** Wraps "FAQ1: question<br>answer" paragraphs in a native <details> so answers collapse. Text is untouched. */
+export function tagFaq(html: string): string {
+  return html.replace(
+    /<p>((?:FAQ|WAQ)X?\d+:[^<]*)<br>([\s\S]*?)<\/p>/g,
+    '<details class="faq"><summary>$1</summary><div class="faq-answer">$2</div></details>',
+  );
+}
