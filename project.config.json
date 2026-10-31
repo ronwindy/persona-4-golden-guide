@@ -3,15 +3,16 @@
   "slug": "persona-4-golden-guide",
   "site": "https://ronwindy.github.io",
   "base": "/persona-4-golden-guide",
-  "canonicalIndexFile": "persona-4-golden-guide.canonical.json",
-  "termExtrasFile": "scripts/emphasis/term_extras.json",
-  "statusTitle": "Persona 4 Golden Guide - Project Status",
   "pageTitleSuffix": "Persona 4 Golden Guide",
   "pageDescriptionPrefix": "Persona 4 Golden Guide",
   "defaultTitle": "Persona 4 Golden Guide",
-  "defaultDescription": "A player-friendly companion guide for Persona 4 Golden.",
-  "sourceDefaults": {
-    "author": "",
-    "version": ""
+  "defaultDescription": "A readable copy of the GameFAQs Persona 4 Golden 100% guide.",
+  "extract": {
+    "sourceDir": "raw-sources",
+    "bodyId": "faqwrap",
+    "dropClasses": ["ftoc"],
+    "chapterTag": "h2",
+    "sectionTag": "h3",
+    "overviewLabel": "Overview"
   }
 }

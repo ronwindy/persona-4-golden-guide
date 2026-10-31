@@ -1,116 +1,46 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import project from '../../project.config.json';
 
-export interface NavRef {
-  id: string;
-  title?: string;
-}
-
-export type ListItem = string | { text: string; children: SubList };
-export interface SubList {
-  ordered: boolean;
-  items: ListItem[];
-}
-
-export type Block =
-  | { type: 'p'; text: string }
-  | { type: 'list'; ordered: boolean; items: ListItem[] }
-  | { type: 'callout'; kind: 'note' | 'warning' | 'discrepancy'; blocks: Block[] }
-  | { type: 'table'; headers: string[] | null; rows: string[][] }
-  | { type: 'info'; items: { label: string; value: string }[] }
-  | { type: 'slots'; slots: { label: string | null; steps: { title: string | null; blocks: Block[] }[] }[] }
-  | { type: 'ranks'; ranks: { title: string; scenes: { prompt?: string; options: { label: string; text: string }[] }[] }[] };
-
-export interface GuideSection {
-  id: string;
-  heading: string | null;
-  blocks: Block[];
-}
-
-export interface Guide {
-  id?: string;
-  title?: string;
-  type?: string;
-  category?: string;
-  navigation?: { prev?: NavRef; next?: NavRef };
-  sections?: GuideSection[];
-}
-
-export interface TocEntry {
+export interface PageEntry {
   id: string;
   title: string;
-  has_structured: boolean;
+  category: string;
 }
 
 export interface TocCategory {
   category: string;
-  entries: TocEntry[];
+  entries: PageEntry[];
 }
 
-export interface PageTocItem {
-  id: string;
-  label: string;
-  count?: number;
+const DATA_DIR = path.resolve(process.cwd(), 'src/data');
+
+/** Pages in source order, as written by scripts/extract.mjs. */
+export function getPages(): PageEntry[] {
+  const manifest = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8'));
+  return manifest.pages.map(({ id, title, category }: PageEntry) => ({ id, title, category }));
 }
 
-const SECTIONS_DIR = path.resolve(process.cwd(), 'structured-content/sections');
-const CANONICAL_INDEX = path.resolve(process.cwd(), 'canonical-sources', project.canonicalIndexFile);
-
-export function getAllStructuredSections(): Array<{ id: string; data: { guide: Guide } }> {
-  if (!fs.existsSync(SECTIONS_DIR)) return [];
-  return fs
-    .readdirSync(SECTIONS_DIR)
-    .filter((f) => f.endsWith('.json'))
-    .map((filename) => {
-      const data = JSON.parse(fs.readFileSync(path.join(SECTIONS_DIR, filename), 'utf-8'));
-      return { id: data.guide?.id || filename.replace('.json', ''), data };
-    });
+/** Verbatim page markup from the source. */
+export function getPageHtml(id: string): string {
+  return fs.readFileSync(path.join(DATA_DIR, 'pages', `${id}.html`), 'utf-8');
 }
 
-function orderedBuilt(): Array<{ id: string; title: string; category: string }> {
-  const structured = new Map(getAllStructuredSections().map((s) => [s.id, s]));
-  const index: Array<{ id: string; title: string; category?: string }> = fs.existsSync(CANONICAL_INDEX)
-    ? JSON.parse(fs.readFileSync(CANONICAL_INDEX, 'utf-8')).sections_index ?? []
-    : [];
-  return index
-    .filter((e) => structured.has(e.id))
-    .map((e) => {
-      const g = structured.get(e.id)!.data.guide;
-      return { id: e.id, title: g.title ?? e.title, category: g.category ?? e.category ?? 'Guide' };
-    });
-}
-
-/** Sidebar data: every indexed page in source order, grouped by chapter; unbuilt ones flagged. */
+/** Sidebar data: pages grouped by consecutive category. */
 export function getToc(): TocCategory[] {
-  const structured = new Map(getAllStructuredSections().map((s) => [s.id, s]));
-  const index: Array<{ id: string; title: string; category?: string }> = fs.existsSync(CANONICAL_INDEX)
-    ? JSON.parse(fs.readFileSync(CANONICAL_INDEX, 'utf-8')).sections_index ?? []
-    : [];
   const categories: TocCategory[] = [];
-  for (const e of index) {
-    const g = structured.get(e.id)?.data.guide;
-    const category = g?.category ?? e.category ?? 'Guide';
+  for (const page of getPages()) {
     let cat = categories[categories.length - 1];
-    if (!cat || cat.category !== category) {
-      cat = { category, entries: [] };
+    if (!cat || cat.category !== page.category) {
+      cat = { category: page.category, entries: [] };
       categories.push(cat);
     }
-    cat.entries.push({ id: e.id, title: g?.title ?? e.title, has_structured: !!g });
+    cat.entries.push(page);
   }
   return categories;
 }
 
-/** Prev/next among built pages in source order (unbuilt pages are skipped). */
-export function getNeighbours(id: string): { prev?: NavRef; next?: NavRef } {
-  const built = orderedBuilt();
-  const at = built.findIndex((e) => e.id === id);
-  if (at < 0) return {};
-  const ref = (e?: { id: string; title: string }) => (e ? { id: e.id, title: e.title } : undefined);
-  return { prev: ref(built[at - 1]), next: ref(built[at + 1]) };
-}
-
-/** Jump links for the right-hand "On this page" column and the mobile drawer. */
-export function buildPageToc(guide: Guide): PageTocItem[] {
-  return (guide.sections ?? []).filter((s) => s.heading).map((s) => ({ id: s.id, label: s.heading! }));
+export function getNeighbours(id: string): { prev?: PageEntry; next?: PageEntry } {
+  const pages = getPages();
+  const at = pages.findIndex((p) => p.id === id);
+  return at < 0 ? {} : { prev: pages[at - 1], next: pages[at + 1] };
 }

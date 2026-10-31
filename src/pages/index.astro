@@ -8,16 +8,14 @@ const categories = getToc();
 ---
 
 <BaseLayout>
-  <h1>{project.game} Guide</h1>
-  {categories.length === 0 && <p>No sections yet.</p>}
+  <h1 class="home-title">{project.game} Guide</h1>
+  <a class="progress-resume home-resume" data-progress-resume href={`${baseUrl}/`} hidden>Continue reading</a>
   {categories.map((cat) => (
     <section>
-      <h2>{cat.category}</h2>
+      <h2 class="home-cat">{cat.category}</h2>
       <ul class="section-index">
         {cat.entries.map((entry) => (
-          <li>
-            {entry.has_structured ? <a href={`${baseUrl}/guide/${entry.id}`}>{entry.title}</a> : <span>{entry.title}</span>}
-          </li>
+          <li><a href={`${baseUrl}/guide/${entry.id}`} data-page-id={entry.id}>{entry.title}</a></li>
         ))}
       </ul>
     </section>

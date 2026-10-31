@@ -2,22 +2,18 @@
 import '../styles/global.css';
 import project from '../../project.config.json';
 import SidebarNav from '../components/SidebarNav.astro';
-import PageToc from '../components/PageToc.astro';
 import { Menu, X, PanelLeft, ArrowUp } from '@lucide/astro';
-import type { PageTocItem } from '../lib/guideData';
 
 interface Props {
   title?: string;
   description?: string;
   currentId?: string;
-  pageSections?: PageTocItem[];
 }
 
 const {
   title = project.defaultTitle,
   description = project.defaultDescription,
   currentId = '',
-  pageSections = [],
 } = Astro.props;
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -57,20 +53,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         <a href={`${baseUrl}/`} aria-label={`${project.game} home`}><img class="logo logo-sm" src={`${baseUrl}/logo.png`} alt={project.game} /></a>
         <button type="button" id="close-mobile-drawer" aria-label="Close navigation" class="icon-btn"><X size={18} aria-hidden="true" /></button>
       </div>
-      {pageSections.length > 0 && (
-        <div class="drawer-tabs" role="tablist">
-          <button type="button" role="tab" id="tab-btn-chapters" aria-selected="true">All sections</button>
-          <button type="button" role="tab" id="tab-btn-sections" aria-selected="false">This page</button>
-        </div>
-      )}
       <div id="tab-content-chapters" class="drawer-panel">
         <SidebarNav currentId={currentId} listId="mobile-sidebar-list" />
       </div>
-      {pageSections.length > 0 && (
-        <div id="tab-content-sections" class="drawer-panel" hidden>
-          <PageToc sections={pageSections} />
-        </div>
-      )}
     </div>
 
     <div class="shell">
@@ -85,12 +70,6 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         <main class="content">
           <slot />
         </main>
-        <!-- Desktop: right "on this page" column -->
-        {pageSections.length > 0 && (
-          <aside class="page-toc">
-            <PageToc sections={pageSections} />
-          </aside>
-        )}
       </div>
     </div>
 
@@ -136,23 +115,46 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           });
         }
 
-        var tabs = [
-          ['tab-btn-chapters', 'tab-content-chapters'],
-          ['tab-btn-sections', 'tab-content-sections'],
-        ];
-        tabs.forEach(function (pair) {
-          var btn = document.getElementById(pair[0]);
-          if (!btn) return;
-          btn.addEventListener('click', function () {
-            tabs.forEach(function (p) {
-              var b = document.getElementById(p[0]);
-              var c = document.getElementById(p[1]);
-              var on = p[0] === pair[0];
-              if (b) b.setAttribute('aria-selected', String(on));
-              if (c) c.hidden = !on;
-            });
+      })();
+    </script>
+
+    <script is:inline>
+      // Reading progress: per-page "read" marks and the last page opened, kept in this browser only.
+      (function () {
+        var KEY = 'p4g-progress-v1';
+        var state = { done: {}, last: '' };
+        try { var raw = JSON.parse(localStorage.getItem(KEY) || '{}'); if (raw && raw.done) state = { done: raw.done, last: raw.last || '' }; } catch (e) {}
+        function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+        var current = document.querySelector('.sidebar a[aria-current="page"]');
+        if (current) { state.last = current.getAttribute('data-page-id'); save(); }
+
+        function paint() {
+          var links = document.querySelectorAll('a[data-page-id]');
+          links.forEach(function (a) { a.toggleAttribute('data-done', !!state.done[a.getAttribute('data-page-id')]); });
+          var n = Object.keys(state.done).length;
+          document.querySelectorAll('.progress').forEach(function (box) {
+            var total = Number(box.getAttribute('data-progress-total')) || 1;
+            box.querySelector('[data-progress-count]').textContent = String(n);
+            box.querySelector('[data-progress-fill]').style.width = Math.min(100, Math.round((n / total) * 100)) + '%';
+          });
+          document.querySelectorAll('[data-progress-resume]').forEach(function (a) {
+            var target = document.querySelector('a[data-page-id="' + state.last + '"]');
+            if (state.last && target) { a.href = target.href; a.hidden = false; a.textContent = 'Continue reading: ' + target.textContent.trim(); } else { a.hidden = true; }
+          });
+          document.querySelectorAll('[data-mark-read]').forEach(function (b) {
+            var on = !!state.done[b.getAttribute('data-mark-read')];
+            b.setAttribute('aria-pressed', String(on));
+            b.textContent = on ? 'Read ✓ (click to undo)' : 'Mark as read';
+          });
+        }
+        document.querySelectorAll('[data-mark-read]').forEach(function (b) {
+          b.addEventListener('click', function () {
+            var id = b.getAttribute('data-mark-read');
+            if (state.done[id]) delete state.done[id]; else state.done[id] = 1;
+            save(); paint();
           });
         });
+        paint();
       })();
     </script>
   </body>

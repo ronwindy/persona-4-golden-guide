@@ -1,0 +1,2739 @@
+{
+ "game": "Persona 4 Golden",
+ "source": {
+  "file": "Persona 4 Golden - 100％ Guide - PlayStation Vita - By Hurricanehaon - GameFAQs (21_10_2026 21：13：27).html",
+  "sha256": "bdf2696f7c16de2578cfda76ee2a28f9e76e6b29ac0b484e64afb0419ce7f75b",
+  "bytes": 2773930,
+  "bodyChildren": 13637
+ },
+ "pages": [
+  {
+   "id": "100-guide-overview",
+   "title": "Overview",
+   "category": "100% Guide",
+   "from": 2,
+   "to": 10
+  },
+  {
+   "id": "100-guide-guide-checklist",
+   "title": "Guide Checklist",
+   "category": "100% Guide",
+   "from": 30,
+   "to": 48
+  },
+  {
+   "id": "100-guide-update-current-schedule",
+   "title": "Update/Current Schedule",
+   "category": "100% Guide",
+   "from": 48,
+   "to": 52
+  },
+  {
+   "id": "introduction-version-history",
+   "title": "Version History",
+   "category": "Introduction",
+   "from": 96,
+   "to": 123
+  },
+  {
+   "id": "introduction-copyright",
+   "title": "Copyright",
+   "category": "Introduction",
+   "from": 123,
+   "to": 126
+  },
+  {
+   "id": "introduction-frequently-asked-questions",
+   "title": "Frequently Asked Questions",
+   "category": "Introduction",
+   "from": 126,
+   "to": 137
+  },
+  {
+   "id": "introduction-about-this-guide",
+   "title": "About This Guide",
+   "category": "Introduction",
+   "from": 137,
+   "to": 140
+  },
+  {
+   "id": "introduction-contact-information",
+   "title": "Contact Information",
+   "category": "Introduction",
+   "from": 140,
+   "to": 144
+  },
+  {
+   "id": "about-persona-4-golden-what-is-persona",
+   "title": "What Is Persona?",
+   "category": "About Persona 4 Golden",
+   "from": 153,
+   "to": 156
+  },
+  {
+   "id": "about-persona-4-golden-persona-3-vs-persona-4",
+   "title": "Persona 3 vs. Persona 4",
+   "category": "About Persona 4 Golden",
+   "from": 156,
+   "to": 160
+  },
+  {
+   "id": "about-persona-4-golden-persona-4-vs-persona-4-golden",
+   "title": "Persona 4 vs. Persona 4 Golden",
+   "category": "About Persona 4 Golden",
+   "from": 160,
+   "to": 164
+  },
+  {
+   "id": "gameplay-mechanics-controls",
+   "title": "Controls",
+   "category": "Gameplay Mechanics",
+   "from": 334,
+   "to": 362
+  },
+  {
+   "id": "gameplay-mechanics-field-mechanics",
+   "title": "Field Mechanics",
+   "category": "Gameplay Mechanics",
+   "from": 362,
+   "to": 370
+  },
+  {
+   "id": "gameplay-mechanics-calendar-system",
+   "title": "Calendar System",
+   "category": "Gameplay Mechanics",
+   "from": 370,
+   "to": 373
+  },
+  {
+   "id": "gameplay-mechanics-social-link",
+   "title": "Social Link",
+   "category": "Gameplay Mechanics",
+   "from": 373,
+   "to": 378
+  },
+  {
+   "id": "gameplay-mechanics-status-parameters",
+   "title": "Status Parameters",
+   "category": "Gameplay Mechanics",
+   "from": 378,
+   "to": 426
+  },
+  {
+   "id": "gameplay-mechanics-velvet-room",
+   "title": "Velvet Room",
+   "category": "Gameplay Mechanics",
+   "from": 426,
+   "to": 439
+  },
+  {
+   "id": "gameplay-mechanics-battle-mechanics",
+   "title": "Battle Mechanics",
+   "category": "Gameplay Mechanics",
+   "from": 439,
+   "to": 466
+  },
+  {
+   "id": "gameplay-mechanics-shuffle-time",
+   "title": "Shuffle TIme",
+   "category": "Gameplay Mechanics",
+   "from": 466,
+   "to": 498
+  },
+  {
+   "id": "gameplay-mechanics-status-ailments",
+   "title": "Status Ailments",
+   "category": "Gameplay Mechanics",
+   "from": 498,
+   "to": 502
+  },
+  {
+   "id": "gameplay-mechanics-new-game-plus",
+   "title": "New Game Plus",
+   "category": "Gameplay Mechanics",
+   "from": 502,
+   "to": 510
+  },
+  {
+   "id": "gameplay-mechanics-tv-channels",
+   "title": "TV Channels",
+   "category": "Gameplay Mechanics",
+   "from": 510,
+   "to": 514
+  },
+  {
+   "id": "walkthrough-objectives",
+   "title": "Walkthrough Objectives",
+   "category": "Walkthrough",
+   "from": 3804,
+   "to": 3811
+  },
+  {
+   "id": "walkthrough-faq",
+   "title": "Walkthrough FAQ",
+   "category": "Walkthrough",
+   "from": 3811,
+   "to": 3830
+  },
+  {
+   "id": "walkthrough-important-notes",
+   "title": "Important Notes",
+   "category": "Walkthrough",
+   "from": 3830,
+   "to": 3840
+  },
+  {
+   "id": "walkthrough-current-problems",
+   "title": "Current Problems",
+   "category": "Walkthrough",
+   "from": 3840,
+   "to": 3850
+  },
+  {
+   "id": "walkthrough-april",
+   "title": "April",
+   "category": "Walkthrough",
+   "from": 3850,
+   "to": 4138
+  },
+  {
+   "id": "walkthrough-may",
+   "title": "May",
+   "category": "Walkthrough",
+   "from": 4138,
+   "to": 4495
+  },
+  {
+   "id": "walkthrough-june",
+   "title": "June",
+   "category": "Walkthrough",
+   "from": 4495,
+   "to": 4866
+  },
+  {
+   "id": "walkthrough-july",
+   "title": "July",
+   "category": "Walkthrough",
+   "from": 4866,
+   "to": 5216
+  },
+  {
+   "id": "walkthrough-august",
+   "title": "August",
+   "category": "Walkthrough",
+   "from": 5216,
+   "to": 5494
+  },
+  {
+   "id": "walkthrough-september",
+   "title": "September",
+   "category": "Walkthrough",
+   "from": 5494,
+   "to": 5814
+  },
+  {
+   "id": "walkthrough-october",
+   "title": "October",
+   "category": "Walkthrough",
+   "from": 5814,
+   "to": 6076
+  },
+  {
+   "id": "walkthrough-november",
+   "title": "November",
+   "category": "Walkthrough",
+   "from": 6076,
+   "to": 6406
+  },
+  {
+   "id": "walkthrough-december",
+   "title": "December",
+   "category": "Walkthrough",
+   "from": 6406,
+   "to": 6696
+  },
+  {
+   "id": "walkthrough-january",
+   "title": "January",
+   "category": "Walkthrough",
+   "from": 6696,
+   "to": 6976
+  },
+  {
+   "id": "walkthrough-february",
+   "title": "February",
+   "category": "Walkthrough",
+   "from": 6976,
+   "to": 7054
+  },
+  {
+   "id": "walkthrough-march",
+   "title": "March",
+   "category": "Walkthrough",
+   "from": 7054,
+   "to": 7103
+  },
+  {
+   "id": "walkthrough-new-game-plus-walkthrough",
+   "title": "New Game Plus Walkthrough",
+   "category": "Walkthrough",
+   "from": 7103,
+   "to": 7110
+  },
+  {
+   "id": "dungeons-overview",
+   "title": "Overview",
+   "category": "Dungeons",
+   "from": 7110,
+   "to": 7113
+  },
+  {
+   "id": "dungeons-twisted-shopping-district",
+   "title": "Twisted Shopping District",
+   "category": "Dungeons",
+   "from": 7391,
+   "to": 7406
+  },
+  {
+   "id": "dungeons-yukiko-s-castle",
+   "title": "Yukiko's Castle",
+   "category": "Dungeons",
+   "from": 7406,
+   "to": 7446
+  },
+  {
+   "id": "dungeons-steamy-bathhouse",
+   "title": "Steamy Bathhouse",
+   "category": "Dungeons",
+   "from": 7446,
+   "to": 7474
+  },
+  {
+   "id": "dungeons-marukyu-striptease",
+   "title": "Marukyu Striptease",
+   "category": "Dungeons",
+   "from": 7474,
+   "to": 7502
+  },
+  {
+   "id": "dungeons-void-quest",
+   "title": "Void Quest",
+   "category": "Dungeons",
+   "from": 7502,
+   "to": 7532
+  },
+  {
+   "id": "dungeons-secret-laboratory",
+   "title": "Secret Laboratory",
+   "category": "Dungeons",
+   "from": 7532,
+   "to": 7562
+  },
+  {
+   "id": "dungeons-heaven",
+   "title": "Heaven",
+   "category": "Dungeons",
+   "from": 7562,
+   "to": 7590
+  },
+  {
+   "id": "dungeons-magatsu-inaba",
+   "title": "Magatsu Inaba",
+   "category": "Dungeons",
+   "from": 7590,
+   "to": 7615
+  },
+  {
+   "id": "dungeons-hollow-forest",
+   "title": "Hollow Forest",
+   "category": "Dungeons",
+   "from": 7615,
+   "to": 7643
+  },
+  {
+   "id": "dungeons-yomotsu-hirasaka",
+   "title": "Yomotsu Hirasaka",
+   "category": "Dungeons",
+   "from": 7643,
+   "to": 7668
+  },
+  {
+   "id": "dungeons-extra-bosses",
+   "title": "Extra Bosses",
+   "category": "Dungeons",
+   "from": 7668,
+   "to": 7680
+  },
+  {
+   "id": "persona-compendium-overview",
+   "title": "Overview",
+   "category": "Persona Compendium",
+   "from": 7680,
+   "to": 7682
+  },
+  {
+   "id": "persona-compendium-formula",
+   "title": "Formula",
+   "category": "Persona Compendium",
+   "from": 8309,
+   "to": 8322
+  },
+  {
+   "id": "persona-compendium-fusion-forecast",
+   "title": "Fusion Forecast",
+   "category": "Persona Compendium",
+   "from": 8322,
+   "to": 8736
+  },
+  {
+   "id": "persona-compendium-fool",
+   "title": "Fool",
+   "category": "Persona Compendium",
+   "from": 8736,
+   "to": 8744
+  },
+  {
+   "id": "persona-compendium-magician",
+   "title": "Magician",
+   "category": "Persona Compendium",
+   "from": 8744,
+   "to": 8752
+  },
+  {
+   "id": "persona-compendium-priestess",
+   "title": "Priestess",
+   "category": "Persona Compendium",
+   "from": 8752,
+   "to": 8760
+  },
+  {
+   "id": "persona-compendium-empress",
+   "title": "Empress",
+   "category": "Persona Compendium",
+   "from": 8760,
+   "to": 8768
+  },
+  {
+   "id": "persona-compendium-emperor",
+   "title": "Emperor",
+   "category": "Persona Compendium",
+   "from": 8768,
+   "to": 8776
+  },
+  {
+   "id": "persona-compendium-hierophant",
+   "title": "Hierophant",
+   "category": "Persona Compendium",
+   "from": 8776,
+   "to": 8784
+  },
+  {
+   "id": "persona-compendium-lovers",
+   "title": "Lovers",
+   "category": "Persona Compendium",
+   "from": 8784,
+   "to": 8792
+  },
+  {
+   "id": "persona-compendium-chariot",
+   "title": "Chariot",
+   "category": "Persona Compendium",
+   "from": 8792,
+   "to": 8800
+  },
+  {
+   "id": "persona-compendium-justice",
+   "title": "Justice",
+   "category": "Persona Compendium",
+   "from": 8800,
+   "to": 8808
+  },
+  {
+   "id": "persona-compendium-hermit",
+   "title": "Hermit",
+   "category": "Persona Compendium",
+   "from": 8808,
+   "to": 8816
+  },
+  {
+   "id": "persona-compendium-fortune",
+   "title": "Fortune",
+   "category": "Persona Compendium",
+   "from": 8816,
+   "to": 8824
+  },
+  {
+   "id": "persona-compendium-strength",
+   "title": "Strength",
+   "category": "Persona Compendium",
+   "from": 8824,
+   "to": 8832
+  },
+  {
+   "id": "persona-compendium-hanged-man",
+   "title": "Hanged Man",
+   "category": "Persona Compendium",
+   "from": 8832,
+   "to": 8840
+  },
+  {
+   "id": "persona-compendium-death",
+   "title": "Death",
+   "category": "Persona Compendium",
+   "from": 8840,
+   "to": 8848
+  },
+  {
+   "id": "persona-compendium-temperance",
+   "title": "Temperance",
+   "category": "Persona Compendium",
+   "from": 8848,
+   "to": 8856
+  },
+  {
+   "id": "persona-compendium-devil",
+   "title": "Devil",
+   "category": "Persona Compendium",
+   "from": 8856,
+   "to": 8864
+  },
+  {
+   "id": "persona-compendium-tower",
+   "title": "Tower",
+   "category": "Persona Compendium",
+   "from": 8864,
+   "to": 8872
+  },
+  {
+   "id": "persona-compendium-star",
+   "title": "Star",
+   "category": "Persona Compendium",
+   "from": 8872,
+   "to": 8880
+  },
+  {
+   "id": "persona-compendium-moon",
+   "title": "Moon",
+   "category": "Persona Compendium",
+   "from": 8880,
+   "to": 8888
+  },
+  {
+   "id": "persona-compendium-sun",
+   "title": "Sun",
+   "category": "Persona Compendium",
+   "from": 8888,
+   "to": 8896
+  },
+  {
+   "id": "persona-compendium-judgement",
+   "title": "Judgement",
+   "category": "Persona Compendium",
+   "from": 8896,
+   "to": 8904
+  },
+  {
+   "id": "persona-compendium-jester",
+   "title": "Jester",
+   "category": "Persona Compendium",
+   "from": 8904,
+   "to": 8912
+  },
+  {
+   "id": "persona-compendium-aeon",
+   "title": "Aeon",
+   "category": "Persona Compendium",
+   "from": 8912,
+   "to": 8920
+  },
+  {
+   "id": "persona-compendium-world",
+   "title": "World",
+   "category": "Persona Compendium",
+   "from": 8920,
+   "to": 8924
+  },
+  {
+   "id": "persona-compendium-special-fusions",
+   "title": "Special Fusions",
+   "category": "Persona Compendium",
+   "from": 8924,
+   "to": 8963
+  },
+  {
+   "id": "social-links-overview",
+   "title": "Overview",
+   "category": "Social Links",
+   "from": 8963,
+   "to": 8967
+  },
+  {
+   "id": "social-links-investigation-team-fool",
+   "title": "Investigation Team/Fool",
+   "category": "Social Links",
+   "from": 10562,
+   "to": 10599
+  },
+  {
+   "id": "social-links-yosuke-hanamura-magician",
+   "title": "Yosuke Hanamura/Magician",
+   "category": "Social Links",
+   "from": 10599,
+   "to": 10663
+  },
+  {
+   "id": "social-links-yukiko-amagi-priestess",
+   "title": "Yukiko Amagi/Priestess",
+   "category": "Social Links",
+   "from": 10663,
+   "to": 10743
+  },
+  {
+   "id": "social-links-margaret-empress",
+   "title": "Margaret/Empress",
+   "category": "Social Links",
+   "from": 10743,
+   "to": 10790
+  },
+  {
+   "id": "social-links-kanji-tatsumi-emperor",
+   "title": "Kanji Tatsumi/Emperor",
+   "category": "Social Links",
+   "from": 10790,
+   "to": 10853
+  },
+  {
+   "id": "social-links-ryotaro-dojima-hierophant",
+   "title": "Ryotaro Dojima/Hierophant",
+   "category": "Social Links",
+   "from": 10853,
+   "to": 10920
+  },
+  {
+   "id": "social-links-rise-kujikawa-lovers",
+   "title": "Rise Kujikawa/Lovers",
+   "category": "Social Links",
+   "from": 10920,
+   "to": 10987
+  },
+  {
+   "id": "social-links-chie-satonaka-chariot",
+   "title": "Chie Satonaka/Chariot",
+   "category": "Social Links",
+   "from": 10987,
+   "to": 11057
+  },
+  {
+   "id": "social-links-nanako-dojima-justice",
+   "title": "Nanako Dojima/Justice",
+   "category": "Social Links",
+   "from": 11057,
+   "to": 11137
+  },
+  {
+   "id": "social-links-fox-hermit",
+   "title": "Fox/Hermit",
+   "category": "Social Links",
+   "from": 11137,
+   "to": 11177
+  },
+  {
+   "id": "social-links-naoto-shirogane-fortune",
+   "title": "Naoto Shirogane/Fortune",
+   "category": "Social Links",
+   "from": 11177,
+   "to": 11259
+  },
+  {
+   "id": "social-links-fellow-athletes-strength",
+   "title": "Fellow Athletes/Strength",
+   "category": "Social Links",
+   "from": 11259,
+   "to": 11379
+  },
+  {
+   "id": "social-links-saki-s-brother-hanged-man",
+   "title": "Saki's Brother/Hanged Man",
+   "category": "Social Links",
+   "from": 11379,
+   "to": 11443
+  },
+  {
+   "id": "social-links-old-lady-death",
+   "title": "Old Lady/Death",
+   "category": "Social Links",
+   "from": 11443,
+   "to": 11467
+  },
+  {
+   "id": "social-links-young-mother-temperance",
+   "title": "Young Mother/Temperance",
+   "category": "Social Links",
+   "from": 11467,
+   "to": 11545
+  },
+  {
+   "id": "social-links-nurse-devil",
+   "title": "Nurse/Devil",
+   "category": "Social Links",
+   "from": 11545,
+   "to": 11614
+  },
+  {
+   "id": "social-links-tutored-student-tower",
+   "title": "Tutored Student/Tower",
+   "category": "Social Links",
+   "from": 11614,
+   "to": 11693
+  },
+  {
+   "id": "social-links-teddie-star",
+   "title": "Teddie/Star",
+   "category": "Social Links",
+   "from": 11693,
+   "to": 11730
+  },
+  {
+   "id": "social-links-ai-ebihara-moon",
+   "title": "Ai Ebihara/Moon",
+   "category": "Social Links",
+   "from": 11730,
+   "to": 11828
+  },
+  {
+   "id": "social-links-yumi-ozawa-and-ayane-matsunaga-sun",
+   "title": "Yumi Ozawa and Ayane Matsunaga/Sun",
+   "category": "Social Links",
+   "from": 11828,
+   "to": 11949
+  },
+  {
+   "id": "social-links-seekers-of-truth-judgement",
+   "title": "Seekers of Truth/Judgement",
+   "category": "Social Links",
+   "from": 11949,
+   "to": 11986
+  },
+  {
+   "id": "social-links-tohru-adachi-jester",
+   "title": "Tohru Adachi/Jester",
+   "category": "Social Links",
+   "from": 11986,
+   "to": 12064
+  },
+  {
+   "id": "social-links-marie-aeon",
+   "title": "Marie/Aeon",
+   "category": "Social Links",
+   "from": 12064,
+   "to": 12180
+  },
+  {
+   "id": "activities-overview",
+   "title": "Overview",
+   "category": "Activities",
+   "from": 12180,
+   "to": 12182
+  },
+  {
+   "id": "activities-quests",
+   "title": "Quests",
+   "category": "Activities",
+   "from": 12576,
+   "to": 12580
+  },
+  {
+   "id": "activities-bug-catching",
+   "title": "Bug Catching",
+   "category": "Activities",
+   "from": 12580,
+   "to": 12590
+  },
+  {
+   "id": "activities-fishing",
+   "title": "Fishing",
+   "category": "Activities",
+   "from": 12590,
+   "to": 12602
+  },
+  {
+   "id": "activities-gardening",
+   "title": "Gardening",
+   "category": "Activities",
+   "from": 12602,
+   "to": 12611
+  },
+  {
+   "id": "activities-cooking",
+   "title": "Cooking",
+   "category": "Activities",
+   "from": 12611,
+   "to": 12615
+  },
+  {
+   "id": "activities-books",
+   "title": "Books",
+   "category": "Activities",
+   "from": 12615,
+   "to": 12619
+  },
+  {
+   "id": "activities-beach-hot-springs",
+   "title": "Beach/Hot Springs",
+   "category": "Activities",
+   "from": 12619,
+   "to": 12657
+  },
+  {
+   "id": "activities-costume-shop",
+   "title": "Costume Shop",
+   "category": "Activities",
+   "from": 12657,
+   "to": 12661
+  },
+  {
+   "id": "activities-tv-shopping",
+   "title": "TV Shopping",
+   "category": "Activities",
+   "from": 12661,
+   "to": 12665
+  },
+  {
+   "id": "activities-daidara-list",
+   "title": "Daidara List",
+   "category": "Activities",
+   "from": 12665,
+   "to": 12674
+  },
+  {
+   "id": "activities-shiroku-store",
+   "title": "Shiroku Store",
+   "category": "Activities",
+   "from": 12674,
+   "to": 12678
+  },
+  {
+   "id": "activities-shiroku-pub",
+   "title": "Shiroku Pub",
+   "category": "Activities",
+   "from": 12678,
+   "to": 12682
+  },
+  {
+   "id": "activities-part-time-jobs",
+   "title": "Part Time Jobs",
+   "category": "Activities",
+   "from": 12682,
+   "to": 12752
+  },
+  {
+   "id": "activities-artisan-apprentice",
+   "title": "Artisan Apprentice",
+   "category": "Activities",
+   "from": 12752,
+   "to": 12756
+  },
+  {
+   "id": "activities-lady-in-white",
+   "title": "Lady in White",
+   "category": "Activities",
+   "from": 12756,
+   "to": 12760
+  },
+  {
+   "id": "activities-okina-movie-theater",
+   "title": "Okina Movie Theater",
+   "category": "Activities",
+   "from": 12760,
+   "to": 12768
+  },
+  {
+   "id": "activities-chagall-cafe",
+   "title": "Chagall Cafe",
+   "category": "Activities",
+   "from": 12768,
+   "to": 12771
+  },
+  {
+   "id": "activities-crane-machine",
+   "title": "Crane Machine",
+   "category": "Activities",
+   "from": 12771,
+   "to": 12775
+  },
+  {
+   "id": "activities-refrigerator",
+   "title": "Refrigerator",
+   "category": "Activities",
+   "from": 12775,
+   "to": 12779
+  },
+  {
+   "id": "activities-models",
+   "title": "Models",
+   "category": "Activities",
+   "from": 12779,
+   "to": 12783
+  },
+  {
+   "id": "activities-miracle-quiz",
+   "title": "Miracle Quiz",
+   "category": "Activities",
+   "from": 12783,
+   "to": 12958
+  },
+  {
+   "id": "activities-trophies",
+   "title": "Trophies",
+   "category": "Activities",
+   "from": 12958,
+   "to": 12962
+  },
+  {
+   "id": "activities-other-activities",
+   "title": "Other Activities",
+   "category": "Activities",
+   "from": 12962,
+   "to": 12993
+  },
+  {
+   "id": "skill-list-all-skills",
+   "title": "All Skills",
+   "category": "Skill List",
+   "from": 13146,
+   "to": 13189
+  },
+  {
+   "id": "skill-list-skill-cards",
+   "title": "Skill Cards",
+   "category": "Skill List",
+   "from": 13189,
+   "to": 13215
+  },
+  {
+   "id": "skill-list-party-members",
+   "title": "Party Members",
+   "category": "Skill List",
+   "from": 13215,
+   "to": 13301
+  },
+  {
+   "id": "item-list-overview",
+   "title": "Overview",
+   "category": "Item List",
+   "from": 13301,
+   "to": 13303
+  },
+  {
+   "id": "item-list-weapons",
+   "title": "Weapons",
+   "category": "Item List",
+   "from": 13391,
+   "to": 13407
+  },
+  {
+   "id": "item-list-armor",
+   "title": "Armor",
+   "category": "Item List",
+   "from": 13407,
+   "to": 13417
+  },
+  {
+   "id": "item-list-accessories",
+   "title": "Accessories",
+   "category": "Item List",
+   "from": 13417,
+   "to": 13429
+  },
+  {
+   "id": "item-list-costume-list",
+   "title": "Costume List",
+   "category": "Item List",
+   "from": 13429,
+   "to": 13450
+  },
+  {
+   "id": "item-list-consumable-quest-items",
+   "title": "Consumable/Quest Items",
+   "category": "Item List",
+   "from": 13450,
+   "to": 13456
+  },
+  {
+   "id": "item-list-materials",
+   "title": "Materials",
+   "category": "Item List",
+   "from": 13456,
+   "to": 13465
+  },
+  {
+   "id": "item-list-book-list",
+   "title": "Book List",
+   "category": "Item List",
+   "from": 13465,
+   "to": 13469
+  },
+  {
+   "id": "item-list-fish-list",
+   "title": "Fish List",
+   "category": "Item List",
+   "from": 13469,
+   "to": 13473
+  },
+  {
+   "id": "item-list-gardening-items",
+   "title": "Gardening Items",
+   "category": "Item List",
+   "from": 13473,
+   "to": 13479
+  },
+  {
+   "id": "item-list-bug-list",
+   "title": "Bug List",
+   "category": "Item List",
+   "from": 13479,
+   "to": 13483
+  },
+  {
+   "id": "item-list-gem-list",
+   "title": "Gem List",
+   "category": "Item List",
+   "from": 13483,
+   "to": 13487
+  },
+  {
+   "id": "item-list-key-items",
+   "title": "Key Items",
+   "category": "Item List",
+   "from": 13487,
+   "to": 13491
+  },
+  {
+   "id": "tips-and-tricks-golden-shadow-grinding",
+   "title": "Golden Shadow Grinding",
+   "category": "Tips And Tricks",
+   "from": 13534,
+   "to": 13544
+  },
+  {
+   "id": "tips-and-tricks-best-personas",
+   "title": "Best Personas",
+   "category": "Tips And Tricks",
+   "from": 13544,
+   "to": 13555
+  },
+  {
+   "id": "tips-and-tricks-hardcore-risette-fan",
+   "title": "Hardcore Risette Fan",
+   "category": "Tips And Tricks",
+   "from": 13555,
+   "to": 13564
+  },
+  {
+   "id": "tips-and-tricks-victory-cry-cheat",
+   "title": "Victory Cry Cheat",
+   "category": "Tips And Tricks",
+   "from": 13564,
+   "to": 13572
+  },
+  {
+   "id": "tips-and-tricks-resources",
+   "title": "Resources",
+   "category": "Tips And Tricks",
+   "from": 13572,
+   "to": 13581
+  },
+  {
+   "id": "conclusion-special-thanks",
+   "title": "Special Thanks",
+   "category": "Conclusion",
+   "from": 13608,
+   "to": 13631
+  },
+  {
+   "id": "conclusion-final-remarks",
+   "title": "Final Remarks",
+   "category": "Conclusion",
+   "from": 13631,
+   "to": 13637
+  }
+ ],
+ "ledger": [
+  {
+   "from": 0,
+   "to": 1,
+   "kind": "dropped",
+   "reason": "whitespace"
+  },
+  {
+   "from": 1,
+   "to": 2,
+   "kind": "dropped",
+   "reason": "site-toc"
+  },
+  {
+   "from": 2,
+   "to": 10,
+   "kind": "page",
+   "page": "100-guide-overview"
+  },
+  {
+   "from": 10,
+   "to": 30,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 31,
+     "to": 48
+    },
+    {
+     "from": 49,
+     "to": 52
+    }
+   ]
+  },
+  {
+   "from": 30,
+   "to": 48,
+   "kind": "page",
+   "page": "100-guide-guide-checklist"
+  },
+  {
+   "from": 48,
+   "to": 52,
+   "kind": "page",
+   "page": "100-guide-update-current-schedule"
+  },
+  {
+   "from": 52,
+   "to": 53,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 96,
+     "to": 97
+    }
+   ]
+  },
+  {
+   "from": 53,
+   "to": 96,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 97,
+     "to": 123
+    },
+    {
+     "from": 124,
+     "to": 126
+    },
+    {
+     "from": 127,
+     "to": 137
+    },
+    {
+     "from": 138,
+     "to": 140
+    },
+    {
+     "from": 141,
+     "to": 144
+    }
+   ]
+  },
+  {
+   "from": 96,
+   "to": 123,
+   "kind": "page",
+   "page": "introduction-version-history"
+  },
+  {
+   "from": 123,
+   "to": 126,
+   "kind": "page",
+   "page": "introduction-copyright"
+  },
+  {
+   "from": 126,
+   "to": 137,
+   "kind": "page",
+   "page": "introduction-frequently-asked-questions"
+  },
+  {
+   "from": 137,
+   "to": 140,
+   "kind": "page",
+   "page": "introduction-about-this-guide"
+  },
+  {
+   "from": 140,
+   "to": 144,
+   "kind": "page",
+   "page": "introduction-contact-information"
+  },
+  {
+   "from": 144,
+   "to": 145,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 153,
+     "to": 154
+    }
+   ]
+  },
+  {
+   "from": 145,
+   "to": 153,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 154,
+     "to": 156
+    },
+    {
+     "from": 157,
+     "to": 160
+    },
+    {
+     "from": 161,
+     "to": 164
+    }
+   ]
+  },
+  {
+   "from": 153,
+   "to": 156,
+   "kind": "page",
+   "page": "about-persona-4-golden-what-is-persona"
+  },
+  {
+   "from": 156,
+   "to": 160,
+   "kind": "page",
+   "page": "about-persona-4-golden-persona-3-vs-persona-4"
+  },
+  {
+   "from": 160,
+   "to": 164,
+   "kind": "page",
+   "page": "about-persona-4-golden-persona-4-vs-persona-4-golden"
+  },
+  {
+   "from": 164,
+   "to": 165,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 334,
+     "to": 335
+    }
+   ]
+  },
+  {
+   "from": 165,
+   "to": 334,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 335,
+     "to": 362
+    },
+    {
+     "from": 363,
+     "to": 370
+    },
+    {
+     "from": 371,
+     "to": 373
+    },
+    {
+     "from": 374,
+     "to": 378
+    },
+    {
+     "from": 379,
+     "to": 426
+    },
+    {
+     "from": 427,
+     "to": 439
+    },
+    {
+     "from": 440,
+     "to": 466
+    },
+    {
+     "from": 467,
+     "to": 498
+    },
+    {
+     "from": 499,
+     "to": 502
+    },
+    {
+     "from": 503,
+     "to": 510
+    },
+    {
+     "from": 511,
+     "to": 514
+    }
+   ]
+  },
+  {
+   "from": 334,
+   "to": 362,
+   "kind": "page",
+   "page": "gameplay-mechanics-controls"
+  },
+  {
+   "from": 362,
+   "to": 370,
+   "kind": "page",
+   "page": "gameplay-mechanics-field-mechanics"
+  },
+  {
+   "from": 370,
+   "to": 373,
+   "kind": "page",
+   "page": "gameplay-mechanics-calendar-system"
+  },
+  {
+   "from": 373,
+   "to": 378,
+   "kind": "page",
+   "page": "gameplay-mechanics-social-link"
+  },
+  {
+   "from": 378,
+   "to": 426,
+   "kind": "page",
+   "page": "gameplay-mechanics-status-parameters"
+  },
+  {
+   "from": 426,
+   "to": 439,
+   "kind": "page",
+   "page": "gameplay-mechanics-velvet-room"
+  },
+  {
+   "from": 439,
+   "to": 466,
+   "kind": "page",
+   "page": "gameplay-mechanics-battle-mechanics"
+  },
+  {
+   "from": 466,
+   "to": 498,
+   "kind": "page",
+   "page": "gameplay-mechanics-shuffle-time"
+  },
+  {
+   "from": 498,
+   "to": 502,
+   "kind": "page",
+   "page": "gameplay-mechanics-status-ailments"
+  },
+  {
+   "from": 502,
+   "to": 510,
+   "kind": "page",
+   "page": "gameplay-mechanics-new-game-plus"
+  },
+  {
+   "from": 510,
+   "to": 514,
+   "kind": "page",
+   "page": "gameplay-mechanics-tv-channels"
+  },
+  {
+   "from": 514,
+   "to": 515,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 3804,
+     "to": 3805
+    }
+   ]
+  },
+  {
+   "from": 515,
+   "to": 3804,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 3805,
+     "to": 3811
+    },
+    {
+     "from": 3812,
+     "to": 3830
+    },
+    {
+     "from": 3831,
+     "to": 3840
+    },
+    {
+     "from": 3841,
+     "to": 3850
+    },
+    {
+     "from": 3851,
+     "to": 4138
+    },
+    {
+     "from": 4139,
+     "to": 4495
+    },
+    {
+     "from": 4496,
+     "to": 4866
+    },
+    {
+     "from": 4867,
+     "to": 5216
+    },
+    {
+     "from": 5217,
+     "to": 5494
+    },
+    {
+     "from": 5495,
+     "to": 5814
+    },
+    {
+     "from": 5815,
+     "to": 6076
+    },
+    {
+     "from": 6077,
+     "to": 6406
+    },
+    {
+     "from": 6407,
+     "to": 6696
+    },
+    {
+     "from": 6697,
+     "to": 6976
+    },
+    {
+     "from": 6977,
+     "to": 7054
+    },
+    {
+     "from": 7055,
+     "to": 7103
+    },
+    {
+     "from": 7104,
+     "to": 7110
+    }
+   ]
+  },
+  {
+   "from": 3804,
+   "to": 3811,
+   "kind": "page",
+   "page": "walkthrough-objectives"
+  },
+  {
+   "from": 3811,
+   "to": 3830,
+   "kind": "page",
+   "page": "walkthrough-faq"
+  },
+  {
+   "from": 3830,
+   "to": 3840,
+   "kind": "page",
+   "page": "walkthrough-important-notes"
+  },
+  {
+   "from": 3840,
+   "to": 3850,
+   "kind": "page",
+   "page": "walkthrough-current-problems"
+  },
+  {
+   "from": 3850,
+   "to": 4138,
+   "kind": "page",
+   "page": "walkthrough-april"
+  },
+  {
+   "from": 4138,
+   "to": 4495,
+   "kind": "page",
+   "page": "walkthrough-may"
+  },
+  {
+   "from": 4495,
+   "to": 4866,
+   "kind": "page",
+   "page": "walkthrough-june"
+  },
+  {
+   "from": 4866,
+   "to": 5216,
+   "kind": "page",
+   "page": "walkthrough-july"
+  },
+  {
+   "from": 5216,
+   "to": 5494,
+   "kind": "page",
+   "page": "walkthrough-august"
+  },
+  {
+   "from": 5494,
+   "to": 5814,
+   "kind": "page",
+   "page": "walkthrough-september"
+  },
+  {
+   "from": 5814,
+   "to": 6076,
+   "kind": "page",
+   "page": "walkthrough-october"
+  },
+  {
+   "from": 6076,
+   "to": 6406,
+   "kind": "page",
+   "page": "walkthrough-november"
+  },
+  {
+   "from": 6406,
+   "to": 6696,
+   "kind": "page",
+   "page": "walkthrough-december"
+  },
+  {
+   "from": 6696,
+   "to": 6976,
+   "kind": "page",
+   "page": "walkthrough-january"
+  },
+  {
+   "from": 6976,
+   "to": 7054,
+   "kind": "page",
+   "page": "walkthrough-february"
+  },
+  {
+   "from": 7054,
+   "to": 7103,
+   "kind": "page",
+   "page": "walkthrough-march"
+  },
+  {
+   "from": 7103,
+   "to": 7110,
+   "kind": "page",
+   "page": "walkthrough-new-game-plus-walkthrough"
+  },
+  {
+   "from": 7110,
+   "to": 7113,
+   "kind": "page",
+   "page": "dungeons-overview"
+  },
+  {
+   "from": 7113,
+   "to": 7391,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 7392,
+     "to": 7406
+    },
+    {
+     "from": 7407,
+     "to": 7446
+    },
+    {
+     "from": 7447,
+     "to": 7474
+    },
+    {
+     "from": 7475,
+     "to": 7502
+    },
+    {
+     "from": 7503,
+     "to": 7532
+    },
+    {
+     "from": 7533,
+     "to": 7562
+    },
+    {
+     "from": 7563,
+     "to": 7590
+    },
+    {
+     "from": 7591,
+     "to": 7615
+    },
+    {
+     "from": 7616,
+     "to": 7643
+    },
+    {
+     "from": 7644,
+     "to": 7668
+    },
+    {
+     "from": 7669,
+     "to": 7680
+    }
+   ]
+  },
+  {
+   "from": 7391,
+   "to": 7406,
+   "kind": "page",
+   "page": "dungeons-twisted-shopping-district"
+  },
+  {
+   "from": 7406,
+   "to": 7446,
+   "kind": "page",
+   "page": "dungeons-yukiko-s-castle"
+  },
+  {
+   "from": 7446,
+   "to": 7474,
+   "kind": "page",
+   "page": "dungeons-steamy-bathhouse"
+  },
+  {
+   "from": 7474,
+   "to": 7502,
+   "kind": "page",
+   "page": "dungeons-marukyu-striptease"
+  },
+  {
+   "from": 7502,
+   "to": 7532,
+   "kind": "page",
+   "page": "dungeons-void-quest"
+  },
+  {
+   "from": 7532,
+   "to": 7562,
+   "kind": "page",
+   "page": "dungeons-secret-laboratory"
+  },
+  {
+   "from": 7562,
+   "to": 7590,
+   "kind": "page",
+   "page": "dungeons-heaven"
+  },
+  {
+   "from": 7590,
+   "to": 7615,
+   "kind": "page",
+   "page": "dungeons-magatsu-inaba"
+  },
+  {
+   "from": 7615,
+   "to": 7643,
+   "kind": "page",
+   "page": "dungeons-hollow-forest"
+  },
+  {
+   "from": 7643,
+   "to": 7668,
+   "kind": "page",
+   "page": "dungeons-yomotsu-hirasaka"
+  },
+  {
+   "from": 7668,
+   "to": 7680,
+   "kind": "page",
+   "page": "dungeons-extra-bosses"
+  },
+  {
+   "from": 7680,
+   "to": 7682,
+   "kind": "page",
+   "page": "persona-compendium-overview"
+  },
+  {
+   "from": 7682,
+   "to": 8309,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 8310,
+     "to": 8322
+    },
+    {
+     "from": 8323,
+     "to": 8736
+    },
+    {
+     "from": 8737,
+     "to": 8744
+    },
+    {
+     "from": 8745,
+     "to": 8752
+    },
+    {
+     "from": 8753,
+     "to": 8760
+    },
+    {
+     "from": 8761,
+     "to": 8768
+    },
+    {
+     "from": 8769,
+     "to": 8776
+    },
+    {
+     "from": 8777,
+     "to": 8784
+    },
+    {
+     "from": 8785,
+     "to": 8792
+    },
+    {
+     "from": 8793,
+     "to": 8800
+    },
+    {
+     "from": 8801,
+     "to": 8808
+    },
+    {
+     "from": 8809,
+     "to": 8816
+    },
+    {
+     "from": 8817,
+     "to": 8824
+    },
+    {
+     "from": 8825,
+     "to": 8832
+    },
+    {
+     "from": 8833,
+     "to": 8840
+    },
+    {
+     "from": 8841,
+     "to": 8848
+    },
+    {
+     "from": 8849,
+     "to": 8856
+    },
+    {
+     "from": 8857,
+     "to": 8864
+    },
+    {
+     "from": 8865,
+     "to": 8872
+    },
+    {
+     "from": 8873,
+     "to": 8880
+    },
+    {
+     "from": 8881,
+     "to": 8888
+    },
+    {
+     "from": 8889,
+     "to": 8896
+    },
+    {
+     "from": 8897,
+     "to": 8904
+    },
+    {
+     "from": 8905,
+     "to": 8912
+    },
+    {
+     "from": 8913,
+     "to": 8920
+    },
+    {
+     "from": 8921,
+     "to": 8924
+    },
+    {
+     "from": 8925,
+     "to": 8963
+    }
+   ]
+  },
+  {
+   "from": 8309,
+   "to": 8322,
+   "kind": "page",
+   "page": "persona-compendium-formula"
+  },
+  {
+   "from": 8322,
+   "to": 8736,
+   "kind": "page",
+   "page": "persona-compendium-fusion-forecast"
+  },
+  {
+   "from": 8736,
+   "to": 8744,
+   "kind": "page",
+   "page": "persona-compendium-fool"
+  },
+  {
+   "from": 8744,
+   "to": 8752,
+   "kind": "page",
+   "page": "persona-compendium-magician"
+  },
+  {
+   "from": 8752,
+   "to": 8760,
+   "kind": "page",
+   "page": "persona-compendium-priestess"
+  },
+  {
+   "from": 8760,
+   "to": 8768,
+   "kind": "page",
+   "page": "persona-compendium-empress"
+  },
+  {
+   "from": 8768,
+   "to": 8776,
+   "kind": "page",
+   "page": "persona-compendium-emperor"
+  },
+  {
+   "from": 8776,
+   "to": 8784,
+   "kind": "page",
+   "page": "persona-compendium-hierophant"
+  },
+  {
+   "from": 8784,
+   "to": 8792,
+   "kind": "page",
+   "page": "persona-compendium-lovers"
+  },
+  {
+   "from": 8792,
+   "to": 8800,
+   "kind": "page",
+   "page": "persona-compendium-chariot"
+  },
+  {
+   "from": 8800,
+   "to": 8808,
+   "kind": "page",
+   "page": "persona-compendium-justice"
+  },
+  {
+   "from": 8808,
+   "to": 8816,
+   "kind": "page",
+   "page": "persona-compendium-hermit"
+  },
+  {
+   "from": 8816,
+   "to": 8824,
+   "kind": "page",
+   "page": "persona-compendium-fortune"
+  },
+  {
+   "from": 8824,
+   "to": 8832,
+   "kind": "page",
+   "page": "persona-compendium-strength"
+  },
+  {
+   "from": 8832,
+   "to": 8840,
+   "kind": "page",
+   "page": "persona-compendium-hanged-man"
+  },
+  {
+   "from": 8840,
+   "to": 8848,
+   "kind": "page",
+   "page": "persona-compendium-death"
+  },
+  {
+   "from": 8848,
+   "to": 8856,
+   "kind": "page",
+   "page": "persona-compendium-temperance"
+  },
+  {
+   "from": 8856,
+   "to": 8864,
+   "kind": "page",
+   "page": "persona-compendium-devil"
+  },
+  {
+   "from": 8864,
+   "to": 8872,
+   "kind": "page",
+   "page": "persona-compendium-tower"
+  },
+  {
+   "from": 8872,
+   "to": 8880,
+   "kind": "page",
+   "page": "persona-compendium-star"
+  },
+  {
+   "from": 8880,
+   "to": 8888,
+   "kind": "page",
+   "page": "persona-compendium-moon"
+  },
+  {
+   "from": 8888,
+   "to": 8896,
+   "kind": "page",
+   "page": "persona-compendium-sun"
+  },
+  {
+   "from": 8896,
+   "to": 8904,
+   "kind": "page",
+   "page": "persona-compendium-judgement"
+  },
+  {
+   "from": 8904,
+   "to": 8912,
+   "kind": "page",
+   "page": "persona-compendium-jester"
+  },
+  {
+   "from": 8912,
+   "to": 8920,
+   "kind": "page",
+   "page": "persona-compendium-aeon"
+  },
+  {
+   "from": 8920,
+   "to": 8924,
+   "kind": "page",
+   "page": "persona-compendium-world"
+  },
+  {
+   "from": 8924,
+   "to": 8963,
+   "kind": "page",
+   "page": "persona-compendium-special-fusions"
+  },
+  {
+   "from": 8963,
+   "to": 8967,
+   "kind": "page",
+   "page": "social-links-overview"
+  },
+  {
+   "from": 8967,
+   "to": 10562,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 10563,
+     "to": 10599
+    },
+    {
+     "from": 10600,
+     "to": 10663
+    },
+    {
+     "from": 10664,
+     "to": 10743
+    },
+    {
+     "from": 10744,
+     "to": 10790
+    },
+    {
+     "from": 10791,
+     "to": 10853
+    },
+    {
+     "from": 10854,
+     "to": 10920
+    },
+    {
+     "from": 10921,
+     "to": 10987
+    },
+    {
+     "from": 10988,
+     "to": 11057
+    },
+    {
+     "from": 11058,
+     "to": 11137
+    },
+    {
+     "from": 11138,
+     "to": 11177
+    },
+    {
+     "from": 11178,
+     "to": 11259
+    },
+    {
+     "from": 11260,
+     "to": 11379
+    },
+    {
+     "from": 11380,
+     "to": 11443
+    },
+    {
+     "from": 11444,
+     "to": 11467
+    },
+    {
+     "from": 11468,
+     "to": 11545
+    },
+    {
+     "from": 11546,
+     "to": 11614
+    },
+    {
+     "from": 11615,
+     "to": 11693
+    },
+    {
+     "from": 11694,
+     "to": 11730
+    },
+    {
+     "from": 11731,
+     "to": 11828
+    },
+    {
+     "from": 11829,
+     "to": 11949
+    },
+    {
+     "from": 11950,
+     "to": 11986
+    },
+    {
+     "from": 11987,
+     "to": 12064
+    },
+    {
+     "from": 12065,
+     "to": 12180
+    }
+   ]
+  },
+  {
+   "from": 10562,
+   "to": 10599,
+   "kind": "page",
+   "page": "social-links-investigation-team-fool"
+  },
+  {
+   "from": 10599,
+   "to": 10663,
+   "kind": "page",
+   "page": "social-links-yosuke-hanamura-magician"
+  },
+  {
+   "from": 10663,
+   "to": 10743,
+   "kind": "page",
+   "page": "social-links-yukiko-amagi-priestess"
+  },
+  {
+   "from": 10743,
+   "to": 10790,
+   "kind": "page",
+   "page": "social-links-margaret-empress"
+  },
+  {
+   "from": 10790,
+   "to": 10853,
+   "kind": "page",
+   "page": "social-links-kanji-tatsumi-emperor"
+  },
+  {
+   "from": 10853,
+   "to": 10920,
+   "kind": "page",
+   "page": "social-links-ryotaro-dojima-hierophant"
+  },
+  {
+   "from": 10920,
+   "to": 10987,
+   "kind": "page",
+   "page": "social-links-rise-kujikawa-lovers"
+  },
+  {
+   "from": 10987,
+   "to": 11057,
+   "kind": "page",
+   "page": "social-links-chie-satonaka-chariot"
+  },
+  {
+   "from": 11057,
+   "to": 11137,
+   "kind": "page",
+   "page": "social-links-nanako-dojima-justice"
+  },
+  {
+   "from": 11137,
+   "to": 11177,
+   "kind": "page",
+   "page": "social-links-fox-hermit"
+  },
+  {
+   "from": 11177,
+   "to": 11259,
+   "kind": "page",
+   "page": "social-links-naoto-shirogane-fortune"
+  },
+  {
+   "from": 11259,
+   "to": 11379,
+   "kind": "page",
+   "page": "social-links-fellow-athletes-strength"
+  },
+  {
+   "from": 11379,
+   "to": 11443,
+   "kind": "page",
+   "page": "social-links-saki-s-brother-hanged-man"
+  },
+  {
+   "from": 11443,
+   "to": 11467,
+   "kind": "page",
+   "page": "social-links-old-lady-death"
+  },
+  {
+   "from": 11467,
+   "to": 11545,
+   "kind": "page",
+   "page": "social-links-young-mother-temperance"
+  },
+  {
+   "from": 11545,
+   "to": 11614,
+   "kind": "page",
+   "page": "social-links-nurse-devil"
+  },
+  {
+   "from": 11614,
+   "to": 11693,
+   "kind": "page",
+   "page": "social-links-tutored-student-tower"
+  },
+  {
+   "from": 11693,
+   "to": 11730,
+   "kind": "page",
+   "page": "social-links-teddie-star"
+  },
+  {
+   "from": 11730,
+   "to": 11828,
+   "kind": "page",
+   "page": "social-links-ai-ebihara-moon"
+  },
+  {
+   "from": 11828,
+   "to": 11949,
+   "kind": "page",
+   "page": "social-links-yumi-ozawa-and-ayane-matsunaga-sun"
+  },
+  {
+   "from": 11949,
+   "to": 11986,
+   "kind": "page",
+   "page": "social-links-seekers-of-truth-judgement"
+  },
+  {
+   "from": 11986,
+   "to": 12064,
+   "kind": "page",
+   "page": "social-links-tohru-adachi-jester"
+  },
+  {
+   "from": 12064,
+   "to": 12180,
+   "kind": "page",
+   "page": "social-links-marie-aeon"
+  },
+  {
+   "from": 12180,
+   "to": 12182,
+   "kind": "page",
+   "page": "activities-overview"
+  },
+  {
+   "from": 12182,
+   "to": 12576,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 12577,
+     "to": 12580
+    },
+    {
+     "from": 12581,
+     "to": 12590
+    },
+    {
+     "from": 12591,
+     "to": 12602
+    },
+    {
+     "from": 12603,
+     "to": 12611
+    },
+    {
+     "from": 12612,
+     "to": 12615
+    },
+    {
+     "from": 12616,
+     "to": 12619
+    },
+    {
+     "from": 12620,
+     "to": 12657
+    },
+    {
+     "from": 12658,
+     "to": 12661
+    },
+    {
+     "from": 12662,
+     "to": 12665
+    },
+    {
+     "from": 12666,
+     "to": 12674
+    },
+    {
+     "from": 12675,
+     "to": 12678
+    },
+    {
+     "from": 12679,
+     "to": 12682
+    },
+    {
+     "from": 12683,
+     "to": 12752
+    },
+    {
+     "from": 12753,
+     "to": 12756
+    },
+    {
+     "from": 12757,
+     "to": 12760
+    },
+    {
+     "from": 12761,
+     "to": 12768
+    },
+    {
+     "from": 12769,
+     "to": 12771
+    },
+    {
+     "from": 12772,
+     "to": 12775
+    },
+    {
+     "from": 12776,
+     "to": 12779
+    },
+    {
+     "from": 12780,
+     "to": 12783
+    },
+    {
+     "from": 12784,
+     "to": 12958
+    },
+    {
+     "from": 12959,
+     "to": 12962
+    },
+    {
+     "from": 12963,
+     "to": 12993
+    }
+   ]
+  },
+  {
+   "from": 12576,
+   "to": 12580,
+   "kind": "page",
+   "page": "activities-quests"
+  },
+  {
+   "from": 12580,
+   "to": 12590,
+   "kind": "page",
+   "page": "activities-bug-catching"
+  },
+  {
+   "from": 12590,
+   "to": 12602,
+   "kind": "page",
+   "page": "activities-fishing"
+  },
+  {
+   "from": 12602,
+   "to": 12611,
+   "kind": "page",
+   "page": "activities-gardening"
+  },
+  {
+   "from": 12611,
+   "to": 12615,
+   "kind": "page",
+   "page": "activities-cooking"
+  },
+  {
+   "from": 12615,
+   "to": 12619,
+   "kind": "page",
+   "page": "activities-books"
+  },
+  {
+   "from": 12619,
+   "to": 12657,
+   "kind": "page",
+   "page": "activities-beach-hot-springs"
+  },
+  {
+   "from": 12657,
+   "to": 12661,
+   "kind": "page",
+   "page": "activities-costume-shop"
+  },
+  {
+   "from": 12661,
+   "to": 12665,
+   "kind": "page",
+   "page": "activities-tv-shopping"
+  },
+  {
+   "from": 12665,
+   "to": 12674,
+   "kind": "page",
+   "page": "activities-daidara-list"
+  },
+  {
+   "from": 12674,
+   "to": 12678,
+   "kind": "page",
+   "page": "activities-shiroku-store"
+  },
+  {
+   "from": 12678,
+   "to": 12682,
+   "kind": "page",
+   "page": "activities-shiroku-pub"
+  },
+  {
+   "from": 12682,
+   "to": 12752,
+   "kind": "page",
+   "page": "activities-part-time-jobs"
+  },
+  {
+   "from": 12752,
+   "to": 12756,
+   "kind": "page",
+   "page": "activities-artisan-apprentice"
+  },
+  {
+   "from": 12756,
+   "to": 12760,
+   "kind": "page",
+   "page": "activities-lady-in-white"
+  },
+  {
+   "from": 12760,
+   "to": 12768,
+   "kind": "page",
+   "page": "activities-okina-movie-theater"
+  },
+  {
+   "from": 12768,
+   "to": 12771,
+   "kind": "page",
+   "page": "activities-chagall-cafe"
+  },
+  {
+   "from": 12771,
+   "to": 12775,
+   "kind": "page",
+   "page": "activities-crane-machine"
+  },
+  {
+   "from": 12775,
+   "to": 12779,
+   "kind": "page",
+   "page": "activities-refrigerator"
+  },
+  {
+   "from": 12779,
+   "to": 12783,
+   "kind": "page",
+   "page": "activities-models"
+  },
+  {
+   "from": 12783,
+   "to": 12958,
+   "kind": "page",
+   "page": "activities-miracle-quiz"
+  },
+  {
+   "from": 12958,
+   "to": 12962,
+   "kind": "page",
+   "page": "activities-trophies"
+  },
+  {
+   "from": 12962,
+   "to": 12993,
+   "kind": "page",
+   "page": "activities-other-activities"
+  },
+  {
+   "from": 12993,
+   "to": 12994,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 13146,
+     "to": 13147
+    }
+   ]
+  },
+  {
+   "from": 12994,
+   "to": 13146,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 13147,
+     "to": 13189
+    },
+    {
+     "from": 13190,
+     "to": 13215
+    },
+    {
+     "from": 13216,
+     "to": 13301
+    }
+   ]
+  },
+  {
+   "from": 13146,
+   "to": 13189,
+   "kind": "page",
+   "page": "skill-list-all-skills"
+  },
+  {
+   "from": 13189,
+   "to": 13215,
+   "kind": "page",
+   "page": "skill-list-skill-cards"
+  },
+  {
+   "from": 13215,
+   "to": 13301,
+   "kind": "page",
+   "page": "skill-list-party-members"
+  },
+  {
+   "from": 13301,
+   "to": 13303,
+   "kind": "page",
+   "page": "item-list-overview"
+  },
+  {
+   "from": 13303,
+   "to": 13391,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 13392,
+     "to": 13407
+    },
+    {
+     "from": 13408,
+     "to": 13417
+    },
+    {
+     "from": 13418,
+     "to": 13429
+    },
+    {
+     "from": 13430,
+     "to": 13450
+    },
+    {
+     "from": 13451,
+     "to": 13456
+    },
+    {
+     "from": 13457,
+     "to": 13465
+    },
+    {
+     "from": 13466,
+     "to": 13469
+    },
+    {
+     "from": 13470,
+     "to": 13473
+    },
+    {
+     "from": 13474,
+     "to": 13479
+    },
+    {
+     "from": 13480,
+     "to": 13483
+    },
+    {
+     "from": 13484,
+     "to": 13487
+    },
+    {
+     "from": 13488,
+     "to": 13491
+    }
+   ]
+  },
+  {
+   "from": 13391,
+   "to": 13407,
+   "kind": "page",
+   "page": "item-list-weapons"
+  },
+  {
+   "from": 13407,
+   "to": 13417,
+   "kind": "page",
+   "page": "item-list-armor"
+  },
+  {
+   "from": 13417,
+   "to": 13429,
+   "kind": "page",
+   "page": "item-list-accessories"
+  },
+  {
+   "from": 13429,
+   "to": 13450,
+   "kind": "page",
+   "page": "item-list-costume-list"
+  },
+  {
+   "from": 13450,
+   "to": 13456,
+   "kind": "page",
+   "page": "item-list-consumable-quest-items"
+  },
+  {
+   "from": 13456,
+   "to": 13465,
+   "kind": "page",
+   "page": "item-list-materials"
+  },
+  {
+   "from": 13465,
+   "to": 13469,
+   "kind": "page",
+   "page": "item-list-book-list"
+  },
+  {
+   "from": 13469,
+   "to": 13473,
+   "kind": "page",
+   "page": "item-list-fish-list"
+  },
+  {
+   "from": 13473,
+   "to": 13479,
+   "kind": "page",
+   "page": "item-list-gardening-items"
+  },
+  {
+   "from": 13479,
+   "to": 13483,
+   "kind": "page",
+   "page": "item-list-bug-list"
+  },
+  {
+   "from": 13483,
+   "to": 13487,
+   "kind": "page",
+   "page": "item-list-gem-list"
+  },
+  {
+   "from": 13487,
+   "to": 13491,
+   "kind": "page",
+   "page": "item-list-key-items"
+  },
+  {
+   "from": 13491,
+   "to": 13492,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 13534,
+     "to": 13535
+    }
+   ]
+  },
+  {
+   "from": 13492,
+   "to": 13534,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 13535,
+     "to": 13544
+    },
+    {
+     "from": 13545,
+     "to": 13555
+    },
+    {
+     "from": 13556,
+     "to": 13564
+    },
+    {
+     "from": 13565,
+     "to": 13572
+    },
+    {
+     "from": 13573,
+     "to": 13581
+    }
+   ]
+  },
+  {
+   "from": 13534,
+   "to": 13544,
+   "kind": "page",
+   "page": "tips-and-tricks-golden-shadow-grinding"
+  },
+  {
+   "from": 13544,
+   "to": 13555,
+   "kind": "page",
+   "page": "tips-and-tricks-best-personas"
+  },
+  {
+   "from": 13555,
+   "to": 13564,
+   "kind": "page",
+   "page": "tips-and-tricks-hardcore-risette-fan"
+  },
+  {
+   "from": 13564,
+   "to": 13572,
+   "kind": "page",
+   "page": "tips-and-tricks-victory-cry-cheat"
+  },
+  {
+   "from": 13572,
+   "to": 13581,
+   "kind": "page",
+   "page": "tips-and-tricks-resources"
+  },
+  {
+   "from": 13581,
+   "to": 13582,
+   "kind": "duplicate",
+   "reason": "chapter heading repeated at the head of every section block",
+   "of": [
+    {
+     "from": 13608,
+     "to": 13609
+    }
+   ]
+  },
+  {
+   "from": 13582,
+   "to": 13608,
+   "kind": "duplicate",
+   "reason": "full-chapter copy; identical to the per-section blocks that follow",
+   "of": [
+    {
+     "from": 13609,
+     "to": 13631
+    },
+    {
+     "from": 13632,
+     "to": 13637
+    }
+   ]
+  },
+  {
+   "from": 13608,
+   "to": 13631,
+   "kind": "page",
+   "page": "conclusion-special-thanks"
+  },
+  {
+   "from": 13631,
+   "to": 13637,
+   "kind": "page",
+   "page": "conclusion-final-remarks"
+  }
+ ]
+}
