@@ -20,37 +20,9 @@ export function getPages(): PageEntry[] {
   return manifest.pages.map(({ id, title, category }: PageEntry) => ({ id, title, category }));
 }
 
-/** Verbatim page markup from the source. */
+/** Page markup as written by scripts/extract.mjs (source markup plus the verified structural transforms). */
 export function getPageHtml(id: string): string {
   return fs.readFileSync(path.join(DATA_DIR, 'pages', `${id}.html`), 'utf-8');
-}
-
-/** Adds a severity class to each callout blockquote, chosen from its bold heading. Text is untouched. */
-export function tagCallouts(html: string): string {
-  return html.replace(/<blockquote>(?=<p><strong>\s*([^<]*))/g, (_m, heading: string) => {
-    const h = heading.trim().toUpperCase();
-    const level = h.startsWith('HIGHLY IMPORTANT') ? 'high'
-      : h.startsWith('IMPORTANT') || h.startsWith('WARNING') ? 'alert'
-      : h.includes('SPOILERS') ? 'spoiler'
-      : '';
-    return level ? `<blockquote class="callout callout-${level}">` : '<blockquote>';
-  });
-}
-
-/** Marks "----<br>~April 11th~<br>----" day dividers so CSS can style them as headings. Text is untouched. */
-export function tagDateMarkers(html: string): string {
-  return html.replace(
-    /<p>(-{4,}<br>~)([^~<]+)(~<br>-{4,})<\/p>/g,
-    '<p class="date-marker">$1<span class="date-marker-text">$2</span>$3</p>',
-  );
-}
-
-/** Marks standalone "-Label-" paragraphs (Fridge, Rank 3, Story Events...) so CSS can style them as sub-headings. Text is untouched. */
-export function tagLabelMarkers(html: string): string {
-  return html.replace(
-    /<p>(-)([A-Za-z][^<>~]{0,60})(-)<\/p>/g,
-    '<p class="label-marker">$1<span class="label-marker-text">$2</span>$3</p>',
-  );
 }
 
 /** Sidebar data: pages grouped by consecutive category. */
@@ -71,12 +43,4 @@ export function getNeighbours(id: string): { prev?: PageEntry; next?: PageEntry 
   const pages = getPages();
   const at = pages.findIndex((p) => p.id === id);
   return at < 0 ? {} : { prev: pages[at - 1], next: pages[at + 1] };
-}
-
-/** Wraps "FAQ1: question<br>answer" paragraphs in a native <details> so answers collapse. Text is untouched. */
-export function tagFaq(html: string): string {
-  return html.replace(
-    /<p>((?:FAQ|WAQ)X?\d+:[^<]*)<br>([\s\S]*?)<\/p>/g,
-    '<details class="faq"><summary>$1</summary><div class="faq-answer">$2</div></details>',
-  );
 }

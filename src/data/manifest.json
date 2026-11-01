@@ -12,1050 +12,1200 @@
    "title": "Overview",
    "category": "100% Guide",
    "from": 2,
-   "to": 10
+   "to": 10,
+   "stripped": 0
   },
   {
    "id": "100-guide-guide-checklist",
    "title": "Guide Checklist",
    "category": "100% Guide",
    "from": 30,
-   "to": 48
+   "to": 48,
+   "stripped": 0
   },
   {
    "id": "100-guide-update-current-schedule",
    "title": "Update/Current Schedule",
    "category": "100% Guide",
    "from": 48,
-   "to": 52
+   "to": 52,
+   "stripped": 0
   },
   {
    "id": "introduction-version-history",
    "title": "Version History",
    "category": "Introduction",
    "from": 96,
-   "to": 123
+   "to": 123,
+   "stripped": 0
   },
   {
    "id": "introduction-copyright",
    "title": "Copyright",
    "category": "Introduction",
    "from": 123,
-   "to": 126
+   "to": 126,
+   "stripped": 0
   },
   {
    "id": "introduction-frequently-asked-questions",
    "title": "Frequently Asked Questions",
    "category": "Introduction",
    "from": 126,
-   "to": 137
+   "to": 137,
+   "stripped": 0
   },
   {
    "id": "introduction-about-this-guide",
    "title": "About This Guide",
    "category": "Introduction",
    "from": 137,
-   "to": 140
+   "to": 140,
+   "stripped": 0
   },
   {
    "id": "introduction-contact-information",
    "title": "Contact Information",
    "category": "Introduction",
    "from": 140,
-   "to": 144
+   "to": 144,
+   "stripped": 0
   },
   {
    "id": "about-persona-4-golden-what-is-persona",
    "title": "What Is Persona?",
    "category": "About Persona 4 Golden",
    "from": 153,
-   "to": 156
+   "to": 156,
+   "stripped": 0
   },
   {
    "id": "about-persona-4-golden-persona-3-vs-persona-4",
    "title": "Persona 3 vs. Persona 4",
    "category": "About Persona 4 Golden",
    "from": 156,
-   "to": 160
+   "to": 160,
+   "stripped": 0
   },
   {
    "id": "about-persona-4-golden-persona-4-vs-persona-4-golden",
    "title": "Persona 4 vs. Persona 4 Golden",
    "category": "About Persona 4 Golden",
    "from": 160,
-   "to": 164
+   "to": 164,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-controls",
    "title": "Controls",
    "category": "Gameplay Mechanics",
    "from": 334,
-   "to": 362
+   "to": 362,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-field-mechanics",
    "title": "Field Mechanics",
    "category": "Gameplay Mechanics",
    "from": 362,
-   "to": 370
+   "to": 370,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-calendar-system",
    "title": "Calendar System",
    "category": "Gameplay Mechanics",
    "from": 370,
-   "to": 373
+   "to": 373,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-social-link",
    "title": "Social Link",
    "category": "Gameplay Mechanics",
    "from": 373,
-   "to": 378
+   "to": 378,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-status-parameters",
    "title": "Status Parameters",
    "category": "Gameplay Mechanics",
    "from": 378,
-   "to": 426
+   "to": 426,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-velvet-room",
    "title": "Velvet Room",
    "category": "Gameplay Mechanics",
    "from": 426,
-   "to": 439
+   "to": 439,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-battle-mechanics",
    "title": "Battle Mechanics",
    "category": "Gameplay Mechanics",
    "from": 439,
-   "to": 466
+   "to": 466,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-shuffle-time",
    "title": "Shuffle TIme",
    "category": "Gameplay Mechanics",
    "from": 466,
-   "to": 498
+   "to": 498,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-status-ailments",
    "title": "Status Ailments",
    "category": "Gameplay Mechanics",
    "from": 498,
-   "to": 502
+   "to": 502,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-new-game-plus",
    "title": "New Game Plus",
    "category": "Gameplay Mechanics",
    "from": 502,
-   "to": 510
+   "to": 510,
+   "stripped": 0
   },
   {
    "id": "gameplay-mechanics-tv-channels",
    "title": "TV Channels",
    "category": "Gameplay Mechanics",
    "from": 510,
-   "to": 514
+   "to": 514,
+   "stripped": 0
   },
   {
    "id": "walkthrough-objectives",
    "title": "Walkthrough Objectives",
    "category": "Walkthrough",
    "from": 3804,
-   "to": 3811
+   "to": 3811,
+   "stripped": 0
   },
   {
    "id": "walkthrough-faq",
    "title": "Walkthrough FAQ",
    "category": "Walkthrough",
    "from": 3811,
-   "to": 3830
+   "to": 3830,
+   "stripped": 0
   },
   {
    "id": "walkthrough-important-notes",
    "title": "Important Notes",
    "category": "Walkthrough",
    "from": 3830,
-   "to": 3840
+   "to": 3840,
+   "stripped": 0
   },
   {
    "id": "walkthrough-current-problems",
    "title": "Current Problems",
    "category": "Walkthrough",
    "from": 3840,
-   "to": 3850
+   "to": 3850,
+   "stripped": 0
   },
   {
    "id": "walkthrough-april",
    "title": "April",
    "category": "Walkthrough",
    "from": 3850,
-   "to": 4138
+   "to": 4138,
+   "stripped": 42
   },
   {
    "id": "walkthrough-may",
    "title": "May",
    "category": "Walkthrough",
    "from": 4138,
-   "to": 4495
+   "to": 4495,
+   "stripped": 60
   },
   {
    "id": "walkthrough-june",
    "title": "June",
    "category": "Walkthrough",
    "from": 4495,
-   "to": 4866
+   "to": 4866,
+   "stripped": 60
   },
   {
    "id": "walkthrough-july",
    "title": "July",
    "category": "Walkthrough",
    "from": 4866,
-   "to": 5216
+   "to": 5216,
+   "stripped": 56
   },
   {
    "id": "walkthrough-august",
    "title": "August",
    "category": "Walkthrough",
    "from": 5216,
-   "to": 5494
+   "to": 5494,
+   "stripped": 56
   },
   {
    "id": "walkthrough-september",
    "title": "September",
    "category": "Walkthrough",
    "from": 5494,
-   "to": 5814
+   "to": 5814,
+   "stripped": 62
   },
   {
    "id": "walkthrough-october",
    "title": "October",
    "category": "Walkthrough",
    "from": 5814,
-   "to": 6076
+   "to": 6076,
+   "stripped": 58
   },
   {
    "id": "walkthrough-november",
    "title": "November",
    "category": "Walkthrough",
    "from": 6076,
-   "to": 6406
+   "to": 6406,
+   "stripped": 54
   },
   {
    "id": "walkthrough-december",
    "title": "December",
    "category": "Walkthrough",
    "from": 6406,
-   "to": 6696
+   "to": 6696,
+   "stripped": 54
   },
   {
    "id": "walkthrough-january",
    "title": "January",
    "category": "Walkthrough",
    "from": 6696,
-   "to": 6976
+   "to": 6976,
+   "stripped": 52
   },
   {
    "id": "walkthrough-february",
    "title": "February",
    "category": "Walkthrough",
    "from": 6976,
-   "to": 7054
+   "to": 7054,
+   "stripped": 22
   },
   {
    "id": "walkthrough-march",
    "title": "March",
    "category": "Walkthrough",
    "from": 7054,
-   "to": 7103
+   "to": 7103,
+   "stripped": 2
   },
   {
    "id": "walkthrough-new-game-plus-walkthrough",
    "title": "New Game Plus Walkthrough",
    "category": "Walkthrough",
    "from": 7103,
-   "to": 7110
+   "to": 7110,
+   "stripped": 0
   },
   {
    "id": "dungeons-overview",
    "title": "Overview",
    "category": "Dungeons",
    "from": 7110,
-   "to": 7113
+   "to": 7113,
+   "stripped": 0
   },
   {
    "id": "dungeons-twisted-shopping-district",
    "title": "Twisted Shopping District",
    "category": "Dungeons",
    "from": 7391,
-   "to": 7406
+   "to": 7406,
+   "stripped": 0
   },
   {
    "id": "dungeons-yukiko-s-castle",
    "title": "Yukiko's Castle",
    "category": "Dungeons",
    "from": 7406,
-   "to": 7446
+   "to": 7446,
+   "stripped": 0
   },
   {
    "id": "dungeons-steamy-bathhouse",
    "title": "Steamy Bathhouse",
    "category": "Dungeons",
    "from": 7446,
-   "to": 7474
+   "to": 7474,
+   "stripped": 0
   },
   {
    "id": "dungeons-marukyu-striptease",
    "title": "Marukyu Striptease",
    "category": "Dungeons",
    "from": 7474,
-   "to": 7502
+   "to": 7502,
+   "stripped": 0
   },
   {
    "id": "dungeons-void-quest",
    "title": "Void Quest",
    "category": "Dungeons",
    "from": 7502,
-   "to": 7532
+   "to": 7532,
+   "stripped": 0
   },
   {
    "id": "dungeons-secret-laboratory",
    "title": "Secret Laboratory",
    "category": "Dungeons",
    "from": 7532,
-   "to": 7562
+   "to": 7562,
+   "stripped": 0
   },
   {
    "id": "dungeons-heaven",
    "title": "Heaven",
    "category": "Dungeons",
    "from": 7562,
-   "to": 7590
+   "to": 7590,
+   "stripped": 0
   },
   {
    "id": "dungeons-magatsu-inaba",
    "title": "Magatsu Inaba",
    "category": "Dungeons",
    "from": 7590,
-   "to": 7615
+   "to": 7615,
+   "stripped": 0
   },
   {
    "id": "dungeons-hollow-forest",
    "title": "Hollow Forest",
    "category": "Dungeons",
    "from": 7615,
-   "to": 7643
+   "to": 7643,
+   "stripped": 0
   },
   {
    "id": "dungeons-yomotsu-hirasaka",
    "title": "Yomotsu Hirasaka",
    "category": "Dungeons",
    "from": 7643,
-   "to": 7668
+   "to": 7668,
+   "stripped": 0
   },
   {
    "id": "dungeons-extra-bosses",
    "title": "Extra Bosses",
    "category": "Dungeons",
    "from": 7668,
-   "to": 7680
+   "to": 7680,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-overview",
    "title": "Overview",
    "category": "Persona Compendium",
    "from": 7680,
-   "to": 7682
+   "to": 7682,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-formula",
    "title": "Formula",
    "category": "Persona Compendium",
    "from": 8309,
-   "to": 8322
+   "to": 8322,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-fusion-forecast",
    "title": "Fusion Forecast",
    "category": "Persona Compendium",
    "from": 8322,
-   "to": 8736
+   "to": 8736,
+   "stripped": 266
   },
   {
    "id": "persona-compendium-fool",
    "title": "Fool",
    "category": "Persona Compendium",
    "from": 8736,
-   "to": 8744
+   "to": 8744,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-magician",
    "title": "Magician",
    "category": "Persona Compendium",
    "from": 8744,
-   "to": 8752
+   "to": 8752,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-priestess",
    "title": "Priestess",
    "category": "Persona Compendium",
    "from": 8752,
-   "to": 8760
+   "to": 8760,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-empress",
    "title": "Empress",
    "category": "Persona Compendium",
    "from": 8760,
-   "to": 8768
+   "to": 8768,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-emperor",
    "title": "Emperor",
    "category": "Persona Compendium",
    "from": 8768,
-   "to": 8776
+   "to": 8776,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-hierophant",
    "title": "Hierophant",
    "category": "Persona Compendium",
    "from": 8776,
-   "to": 8784
+   "to": 8784,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-lovers",
    "title": "Lovers",
    "category": "Persona Compendium",
    "from": 8784,
-   "to": 8792
+   "to": 8792,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-chariot",
    "title": "Chariot",
    "category": "Persona Compendium",
    "from": 8792,
-   "to": 8800
+   "to": 8800,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-justice",
    "title": "Justice",
    "category": "Persona Compendium",
    "from": 8800,
-   "to": 8808
+   "to": 8808,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-hermit",
    "title": "Hermit",
    "category": "Persona Compendium",
    "from": 8808,
-   "to": 8816
+   "to": 8816,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-fortune",
    "title": "Fortune",
    "category": "Persona Compendium",
    "from": 8816,
-   "to": 8824
+   "to": 8824,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-strength",
    "title": "Strength",
    "category": "Persona Compendium",
    "from": 8824,
-   "to": 8832
+   "to": 8832,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-hanged-man",
    "title": "Hanged Man",
    "category": "Persona Compendium",
    "from": 8832,
-   "to": 8840
+   "to": 8840,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-death",
    "title": "Death",
    "category": "Persona Compendium",
    "from": 8840,
-   "to": 8848
+   "to": 8848,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-temperance",
    "title": "Temperance",
    "category": "Persona Compendium",
    "from": 8848,
-   "to": 8856
+   "to": 8856,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-devil",
    "title": "Devil",
    "category": "Persona Compendium",
    "from": 8856,
-   "to": 8864
+   "to": 8864,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-tower",
    "title": "Tower",
    "category": "Persona Compendium",
    "from": 8864,
-   "to": 8872
+   "to": 8872,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-star",
    "title": "Star",
    "category": "Persona Compendium",
    "from": 8872,
-   "to": 8880
+   "to": 8880,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-moon",
    "title": "Moon",
    "category": "Persona Compendium",
    "from": 8880,
-   "to": 8888
+   "to": 8888,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-sun",
    "title": "Sun",
    "category": "Persona Compendium",
    "from": 8888,
-   "to": 8896
+   "to": 8896,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-judgement",
    "title": "Judgement",
    "category": "Persona Compendium",
    "from": 8896,
-   "to": 8904
+   "to": 8904,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-jester",
    "title": "Jester",
    "category": "Persona Compendium",
    "from": 8904,
-   "to": 8912
+   "to": 8912,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-aeon",
    "title": "Aeon",
    "category": "Persona Compendium",
    "from": 8912,
-   "to": 8920
+   "to": 8920,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-world",
    "title": "World",
    "category": "Persona Compendium",
    "from": 8920,
-   "to": 8924
+   "to": 8924,
+   "stripped": 0
   },
   {
    "id": "persona-compendium-special-fusions",
    "title": "Special Fusions",
    "category": "Persona Compendium",
    "from": 8924,
-   "to": 8963
+   "to": 8963,
+   "stripped": 0
   },
   {
    "id": "social-links-overview",
    "title": "Overview",
    "category": "Social Links",
    "from": 8963,
-   "to": 8967
+   "to": 8967,
+   "stripped": 0
   },
   {
    "id": "social-links-investigation-team-fool",
    "title": "Investigation Team/Fool",
    "category": "Social Links",
    "from": 10562,
-   "to": 10599
+   "to": 10599,
+   "stripped": 0
   },
   {
    "id": "social-links-yosuke-hanamura-magician",
    "title": "Yosuke Hanamura/Magician",
    "category": "Social Links",
    "from": 10599,
-   "to": 10663
+   "to": 10663,
+   "stripped": 0
   },
   {
    "id": "social-links-yukiko-amagi-priestess",
    "title": "Yukiko Amagi/Priestess",
    "category": "Social Links",
    "from": 10663,
-   "to": 10743
+   "to": 10743,
+   "stripped": 0
   },
   {
    "id": "social-links-margaret-empress",
    "title": "Margaret/Empress",
    "category": "Social Links",
    "from": 10743,
-   "to": 10790
+   "to": 10790,
+   "stripped": 0
   },
   {
    "id": "social-links-kanji-tatsumi-emperor",
    "title": "Kanji Tatsumi/Emperor",
    "category": "Social Links",
    "from": 10790,
-   "to": 10853
+   "to": 10853,
+   "stripped": 0
   },
   {
    "id": "social-links-ryotaro-dojima-hierophant",
    "title": "Ryotaro Dojima/Hierophant",
    "category": "Social Links",
    "from": 10853,
-   "to": 10920
+   "to": 10920,
+   "stripped": 0
   },
   {
    "id": "social-links-rise-kujikawa-lovers",
    "title": "Rise Kujikawa/Lovers",
    "category": "Social Links",
    "from": 10920,
-   "to": 10987
+   "to": 10987,
+   "stripped": 0
   },
   {
    "id": "social-links-chie-satonaka-chariot",
    "title": "Chie Satonaka/Chariot",
    "category": "Social Links",
    "from": 10987,
-   "to": 11057
+   "to": 11057,
+   "stripped": 0
   },
   {
    "id": "social-links-nanako-dojima-justice",
    "title": "Nanako Dojima/Justice",
    "category": "Social Links",
    "from": 11057,
-   "to": 11137
+   "to": 11137,
+   "stripped": 0
   },
   {
    "id": "social-links-fox-hermit",
    "title": "Fox/Hermit",
    "category": "Social Links",
    "from": 11137,
-   "to": 11177
+   "to": 11177,
+   "stripped": 0
   },
   {
    "id": "social-links-naoto-shirogane-fortune",
    "title": "Naoto Shirogane/Fortune",
    "category": "Social Links",
    "from": 11177,
-   "to": 11259
+   "to": 11259,
+   "stripped": 0
   },
   {
    "id": "social-links-fellow-athletes-strength",
    "title": "Fellow Athletes/Strength",
    "category": "Social Links",
    "from": 11259,
-   "to": 11379
+   "to": 11379,
+   "stripped": 0
   },
   {
    "id": "social-links-saki-s-brother-hanged-man",
    "title": "Saki's Brother/Hanged Man",
    "category": "Social Links",
    "from": 11379,
-   "to": 11443
+   "to": 11443,
+   "stripped": 0
   },
   {
    "id": "social-links-old-lady-death",
    "title": "Old Lady/Death",
    "category": "Social Links",
    "from": 11443,
-   "to": 11467
+   "to": 11467,
+   "stripped": 0
   },
   {
    "id": "social-links-young-mother-temperance",
    "title": "Young Mother/Temperance",
    "category": "Social Links",
    "from": 11467,
-   "to": 11545
+   "to": 11545,
+   "stripped": 0
   },
   {
    "id": "social-links-nurse-devil",
    "title": "Nurse/Devil",
    "category": "Social Links",
    "from": 11545,
-   "to": 11614
+   "to": 11614,
+   "stripped": 0
   },
   {
    "id": "social-links-tutored-student-tower",
    "title": "Tutored Student/Tower",
    "category": "Social Links",
    "from": 11614,
-   "to": 11693
+   "to": 11693,
+   "stripped": 0
   },
   {
    "id": "social-links-teddie-star",
    "title": "Teddie/Star",
    "category": "Social Links",
    "from": 11693,
-   "to": 11730
+   "to": 11730,
+   "stripped": 0
   },
   {
    "id": "social-links-ai-ebihara-moon",
    "title": "Ai Ebihara/Moon",
    "category": "Social Links",
    "from": 11730,
-   "to": 11828
+   "to": 11828,
+   "stripped": 0
   },
   {
    "id": "social-links-yumi-ozawa-and-ayane-matsunaga-sun",
    "title": "Yumi Ozawa and Ayane Matsunaga/Sun",
    "category": "Social Links",
    "from": 11828,
-   "to": 11949
+   "to": 11949,
+   "stripped": 0
   },
   {
    "id": "social-links-seekers-of-truth-judgement",
    "title": "Seekers of Truth/Judgement",
    "category": "Social Links",
    "from": 11949,
-   "to": 11986
+   "to": 11986,
+   "stripped": 0
   },
   {
    "id": "social-links-tohru-adachi-jester",
    "title": "Tohru Adachi/Jester",
    "category": "Social Links",
    "from": 11986,
-   "to": 12064
+   "to": 12064,
+   "stripped": 0
   },
   {
    "id": "social-links-marie-aeon",
    "title": "Marie/Aeon",
    "category": "Social Links",
    "from": 12064,
-   "to": 12180
+   "to": 12180,
+   "stripped": 0
   },
   {
    "id": "activities-overview",
    "title": "Overview",
    "category": "Activities",
    "from": 12180,
-   "to": 12182
+   "to": 12182,
+   "stripped": 0
   },
   {
    "id": "activities-quests",
    "title": "Quests",
    "category": "Activities",
    "from": 12576,
-   "to": 12580
+   "to": 12580,
+   "stripped": 0
   },
   {
    "id": "activities-bug-catching",
    "title": "Bug Catching",
    "category": "Activities",
    "from": 12580,
-   "to": 12590
+   "to": 12590,
+   "stripped": 0
   },
   {
    "id": "activities-fishing",
    "title": "Fishing",
    "category": "Activities",
    "from": 12590,
-   "to": 12602
+   "to": 12602,
+   "stripped": 0
   },
   {
    "id": "activities-gardening",
    "title": "Gardening",
    "category": "Activities",
    "from": 12602,
-   "to": 12611
+   "to": 12611,
+   "stripped": 0
   },
   {
    "id": "activities-cooking",
    "title": "Cooking",
    "category": "Activities",
    "from": 12611,
-   "to": 12615
+   "to": 12615,
+   "stripped": 0
   },
   {
    "id": "activities-books",
    "title": "Books",
    "category": "Activities",
    "from": 12615,
-   "to": 12619
+   "to": 12619,
+   "stripped": 0
   },
   {
    "id": "activities-beach-hot-springs",
    "title": "Beach/Hot Springs",
    "category": "Activities",
    "from": 12619,
-   "to": 12657
+   "to": 12657,
+   "stripped": 0
   },
   {
    "id": "activities-costume-shop",
    "title": "Costume Shop",
    "category": "Activities",
    "from": 12657,
-   "to": 12661
+   "to": 12661,
+   "stripped": 0
   },
   {
    "id": "activities-tv-shopping",
    "title": "TV Shopping",
    "category": "Activities",
    "from": 12661,
-   "to": 12665
+   "to": 12665,
+   "stripped": 0
   },
   {
    "id": "activities-daidara-list",
    "title": "Daidara List",
    "category": "Activities",
    "from": 12665,
-   "to": 12674
+   "to": 12674,
+   "stripped": 0
   },
   {
    "id": "activities-shiroku-store",
    "title": "Shiroku Store",
    "category": "Activities",
    "from": 12674,
-   "to": 12678
+   "to": 12678,
+   "stripped": 0
   },
   {
    "id": "activities-shiroku-pub",
    "title": "Shiroku Pub",
    "category": "Activities",
    "from": 12678,
-   "to": 12682
+   "to": 12682,
+   "stripped": 0
   },
   {
    "id": "activities-part-time-jobs",
    "title": "Part Time Jobs",
    "category": "Activities",
    "from": 12682,
-   "to": 12752
+   "to": 12752,
+   "stripped": 0
   },
   {
    "id": "activities-artisan-apprentice",
    "title": "Artisan Apprentice",
    "category": "Activities",
    "from": 12752,
-   "to": 12756
+   "to": 12756,
+   "stripped": 0
   },
   {
    "id": "activities-lady-in-white",
    "title": "Lady in White",
    "category": "Activities",
    "from": 12756,
-   "to": 12760
+   "to": 12760,
+   "stripped": 0
   },
   {
    "id": "activities-okina-movie-theater",
    "title": "Okina Movie Theater",
    "category": "Activities",
    "from": 12760,
-   "to": 12768
+   "to": 12768,
+   "stripped": 0
   },
   {
    "id": "activities-chagall-cafe",
    "title": "Chagall Cafe",
    "category": "Activities",
    "from": 12768,
-   "to": 12771
+   "to": 12771,
+   "stripped": 0
   },
   {
    "id": "activities-crane-machine",
    "title": "Crane Machine",
    "category": "Activities",
    "from": 12771,
-   "to": 12775
+   "to": 12775,
+   "stripped": 0
   },
   {
    "id": "activities-refrigerator",
    "title": "Refrigerator",
    "category": "Activities",
    "from": 12775,
-   "to": 12779
+   "to": 12779,
+   "stripped": 0
   },
   {
    "id": "activities-models",
    "title": "Models",
    "category": "Activities",
    "from": 12779,
-   "to": 12783
+   "to": 12783,
+   "stripped": 0
   },
   {
    "id": "activities-miracle-quiz",
    "title": "Miracle Quiz",
    "category": "Activities",
    "from": 12783,
-   "to": 12958
+   "to": 12958,
+   "stripped": 0
   },
   {
    "id": "activities-trophies",
    "title": "Trophies",
    "category": "Activities",
    "from": 12958,
-   "to": 12962
+   "to": 12962,
+   "stripped": 0
   },
   {
    "id": "activities-other-activities",
    "title": "Other Activities",
    "category": "Activities",
    "from": 12962,
-   "to": 12993
+   "to": 12993,
+   "stripped": 0
   },
   {
    "id": "skill-list-all-skills",
    "title": "All Skills",
    "category": "Skill List",
    "from": 13146,
-   "to": 13189
+   "to": 13189,
+   "stripped": 4
   },
   {
    "id": "skill-list-skill-cards",
    "title": "Skill Cards",
    "category": "Skill List",
    "from": 13189,
-   "to": 13215
+   "to": 13215,
+   "stripped": 0
   },
   {
    "id": "skill-list-party-members",
    "title": "Party Members",
    "category": "Skill List",
    "from": 13215,
-   "to": 13301
+   "to": 13301,
+   "stripped": 16
   },
   {
    "id": "item-list-overview",
    "title": "Overview",
    "category": "Item List",
    "from": 13301,
-   "to": 13303
+   "to": 13303,
+   "stripped": 0
   },
   {
    "id": "item-list-weapons",
    "title": "Weapons",
    "category": "Item List",
    "from": 13391,
-   "to": 13407
+   "to": 13407,
+   "stripped": 0
   },
   {
    "id": "item-list-armor",
    "title": "Armor",
    "category": "Item List",
    "from": 13407,
-   "to": 13417
+   "to": 13417,
+   "stripped": 0
   },
   {
    "id": "item-list-accessories",
    "title": "Accessories",
    "category": "Item List",
    "from": 13417,
-   "to": 13429
+   "to": 13429,
+   "stripped": 0
   },
   {
    "id": "item-list-costume-list",
    "title": "Costume List",
    "category": "Item List",
    "from": 13429,
-   "to": 13450
+   "to": 13450,
+   "stripped": 0
   },
   {
    "id": "item-list-consumable-quest-items",
    "title": "Consumable/Quest Items",
    "category": "Item List",
    "from": 13450,
-   "to": 13456
+   "to": 13456,
+   "stripped": 0
   },
   {
    "id": "item-list-materials",
    "title": "Materials",
    "category": "Item List",
    "from": 13456,
-   "to": 13465
+   "to": 13465,
+   "stripped": 0
   },
   {
    "id": "item-list-book-list",
    "title": "Book List",
    "category": "Item List",
    "from": 13465,
-   "to": 13469
+   "to": 13469,
+   "stripped": 0
   },
   {
    "id": "item-list-fish-list",
    "title": "Fish List",
    "category": "Item List",
    "from": 13469,
-   "to": 13473
+   "to": 13473,
+   "stripped": 0
   },
   {
    "id": "item-list-gardening-items",
    "title": "Gardening Items",
    "category": "Item List",
    "from": 13473,
-   "to": 13479
+   "to": 13479,
+   "stripped": 0
   },
   {
    "id": "item-list-bug-list",
    "title": "Bug List",
    "category": "Item List",
    "from": 13479,
-   "to": 13483
+   "to": 13483,
+   "stripped": 0
   },
   {
    "id": "item-list-gem-list",
    "title": "Gem List",
    "category": "Item List",
    "from": 13483,
-   "to": 13487
+   "to": 13487,
+   "stripped": 0
   },
   {
    "id": "item-list-key-items",
    "title": "Key Items",
    "category": "Item List",
    "from": 13487,
-   "to": 13491
+   "to": 13491,
+   "stripped": 0
   },
   {
    "id": "tips-and-tricks-golden-shadow-grinding",
    "title": "Golden Shadow Grinding",
    "category": "Tips And Tricks",
    "from": 13534,
-   "to": 13544
+   "to": 13544,
+   "stripped": 0
   },
   {
    "id": "tips-and-tricks-best-personas",
    "title": "Best Personas",
    "category": "Tips And Tricks",
    "from": 13544,
-   "to": 13555
+   "to": 13555,
+   "stripped": 0
   },
   {
    "id": "tips-and-tricks-hardcore-risette-fan",
    "title": "Hardcore Risette Fan",
    "category": "Tips And Tricks",
    "from": 13555,
-   "to": 13564
+   "to": 13564,
+   "stripped": 0
   },
   {
    "id": "tips-and-tricks-victory-cry-cheat",
    "title": "Victory Cry Cheat",
    "category": "Tips And Tricks",
    "from": 13564,
-   "to": 13572
+   "to": 13572,
+   "stripped": 0
   },
   {
    "id": "tips-and-tricks-resources",
    "title": "Resources",
    "category": "Tips And Tricks",
    "from": 13572,
-   "to": 13581
+   "to": 13581,
+   "stripped": 0
   },
   {
    "id": "conclusion-special-thanks",
    "title": "Special Thanks",
    "category": "Conclusion",
    "from": 13608,
-   "to": 13631
+   "to": 13631,
+   "stripped": 0
   },
   {
    "id": "conclusion-final-remarks",
    "title": "Final Remarks",
    "category": "Conclusion",
    "from": 13631,
-   "to": 13637
+   "to": 13637,
+   "stripped": 0
   }
  ],
  "ledger": [

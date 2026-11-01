@@ -1,13 +1,14 @@
 // Fidelity proof. Re-reads the raw source and the generated pages independently of extract.mjs and checks:
 //  1. the ledger covers every top-level source node exactly once, in order;
-//  2. each page file's words equal the source words of its range, word for word;
+//  2. each page file's words equal the source words of its range, word for word, in order. The only tolerated
+//     differences are pure marker tokens ("----", "1.") that extract declared as dropped, and edge "-"/"~" decoration;
 //  3. each dropped duplicate's words equal the words of the kept ranges it claims to duplicate;
 //  4. the only other dropped parts are blank nodes or the site-generated TOC.
 // Exit code 1 on any difference.
 import fs from 'node:fs';
 import path from 'node:path';
 import { parseFragment } from 'parse5';
-import { ROOT, tokensOf, loadSource } from './lib/source.mjs';
+import { ROOT, tokensOf, loadSource, alignTokens } from './lib/source.mjs';
 
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'manifest.json'), 'utf8'));
 const src = loadSource();
@@ -32,6 +33,7 @@ if (cursor !== kids.length) err(`Ledger ends at ${cursor}, body has ${kids.lengt
 // 2. Pages
 const pageById = new Map(manifest.pages.map((p) => [p.id, p]));
 let keptWords = 0;
+let markersDropped = 0;
 for (const p of manifest.pages) {
   const file = path.join(ROOT, 'src', 'data', 'pages', `${p.id}.html`);
   if (!fs.existsSync(file)) { err(`Missing page file ${p.id}.html`); continue; }
@@ -39,7 +41,10 @@ for (const p of manifest.pages) {
   const got = tokensOf(frag.childNodes);
   const want = tok(p.from, p.to);
   keptWords += want.length;
-  if (!same(want, got)) err(`Page ${p.id}: words differ from source ${diffAt(want, got)}`);
+  const res = alignTokens(want, got);
+  if (!res.ok) err(`Page ${p.id}: words differ from source at word ${res.at}: "${res.src}" vs "${res.page}"`);
+  else if (res.skipped !== (p.stripped ?? 0)) err(`Page ${p.id}: ${res.skipped} marker tokens are missing, extract declared ${p.stripped ?? 0}.`);
+  else markersDropped += res.skipped;
 }
 
 // 3 + 4. Dropped parts
@@ -73,4 +78,4 @@ if (errors.length) {
   if (errors.length > 25) console.error(`... and ${errors.length - 25} more`);
   process.exit(1);
 }
-console.log(`[OK] fidelity verified: ${manifest.pages.length} pages; ${keptWords} words kept, ${dupWords} words in proven duplicates, ${otherDropped} words in dropped site TOC; total ${total}.`);
+console.log(`[OK] fidelity verified: ${manifest.pages.length} pages; ${keptWords} words kept (${markersDropped} pure marker tokens dropped, all declared), ${dupWords} words in proven duplicates, ${otherDropped} words in dropped site TOC; total ${total}.`);
