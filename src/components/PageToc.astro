@@ -32,8 +32,18 @@ const { entries } = Astro.props;
 
     var links = Array.prototype.slice.call(nav.querySelectorAll('[data-toc-link]'));
     var heads = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+    var list = nav.querySelector('.page-toc-list');
+    var article = document.querySelector('.guide-body');
     var current = -1;
+    var progress = function () {
+      if (!article) return;
+      var r = article.getBoundingClientRect();
+      var total = r.height - window.innerHeight * 0.5;
+      var p = total > 0 ? Math.min(1, Math.max(0, (window.innerHeight * 0.25 - r.top) / total)) : 0;
+      list.style.setProperty('--toc-progress', p.toFixed(3));
+    };
     var update = function () {
+      progress();
       var at = -1;
       for (var i = 0; i < heads.length; i++) {
         if (heads[i] && heads[i].getBoundingClientRect().top <= 120) at = i; else break;
