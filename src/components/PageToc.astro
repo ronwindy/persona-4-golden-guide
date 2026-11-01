@@ -1,0 +1,58 @@
+---
+import '../styles/page-toc.css';
+import type { PageToc } from '../lib/guideData';
+
+interface Props {
+  entries: PageToc[];
+}
+
+const { entries } = Astro.props;
+---
+
+{entries.length > 0 && (
+  <nav class="page-toc" aria-label="On this page" data-page-toc>
+    <details class="page-toc-box">
+      <summary>On this page</summary>
+      <ol class="page-toc-list">
+        {entries.map((e) => <li><a href={`#${e.id}`} data-toc-link>{e.title}</a></li>)}
+      </ol>
+    </details>
+  </nav>
+)}
+
+<script is:inline>
+  (function () {
+    var nav = document.querySelector('[data-page-toc]');
+    if (!nav) return;
+    var box = nav.querySelector('details');
+    var wide = window.matchMedia('(min-width: 1280px)');
+    var sync = function () { if (wide.matches) box.setAttribute('open', ''); else box.removeAttribute('open'); };
+    sync();
+    if (wide.addEventListener) wide.addEventListener('change', sync);
+
+    var links = Array.prototype.slice.call(nav.querySelectorAll('[data-toc-link]'));
+    var heads = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+    var current = -1;
+    var update = function () {
+      var at = -1;
+      for (var i = 0; i < heads.length; i++) {
+        if (heads[i] && heads[i].getBoundingClientRect().top <= 120) at = i; else break;
+      }
+      if (at === current) return;
+      current = at;
+      links.forEach(function (a, i) {
+        if (i === at) {
+          a.setAttribute('aria-current', 'true');
+          if (wide.matches) {
+            var list = a.closest('.page-toc-list');
+            var top = a.offsetTop, bottom = top + a.offsetHeight;
+            if (top < list.scrollTop || bottom > list.scrollTop + list.clientHeight) list.scrollTop = top - list.clientHeight / 2;
+          }
+        } else a.removeAttribute('aria-current');
+      });
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>

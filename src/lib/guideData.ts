@@ -7,6 +7,11 @@ export interface PageEntry {
   category: string;
 }
 
+export interface PageToc {
+  id: string;
+  title: string;
+}
+
 export interface TocCategory {
   category: string;
   entries: PageEntry[];
@@ -18,6 +23,12 @@ const DATA_DIR = path.resolve(process.cwd(), 'src/data');
 export function getPages(): PageEntry[] {
   const manifest = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8'));
   return manifest.pages.map(({ id, title, category }: PageEntry) => ({ id, title, category }));
+}
+
+/** On-page ToC entries (heading ids and titles) written by scripts/extract.mjs; empty when the page has too few. */
+export function getPageToc(id: string): PageToc[] {
+  const manifest = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8'));
+  return manifest.pages.find((p: { id: string }) => p.id === id)?.toc ?? [];
 }
 
 /** Page markup as written by scripts/extract.mjs (source markup plus the verified structural transforms). */

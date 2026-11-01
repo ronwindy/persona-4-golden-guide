@@ -15,6 +15,7 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 - **Stack:** plain CSS and `@lucide/astro` icons.
 - **Layout:** left sidebar and content on desktop, drawer on mobile. The source's own markup is restyled only (h2 = small slab label, h3 = page title, tables in glass panels).
 - **Progress:** sidebar shows read count, bar and a check per read page; "Mark as read" button per page; "Continue reading" link. Browser localStorage only.
+- **Page ToC:** pages with 6+ h4 headings get an "On this page" list of those h4s (`extract.transforms.toc`; ids are added at extract time, entries stored in `manifest.json`). From 1280px up it is a sticky right column (own scroll, scroll-spy marks the current entry); below that it is a collapsible block above the text, closed by default. Quiet style: Barlow Condensed uppercase head, thin left bar, yellow bar and text on the active entry. Styles in `src/styles/page-toc.css`.
 - **Icons:** Lucide icons in the sidebar only (`src/lib/nav-icon-rules.mjs`).
 
 ## Open (ask the user when the source needs them)

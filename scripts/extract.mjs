@@ -157,8 +157,9 @@ fs.rmSync(path.join(OUT, 'pages'), { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'pages'), { recursive: true });
 const totals = {};
 for (const p of pages) {
-  const { nodes, stats } = applyTransforms(kids.slice(p.from, p.to), cfg.transforms);
+  const { nodes, stats, toc } = applyTransforms(kids.slice(p.from, p.to), cfg.transforms);
   p.stripped = stats.stripped;
+  p.toc = toc;
   for (const [k, v] of Object.entries(stats)) totals[k] = (totals[k] ?? 0) + v;
   const body = nodes.map((n) => (isTag(n, 'table') ? `<div class="table-wrap">${html(n)}</div>` : html(n))).join('');
   fs.writeFileSync(path.join(OUT, 'pages', `${p.id}.html`), body);
@@ -166,7 +167,7 @@ for (const p of pages) {
 const manifest = {
   game: config.game,
   source: { file: src.file, sha256: src.sha256, bytes: src.bytes, bodyChildren: kids.length },
-  pages: pages.map(({ id, title, category, from, to, stripped }) => ({ id, title, category, from, to, stripped })),
+  pages: pages.map(({ id, title, category, from, to, stripped, toc }) => ({ id, title, category, from, to, stripped, toc })),
   ledger,
 };
 fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));

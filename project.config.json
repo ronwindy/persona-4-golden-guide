@@ -24,6 +24,7 @@
       "labelMarker": { "tag": "h5", "class": "label-marker", "maxLength": 60 },
       "faq": { "prefix": "^(?:FAQ|WAQ)X?\\d+:" },
       "numberedLines": true,
+      "toc": { "tag": "h4", "minEntries": 6 },
       "splitParagraphs": { "minWords": 80, "targetWords": 40, "maxWords": 60, "minTail": 15 }
     }
   }

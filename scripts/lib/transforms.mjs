@@ -209,6 +209,27 @@ function splitParagraphs(nodes, cfg, stats) {
   });
 }
 
+// ---- page ToC: ids on the chosen headings (attributes only) and the entry list for the manifest ----
+function pageToc(nodes, cfg) {
+  const entries = [];
+  const used = new Set();
+  const plain = (n) => (n.nodeName === '#text' ? n.value : (n.childNodes || []).map(plain).join(''));
+  rewrite(nodes, (n) => {
+    if (n.nodeName !== cfg.tag) return null;
+    const title = plain(n).replace(/\s+/g, ' ').trim();
+    if (!title) return null;
+    const base = `toc-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section'}`;
+    let id = base;
+    for (let i = 2; used.has(id); i++) id = `${base}-${i}`;
+    used.add(id);
+    n.attrs = n.attrs.filter((a) => a.name !== 'id');
+    n.attrs.push({ name: 'id', value: id });
+    entries.push({ id, title });
+    return null;
+  });
+  return entries.length >= cfg.minEntries ? entries : [];
+}
+
 /** Applies the configured transforms to cloned nodes. Returns the new nodes and counters (stripped = marker tokens dropped). */
 export function applyTransforms(sourceNodes, cfg = {}) {
   const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0 };
@@ -219,5 +240,6 @@ export function applyTransforms(sourceNodes, cfg = {}) {
   if (cfg.faq) nodes = faq(nodes, cfg.faq, stats);
   if (cfg.numberedLines) nodes = numberedLines(nodes, stats);
   if (cfg.splitParagraphs) nodes = splitParagraphs(nodes, cfg.splitParagraphs, stats);
-  return { nodes, stats };
+  const toc = cfg.toc ? pageToc(nodes, cfg.toc) : [];
+  return { nodes, stats, toc };
 }

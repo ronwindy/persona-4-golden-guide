@@ -25,7 +25,7 @@ Priority: source text fidelity > user requirements > usability > visual polish.
   - The saved GameFAQs page repeats each chapter (full-chapter copy, then one block per section). `extract` keeps one copy and **refuses to continue unless the dropped copy matches the kept one word for word**.
   - `verify`: re-reads the raw source and the generated pages independently; fails on any word difference, any gap in the ledger, or a duplicate that does not match. Prints the word accounting.
     - Checks: (1) the ledger in `src/data/manifest.json` covers every top-level body node once, in order; (2) each page's words equal the source words of its range; (3) each dropped duplicate's words equal the kept copy's; (4) kept + duplicate + dropped words = total body words.
-- Structural transforms live at extract time, configured declaratively in `project.config.json` `extract.transforms` and implemented once in `scripts/lib/transforms.mjs` (callouts, date/label headings, FAQ collapsibles, numbered lines to `<ol>`, long-paragraph splitting). Never post-process page HTML with regexes at render time; a new structure means a new engine rule, so `verify` still covers it.
+- Structural transforms live at extract time, configured declaratively in `project.config.json` `extract.transforms` and implemented once in `scripts/lib/transforms.mjs` (callouts, date/label headings, FAQ collapsibles, numbered lines to `<ol>`, long-paragraph splitting, heading ids + ToC entries). Never post-process page HTML with regexes at render time; a new structure means a new engine rule, so `verify` still covers it.
   - `verify` compares page words to the source range in order. Only pure marker tokens (`----`, `~`, `1.`) may be missing, and the count must equal what extract declared per page in `manifest.json` (`stripped`). Block edges (`p`, `li`, `td`, `summary`...) count as word boundaries.
   - Add a rule for a new pattern in `transforms.mjs`, run `npm run sync`; a failing verify means the rule touched text.
 - Pages: one per `sectionTag` (h3) section, grouped under its `chapterTag` (h2) chapter; chapter text before its first h3 becomes an "Overview" page when it has words. Ids are the slug of chapter + section title. Page markup is the source markup plus the transforms above; tables also get `div.table-wrap` and GameFAQs section links point to local pages. Everything outside the body (site header/footer, ads) is dropped and listed in `docs/extract-report.md`.
@@ -35,7 +35,7 @@ Priority: source text fidelity > user requirements > usability > visual polish.
 
 ## 3. Presentation (look decisions live in `DESIGN.md`)
 - Pages render the stored HTML with `set:html` inside `.guide-body`; restyle only via `src/styles/global.css`. Markup is added only by extract-time transforms, never at render time.
-- Enhancements are added only when the user orders them. Current: sidebar nav + prev/next, reading progress (localStorage), theme/typography, background, logo, favicon. No search yet.
+- Enhancements are added only when the user orders them. Current: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings, `extract.transforms.toc`), theme/typography, background, logo, favicon. No search yet.
 - No monospace anywhere. Never copy design elements from other game projects; ask before new ornaments.
 - Images: the current source has none. If a source has images, keep their URLs; download locally only the ones that are blocked, after testing.
 - Lucide icons only in the sidebar (`src/lib/nav-icon-rules.mjs`).

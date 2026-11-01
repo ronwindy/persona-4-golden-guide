@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import project from '../../../project.config.json';
-import { getPages, getPageHtml, getNeighbours } from '../../lib/guideData';
+import PageToc from '../../components/PageToc.astro';
+import { getPages, getPageHtml, getPageToc, getNeighbours } from '../../lib/guideData';
 
 export function getStaticPaths() {
   return getPages().map((page) => ({ params: { id: page.id }, props: { page } }));
@@ -10,6 +11,7 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const { prev, next } = getNeighbours(page.id);
 const html = getPageHtml(page.id);
+const toc = getPageToc(page.id);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const href = (id: string) => `${baseUrl}/guide/${id}`;
 ---
@@ -34,4 +36,5 @@ const href = (id: string) => `${baseUrl}/guide/${id}`;
       {next ? <a href={href(next.id)}>{next.title} &rarr;</a> : <span></span>}
     </nav>
   </article>
+  <PageToc slot="aside" entries={toc} />
 </BaseLayout>
