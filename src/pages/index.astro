@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import project from '../../project.config.json';
 import { getToc } from '../lib/guideData';
+import { navEntryIcon } from '../lib/icons';
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categories = getToc();
@@ -14,9 +15,17 @@ const categories = getToc();
     <section>
       <h2 class="home-cat">{cat.category}</h2>
       <ul class="section-index">
-        {cat.entries.map((entry) => (
-          <li><a href={`${baseUrl}/guide/${entry.id}`} data-page-id={entry.id}>{entry.title}</a></li>
-        ))}
+        {cat.entries.map((entry) => {
+          const EntryIcon = navEntryIcon(cat.category, entry.title);
+          return (
+            <li>
+              <a href={`${baseUrl}/guide/${entry.id}`} data-page-id={entry.id}>
+                <EntryIcon class="nav-icon" size={18} aria-hidden="true" />
+                <span>{entry.title}</span>
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </section>
   ))}
