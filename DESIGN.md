@@ -5,7 +5,7 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 ## Decided
 - **Theme:** P4 yellow & TV-world. Dark only.
 - **Palette:** dark warm base `#0d0d0d`, P4 yellow `#FFE600` accent, off-white text. Red = warnings, cyan = links/info.
-- **Fonts:** Jost (body), Dela Gothic One (h1/h2/h3, sidebar drawer head), Barlow Condensed 700 (slot labels, step titles, h4; uppercase, tracked), from Google Fonts.
+- **Fonts:** Jost (body), Dela Gothic One (h1/h2/h3, sidebar drawer head), Kanit 800 italic (slot labels, step titles, h4, h5 label markers; replaces Barlow Condensed), from Google Fonts.
 - **Headers:** h1/h2 are black text on a skewed yellow slab with a hard offset shadow. h3 is plain yellow.
 - **Header rule:** every h1/h2 has a full-content-width skewed rule below it: a 3px yellow bar fading to transparent over a 1px hairline (`::after`, width `100cqw` of `.content`).
 - **Motifs (CSS only):** skewed/angled panels, fog/gradient backdrop, faint static scanlines.
@@ -15,7 +15,7 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 - **Stack:** plain CSS and `@lucide/astro` icons.
 - **Layout:** left sidebar and content on desktop, drawer on mobile. The source's own markup is restyled only (h2 = small slab label, h3 = page title, tables in glass panels).
 - **Progress:** sidebar shows read count, bar and a check per read page; "Mark as read" button per page; "Continue reading" link. Browser localStorage only.
-- **Page ToC:** pages with 6+ h4 headings get an "On this page" list of those h4s (`extract.transforms.toc`; ids are added at extract time, entries stored in `manifest.json`). From 1280px up it is a sticky right column (own scroll, scroll-spy marks the current entry); below that it is a collapsible block above the text, closed by default. Quiet style: Barlow Condensed uppercase head, thin left bar, yellow bar and text on the active entry. Styles in `src/styles/page-toc.css`.
+- **Page ToC:** pages with 6+ h4 headings get an "On this page" list of those h4s (`extract.transforms.toc`; ids are added at extract time, entries stored in `manifest.json`). From 1280px up it is a sticky right column (own scroll, scroll-spy marks the current entry); below that it is a collapsible block above the text, closed by default. Quiet style: Dela Gothic One uppercase head, Kanit italic entries, thin left bar, yellow bar and text on the active entry. Styles in `src/styles/page-toc.css`.
 - **Icons:** Lucide icons in the sidebar only (`src/lib/nav-icon-rules.mjs`).
 
 ## Open (ask the user when the source needs them)
