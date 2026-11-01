@@ -87,6 +87,17 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           syncTop();
         }
         var body = document.body;
+        // Mobile header: hide while scrolling down, show again on any scroll up or near the top.
+        var header = document.querySelector('.mobile-header');
+        if (header) {
+          var lastY = window.scrollY;
+          window.addEventListener('scroll', function () {
+            var y = window.scrollY, dy = y - lastY;
+            if (y < 80 || dy < -4) header.removeAttribute('data-hidden');
+            else if (dy > 4 && !body.hasAttribute('data-drawer')) header.setAttribute('data-hidden', '');
+            if (Math.abs(dy) > 4) lastY = y;
+          }, { passive: true });
+        }
         var toggle = document.getElementById('sidebar-toggle');
         if (toggle) {
           toggle.addEventListener('click', function () {

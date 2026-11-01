@@ -220,26 +220,37 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
     z-index: 30;
     min-height: var(--header-height);
     padding: 0.5rem 1rem;
-    padding-bottom: 1.8rem;
+    padding-bottom: 1.4rem;
     overflow: hidden;
+    background: var(--bg);
+    box-shadow: 0 0.5rem 1rem -0.4rem rgb(0 0 0 / 0.65);
+    font-family: var(--font-head);
+    transition: transform 0.25s ease;
+  }
+  .mobile-header[data-hidden] { transform: translateY(-110%); }
+  /* glow + dots dissolve into the solid header colour toward the bottom; the header itself stays opaque so page text never shows through */
+  .mobile-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background:
-      radial-gradient(ellipse at 85% 50%, rgb(255 230 0 / 0.3), transparent 60%),
+      radial-gradient(ellipse at 85% 40%, rgb(255 230 0 / 0.28), transparent 60%),
       radial-gradient(rgb(255 230 0 / 0.16) 1.2px, transparent 1.6px) 0 0 / 9px 9px,
       var(--bg);
-    font-family: var(--font-head);
+    -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+    pointer-events: none;
   }
-  /* slanted yellow slab along the bottom edge, same as the sidebar title */
+  /* slim slanted accent hairline that fades out at both ends */
   .mobile-header::after {
     content: '';
     position: absolute;
-    left: -10%;
-    right: -10%;
+    left: 0;
+    right: 0;
     bottom: 0;
-    height: 0.5rem;
-    background: var(--accent);
-    transform: skewY(-2deg);
-    transform-origin: left bottom;
-    box-shadow: 0 -0.2rem 0 #000;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent) 20%, var(--accent) 80%, transparent);
+    pointer-events: none;
   }
   .mobile-header a { display: flex; align-items: center; color: var(--accent); text-decoration: none; }
   .mobile-header .logo-sm { height: 2.75rem; filter: drop-shadow(0 3px 6px rgb(0 0 0 / 0.8)); transition: transform 0.2s; }
