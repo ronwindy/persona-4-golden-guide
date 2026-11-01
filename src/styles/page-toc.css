@@ -111,7 +111,9 @@
 }
 @media (max-width: 1279px) {
   .content-col:has(.page-toc) { flex-direction: column; gap: 0.75rem; }
-  .page-toc { order: -1; margin: 0; }
+  /* .content is inline-size contained and flex-start aligned; in a column it would shrink to zero width. */
+  .content-col:has(.page-toc) .content { align-self: center; flex: none; width: 100%; }
+  .page-toc { order: -1; margin: 0; align-self: center; width: 100%; max-width: var(--content-max); }
   .page-toc-list { max-height: 50vh; }
 }
 @media (prefers-reduced-motion: reduce) {
