@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import project from '../../project.config.json';
 import { getToc } from '../lib/guideData';
-import { navEntryIcon } from '../lib/icons';
+import { navCategoryIcon, navEntryIcon } from '../lib/icons';
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categories = getToc();
@@ -13,7 +13,10 @@ const categories = getToc();
   <a class="progress-resume home-resume" data-progress-resume href={`${baseUrl}/`} hidden>Continue reading</a>
   {categories.map((cat) => (
     <section>
-      <h2 class="home-cat">{cat.category}</h2>
+      <h2 class="home-cat">
+        {(() => { const CatIcon = navCategoryIcon(cat.category); return <CatIcon class="home-cat-icon" size={20} aria-hidden="true" />; })()}
+        <span>{cat.category}</span>
+      </h2>
       <ul class="section-index">
         {cat.entries.map((entry) => {
           const EntryIcon = navEntryIcon(cat.category, entry.title);

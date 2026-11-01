@@ -527,6 +527,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 /* Home */
 .home-title { margin-bottom: 1.5rem; }
 .home-cat { font-size: 1.05rem; }
+.home-cat-icon { flex: none; }
 .content .section-index { list-style: none; padding-left: 0.25rem; }
 .content .section-index a { display: inline-flex; align-items: center; gap: 0.6rem; }
 .content .section-index .nav-icon { opacity: 0.85; }
