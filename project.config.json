@@ -42,8 +42,13 @@
         "tag": "h4",
         "class": "date-marker"
       },
-      "labelMarker": {
+      "partMarker": {
         "tag": "h5",
+        "class": "part-marker",
+        "maxLength": 60
+      },
+      "labelMarker": {
+        "tag": "h6",
         "class": "label-marker",
         "maxLength": 60
       },

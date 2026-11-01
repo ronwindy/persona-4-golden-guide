@@ -2,6 +2,7 @@
 // They may add wrappers, classes, headings, lists and paragraph breaks, and drop pure marker tokens
 // ("----", "1.", ...). They must never change, reorder or add a word: verify.mjs proves it per page.
 import { attr, tokensOf } from './source.mjs';
+import { headerIconName } from '../../src/lib/header-icon-rules.mjs';
 
 const NS = 'http://www.w3.org/1999/xhtml';
 const isEl = (n, ...names) => n.nodeName !== '#text' && n.nodeName !== '#comment' && (!names.length || names.includes(n.nodeName));
@@ -76,7 +77,20 @@ function labelMarkers(nodes, cfg, stats) {
     const m = re.exec(n.childNodes[0].value);
     if (!m) return null;
     stats.labelMarkers++;
-    return [el(cfg.tag, [{ name: 'class', value: cfg.class }], [text(m[1])])];
+    return [el(cfg.tag, [{ name: 'class', value: cfg.class }, { name: 'data-icon', value: headerIconName(m[1]) }], [text(m[1])])];
+  });
+}
+
+// ---- top-level paragraphs that are only one bold phrase ("Afternoon", "Trophies") -> heading ----
+function partMarkers(nodes, cfg, stats) {
+  return nodes.map((n) => {
+    if (n.nodeName !== 'p' || n.attrs.length || n.childNodes.length !== 1) return n;
+    const s = n.childNodes[0];
+    if (!isEl(s, 'strong') || s.attrs.length || s.childNodes.length !== 1 || s.childNodes[0].nodeName !== '#text') return n;
+    const label = s.childNodes[0].value;
+    if (!label.trim() || label.length > cfg.maxLength) return n;
+    stats.partMarkers++;
+    return el(cfg.tag, [{ name: 'class', value: cfg.class }, { name: 'data-icon', value: headerIconName(label) }], [text(label)]);
   });
 }
 
@@ -346,11 +360,12 @@ function emphasize(nodes, cfg, ctx, stats) {
  * ctx (emphasis only): { re, hits: Map, category } where re matches the guide terms and hits collects per-term counts.
  */
 export function applyTransforms(sourceNodes, cfg = {}, ctx = {}) {
-  const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0, quotes: 0, quotesUnpaired: 0 };
+  const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, partMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0, quotes: 0, quotesUnpaired: 0 };
   let nodes = sourceNodes.map(clone);
   if (cfg.callouts) nodes = callouts(nodes, cfg.callouts, stats);
   if (cfg.dateMarker) nodes = dateMarkers(nodes, cfg.dateMarker, stats);
   if (cfg.labelMarker) nodes = labelMarkers(nodes, cfg.labelMarker, stats);
+  if (cfg.partMarker) nodes = partMarkers(nodes, cfg.partMarker, stats);
   if (cfg.faq) nodes = faq(nodes, cfg.faq, stats);
   if (cfg.numberedLines) nodes = numberedLines(nodes, stats);
   if (cfg.emphasis) nodes = emphasize(nodes, cfg.emphasis, ctx, stats);

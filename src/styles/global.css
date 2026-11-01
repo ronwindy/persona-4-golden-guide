@@ -506,7 +506,35 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   mask: var(--icon-calendar) center / contain no-repeat;
 }
 
-/* Section labels (h5.label-marker, made at extract time from "-Label-" paragraphs). */
+/* Header icons: extract sets data-icon; header-icons.css defines --header-icon per icon. */
+.guide-body [data-icon]::before {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.5em;
+  vertical-align: -0.1em;
+  background: currentColor;
+  -webkit-mask: var(--header-icon) center / contain no-repeat;
+  mask: var(--header-icon) center / contain no-repeat;
+}
+
+/* Part headings (h5.part-marker, made at extract time from lone bold paragraphs: "Afternoon", "Trophies"). */
+.guide-body .part-marker {
+  margin: 2rem 0 0.75rem;
+  padding: 0.45rem 0.9rem;
+  border-left: 7px solid var(--accent);
+  background: linear-gradient(90deg, rgb(255 230 0 / 0.34), rgb(255 230 0 / 0.04));
+  font-family: var(--font-head);
+  font-size: 1.65rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  color: var(--accent);
+}
+
+/* Section labels (h6.label-marker, made at extract time from "-Label-" paragraphs). */
 .guide-body .label-marker {
   margin: 1.75rem 0 0.5rem;
   padding: 0.35rem 0.75rem;
