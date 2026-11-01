@@ -9,7 +9,7 @@ export const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'project.config
 
 export const attr = (n, k) => n.attrs?.find((a) => a.name === k)?.value;
 
-const BLOCKS = new Set(['address', 'blockquote', 'dd', 'details', 'div', 'dl', 'dt', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'li', 'ol', 'p', 'summary', 'table', 'tbody', 'td', 'th', 'thead', 'tr', 'ul']);
+const BLOCKS = new Set(['address', 'blockquote', 'dd', 'details', 'div', 'dl', 'dt', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'li', 'ol', 'p', 'section', 'summary', 'table', 'tbody', 'td', 'th', 'thead', 'tr', 'ul']);
 
 /** Visible text of a node. <br> and block element edges count as a space; scripts/styles/comments carry no text. */
 export function textOf(n) {

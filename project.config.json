@@ -52,6 +52,11 @@
         "class": "label-marker",
         "maxLength": 60
       },
+      "panels": {
+        "tag": "h6",
+        "labelClass": "label-marker",
+        "class": "panel"
+      },
       "faq": {
         "prefix": "^(?:FAQ|WAQ)X?\\d+:"
       },

@@ -626,3 +626,19 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   border-top: 1px solid var(--glass-edge);
   padding-top: 0.7rem;
 }
+
+/* Label panels (section.panel, made at extract time: a label heading plus its content up to the next heading). */
+.guide-body .panel {
+  margin: 1.25rem 0;
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--glass-radius);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 var(--glass-sheen), 0 6px 24px rgb(0 0 0 / 0.35);
+  overflow: hidden;
+}
+.guide-body .panel > .label-marker { margin: 0; }
+.guide-body .panel > :not(.label-marker) { margin-left: 1rem; margin-right: 1rem; }
+.guide-body .panel > .label-marker + * { margin-top: 0.75rem; }
+.guide-body .panel > :last-child { margin-bottom: 0.9rem; }

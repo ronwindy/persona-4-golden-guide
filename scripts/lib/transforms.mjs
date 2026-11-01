@@ -94,6 +94,21 @@ function partMarkers(nodes, cfg, stats) {
   });
 }
 
+// ---- label headings + the content up to the next heading -> <section class="panel"> (wrappers only) ----
+function panels(nodes, cfg, stats) {
+  const isHead = (n) => /^h[1-6]$/.test(n.nodeName);
+  const out = [];
+  for (let i = 0; i < nodes.length; i++) {
+    const n = nodes[i];
+    if (!isEl(n, cfg.tag) || !(n.attrs.find((a) => a.name === 'class')?.value || '').split(/\s+/).includes(cfg.labelClass)) { out.push(n); continue; }
+    const body = [n];
+    while (i + 1 < nodes.length && !isHead(nodes[i + 1])) body.push(nodes[++i]);
+    stats.panels++;
+    out.push(el('section', [{ name: 'class', value: cfg.class }], body));
+  }
+  return out;
+}
+
 // ---- "FAQ1: question<br>answer" paragraphs -> collapsible <details> ----
 function faq(nodes, cfg, stats) {
   const re = new RegExp(cfg.prefix);
@@ -360,7 +375,7 @@ function emphasize(nodes, cfg, ctx, stats) {
  * ctx (emphasis only): { re, hits: Map, category } where re matches the guide terms and hits collects per-term counts.
  */
 export function applyTransforms(sourceNodes, cfg = {}, ctx = {}) {
-  const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, partMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0, quotes: 0, quotesUnpaired: 0 };
+  const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, partMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0, panels: 0, quotes: 0, quotesUnpaired: 0 };
   let nodes = sourceNodes.map(clone);
   if (cfg.callouts) nodes = callouts(nodes, cfg.callouts, stats);
   if (cfg.dateMarker) nodes = dateMarkers(nodes, cfg.dateMarker, stats);
@@ -370,6 +385,7 @@ export function applyTransforms(sourceNodes, cfg = {}, ctx = {}) {
   if (cfg.numberedLines) nodes = numberedLines(nodes, stats);
   if (cfg.emphasis) nodes = emphasize(nodes, cfg.emphasis, ctx, stats);
   if (cfg.splitParagraphs) nodes = splitParagraphs(nodes, cfg.splitParagraphs, stats);
+  if (cfg.panels) nodes = panels(nodes, cfg.panels, stats);
   const toc = cfg.toc ? pageToc(nodes, cfg.toc) : [];
   return { nodes, stats, toc };
 }
