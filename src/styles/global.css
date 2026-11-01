@@ -524,7 +524,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   margin: 2rem 0 0.75rem;
   padding: 0.45rem 0.9rem;
   border-left: 7px solid var(--accent);
-  background: linear-gradient(90deg, rgb(200 30 45 / 0.6), rgb(200 30 45 / 0.06));
+  background: linear-gradient(90deg, rgb(40 90 200 / 0.5), rgb(40 90 200 / 0.05));
   font-family: var(--font-head);
   font-size: 1.65rem;
   font-style: normal;
