@@ -130,11 +130,12 @@ h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
   width: var(--sidebar-width);
   height: 100vh;
   overflow-y: auto;
-  border-right: 3px solid var(--accent);
+  border-right: 6px solid var(--accent);
+  border-image: repeating-linear-gradient(135deg, var(--accent) 0 6px, #000 6px 12px) 0 6 0 0 / 0 6px 0 0;
   background: rgb(10 10 8 / 0.72);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
   backdrop-filter: blur(16px) saturate(140%);
-  box-shadow: 6px 0 24px rgb(0 0 0 / 0.45);
+  box-shadow: 4px 0 0 #000, 10px 0 24px rgb(0 0 0 / 0.45);
 }
 html[data-sidebar='collapsed'] .sidebar { display: none; }
 
@@ -160,14 +161,19 @@ html[data-sidebar='collapsed'] .sidebar { display: none; }
   left: 0.6rem;
   z-index: 20;
   display: inline-flex;
-  padding: 0.4rem;
-  border: 2px solid var(--accent);
-  background: var(--bg);
-  color: var(--accent);
+  padding: 0.5rem 0.65rem;
+  border: 2px solid #000;
+  background: var(--accent);
+  color: var(--accent-ink);
   cursor: pointer;
+  transform: skewX(var(--skew));
+  box-shadow: 0.25rem 0.25rem 0 #000;
+  transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
 }
-.sidebar-toggle:hover { background: var(--accent); color: var(--accent-ink); }
-html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-width) + 0.75rem); }
+.sidebar-toggle > * { transform: skewX(calc(var(--skew) * -1)); }
+.sidebar-toggle:hover { filter: brightness(1.1); transform: skewX(var(--skew)) translate(-0.1rem, -0.1rem); box-shadow: 0.35rem 0.35rem 0 #000; }
+.sidebar-toggle:active { transform: skewX(var(--skew)) translate(0.15rem, 0.15rem); box-shadow: 0.1rem 0.1rem 0 #000; }
+html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-width) + 1.25rem); }
 
 .back-to-top {
   position: fixed;
@@ -291,7 +297,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .nav-site-title {
   position: relative;
   display: block;
-  padding: 1.25rem 1rem 1.6rem;
+  padding: 0.8rem 1rem 1.2rem;
   overflow: hidden;
   background:
     radial-gradient(ellipse at 50% 55%, rgb(255 230 0 / 0.28), transparent 65%),
@@ -314,7 +320,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .nav-site-title:hover { filter: brightness(1.1); }
 .nav-site-title .logo { position: relative; z-index: 1; filter: drop-shadow(0 4px 10px rgb(0 0 0 / 0.7)); transition: transform 0.2s; }
 .nav-site-title:hover .logo { transform: scale(1.04) rotate(-1.5deg); }
-.logo { display: block; width: 100%; max-width: 13rem; height: auto; margin: 0 auto; }
+.logo { display: block; width: 100%; max-width: 9rem; height: auto; margin: 0 auto; }
 .logo-sm { width: auto; max-width: none; height: 2.4rem; margin: 0; }
 .nav-list { padding: 0.5rem; }
 .nav-list details { margin-bottom: 0.4rem; }
