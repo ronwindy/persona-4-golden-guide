@@ -71,7 +71,7 @@
   margin: 0.05rem 0;
   font-family: var(--font-sub);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   line-height: 1.25;
@@ -89,7 +89,7 @@
 .page-toc-list a[aria-current] {
   color: var(--accent-ink);
   background: var(--accent);
-  font-weight: 700;
+  font-weight: 500;
   border-left-color: #000;
   transform: skewX(var(--skew));
   margin: 0.2rem 0.3rem 0.2rem 0.1rem;
