@@ -264,27 +264,70 @@ function italicQuotes(parent, stats) {
   out.forEach((c) => { c.parentNode = parent; });
 }
 
-function boldTerms(parent, ctx) {
+// Capitalized words and runs the author wrote mid-sentence ("Vending Machine", "Seekers of Truth"). A run may continue
+// through the small connector words; a lone word or a run that opens a sentence is bold only when it is longer than one word.
+const CAP_WORD = "[A-Z](?:[A-Za-z0-9]|['’-](?=[A-Za-z0-9]))*";
+export const capRegex = (connectors) => new RegExp(`(?<![A-Za-z0-9'’-])${CAP_WORD}(?:(?:\\s+(?:${connectors.join('|')}))?\\s+${CAP_WORD})*(?![A-Za-z0-9])`, 'g');
+// A number right after a bold term or run belongs to it ("Persona 4", "Rank 9", "April 11th").
+const NUMBER_AFTER = /^ (?:\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)(?:st|nd|rd|th)?(?![A-Za-z0-9])/;
+const withNumber = (s, end, limit) => { const m = NUMBER_AFTER.exec(s.slice(end, limit)); return m ? end + m[0].length : end; };
+const SENTENCE_END = /[.!?]["')\]”]*\s*$/;
+const startsSentence = (before, blockStart) => {
+  const rest = before.replace(/[\s"'“‘(\[]+$/, '');
+  return rest ? SENTENCE_END.test(rest) : blockStart;
+};
+
+function addHit(map, key, atStart) {
+  const hit = map.get(key) ?? { n: 0, start: 0 };
+  hit.n++;
+  if (atStart) hit.start++;
+  map.set(key, hit);
+}
+
+function boldTerms(parent, ctx, st = { start: true }) {
   const out = [];
+  const term = (s) => el('strong', [{ name: 'class', value: 'term' }], [text(s)]);
   for (const c of parent.childNodes) {
     if (c.nodeName !== '#text') {
-      if (isEl(c) && !NO_TERMS_IN.has(c.nodeName)) boldTerms(c, ctx);
+      if (isEl(c, 'br')) st.start = true;
+      else if (isEl(c) && NO_TERMS_IN.has(c.nodeName)) st.start = true;
+      else if (isEl(c)) { boldTerms(c, ctx, INLINE.has(c.nodeName) ? st : { start: true }); if (INLINE.has(c.nodeName)) st.start = false; }
       out.push(c);
       continue;
     }
+    const s = c.value;
+    const known = ctx.re ? [...s.matchAll(ctx.re)] : [];
     let from = 0;
-    for (const m of c.value.matchAll(ctx.re)) {
-      if (m.index > from) out.push(text(c.value.slice(from, m.index)));
-      out.push(el('strong', [{ name: 'class', value: 'term' }], [text(m[0])]));
-      const key = m[0].replace(/\s+/g, ' ').replace(/’/g, "'");
-      const hit = ctx.hits.get(key) ?? { n: 0, start: 0 };
-      hit.n++;
-      if (/(^|[.!?]["')\]]*\s+)$/.test(c.value.slice(0, m.index))) hit.start++;
-      ctx.hits.set(key, hit);
-      from = m.index + m[0].length;
+    const gap = (to) => {
+      // Text between known terms: bold capitalized runs that are not just a sentence's first word.
+      if (!ctx.cap) { if (to > from) out.push(text(s.slice(from, to))); return; }
+      const part = s.slice(from, to);
+      let at = 0;
+      for (const m of part.matchAll(ctx.cap.re)) {
+        const first = startsSentence(s.slice(0, from + m.index), st.start && from + m.index === 0);
+        const words = m[0].split(/\s+/);
+        if (first && words.length === 1) continue;
+        // "What", "Can I", "I've": plain English, not terms.
+        if (words.every((w) => ctx.cap.stop.has(w) || ctx.cap.connectors.has(w))) continue;
+        if (m.index > at) out.push(text(part.slice(at, m.index)));
+        const end = withNumber(part, m.index + m[0].length, part.length);
+        const run = part.slice(m.index, end);
+        out.push(term(run));
+        addHit(ctx.auto, run.replace(/\s+/g, ' ').replace(/’/g, "'"), first);
+        at = end;
+      }
+      if (at < part.length) out.push(text(part.slice(at)));
+    };
+    for (const m of known) {
+      if (m.index < from) continue;
+      gap(m.index);
+      const end = withNumber(s, m.index + m[0].length, s.length);
+      out.push(term(s.slice(m.index, end)));
+      addHit(ctx.hits, m[0].replace(/\s+/g, ' ').replace(/’/g, "'"), startsSentence(s.slice(0, m.index), st.start && m.index === 0));
+      from = end;
     }
-    if (!from) { out.push(c); continue; }
-    if (from < c.value.length) out.push(text(c.value.slice(from)));
+    gap(s.length);
+    if (s.trim()) st.start = SENTENCE_END.test(s);
   }
   parent.childNodes = out;
   out.forEach((c) => { c.parentNode = parent; });
@@ -293,7 +336,7 @@ function boldTerms(parent, ctx) {
 function emphasize(nodes, cfg, ctx, stats) {
   const root = { nodeName: 'root', childNodes: nodes };
   if (cfg.quotes) italicQuotes(root, stats);
-  if (ctx?.re && !(cfg.skipCategories ?? []).includes(ctx.category)) boldTerms(root, ctx);
+  if ((ctx?.re || ctx?.cap) && !(cfg.skipCategories ?? []).includes(ctx.category)) boldTerms(root, ctx);
   root.childNodes.forEach((c) => { c.parentNode = null; });
   return root.childNodes;
 }
