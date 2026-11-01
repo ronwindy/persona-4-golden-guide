@@ -21,6 +21,7 @@
 
   --say: #e8d9a0;
   --emph: #9fe3ff;
+  --term: #ffb347;
 
   --font-body: 'Jost', system-ui, sans-serif;
   --font-sub: 'Kanit', 'Jost', system-ui, sans-serif;
@@ -117,6 +118,7 @@ h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
 .content li { margin-bottom: 0.25rem; }
 .content strong { color: var(--accent); font-weight: 600; }
 .content em { font-style: italic; color: var(--emph); }
+.content strong.term { color: var(--term); font-weight: 700; }
 .content li > ul, .content li > ol { margin: 0.25rem 0 0.25rem; }
 .content li > ul { list-style: circle; }
 

@@ -230,15 +230,87 @@ function pageToc(nodes, cfg) {
   return entries.length >= cfg.minEntries ? entries : [];
 }
 
-/** Applies the configured transforms to cloned nodes. Returns the new nodes and counters (stripped = marker tokens dropped). */
-export function applyTransforms(sourceNodes, cfg = {}) {
-  const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0 };
+// ---- emphasis: "double quoted" spans -> <em>; known guide terms -> <strong class="term">. Wrappers only, no text change ----
+const NO_TERMS_IN = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'b', 'script', 'style']);
+
+function italicQuotes(parent, stats) {
+  for (const c of parent.childNodes) if (isEl(c) && c.nodeName !== 'em') italicQuotes(c, stats);
+  const quotes = parent.childNodes.reduce((n, c) => n + (c.nodeName === '#text' ? (c.value.match(/"/g) ?? []).length : 0), 0);
+  if (!quotes) return;
+  if (quotes % 2) { stats.quotesUnpaired++; return; }
+  const out = [];
+  let open = null;
+  const put = (n) => (open ? open.push(n) : out.push(n));
+  for (const c of parent.childNodes) {
+    if (c.nodeName !== '#text') { put(c); continue; }
+    const s = c.value;
+    let from = 0;
+    for (let i = s.indexOf('"'); i >= 0; i = s.indexOf('"', i + 1)) {
+      if (!open) {
+        if (i > from) out.push(text(s.slice(from, i)));
+        open = [];
+        from = i;
+      } else {
+        open.push(text(s.slice(from, i + 1)));
+        out.push(el('em', [], open));
+        stats.quotes++;
+        open = null;
+        from = i + 1;
+      }
+    }
+    if (from < s.length) put(text(s.slice(from)));
+  }
+  parent.childNodes = out;
+  out.forEach((c) => { c.parentNode = parent; });
+}
+
+function boldTerms(parent, ctx) {
+  const out = [];
+  for (const c of parent.childNodes) {
+    if (c.nodeName !== '#text') {
+      if (isEl(c) && !NO_TERMS_IN.has(c.nodeName)) boldTerms(c, ctx);
+      out.push(c);
+      continue;
+    }
+    let from = 0;
+    for (const m of c.value.matchAll(ctx.re)) {
+      if (m.index > from) out.push(text(c.value.slice(from, m.index)));
+      out.push(el('strong', [{ name: 'class', value: 'term' }], [text(m[0])]));
+      const key = m[0].replace(/\s+/g, ' ').replace(/’/g, "'");
+      const hit = ctx.hits.get(key) ?? { n: 0, start: 0 };
+      hit.n++;
+      if (/(^|[.!?]["')\]]*\s+)$/.test(c.value.slice(0, m.index))) hit.start++;
+      ctx.hits.set(key, hit);
+      from = m.index + m[0].length;
+    }
+    if (!from) { out.push(c); continue; }
+    if (from < c.value.length) out.push(text(c.value.slice(from)));
+  }
+  parent.childNodes = out;
+  out.forEach((c) => { c.parentNode = parent; });
+}
+
+function emphasize(nodes, cfg, ctx, stats) {
+  const root = { nodeName: 'root', childNodes: nodes };
+  if (cfg.quotes) italicQuotes(root, stats);
+  if (ctx?.re && !(cfg.skipCategories ?? []).includes(ctx.category)) boldTerms(root, ctx);
+  root.childNodes.forEach((c) => { c.parentNode = null; });
+  return root.childNodes;
+}
+
+/**
+ * Applies the configured transforms to cloned nodes. Returns the new nodes and counters (stripped = marker tokens dropped).
+ * ctx (emphasis only): { re, hits: Map, category } where re matches the guide terms and hits collects per-term counts.
+ */
+export function applyTransforms(sourceNodes, cfg = {}, ctx = {}) {
+  const stats = { callouts: 0, dateMarkers: 0, labelMarkers: 0, faq: 0, numberedLists: 0, splitParagraphs: 0, stripped: 0, quotes: 0, quotesUnpaired: 0 };
   let nodes = sourceNodes.map(clone);
   if (cfg.callouts) nodes = callouts(nodes, cfg.callouts, stats);
   if (cfg.dateMarker) nodes = dateMarkers(nodes, cfg.dateMarker, stats);
   if (cfg.labelMarker) nodes = labelMarkers(nodes, cfg.labelMarker, stats);
   if (cfg.faq) nodes = faq(nodes, cfg.faq, stats);
   if (cfg.numberedLines) nodes = numberedLines(nodes, stats);
+  if (cfg.emphasis) nodes = emphasize(nodes, cfg.emphasis, ctx, stats);
   if (cfg.splitParagraphs) nodes = splitParagraphs(nodes, cfg.splitParagraphs, stats);
   const toc = cfg.toc ? pageToc(nodes, cfg.toc) : [];
   return { nodes, stats, toc };
