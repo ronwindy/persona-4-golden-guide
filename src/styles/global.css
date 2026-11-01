@@ -299,23 +299,29 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   display: block;
   padding: 0.8rem 1rem 1.2rem;
   overflow: hidden;
+}
+/* header background fades out toward the bottom so it blends into the sidebar below */
+.nav-site-title::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background:
     radial-gradient(ellipse at 50% 55%, rgb(255 230 0 / 0.28), transparent 65%),
     radial-gradient(rgb(255 230 0 / 0.16) 1.2px, transparent 1.6px) 0 0 / 9px 9px,
     var(--bg);
+  -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent);
+  mask-image: linear-gradient(to bottom, #000 35%, transparent);
 }
-/* slanted yellow slab cutting across the bottom edge of the header */
+/* thin accent hairline that fades out at both ends */
 .nav-site-title::after {
   content: '';
   position: absolute;
-  left: -10%;
-  right: -10%;
+  left: 8%;
+  right: 8%;
   bottom: 0;
-  height: 0.55rem;
-  background: var(--accent);
-  transform: skewY(-3deg);
-  transform-origin: left bottom;
-  box-shadow: 0 -0.2rem 0 #000;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent) 50%, transparent);
+  opacity: 0.8;
 }
 .nav-site-title:hover { filter: brightness(1.1); }
 .nav-site-title .logo { position: relative; z-index: 1; filter: drop-shadow(0 4px 10px rgb(0 0 0 / 0.7)); transition: transform 0.2s; }
