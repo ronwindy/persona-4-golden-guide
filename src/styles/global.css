@@ -648,4 +648,5 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 }
 .guide-body .panel > :not(.label-marker) { margin-left: 1.1rem; margin-right: 1.1rem; }
 .guide-body .panel > .label-marker + * { margin-top: 0.9rem; }
-.guide-body .panel > :last-child { margin-bottom: 1.1rem; }
+.guide-body .panel > :last-child:not(.label-marker) { margin-bottom: 1.1rem; }
+.guide-body .panel > .label-marker:only-child { border-bottom: 0; }
