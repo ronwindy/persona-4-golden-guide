@@ -1,49 +1,34 @@
 # Persona 4 Golden Guide — Agent Instructions
 
-Re-presents a GameFAQs guide (Persona 4 Golden) as a static, easier-to-read Astro site on GitHub Pages. **Only the presentation changes. Every word, number and symbol of the author's text is carried over unchanged and in the original order. Structure and emphasis may change.**
+A personal, easier-to-read static Astro site on GitHub Pages, started from a GameFAQs guide (Persona 4 Golden). The guide pages are now **hand-owned**: the user edits them to their own taste.
 
 ```text
-raw-sources/*.html → scripts/extract.mjs (+ lib/transforms.mjs) → src/data/pages/*.html + manifest.json → scripts/verify.mjs → Astro build
+src/data/pages/*.html + src/data/manifest.json → Astro build
 ```
 
 ## 1. Core rule
-The source is the sole authority for **text**. Never modify, rewrite, summarize, translate, reorder, move, add or delete guide words or numbers, and never "fix" typos, facts or wording. `verify` enforces this word for word.
+`src/data/pages/*.html` is the source of truth. The original extract/verify pipeline was a one-time split of the saved GameFAQs HTML and has been deleted (see git history). There is no word-for-word fidelity check any more; the user accepts drift from the original text.
 
-Free, as long as the text stays identical and in place:
-- CSS, layout, sidebar, prev/next, progress tracking, fonts, link retargeting to local pages.
-- Structure: group content, break long paragraphs into several (only at sentence ends), turn line runs into bullet or numbered lists, promote decorative labels to headings, wrap content in callouts or collapsibles, add emphasis (bold etc.) where it aids reading.
-- Pure markers may be dropped when the structure replaces them: runs of `-`/`~` around a label or date, and `1.`/`2.` typed in front of list items (the list supplies the numbers). Nothing else may be dropped.
+- Edit page text and markup only when the user asks. Do not "improve" wording, facts or structure on your own initiative.
+- Edits may add, remove, rewrite or reorder words and markup, as the user orders.
+- `src/data/manifest.json` (page list, order, categories, ToC entries) is also hand-owned: keep it consistent when pages or h4 headings are added, renamed or removed.
+- Credit: the guide is by Hurricanehaon (GameFAQs). Keep that attribution wherever the guide shows it.
 
-Needs the user's explicit order: anything that adds, removes, rewrites or moves guide words (including dropping content, adding explanatory text, or merging pages).
-
-Priority: source text fidelity > user requirements > usability > visual polish.
-
-## 2. Pipeline (Node by default; Python allowed where clearly better)
-- The user saves the GameFAQs HTML into `raw-sources/` (exactly one `.html`). Never search for or pick sources. Raw sources are gitignored.
-- `npm run sync` = `extract` + `verify`. Run it whenever the source or `project.config.json` `extract` block changes.
-  - `extract`: finds the guide body (`extract.bodyId`), drops the site TOC, splits at `chapterTag`/`sectionTag` into one HTML file per page, retargets GameFAQs section links to local pages, writes `docs/extract-report.md`.
-  - The saved GameFAQs page repeats each chapter (full-chapter copy, then one block per section). `extract` keeps one copy and **refuses to continue unless the dropped copy matches the kept one word for word**.
-  - `verify`: re-reads the raw source and the generated pages independently; fails on any word difference, any gap in the ledger, or a duplicate that does not match. Prints the word accounting.
-    - Checks: (1) the ledger in `src/data/manifest.json` covers every top-level body node once, in order; (2) each page's words equal the source words of its range; (3) each dropped duplicate's words equal the kept copy's; (4) kept + duplicate + dropped words = total body words.
-- Structural transforms live at extract time, configured declaratively in `project.config.json` `extract.transforms` and implemented once in `scripts/lib/transforms.mjs` (callouts, date/label headings, FAQ collapsibles, numbered lines to `<ol>`, long-paragraph splitting, heading ids + ToC entries, term bolding and quote italics). Never post-process page HTML with regexes at render time; a new structure means a new engine rule, so `verify` still covers it.
-  - `verify` compares page words to the source range in order. Only pure marker tokens (`----`, `~`, `1.`) may be missing, and the count must equal what extract declared per page in `manifest.json` (`stripped`). Block edges (`p`, `li`, `td`, `summary`...) count as word boundaries.
-  - Add a rule for a new pattern in `transforms.mjs`, run `npm run sync`; a failing verify means the rule touched text.
-- Pages: one per `sectionTag` (h3) section, grouped under its `chapterTag` (h2) chapter; chapter text before its first h3 becomes an "Overview" page when it has words. Ids are the slug of chapter + section title. Page markup is the source markup plus the transforms above; tables also get `div.table-wrap` and GameFAQs section links point to local pages. Everything outside the body (site header/footer, ads) is dropped and listed in `docs/extract-report.md`.
-- New game: save the HTML, adjust `project.config.json` (`game`, `slug`, `site`, `base`, `extract`), run `npm run sync`.
-- Generated `src/data/` is committed (CI has no raw source). Never hand-edit it.
+## 2. Build
 - Build: `cmd /c npm run build` (avoids PowerShell ExecutionPolicy errors). Ad-hoc JavaScript: temp `.mjs` file, not long `node -e`.
+- Site settings (title, base, site URL) live in `project.config.json`.
+- `raw-sources/` may still hold the user's saved GameFAQs HTML locally. It is gitignored and no longer used by anything.
 
 ## 3. Presentation (look decisions live in `DESIGN.md`)
-- Pages render the stored HTML with `set:html` inside `.guide-body`; restyle only via `src/styles/global.css`. Markup is added only by extract-time transforms, never at render time.
-- Enhancements are added only when the user orders them. Current: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings, `extract.transforms.toc`), theme/typography, background, logo, favicon. No search yet.
+- Pages render the stored HTML with `set:html` inside `.guide-body`; restyle via `src/styles/global.css` and the other files in `src/styles/`.
+- Current features: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings), theme/typography, background, logo, favicon. No search yet.
 - No monospace anywhere. Never copy design elements from other game projects; ask before new ornaments.
-- Images: the current source has none. If a source has images, keep their URLs; download locally only the ones that are blocked, after testing.
-- Lucide icons only in the sidebar (`src/lib/nav-icon-rules.mjs`).
+- Header icons: headings carry `data-icon`; `src/styles/header-icons.css` holds one mask per icon.
+- Lucide icons in the sidebar (`src/lib/nav-icon-rules.mjs`).
 
 ## 4. Workflow rules
 - Commit directly on `main`. Never drive a browser against the user's pages without being asked to verify visuals; the user checks the look.
 - Ask before adding a new component or feature beyond section 3.
-- Dropped content is always listed in `docs/extract-report.md` so the user can approve it.
 
 ## 5. Out of scope
-Crawling, backends, RAG, knowledge graphs, per-game bespoke converters. The extractor is config-driven: a new GameFAQs guide should need only a new `extract` config block.
+Crawling, backends, RAG, knowledge graphs, bulk converters.

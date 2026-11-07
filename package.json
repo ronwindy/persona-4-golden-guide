@@ -6,15 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "extract": "node scripts/extract.mjs",
-    "verify": "node scripts/verify.mjs",
-    "sync": "node scripts/extract.mjs && node scripts/verify.mjs"
+    "astro": "astro"
   },
   "dependencies": {
     "@lucide/astro": "^1.61.0",
-    "astro": "^5.4.2",
-    "parse5": "^7.3.0"
+    "astro": "^5.4.2"
   },
   "devDependencies": {
     "@types/node": "^26.6.4"

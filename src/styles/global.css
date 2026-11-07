@@ -506,7 +506,7 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   mask: var(--icon-calendar) center / contain no-repeat;
 }
 
-/* Header icons: extract sets data-icon; header-icons.css defines --header-icon per icon. */
+/* Header icons: headings carry data-icon; header-icons.css defines --header-icon per icon. */
 .guide-body [data-icon]::before {
   content: "";
   display: inline-block;
