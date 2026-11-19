@@ -27,7 +27,7 @@ src/data/pages/*.html + src/data/manifest.json → Astro build
 - Lucide icons in the sidebar (`src/lib/nav-icon-rules.mjs`).
 
 ## 4. Workflow rules
-- Commit directly on `main`. Never drive a browser against the user's pages without being asked to verify visuals; the user checks the look.
+- Commit directly on `main`. After UI changes, verify them in the built-in browser (preview) before reporting to the user.
 - Ask before adding a new component or feature beyond section 3.
 
 ## 5. Out of scope
