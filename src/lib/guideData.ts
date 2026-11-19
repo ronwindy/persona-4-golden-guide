@@ -18,20 +18,20 @@ export interface TocCategory {
 }
 
 const DATA_DIR = path.resolve(process.cwd(), 'src/data');
+const manifest = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8'));
+const pages: PageEntry[] = manifest.pages.map(({ id, title, category }: PageEntry) => ({ id, title, category }));
 
-/** Pages in source order, as written by scripts/extract.mjs. */
+/** Pages in manifest order. */
 export function getPages(): PageEntry[] {
-  const manifest = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8'));
-  return manifest.pages.map(({ id, title, category }: PageEntry) => ({ id, title, category }));
+  return pages;
 }
 
-/** On-page ToC entries (heading ids and titles) written by scripts/extract.mjs; empty when the page has too few. */
+/** On-page ToC entries (heading ids and titles) from the manifest; empty when the page has none. */
 export function getPageToc(id: string): PageToc[] {
-  const manifest = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'manifest.json'), 'utf-8'));
   return manifest.pages.find((p: { id: string }) => p.id === id)?.toc ?? [];
 }
 
-/** Page markup as written by scripts/extract.mjs (source markup plus the verified structural transforms). */
+/** Page markup from src/data/pages/<id>.html. */
 export function getPageHtml(id: string): string {
   return fs.readFileSync(path.join(DATA_DIR, 'pages', `${id}.html`), 'utf-8');
 }

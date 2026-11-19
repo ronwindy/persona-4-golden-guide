@@ -17,5 +17,4 @@ Thumbs.db
 scratch/
 
 # Saved source pages (user-supplied, not redistributed)
-raw-sources/*
-!raw-sources/.gitkeep
+raw-sources/
