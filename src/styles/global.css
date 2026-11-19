@@ -452,19 +452,40 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 }
 
 .guide-body { overflow-wrap: anywhere; }
-.guide-body h2 { font-size: 1.35rem; padding: 0.3rem 1.1rem 0.3rem 0.8rem; margin: 1.5rem 0 1.75rem; letter-spacing: 0.06em; box-shadow: 0.3rem 0.3rem 0 #000, 0.6rem 0.6rem 0 rgb(255 230 0 / 0.3); }
+/* Chevron header: yellow double chevron, light label, yellow line fading out to the right (no slab). */
+:is(.guide-body h2, h2.home-cat) {
+  display: flex;
+  width: 100%;
+  gap: 0.9rem;
+  background: none;
+  box-shadow: none;
+  transform: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 2rem 0 1.5rem;
+  letter-spacing: 0.04em;
+}
+:is(.guide-body h2, h2.home-cat)::after {
+  position: static;
+  flex: 1 1 2rem;
+  width: auto;
+  height: 2px;
+  min-width: 1.5rem;
+  background: linear-gradient(90deg, rgb(255 230 0 / 0.75), rgb(255 230 0 / 0));
+}
 /* Double-chevron lead-in before the label */
-.guide-body h2::before {
+:is(.guide-body h2, h2.home-cat)::before {
   content: '';
   flex: none;
-  width: 1.2rem;
-  height: 0.9em;
-  background: var(--accent-ink);
+  width: 1.4rem;
+  height: 1em;
+  background: var(--accent);
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20' preserveAspectRatio='none'%3E%3Cpath d='M0 0h7l8 10-8 10H0l8-10zM10 0h7l7 10-7 10h-7l8-10z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20' preserveAspectRatio='none'%3E%3Cpath d='M0 0h7l8 10-8 10H0l8-10zM10 0h7l7 10-7 10h-7l8-10z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
 }
 @media (max-width: 599px) {
-  .guide-body h2 { font-size: clamp(1rem, 5.2vw, 1.35rem); letter-spacing: 0.03em; padding-right: 0.8rem; }
+  .guide-body h2 { font-size: clamp(1.05rem, 5.4vw, 1.4rem); letter-spacing: 0.02em; gap: 0.6rem; }
 }
 .guide-body h3 { margin: 2rem 0 0.75rem; font-size: 1.7rem; line-height: 1.15; }
 .guide-body > h2 + h3 { margin-top: 0; }
@@ -724,8 +745,9 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   .home-resume .resume-roll { animation: resume-roll 5s linear infinite; }
   @keyframes resume-roll { from { transform: translateY(-100%); } to { transform: translateY(400%); } }
 }
-.home-cat { font-size: 1.05rem; }
-.home-cat-icon { flex: none; }
+h2.home-cat { font-size: 1.25rem; }
+/* Category icon moves to the right end of the line (option D). */
+.home-cat-icon { flex: none; order: 3; color: var(--accent); }
 .content .section-index { list-style: none; padding-left: 0.25rem; }
 .content .section-index a { display: inline-flex; align-items: center; gap: 0.6rem; }
 .content .section-index .nav-icon { opacity: 0.85; }
