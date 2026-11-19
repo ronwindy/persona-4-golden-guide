@@ -609,10 +609,6 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .table-wrap td p:last-child { margin-bottom: 0; }
 
 /* ---------- Progress tracker ---------- */
-.progress { padding: 0.75rem 1rem 0.25rem; }
-.progress-text { margin-bottom: 0.35rem; font-size: 0.85rem; color: var(--text-muted); }
-.progress-bar { height: 10px; background: rgb(255 255 255 / 0.1); overflow: hidden; transform: skewX(var(--skew)); box-shadow: 0.15rem 0.15rem 0 #000; }
-.progress-bar > div { width: 0; height: 100%; background: var(--accent); box-shadow: 0 0 10px rgb(255 230 0 / 0.7); transition: width 0.3s; }
 .progress-resume { display: block; margin-top: 0.6rem; font-size: 0.85rem; }
 .progress-resume[hidden] { display: none; }
 .nav-list a[data-done]::after { content: '✓'; margin-left: auto; padding-left: 0.5rem; color: var(--accent); font-weight: 700; }

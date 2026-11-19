@@ -10,14 +10,7 @@ interface Props {
 const { currentId = '', listId = 'sidebar-list' } = Astro.props;
 const categories = getToc();
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
-const total = categories.reduce((n, c) => n + c.entries.length, 0);
 ---
-
-<div class="progress" data-progress-total={total}>
-  <div class="progress-text"><span data-progress-count>0</span> / {total} read</div>
-  <div class="progress-bar"><div data-progress-fill></div></div>
-  <a class="progress-resume" data-progress-resume href={`${baseUrl}/`} hidden>Continue reading</a>
-</div>
 
 <nav class="nav-list" id={listId} aria-label="Guide sections">
   {categories.map((cat) => (

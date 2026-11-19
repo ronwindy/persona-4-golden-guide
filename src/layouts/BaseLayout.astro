@@ -144,12 +144,6 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         function paint() {
           var links = document.querySelectorAll('a[data-page-id]');
           links.forEach(function (a) { a.toggleAttribute('data-done', !!state.done[a.getAttribute('data-page-id')]); });
-          var n = Object.keys(state.done).length;
-          document.querySelectorAll('.progress').forEach(function (box) {
-            var total = Number(box.getAttribute('data-progress-total')) || 1;
-            box.querySelector('[data-progress-count]').textContent = String(n);
-            box.querySelector('[data-progress-fill]').style.width = Math.min(100, Math.round((n / total) * 100)) + '%';
-          });
           document.querySelectorAll('[data-progress-resume]').forEach(function (a) {
             var target = document.querySelector('a[data-page-id="' + state.last + '"]');
             if (state.last && target) { a.href = target.href; a.hidden = false; var slot = a.querySelector('[data-resume-title]'); if (slot) slot.textContent = target.textContent.trim(); else a.textContent = 'Continue reading: ' + target.textContent.trim(); } else { a.hidden = true; }
