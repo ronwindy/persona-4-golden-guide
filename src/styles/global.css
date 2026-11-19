@@ -680,6 +680,10 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .content .section-index { list-style: none; padding-left: 0.25rem; }
 .content .section-index a { display: inline-flex; align-items: center; gap: 0.6rem; }
 .content .section-index .nav-icon { opacity: 0.85; }
+@media (min-width: 640px) {
+  .content .section-index.two-col { column-count: 2; column-gap: 2rem; }
+  .content .section-index.two-col li { break-inside: avoid; }
+}
 
 /* ---------- FAQ: collapsible question rows ---------- */
 .guide-body details.faq {

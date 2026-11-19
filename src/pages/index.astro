@@ -19,7 +19,7 @@ const categories = getToc();
         {(() => { const CatIcon = navCategoryIcon(cat.category); return <CatIcon class="home-cat-icon" size={20} aria-hidden="true" />; })()}
         <span>{cat.category}</span>
       </h2>
-      <ul class="section-index">
+      <ul class:list={['section-index', { 'two-col': cat.entries.length >= 4 }]}>
         {cat.entries.map((entry) => {
           const EntryIcon = navEntryIcon(cat.category, entry.title);
           return (
