@@ -9,7 +9,9 @@ const categories = getToc();
 ---
 
 <BaseLayout>
-  <h1 class="home-title">{project.game} Guide</h1>
+  <h1 class="home-title"><span class="home-stack"><span class="home-kicker" aria-hidden="true">● On air · 00:00 AM</span>
+    <span class="home-name">{project.game}</span>
+    <span class="home-tagrow"><span class="home-tag">Guide</span><span class="home-rule" aria-hidden="true"></span></span></span></h1>
   <a class="progress-resume home-resume" data-progress-resume href={`${baseUrl}/`} hidden>Continue reading</a>
   {categories.map((cat) => (
     <section>
