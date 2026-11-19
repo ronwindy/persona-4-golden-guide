@@ -152,7 +152,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           });
           document.querySelectorAll('[data-progress-resume]').forEach(function (a) {
             var target = document.querySelector('a[data-page-id="' + state.last + '"]');
-            if (state.last && target) { a.href = target.href; a.hidden = false; a.textContent = 'Continue reading: ' + target.textContent.trim(); } else { a.hidden = true; }
+            if (state.last && target) { a.href = target.href; a.hidden = false; var slot = a.querySelector('[data-resume-title]'); if (slot) slot.textContent = target.textContent.trim(); else a.textContent = 'Continue reading: ' + target.textContent.trim(); } else { a.hidden = true; }
           });
           document.querySelectorAll('[data-mark-read]').forEach(function (b) {
             var on = !!state.done[b.getAttribute('data-mark-read')];
