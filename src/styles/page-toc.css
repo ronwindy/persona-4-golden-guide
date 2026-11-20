@@ -1,5 +1,5 @@
 /* On-page table of contents: frosted panel in the right column on wide screens, collapsible block above the text otherwise.
-   Same vocabulary as the sidebar: yellow-bar head, gradient hover, skewed yellow slab for the current entry. */
+   Header: skewed yellow slab, ghost month, date range and progress pips. Entries: calendar-leaf tiles, the current one enlarged. */
 .page-toc {
   margin: 0 0 1.25rem;
   border: 1px solid var(--glass-edge);
@@ -11,103 +11,184 @@
   overflow: hidden;
 }
 
+/* Header (the summary), so the whole block still collapses on narrow screens. */
 .page-toc-box summary {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.65rem;
+  overflow: hidden;
   cursor: pointer;
   list-style: none;
-  padding: 0.55rem 0.8rem;
-  font-family: var(--font-head);
-  font-size: 0.62rem;
-  line-height: 1.3;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: linear-gradient(90deg, rgb(255 230 0 / 0.26), rgb(255 230 0 / 0.02));
-  border-left: 4px solid var(--accent);
+  padding: 0.75rem 0.9rem 0.75rem 0;
   border-bottom: 1px solid var(--glass-edge);
 }
 .page-toc-box summary::-webkit-details-marker { display: none; }
-.page-toc-box summary::before {
+.page-toc-box summary::after {
   content: '';
-  flex: none;
-  width: 0.4rem;
-  height: 0.4rem;
+  position: absolute;
+  right: 0.9rem;
+  top: 1.05rem;
+  width: 0.45rem;
+  height: 0.45rem;
   border-right: 2px solid var(--accent);
   border-bottom: 2px solid var(--accent);
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   transition: transform 0.15s;
 }
-.page-toc-box[open] > summary::before { transform: rotate(45deg); }
+.page-toc-box[open] > summary::after { transform: rotate(-135deg); top: 1.2rem; }
 
-/* Scrollable list with a vertical reading-progress track on its left edge. */
+.page-toc-ghost {
+  position: absolute;
+  right: 0.4rem;
+  top: -0.4rem;
+  font-family: var(--font-head);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgb(255 230 0 / 0.09);
+  transform: skewX(var(--skew));
+  pointer-events: none;
+}
+.page-toc-slab {
+  position: relative;
+  align-self: flex-start;
+  margin-left: -0.5rem;
+  padding: 0.4rem 1.1rem 0.4rem 1.4rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  transform: skewX(var(--skew));
+  box-shadow: 3px 3px 0 #000;
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.page-toc-slab > span { display: inline-block; transform: skewX(calc(var(--skew) * -1)); }
+.page-toc-range {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding-left: 1rem;
+  font-family: var(--font-sub);
+  font-style: italic;
+  line-height: 1.1;
+}
+.page-toc-range-label { font-size: 0.56rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); }
+.page-toc-range-text { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+.page-toc-pips { position: relative; display: flex; gap: 3px; padding-left: 0.9rem; }
+.page-toc-pips > span { flex: 1; height: 5px; transform: skewX(-20deg); background: rgb(255 255 255 / 0.22); transition: background 0.2s; }
+.page-toc-pips > span.is-done { background: rgb(255 230 0 / 0.5); }
+.page-toc-pips > span.is-now { background: var(--accent); box-shadow: 0 0 8px rgb(255 230 0 / 0.55); }
+/* Pages with too many entries for one pip each get a single bar driven by scroll progress. */
+.page-toc-bar > span { position: relative; overflow: hidden; }
+.page-toc-bar > span::before { content: ''; position: absolute; inset: 0; width: calc(var(--toc-progress, 0) * 100%); background: var(--accent); box-shadow: 0 0 8px rgb(255 230 0 / 0.55); }
+
+/* Entries. */
 .page-toc-list {
-  --toc-progress: 0%;
   position: relative;
   list-style: none;
   margin: 0;
-  padding: 0.5rem 0.5rem 0.6rem 0.9rem;
+  padding: 0.5rem 0.6rem 0.65rem;
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: rgb(255 230 0 / 0.4) transparent;
 }
-.page-toc-list::before,
-.page-toc-list::after {
-  content: '';
-  position: absolute;
-  left: 0.4rem;
-  top: 0.5rem;
-  width: 3px;
-  border-radius: 2px;
-}
-.page-toc-list::before { bottom: 0.6rem; background: rgb(255 255 255 / 0.1); }
-.page-toc-list::after { height: calc((100% - 1.1rem) * var(--toc-progress, 0)); background: var(--accent); box-shadow: 0 0 8px rgb(255 230 0 / 0.55); transition: height 0.2s; }
-.page-toc-list li { margin: 0; }
+.page-toc-list li { margin: 0.25rem 0; }
 .page-toc-list a {
-  display: block;
-  padding: 0.28rem 0.6rem;
-  margin: 0.05rem 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  transition: opacity 0.15s;
+}
+.page-toc-list li.is-read a { opacity: 0.65; }
+
+.toc-leaf {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  width: 2.6rem;
+  height: 2.75rem;
+  margin-left: 0.35rem;
+  border: 1px solid rgb(255 255 255 / 0.16);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface-raised);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.toc-leaf-band {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.75rem;
+  background: var(--accent);
+  color: var(--accent-ink);
   font-family: var(--font-sub);
   font-style: italic;
-  font-weight: 400;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
-  line-height: 1.25;
-  color: var(--text-muted);
-  text-decoration: none;
-  border-left: 3px solid transparent;
-  transition: background 0.15s, color 0.15s, transform 0.15s;
+  font-weight: 700;
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
-.page-toc-list a:hover {
-  color: var(--accent);
-  background: linear-gradient(90deg, rgb(255 230 0 / 0.22), transparent);
-  border-left-color: var(--accent);
-  transform: translateX(0.2rem);
+.toc-leaf.is-weekend .toc-leaf-band { background: var(--info); }
+.toc-leaf-num { flex: 1; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 1rem; color: #d9d6c4; }
+.page-toc-list a:hover .toc-leaf { transform: translateY(-2px); box-shadow: 0 4px 10px rgb(0 0 0 / 0.5); }
+
+.toc-mark { flex: none; width: 2.6rem; margin-left: 0.35rem; display: flex; align-items: center; justify-content: center; }
+.toc-mark i { width: 0.42rem; height: 0.42rem; background: rgb(255 230 0 / 0.6); transform: rotate(45deg); }
+
+.toc-label {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0 0.6rem 0 0.75rem;
+  font-family: var(--font-sub);
+  font-style: italic;
+  line-height: 1.15;
 }
+.toc-title { font-size: 0.95rem; color: #d9d6c4; transition: color 0.15s; }
+.toc-now { display: none; font-size: 0.56rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.toc-check { display: none; flex: none; width: 1rem; height: 1rem; margin-right: 0.35rem; color: var(--accent); }
+.page-toc-list li.is-read .toc-check { display: block; }
+.page-toc-list a:hover .toc-title { color: var(--accent); }
+
+/* Current entry: glowing row, enlarged yellow leaf, "Now reading" tag. */
 .page-toc-list a[aria-current] {
-  color: var(--accent-ink);
-  background: var(--accent);
-  font-weight: 500;
-  border-left-color: #000;
-  transform: skewX(var(--skew));
-  margin: 0.2rem 0.3rem 0.2rem 0.1rem;
-  box-shadow: 0.2rem 0.2rem 0 #000;
+  margin: 0.25rem 0;
+  padding: 0.4rem 0.4rem 0.4rem 0.35rem;
+  background: linear-gradient(90deg, rgb(255 230 0 / 0.28), rgb(255 230 0 / 0.04));
+  border-left: 3px solid var(--accent);
+  box-shadow: 0 0 22px rgb(255 230 0 / 0.18);
 }
+.page-toc-list a[aria-current] .toc-leaf { width: 3.5rem; height: 3.75rem; margin-left: 0; border-color: var(--accent); background: var(--accent); box-shadow: 3px 3px 0 #000; }
+.page-toc-list a[aria-current] .toc-leaf-band { height: 1rem; background: #0d0d0d; color: var(--accent); font-size: 0.56rem; }
+.page-toc-list a[aria-current] .toc-leaf-num { font-size: 1.75rem; color: var(--accent-ink); }
+.page-toc-list a[aria-current] .toc-mark { margin-left: 0; }
+.page-toc-list a[aria-current] .toc-mark i { width: 0.75rem; height: 0.75rem; background: var(--accent); box-shadow: 0 0 12px rgb(255 230 0 / 0.8); }
+.page-toc-list a[aria-current] .toc-label { gap: 0.15rem; padding-left: 0.75rem; }
+.page-toc-list a[aria-current] .toc-now { display: block; }
+.page-toc-list a[aria-current] .toc-title { font-size: 1.2rem; font-weight: 700; color: var(--text); }
+.page-toc-list li.is-read a[aria-current] { opacity: 1; }
 
 @media (min-width: 1280px) {
   .page-toc {
     position: sticky;
     top: 1.5rem;
     flex: none;
-    width: 13.5rem;
+    width: 16rem;
     margin: 0;
     align-self: flex-start;
   }
   .page-toc-box summary { pointer-events: none; cursor: default; }
-  .page-toc-box summary::before { display: none; }
-  .page-toc-list { max-height: calc(100vh - 7rem); }
+  .page-toc-box summary::after { display: none; }
+  .page-toc-list { max-height: calc(100vh - 14rem); }
 }
 @media (max-width: 1279px) {
   .content-col:has(.page-toc) { flex-direction: column; gap: 0.75rem; }
@@ -117,5 +198,5 @@
   .page-toc-list { max-height: 50vh; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .page-toc-list a, .page-toc-list::after { transition: none; }
+  .page-toc-list a, .toc-leaf, .toc-title, .page-toc-pips > span { transition: none; }
 }
