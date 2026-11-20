@@ -139,7 +139,20 @@ h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
   backdrop-filter: blur(16px) saturate(140%);
   box-shadow: 4px 0 0 #000, 10px 0 24px rgb(0 0 0 / 0.45);
 }
-html[data-sidebar='collapsed'] .sidebar { display: none; }
+.sidebar { overflow-x: hidden; }
+.sidebar > * { min-width: calc(var(--sidebar-width) - 6px); }
+html[data-sidebar='collapsed'] .sidebar { width: 0; border-width: 0; border-image: none; box-shadow: none; visibility: hidden; }
+html[data-sidebar='collapsed'] .sidebar > * { transform: translateX(calc(var(--sidebar-width) * -1)); }
+/* Animate only on a user toggle (flag set by the toggle handler), never on load. */
+html[data-sidebar-anim] .sidebar {
+  transition: width 0.25s ease-out, border-width 0.25s ease-out, box-shadow 0.25s ease-out, visibility 0s linear 0s;
+}
+html[data-sidebar-anim][data-sidebar='collapsed'] .sidebar { transition: width 0.25s ease-out, border-width 0.25s ease-out, box-shadow 0.25s ease-out, visibility 0s linear 0.25s; }
+html[data-sidebar-anim] .sidebar > * { transition: transform 0.25s ease-out; }
+html[data-sidebar-anim] .sidebar-toggle { transition: left 0.25s ease-out, transform 0.15s, box-shadow 0.15s, filter 0.15s; }
+@media (prefers-reduced-motion: reduce) {
+  html[data-sidebar-anim] .sidebar, html[data-sidebar-anim] .sidebar > *, html[data-sidebar-anim] .sidebar-toggle { transition: none; }
+}
 
 .content-col { flex: 1; min-width: 0; display: flex; gap: 2rem; padding: 1.5rem 2rem; justify-content: center; }
 .content {

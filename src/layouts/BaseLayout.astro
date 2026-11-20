@@ -103,6 +103,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
         if (toggle) {
           toggle.addEventListener('click', function () {
             var next = root.getAttribute('data-sidebar') === 'collapsed' ? 'open' : 'collapsed';
+            root.setAttribute('data-sidebar-anim', '');
             root.setAttribute('data-sidebar', next);
             try { localStorage.setItem('sidebar-state', next); } catch (e) {}
           });
