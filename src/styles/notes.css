@@ -1,0 +1,42 @@
+/* Walkthrough Important Notes visual page (markup: src/data/pages/walkthrough-important-notes.html). */
+.guide-body .imp { display: flex; flex-direction: column; gap: 1.5rem; }
+.guide-body .imp p { margin: 0; }
+.imp-hero { margin: 0; }
+.imp-gh { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.1rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.95rem; color: var(--accent); }
+.imp-gh::after { content: ''; flex: 1; height: 2px; background: linear-gradient(90deg, var(--accent), transparent); }
+
+.imp-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.8rem; margin-top: -0.6rem; }
+.imp-card, .imp-money, .imp-box, .imp-challenge {
+  position: relative; overflow: hidden; border-radius: 14px; padding: 1.1rem 1.2rem;
+  background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px);
+}
+.imp-card { display: flex; flex-direction: column; gap: 0.6rem; }
+.imp-no { position: absolute; right: 0.8rem; top: 0.2rem; font-family: var(--font-head); font-size: 3.4rem; line-height: 1; color: rgb(255 230 0 / 0.09); }
+.imp-ic { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 8px; background: var(--accent); color: var(--accent-ink); transform: skewX(var(--skew)); }
+.imp-ic svg { width: 1.5rem; height: 1.5rem; transform: skewX(calc(var(--skew) * -1)); }
+.imp svg { fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.imp-ct { font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 1.3rem; line-height: 1.1; color: var(--accent); }
+.imp-tag { margin-top: auto; padding-top: 0.6rem; border-top: 1px solid var(--glass-edge); color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+
+.imp-money { display: flex; flex-direction: column; gap: 0.9rem; }
+.imp-bars { display: flex; align-items: flex-end; gap: 0.8rem; height: 13rem; }
+.imp-bar { flex: 1; min-width: 0; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.4rem; text-align: center; }
+.imp-bar b { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1.15rem; }
+.imp-bar i { display: block; height: var(--h); border-radius: 6px 6px 0 0; background: linear-gradient(180deg, var(--accent), #b39f00); }
+.imp-more i { background: repeating-linear-gradient(135deg, rgb(255 230 0 / 0.55) 0 8px, rgb(255 230 0 / 0.18) 8px 16px); }
+.imp-bar span { color: var(--text-muted); font-size: 0.85rem; font-weight: 500; }
+
+.imp-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 0.8rem; }
+.imp-box { display: flex; flex-direction: column; gap: 0.6rem; }
+.imp-bt { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 1.25rem; }
+.imp-bt svg { width: 1.6rem; height: 1.6rem; flex: none; }
+.imp-first { border-color: rgb(255 179 71 / 0.5); background: rgb(70 45 10 / 0.5); }
+.imp-first .imp-bt { color: var(--term); }
+.imp-behind .imp-bt { color: var(--emph); }
+
+.imp-challenge { display: flex; flex-wrap: wrap; gap: 1.2rem 1.8rem; align-items: center; }
+.imp-challenge > div { flex: 1 1 16rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.imp-diff { border-left: 3px solid var(--accent); padding-left: 1.1rem; }
+.imp-dk { font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.85rem; color: var(--text-muted); }
+.imp-dv { font-family: var(--font-head); font-size: 1.8rem; line-height: 1.1; }
+.imp-fun { align-self: center; max-width: 100%; text-align: center; padding: 0.7rem 1.6rem; background: var(--accent); color: var(--accent-ink); transform: skewX(var(--skew)); box-shadow: 0.3rem 0.3rem 0 var(--border); font-family: var(--font-sub); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 1.2rem; }
