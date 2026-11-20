@@ -151,7 +151,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
           document.querySelectorAll('[data-mark-read]').forEach(function (b) {
             var on = !!state.done[b.getAttribute('data-mark-read')];
             b.setAttribute('aria-pressed', String(on));
-            b.textContent = on ? 'Read ✓ (click to undo)' : 'Mark as read';
+            b.textContent = on ? 'Read' : 'Mark as read';
           });
         }
         document.querySelectorAll('[data-mark-read]').forEach(function (b) {

@@ -27,13 +27,10 @@ const href = (id: string) => `${baseUrl}/guide/${id}`;
     </p>
     <div class="guide-body" set:html={html} />
 
-    <div class="page-actions">
-      <button type="button" class="mark-read" data-mark-read={page.id} aria-pressed="false">Mark as read</button>
-    </div>
-
     <nav class="page-nav" aria-label="Previous and next">
-      {prev ? <a href={href(prev.id)}>&larr; {prev.title}</a> : <span></span>}
-      {next ? <a href={href(next.id)}>{next.title} &rarr;</a> : <span></span>}
+      {prev ? <a href={href(prev.id)} class="nav-prev"><span aria-hidden="true">&larr;</span><span>{prev.title}</span></a> : <span></span>}
+      <button type="button" class="mark-read" data-mark-read={page.id} aria-pressed="false">Mark as read</button>
+      {next ? <a href={href(next.id)} class="nav-next"><span>{next.title}</span><span aria-hidden="true">&rarr;</span></a> : <span></span>}
     </nav>
   </article>
   <PageToc slot="aside" entries={toc} />
