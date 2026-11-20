@@ -660,6 +660,13 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   line-height: 1;
   letter-spacing: 0;
   text-transform: uppercase;
+  /* feather all four edges so the dark fill, scanlines, band and rule melt into the panel */
+  --fade-x: 3.5cqw;
+  --fade-y: 3.5cqw;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--fade-x), #000 calc(100% - var(--fade-x)), transparent), linear-gradient(180deg, transparent, #000 var(--fade-y), #000 calc(100% - var(--fade-y)), transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent, #000 var(--fade-x), #000 calc(100% - var(--fade-x)), transparent), linear-gradient(180deg, transparent, #000 var(--fade-y), #000 calc(100% - var(--fade-y)), transparent);
+  mask-composite: intersect;
 }
 /* scanlines + yellow band (y 92-126 of 260) */
 .home-title::before {
