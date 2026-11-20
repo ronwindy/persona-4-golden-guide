@@ -630,11 +630,12 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   color: var(--accent);
 }
 
-/* Time-of-day headings: halftone panel, tint per time, outlined ghost word anchored right.
-   Matched by their data-icon; the ghost word comes from --tod-word, so the HTML stays untouched. */
-.guide-body .part-marker:is([data-icon="sunrise"], [data-icon="sun"], [data-icon="sun-medium"], [data-icon="sun-dim"], [data-icon="backpack"], [data-icon="sunset"]) {
+/* Part headings: halftone panel, outlined ghost word anchored right.
+   Time-of-day headings tint per time and use a fixed word (--tod-word); every other part heading
+   uses the accent tint and its own text, copied into data-word (sized by data-wl) in [id].astro. */
+.guide-body .part-marker {
   --tod: var(--accent);
-  --tod-word: "";
+  isolation: isolate;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -647,14 +648,9 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
     radial-gradient(circle, color-mix(in srgb, var(--tod) 22%, transparent) 1.2px, transparent 1.6px) 0 0 / 9px 9px,
     linear-gradient(90deg, #1f1f1b, #141412);
 }
-.guide-body .part-marker[data-icon="sunrise"] { --tod: #ff9e4a; --tod-word: "EARLY MORNING"; }
-.guide-body .part-marker[data-icon="sun"] { --tod: #ff9e4a; --tod-word: "MORNING"; }
-.guide-body .part-marker[data-icon="sun-medium"] { --tod: #ffc23d; --tod-word: "DAYTIME"; }
-.guide-body .part-marker[data-icon="sun-dim"] { --tod: #ff8a5c; --tod-word: "AFTERNOON"; }
-.guide-body .part-marker[data-icon="backpack"] { --tod: #b58cff; --tod-word: "AFTER SCHOOL"; }
-.guide-body .part-marker[data-icon="sunset"] { --tod: #ff5c7a; --tod-word: "EVENING"; }
-.guide-body .part-marker:is([data-icon="sunrise"], [data-icon="sun"], [data-icon="sun-medium"], [data-icon="sun-dim"], [data-icon="backpack"], [data-icon="sunset"])::after {
-  content: var(--tod-word);
+.guide-body .part-marker[data-word]::after {
+  content: attr(data-word);
+  text-transform: uppercase;
   position: absolute;
   right: -0.4rem;
   top: 50%;
@@ -666,12 +662,27 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
   color: transparent;
   -webkit-text-stroke: 1.5px var(--tod);
   opacity: 0.8;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 45%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 45%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, transparent 25%, #000 80%);
+  mask-image: linear-gradient(90deg, transparent 0, transparent 25%, #000 80%);
   pointer-events: none;
+  z-index: -1;
 }
+.guide-body .part-marker[data-wl="2"]::after { font-size: 1.7em; }
+.guide-body .part-marker[data-wl="3"]::after { font-size: 1.3em; }
+.guide-body .part-marker[data-wl="4"]::after { font-size: 1.05em; }
+.guide-body .part-marker:is([data-icon="sunrise"], [data-icon="sun"], [data-icon="sun-medium"], [data-icon="sun-dim"], [data-icon="backpack"], [data-icon="sunset"])::after { content: var(--tod-word); font-size: 2.7em; }
+.guide-body .part-marker[data-icon="sunrise"] { --tod: #ff9e4a; --tod-word: "EARLY MORNING"; }
+.guide-body .part-marker[data-icon="sun"] { --tod: #ff9e4a; --tod-word: "MORNING"; }
+.guide-body .part-marker[data-icon="sun-medium"] { --tod: #ffc23d; --tod-word: "DAYTIME"; }
+.guide-body .part-marker[data-icon="sun-dim"] { --tod: #ff8a5c; --tod-word: "AFTERNOON"; }
+.guide-body .part-marker[data-icon="backpack"] { --tod: #b58cff; --tod-word: "AFTER SCHOOL"; }
+.guide-body .part-marker[data-icon="sunset"] { --tod: #ff5c7a; --tod-word: "EVENING"; }
 @media (max-width: 640px) {
-  .guide-body .part-marker:is([data-icon="sunrise"], [data-icon="sun"], [data-icon="sun-medium"], [data-icon="sun-dim"], [data-icon="backpack"], [data-icon="sunset"])::after { font-size: 2.2em; opacity: 0.55; }
+  .guide-body .part-marker[data-word]::after { opacity: 0.55; font-size: 2.2em; }
+  .guide-body .part-marker[data-wl="2"]::after { font-size: 1.7em; }
+  .guide-body .part-marker[data-wl="3"]::after { font-size: 1.3em; }
+  .guide-body .part-marker[data-wl="4"]::after { font-size: 1.1em; }
+  .guide-body .part-marker:is([data-icon="sunrise"], [data-icon="sun"], [data-icon="sun-medium"], [data-icon="sun-dim"], [data-icon="backpack"], [data-icon="sunset"])::after { font-size: 2.2em; }
 }
 
 /* Section labels (h6.label-marker, from "-Label-" paragraphs). */

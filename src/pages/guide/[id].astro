@@ -10,7 +10,17 @@ export function getStaticPaths() {
 
 const { page } = Astro.props;
 const { prev, next } = getNeighbours(page.id);
-const html = getPageHtml(page.id);
+// Part headings carry their own text as data-word (ghost word in CSS) plus a size bucket data-wl.
+const html = getPageHtml(page.id).replace(
+  /<h5 class="part-marker"([^>]*)>([\s\S]*?)<\/h5>/g,
+  (_m, attrs: string, inner: string) => {
+    const word = inner.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    const len = word.length;
+    const wl = len <= 10 ? 1 : len <= 16 ? 2 : len <= 22 ? 3 : 4;
+    const safe = word.replace(/&(?!(?:[a-z]+|#\d+);)/gi, '&amp;').replace(/"/g, '&quot;');
+    return `<h5 class="part-marker"${attrs} data-word="${safe}" data-wl="${wl}">${inner}</h5>`;
+  },
+);
 const toc = getPageToc(page.id);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const href = (id: string) => `${baseUrl}/guide/${id}`;
