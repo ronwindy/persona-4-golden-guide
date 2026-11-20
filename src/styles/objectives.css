@@ -1,0 +1,60 @@
+/* Walkthrough Objectives infographic (page markup: src/data/pages/walkthrough-objectives.html). */
+.guide-body .obj { --ac: var(--accent); display: flex; flex-direction: column; gap: 1.25rem; }
+.guide-body .obj > p { margin: 0; }
+.obj-lead { font-size: 1.05rem; line-height: 1.55; }
+.obj-foot { color: var(--text-muted); line-height: 1.55; }
+
+/* Stat strip */
+.obj-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: 0.6rem; }
+.obj-stat {
+  display: flex; flex-direction: column; gap: 0.4rem;
+  padding: 0.9rem 1rem; border-radius: var(--glass-radius);
+  background: var(--glass-bg); border: 1px solid var(--glass-edge);
+  backdrop-filter: blur(8px);
+}
+.obj-num { font-family: var(--font-head); font-size: 2.6rem; line-height: 1; color: var(--accent); }
+.obj-lbl { color: var(--text-muted); font-size: 0.95rem; line-height: 1.25; }
+
+/* Route flow */
+.obj-flow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.6rem; }
+.obj-node {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.45rem 1rem; border-radius: 999px; font-weight: 600;
+  background: var(--glass-bg); border: 1px solid currentColor;
+}
+.obj-node svg { width: 1.2rem; height: 1.2rem; flex: none; }
+.obj-n1 { color: var(--accent); }
+.obj-n2 { color: var(--info); }
+.obj-n3 { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.obj-sep { width: 1.6rem; height: 3px; background: linear-gradient(90deg, var(--accent), var(--info)); }
+
+/* Playthrough panels */
+.obj-panel {
+  position: relative; overflow: hidden; padding: 1.25rem 1.1rem 1.1rem;
+  border-radius: 14px; background: var(--glass-bg); border: 1px solid var(--glass-edge);
+  backdrop-filter: blur(8px);
+}
+.obj-p2 { --ac: var(--info); }
+.obj-kick { font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.85rem; color: var(--ac); }
+.obj-title { margin-top: 0.2rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 1.6rem; line-height: 1.1; color: var(--ac); }
+.obj-group { margin-top: 1.25rem; }
+.obj-gh { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.55rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.9rem; color: var(--ac); }
+.obj-gh::after { content: ''; flex: 1; height: 2px; background: linear-gradient(90deg, var(--ac), transparent); }
+
+/* Objective tiles */
+.obj-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.55rem; }
+.obj-tile {
+  display: flex; align-items: center; gap: 0.7rem; min-height: 3.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.55rem; border-radius: 8px;
+  background: rgb(255 255 255 / 0.045); border: 1px solid rgb(255 255 255 / 0.1);
+}
+.obj-big { border-color: var(--ac); background: color-mix(in srgb, var(--ac) 12%, transparent); }
+.obj-ic {
+  flex: none; display: grid; place-items: center; width: 2.5rem; height: 2.5rem;
+  border-radius: 8px; background: var(--ac); color: var(--accent-ink); transform: skewX(var(--skew));
+}
+.obj-ic svg { width: 1.4rem; height: 1.4rem; transform: skewX(calc(var(--skew) * -1)); }
+.obj-svg, .obj svg { fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.obj-txt { flex: 1; min-width: 0; font-weight: 500; line-height: 1.25; }
+.obj-note { color: var(--text-muted); font-size: 0.85em; font-weight: 400; }
+.obj-n { align-self: flex-start; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.9rem; color: var(--ac); }
