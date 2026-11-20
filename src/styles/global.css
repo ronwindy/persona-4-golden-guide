@@ -564,31 +564,65 @@ html:not([data-sidebar='collapsed']) .sidebar-toggle { left: calc(var(--sidebar-
 .guide-body blockquote > :last-child { margin-bottom: 0; }
 
 /* Severity callouts: red glass panels. */
+/* Alert Seal: hexagon "!" seal on a radial glow, corner brackets. */
 .guide-body .callout {
   --callout: var(--warn);
+  --seal: 3.4rem;
+  position: relative;
   margin: 1.5rem 0;
-  padding: 1rem 1.25rem;
-  border: 1px solid color-mix(in srgb, var(--callout) 55%, transparent);
-  border-left: 6px solid var(--callout);
-  border-radius: var(--glass-radius);
+  padding: 1.1rem 1.5rem 1.1rem calc(var(--seal) + 2.1rem);
+  min-height: calc(var(--seal) + 2.2rem);
+  border: 1px solid color-mix(in srgb, var(--callout) 40%, transparent);
+  border-radius: 14px;
+  overflow: hidden;
   background:
-    linear-gradient(90deg, color-mix(in srgb, var(--callout) 22%, transparent), color-mix(in srgb, var(--callout) 6%, transparent)),
+    radial-gradient(120% 160% at 0% 50%, color-mix(in srgb, var(--callout) 30%, transparent), transparent 60%),
     var(--glass-bg);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 18px color-mix(in srgb, var(--callout) 25%, transparent);
+  box-shadow: 0 12px 34px rgb(0 0 0 / 0.45), 0 0 30px color-mix(in srgb, var(--callout) 20%, transparent);
 }
-.guide-body .callout > p:first-child > strong { color: var(--callout); letter-spacing: 0.02em; }
-.guide-body .callout-high {
-  border-width: 2px;
-  border-left-width: 8px;
-  padding: 1.25rem 1.5rem;
+/* hexagon seal with "!" */
+.guide-body .callout::before {
+  content: "!";
+  position: absolute;
+  left: 1.1rem;
+  top: 50%;
+  translate: 0 -50%;
+  width: var(--seal);
+  height: var(--seal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--callout);
+  clip-path: polygon(50% 2%, 90% 25%, 90% 75%, 50% 98%, 10% 75%, 10% 25%);
+  font-family: var(--font-head);
+  font-size: calc(var(--seal) * 0.48);
+  line-height: 1;
+  color: var(--accent-ink);
+}
+/* corner brackets */
+.guide-body .callout::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  pointer-events: none;
   background:
-    linear-gradient(90deg, color-mix(in srgb, var(--callout) 34%, transparent), color-mix(in srgb, var(--callout) 10%, transparent)),
-    var(--glass-bg);
-  box-shadow: 0 0 28px color-mix(in srgb, var(--callout) 40%, transparent);
+    linear-gradient(var(--callout), var(--callout)) top left / 16px 2px no-repeat,
+    linear-gradient(var(--callout), var(--callout)) top left / 2px 16px no-repeat,
+    linear-gradient(var(--callout), var(--callout)) bottom right / 16px 2px no-repeat,
+    linear-gradient(var(--callout), var(--callout)) bottom right / 2px 16px no-repeat;
+  opacity: 0.8;
 }
-.guide-body .callout-high > p:first-child > strong { font-size: 1.1rem; }
+.guide-body .callout > p:first-child > strong {
+  font-family: var(--font-sub);
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--callout);
+}
+.guide-body .callout-high { --seal: 5rem; padding-top: 1.5rem; padding-bottom: 1.5rem; box-shadow: 0 12px 40px rgb(0 0 0 / 0.5), 0 0 40px color-mix(in srgb, var(--callout) 32%, transparent); }
+.guide-body .callout-high > p:first-child > strong { font-size: 1.15rem; }
 .guide-body .callout-spoiler { --callout: #ff9a1f; }
 
 /* Day dividers (h4.date-marker, from "----~date~----" paragraphs). */
