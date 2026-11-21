@@ -1,0 +1,46 @@
+/* Field Mechanics infographic (markup: src/data/pages/gameplay-mechanics-field-mechanics.html).
+   Reuses the .fm-* base classes from formula.css; adds section tints and highlights. */
+.fd-card { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 0.8rem; padding: 1.1rem 1.3rem; border-radius: 14px; border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.fd-card p { margin: 0; }
+.fd-head { display: flex; align-items: center; gap: 0.7rem; }
+.fd-head .fm-ic { flex: none; }
+.fd-2 { display: flex; flex-wrap: wrap; gap: 1.1rem; }
+.fd-2 > .fd-card { flex: 1 1 18rem; }
+.fd-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.1rem; }
+
+/* Section tints */
+.fd-ye { --tint: 255 230 0; }
+.fd-cy { --tint: 61 220 255; }
+.fd-or { --tint: 255 179 71; }
+.fd-pu { --tint: 150 130 255; }
+.fd-card.fd-ye, .fd-card.fd-cy, .fd-card.fd-or, .fd-card.fd-pu {
+  background: linear-gradient(160deg, rgb(var(--tint) / 0.16), var(--glass-bg) 60%);
+  border-color: rgb(var(--tint) / 0.45);
+}
+.fd-card .fm-ic { background: rgb(var(--tint)); }
+.fd-card .fm-ct { color: rgb(var(--tint)); }
+.fd-card .fm-tag { border-color: rgb(var(--tint) / 0.7); color: rgb(var(--tint)); }
+
+/* Tinted chips */
+.fd-tc { background: rgb(var(--tint) / 0.14); border-color: rgb(var(--tint) / 0.7); }
+.fd-tc b { color: rgb(var(--tint)); }
+
+/* Solid highlight for the important result */
+.fd-hot, .fm-chip.fd-hot { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); box-shadow: 0 0 28px rgb(255 230 0 / 0.28); }
+.fd-hot b, .fd-hot small, .fd-hot span, .fm-chip.fd-hot b, .fm-chip.fd-hot small { color: var(--accent-ink); }
+
+.fd-big { font-family: var(--font-head); font-size: 3.2rem; line-height: 1; }
+.fd-inline { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 0.7rem; }
+.fd-inline b { font-size: 1rem; }
+.fd-pill { padding: 0.2rem 0.8rem; border-radius: 99px; background: var(--accent); color: var(--accent-ink) !important; box-shadow: 0 0 20px rgb(255 230 0 / 0.28); }
+
+.fd-days { display: flex; gap: 0.4rem; }
+.fd-days span { flex: 1 1 0; display: grid; place-items: center; padding: 0.7rem 0.2rem; border-radius: 10px; border: 1px solid rgb(255 255 255 / 0.14); background: rgb(255 255 255 / 0.05); font-weight: 600; font-size: 0.85rem; color: var(--text-muted); }
+.fd-days span.now { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+.fd-sq { flex: none; display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border-radius: 12px; border: 2px solid var(--accent); background: rgb(255 230 0 / 0.1); color: var(--accent); }
+.fd-sq svg { width: 1.6rem; height: 1.6rem; }
+.fd-key { display: flex; align-items: center; gap: 0.9rem; font-family: var(--font-head); font-size: 1.2rem; color: var(--accent); }
+
+.fm-no-go { border-color: rgb(255 120 120 / 0.55); background: rgb(255 120 120 / 0.07); color: #ff8a8a; }
+.fd-pts { color: var(--accent); }
