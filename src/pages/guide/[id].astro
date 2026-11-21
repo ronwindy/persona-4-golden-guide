@@ -11,7 +11,7 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const { prev, next } = getNeighbours(page.id);
 // Part headings carry their own text as data-word (ghost word in CSS) plus a size bucket data-wl.
-const html = getPageHtml(page.id).replace(
+const withParts = getPageHtml(page.id).replace(
   /<h5 class="part-marker"([^>]*)>([\s\S]*?)<\/h5>/g,
   (_m, attrs: string, inner: string) => {
     const word = inner.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
@@ -19,6 +19,23 @@ const html = getPageHtml(page.id).replace(
     const wl = len <= 10 ? 1 : len <= 16 ? 2 : len <= 22 ? 3 : 4;
     const safe = word.replace(/&(?!(?:[a-z]+|#\d+);)/gi, '&amp;').replace(/"/g, '&quot;');
     return `<h5 class="part-marker"${attrs} data-word="${safe}" data-wl="${wl}">${inner}</h5>`;
+  },
+);
+// Day dividers that are real dates ("April 19th") become a departure board: letter/digit tiles.
+// Other date-marker headings (names, "Monthly Progress") keep the plain style.
+const tiles = (s: string) => [...s].map((c) => `<span class="db-tile">${c}</span>`).join('');
+const html = withParts.replace(
+  /<h4 class="date-marker"([^>]*)>([A-Za-z]+) (\d+)([a-z]{2})?<\/h4>/g,
+  (_m, attrs: string, month: string, day: string, ord: string | undefined) => {
+    const text = `${month} ${day}${ord ?? ''}`;
+    return (
+      `<h4 class="date-marker date-board"${attrs}>` +
+      `<span class="db-sr">${text}</span>` +
+      `<span class="db-group" aria-hidden="true"><span class="db-label">MONTH</span><span class="db-tiles">${tiles(month.toUpperCase())}</span></span>` +
+      `<span class="db-sep" aria-hidden="true"></span>` +
+      `<span class="db-group" aria-hidden="true"><span class="db-label">DAY</span><span class="db-tiles">${tiles(day + (ord ?? '').toUpperCase())}</span></span>` +
+      `</h4>`
+    );
   },
 );
 const toc = getPageToc(page.id);
