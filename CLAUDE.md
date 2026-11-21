@@ -28,6 +28,7 @@ src/data/pages/*.html + src/data/manifest.json → Astro build
 
 ## 4. Workflow rules
 - Commit directly on `main`. After UI changes, verify them in the built-in browser (preview) before reporting to the user.
+- Dev servers: after verifying in the preview, always stop the server with `preview_stop` before ending the turn. Never leave `astro-dev` running between sessions.
 - Ask before adding a new component or feature beyond section 3.
 
 ## 5. Out of scope

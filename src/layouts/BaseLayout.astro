@@ -6,6 +6,7 @@ import '../styles/notes.css';
 import '../styles/problems.css';
 import '../styles/response.css';
 import '../styles/formula.css';
+import '../styles/controls.css';
 import project from '../../project.config.json';
 import SidebarNav from '../components/SidebarNav.astro';
 import { Menu, X, PanelLeft, ArrowUp } from '@lucide/astro';
@@ -40,9 +41,8 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     <script is:inline>
       // Apply the saved sidebar state before first paint (no flash).
       (function () {
-        // No saved choice: start collapsed on viewports under 1500px so the text gets the room.
-        var state = window.innerWidth < 1500 ? 'collapsed' : 'open';
-        try { var saved = localStorage.getItem('sidebar-state'); if (saved === 'collapsed' || saved === 'open') state = saved; } catch (e) {}
+        var state = 'open';
+        try { state = localStorage.getItem('sidebar-state') === 'collapsed' ? 'collapsed' : 'open'; } catch (e) {}
         document.documentElement.setAttribute('data-sidebar', state);
       })();
     </script>

@@ -1,0 +1,18 @@
+/* Gameplay Mechanics: Controls infographic (markup: src/data/pages/gameplay-mechanics-controls.html). Reuses .fm / .fm-rule from formula.css. */
+.ct svg.b { stroke: none; }
+.ct-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 0.7rem; }
+.ct-card { display: flex; align-items: center; gap: 0.9rem; padding: 0.75rem 1rem; min-height: 3.2rem; border-radius: 10px; background: rgb(255 255 255 / 0.05); border: 1px solid rgb(255 255 255 / 0.14); }
+.ct-bs { flex: none; display: flex; align-items: center; gap: 0.4rem; min-width: 5.2rem; }
+.ct-act { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.ct-act b { font-family: var(--font-head); font-weight: 400; font-size: 1.1rem; line-height: 1.2; color: var(--text); }
+.ct-act small { font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-muted); }
+.ct .b { flex: none; width: 2.2rem; height: 2.2rem; display: block; }
+.ct-key { flex: none; display: inline-flex; align-items: center; justify-content: center; height: 1.9rem; min-width: 1.9rem; padding: 0 0.55rem; border-radius: 8px; border: 1.5px solid var(--text); background: rgb(0 0 0 / 0.35); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text); }
+.ct-key.sm { height: 1.65rem; font-size: 0.78rem; }
+.ct-wrap { overflow-x: auto; border-radius: 10px; background: var(--glass-bg); border: 1px solid var(--glass-edge); }
+.ct-mx { display: grid; grid-template-columns: 9.5rem repeat(3, minmax(9.5rem, 1fr)); min-width: 44rem; }
+.ct-mx > div { padding: 0.7rem 0.9rem; border-bottom: 1px solid rgb(255 255 255 / 0.1); display: flex; align-items: center; line-height: 1.3; }
+.ct-mx .h { font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); border-bottom: 2px solid rgb(255 230 0 / 0.6); background: rgb(255 230 0 / 0.07); }
+.ct-mx .r { gap: 0.5rem; background: rgb(255 255 255 / 0.03); }
+.ct-mx .r .b { width: 1.75rem; height: 1.75rem; }
+.ct-mx > div:nth-last-child(-n+4) { border-bottom: 0; }
