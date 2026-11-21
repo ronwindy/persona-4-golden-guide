@@ -140,7 +140,9 @@ h3 { font-size: 1.1rem; color: var(--accent); margin: 1.25rem 0 0.4rem; }
   box-shadow: 4px 0 0 #000, 10px 0 24px rgb(0 0 0 / 0.45);
 }
 .sidebar { overflow-x: hidden; }
-.sidebar > * { min-width: calc(var(--sidebar-width) - 6px); }
+/* min-width keeps content from reflowing while the sidebar animates; subtract the scrollbar (15px) so the nav is not pushed under it. */
+.sidebar { scrollbar-gutter: stable; }
+.sidebar > * { min-width: calc(var(--sidebar-width) - 6px - 15px); }
 html[data-sidebar='collapsed'] .sidebar { width: 0; border-width: 0; border-image: none; box-shadow: none; visibility: hidden; }
 html[data-sidebar='collapsed'] .sidebar > * { transform: translateX(calc(var(--sidebar-width) * -1)); }
 /* Animate only on a user toggle (flag set by the toggle handler), never on load. */
