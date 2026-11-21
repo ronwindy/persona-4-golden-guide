@@ -1,0 +1,58 @@
+/* Battle Mechanics infographic (markup: src/data/pages/gameplay-mechanics-battle-mechanics.html).
+   Every panel takes its own colour from --c. Section headings are the usual .part-marker from global.css. */
+.guide-body .bm { display: flex; flex-direction: column; gap: 1.1rem; }
+.guide-body .bm p { margin: 0; }
+.guide-body .bm .part-marker { margin: 0.8rem 0 0; }
+.bm-sprite { position: absolute; }
+.bm-i { flex: none; width: 1.4rem; height: 1.4rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.bm-card { --c: var(--accent); box-sizing: border-box; display: flex; flex-direction: column; gap: 0.55rem; padding: 0.9rem 1.1rem; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); border-top-color: color-mix(in srgb, var(--c) 70%, transparent); background: linear-gradient(150deg, color-mix(in srgb, var(--c) 20%, transparent), color-mix(in srgb, var(--c) 4%, var(--glass-bg)) 70%); backdrop-filter: blur(8px); }
+.bm-card p { font-size: 0.92rem; line-height: 1.5; }
+.bm-hero { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.bm-stat { display: flex; align-items: center; gap: 0.7rem; padding: 0.7rem 1.1rem; border-radius: 10px; background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.bm-stat .bm-i { width: 1.6rem; height: 1.6rem; color: var(--emph); }
+.bm-stat b { font-family: var(--font-head); font-weight: 400; font-size: 2rem; line-height: 1; color: var(--accent); }
+.bm-stat span { font-size: 0.85rem; line-height: 1.3; color: var(--text-muted); }
+.bm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.8rem; }
+.bm-g3 { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.bm-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 0.8rem; align-items: start; }
+.bm-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.bm-top small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--c) 70%, #fff); }
+.bm-k { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-head); font-size: 1.8rem; line-height: 1; color: var(--c); }
+.bm-hd { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-head); font-size: 1.15rem; line-height: 1.2; color: var(--c); }
+.bm-hd .bm-i { width: 1.4rem; height: 1.4rem; }
+.bm-n { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1rem; }
+.bm-lb { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--c) 70%, #fff); }
+.bm-mut { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; }
+.bm-sm { font-size: 0.82rem; }
+.bm-pill { align-self: flex-start; padding: 0.1rem 0.65rem; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--c) 60%, transparent); background: color-mix(in srgb, var(--c) 12%, transparent); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c); white-space: nowrap; }
+.bm-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.bm-chip { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.7rem; border-radius: 6px; background: rgb(255 255 255 / 0.07); border: 1px solid rgb(255 255 255 / 0.12); font-size: 0.88rem; line-height: 1.25; }
+.bm-chip .bm-i { width: 0.9rem; height: 0.9rem; color: var(--c); }
+.bm-hot { background: color-mix(in srgb, var(--c) 14%, transparent); border-color: color-mix(in srgb, var(--c) 55%, transparent); }
+.bm-bad { background: rgb(255 77 77 / 0.1); border-color: rgb(255 77 77 / 0.6); }
+.bm-exp-h { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; }
+.bm-exp-b { display: flex; flex-direction: column; gap: 0.6rem; }
+.bm-formula { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 1.4rem; }
+.bm-formula i { font-style: normal; font-family: var(--font-head); font-size: 1.1rem; color: var(--accent); }
+.bm-formula em { font-style: normal; font-family: var(--font-head); font-size: 1.1rem; color: var(--emph); }
+.bm-th { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.8rem; }
+.bm-tac, .bm-fu { display: grid; grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr)); gap: 0.7rem; }
+.bm-sub { --c: var(--accent); display: flex; flex-direction: column; gap: 0.3rem; padding: 0.7rem 0.85rem; border-radius: 8px; background: color-mix(in srgb, var(--c) 15%, rgb(16 16 12 / 0.5)); border: 1px solid color-mix(in srgb, var(--c) 50%, transparent); font-size: 0.88rem; line-height: 1.45; }
+.bm-fu .bm-sub { --c: #ff6b5e; }
+.bm-sn { display: flex; align-items: center; gap: 0.4rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1rem; }
+.bm-sn .bm-i { width: 1.1rem; height: 1.1rem; color: var(--c); }
+.bm-fu .bm-sn { font-style: normal; font-weight: 600; font-size: 0.92rem; }
+.bm-susc { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.7rem; }
+.bm-sus { flex-direction: row; align-items: flex-start; gap: 0.8rem; }
+.bm-sus > div { display: flex; flex-direction: column; gap: 0.2rem; }
+.bm-badge { flex: none; display: flex; flex-direction: column; align-items: center; gap: 0.2rem; min-width: 3.1rem; padding: 0.35rem 0.4rem; border-radius: 6px; border: 1px solid var(--c); font-family: var(--font-head); font-size: 0.95rem; line-height: 1.1; color: var(--c); background: rgb(255 255 255 / 0.04); }
+.bm-badge .bm-i { width: 1.2rem; height: 1.2rem; }
+.bm-flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 0.2rem; }
+.bm-step { flex: 1 1 11rem; display: flex; flex-direction: column; gap: 0.25rem; padding: 0.8rem 1rem; border-radius: 8px; background: rgb(255 255 255 / 0.05); border: 1px solid rgb(255 255 255 / 0.1); }
+.bm-step.bm-hot { background: color-mix(in srgb, var(--c) 18%, transparent); border-color: color-mix(in srgb, var(--c) 60%, transparent); }
+.bm-arr { flex: none; display: flex; align-items: center; padding: 0 0.4rem; font-family: var(--font-head); font-size: 1.6rem; color: var(--c); }
+.bm-rk { display: flex; gap: 0.7rem; align-items: flex-start; }
+.bm-no { flex: none; display: grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; border: 1px solid var(--c); background: color-mix(in srgb, var(--c) 16%, transparent); font-family: var(--font-head); font-size: 0.8rem; color: var(--c); }
+.bm-ind { padding-left: 2.6rem; }
+.bm-pair { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.bm-plus { font-family: var(--font-head); color: var(--c); }
