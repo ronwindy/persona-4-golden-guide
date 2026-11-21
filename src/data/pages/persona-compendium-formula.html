@@ -1,1 +1,73 @@
-<h2>Persona Compendium</h2><h3>Formula</h3><p>These are the formulas for how the game computes which Personas you can fuse. Note that these formulas only work for Normal and Triangle spreads.</p><h5 class="part-marker" data-icon="chevron-right">Normal Spread</h5><p>There are 2 separate calculations to determine the Persona you get. The first one is for the arcana, which you can find the possible combinations under the section of the arcana you need. Second is the level of the Persona, which is determined by the following formula: {(1st Persona Base Level) + (2nd Persona Base Level)} / 2 + 1 = (Resulting Level).</p><p>You add the base levels of both Personas together, divide by two, and add one. The base level of each Persona can be found in the section of their respective arcana. The Persona you get is the one with the closest base level equal to or greater than the result you got.</p><p>Note that the closest Persona to your result does not include Personas that are Special Fusions (more info down below). Here is an example of the fusion process:</p><p>Example: Throne + Siegfried = Byakko<br>Arcana: (1st Persona Arcana) + (2nd Persona Arcana) = (Resulting Arcana)<br>Result: (Justice) + (Strength) = (Temperance)<br>Level: {(1st Persona Base Level) + (2nd Persona Base Level)} / 2 + 1 = (Resulting Level)<br>Result: (49 + 63) / 2 + 1 = 57<br>Resulting Persona: The closest Temperance Persona that's base level is equal to or greater than 57 (excluding Special Fusions) is Byakko with a base level of 62</p><h5 class="part-marker" data-icon="chevron-right">Triangle Spread</h5><p>This one is a little more complex than Normal Spreads. In order to determine the arcana, you must first find the result of the first two Personas in a Normal Spread, then take the result and combine it with the third Persona's arcana in a Triangle Spread.</p><p>The order of Personas is determined by the CURRENT level, not the BASE level. So the third Persona is the Persona with the highest current level. To find the level, use the following formula: {(1st Persona Base Level) + (2nd Persona Base Level) + (3rd Persona Base Level)} / 3 + 5 = (Resulting Level).</p><p>You add the base levels of all three Personas together, divide by three, and add five. Just like a Normal Spread, the Persona you get is the one with the closest base level equal to or greater than the result you got (excluding Special Fusions). Here is an example:</p><p>Example: Senri + Throne + Loki = Lachesis<br>Arcana Step 1: {(1st Persona Arcana) + (2nd Persona Arcana)} = (Resulting Arcana) (Note: Using Normal Spread)<br>Arcana Step 2: (Resulting Arcana from Step 1) + (3rd Persona Arcana) = (Resulting Arcana) (Note: Using Triangle Spread)<br>Result Step 1: (Empress) + (Justice) = (Magician) (Note: Using Normal Spread)<br>Result Step 2: (Magician) + (Fool) = (Fortune) (Note: Using Triangle Spread)<br>Note: Order of Personas are determined by CURRENT level, not BASE level, with 3rd Persona being the highest<br>Level: {(1st Persona Base Level) + (2nd Persona Base Level) + (3rd Persona Base Level)} / 3 + 5 = (Resulting Level)<br>Result: (9 + 49 + 64) / 3 + 5 = 45.6<br>Resulting Persona: The closest Fortune Persona that's base level is equal to or greater than 45.6 (excluding Special Fusions) is Lachesis with a base level of 51</p><h5 class="part-marker" data-icon="chevron-right">Same Fusion</h5><p>Using the same arcana in a Normal or Triangle Spread will get you a Persona of the arcana you fused with. The same rules as above apply, with one exception: the Persona you get is the one with the closest base level equal to or LOWER than the resulting level. Make sure to keep that in mind.</p><h5 class="part-marker" data-icon="sparkles">Special Fusions</h5><p>Personas that are Special Fusions don't use formulas. They only have one combination of Personas that you can use to fuse them. Every Persona that requires a Cross, Pentagon, and Hexagon Spread is a Special Fusion. However, there are also Special Fusions that require a Normal or Triangle Spread. More info can be found in the Special Fusion section, as well as the requirements to fuse them.</p>
+<h2>Persona Compendium</h2><h3>Formula</h3><div class="fm">
+<p>These are the formulas for how the game computes which Personas you can fuse. They only work for Normal and Triangle spreads.</p>
+<section class="fm-two">
+<div class="fm-card"><span class="fm-no" aria-hidden="true">1</span><span class="fm-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></span><div class="fm-ct">Arcana</div><p>Look up the combination in the section of the arcana you need.</p></div>
+<div class="fm-card"><span class="fm-no" aria-hidden="true">2</span><span class="fm-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18"/><path d="M6 20V12"/><path d="M12 20V6"/><path d="M18 20V9"/></svg></span><div class="fm-ct">Level</div><p>Average the base levels with the formula for your spread, then pick the Persona that fits.</p></div>
+</section>
+
+<h5 class="part-marker" data-icon="chevron-right">Normal Spread</h5>
+<div class="fm-formula"><i>(</i><span>1st Base Level</span><i>+</i><span>2nd Base Level</span><i>)</i><i>÷ 2</i><i>+ 1</i><i>=</i><span>Resulting Level</span></div>
+<p>Add both base levels, divide by two, add one. Each Persona's base level is in the section of its arcana.</p>
+<div class="fm-rule fm-info"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17 10 11l4 4 6-7"/><path d="M15 8h5v5"/></svg><div><b>Pick the next one up</b><br>You get the Persona with the closest base level <strong class="term">equal to or greater than</strong> your result. Special Fusions are never counted (see below).</div></div>
+<div class="fm-ex">
+<span class="fm-tag">Example</span>
+<div class="fm-row">
+<div class="fm-chip"><small>1st Persona</small><b>Throne</b><span>Justice · base 49</span></div>
+<span class="fm-op">+</span>
+<div class="fm-chip"><small>2nd Persona</small><b>Siegfried</b><span>Strength · base 63</span></div>
+<span class="fm-op">=</span>
+<div class="fm-chip fm-res"><small>Result</small><b>Byakko</b><span>Temperance · base 62</span></div>
+</div>
+<div class="fm-row">
+<div class="fm-chip"><small>Arcana</small><b>Justice + Strength → Temperance</b></div>
+<div class="fm-chip"><small>Level</small><b>(49 + 63) ÷ 2 + 1 = 57</b></div>
+</div>
+<p>The closest Temperance Persona with a base level equal to or greater than 57 (excluding Special Fusions) is Byakko, base level 62.</p>
+</div>
+
+<h5 class="part-marker" data-icon="chevron-right">Triangle Spread</h5>
+<p>A little more complex. For the arcana, first work out the result of the first two Personas as a Normal Spread, then combine that result with the third Persona's arcana as a Triangle Spread.</p>
+<div class="fm-row">
+<div class="fm-chip"><small>Step 1 · Normal Spread</small><b>1st + 2nd → Arcana A</b></div>
+<span class="fm-op">→</span>
+<div class="fm-chip"><small>Step 2 · Triangle Spread</small><b>Arcana A + 3rd → Result</b></div>
+</div>
+<div class="fm-rule fm-info"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg><div><b>Order matters</b><br>Order is decided by <strong class="term">current</strong> level, not base level. The 3rd Persona is the one with the highest current level.</div></div>
+<div class="fm-formula"><i>(</i><span>1st</span><i>+</i><span>2nd</span><i>+</i><span>3rd</span><i>)</i><i>÷ 3</i><i>+ 5</i><i>=</i><span>Resulting Level</span><em>(base levels)</em></div>
+<p>Add all three base levels, divide by three, add five. As in a Normal Spread, you get the closest base level equal to or greater than the result, excluding Special Fusions.</p>
+<div class="fm-ex">
+<span class="fm-tag">Example</span>
+<div class="fm-row">
+<div class="fm-chip"><small>1st</small><b>Senri</b><span>Empress · base 9</span></div>
+<span class="fm-op">+</span>
+<div class="fm-chip"><small>2nd</small><b>Throne</b><span>Justice · base 49</span></div>
+<span class="fm-op">+</span>
+<div class="fm-chip"><small>3rd</small><b>Loki</b><span>Fool · base 64</span></div>
+<span class="fm-op">=</span>
+<div class="fm-chip fm-res"><small>Result</small><b>Lachesis</b><span>Fortune · base 51</span></div>
+</div>
+<div class="fm-row">
+<div class="fm-chip"><small>Arcana step 1 · Normal</small><b>Empress + Justice → Magician</b></div>
+<span class="fm-op">→</span>
+<div class="fm-chip"><small>Arcana step 2 · Triangle</small><b>Magician + Fool → Fortune</b></div>
+</div>
+<div class="fm-row"><div class="fm-chip"><small>Level</small><b>(9 + 49 + 64) ÷ 3 + 5 = 45.6</b></div></div>
+<p>The closest Fortune Persona with a base level equal to or greater than 45.6 (excluding Special Fusions) is Lachesis, base level 51.</p>
+</div>
+
+<h5 class="part-marker" data-icon="chevron-right">Same Fusion</h5>
+<div class="fm-row">
+<div class="fm-chip"><small>Same arcana in</small><b>Normal or Triangle</b></div>
+<span class="fm-op">→</span>
+<div class="fm-chip fm-res"><small>You get</small><b>That arcana</b></div>
+</div>
+<div class="fm-rule fm-warn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7 10 13l4-4 6 7"/><path d="M15 16h5v-5"/></svg><div><b>The one exception</b><br>The same rules apply, except you get the closest base level equal to or <strong class="term">LOWER</strong> than the resulting level. Keep that in mind.</div></div>
+
+<h5 class="part-marker" data-icon="sparkles">Special Fusions</h5>
+<p>Special Fusions don't use formulas. Each has only one combination of Personas that fuses it.</p>
+<section class="fm-two">
+<div class="fm-card"><span class="fm-tag">Always special</span><p>Every Persona that requires a <strong class="term">Cross</strong>, <strong class="term">Pentagon</strong> or <strong class="term">Hexagon</strong> Spread.</p></div>
+<div class="fm-card"><span class="fm-tag">Sometimes special</span><p>Some Special Fusions only need a <strong class="term">Normal</strong> or <strong class="term">Triangle</strong> Spread.</p></div>
+</section>
+<p>More info, and the requirements to fuse each one, is in the Special Fusion section.</p>
+</div>

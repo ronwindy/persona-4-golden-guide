@@ -1,0 +1,34 @@
+/* Persona Compendium Formula infographic (markup: src/data/pages/persona-compendium-formula.html). */
+.guide-body .fm { display: flex; flex-direction: column; gap: 1.1rem; }
+.guide-body .fm p { margin: 0; }
+.guide-body .fm .part-marker { margin: 0.8rem 0 0; }
+.fm svg { fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.fm-ct { font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 1.3rem; line-height: 1.1; color: var(--accent); }
+
+.fm-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.8rem; }
+.fm-card, .fm-ex { position: relative; overflow: hidden; border-radius: 14px; padding: 1.1rem 1.3rem; background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.fm-card { display: flex; flex-direction: column; gap: 0.6rem; }
+.fm-no { position: absolute; right: 0.8rem; top: 0.2rem; font-family: var(--font-head); font-size: 3.4rem; line-height: 1; color: rgb(255 230 0 / 0.09); }
+.fm-ic { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 8px; background: var(--accent); color: var(--accent-ink); transform: skewX(var(--skew)); }
+.fm-ic svg { width: 1.5rem; height: 1.5rem; transform: skewX(calc(var(--skew) * -1)); }
+
+.fm-formula { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; padding: 0.9rem 1.1rem; border-radius: 10px; background: rgb(0 0 0 / 0.4); border: 1px dashed rgb(255 230 0 / 0.5); font-family: var(--font-head); font-size: 1.1rem; line-height: 1.4; }
+.fm-formula i { font-style: normal; color: var(--accent); }
+.fm-formula em { font-style: normal; font-family: var(--font-body); font-size: 0.9rem; color: var(--text-muted); }
+
+.fm-rule { display: flex; gap: 0.9rem; align-items: center; padding: 0.85rem 1.1rem; border-radius: 10px; border: 1px solid; }
+.fm-rule svg { flex: none; width: 2rem; height: 2rem; stroke-width: 1.8; }
+.fm-rule b { font-family: var(--font-sub); font-style: italic; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+.fm-info { border-color: rgb(61 220 255 / 0.45); background: rgb(61 220 255 / 0.07); color: var(--info); }
+.fm-warn { border-color: rgb(255 179 71 / 0.6); background: rgb(255 179 71 / 0.08); color: var(--term); }
+.fm-rule > div { color: var(--text); }
+
+.fm-ex { display: flex; flex-direction: column; gap: 0.8rem; }
+.fm-tag { align-self: flex-start; padding: 0.15rem 0.8rem; border-radius: 99px; border: 1px solid rgb(255 230 0 / 0.6); color: var(--accent); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; }
+.fm-row { display: flex; flex-wrap: wrap; align-items: stretch; gap: 0.7rem; }
+.fm-chip { flex: 1 1 9rem; display: flex; flex-direction: column; gap: 0.2rem; padding: 0.8rem 1rem; border-radius: 10px; background: rgb(255 255 255 / 0.05); border: 1px solid rgb(255 255 255 / 0.14); }
+.fm-chip small { font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.fm-chip b { font-family: var(--font-head); font-weight: 400; font-size: 1.2rem; line-height: 1.15; }
+.fm-res { background: rgb(255 230 0 / 0.1); border-color: rgb(255 230 0 / 0.6); }
+.fm-res b { color: var(--accent); }
+.fm-op { flex: none; align-self: center; font-family: var(--font-head); font-size: 1.8rem; line-height: 1; color: var(--accent); }
