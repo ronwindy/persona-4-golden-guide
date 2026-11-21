@@ -1,0 +1,16 @@
+/* Social Link infographic (markup: src/data/pages/gameplay-mechanics-social-link.html).
+   Reuses .fm-*, .fd-* base classes from formula.css and field-mechanics.css. */
+.sl-pips { display: flex; gap: 0.3rem; }
+.sl-pips i { flex: 1 1 0; height: 0.8rem; border-radius: 3px; background: rgb(255 230 0 / 0.25); transform: skewX(-14deg); }
+.sl-pips i:last-child { background: var(--accent); box-shadow: 0 0 14px rgb(255 230 0 / 0.5); }
+.sl-seg { display: flex; gap: 0.35rem; height: 3rem; }
+.sl-seg div { display: flex; align-items: center; justify-content: center; border-radius: 8px; font-family: var(--font-head); font-size: 1.2rem; color: var(--accent-ink); transform: skewX(var(--skew)); }
+.sl-seg span { transform: skewX(calc(var(--skew) * -1)); }
+.sl-pu { background: #9682ff; }
+.sl-cy { background: var(--info); }
+.sl-ye { background: var(--accent); }
+.sl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.6rem; }
+.sl-pt { display: flex; align-items: center; gap: 0.7rem; padding: 0.7rem 0.85rem; border-radius: 10px; background: rgb(255 255 255 / 0.05); border: 1px solid rgb(255 255 255 / 0.14); font-weight: 500; line-height: 1.25; }
+.sl-pt svg { flex: none; width: 1.5rem; height: 1.5rem; color: var(--accent); stroke-width: 1.9; }
+.sl-num { font-family: var(--font-head); font-size: 1.9rem; line-height: 1; }
+.sl-way { flex: 1 1 13rem; } .sl-way b { font-size: 1.05rem; }
