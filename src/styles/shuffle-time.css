@@ -38,7 +38,7 @@
 .sh-g3 { --t: 190 150 255; }
 .sh-g4 { --t: 120 230 160; }
 .sh-gh { position: relative; isolation: isolate; display: flex; align-items: center; flex-wrap: wrap; gap: 0.3rem 0.7rem; padding: 0.6rem 1.3rem; background: linear-gradient(90deg, rgb(var(--t) / 0.38), rgb(var(--t) / 0.08)); border-bottom: 2px solid rgb(var(--t)); }
-.sh-gh::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(circle, rgb(var(--t) / 0.3) 0.9px, transparent 1.3px) 0 0 / 7px 7px; -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 70%); mask-image: linear-gradient(90deg, #000 0%, transparent 70%); }
+.sh-gh::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(circle, rgb(var(--t) / 0.3) 0.9px, transparent 1.3px) 0 0 / 7px 7px; -webkit-mask-image: linear-gradient(270deg, #000 0%, transparent 70%); mask-image: linear-gradient(270deg, #000 0%, transparent 70%); }
 .sh-gh .sh-i { color: rgb(var(--t)); }
 .guide-body .sh .sh-gh h6 { margin: 0; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1.3rem; letter-spacing: 0.04em; text-transform: uppercase; color: rgb(var(--t)); }
 .sh-gh span { font-size: 0.85rem; opacity: 0.8; }
