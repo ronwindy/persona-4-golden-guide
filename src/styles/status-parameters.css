@@ -1,0 +1,35 @@
+/* Status Parameters infographic (markup: src/data/pages/gameplay-mechanics-status-parameters.html).
+   Reuses .fm-ct from formula.css and .part-marker headings from global.css. */
+.guide-body .sp { display: flex; flex-direction: column; gap: 1.1rem; }
+.guide-body .sp p { margin: 0; }
+.guide-body .sp .part-marker { margin: 0.8rem 0 0; }
+.sp-stats { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.sp-stat { display: flex; align-items: baseline; gap: 0.8rem; padding: 0.7rem 1.1rem; border-radius: 10px; background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.sp-stat b { font-family: var(--font-head); font-weight: 400; font-size: 2rem; line-height: 1; color: var(--accent); }
+.sp-stat span { font-size: 0.85rem; line-height: 1.3; color: var(--text-muted); }
+.sp-stat.sp-hot { border-color: rgb(255 230 0 / 0.55); }
+.sp-card { position: relative; overflow: hidden; border-radius: 14px; background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.sp-cmp { display: flex; flex-direction: column; gap: 0.7rem; padding: 1.1rem 1.3rem; }
+.sp-bar { display: flex; align-items: center; gap: 0.9rem; }
+.sp-bn { flex: none; width: 8.6rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1.1rem; }
+.sp-bv { flex: none; width: 3rem; text-align: right; font-family: var(--font-head); color: var(--accent); }
+.sp-track { flex: 1 1 auto; height: 0.7rem; border-radius: 3px; background: rgb(255 255 255 / 0.07); overflow: hidden; }
+.sp-bar .sp-track { height: 1.3rem; border-radius: 4px; }
+.sp-track i { display: block; height: 100%; background: linear-gradient(90deg, #ffb800, var(--accent)); }
+.sp-cols { display: flex; flex-wrap: wrap; }
+.sp-col { flex: 1 1 17rem; box-sizing: border-box; padding: 1.1rem 1.3rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.sp-col + .sp-col { border-left: 1px solid rgb(255 255 255 / 0.08); }
+.sp-lb { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.sp-rk { display: flex; align-items: center; gap: 0.6rem; }
+.sp-no { flex: none; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; border: 1px solid rgb(255 230 0 / 0.6); background: rgb(255 230 0 / 0.14); font-family: var(--font-head); font-size: 0.75rem; color: var(--accent); }
+.sp-rl { flex: none; width: 6.8rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1rem; }
+.sp-pt { flex: none; width: 2.4rem; text-align: right; font-weight: 600; }
+.sp-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.sp-chip { padding: 0.4rem 0.7rem; border-radius: 6px; background: rgb(255 255 255 / 0.07); border: 1px solid rgb(255 255 255 / 0.12); font-size: 0.9rem; line-height: 1.25; }
+.sp-chip small { margin-left: 0.3rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; color: var(--accent); }
+.sp-big { background: rgb(255 230 0 / 0.14); border-color: rgb(255 230 0 / 0.55); }
+.sp-note { font-size: 0.85rem; color: var(--text-muted); }
+.sp-need { display: flex; flex-direction: column; gap: 0.1rem; padding-left: 0.7rem; border-left: 3px solid var(--accent); line-height: 1.3; }
+.sp-need small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.8rem; color: var(--emph); }
+.sp-op { padding: 1rem 1.3rem; display: flex; flex-direction: column; gap: 0.5rem; background: rgb(255 255 255 / 0.04); border-top: 1px solid rgb(255 255 255 / 0.08); }
+.sp-op .sp-lb { color: var(--accent); }
