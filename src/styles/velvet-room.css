@@ -1,0 +1,45 @@
+/* Velvet Room infographic (markup: src/data/pages/gameplay-mechanics-velvet-room.html).
+   Reuses .part-marker headings from global.css. Icons are <use> refs to a symbol sheet in the page. */
+.guide-body .vr { display: flex; flex-direction: column; gap: 1.1rem; }
+.guide-body .vr p { margin: 0; }
+.guide-body .vr .part-marker { margin: 0.8rem 0 0; }
+.vr-sym { position: absolute; width: 0; height: 0; }
+.vr-i { flex: none; width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.vr-stats { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.vr-stat { display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 1.1rem; border-radius: 10px; background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.vr-stat .vr-i { width: 1.7rem; height: 1.7rem; padding: 0.55rem; box-sizing: content-box; border-radius: 10px; background: rgb(255 230 0 / 0.14); border: 1px solid rgb(255 230 0 / 0.55); color: var(--accent); }
+.vr-stat b { font-family: var(--font-head); font-weight: 400; font-size: 2rem; line-height: 1; color: var(--accent); }
+.vr-stat span { font-size: 0.85rem; line-height: 1.3; color: var(--text-muted); }
+.vr-stat.vr-hot { border-color: rgb(255 230 0 / 0.55); }
+
+.vr-card { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 0.9rem; padding: 1.1rem 1.3rem; border-radius: 14px; background: var(--glass-bg); border: 1px solid var(--glass-edge); backdrop-filter: blur(8px); }
+.vr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); gap: 1.1rem; }
+.vr-cell { display: flex; flex-direction: column; gap: 0.6rem; }
+.vr-cell .vr-card { flex: 1 1 auto; }
+.vr-lb { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+
+.vr-flow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.9rem; }
+.vr-node { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; min-width: 8.5rem; padding: 0.8rem 1.2rem; border-radius: 10px; background: var(--glass-bg); border: 1px solid var(--glass-edge); }
+.vr-node .vr-i { width: 1.6rem; height: 1.6rem; }
+.vr-node small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.vr-node b { font-family: var(--font-head); font-weight: 400; font-size: 1.4rem; line-height: 1; }
+.vr-node.vr-res { background: rgb(255 230 0 / 0.1); border-color: rgb(255 230 0 / 0.55); color: var(--accent); }
+.vr-node.vr-res small { color: var(--accent); }
+.vr-op { font-family: var(--font-head); font-size: 1.8rem; line-height: 1; color: var(--accent); }
+.vr-go { color: var(--accent); }
+.vr-flow .vr-go { width: 2rem; height: 2rem; }
+
+.vr-pts { display: flex; flex-wrap: wrap; gap: 1.1rem; }
+.vr-pts .vr-pt { flex: 1 1 18rem; }
+.vr-pt { display: flex; align-items: flex-start; gap: 0.8rem; padding-left: 0.7rem; border-left: 3px solid var(--accent); line-height: 1.35; }
+.vr-pt > div { display: flex; flex-direction: column; gap: 0.1rem; }
+.vr-pt small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.8rem; color: var(--emph); }
+.vr-pts .vr-pt small { order: -1; }
+.vr-sq { flex: none; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 8px; background: rgb(255 230 0 / 0.14); border: 1px solid rgb(255 230 0 / 0.55); color: var(--accent); }
+
+.vr-chain { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.vr-chip { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.4rem 0.7rem; border-radius: 6px; background: rgb(255 255 255 / 0.07); border: 1px solid rgb(255 255 255 / 0.12); font-size: 0.9rem; line-height: 1.25; }
+.vr-chip .vr-i { color: var(--accent); width: 1rem; height: 1rem; }
+.vr-big { background: rgb(255 230 0 / 0.14); border-color: rgb(255 230 0 / 0.55); }
+.vr-chain .vr-go { width: 1.1rem; height: 1.1rem; }
