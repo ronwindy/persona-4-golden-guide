@@ -40,5 +40,12 @@ Check `infographic.css` for the exact current set. Typical pieces:
 - `ig-say`: tip / speech bubble; `ig-hint` / `ig-dim`: secondary text; `ig-leg`: legend.
 Cards take a tint via `--t` ("r g b"). Prefer these before inventing; invent when the content calls for it.
 
+## Site styling is not optional (drafts included)
+The draft must look like the real site, not a lookalike. Do not restyle headings or other chrome in the draft; copy them from `src/styles/global.css`:
+- `h2`: chevron header (yellow double-chevron mask, light Dela Gothic label, yellow line fading right). `h3`: Dela Gothic, accent yellow, ~1.7rem. `h4`: Kanit italic uppercase, accent.
+- Section headings are `h5.part-marker`: halftone dotted panel, fading underline, Dela Gothic 1.65rem accent text, a `data-icon` Lucide icon before the label, and the label repeated as an outlined ghost word (`data-word`) on the right. Never replace them with a custom "section title" style.
+- In a draft, re-create those exact rules (copy the CSS values) rather than inventing a header style; in the build, use the real `<h5 class="part-marker" data-icon="...">` markup and let global.css style it.
+- Before drafting, read the heading rules in `global.css` (h2/h3/h4 and `.part-marker`) and compare the draft against a built page. Only the body blocks (tiles, cards, chips) may be new.
+
 ## Design guidance
 Lead with the most useful facts (what the player needs at a glance). Use icons to carry meaning, not decoration. Keep dense data scannable: tiles for single values, grids for sequences, chips for lists, tables only when comparing columns. Respect existing tokens in `global.css`; avoid new fonts and monospace.
