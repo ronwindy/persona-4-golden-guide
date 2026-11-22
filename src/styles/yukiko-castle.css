@@ -73,3 +73,10 @@
 .yc-say { position: relative; margin: 0.3rem 0 0 1.5rem; max-width: 48rem; }
 .yc-say::before { content: ""; position: absolute; top: -0.45rem; left: 1.9rem; width: 0.9rem; height: 0.9rem; transform: rotate(45deg); background: #2a2a1c; border-top: 1px solid rgb(232 217 160 / 0.55); border-left: 1px solid rgb(232 217 160 / 0.55); }
 .guide-body .yc .yc-say p { position: relative; padding: 0.9rem 1.2rem; border-radius: 18px; border: 1px solid rgb(232 217 160 / 0.55); background: linear-gradient(180deg, #2a2a1c, #1d1d15); box-shadow: 0 6px 18px rgb(0 0 0 / 0.4), inset 0 1px 0 rgb(255 255 255 / 0.1); font-size: 0.95rem; line-height: 1.55; color: var(--say); }
+
+/* Shared by the other dungeon pages */
+.yc-rp { background: rgb(190 150 255 / 0.2); border: 1px solid #be96ff; color: #d9c4ff; }
+.yc-ot { background: rgb(255 255 255 / 0.08); border: 1px solid var(--text-muted); color: var(--text-muted); }
+.yc-stat.yc-wide { grid-column: 1 / -1; }
+.yc-sv.yc-sv-s { font-family: var(--font-body); font-size: 0.95rem; line-height: 1.5; font-weight: 500; }
+.yc-rules ul, .yc-rules ol { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.92rem; line-height: 1.45; }
