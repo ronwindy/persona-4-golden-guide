@@ -105,3 +105,13 @@
 .ig-gs-after { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); align-items: start; }
 .ig-gs-after p { font-size: 0.92rem; line-height: 1.5; }
 .ig-gs-after .ig-ch b { display: inline-flex; align-items: center; gap: 0.45rem; }
+
+/* Best Personas (tips-and-tricks-best-personas) */
+.ig-role { display: inline-flex; align-items: center; gap: 0.4rem; transform: skewX(-8deg); padding: 0.1rem 0.65rem; border-radius: 4px; background: rgb(var(--t)); color: #0d0d0d; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.ig-role .ig-i { width: 0.85rem; height: 0.85rem; }
+.ig-bp-col { display: flex; flex-direction: column; gap: 0.5rem; }
+.ig-bp-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
+.ig-bp-sl { display: flex; align-items: center; gap: 0.45rem; color: rgb(var(--t)); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.ig-callout { --t: 255 230 0; display: flex; gap: 0.6rem; align-items: flex-start; padding: 0.6rem 0.85rem; border-radius: 8px; border: 1px solid rgb(var(--t) / 0.35); background: rgb(var(--t) / 0.08); font-size: 0.92rem; line-height: 1.45; }
+.ig-callout .ig-i { margin-top: 0.15rem; color: rgb(var(--t)); }
+.ig-chip.ig-key .term { color: var(--info); }
