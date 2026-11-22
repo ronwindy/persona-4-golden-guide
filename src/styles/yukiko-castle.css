@@ -80,3 +80,9 @@
 .yc-stat.yc-wide { grid-column: 1 / -1; }
 .yc-sv.yc-sv-s { font-family: var(--font-body); font-size: 0.95rem; line-height: 1.5; font-weight: 500; }
 .yc-rules ul, .yc-rules ol { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.92rem; line-height: 1.45; }
+
+/* Bestiary legend (Dungeons overview) */
+.yc-lrows { display: flex; flex-direction: column; gap: 0.5rem; }
+.yc-lrow { display: flex; align-items: baseline; gap: 0.7rem; font-size: 0.9rem; line-height: 1.4; }
+.yc-lrow .yc-r { flex: none; min-width: 2.6rem; align-self: flex-start; }
+.yc-lk { color: var(--text); }
