@@ -15,7 +15,7 @@ src/data/pages/*.html + src/data/manifest.json → Astro build
 - Credit: the guide is by Hurricanehaon (GameFAQs). Keep that attribution wherever the guide shows it.
 
 ## 2. Build
-- Build: `cmd /c npm run build` (avoids PowerShell ExecutionPolicy errors). Ad-hoc JavaScript: temp `.mjs` file, not long `node -e`.
+- Build: in PowerShell use `cmd /c npm run build` (avoids ExecutionPolicy errors). In Git Bash run `npm run build` directly: `cmd /c` is mangled there (`/c` becomes a path), exits 0 and builds nothing, so `dist/` stays stale. Ad-hoc JavaScript: temp `.mjs` file, not long `node -e`.
 - Site settings (title, base, site URL) live in `project.config.json`.
 - `raw-sources/` may still hold the user's saved GameFAQs HTML locally. It is gitignored and no longer used by anything.
 
