@@ -148,3 +148,15 @@
 .ig-rl .ig-ch b { white-space: nowrap; }
 .ig-rl-tot { white-space: nowrap; margin-left: auto; }
 .ig-rl-tot em { white-space: nowrap; }
+
+/* Resources (ig-rs-*) */
+.ig-rs-list{display:flex;flex-direction:column;gap:.8rem}
+.ig-rs{--t:255 230 0;display:flex;align-items:center;gap:1rem;padding:.9rem 1.1rem;border-radius:12px;border:1px solid rgb(var(--t)/.45);background:linear-gradient(90deg,rgb(var(--t)/.14),rgb(16 16 12/.55) 70%);color:var(--text);text-decoration:none}
+a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb(var(--t)/.24),rgb(16 16 12/.55) 70%)}
+.ig-rs-ic{flex:none;display:grid;place-items:center;width:2.8rem;height:2.8rem;border-radius:10px;background:rgb(var(--t)/.18);border:1px solid rgb(var(--t)/.5);color:rgb(var(--t))}
+.ig-rs-ic .ig-i{width:1.5rem;height:1.5rem}
+.ig-rs-tx{display:flex;flex-direction:column;gap:.15rem;min-width:0;flex:1}
+.ig-rs b{font-family:var(--font-sub);font-style:italic;font-weight:800;font-size:1.1rem;letter-spacing:.04em;text-transform:uppercase;color:rgb(var(--t));line-height:1.2}
+.ig-rs-url{font-size:.85rem;color:var(--text-muted);overflow-wrap:anywhere;line-height:1.35}
+.ig-rs-go{flex:none;display:inline-flex;align-items:center;gap:.35rem;padding:.3rem .8rem;border-radius:999px;border:1px solid rgb(var(--t)/.6);color:rgb(var(--t));font-family:var(--font-sub);font-style:italic;font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:560px){.ig-rs{flex-wrap:wrap}.ig-rs-tx{flex:1 1 calc(100% - 4rem)}.ig-rs-go{margin-left:3.8rem}}
