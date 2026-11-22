@@ -108,6 +108,7 @@
 
 /* Best Personas (tips-and-tricks-best-personas) */
 .ig-role { display: inline-flex; align-items: center; gap: 0.4rem; transform: skewX(-8deg); padding: 0.1rem 0.65rem; border-radius: 4px; background: rgb(var(--t)); color: #0d0d0d; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.ig-ch .ig-role { color: #0d0d0d; font-size: 0.72rem; }
 .ig-role .ig-i { width: 0.85rem; height: 0.85rem; }
 .ig-bp-col { display: flex; flex-direction: column; gap: 0.5rem; }
 .ig-bp-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
