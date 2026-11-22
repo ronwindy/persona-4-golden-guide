@@ -22,3 +22,4 @@ Visual decisions for the guide site. Agent behaviour rules (no monospace, don't 
 
 ## Open (ask the user when the source needs them)
 Logo/branding, home page, badge styles, dark-mode details beyond the base theme, gamepad support, boss/shop/game-specific blocks, and any ornament beyond the motifs above.
+- **Infographic pages:** pages converted to infographics use the shared `ig-*` kit (`src/styles/infographic.css`) and one SVG icon sheet (`src/components/IconSheet.astro`, rendered once in `BaseLayout`). Workflow and rules live in the `infographic` skill (`.claude/skills/infographic/SKILL.md`).
