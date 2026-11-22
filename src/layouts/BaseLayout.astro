@@ -13,13 +13,14 @@ import '../styles/status-ailments.css';
 import '../styles/battle-mechanics.css';
 import '../styles/shuffle-time.css';
 import '../styles/tv-channels.css';
-import '../styles/yukiko-castle.css';
+import '../styles/infographic.css';
 import '../styles/velvet-room.css';
 import '../styles/calendar.css';
 import '../styles/controls.css';
 import '../styles/trophy.css';
 import project from '../../project.config.json';
 import SidebarNav from '../components/SidebarNav.astro';
+import IconSheet from '../components/IconSheet.astro';
 import { Menu, X, PanelLeft, ArrowUp } from '@lucide/astro';
 
 interface Props {
@@ -59,6 +60,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     </script>
   </head>
   <body>
+    <IconSheet />
     <!-- Mobile: header with drawer button (below 1024px) -->
     <header class="mobile-header">
       <button type="button" id="open-mobile-drawer" aria-label="Open navigation" aria-controls="mobile-drawer-panel" class="icon-btn"><Menu size={18} aria-hidden="true" /> Menu</button>
