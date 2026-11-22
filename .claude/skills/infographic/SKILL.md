@@ -33,7 +33,7 @@ Draft once, for the first (or most representative) page. After approval, build i
 
 ## Vocabulary (kit, `ig-*`)
 Check `infographic.css` for the exact current set. Typical pieces:
-- `ig-stats` / `ig-stat` (tint modifiers are CSS classes `ig-st-y/r/o/m/c`; known quirk: existing pages write `st-y` etc. without the prefix, so the tints do not apply there yet): label + big value tiles for key facts.
+- `ig-stats` / `ig-stat` (tint modifiers `ig-st-y/r/o/m/c`): label + big value tiles for key facts.
 - `ig-floors` / `ig-fl`: sequence map (floors, stages), with boss/loot variants.
 - `ig-card`, `ig-chips` / `ig-chip` (`ig-new`, `ig-key`): item and tag lists.
 - `ig-r` rows (`ig-wk` weak, `ig-st` strong, `ig-nu` null, `ig-dr` drain, `ig-rp` repel): resistance tables.
