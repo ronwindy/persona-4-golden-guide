@@ -349,9 +349,9 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-bug-slot { display: grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 8px; border: 2px dashed rgb(var(--c) / .5); color: rgb(var(--c) / .6); }
 .ig-bug-slot b { font-family: var(--font-head); font-weight: 400; font-size: 1.3rem; }
 .guide-body .ig .ig-bug-lead { flex: 1 1 100%; display: flex; align-items: center; gap: .5rem; margin: 0; font-weight: 600; color: rgb(var(--c)); }
-.guide-body .ig .ig-bug-trail { flex: 1 1 100%; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: .9rem; position: relative; }
+.guide-body .ig .ig-bug-trail { flex: 1 1 100%; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: .9rem; position: relative; }
 .guide-body .ig .ig-bug-trail li { position: relative; display: flex; flex-direction: column; gap: .3rem; margin: 0; padding: 1.3rem .8rem .8rem; border-radius: 8px; background: rgb(16 16 12 / .7); border: 1px solid rgb(var(--c) / .4); }
-.guide-body .ig .ig-bug-trail li:not(:last-child)::after { content: ""; position: absolute; top: .85rem; left: 50%; width: calc(100% + .9rem); border-top: 2px dotted rgb(var(--c) / .6); z-index: 0; }
+.guide-body .ig .ig-bug-trail li:not(:last-child)::after { content: ""; position: absolute; top: .82rem; left: 100%; width: .9rem; border-top: 2px dotted rgb(var(--c) / .7); z-index: 0; }
 .ig-bug-trail li > * { position: relative; z-index: 1; }
 .ig-bug-trail li .ig-bug-pin { z-index: 2; }
 .ig-bug-trail em { font-style: normal; font-family: var(--font-head); font-size: 1.5rem; line-height: 1; color: rgb(var(--c)); }
