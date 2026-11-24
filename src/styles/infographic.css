@@ -238,3 +238,65 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-chip.ig-q-rank .term { color: inherit; }
 .ig-chip.ig-q-last { background: rgb(255 77 77 / 0.12); border-color: rgb(255 77 77 / 0.6); color: #ff6b6b; font-weight: 600; }
 .ig-chip.ig-key .term { color: var(--info); }
+
+/* Yosuke / Magician (ig-ym-*) */
+.ig-ym-days { display: grid; grid-template-columns: repeat(auto-fit, minmax(6.4rem, 1fr)); gap: 0.55rem; }
+.ig-ym-d { --t: 90 220 130; display: grid; justify-items: center; gap: 0.15rem; padding: 0.6rem 0.4rem; border-radius: 10px; border: 1px solid rgb(var(--t) / 0.5); background: linear-gradient(180deg, rgb(var(--t) / 0.16), rgb(16 16 12 / 0.55)); }
+.ig-ym-d .ig-i { width: 1.3rem; height: 1.3rem; color: rgb(var(--t)); }
+.ig-ym-d span { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-ym-d b { font-family: var(--font-head); font-weight: 400; font-size: 1.05rem; color: rgb(var(--t)); }
+.ig-ym-no { --t: 255 77 77; }
+.ig-ym-hol { --t: 255 179 71; }
+.ig-ym-loc { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; padding: 0.6rem 0.9rem; border-radius: 10px; border: 1px solid var(--glass-edge); background: var(--glass-bg); }
+.ig-ym-lab { display: inline-flex; align-items: center; gap: 0.4rem; margin-right: 0.3rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-ym-lab .ig-i { color: var(--accent); }
+.ig-ym-or { font-size: 0.85rem; color: var(--text-muted); }
+.guide-body .ig .ig-ym-pts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(10, 1fr); gap: 0.4rem; align-items: end; }
+.ig-ym-pts li { position: relative; display: grid; grid-template-rows: auto auto 3.2rem; justify-items: center; align-items: end; gap: 0.2rem; padding: 0.5rem 0.2rem 0; border-radius: 8px; border: 1px solid var(--glass-edge); background: var(--glass-bg); overflow: hidden; }
+.ig-ym-pts small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); }
+.ig-ym-pts b { font-family: var(--font-head); font-weight: 400; font-size: 1.15rem; color: var(--accent); }
+.ig-ym-pts span { width: 100%; height: calc(var(--h) * 3.2rem + 0.25rem); background: linear-gradient(180deg, rgb(255 230 0 / 0.75), rgb(255 230 0 / 0.15)); }
+@media (max-width: 560px) { .ig-ym-pts { grid-template-columns: repeat(5, 1fr); } }
+.ig-ym-ranks { display: flex; flex-direction: column; gap: 0.8rem; }
+.ig-ym-r { display: flex; flex-direction: column; gap: 0.6rem; padding: 0.7rem 0.9rem 0.9rem; border-radius: 12px; border: 1px solid var(--glass-edge); border-top-color: var(--glass-sheen); background: var(--glass-bg); }
+.ig-ym-r header { display: flex; align-items: center; gap: 0.8rem; }
+.ig-ym-r header b { font-family: var(--font-head); font-weight: 400; font-size: 1.1rem; }
+.ig-ym-r .ig-it-dot { box-shadow: none; }
+.ig-ym-auto { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.ig-ym-auto .ig-i { color: var(--accent); }
+.ig-ym-auto span { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-ym-auto b { font-family: var(--font-head); font-weight: 400; font-size: 1.05rem; }
+.ig-ym-p { display: flex; flex-direction: column; gap: 0.5rem; padding-top: 0.6rem; border-top: 1px dashed rgb(255 255 255 / 0.14); }
+.guide-body .ig .ig-ym-q { display: flex; gap: 0.6rem; align-items: baseline; margin: 0; }
+.ig-ym-sp { flex: none; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); min-width: 4.4rem; }
+.ig-ym-q em { color: var(--say); font-style: italic; }
+.ig-ym-n span:last-child { color: var(--text-muted); }
+.ig-ym-o { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem; }
+.ig-ym-c { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.1rem 0.55rem; padding: 0.35rem 0.6rem; border-radius: 8px; border: 1px solid rgb(255 255 255 / 0.16); background: rgb(255 255 255 / 0.05); }
+.ig-ym-c i { font-style: normal; display: grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 5px; background: rgb(255 255 255 / 0.12); font-family: var(--font-sub); font-weight: 800; font-size: 0.78rem; }
+.ig-ym-c b { font-family: var(--font-head); font-weight: 400; font-size: 1rem; }
+.ig-ym-c small { grid-column: 1 / -1; font-size: 0.74rem; color: var(--info); }
+.ig-ym-best { border-color: rgb(90 220 130 / 0.7); background: rgb(90 220 130 / 0.14); }
+.ig-ym-best i { background: rgb(90 220 130); color: #0d0d0d; }
+.ig-ym-best b { color: rgb(120 235 155); }
+.ig-ym-zero:not(.ig-ym-best) b { color: var(--text-muted); }
+.ig-ym-any { grid-column: 1 / -1; grid-template-columns: auto 1fr; }
+.ig-ym-any i { width: auto; padding: 0 0.5rem; }
+.ig-ym-todo { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: #ffb347; }
+.ig-ym-todo .ig-i { width: 0.9rem; height: 0.9rem; }
+.guide-body .ig .ig-ym-nt { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 0.5rem; }
+.ig-ym-nt li { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem; padding: 0.45rem 0.8rem; border-radius: 10px; border: 1px solid var(--glass-edge); background: var(--glass-bg); }
+.ig-ym-nt li span { min-width: 6rem; font-family: var(--font-head); font-size: 0.95rem; }
+.ig-ym-nt .ig-chip { font-style: normal; font-weight: 600; }
+@media (max-width: 560px) { .ig-ym-o { grid-template-columns: 1fr; } .ig-ym-q { flex-direction: column; gap: 0.15rem; } }
+/* panel differentiation: neutral, subtle lift; yellow only in the accent bar */
+.ig-ym-r { position: relative; padding-left: 1.3rem; background: rgb(255 255 255 / 0.05); border-color: rgb(255 255 255 / 0.2); box-shadow: 0 2px 10px rgb(0 0 0 / 0.3); overflow: hidden; }
+.ig-ym-r::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); opacity: 0.8; }
+.ig-ym-p { padding: 0.65rem 0.75rem 0.75rem; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 10px; background: rgb(0 0 0 / 0.25); }
+.ig-ym-c { background: rgb(255 255 255 / 0.06); border-color: rgb(255 255 255 / 0.18); }
+.ig-ym-nt li, .ig-ym-pts li, .ig-ym-loc { border-color: rgb(255 255 255 / 0.2); background-color: rgb(255 255 255 / 0.05); }
+.ig-ym-nt li { min-height: 2.9rem; align-content: center; }
+.ig-ym-nt li { flex-wrap: nowrap; } .ig-ym-nt li span { flex: none; min-width: 6.5rem; } @media (max-width: 420px) { .ig-ym-nt { grid-template-columns: 1fr; } .ig-ym-nt li span { min-width: 5.5rem; } }
+.ig-ym-key .ig-it-k b { font-size: 1.25rem; overflow-wrap: anywhere; } .ig-ym-key { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
+.guide-body .ig .ig-ym-pts small { letter-spacing: 0; white-space: nowrap; }
+.ig-ym-c { align-content: center; }
