@@ -303,7 +303,7 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 
 /* Social Links shared additions (ig-ym-*) */
 @media (min-width: 561px) { .ig-ym-o[style*="--n"] { grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); } }
-.ig-ym-wide { align-items: baseline; }
+.ig-ym-wide { align-items: center; }
 .ig-ym-txt { flex: 1 1 18rem; min-width: 0; }
 .ig-ym-msg { display: flex; align-items: center; gap: 0.5rem; margin: 0; padding: 0.55rem 0.9rem; border-radius: 10px; border: 1px solid rgb(255 255 255 / 0.2); background: rgb(255 255 255 / 0.05); color: var(--text-muted); }
 .ig-ym-msg .ig-i { flex: none; color: var(--accent); }
