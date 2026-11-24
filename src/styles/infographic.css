@@ -190,3 +190,28 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-vc-steps li::before { counter-increment: vc; content: counter(vc); flex: none; display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 6px; transform: skewX(-8deg); background: rgb(var(--t)); color: #0d0d0d; font-family: var(--font-head); font-size: 1rem; }
 .ig-vc-loop { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.85rem; border-radius: 10px; border: 1px dashed rgb(255 230 0 / 0.5); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
 .guide-body .ig .ig-vc-node b.term { color: var(--term); }
+
+/* Investigation Team / Fool (ig-it-*) */
+.ig-it-key { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 0.8rem; }
+.ig-it-k { display: grid; grid-template-columns: auto 1fr; column-gap: 0.7rem; align-items: center; padding: 0.8rem 1.1rem; border-radius: 12px; border: 1px solid rgb(255 230 0 / 0.45); background: linear-gradient(90deg, rgb(255 230 0 / 0.14), rgb(16 16 12 / 0.55) 75%); }
+.ig-it-k .ig-i { grid-row: span 2; width: 1.6rem; height: 1.6rem; color: var(--accent); }
+.ig-it-k span { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-it-k b { font-family: var(--font-head); font-weight: 400; font-size: 1.6rem; line-height: 1.1; color: var(--accent); }
+.ig-it-k b.term { color: var(--term); }
+.ig-it-na { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.ig-it-nl { margin-right: 0.3rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-it-c { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.15rem 0.65rem 0.15rem 0.5rem; border-radius: 999px; border: 1px dashed rgb(255 255 255 / 0.22); font-size: 0.82rem; color: var(--text-muted); }
+.ig-it-c .ig-i { width: 0.85rem; height: 0.85rem; opacity: 0.8; }
+.ig-it-c i { font-style: normal; font-weight: 600; color: var(--text); opacity: 0.7; }
+.ig-it-tl { list-style: none; margin: 0.4rem 0 0 0.4rem; padding: 0; position: relative; display: flex; flex-direction: column; gap: 0.5rem; }
+.ig-it-tl::before { content: ""; position: absolute; left: 1.15rem; top: 0.5rem; bottom: 0.5rem; width: 3px; border-radius: 2px; background: linear-gradient(180deg, rgb(255 230 0 / 0.8), rgb(255 77 77 / 0.8)); }
+.ig-it-tl li { position: relative; display: flex; align-items: center; gap: 1rem; }
+.ig-it-dot { flex: none; z-index: 1; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 8px; transform: skewX(-8deg); background: var(--accent); color: #0d0d0d; font-family: var(--font-head); font-size: 1.1rem; box-shadow: 0 0 0 4px #14140f; }
+.ig-it-tl li > div { flex: 1; display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem 1rem; flex-wrap: wrap; padding: 0.5rem 1rem; border-radius: 10px; border: 1px solid var(--glass-edge); background: var(--glass-bg); }
+.ig-it-tl small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-it-tl b { font-family: var(--font-head); font-weight: 400; font-size: 1.05rem; line-height: 1.15; }
+.ig-it-end .ig-it-dot { background: #ff4d4d; }
+.ig-it-end > div { border-color: rgb(255 77 77 / 0.6); box-shadow: 0 0 16px rgb(255 77 77 / 0.25); }
+.ig-it-tl b { display: inline-flex; align-items: center; gap: 0.5rem; }
+.ig-it-tl b .ig-i { width: 1.1rem; height: 1.1rem; color: var(--accent); }
+.ig-it-end b .ig-i { color: #ff6b6b; }
