@@ -368,3 +368,5 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-bug-ph-w { max-width: 26rem; transform: rotate(1deg); }
 .ig-bug-ico { width: 4rem; height: 4rem; padding: .9rem; border-radius: 50%; border: 2px solid rgb(var(--c) / .6); background: rgb(var(--c) / .12); color: rgb(var(--c)); }
 .ig-bug-game .ig-bug-ph { flex: 1 1 18rem; }
+.ig-ym-yen b { font-size: 0.82rem; text-align: center; line-height: 1.1; overflow-wrap: normal; word-break: normal; }
+@media (min-width: 561px) { .ig-ym-yen b { font-size: 0.9rem; } }
