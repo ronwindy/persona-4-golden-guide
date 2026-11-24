@@ -25,6 +25,10 @@ Turns a raw guide page into an infographic. The finished reference is `src/data/
    - `cmd /c npm run build` passes (it can exceed 2 min: run it in the background).
    - Start `astro-dev` with `preview_start`, open `/persona-4-golden-guide/guide/<id>/`, check desktop and mobile (375px), light and dark where relevant, console errors, and that every `<use>` target exists.
    - **Content check:** compare visible text before vs. after (e.g. `git show HEAD:<page>` stripped of tags vs. the new one). List anything missing and fix it, or report it to the user.
+   - **Check the real page, not just the draft.** Drafts do not load the site's global styles, so defaults for `ol`/`ul`/`p`/`table` etc. can break the layout once built (e.g. `ol` gets left padding). Reset `padding`/`margin`/`list-style` explicitly on any native list or table under `.guide-body .ig`, and re-check the built page against the draft.
+   - **Measure alignment, do not eyeball it.** For anything that must line up (timeline spines, connectors, badges over lines) compare positions with `getBoundingClientRect` via `javascript_tool` (e.g. line centre vs. dot centre) and zoom into those spots.
+   - **Full-scale screenshots only count as a visual check.** Take one at desktop width and one at 375px, scrolled to each new block, not just the top of the page. Scaled-down (e.g. 0.6) screenshots are for a quick look only.
+   - **Anchor decorations to the element they connect**, not to a parent's padding: put spines/lines on the `li` (or the item itself) so global styles cannot shift them.
    - **Always `preview_stop` the dev server before ending the turn.**
 7. **Commit** on `main`: `feat: infographic layout for <page>` with the Co-Authored-By trailer from the session.
 
