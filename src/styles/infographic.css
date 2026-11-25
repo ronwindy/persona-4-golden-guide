@@ -556,3 +556,54 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-gd-ic { position: absolute; top: 0.7rem; right: 0.8rem; display: grid; place-items: center; width: 4.8rem; height: 4.8rem; border-radius: 50%; border: 1px solid rgb(var(--t) / 0.6); background: radial-gradient(circle at 35% 30%, rgb(var(--t) / 0.35), rgb(var(--t) / 0.1)); color: rgb(var(--t)); box-shadow: 0 0 14px rgb(var(--t) / 0.25); }
 .ig-gd-ic .ig-i { width: 3.7rem; height: 3.7rem; filter: drop-shadow(0 2px 3px rgb(0 0 0 / 0.45)); }
 .ig-gd-c .ig-gd-seed, .ig-gd-c .ig-gd-it { padding-right: 5.6rem; }
+
+/* Persona Compendium arcana pages (ig-pc-*) */
+.ig-pc-n { display: flex; flex-direction: column; align-items: center; gap: 0.05rem; min-width: 5.6rem; padding: 0.35rem 0.7rem; border-radius: 8px; border: 1px solid rgb(255 255 255 / 0.2); background: rgb(255 255 255 / 0.07); text-align: center; }
+.ig-pc-n b { font-family: var(--font-head); font-weight: 400; font-size: 0.95rem; line-height: 1.2; }
+.ig-pc-n small, .ig-pc-res small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); line-height: 1; }
+.ig-pc-n small .ig-i, .ig-pc-res small .ig-i { width: 0.7rem; height: 0.7rem; margin-right: 0.25rem; vertical-align: -0.1em; }
+.ig-pc-n.ig-pc-a { border-color: rgb(61 220 255 / 0.6); background: rgb(61 220 255 / 0.12); }
+.ig-pc-n.ig-pc-a b { color: var(--info); }
+.ig-pc-n.ig-pc-dim b { color: var(--text-muted); }
+.ig-pc-res { display: flex; flex-direction: column; align-items: center; gap: 0.05rem; padding: 0.35rem 1rem; border-radius: 8px; transform: skewX(-8deg); background: var(--accent); color: #0d0d0d; }
+.ig-pc-res small { color: #0d0d0d; opacity: 0.75; }
+.ig-pc-res b { font-family: var(--font-head); font-weight: 400; font-size: 1.1rem; line-height: 1.1; }
+.ig-pc-op { font-style: normal; font-family: var(--font-head); color: var(--accent); }
+.ig-pc-go { width: 1.5rem; height: 1.5rem; color: var(--accent); }
+.ig-pc-flow, .ig-pc-fr { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+.ig-pc-flow { padding: 0.8rem 1rem; border-radius: 12px; border: 1px solid rgb(255 230 0 / 0.45); background: linear-gradient(180deg, rgb(255 230 0 / 0.12), rgb(16 16 12 / 0.55) 60%); }
+.ig-pc-how { display: flex; flex-direction: column; gap: 0.7rem; padding: 0.8rem 1rem; border-radius: 12px; border: 1px solid var(--glass-edge); background: var(--glass-bg); }
+.ig-pc-hs { display: flex; flex-direction: column; gap: 0.4rem; }
+.ig-pc-k { display: inline-flex; align-items: center; gap: 0.45rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.ig-pc-flow > .ig-pc-k { flex: 1 1 100%; }
+.guide-body .ig .ig-pc-note { display: flex; gap: 0.6rem; font-size: 0.92rem; line-height: 1.45; }
+.ig-pc-note .ig-i { margin-top: 0.2rem; color: var(--info); }
+.ig-pc-chb { display: inline-flex; align-items: center; gap: 0.5rem; }
+.ig-pc-pairs { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ig-pc-pr { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.4rem 0.8rem; border-radius: 8px; border: 1px solid rgb(255 255 255 / 0.16); background: rgb(255 255 255 / 0.06); font-size: 0.95rem; line-height: 1.2; }
+.ig-pc-pr.ig-pc-me { border-color: rgb(255 230 0 / 0.55); background: rgb(255 230 0 / 0.12); }
+.ig-pc-ar { display: inline-flex; align-items: center; gap: 0.4rem; min-width: 0; }
+.ig-pc-ar b { font-weight: 600; }
+.ig-pc-ar .ig-i { color: var(--accent); }
+.guide-body .ig ol.ig-pc-lad { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.guide-body .ig .ig-pc-lad > li { --t: 255 255 255; margin: 0; display: grid; grid-template-columns: 4.4rem minmax(0, 1fr); align-items: center; gap: 0.4rem 1rem; padding: 0.55rem 0.9rem 0.55rem 0.6rem; border-radius: 10px; border: 1px solid rgb(255 255 255 / 0.12); border-left: 4px solid rgb(255 255 255 / 0.22); background: rgb(255 255 255 / 0.04); }
+.ig-pc-lv { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.05rem; padding: 0.3rem 0.2rem; border-radius: 8px; transform: skewX(-8deg); background: var(--accent); color: #0d0d0d; }
+.ig-pc-lv small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1; opacity: 0.8; }
+.ig-pc-lv b { font-family: var(--font-head); font-weight: 400; font-size: 1.3rem; line-height: 1.1; }
+.ig-pc-body { display: flex; flex-direction: column; gap: 0.4rem; min-width: 0; }
+.ig-pc-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.8rem; }
+.ig-pc-nm { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-head); font-size: 1.15rem; line-height: 1.2; }
+.ig-pc-nm .ig-i { color: var(--term); }
+.ig-pc-bar { position: relative; height: 0.4rem; border-radius: 999px; background: rgb(255 255 255 / 0.1); overflow: hidden; }
+.ig-pc-bar span { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: linear-gradient(90deg, rgb(255 230 0 / 0.35), var(--accent)); }
+.guide-body .ig .ig-pc-lad > li.ig-pc-sp { --t: 255 179 71; border-color: rgb(255 179 71 / 0.5); border-left-color: var(--term); background: linear-gradient(90deg, rgb(255 179 71 / 0.14), rgb(16 16 12 / 0.55) 60%); }
+.guide-body .ig .ig-pc-lad > li.ig-pc-ul { --t: 255 230 0; border-color: rgb(255 230 0 / 0.55); border-left-color: var(--accent); background: linear-gradient(90deg, rgb(255 230 0 / 0.18), rgb(16 16 12 / 0.55) 60%); box-shadow: 0 0 18px rgb(255 230 0 / 0.22); }
+.ig-pc-fl { --t: 255 255 255; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.12rem 0.65rem 0.12rem 0.5rem; border-radius: 999px; font-size: 0.84rem; font-weight: 600; line-height: 1.3; border: 1px solid rgb(var(--t) / 0.6); background: rgb(var(--t) / 0.14); color: rgb(var(--t)); }
+.ig-pc-fl .ig-i { width: 0.85rem; height: 0.85rem; }
+.ig-pc-leg { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; }
+.ig-pc-cap { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-pc-world { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+@media (max-width: 560px) { .guide-body .ig .ig-pc-lad > li { grid-template-columns: 3.6rem minmax(0, 1fr); gap: 0.4rem 0.7rem; } .ig-pc-pr { flex: 1 1 100%; } }
+.ig-ch:has(.ig-pc-chb) { flex-wrap: wrap; align-items: center; }
+.ig-ch .ig-pc-chb { font-size: 1.05rem; }
+.ig-pc-na { display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 1rem; border-radius: 10px; border: 1px dashed rgb(255 255 255 / 0.25); font-family: var(--font-head); font-size: 1.1rem; color: var(--text-muted); }
