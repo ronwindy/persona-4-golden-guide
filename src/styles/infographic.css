@@ -607,3 +607,5 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-ch:has(.ig-pc-chb) { flex-wrap: wrap; align-items: center; }
 .ig-ch .ig-pc-chb { font-size: 1.05rem; }
 .ig-pc-na { display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 1rem; border-radius: 10px; border: 1px dashed rgb(255 255 255 / 0.25); font-family: var(--font-head); font-size: 1.1rem; color: var(--text-muted); }
+.ig-pc-n small, .ig-pc-res small { display: inline-flex; align-items: center; justify-content: center; gap: 0.25rem; }
+.ig-pc-n small .ig-i, .ig-pc-res small .ig-i { margin-right: 0; vertical-align: baseline; }
