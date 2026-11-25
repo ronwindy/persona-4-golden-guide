@@ -553,6 +553,6 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-gd-red { --t: 255 107 107; } .ig-gd-ice { --t: 61 220 255; } .ig-gd-yel { --t: 255 230 0; } .ig-gd-grn { --t: 90 220 130; } .ig-gd-pur { --t: 190 150 255; } .ig-gd-org { --t: 255 179 71; }
 @media (max-width: 620px) { .ig-gd-stages { grid-template-columns: 1fr; } .ig-gd-s:not(:last-child)::after { display: none; } }
 .ig-gd-c { position: relative; }
-.ig-gd-ic { position: absolute; top: 0.7rem; right: 0.8rem; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%; border: 1px solid rgb(var(--t) / 0.6); background: radial-gradient(circle at 35% 30%, rgb(var(--t) / 0.35), rgb(var(--t) / 0.1)); color: rgb(var(--t)); box-shadow: 0 0 14px rgb(var(--t) / 0.25); }
-.ig-gd-ic .ig-i { width: 1.8rem; height: 1.8rem; }
-.ig-gd-c .ig-gd-seed, .ig-gd-c .ig-gd-it { padding-right: 3.6rem; }
+.ig-gd-ic { position: absolute; top: 0.7rem; right: 0.8rem; display: grid; place-items: center; width: 4.8rem; height: 4.8rem; border-radius: 50%; border: 1px solid rgb(var(--t) / 0.6); background: radial-gradient(circle at 35% 30%, rgb(var(--t) / 0.35), rgb(var(--t) / 0.1)); color: rgb(var(--t)); box-shadow: 0 0 14px rgb(var(--t) / 0.25); }
+.ig-gd-ic .ig-i { width: 3.7rem; height: 3.7rem; filter: drop-shadow(0 2px 3px rgb(0 0 0 / 0.45)); }
+.ig-gd-c .ig-gd-seed, .ig-gd-c .ig-gd-it { padding-right: 5.6rem; }
