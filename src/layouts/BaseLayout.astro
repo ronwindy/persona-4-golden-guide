@@ -152,21 +152,62 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
     </script>
 
     <script is:inline>
-      // Reading progress: per-page "read" marks and the last page opened, kept in this browser only.
+      // Walkthrough progress (April to March pages only): per-month "read" marks, plus the last month and
+      // in-game date you were reading. Kept in this browser only.
       (function () {
-        var KEY = 'p4g-progress-v1';
-        var state = { done: {}, last: '' };
-        try { var raw = JSON.parse(localStorage.getItem(KEY) || '{}'); if (raw && raw.done) state = { done: raw.done, last: raw.last || '' }; } catch (e) {}
+        var KEY = 'p4g-progress-v2';
+        var MONTH_RE = /^walkthrough-(april|may|june|july|august|september|october|november|december|january|february|march)$/;
+        var state = { done: {}, last: null };
+        try {
+          var raw = JSON.parse(localStorage.getItem(KEY) || 'null');
+          if (raw && raw.done) state = { done: raw.done, last: raw.last && MONTH_RE.test(raw.last.page || '') ? raw.last : null };
+          else {
+            var old = JSON.parse(localStorage.getItem('p4g-progress-v1') || '{}');
+            if (old && old.done) Object.keys(old.done).forEach(function (k) { if (MONTH_RE.test(k)) state.done[k] = 1; });
+          }
+        } catch (e) {}
         function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
         var current = document.querySelector('.sidebar a[aria-current="page"]');
-        if (current) { state.last = current.getAttribute('data-page-id'); save(); }
+        var pageId = current ? current.getAttribute('data-page-id') : '';
+        var onMonth = MONTH_RE.test(pageId);
+
+        function trackDate() {
+          var marks = document.querySelectorAll('.guide-body h4.date-board[id]');
+          var line = window.innerHeight * 0.3, hit = null;
+          for (var i = 0; i < marks.length; i++) { if (marks[i].getBoundingClientRect().top <= line) hit = marks[i]; else break; }
+          var date = hit ? hit.id : '';
+          var label = hit ? (hit.querySelector('.db-sr') || hit).textContent.trim() : '';
+          if (!state.last || state.last.page !== pageId || state.last.date !== date) {
+            state.last = { page: pageId, date: date, label: label };
+            save();
+          }
+        }
+        if (onMonth) {
+          var ticking = false;
+          window.addEventListener('scroll', function () {
+            if (ticking) return;
+            ticking = true;
+            setTimeout(function () { ticking = false; trackDate(); }, 120);
+          }, { passive: true });
+          window.addEventListener('load', function () { setTimeout(trackDate, 50); });
+        }
 
         function paint() {
-          var links = document.querySelectorAll('a[data-page-id]');
-          links.forEach(function (a) { a.toggleAttribute('data-done', !!state.done[a.getAttribute('data-page-id')]); });
+          document.querySelectorAll('a[data-page-id]').forEach(function (a) {
+            var id = a.getAttribute('data-page-id');
+            a.toggleAttribute('data-done', MONTH_RE.test(id) && !!state.done[id]);
+          });
           document.querySelectorAll('[data-progress-resume]').forEach(function (a) {
-            var target = document.querySelector('a[data-page-id="' + state.last + '"]');
-            if (state.last && target) { a.href = target.href; a.hidden = false; var slot = a.querySelector('[data-resume-title]'); if (slot) slot.textContent = target.textContent.trim(); else a.textContent = 'Continue reading: ' + target.textContent.trim(); } else { a.hidden = true; }
+            var target = state.last && document.querySelector('a[data-page-id="' + state.last.page + '"]');
+            if (target) {
+              a.href = target.href + (state.last.date ? '#' + state.last.date : '');
+              a.hidden = false;
+              var text = target.textContent.trim();
+              if (state.last.label) text += ' · ' + state.last.label;
+              var slot = a.querySelector('[data-resume-title]');
+              if (slot) slot.textContent = text; else a.textContent = 'Continue reading: ' + text;
+            } else { a.hidden = true; }
           });
           document.querySelectorAll('[data-mark-read]').forEach(function (b) {
             var on = !!state.done[b.getAttribute('data-mark-read')];
