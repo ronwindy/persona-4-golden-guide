@@ -504,3 +504,51 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
 .ig-fi-wrapph { display: flex; justify-content: center; }
 .ig-fi-cardph { flex: none; max-width: none; width: 100%; transform: none; margin-bottom: 0.2rem; }
 @media (max-width: 560px) { .ig-fi-row { grid-template-columns: 1fr; } }
+
+/* Gardening (ig-gd-*) */
+.ig-gd-intro { display: flex; flex-wrap: wrap; gap: 1.2rem 1.5rem; align-items: center; }
+.ig-gd-intro-t { flex: 1 1 18rem; display: flex; flex-direction: column; gap: 0.8rem; min-width: 0; }
+.ig-gd-ph { position: relative; flex: 1 1 20rem; max-width: 26rem; margin: 0; padding: 1.5rem 0.7rem 0.7rem; background: #e9dfb8; border-radius: 3px; transform: rotate(-1.2deg); box-shadow: 0 8px 20px rgb(0 0 0 / 0.5); }
+.ig-gd-ph::before { content: ""; position: absolute; top: 0.4rem; left: 50%; width: 0.85rem; height: 0.85rem; margin-left: -0.42rem; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff, #ffe600 45%, #5a4a00); box-shadow: 0 2px 3px rgb(0 0 0 / 0.6); }
+.ig-gd-ph img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid rgb(0 0 0 / 0.35); }
+.ig-gd-ph figcaption { margin-top: 0.5rem; color: #2a2616; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; text-align: center; }
+.ig-gd-eff { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 0.8rem; }
+.ig-gd-e { --t: 90 220 130; display: flex; flex-direction: column; gap: 0.35rem; padding: 0.8rem 1rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.45); background: linear-gradient(180deg, rgb(var(--t) / 0.14), rgb(16 16 12 / 0.55) 65%); }
+.ig-gd-e span { display: flex; align-items: center; gap: 0.45rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--t)); }
+.ig-gd-e b { font-family: var(--font-head); font-weight: 400; font-size: 1.1rem; line-height: 1.2; }
+.ig-gd-e small { font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; }
+.ig-gd-e small .term { font-size: inherit; }
+.ig-gd-warn b { color: #ff6b6b; }
+.ig-gd-where { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; padding: 0.6rem 0.9rem; border-radius: 10px; border: 1px solid var(--glass-edge); background: var(--glass-bg); }
+.ig-gd-lab { display: inline-flex; align-items: center; gap: 0.4rem; margin-right: 0.3rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-gd-lab .ig-i { color: var(--accent); }
+.ig-gd-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; align-items: stretch; }
+.ig-gd-s { --t: 255 230 0; position: relative; display: flex; flex-direction: column; gap: 0.45rem; padding: 0.8rem 1rem 1rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.45); background: linear-gradient(180deg, rgb(var(--t) / 0.12), rgb(16 16 12 / 0.55) 60%); }
+.ig-gd-s:not(:last-child)::after { content: ""; position: absolute; top: 50%; left: 100%; width: 0.9rem; border-top: 2px dotted rgb(255 255 255 / 0.4); }
+.ig-gd-sk { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-gd-s b { font-family: var(--font-head); font-weight: 400; font-size: 1.05rem; line-height: 1.2; color: rgb(var(--t)); }
+.guide-body .ig .ig-gd-s p { font-size: 0.9rem; line-height: 1.45; }
+.ig-gd-w { --t: 61 220 255; }
+.ig-gd-l { --t: 255 179 71; }
+.ig-gd-todo { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; color: #ffb347; }
+.ig-gd-todo .ig-i { width: 0.9rem; height: 0.9rem; }
+.ig-gd-date { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.5rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.ig-gd-date::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, rgb(255 230 0 / 0.6), transparent); }
+.ig-gd-date .ig-i { width: 1.05rem; height: 1.05rem; }
+.ig-gd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 0.8rem; }
+.ig-gd-c { --t: 255 230 0; display: flex; flex-direction: column; gap: 0.55rem; padding: 0.8rem 1rem 0.9rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.45); background: linear-gradient(180deg, rgb(var(--t) / 0.12), rgb(16 16 12 / 0.55) 60%); }
+.ig-gd-seed { display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--text-muted); }
+.ig-gd-seed .ig-i { width: 0.95rem; height: 0.95rem; color: rgb(var(--t)); }
+.ig-gd-seed .term { font-size: 0.85rem; }
+.ig-gd-it { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 1.15rem; letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.25; }
+.ig-gd-it .term { font-size: inherit; color: rgb(var(--t)); }
+.ig-gd-fx { display: flex; gap: 0.5rem; font-size: 0.92rem; line-height: 1.4; }
+.ig-gd-fx .ig-i { margin-top: 0.15rem; color: rgb(var(--t)); }
+.ig-gd-fx .term { font-size: inherit; }
+.ig-gd-m { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; margin-top: 0.1rem; }
+.ig-gd-m div { display: flex; flex-direction: column; gap: 0.1rem; padding: 0.35rem 0.5rem; border-radius: 8px; border: 1px solid rgb(255 255 255 / 0.14); background: rgb(255 255 255 / 0.05); }
+.ig-gd-m small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.64rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-gd-m b { font-family: var(--font-head); font-weight: 400; font-size: 1rem; line-height: 1.15; }
+.ig-gd-m em { font-style: normal; font-size: 0.72rem; color: var(--text-muted); }
+.ig-gd-red { --t: 255 107 107; } .ig-gd-ice { --t: 61 220 255; } .ig-gd-yel { --t: 255 230 0; } .ig-gd-grn { --t: 90 220 130; } .ig-gd-pur { --t: 190 150 255; } .ig-gd-org { --t: 255 179 71; }
+@media (max-width: 620px) { .ig-gd-stages { grid-template-columns: 1fr; } .ig-gd-s:not(:last-child)::after { display: none; } }
