@@ -2369,7 +2369,72 @@
    "from": 13146,
    "to": 13189,
    "stripped": 4,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-legend",
+     "title": "Legend"
+    },
+    {
+     "id": "toc-how-skills-stack",
+     "title": "How Skills Stack"
+    },
+    {
+     "id": "toc-physical-skills",
+     "title": "Physical Skills"
+    },
+    {
+     "id": "toc-fire-skills",
+     "title": "Fire Skills"
+    },
+    {
+     "id": "toc-ice-skills",
+     "title": "Ice Skills"
+    },
+    {
+     "id": "toc-electric-skills",
+     "title": "Electric Skills"
+    },
+    {
+     "id": "toc-wind-skills",
+     "title": "Wind Skills"
+    },
+    {
+     "id": "toc-light-skills",
+     "title": "Light Skills"
+    },
+    {
+     "id": "toc-dark-skills",
+     "title": "Dark Skills"
+    },
+    {
+     "id": "toc-almighty-skills",
+     "title": "Almighty Skills"
+    },
+    {
+     "id": "toc-ailment-skills",
+     "title": "Ailment Skills"
+    },
+    {
+     "id": "toc-recovery-skills",
+     "title": "Recovery Skills"
+    },
+    {
+     "id": "toc-support-skills",
+     "title": "Support Skills"
+    },
+    {
+     "id": "toc-passive-skills",
+     "title": "Passive Skills"
+    },
+    {
+     "id": "toc-navigator-skills",
+     "title": "Navigator Skills"
+    },
+    {
+     "id": "toc-enemy-exclusive-skills",
+     "title": "Enemy Exclusive Skills"
+    }
+   ]
   },
   {
    "id": "skill-list-skill-cards",

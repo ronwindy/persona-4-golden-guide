@@ -11,7 +11,7 @@ src/data/pages/*.html + src/data/manifest.json → Astro build
 
 - Edit page text and markup only when the user asks. Do not "improve" wording, facts or structure on your own initiative.
 - Edits may add, remove, rewrite or reorder words and markup, as the user orders.
-- `src/data/manifest.json` (page list, order, categories, ToC entries) is also hand-owned: keep it consistent when pages or h4 headings are added, renamed or removed.
+- `src/data/manifest.json` (page list, order, categories, ToC entries) is also hand-owned: keep it consistent when pages or ToC headings (h4, or `h5.part-marker` with an id) are added, renamed or removed.
 - Credit: the guide is by Hurricanehaon (GameFAQs). Keep that attribution wherever the guide shows it.
 
 ## 2. Build
@@ -21,7 +21,7 @@ src/data/pages/*.html + src/data/manifest.json → Astro build
 
 ## 3. Presentation (look decisions live in `DESIGN.md`)
 - Pages render the stored HTML with `set:html` inside `.guide-body`; restyle via `src/styles/global.css` and the other files in `src/styles/`.
-- Current features: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings), quick page search (Ctrl+K palette over page titles and categories), theme/typography, background, logo, favicon.
+- Current features: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings, or `h5.part-marker` headings with an id), quick page search (Ctrl+K palette over page titles and categories), theme/typography, background, logo, favicon.
 - No monospace anywhere. Never copy design elements from other game projects; ask before new ornaments.
 - Header icons: headings carry `data-icon`; `src/styles/header-icons.css` holds one mask per icon.
 - Lucide icons in the sidebar (`src/lib/nav-icon-rules.mjs`).
