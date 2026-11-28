@@ -828,3 +828,164 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
   .ig-pm-art { align-self: center; width: 13rem; }
   .ig-pm-stats { margin-top: -1.2rem; }
 }
+
+/* Item List family (ig-il-*): Weapons, Armor, Accessories, Materials, Costumes, Books, Fish, Bugs,
+   Gardening, Gems, Key Items, Overview. Location chips reuse .ig-lc + .k-* from Consumables.
+   Sized by the content column (container il), not the viewport. */
+.guide-body .ig.ig-il { container: il / inline-size; }
+.k-smith .ig-i { color: #ffe600; } .k-pub .ig-i { color: #ffb347; } .k-art .ig-i { color: #ff9a6b; } .k-boss .ig-i { color: #ff6b6b; } .ig-lc.k-boss { border-color: rgb(255 77 77 / 0.5); }
+.k-fish .ig-i { color: #3ddcff; } .k-velvet .ig-i { color: #6e8bff; } .k-def .ig-i { color: #c9c4b0; } .k-dun .ig-i { color: #be96ff; }
+.ig-il-pan { --t: 255 230 0; border-radius: 14px; border: 1px solid rgb(var(--t) / 0.35); background: linear-gradient(180deg, rgb(var(--t) / 0.09), rgb(16 16 12 / 0.55) 140px); overflow: hidden; }
+.ig-il-ph { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; padding: 0.65rem 1rem; border-bottom: 1px solid rgb(var(--t) / 0.25); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--t)); }
+.ig-il-ph > .ig-i { width: 1.2rem; height: 1.2rem; }
+.ig-il-ct { margin-left: auto; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.08rem 0.6rem; border-radius: 999px; border: 1px solid rgb(var(--t) / 0.4); font-family: var(--font-body); font-style: normal; font-weight: 500; font-size: 0.78rem; letter-spacing: 0; text-transform: none; color: var(--text); }
+.ig-il-ct .ig-i { width: 0.85rem; height: 0.85rem; }
+.ig-il-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; padding: 0.5rem 1rem; font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); border-bottom: 1px solid rgb(255 255 255 / 0.06); }
+.ig-il-sub b { color: var(--text); font-weight: 600; }
+
+/* Gear rows (weapons / armor) */
+.guide-body .ig .ig-il-gear { list-style: none; margin: 0; padding: 0; }
+.guide-body .ig .ig-il-g { display: grid; grid-template-columns: minmax(8.5rem, 1.25fr) 6.4rem 6.4rem minmax(7.5rem, 1fr) minmax(8.5rem, 1.15fr); align-items: center; gap: 0.3rem 0.8rem; margin: 0; padding: 0.42rem 1rem; border-top: 1px dashed rgb(255 255 255 / 0.07); }
+.guide-body .ig .ig-il-g.ig-il-w5 { grid-template-columns: minmax(8rem, 1.2fr) 4.6rem 6.4rem 6.4rem minmax(6.5rem, 1fr) minmax(6.5rem, 1fr); }
+.guide-body .ig .ig-il-g:first-child { border-top: 0; }
+.guide-body .ig .ig-il-gh { padding-top: 0.35rem; padding-bottom: 0.35rem; background: rgb(0 0 0 / 0.2); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.ig-il-n { font-weight: 600; line-height: 1.3; min-width: 0; }
+.ig-il-m { --b: var(--t); display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); align-items: center; gap: 0.4rem; }
+.ig-il-m b { font-family: var(--font-head); font-weight: 400; font-size: 0.95rem; line-height: 1; white-space: nowrap; color: rgb(var(--b)); text-align: right; }
+.ig-il-m i { position: relative; height: 0.4rem; border-radius: 999px; background: rgb(255 255 255 / 0.08); overflow: hidden; }
+.ig-il-m i::before { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--v); border-radius: inherit; background: rgb(var(--b)); }
+.ig-il-m.ig-il-hit { --b: 61 220 255; }
+.ig-il-ml { display: none; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.ig-il-who { font-size: 0.82rem; color: var(--text-muted); }
+.ig-il-fx { --f: 255 230 0; justify-self: start; display: inline-flex; align-items: center; padding: 0.06rem 0.55rem; border-radius: 6px; border: 1px solid rgb(var(--f) / 0.45); background: rgb(var(--f) / 0.12); color: rgb(var(--f)); font-size: 0.76rem; font-weight: 600; line-height: 1.35; }
+.ig-il-fx.f-bad { --f: 255 107 107; } .ig-il-fx.f-def { --f: 61 220 255; } .ig-il-fx.f-boost { --f: 255 179 71; } .ig-il-fx.f-skill { --f: 190 150 255; } .ig-il-fx.f-heal { --f: 90 220 130; }
+.ig-il-na { color: #5c5a50; font-size: 0.85rem; }
+.ig-il-locs { display: flex; flex-wrap: wrap; gap: 0.3rem; min-width: 0; }
+@container il (max-width: 52rem) {
+  .guide-body .ig .ig-il-g { grid-template-columns: minmax(0, 1fr) 7rem 7rem; grid-template-areas: "n a h" "f l l"; row-gap: 0.25rem; }
+  .guide-body .ig .ig-il-g.ig-il-w5 { grid-template-columns: minmax(0, 1fr) 7rem 7rem; grid-template-areas: "n a h" "w l l" "f f f"; }
+  .ig-il-g > .ig-il-n { grid-area: n; } .ig-il-g > .ig-il-m { grid-area: a; } .ig-il-g > .ig-il-m.ig-il-hit { grid-area: h; }
+  .ig-il-g > .ig-il-fx, .ig-il-g > .ig-il-na { grid-area: f; } .ig-il-g > .ig-il-locs { grid-area: l; justify-content: flex-end; } .ig-il-g > .ig-il-who { grid-area: w; }
+  .ig-il-g > .ig-il-na { visibility: hidden; }
+  .guide-body .ig .ig-il-gh > span:nth-last-child(-n+2) { display: none; }
+  .guide-body .ig .ig-il-gh.ig-il-w5 > span:nth-child(2) { display: none; }
+}
+@container il (max-width: 30rem) {
+  .guide-body .ig .ig-il-g, .guide-body .ig .ig-il-g.ig-il-w5 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "n n" "w w" "a h" "f f" "l l"; padding: 0.55rem 0.8rem; }
+  .guide-body .ig .ig-il-gh { display: none; }
+  .ig-il-g > .ig-il-locs { justify-content: flex-start; }
+  .ig-il-g > .ig-il-na { display: none; }
+  .ig-il-m { grid-template-columns: 1.4rem 2.5rem minmax(0, 1fr); }
+  .ig-il-ml { display: block; }
+}
+
+/* Generic row list (name + effect + locations) */
+.guide-body .ig .ig-il-rows { list-style: none; margin: 0; padding: 0; }
+.guide-body .ig .ig-il-r { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.55rem; margin: 0; padding: 0.45rem 1rem; border-top: 1px dashed rgb(255 255 255 / 0.07); }
+.guide-body .ig .ig-il-r:first-child { border-top: 0; }
+.ig-il-r .ig-il-locs { margin-left: auto; justify-content: flex-end; }
+@container il (max-width: 36rem) { .ig-il-r .ig-il-locs { margin-left: 0; width: 100%; justify-content: flex-start; } }
+
+/* Matrix (tiers x columns) */
+.ig-il-mx { display: grid; grid-template-columns: 5.4rem repeat(var(--cols), minmax(0, 1fr)); }
+.ig-il-mx > * { padding: 0.5rem 0.6rem; border-top: 1px solid rgb(255 255 255 / 0.06); border-left: 1px solid rgb(255 255 255 / 0.06); min-width: 0; }
+.ig-il-mx > .ig-il-mh { border-top: 0; display: flex; align-items: center; justify-content: center; gap: 0.35rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c, var(--t))); background: rgb(0 0 0 / 0.2); text-align: center; }
+.ig-il-mx > .ig-il-mh .ig-i { width: 0.95rem; height: 0.95rem; }
+.ig-il-mx > .ig-il-tr { border-left: 0; display: flex; flex-direction: column; justify-content: center; gap: 0.3rem; background: rgb(var(--t) / 0.07); border-right: 1px solid rgb(var(--t) / 0.22); }
+.ig-il-tr b { font-family: var(--font-head); font-weight: 400; font-size: 1.25rem; line-height: 1; color: rgb(var(--t)); text-align: center; }
+.ig-il-tr small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); text-align: center; }
+.ig-il-cell { display: flex; flex-direction: column; justify-content: center; gap: 0.3rem; font-size: 0.86rem; font-weight: 600; line-height: 1.25; overflow-wrap: break-word; hyphens: auto; }
+.ig-il-cell .ig-lc { font-weight: 400; }
+.ig-il-cs { font-size: 0.74rem; font-weight: 500; color: var(--text-muted); }
+.ig-il-mx > .ig-il-mloc { grid-column: 2 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; padding: 0.35rem 0.6rem; background: rgb(0 0 0 / 0.16); border-top: 0; }
+.ig-il-mloc > small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-right: 0.2rem; }
+.ig-il-mx > .ig-il-trs { border-left: 0; padding: 0; background: rgb(var(--t) / 0.07); border-right: 1px solid rgb(var(--t) / 0.22); }
+.ig-il-cell[data-c]::before { content: none; }
+@container il (max-width: 34rem) {
+  .ig-il-mx { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ig-il-mx > .ig-il-mh { display: none; }
+  .ig-il-mx > .ig-il-tr { grid-row: auto !important; grid-column: 1 / -1; flex-direction: row; align-items: baseline; justify-content: flex-start; gap: 0.5rem; padding: 0.35rem 0.8rem; border-right: 0; border-top: 1px solid rgb(var(--t) / 0.3); }
+  .ig-il-mx > .ig-il-cell { border-left: 0; padding: 0.45rem 0.8rem; }
+  .ig-il-mx > .ig-il-cell:nth-child(even of .ig-il-cell) { border-left: 1px solid rgb(255 255 255 / 0.06); }
+  .ig-il-cell[data-c]::before { content: attr(data-c); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c, var(--t))); }
+  .ig-il-mx > .ig-il-mloc { grid-column: 1 / -1; padding: 0.4rem 0.8rem; }
+}
+@container il (max-width: 30rem) {
+  .guide-body .ig .ig-il-flow .ig-il-fr { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); grid-template-areas: "e e e" "m a o"; row-gap: 0.2rem; }
+  .ig-il-fr > .ig-il-fe { grid-area: e; font-size: 0.78rem; }
+  .ig-il-fr > .ig-il-fm { grid-area: m; }
+  .ig-il-fr > .ig-i:first-of-type { display: none; }
+  .ig-il-fr > .ig-i:last-of-type { grid-area: a; }
+  .ig-il-fr > .ig-il-fo { grid-area: o; }
+}
+
+/* Tile ladder (values) */
+.ig-il-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr)); gap: 0.6rem; padding: 0.9rem; }
+.ig-il-tile { --c: var(--t); display: flex; flex-direction: column; gap: 0.25rem; padding: 0.6rem 0.75rem; border-radius: 10px; border: 1px solid rgb(var(--c) / 0.4); background: linear-gradient(180deg, rgb(var(--c) / 0.13), rgb(16 16 12 / 0.55) 85%); min-width: 0; }
+.ig-il-tile > b { font-family: var(--font-head); font-weight: 400; font-size: 1.45rem; line-height: 1.05; color: rgb(var(--c)); }
+.ig-il-tile > b small { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 0.25rem; }
+.ig-il-tile > span { font-weight: 600; font-size: 0.9rem; line-height: 1.25; }
+.ig-il-tile > em { font-style: normal; font-size: 0.78rem; color: var(--text-muted); line-height: 1.3; }
+.ig-il-tile .ig-il-locs { margin-top: 0.15rem; }
+
+/* Card grid */
+.ig-il-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 0.8rem; align-items: start; }
+.ig-il-card { --t: 255 230 0; display: flex; flex-direction: column; gap: 0.5rem; padding: 0.75rem 0.9rem 0.85rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.4); background: linear-gradient(180deg, rgb(var(--t) / 0.1), rgb(16 16 12 / 0.55) 70%); min-width: 0; }
+.ig-il-ch { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-head); font-weight: 400; font-size: 1.05rem; line-height: 1.2; color: rgb(var(--t)); }
+.ig-il-ch > .ig-i { width: 1.15rem; height: 1.15rem; flex: none; }
+.ig-il-kv { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.45rem; font-size: 0.86rem; line-height: 1.4; }
+.ig-il-k { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); min-width: 5.4rem; }
+.ig-il-k .ig-i { width: 0.85rem; height: 0.85rem; color: rgb(var(--t)); }
+.ig-il-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.ig-il-tag { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.06rem 0.5rem; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); background: rgb(255 255 255 / 0.05); font-size: 0.78rem; line-height: 1.35; }
+.ig-il-tag.ig-il-on { border-color: rgb(var(--t) / 0.55); background: rgb(var(--t) / 0.14); color: rgb(var(--t)); font-weight: 600; }
+.ig-il-tag .ig-i { width: 0.8rem; height: 0.8rem; }
+.ig-il-pair { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.06rem 0.5rem; border-radius: 6px; background: rgb(255 255 255 / 0.05); border: 1px solid rgb(255 255 255 / 0.1); font-size: 0.76rem; line-height: 1.35; }
+.ig-il-pair .ig-i { width: 0.7rem; height: 0.7rem; color: rgb(var(--t)); }
+.ig-il-foot { display: flex; flex-direction: column; gap: 0.3rem; padding-top: 0.5rem; border-top: 1px dashed rgb(255 255 255 / 0.12); }
+.ig-il-wide { grid-column: 1 / -1; }
+
+/* Flow rows (Materials: enemy -> material -> result) */
+.guide-body .ig .ig-il-flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); }
+.guide-body .ig .ig-il-fr { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 0.4rem; margin: 0; padding: 0.45rem 0.9rem; border-top: 1px dashed rgb(255 255 255 / 0.07); font-size: 0.84rem; line-height: 1.25; }
+.ig-il-fr > .ig-i { width: 0.8rem; height: 0.8rem; color: rgb(var(--t) / 0.7); }
+.ig-il-fe { display: inline-flex; align-items: center; gap: 0.3rem; color: var(--text-muted); min-width: 0; }
+.ig-il-fe .ig-i { flex: none; width: 0.8rem; height: 0.8rem; color: #ff8a8a; }
+.ig-il-fm { font-weight: 600; min-width: 0; }
+.ig-il-fo { justify-self: start; padding: 0.05rem 0.5rem; border-radius: 6px; background: rgb(var(--t) / 0.14); border: 1px solid rgb(var(--t) / 0.4); color: rgb(var(--t)); font-weight: 600; min-width: 0; }
+.ig-il-fh { grid-column: 1 / -1; display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 1rem; background: rgb(0 0 0 / 0.22); border-top: 1px solid rgb(var(--t) / 0.2); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(var(--t)); }
+.ig-il-fh .ig-i { width: 0.9rem; height: 0.9rem; }
+.ig-il-fh .ig-il-ct { font-size: 0.7rem; }
+.ig-il-leg { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; padding: 0.45rem 1rem; font-size: 0.78rem; color: var(--text-muted); border-bottom: 1px solid rgb(255 255 255 / 0.06); }
+.ig-il-leg span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.ig-il-leg .ig-i { width: 0.8rem; height: 0.8rem; }
+
+/* Calendar + unlock chain (Costumes: Happy Fox) */
+.ig-il-cal { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); gap: 0.6rem; padding: 0.9rem; }
+.ig-il-mo { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.55rem 0.7rem; border-radius: 10px; border: 1px solid rgb(var(--t) / 0.3); background: rgb(255 255 255 / 0.03); }
+.ig-il-mo > b { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(var(--t)); }
+.ig-il-days { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.ig-il-day { display: inline-grid; place-items: center; min-width: 2.5rem; padding: 0.1rem 0.3rem; border-radius: 6px; background: rgb(var(--t) / 0.14); border: 1px solid rgb(var(--t) / 0.4); font-size: 0.78rem; font-weight: 600; }
+.ig-il-day.ig-il-key { background: rgb(var(--t)); color: #0d0d0d; }
+.guide-body .ig .ig-il-chain { list-style: none; margin: 0; padding: 0.9rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 0.7rem; counter-reset: ilc; }
+.guide-body .ig .ig-il-chain li { display: flex; flex-direction: column; gap: 0.3rem; margin: 0; padding: 0.65rem 0.8rem 0.75rem; border-radius: 10px; border: 1px solid rgb(var(--t) / 0.45); background: linear-gradient(180deg, rgb(var(--t) / 0.12), rgb(16 16 12 / 0.55) 80%); counter-increment: ilc; }
+.ig-il-chain li > b { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-head); font-weight: 400; font-size: 1rem; line-height: 1.2; color: rgb(var(--t)); }
+.ig-il-chain li > b::before { content: counter(ilc); flex: none; display: grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 5px; transform: skewX(-8deg); background: rgb(var(--t)); color: #0d0d0d; font-size: 0.85rem; }
+.ig-il-chain li > span { font-size: 0.84rem; line-height: 1.4; color: var(--text-muted); }
+.ig-il-chain li > em { font-style: normal; display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; font-weight: 600; }
+.ig-il-chain li > em .ig-i { width: 0.8rem; height: 0.8rem; color: rgb(var(--t)); }
+
+/* Overview directory */
+.ig-il-dir { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: 0.6rem; }
+.guide-body .ig a.ig-il-lk { --t: 255 230 0; display: flex; align-items: center; gap: 0.7rem; padding: 0.7rem 0.9rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.4); background: linear-gradient(90deg, rgb(var(--t) / 0.14), rgb(16 16 12 / 0.55) 75%); color: var(--text); text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+.guide-body .ig a.ig-il-lk:hover { border-color: rgb(var(--t)); transform: translateY(-1px); }
+.ig-il-lk > .ig-i { flex: none; width: 1.5rem; height: 1.5rem; padding: 0.4rem; box-sizing: content-box; border-radius: 8px; background: rgb(var(--t) / 0.16); color: rgb(var(--t)); }
+.ig-il-lk b { display: block; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.95rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.ig-il-lk small { display: block; font-size: 0.78rem; color: var(--text-muted); line-height: 1.3; }
+.ig-il-sw { flex: none; width: 0.85rem; height: 0.85rem; border-radius: 50%; border: 1px solid rgb(255 255 255 / 0.45); background: var(--sw); }
+.ig-il-ex { color: var(--accent); font-size: 0.8em; margin-left: 0.1rem; }
+.ig-il-exl { margin-left: 0.5rem; font-size: 0.74rem; color: var(--text-muted); }
+.ig-il-exl b { color: var(--text); font-weight: 600; }
+.ig-il-exg { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; padding-left: 0.5rem; border-left: 1px solid rgb(255 255 255 / 0.12); }
+.ig-il-exg .ig-il-exl { margin-left: 0; }
+.ig-il-mx > .ig-il-cell { padding: 0.5rem 0.4rem; font-size: 0.82rem; }

@@ -2552,7 +2552,36 @@
    "from": 13391,
    "to": 13407,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-sword-weapons",
+     "title": "Sword Weapons"
+    },
+    {
+     "id": "toc-knife-weapons",
+     "title": "Knife Weapons"
+    },
+    {
+     "id": "toc-shoe-weapons",
+     "title": "Shoe Weapons"
+    },
+    {
+     "id": "toc-fan-weapons",
+     "title": "Fan Weapons"
+    },
+    {
+     "id": "toc-shield-weapons",
+     "title": "Shield Weapons"
+    },
+    {
+     "id": "toc-claw-weapons",
+     "title": "Claw Weapons"
+    },
+    {
+     "id": "toc-gun-weapons",
+     "title": "Gun Weapons"
+    }
+   ]
   },
   {
    "id": "item-list-armor",
@@ -2561,7 +2590,24 @@
    "from": 13407,
    "to": 13417,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-unisex-armor",
+     "title": "Unisex Armor"
+    },
+    {
+     "id": "toc-male-armor",
+     "title": "Male Armor"
+    },
+    {
+     "id": "toc-female-armor",
+     "title": "Female Armor"
+    },
+    {
+     "id": "toc-other-armor",
+     "title": "Other Armor"
+    }
+   ]
   },
   {
    "id": "item-list-accessories",
@@ -2570,7 +2616,28 @@
    "from": 13417,
    "to": 13429,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-stat-accessories",
+     "title": "Stat Accessories"
+    },
+    {
+     "id": "toc-skill-accessories",
+     "title": "Skill Accessories"
+    },
+    {
+     "id": "toc-elemental-accessories",
+     "title": "Elemental Accessories"
+    },
+    {
+     "id": "toc-recovery-accessories",
+     "title": "Recovery Accessories"
+    },
+    {
+     "id": "toc-other-accessories",
+     "title": "Other Accessories"
+    }
+   ]
   },
   {
    "id": "item-list-costume-list",
@@ -2692,7 +2759,40 @@
    "from": 13487,
    "to": 13491,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-story-items",
+     "title": "Story Items"
+    },
+    {
+     "id": "toc-dungeon-keys",
+     "title": "Dungeon Keys"
+    },
+    {
+     "id": "toc-tools",
+     "title": "Tools"
+    },
+    {
+     "id": "toc-velvet-room-passes",
+     "title": "Velvet Room Passes"
+    },
+    {
+     "id": "toc-social-link-items",
+     "title": "Social Link Items"
+    },
+    {
+     "id": "toc-quest-items",
+     "title": "Quest Items"
+    },
+    {
+     "id": "toc-models-and-dolls",
+     "title": "Models and Dolls"
+    },
+    {
+     "id": "toc-scooters",
+     "title": "Scooters"
+    }
+   ]
   },
   {
    "id": "tips-and-tricks-golden-shadow-grinding",
