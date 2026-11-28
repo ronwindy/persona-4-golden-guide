@@ -21,7 +21,7 @@ src/data/pages/*.html + src/data/manifest.json → Astro build
 
 ## 3. Presentation (look decisions live in `DESIGN.md`)
 - Pages render the stored HTML with `set:html` inside `.guide-body`; restyle via `src/styles/global.css` and the other files in `src/styles/`.
-- Current features: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings), theme/typography, background, logo, favicon. No search yet.
+- Current features: sidebar nav + prev/next, reading progress (localStorage), on-page ToC (h4 headings), quick page search (Ctrl+K palette over page titles and categories), theme/typography, background, logo, favicon.
 - No monospace anywhere. Never copy design elements from other game projects; ask before new ornaments.
 - Header icons: headings carry `data-icon`; `src/styles/header-icons.css` holds one mask per icon.
 - Lucide icons in the sidebar (`src/lib/nav-icon-rules.mjs`).
