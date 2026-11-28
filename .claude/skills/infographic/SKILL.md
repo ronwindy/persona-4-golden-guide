@@ -20,11 +20,13 @@ Turns a raw guide page into an infographic. The finished reference is `src/data/
 5. **Build** after approval:
    - Rewrite the page HTML inside a root `<div class="ig">…</div>` (keep the leading `<h2>`/`<h3>` headings and any h4 ids).
    - Use the shared kit first. Icons are `<svg class="ig-i"><use href="#ig-name"/></svg>`; add missing symbols to `IconSheet.astro` (Lucide style, viewBox 0 0 24 24, stroke `currentColor`, ids `ig-<name>`).
+   - **On-page ToC for long pages:** if the built page has 4 or more `h5.part-marker` sections, add the ToC automatically (no extra question; mention it in the report). Give every part-marker an `id="toc-<kebab-heading-text>"` and list them all, in page order, in the page's `toc` array in `manifest.json` (`{"id": ..., "title": <heading text>}`). Reference: `skill-list-all-skills.html`. If the page already has a ToC (e.g. h4 entries), keep it as is and add nothing.
    - If the content needs a shape the kit lacks, add a small page-specific block named `ig-<page>-*` at the end of `infographic.css` (or reuse a proven pattern). If a block would obviously serve other pages, put it in the kit proper.
 6. **Verify**
    - `cmd /c npm run build` passes (it can exceed 2 min: run it in the background).
    - Start `astro-dev` with `preview_start`, open `/persona-4-golden-guide/guide/<id>/`, check desktop and mobile (375px), light and dark where relevant, console errors, and that every `<use>` target exists.
    - **Content check:** compare visible text before vs. after (e.g. `git show HEAD:<page>` stripped of tags vs. the new one). List anything missing and fix it, or report it to the user.
+   - If a ToC was added, check in the preview that it shows and that every entry jumps to its heading.
    - **Check the real page, not just the draft.** Drafts do not load the site's global styles, so defaults for `ol`/`ul`/`p`/`table` etc. can break the layout once built (e.g. `ol` gets left padding). Reset `padding`/`margin`/`list-style` explicitly on any native list or table under `.guide-body .ig`, and re-check the built page against the draft.
    - **Measure alignment, do not eyeball it.** For anything that must line up (timeline spines, connectors, badges over lines) compare positions with `getBoundingClientRect` via `javascript_tool` (e.g. line centre vs. dot centre) and zoom into those spots.
    - **Full-scale screenshots only count as a visual check.** Take one at desktop width and one at 375px, scrolled to each new block, not just the top of the page. Scaled-down (e.g. 0.6) screenshots are for a quick look only.
