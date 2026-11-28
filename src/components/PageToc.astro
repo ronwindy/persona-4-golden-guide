@@ -30,6 +30,8 @@ const range = first && last && dated.length > 1 ? `${abbr(first.month)} ${first.
 const ghost = first && last ? (first.month === last.month ? MONTHS[first.month] : `${abbr(first.month)}–${abbr(last.month)}`) : '';
 const ghostSize = Math.min(3.9, 12.5 / (Math.max(ghost.length, 1) * 0.78));
 const usePips = rows.length <= 31;
+// Undated rows show their list position, except among date tiles, where a number would read as a day.
+const numbered = dated.length === 0;
 ---
 
 {entries.length > 0 && (
@@ -46,7 +48,7 @@ const usePips = rows.length <= 31;
           : <span class="page-toc-pips page-toc-bar" aria-hidden="true"><span /></span>}
       </summary>
       <ol class="page-toc-list">
-        {rows.map((r) => (
+        {rows.map((r, i) => (
           <li>
             <a href={`#${r.id}`} data-toc-link>
               {r.date
@@ -56,12 +58,11 @@ const usePips = rows.length <= 31;
                     <span class="toc-leaf-num">{r.date.day}</span>
                   </span>
                 )
-                : <span class="toc-mark" aria-hidden="true"><i /></span>}
+                : <span class="toc-mark" aria-hidden="true"><span class="toc-slab"><b>{numbered ? String(i + 1).padStart(2, '0') : ''}</b></span></span>}
               <span class="toc-label">
                 <span class="toc-now">Now reading</span>
                 <span class="toc-title">{r.title}</span>
               </span>
-              <svg class="toc-check" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
             </a>
           </li>
         ))}
