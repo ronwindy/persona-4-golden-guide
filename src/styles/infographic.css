@@ -1058,3 +1058,45 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
   .ig-wp-cv figcaption { font-size: 0.74rem; flex-direction: column; gap: 0.25rem; }
   .guide-body .ig .ig-wp-shelf .ig-wp-cv { max-width: none; }
 }
+
+/* Persona 3 vs. Persona 4 (ig-pv-*): cover VS header, P3 | topic | P4 comparison rows. */
+.ig-pv-vh, .ig-pv-r { display: grid; grid-template-columns: minmax(0, 1fr) 9.5rem minmax(0, 1fr); column-gap: 0.8rem; }
+.ig-pv-vh { align-items: center; padding: 0.6rem 0 0.2rem; }
+.guide-body .ig .ig-pv-cv { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
+.guide-body .ig .ig-pv-cv img { display: block; width: 100%; max-width: 13rem; height: auto; border-radius: 8px; border: 1px solid var(--glass-edge); }
+.guide-body .ig .ig-pv-cv3 img { box-shadow: 0 0 0 2px rgb(110 160 255 / 0.75), 0 14px 40px rgb(110 160 255 / 0.3); }
+.guide-body .ig .ig-pv-cv4 img { box-shadow: 0 0 0 2px rgb(255 230 0 / 0.85), 0 14px 40px rgb(255 230 0 / 0.3); }
+.ig-pv-cv figcaption { font-family: var(--font-head); font-size: 1.25rem; line-height: 1.1; text-align: center; }
+.ig-pv-cv3 figcaption { color: rgb(110 160 255); }
+.ig-pv-cv4 figcaption { color: var(--accent); }
+.ig-pv-vs { justify-self: center; transform: skewX(-8deg); padding: 0.3rem 1rem; border-radius: 6px; background: var(--accent); color: #0d0d0d; font-family: var(--font-head); font-size: 2.4rem; line-height: 1; box-shadow: 0 0 30px rgb(255 230 0 / 0.35); }
+.ig-pv-leg { justify-content: center; gap: 0.5rem 1.2rem; }
+.ig-pv-leg > span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.ig-pv-dash { color: #5c5a50; font-size: 1.1rem; }
+.ig-pv-rows { display: flex; flex-direction: column; gap: 0.45rem; }
+.ig-pv-r { align-items: stretch; }
+.ig-pv-c { display: flex; flex-direction: column; justify-content: center; gap: 0.35rem; padding: 0.6rem 0.9rem; border-radius: 10px; font-size: 0.95rem; line-height: 1.4; }
+.ig-pv-c3 { align-items: flex-end; text-align: right; color: #c9c6b6; border: 1px solid rgb(110 160 255 / 0.3); background: linear-gradient(270deg, rgb(110 160 255 / 0.12), rgb(16 16 12 / 0.5)); }
+.ig-pv-c4 { align-items: flex-start; font-weight: 500; border: 1px solid rgb(255 230 0 / 0.42); background: linear-gradient(90deg, rgb(255 230 0 / 0.13), rgb(16 16 12 / 0.5)); }
+.ig-pv-c4.ig-pv-gone { border-color: rgb(255 107 107 / 0.5); background: linear-gradient(90deg, rgb(255 107 107 / 0.14), rgb(16 16 12 / 0.5)); }
+.ig-pv-c.ig-pv-none { color: #5c5a50; font-size: 1.2rem; border: 1px dashed rgb(255 255 255 / 0.1); background: rgb(255 255 255 / 0.02); }
+.ig-pv-tp { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.25rem; text-align: center; }
+.ig-pv-tp .ig-i { width: 1.35rem; height: 1.35rem; color: var(--accent); }
+.ig-pv-tp b { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.15; color: var(--text); }
+.ig-pv-num { font-family: var(--font-head); font-size: 1.7rem; line-height: 1; }
+.ig-pv-c4 .ig-pv-num { color: var(--accent); }
+.ig-pv-tgs { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.ig-pv-tg { display: inline-block; transform: skewX(-8deg); padding: 0.08rem 0.45rem; border-radius: 4px; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.4; }
+.ig-pv-off { background: #ff6b6b; color: #0d0d0d; }
+.ig-pv-yay { border: 1px solid #5adc82; background: rgb(90 220 130 / 0.16); color: #8af0aa; }
+.ig-pv-c .ig-chip { font-weight: 400; font-size: 0.8rem; }
+@media (max-width: 599px) {
+  .ig-pv-vh { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); column-gap: 0.6rem; }
+  .guide-body .ig .ig-pv-cv img { max-width: 7rem; }
+  .ig-pv-cv figcaption { font-size: 0.95rem; }
+  .ig-pv-vs { font-size: 1.6rem; padding: 0.25rem 0.6rem; }
+  .ig-pv-r { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 0.45rem; row-gap: 0.3rem; }
+  .ig-pv-tp { grid-column: 1 / -1; order: -1; flex-direction: row; justify-content: flex-start; gap: 0.4rem; padding-top: 0.35rem; }
+  .ig-pv-tp .ig-i { width: 1rem; height: 1rem; }
+  .ig-pv-c { padding: 0.5rem 0.65rem; font-size: 0.86rem; }
+}

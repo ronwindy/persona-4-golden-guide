@@ -95,7 +95,24 @@
    "from": 156,
    "to": 160,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-daily-life",
+     "title": "Daily Life"
+    },
+    {
+     "id": "toc-dungeons",
+     "title": "Dungeons"
+    },
+    {
+     "id": "toc-battle",
+     "title": "Battle"
+    },
+    {
+     "id": "toc-personas",
+     "title": "Personas"
+    }
+   ]
   },
   {
    "id": "about-persona-4-golden-persona-4-vs-persona-4-golden",
