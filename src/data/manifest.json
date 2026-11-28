@@ -121,7 +121,32 @@
    "from": 160,
    "to": 164,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-story-presentation",
+     "title": "Story & Presentation"
+    },
+    {
+     "id": "toc-daily-life",
+     "title": "Daily Life"
+    },
+    {
+     "id": "toc-social-links-party",
+     "title": "Social Links & Party"
+    },
+    {
+     "id": "toc-dungeons-battle",
+     "title": "Dungeons & Battle"
+    },
+    {
+     "id": "toc-personas-fusion",
+     "title": "Personas & Fusion"
+    },
+    {
+     "id": "toc-extras",
+     "title": "Extras"
+    }
+   ]
   },
   {
    "id": "gameplay-mechanics-controls",
