@@ -2443,7 +2443,56 @@
    "from": 13189,
    "to": 13215,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-physical-skills",
+     "title": "Physical Skills"
+    },
+    {
+     "id": "toc-fire-skills",
+     "title": "Fire Skills"
+    },
+    {
+     "id": "toc-ice-skills",
+     "title": "Ice Skills"
+    },
+    {
+     "id": "toc-electric-skills",
+     "title": "Electric Skills"
+    },
+    {
+     "id": "toc-wind-skills",
+     "title": "Wind Skills"
+    },
+    {
+     "id": "toc-light-skills",
+     "title": "Light Skills"
+    },
+    {
+     "id": "toc-dark-skills",
+     "title": "Dark Skills"
+    },
+    {
+     "id": "toc-almighty-skills",
+     "title": "Almighty Skills"
+    },
+    {
+     "id": "toc-ailment-skills",
+     "title": "Ailment Skills"
+    },
+    {
+     "id": "toc-recovery-skills",
+     "title": "Recovery Skills"
+    },
+    {
+     "id": "toc-support-skills",
+     "title": "Support Skills"
+    },
+    {
+     "id": "toc-passive-skills",
+     "title": "Passive Skills"
+    }
+   ]
   },
   {
    "id": "skill-list-party-members",

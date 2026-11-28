@@ -728,3 +728,25 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
   .ig-ci-ut { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .ig-ci-atk, .ig-ci-ut { padding: 0.7rem; }
 }
+
+/* Skill Cards (ig-sk-cards): 4-column variant of the All Skills tables */
+.guide-body .ig table.ig-sk-t.ig-sk-cards { min-width: 22rem; }
+.ig-sk-co.ig-sk-yen { color: inherit; }
+.ig-sk-rk { display: inline-flex; align-items: center; justify-content: center; min-width: 1.7rem; padding: 0.05rem 0.35rem; border-radius: 4px; transform: skewX(-8deg); border: 1px solid rgb(255 230 0 / 0.55); background: rgb(255 230 0 / 0.1); color: var(--accent); font-family: var(--font-head); font-size: 0.82rem; line-height: 1.4; }
+/* Phones: Persona stacks under the Skill name; Cost and Rank stay on the right. */
+@media (max-width: 560px) {
+  .guide-body .ig table.ig-sk-t.ig-sk-cards { min-width: 0; }
+  .ig-sk-cards, .ig-sk-cards thead, .ig-sk-cards tbody { display: block; }
+  .ig-sk-cards tr { display: grid; grid-template-columns: minmax(0, 1fr) 4.5rem 2.9rem; align-items: center; border-bottom: 1px solid rgb(255 255 255 / 0.07); }
+  .ig-sk-cards thead tr { border-bottom: 2px solid rgb(255 230 0 / 0.55); }
+  .ig-sk-cards tbody tr:last-child { border-bottom: 0; }
+  .ig-sk-cards th, .ig-sk-cards td { border-bottom: 0; padding-left: 0.3rem; padding-right: 0.3rem; }
+  .ig-sk-cards th:nth-child(2) { display: none; }
+  .ig-sk-cards th:first-child::after { content: " / Persona"; }
+  .ig-sk-cards td:nth-child(1) { grid-column: 1; grid-row: 1; padding-bottom: 0; }
+  .ig-sk-cards td:nth-child(2) { grid-column: 1; grid-row: 2; padding-top: 0.1rem; padding-left: 2.45rem; font-size: 0.8rem; color: var(--text-muted); }
+  .ig-sk-cards td:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; text-align: right; }
+  .ig-sk-cards td:nth-child(4) { grid-column: 3; grid-row: 1 / span 2; }
+  .ig-sk-cards th:nth-child(3) { text-align: right; }
+  .ig-sk-cards .ig-sk-nm { white-space: normal; }
+}
