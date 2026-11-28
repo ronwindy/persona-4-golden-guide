@@ -750,3 +750,81 @@ a.ig-rs:hover{border-color:rgb(var(--t)/.9);background:linear-gradient(90deg,rgb
   .ig-sk-cards th:nth-child(3) { text-align: right; }
   .ig-sk-cards .ig-sk-nm { white-space: normal; }
 }
+
+/* Party Members (ig-pm-*): one tinted panel per character. --h is the character tint ("r g b").
+   Left column: render (no frame, soft fade, tint glow) + role/HP/SP/stat bars (sticky on desktop).
+   Right column: Persona resists, Skills grouped by source, Strengths/Weaknesses cards. */
+.guide-body .ig.ig-pm { gap: 1.6rem; }
+.ig-pm-p { --h: 255 230 0; position: relative; isolation: isolate; display: grid; grid-template-columns: 16rem minmax(0, 1fr); grid-template-rows: auto 1fr; gap: 1rem 1.6rem; padding: 1.3rem 1.4rem 1.5rem; border-radius: 16px; border: 1px solid rgb(var(--h) / 0.45); background: radial-gradient(40rem 22rem at 0 0, rgb(var(--h) / 0.16), transparent 70%), rgb(16 16 12 / 0.7); box-shadow: 0 0 28px rgb(var(--h) / 0.1); }
+.guide-body .ig h4.ig-pm-name { grid-column: 1 / -1; grid-row: 1; margin: 0; padding-bottom: 0.45rem; background: linear-gradient(90deg, rgb(var(--h)), rgb(var(--h) / 0.3) 55%, transparent) bottom / 100% 3px no-repeat; font-family: var(--font-head); font-style: normal; font-weight: 400; font-size: 1.9rem; letter-spacing: 0.02em; text-transform: none; line-height: 1.15; color: rgb(var(--h)); scroll-margin-top: calc(var(--header-height) + 1rem); }
+.ig-pm-side { grid-column: 1; grid-row: 2; display: flex; flex-direction: column; gap: 0.2rem; }
+.ig-pm-art { position: relative; isolation: isolate; }
+.ig-pm-art::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 38%; width: 110%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgb(var(--h) / 0.42), rgb(var(--h) / 0.12) 55%, transparent); }
+.guide-body .ig .ig-pm-art img { display: block; width: 100%; height: auto; aspect-ratio: 1; margin: 0; border: 0; border-radius: 0; box-shadow: none; object-fit: contain; object-position: bottom; -webkit-mask-image: linear-gradient(180deg, #000 68%, transparent 96%); mask-image: linear-gradient(180deg, #000 68%, transparent 96%); filter: drop-shadow(0 8px 18px rgb(0 0 0 / 0.55)); }
+.ig-pm-stats { position: sticky; top: calc(var(--header-height) + 1rem); display: flex; flex-direction: column; gap: 0.75rem; margin-top: -1.6rem; }
+.ig-pm-role { display: flex; flex-direction: column; gap: 0.3rem; }
+.ig-pm-rk { align-self: flex-start; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.12rem 0.6rem; border-radius: 4px; transform: skewX(-8deg); background: rgb(var(--h)); color: #0d0d0d; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.ig-pm-rk .ig-i { width: 0.85rem; height: 0.85rem; }
+.ig-pm-rv { font-family: var(--font-sub); font-style: italic; font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+.ig-pm-pool { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+.ig-pm-tile { --c: 255 179 71; display: flex; flex-direction: column; gap: 0.15rem; padding: 0.5rem 0.7rem; border-radius: 10px; border: 1px solid rgb(var(--c) / 0.45); background: linear-gradient(180deg, rgb(var(--c) / 0.14), rgb(16 16 12 / 0.55) 80%); }
+.ig-pm-tile.ig-pm-sp { --c: 61 220 255; }
+.ig-pm-tl { display: flex; align-items: center; gap: 0.35rem; color: rgb(var(--c)); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.ig-pm-tl .ig-i { width: 0.9rem; height: 0.9rem; }
+.ig-pm-tv { font-family: var(--font-head); font-size: 1.6rem; line-height: 1; color: rgb(var(--c)); }
+.ig-pm-bars { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.65rem 0.8rem; border-radius: 10px; border: 1px solid var(--glass-edge); background: rgb(10 10 8 / 0.5); }
+.ig-pm-bar { display: grid; grid-template-columns: 1.9rem minmax(0, 1fr) 1.8rem; align-items: center; gap: 0.55rem; }
+.ig-pm-bl { font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; color: var(--text-muted); }
+.ig-pm-tr { height: 0.5rem; border-radius: 999px; background: rgb(255 255 255 / 0.07); overflow: hidden; }
+.ig-pm-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, rgb(var(--h) / 0.5), rgb(var(--h))); }
+.ig-pm-bv { font-family: var(--font-head); font-size: 0.9rem; text-align: right; }
+.ig-pm-top .ig-pm-bl, .ig-pm-top .ig-pm-bv { color: rgb(var(--h)); }
+.ig-pm-main { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 1.3rem; min-width: 0; }
+.ig-pm-blk { display: flex; flex-direction: column; gap: 0.6rem; }
+.ig-pm-lab { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.ig-pm-lab::after { content: ""; flex: 1 1 2rem; height: 1px; background: linear-gradient(90deg, rgb(255 230 0 / 0.5), transparent); }
+.guide-body .ig-pm-p table.ig-t { min-width: 29rem; }
+.ig-pm-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ig-pm-chips .ig-nm { padding: 0.35rem 0.8rem; border-radius: 999px; border: 1px solid var(--glass-edge); background: var(--glass-bg); font-weight: 600; }
+.ig-pm-sk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+.ig-pm-g { --t: 255 230 0; display: flex; flex-direction: column; gap: 0.5rem; padding: 0.7rem 0.8rem 0.8rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.4); background: linear-gradient(180deg, rgb(var(--t) / 0.1), rgb(16 16 12 / 0.55) 55%); }
+.ig-pm-g.ig-pm-lv { grid-column: 1 / -1; }
+.ig-pm-g.ig-pm-sl { --t: 61 220 255; }
+.ig-pm-g.ig-pm-bk { --t: 255 179 71; }
+.ig-pm-g.ig-pm-ul { justify-content: center; border-color: rgb(255 230 0 / 0.7); background: linear-gradient(135deg, rgb(255 230 0 / 0.22), rgb(16 16 12 / 0.6) 70%); box-shadow: 0 0 16px rgb(255 230 0 / 0.16); }
+.ig-pm-g.ig-pm-span2 { grid-column: span 2; }
+.ig-pm-gh { display: flex; align-items: center; gap: 0.4rem; font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--t)); }
+.ig-pm-gh .ig-i { width: 0.95rem; height: 0.95rem; }
+.ig-pm-gh span { margin-left: auto; font-weight: 600; font-size: 0.7rem; color: var(--text-muted); }
+.guide-body .ig ul.ig-pm-list { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: 0.3rem 0.6rem; }
+.guide-body .ig .ig-pm-g:not(.ig-pm-lv) ul.ig-pm-list { grid-template-columns: 1fr; }
+.guide-body .ig .ig-pm-list li { margin: 0; padding: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; line-height: 1.3; }
+.ig-pm-b { flex: none; display: inline-flex; align-items: center; justify-content: center; min-width: 2.2rem; height: 1.25rem; padding: 0 0.3rem; border-radius: 5px; border: 1px solid rgb(var(--t) / 0.55); background: rgb(var(--t) / 0.12); color: rgb(var(--t)); font-family: var(--font-sub); font-style: italic; font-weight: 800; font-size: 0.7rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ig-pm-b.ig-pm-df { border-style: dashed; color: var(--text-muted); border-color: rgb(255 255 255 / 0.25); background: transparent; }
+.ig-pm-un { font-family: var(--font-head); font-size: 1.15rem; line-height: 1.2; color: var(--accent); }
+.ig-pm-pc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+.ig-pm-c { --t: 91 224 143; display: flex; flex-direction: column; gap: 0.55rem; padding: 0.8rem 0.9rem 0.9rem; border-radius: 12px; border: 1px solid rgb(var(--t) / 0.45); background: linear-gradient(180deg, rgb(var(--t) / 0.12), rgb(16 16 12 / 0.55) 55%); }
+.ig-pm-c.ig-pm-wk { --t: 255 107 107; }
+.guide-body .ig .ig-pm-c ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.guide-body .ig .ig-pm-c li { position: relative; margin: 0; padding: 0 0 0 1.05rem; font-size: 0.9rem; line-height: 1.45; }
+.ig-pm-c li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.42rem; height: 0.42rem; border-radius: 2px; transform: skewX(-8deg); background: rgb(var(--t)); }
+.ig-pm-c li.ig-pm-big { font-weight: 600; }
+.ig-pm-c li.ig-pm-big b { color: rgb(var(--t)); }
+.guide-body .ig p.ig-pm-credit { font-size: 0.78rem; color: var(--text-muted); }
+/* Sized by the content column, not the viewport: with the sidebar and the on-page ToC rail
+   the article can be ~470px wide even on a desktop screen. */
+.guide-body .ig.ig-pm { container: pm / inline-size; }
+@container pm (max-width: 46rem) {
+  .ig-pm-p { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; padding: 1rem; }
+  .guide-body .ig h4.ig-pm-name, .ig-pm-side, .ig-pm-main { grid-column: 1; grid-row: auto; }
+  .guide-body .ig h4.ig-pm-name { font-size: 1.6rem; }
+  .ig-pm-side { display: grid; grid-template-columns: 12rem minmax(0, 1fr); align-items: end; gap: 0 1rem; }
+  .ig-pm-stats { position: static; margin-top: 0; }
+  .ig-pm-sk, .ig-pm-pc { grid-template-columns: minmax(0, 1fr); }
+  .ig-pm-g.ig-pm-span2 { grid-column: auto; }
+}
+@container pm (max-width: 28rem) {
+  .ig-pm-side { display: flex; }
+  .ig-pm-art { align-self: center; width: 13rem; }
+  .ig-pm-stats { margin-top: -1.2rem; }
+}
