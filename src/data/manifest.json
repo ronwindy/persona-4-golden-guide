@@ -2474,7 +2474,48 @@
    "from": 13450,
    "to": 13456,
    "stripped": 0,
-   "toc": []
+   "toc": [
+    {
+     "id": "toc-restore-hp-one-ally",
+     "title": "Restore HP · One Ally"
+    },
+    {
+     "id": "toc-restore-hp-all-allies",
+     "title": "Restore HP · All Allies"
+    },
+    {
+     "id": "toc-restore-sp",
+     "title": "Restore SP"
+    },
+    {
+     "id": "toc-restore-hp-sp",
+     "title": "Restore HP + SP"
+    },
+    {
+     "id": "toc-cure-ailments",
+     "title": "Cure Ailments"
+    },
+    {
+     "id": "toc-revive",
+     "title": "Revive"
+    },
+    {
+     "id": "toc-buffs-protection",
+     "title": "Buffs & Protection"
+    },
+    {
+     "id": "toc-attack-items",
+     "title": "Attack Items"
+    },
+    {
+     "id": "toc-utility",
+     "title": "Utility"
+    },
+    {
+     "id": "toc-quest-items",
+     "title": "Quest Items"
+    }
+   ]
   },
   {
    "id": "item-list-materials",
